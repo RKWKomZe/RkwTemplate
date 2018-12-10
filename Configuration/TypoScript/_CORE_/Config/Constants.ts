@@ -1,0 +1,1 @@
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:rkw_template/Configuration/TypoScript/_CORE_/Config/Constants" extensions="ts">

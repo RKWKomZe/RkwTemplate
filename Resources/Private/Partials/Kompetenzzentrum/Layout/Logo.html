@@ -1,0 +1,29 @@
+
+<f:section name="Default">
+    <figure class="content-page__logo-container">
+        <a href="/" title="<f:translate key='LLL:EXT:rkw_template/Resources/Private/Language/Kompetenzzentrum/locallang.xlf:partials_logo.homeLink' />">
+            <img src="{settings.websiteLogoFile}" alt="{settings.websiteName}" class="content-page__logo">
+        </a>
+    </figure>
+</f:section>
+
+
+<!-- ################################################################################# -->
+
+<f:section name="Microsite">
+
+    <figure class="content-page__logo-container content-page__logo-container--microsite">
+        <a href="/" title="<f:translate key='LLL:EXT:rkw_template/Resources/Private/Language/Kompetenzzentrum/locallang.xlf:partials_logo.homeLink' />">
+            <img src="{settings.websiteLogoFile}" alt="{settings.websiteName}" class="content-page__logo content-page__logo--desktop">
+            <f:if condition="{settings.websiteLogoTabletFile}">
+                <f:then>
+                    <img src="{settings.websiteLogoTabletFile}" alt="{settings.websiteName}" class="content-page__logo content-page__logo--tablet">
+                </f:then>
+                <f:else>
+                    <img src="{settings.websiteLogoFile}" alt="{settings.websiteName}" class="content-page__logo content-page__logo--tablet content-page__logo--fallback">
+                </f:else>
+            </f:if>
+        </a>
+    </figure>
+
+</f:section>
