@@ -47,6 +47,7 @@ plugin.tx_rkwtemplate_config {
 
             # cat=plugin.tx_rkwtemplate_config/file; type=string; label=Path to layouts
             layouts = EXT:rkw_template/Resources/Private/Layouts/Kompetenzzentrum/Extensions
+
         }
 
         microsite {

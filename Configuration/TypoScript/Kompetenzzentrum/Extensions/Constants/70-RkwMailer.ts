@@ -18,11 +18,6 @@ module.tx_rkwmailer {
         // URL for hard-links in templates
         baseUrl = https://www.rkw-kompetenzzentrum.de
 
-        // Path for images in templates
-        basePathImages = fileadmin/templates/kompetenzzentrum/images/emails
-
-        // Path for logo in templates
-        basePathLogo = fileadmin/templates/kompetenzzentrum/images/logos/logo-emails.png
     }
 }
 

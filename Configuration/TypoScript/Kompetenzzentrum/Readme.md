@@ -1,7 +1,7 @@
 # About this folder
 
 This folder contains all typoscripts and constants that are used in this website.
-It inherits the ```_CORE_```- scripts.
+It inherits the ```_CORE```- scripts.
 
 ## What you find here
 In this folder you find two main files:
@@ -9,17 +9,18 @@ In this folder you find two main files:
 - setup.ts (lowercase is obligatory in order to be loaded by TYPO3)
 
 This files are included in the TS-template settings of the TYPO3-Backend of the current project.
-The files are used as a container in order to inherit the settings from the "_CORE_"-folder and
+The files are used as a container in order to inherit the settings from the "_CORE"-folder and
 to override or extend them with further settings.
 
 Example:
 ```
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:rkw_template/Configuration/TypoScript/_CORE_/Setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:../_CORE/Setup.ts">
 
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:rkw_template/Configuration/TypoScript/Kompetenzzentrum/Config/Setup.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:rkw_template/Configuration/TypoScript/Kompetenzzentrum/Extensions/Setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:./Config/Setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:./Extensions/Setup.ts">
 ...
 ```
+**NOTE: Please use relative paths to include the TypoScript-files via INCLUDE_TYPOSCRIPT.**
 
 ## The subfolders
 
@@ -28,6 +29,18 @@ Each subfolder contains
 - a ```Setup```-Subfolder for configurations concerning setup (mandatory)
 - corresponding include-files that are again included in the main include-files (see above). They include
 all setting-files of its corresponding subfolders
+
+### __Microsites
+Contains configurations for microsites that inherit the configuration of this site
+
+### __Websites
+Contains configurations for websites that inherit the configuration of this site
+
+### _DEV
+Configuration overrides for DEV-Environment. Will be automatically included based on TYPO3_CONTEXT.
+
+### _STAGE
+Configuration overrides for DEV-Environment. Will be automatically included based on TYPO3_CONTEXT.
 
 ### Config
 Contains all configuration concerning BE-Layouts, RTE, TCE, and basic configurations (e.g. baseURL)

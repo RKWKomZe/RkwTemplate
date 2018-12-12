@@ -1,1 +1,1 @@
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:rkw_template/Configuration/TypoScript/Kompetenzzentrum/Special/Setup" extensions="ts">
+<INCLUDE_TYPOSCRIPT: source="DIR:./Setup" extensions="ts">

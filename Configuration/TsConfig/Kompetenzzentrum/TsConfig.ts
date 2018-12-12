@@ -1,4 +1,4 @@
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:rkw_template/Configuration/TsConfig/_CORE_/TsConfig.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:rkw_template/Configuration/TsConfig/_CORE/TsConfig.ts">
 
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:rkw_template/Configuration/TsConfig/Kompetenzzentrum/Tce" extensions="ts">
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:rkw_template/Configuration/TsConfig/Kompetenzzentrum/Rte" extensions="ts">

@@ -1,2 +1,1 @@
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:rkw_template/Configuration/TypoScript/Kompetenzzentrum/Menus/Constants" extensions="ts">
-
+<INCLUDE_TYPOSCRIPT: source="DIR:./Constants" extensions="ts">
