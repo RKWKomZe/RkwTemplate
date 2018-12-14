@@ -21,9 +21,6 @@ plugin.tx_rkwtemplate_config {
         # cat=plugin.tx_rkwtemplate_config/file; type=string; label=Logo of website (desktop-version)
         logoFile = {$plugin.tx_rkwtemplate_config.paths.default.logos}/logo.png
 
-        # cat=plugin.tx_rkwtemplate_config/file; type=string; label=Logo of website (tablet-version)
-        logoTabletFile = {$globalWebsiteConfig.templatePaths.default.logos}/logo-tablet.png
-
         # cat=plugin.tx_rkwtemplate_config/file; type=string; label=Logo of website (offcanvas-version)
         logoOffcanvasFile = {$plugin.tx_rkwtemplate_config.paths.default.logos}/logo-offcanvas.png
 
@@ -32,6 +29,9 @@ plugin.tx_rkwtemplate_config {
     }
 
     microsite {
+
+        # cat=plugin.tx_rkwtemplate_config/file; type=string; label=Logo of website (tablet-version, on microsites only)
+        logoTabletFile = {$plugin.tx_rkwtemplate_config.paths.default.logos}/logo-tablet.png
 
         # cat=plugin.tx_rkwtemplate_config; type=string; label=Vertical text (on microsites only)
         textVertical = Ein Angebot des RKW Kompetenzzentrums

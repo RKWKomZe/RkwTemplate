@@ -5,7 +5,7 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:./Layout/Constants.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:./Marker/Constants.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:./Menus/Constants.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:./Specials/Constants.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:./Special/Constants.ts">
 
 # Environments
 [applicationContext = Development*]

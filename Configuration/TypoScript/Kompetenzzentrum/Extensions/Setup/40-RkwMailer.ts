@@ -2,7 +2,6 @@ module.tx_rkwmailer {
 
     settings {
 
-
         // Path for images in templates
         basePathImages = {$plugin.tx_rkwtemplate_config.paths.default.images}/emails
 

@@ -1,12 +1,4 @@
 plugin.tx_rkwinfolayer {
-    view {
-        // cat=plugin.tx_rkwinfolayer/file; type=string; label=Path to template root (FE)
-        templateRootPath = EXT:rkw_info_layer/Resources/Private/Templates/
-        // cat=plugin.tx_rkwinfolayer/file; type=string; label=Path to template partials (FE)
-        partialRootPath = EXT:rkw_info_layer/Resources/Private/Partials/
-        // cat=plugin.tx_rkwinfolayer/file; type=string; label=Path to template layouts (FE)
-        layoutRootPath = EXT:rkw_info_layer/Resources/Private/Layouts/
-    }
 
     persistence {
         storagePid = 633

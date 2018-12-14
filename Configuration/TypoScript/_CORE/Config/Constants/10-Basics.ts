@@ -83,7 +83,7 @@ plugin.tx_rkwtemplate_config {
         # cat=plugin.tx_rkwtemplate_config/file; type=string; label=Logo of website (desktop-version)
         logoFile = {$plugin.tx_rkwtemplate_config.paths.default.logos}/logo.png
 
-        # cat=plugin.tx_rkwtemplate_config/file; type=string; label=Logo of website (tablet-version)
+        # cat=plugin.tx_rkwtemplate_config/file; type=string; label=Logo of website (tablet-version, on microsites only)
         logoTabletFile =
 
         # cat=plugin.tx_rkwtemplate_config/file; type=string; label=Logo of website (offcanvas-version)

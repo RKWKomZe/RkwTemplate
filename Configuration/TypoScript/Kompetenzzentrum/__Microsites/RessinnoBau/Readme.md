@@ -30,11 +30,7 @@ Each subfolder contains
 - corresponding include-files that are again included in the main include-files (see above). They include
 all setting-files of its corresponding subfolders
 
-### _DEV
-Configuration overrides for DEV-Environment. Will be automatically included based on TYPO3_CONTEXT.
-
-### _STAGE
-Configuration overrides for DEV-Environment. Will be automatically included based on TYPO3_CONTEXT.
+**NOTE: The file names of the files in the subfolders have to be preceded by a consecutive number (in steps of ten). This numbering determines the loading order of the files.**
 
 ### Config
 Contains all configuration concerning BE-Layouts, RTE, TCE, and basic configurations (e.g. baseURL)
@@ -43,13 +39,13 @@ Contains all configuration concerning BE-Layouts, RTE, TCE, and basic configurat
 Contains configurations for used extensions. The files here override existing extension settings.
 Please create a new file for each extension  (e.g. RkwSearch.ts)
 
-### Layouts
+### Layout
 Contains configuration concerning Body-Tag, CSS- and JS-Inclusion, paths to templates
 
 ### Marker
 Contains all configuration for markers/variables
 
-### Menu
+### Menus
 Contains all configuration for menus
 
 ### Special

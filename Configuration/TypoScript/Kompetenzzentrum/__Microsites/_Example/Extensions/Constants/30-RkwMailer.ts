@@ -1,9 +1,5 @@
 module.tx_rkwmailer {
 
-    view {
-        partialRootPath = fileadmin/templates/_EXAMPLE-MICROSITE_/html/Extensions/RkwMailer/Partials
-    }
-
     settings {
 
         // Page for redirect plugin
