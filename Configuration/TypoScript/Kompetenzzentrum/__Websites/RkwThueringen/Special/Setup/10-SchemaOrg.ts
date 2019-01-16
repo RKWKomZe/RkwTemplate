@@ -6,7 +6,7 @@ page {
 		variables  {
 
 			logoUrlSchemaOrg = TEXT
-			logoUrlSchemaOrg.value = {$globalWebsiteConfig.baseUrl}{$globalWebsiteConfig.templatePaths.default.images}/logo.svg
+			logoUrlSchemaOrg.value = {$plugin.tx_rkwtemplate_config.baseUrl}{$plugin.tx_rkwtemplate_config.paths.default.images}/logo.svg
 		}
 	}
 }

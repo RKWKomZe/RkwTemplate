@@ -1,47 +1,6 @@
 // ############################################################################
 // Global paths
 // ############################################################################
-globalWebsiteConfig {
-
-	templatePaths {
-		default {
-			templates = fileadmin/templates/wepstra/html/Main/Templates
-			partials = fileadmin/templates/wepstra/html/Main/Partials
-			layouts = fileadmin/templates/wepstra/html/Main/Layouts
-			css = fileadmin/templates/wepstra/css
-			images = fileadmin/templates/wepstra/images
-            icons = fileadmin/templates/kompetenzzentrum/images/icons/white
-            logos = fileadmin/templates/wepstra/images
-            js = fileadmin/templates/wepstra/js
-			specials = fileadmin/templates/wepstra/specials
-			lib = fileadmin/templates/wepstra/lib
-		}
-
-        extensions {
-            templates = fileadmin/templates/wepstra/html/Extensions
-            partials = fileadmin/templates/wepstra/html/Extensions
-            layouts = fileadmin/templates/wepstra/html/Extensions
-        }
-	}
-
-	breakpoints {
-		mobile = 320
-		tablet = 768
-		desktop = 1024
-
-	}
-
-	# IMPORTANT: With / at the end for ClickEnlarge
-	baseUrl = https://wepstra-app.rkw-kompetenzzentrum.de/
-    websiteName = RKW Kompetenzzentrum - Web-App Strategische Personalarbeit
-    websiteLogoFile = {$globalWebsiteConfig.templatePaths.default.logos}/logo.svg
-
-}
-
-
-// ############################################################################
-// Global paths
-// ############################################################################
 plugin.tx_rkwtemplate_config {
 
     paths {
@@ -108,13 +67,14 @@ plugin.tx_rkwtemplate_config {
     # cat=plugin.tx_rkwtemplate_config; type=string; label=baseUrl (With / at the end for ClickEnlarge)
     baseUrl = https://wepstra-app.rkw-kompetenzzentrum.de/
 
+
     website {
 
         # cat=plugin.tx_rkwtemplate_config; type=string; label=Name of website
         name = RKW Kompetenzzentrum - Web-App Strategische Personalarbeit
 
         # cat=plugin.tx_rkwtemplate_config/file; type=string; label=Logo of website (desktop-version)
-        logoFile = {$globalWebsiteConfig.templatePaths.default.logos}/logo.svg
+        logoFile = {$plugin.tx_rkwtemplate_config.paths.default.logos}/logo.svg
     }
 
 }

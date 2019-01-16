@@ -11,8 +11,10 @@ page {
             websiteName = {$plugin.tx_rkwtemplate_config.website.name}
             websiteLogoFile = {$plugin.tx_rkwtemplate_config.website.logoFile}
 
+            websiteName = TEST
+
+            websiteLogoFile = {$plugin.tx_rkwtemplate_config.website.logoFile}
 		}
 	}
-
 
 }
