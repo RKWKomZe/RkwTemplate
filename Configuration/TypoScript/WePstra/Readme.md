@@ -1,7 +1,7 @@
 # About this folder
 
 This folder contains all typoscripts and constants that are used in this website.
-It inherits the ```_CORE```- scripts.
+It inherits the ```_Core```- scripts.
 
 ## What you find here
 In this folder you find two main files:
@@ -9,12 +9,12 @@ In this folder you find two main files:
 - setup.ts (lowercase is obligatory in order to be loaded by TYPO3)
 
 This files are included in the TS-template settings of the TYPO3-Backend of the current project.
-The files are used as a container in order to inherit the settings from the "_CORE"-folder and
+The files are used as a container in order to inherit the settings from the "_Core"-folder and
 to override or extend them with further settings.
 
 Example:
 ```
-<INCLUDE_TYPOSCRIPT: source="FILE:../_CORE/Setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:../_Core/Setup.ts">
 
 <INCLUDE_TYPOSCRIPT: source="FILE:./Config/Setup.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:./Extensions/Setup.ts">
@@ -32,16 +32,16 @@ all setting-files of its corresponding subfolders
 
 **NOTE: The file names of the files in the subfolders have to be preceded by a consecutive number (in steps of ten). This numbering determines the loading order of the files.**
 
-### __Microsites
+### _Microsites
 Contains configurations for microsites that inherit the configuration of this site
 
-### __Websites
+### _Websites
 Contains configurations for websites that inherit the configuration of this site
 
-### _DEV
+### __DEV
 Configuration overrides for DEV-Environment. Will be automatically included based on TYPO3_CONTEXT.
 
-### _STAGE
+### __STAGE
 Configuration overrides for DEV-Environment. Will be automatically included based on TYPO3_CONTEXT.
 
 ### Config

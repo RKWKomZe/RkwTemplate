@@ -1,7 +1,7 @@
 # About this folder
 
 This folder contains the TsConfig- scripts for this website.
-It inherits the ```_CORE```- scripts.
+It inherits the ```_Core```- scripts.
 
 ## What you find here
 In this folder you find one main file:
@@ -19,10 +19,10 @@ Example:
 ## The subfolders
 **NOTE: The file names of the files in the subfolders have to be preceded by a consecutive number (in steps of ten). This numbering determines the loading order of the files.**
 
-### __Microsites
+### _Microsites
 Contains configurations for microsites that inherit the configuration of this site
 
-### __Websites
+### _Websites
 Contains configurations for websites that inherit the configuration of this site
 
 ### Config
