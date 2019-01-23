@@ -1,1 +1,0 @@
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:rkw_template/Configuration/TsConfig/Kompetenzzentrum/TsConfig.ts">
