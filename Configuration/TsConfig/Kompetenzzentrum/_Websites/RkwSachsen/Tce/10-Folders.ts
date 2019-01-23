@@ -1,0 +1,4 @@
+TCEFORM.pages.tx_rkwauthors_authorship.PAGE_TSCONFIG_IDLIST = 3233
+TCEFORM.tx_rkwevents_domain_model_event.internal_contact.PAGE_TSCONFIG_IDLIST = 3233
+TCEFORM.tx_rkwevents_domain_model_event.external_contact.PAGE_TSCONFIG_IDLIST = 3234
+TCEFORM.tx_rkwevents_domain_model_event.place.PAGE_TSCONFIG_IDLIST = 3234

@@ -1,0 +1,3 @@
+subNavConfig {
+    entryLevel = 0
+}

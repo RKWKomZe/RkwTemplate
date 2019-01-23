@@ -1,0 +1,103 @@
+{namespace rkwBasics=RKW\RkwBasics\ViewHelpers}
+
+<f:section name="Article">
+
+    <div class="sections narrow">
+
+        <!-- further boxes -->
+        <f:format.html parseFuncTSPath="">{boxContentArticles}</f:format.html>
+
+        <!-- alerts -->
+        <f:render partial="AlertsBox" arguments="{_all}"/>
+
+    </div>
+
+    <!-- comments -->
+    <f:comment>
+        <div class="comments">
+            <h4 class="section-header h2">
+                <f:translate key="LLL:EXT:rkw_template/Resources/Private/Language/Kompetenzzentrum/locallang.xlf:templates_article.commentsHeadline" />
+            </h4>
+
+            <f:format.html parseFuncTSPath="">{commentsBox}</f:format.html>
+        </div>
+    </f:comment>
+</f:section>
+
+<!-- ################################################################################# -->
+
+<f:section name="Topic">
+
+    <div class="sections">
+
+        <!-- cooperation boxes -->
+        <f:if condition="<rkwBasics:isEmpty string='{cooperationBoxes}' /> == 0" >
+            <f:format.html parseFuncTSPath="">{cooperationBoxes}</f:format.html>
+        </f:if>
+
+        <!-- prio- boxes -->
+        <f:format.html parseFuncTSPath="">{boxContentPrio}</f:format.html>
+
+        <!-- alerts -->
+        <f:render partial="AlertsBox" arguments="{_all}"/>
+
+        <!-- further boxes -->
+        <f:format.html parseFuncTSPath="">{boxContent}</f:format.html>
+
+        <!-- reference boxes -->
+        <f:if condition="<rkwBasics:isEmpty string='{logoBoxes}' /> == 0" >
+            <f:format.html parseFuncTSPath="">{logoBoxes}</f:format.html>
+        </f:if>
+    </div>
+
+</f:section>
+
+<!-- ################################################################################# -->
+
+<f:section name="Publications">
+
+    <div class="sections narrow">
+
+        <!-- further boxes -->
+        <f:format.html parseFuncTSPath="">{boxContentPublications}</f:format.html>
+
+        <!-- series boxes -->
+        <f:if condition="<rkwBasics:isEmpty string='{seriesBoxes}' /> == 0">
+            <section role="complementary" class="section" aria-labelledby="headline-series">
+                <h4 class="section-header h2" id="headline-series">
+                    <f:translate key="LLL:EXT:rkw_template/Resources/Private/Language/Kompetenzzentrum/locallang.xlf:templates_publications.headlineSeries" />
+                </h4>
+                <f:format.html parseFuncTSPath="">{seriesBoxes}</f:format.html>
+            </section>
+        </f:if>
+
+        <!-- alerts -->
+        <f:render partial="AlertsBox" arguments="{_all}"/>
+
+    </div>
+
+    <!-- comments -->
+    <f:comment>
+        <div class="comments">
+            <h4 class="section-header h2">
+                <f:translate key="LLL:EXT:rkw_template/Resources/Private/Language/Kompetenzzentrum/locallang.xlf:templates_article.commentsHeadline" />
+            </h4>
+
+            <f:format.html parseFuncTSPath="">{commentsBox}</f:format.html>
+        </div>
+    </f:comment>
+
+</f:section>
+
+<!-- ################################################################################# -->
+
+<f:section name="Special">
+
+    <div class="sections narrow">
+
+        <!-- further boxes -->
+        <f:format.html parseFuncTSPath="">{boxContent}</f:format.html>
+
+    </div>
+
+</f:section>

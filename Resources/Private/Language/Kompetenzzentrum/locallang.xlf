@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-02-19T11:21:59Z" product-name="rkwbasics">
+		<header/>
+		<body>
+
+
+			<!--Templates/Home -->
+			<trans-unit id="templates_home.labelSearch">
+				<source>Search</source>
+			</trans-unit>
+			<trans-unit id="templates_home.headlineNews">
+				<source>News from RKW Competence Center</source>
+			</trans-unit>
+            <trans-unit id="templates_home.headlineAlternativeNews">
+                <source>News</source>
+            </trans-unit>
+			<trans-unit id="templates_home.headlineDepartments">
+				<source>Our Topics</source>
+			</trans-unit>
+            <trans-unit id="templates_home.headlineContent">
+                <source>Why RKW?</source>
+            </trans-unit>
+
+
+
+			<!--Templates/Topic -->
+			<trans-unit id="templates_topic.headlineMoreInformation">
+				<source>More Information</source>
+			</trans-unit>
+
+
+
+			<!--Templates/Article -->
+			<trans-unit id="templates_article.imageResources">
+				<source>Image Resources</source>
+			</trans-unit>
+			<trans-unit id="templates_article.commentsHeadline">
+				<source>Comments</source>
+			</trans-unit>
+
+
+			<!--Templates/Publications -->
+			<trans-unit id="templates_publications.imageResources">
+				<source>Image Resources</source>
+				<target>Bildnachwweise</target>
+			</trans-unit>
+			<trans-unit id="templates_publications.headlineSeries">
+				<source>In this series</source>
+			</trans-unit>
+
+
+			<!-- Partials/Common/SocialMedia -->
+			<trans-unit id="partials_common_socialMedia.labelShare">
+				<source>Share</source>
+			</trans-unit>
+			<trans-unit id="partials_common_socialMedia.labelShareFacebook">
+				<source>Share on Facebook</source>
+			</trans-unit>
+			<trans-unit id="partials_common_socialMedia.labelShareTwitter">
+				<source>Share on Twitter</source>
+			</trans-unit>
+			<trans-unit id="partials_common_socialMedia.labelShareXing">
+				<source>Share on XING</source>
+			</trans-unit>
+
+
+			<!-- Partials/Common/PrintSave.html -->
+			<trans-unit id="partials_common_printSave">
+				<source>Print article or save for later</source>
+			</trans-unit>
+
+
+            <!-- Partials/Header -->
+            <trans-unit id="partials_header.labelHeader">
+                <source>Home-Link and main menu</source>
+            </trans-unit>
+            <trans-unit id="partials_header.labelHeaderMainWebsite">
+                <source>Open main website</source>
+            </trans-unit>
+            <trans-unit id="partials_header.labelMobileMenuOpenButton">
+                <source>Open main menu</source>
+            </trans-unit>
+            <trans-unit id="partials_header.labelMobileMenuCloseButton">
+                <source>Close main menu</source>
+            </trans-unit>
+            <trans-unit id="partials_header.labelMenuCloseButton">
+                <source>Close main menu</source>
+            </trans-unit>
+
+
+            <!-- Partials/KeyVisualHeadline -->
+            <trans-unit id="partials_keyVisualHeadline.labelChapter">
+                <source>Chapter</source>
+            </trans-unit>
+
+
+			<!-- Partials/InfoBox.html -->
+			<trans-unit id="partials_infoBox.labelAbstract">
+				<source>Abstract</source>
+			</trans-unit>
+			<trans-unit id="partials_infoBox.labelDate">
+				<source>Published</source>
+			</trans-unit>
+			<trans-unit id="partials_infoBox.labelMore">
+				<source>More Information</source>
+			</trans-unit>
+			<trans-unit id="partials_infoBox.labelPubYear">
+				<source>Year of Publication</source>
+			</trans-unit>
+			<trans-unit id="partials_infoBox.labelFilesize">
+				<source>Filesize</source>
+			</trans-unit>
+			<trans-unit id="partials_infoBox.labelAuthors">
+				<source>Authors</source>
+			</trans-unit>
+            <trans-unit id="partials_infoBox.labelProject">
+                <source>Project</source>
+            </trans-unit>
+            <trans-unit id="partials_infoBox.labelTableOfContents">
+                <source>Table of Contents</source>
+            </trans-unit>
+            <trans-unit id="partials_infoBox.labelPublication">
+                <source>Publication</source>
+            </trans-unit>
+
+
+
+			<!-- Partials/AlertsBox.html -->
+			<trans-unit id="partials_alertsBox.headline">
+				<source>Stay tuned</source>
+			</trans-unit>
+
+
+			<!-- Partials/Logo.html -->
+			<trans-unit id="partials_logo.homeLink">
+				<source>Home</source>
+			</trans-unit>
+
+
+			<!-- Partials/BrowserWarning -->
+			<trans-unit id="partials_browserWarning.warning">
+				<source><![CDATA[
+					Unfortunately our browser is outdated and not supported any more. Please use a modern browser instead, e.g. Chrome, Firefox, Safari or Internet Explorer (>= Version 11)
+				]]></source>
+			</trans-unit>
+
+
+            <!-- TypoScript -->
+            <trans-unit id="typoscript_readMore_previous">
+                <source>Previous Page</source>
+            </trans-unit>
+            <trans-unit id="typoscript_readMore_previousShort">
+                <source>Back</source>
+            </trans-unit>
+            <trans-unit id="typoscript_readMore_next">
+                <source>Next Page</source>
+            </trans-unit>
+            <trans-unit id="typoscript_readMore_nextShort">
+                <source>Next</source>
+            </trans-unit>
+
+		</body>
+	</file>
+</xliff>
