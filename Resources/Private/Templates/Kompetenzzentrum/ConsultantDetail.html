@@ -1,0 +1,73 @@
+{namespace rkwBasics=RKW\RkwBasics\ViewHelpers}
+
+<f:layout name="{pageLayoutSwitch}" />
+
+<f:section name="content">
+
+    <!-- top-menu -->
+    <f:comment>
+        <f:render partial="SubNav" section="Default" arguments="{_all}"/>
+    </f:comment>
+    <p>&nbsp;</p>
+
+
+    <div class="page-area-grid">
+
+        <!-- main part -->
+        <div class="article">
+
+            <div class="project-article" aria-labelledby="article-headline">
+
+                <!-- header -->
+                <header class="content-box content article-header wysiwyg" id="article-headline">
+                    <f:if condition="{consultantCompany}">
+                        <f:then>
+                            <h1><f:format.html parseFuncTSPath="">{consultantCompany}</f:format.html></h1>
+                        </f:then>
+                        <f:else>
+                            <h1>{pageTitle}</h1>
+                        </f:else>
+                    </f:if>
+                    <f:if condition="{pageSubTitle}">
+                        <h2>{pageSubTitle}</h2>
+                    </f:if>
+
+                </header>
+
+                <!-- GoogleMaps -->
+                <f:if condition="{consultantMaps}">
+                    <f:format.html parseFuncTSPath="">{consultantMaps}</f:format.html>
+                </f:if>
+
+                <!-- consultant overview with download files -->
+                <f:format.html parseFuncTSPath="">{consultantInfo}</f:format.html>
+
+                <div class="content-box content wysiwyg">
+
+                    <!-- content -->
+                    <f:format.html parseFuncTSPath="">{content}</f:format.html>
+
+                </div>
+
+                <footer class="article-footer">
+
+                    <!-- print and save -->
+                    <f:render partial="Common/Print" arguments="{_all}"/>
+
+                    <!-- social media -->
+                    <f:render partial="Common/SocialMedia" arguments="{_all}"/>
+                </footer>
+            </div>
+
+            <!-- gallery -->
+            <f:format.html parseFuncTSPath="">{consultantGallery}</f:format.html>
+
+        </div>
+
+        <!-- related -->
+        <f:format.html parseFuncTSPath="">{relatedBoxes}</f:format.html>
+
+    </div>
+
+</f:section>
+

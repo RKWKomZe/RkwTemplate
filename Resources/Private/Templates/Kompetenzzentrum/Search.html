@@ -1,0 +1,27 @@
+<f:layout name="{pageLayoutSwitch}" />
+
+<f:section name="content">
+
+    <!-- top-menu -->
+    <f:render partial="SubNav" section="Default" arguments="{_all}"/>
+
+    <!-- key-visual and slogan -->
+    <f:render partial="KeyVisualHeadline" section="Default" arguments="{_all}"/>
+
+    <!-- abstract -->
+    <f:comment>
+        <f:if condition="{pageAbstract}">
+            <section class="home__aufgabe">
+                <p class="home__text">
+                    {pageAbstract}
+                </p>
+            </section>
+        </f:if>
+    </f:comment>
+
+    <!-- search box -->
+	<section aria-labelledby="article-headline" role="search">
+		<f:format.html parseFuncTSPath="">{pluginOnly}</f:format.html>
+	</section>
+
+</f:section>

@@ -1,0 +1,59 @@
+<f:section name="Default">
+
+	<script type="application/ld+json">
+	{
+		"@context": "http://schema.org",
+		"@type": "Article",
+		"author":
+		[
+			<f:format.raw>{pageAuthorsSchemaOrg}</f:format.raw>
+		],
+		"headline": "<f:format.raw>{pageTitle}</f:format.raw>",
+		"articleBody" : "<f:format.htmlspecialchars><f:format.htmlentitiesDecode><f:format.stripTags ><f:if condition="{content}"><f:then>{content}</f:then><f:else>{pageAbstractInherit}</f:else></f:if></f:format.stripTags></f:format.htmlentitiesDecode></f:format.htmlspecialchars>",
+		"description" : "<f:format.htmlspecialchars><f:format.htmlentitiesDecode>{descriptionSchemaOrg}</f:format.htmlentitiesDecode></f:format.htmlspecialchars>",
+		"datePublished": "<f:format.date format="Y-m-d">{importParentPagePubDate}</f:format.date>",
+		"dateModified": "<f:format.date format="Y-m-d">{dateModified}</f:format.date>",
+		"image" : "<f:format.raw>{headerImageSchemaOrg}</f:format.raw>",
+		"url" : "{f:cObject(typoscriptObjectPath: 'plugin.tx_rkwbasics.libs.canonical.10')}",
+		"copyrightHolder" : {
+			"@type" : "Organization",
+			"name" : "<f:format.raw>{settings.websiteName}</f:format.raw>"
+		},
+		"publisher" : {
+			"@type" : "Organization",
+			"name" : "<f:format.raw>{settings.websiteName}</f:format.raw>",
+			"logo" : "<f:format.raw>{logoUrlSchemaOrg}</f:format.raw>"
+		}
+	}
+	</script>
+</f:section>
+
+<f:section name="Publications">
+
+	<script type="application/ld+json">
+	{
+		"@context": "http://schema.org",
+		"@type": "Article",
+		"author":
+		[
+			<f:format.raw>{pageAuthorsSchemaOrg}</f:format.raw>
+		],
+		"headline": "<f:if condition="{isImportSubPage} == 1"><f:then>{importParentPageTitle} - {pageTitle}</f:then><f:else>{importParentPageTitle}</f:else></f:if>",
+		"articleBody" : "<f:format.htmlspecialchars><f:format.htmlentitiesDecode><f:format.stripTags ><f:if condition="{content}"><f:then>{content}</f:then><f:else>{pageAbstractInherit}</f:else></f:if></f:format.stripTags></f:format.htmlentitiesDecode></f:format.htmlspecialchars>",
+		"description" : "<f:format.htmlspecialchars><f:format.htmlentitiesDecode>{descriptionSchemaOrg}</f:format.htmlentitiesDecode></f:format.htmlspecialchars>",
+		"datePublished": "<f:format.date format="Y-m-d">{importParentPagePubDate}</f:format.date>",
+		"dateModified": "<f:format.date format="Y-m-d">{dateModified}</f:format.date>",
+		"image" : "<f:format.raw>{headerImageSchemaOrg}</f:format.raw>",
+		"url" : "{f:cObject(typoscriptObjectPath: 'plugin.tx_rkwbasics.libs.canonical.10')}",
+		"copyrightHolder" : {
+			"@type" : "Organization",
+			"name" : "<f:format.raw>{settings.websiteName}</f:format.raw>"
+		},
+		"publisher" : {
+			"@type" : "Organization",
+			"name" : "<f:format.raw>{settings.websiteName}</f:format.raw>",
+			"logo" : "<f:format.raw>{logoUrlSchemaOrg}</f:format.raw>"
+		}
+	}
+	</script>
+</f:section>

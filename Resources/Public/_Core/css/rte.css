@@ -1,0 +1,57 @@
+@CHARSET "UTF-8";
+/****************************************************************************************
+# Default css file for content edited with htmlArea RTE
+#
+# Defines a few class selectors that can be simply taken as examples by anyone who needs to configure the RTE.
+# This css file is referenced by property RTE.default.contentCSS in the default configuration of htmlArea RTE.
+# ***************************************************************************************/
+
+/* 	Reset - has to be set with !important in most cases */
+* { margin: 0; padding: 0;}
+body, table, table td, table th  { color: #000000; font: 12px/14px "Arial", "Helvetica", sans-serif !important;  }
+table, table td, table th { font-size:12px !important;}
+p, ul, ol, dl { margin-bottom: 1em; }
+ul, ol { margin-left: 0; padding-left: 2em;  }
+li ul, li ol { margin-bottom: 0}
+h1, h2, h3, h4, h5, h6 {color: #000000; margin-bottom:1em;}
+table {border-collapse: collapse;}
+img { border: none; vertical-align: bottom; }
+a { color: #000000;  text-decoration: none; outline: none; cursor: pointer; font-weight:normal; }
+a:hover { text-decoration: underline; }
+
+/* Left, center, right and justify alignment of text in block elements*/
+p.align-left, td.align-left, th.align-left, h1.align-left, h2.align-left, h3.align-left, h4.align-left, h5.align-left, h6.align-left, div.align-left, address.align-left { text-align: left; }
+p.align-center, td.align-center, th.align-center, h1.align-center, h2.align-center, h3.align-center, h4.align-center, h5.align-center, h6.align-center, div.align-center, address.align-center { text-align: center; }
+p.align-right, td.align-right, th.align-right, h1.align-right, h2.align-right, h3.align-right, h4.align-right, h5.align-right, h6.align-right, div.align-right, address.align-right { text-align: right; }
+p.align-justify, td.align-justify, th.align-justify, h1.align-justify, h2.align-justify, h3.align-justify, h4.align-justify, h5.align-justify, h6.align-justify, div.align-justify, address.align-justify { text-align: justify; }
+
+/* 	Headlines  */
+h1 { }
+h2 { }
+h3 { }
+h4 { }
+h5 { }
+h6 { }
+
+/* Tables */
+table { margin-bottom:1em; }
+table.contenttable, table.contenttable td { padding:0;  border: 1px solid #333333; border-collapse:collapse; }
+table.contenttable td { padding: 2px; }
+table.contenttable-1, table.contenttable-1 td { padding: 0; border: 1px solid #333333; border-collapse:collapse;}
+table.contenttable-1 td { padding: 2px;  }
+table.contenttable-1 tr.even { background-color:#EFEFEF;}
+
+/* Selectors for the default configuration of the link accessibity feature.*/
+a.external-link {}
+a.external-link-new-window {}
+a.internal-link {}
+a.internal-link-new-window {}
+a.download {}
+a.mail {}
+
+/* Default selector for indentation.*/
+.indent { margin-left: 2em; }
+
+/* Highlighting for special elements */
+section { border: 1px dotted #333333}
+header,footer { background-color: #EFEFEF }
