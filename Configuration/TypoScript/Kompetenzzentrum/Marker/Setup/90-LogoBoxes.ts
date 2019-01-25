@@ -112,7 +112,7 @@ page {
                                             title.field = header
                                             title.override.field = tx_rkwbasics_header_link_caption
                                             ATagParams = class="box partner" rel="nofollow"
-                                            userFunc = Typolink->getParsedLink
+                                            userFunc = RKW\RkwEtracker\UserFunctions\Typolink->getParsedLink
                                         }
                                     }
 

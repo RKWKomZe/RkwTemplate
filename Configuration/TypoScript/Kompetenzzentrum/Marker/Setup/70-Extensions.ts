@@ -318,6 +318,7 @@ page {
             //=================================================================
             // add the add-to-watchlist- button on each page
             //=================================================================
+            /*
             addToWatchlist = USER
             addToWatchlist {
                 userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
@@ -337,6 +338,7 @@ page {
                 persistence =< plugin.tx_rkwwatchlist.persistence
                 settings =< plugin.tx_rkwwatchlist.settings
             }
+            */
 
             //=================================================================
             // Info-Overlay
