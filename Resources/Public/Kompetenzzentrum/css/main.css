@@ -830,6 +830,12 @@ body.search {
   .page-grid--4 .related-box {
     width: 336px; } }
 
+body.project--full .article {
+  width: 100%; }
+
+body.project--full .related-box {
+  display: none; }
+
 /*
    =================================================
    Form grid
@@ -2811,8 +2817,11 @@ label.form-label {
   } */ }
   .typo3-messages .alert-danger {
     color: red; }
+  .typo3-messages .alert-message,
   .typo3-messages .typo3-message {
     font-size: 80% !important; }
+  .typo3-messages ol, .typo3-messages ul {
+    margin-bottom: 0; }
 
 /*
 .content-box .typo3-messages:last-child {
@@ -2823,7 +2832,8 @@ select.f3-form-error,
 input.f3-form-error {
   outline: none;
   border-color: red !important;
-  box-shadow: 0 0 10px red; }
+  box-shadow: 0 0 10px red;
+  background-color: transparent; }
 
 .alternative-logins {
   display: -ms-flexbox;

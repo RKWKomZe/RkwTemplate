@@ -70,6 +70,11 @@ page {
                 value = {$plugin.tx_rkwtemplate_config.paths.default.templates}/Map.html
             }
 
+            12 = TEXT
+            12 {
+                value = {$plugin.tx_rkwtemplate_config.paths.default.templates}/Article.html
+            }
+
             100 = TEXT
             100 {
                 value = {$plugin.tx_rkwtemplate_config.paths.default.templates}/ConsultantDetail.html

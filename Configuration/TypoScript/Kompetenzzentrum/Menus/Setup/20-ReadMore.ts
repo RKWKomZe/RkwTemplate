@@ -163,7 +163,7 @@ page {
                     10 = TEXT
                     10 {
 
-                        value = {LLL:fileadmin/templates/kompetenzzentrum/translations/locallang.xlf:typoscript_readMore_previous}
+                        value = {LLL:EXT:rkw_template/Resources/Private/Language/Kompetenzzentrum/locallang.xlf:typoscript_readMore_previous}
                         insertData = 1
                         stdWrap {
 
@@ -201,7 +201,7 @@ page {
 
                     20 = TEXT
                     20 {
-                        value = {LLL:fileadmin/templates/kompetenzzentrum/translations/locallang.xlf:typoscript_readMore_next}
+                        value = {LLL:EXT:rkw_template/Resources/Private/Language/Kompetenzzentrum/locallang.xlf:typoscript_readMore_next}
                         insertData = 1
                         stdWrap {
 
@@ -225,8 +225,8 @@ page {
 				}
 
                 20 < .10
-                20.10.value = {LLL:fileadmin/templates/kompetenzzentrum/translations/locallang.xlf:typoscript_readMore_previousShort}
-                20.20.value = {LLL:fileadmin/templates/kompetenzzentrum/translations/locallang.xlf:typoscript_readMore_nextShort}
+                20.10.value = {LLL:EXT:rkw_template/Resources/Private/Language/Kompetenzzentrum/locallang.xlf:typoscript_readMore_previousShort}
+                20.20.value = {LLL:EXT:rkw_template/Resources/Private/Language/Kompetenzzentrum/locallang.xlf:typoscript_readMore_nextShort}
                 20.wrap = <div class="mobile-text">|</div>
 
 
