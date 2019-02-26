@@ -81,6 +81,11 @@ page {
                 value = page-map
             }
 
+            12 = TEXT
+            12 {
+                value =  project project--full
+            }
+
             200 = TEXT
             200 {
                 value =

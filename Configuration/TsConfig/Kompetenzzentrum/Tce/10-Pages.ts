@@ -26,6 +26,7 @@ TCEFORM.pages {
         addItems.9 = Blog Startseite
         addItems.10 = Broken Link
         addItems.11 = RKW Karte
+        addItems.12 = Tools
         addItems.100 = Berater Detailseite
         addItems.200 = Experten Listenansicht
         addItems.210 = Experten Detailseite
@@ -52,6 +53,7 @@ TCEFORM.pages {
         addItems.9 = Blog Startseite
         addItems.10 = Broken Link
         addItems.11 = RKW Karte
+        addItems.12 = Tools
         addItems.100 = Berater Detailseite
         addItems.200 = Experten Listenansicht
         addItems.210 = Experten Detailseite
