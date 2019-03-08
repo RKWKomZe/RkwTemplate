@@ -132,7 +132,18 @@
         </f:else>
     </f:if>
 
+</f:section>
 
+<!-- ###################################################################################### -->
 
+<f:section name="Tools">
+
+    <!-- title -->
+    <header class="content-box content article-header wysiwyg">
+        <h1 id="article-headline"><f:format.raw><f:format.crop maxCharacters="100" respectWordBoundaries="false">{pageTitle}</f:format.crop></f:format.raw></h1>
+        <f:if condition="{pageSubTitle}">
+            <h2><f:format.crop maxCharacters="150" respectWordBoundaries="false"><f:format.raw>{pageSubTitle}</f:format.raw></f:format.crop></h2>
+        </f:if>
+    </header>
 
 </f:section>

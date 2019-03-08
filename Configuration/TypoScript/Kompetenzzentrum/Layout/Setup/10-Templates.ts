@@ -72,7 +72,7 @@ page {
 
             12 = TEXT
             12 {
-                value = {$plugin.tx_rkwtemplate_config.paths.default.templates}/Article.html
+                value = {$plugin.tx_rkwtemplate_config.paths.default.templates}/Tools.html
             }
 
             100 = TEXT
