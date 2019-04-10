@@ -19,7 +19,7 @@ page {
             25 = TEXT
             25 {
 
-                value = example.de
+                value = digiscouts.de
                 stdWrap.noTrimWrap = | - ||
             }
 

@@ -1,4 +1,4 @@
 boxesTopicsTaskConfig {
-    pid = 4367
+    pid = 5027
     topicHeadline = Schnelleinstieg
 }
