@@ -3,13 +3,13 @@ module.tx_rkwmailer {
     settings {
 
         // Page for redirect plugin
-        redirectPid = 3779
+        redirectPid = 5084
 
         // Link plugin for pixel counter (HTML-mails only)
-        counterPixelPid = 3779
+        counterPixelPid = 5084
 
         // URL for hard-links in templates
-        baseUrl = https://www.rkw-thueringen.de
+        baseUrl = https://www.rkw-bw.de
 
     }
 }
