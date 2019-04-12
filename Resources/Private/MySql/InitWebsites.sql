@@ -7,7 +7,8 @@ SET @domain = 'bawue.rkw-kompetenzzentrum.de';
 SET @media_path = '/media_bawue/';
 SET @basic_layout_be = 'pagets__topicPages';
 SET @basic_layout_fe = 3;
-
+SET @google_api_key = '';
+SET @google_api_key_js = '';
 
 -- =================================================
 -- =================================================
@@ -17,7 +18,7 @@ SET @basic_layout_fe = 3;
 
 -- =================================================
 SET @sys_template_include_static_file = CONCAT ('EXT:css_styled_content/static/,EXT:rtehtmlarea/static/clickenlarge/,EXT:bm_pdf2content/Configuration/TypoScript,EXT:rkw_basics/Configuration/TypoScript,EXT:rkw_authors/Configuration/TypoScript,EXT:rkw_projects/Configuration/TypoScript,EXT:rkw_registration/Configuration/TypoScript,EXT:rkw_info_layer/Configuration/TypoScript,EXT:rkw_mailer/Configuration/TypoScript,EXT:rkw_geolocation/Configuration/TypoScript,EXT:rkw_events/Configuration/TypoScript,EXT:rkw_etracker/Configuration/TypoScript,EXT:rkw_related/Configuration/TypoScript,EXT:rkw_webcheck/Configuration/TypoScript,EXT:rkw_tools/Configuration/TypoScript,EXT:rkw_survey/Configuration/TypoScript,EXT:rkw_newsletter/Configuration/TypoScript,EXT:rkw_template/Configuration/TypoScript/Kompetenzzentrum/_Websites/', @configuration_name);
-SET @sys_template_constants = '#=====================================================================\r\n# Security relevant setups!\r\nplugin.tx_rkwgeolocation {\r\n\r\n  settings {\r\n    googleApiKey = AIzaSyDE8BBsLGLHGCjxgfJblMejtZ6mBXiyBXA\r\n    googleApiKeyJs = AIzaSyAl3xMy45BtVyKiwnuy68cIOwi6VdjvZec\r\n  }\r\n}\r\n\r\n\r\n#=====================================================================\r\nplugin.tx_rkwetracker {\r\n  settings {\r\n    apiEmail = \r\n    apiPassword = \r\n    apiToken = \r\n    apiAccountId = \r\n    \r\n    secureCode = 12345\r\n    \r\n    singleSignOnAccountId = \r\n    singleSignOnPassword = \r\n   \r\n    singleSignOnAllowedIps = 127.0.0.1, 195.63.251.130\r\n\r\n  }\r\n}\r\n';
+SET @sys_template_constants = CONCAT ('#=====================================================================\r\n# Security relevant setups!\r\nplugin.tx_rkwgeolocation {\r\n\r\n  settings {\r\n    googleApiKey = ', @google_api_key, '\r\n    googleApiKeyJs = ', @google_api_key_js, '\r\n  }\r\n}\r\n\r\n\r\n#=====================================================================\r\nplugin.tx_rkwetracker {\r\n  settings {\r\n    apiEmail = \r\n    apiPassword = \r\n    apiToken = \r\n    apiAccountId = \r\n    \r\n    secureCode = 12345\r\n    \r\n    singleSignOnAccountId = \r\n    singleSignOnPassword = \r\n   \r\n    singleSignOnAllowedIps = 127.0.0.1, 195.63.251.130\r\n\r\n  }\r\n}\r\n');
 SET @sys_template_setup = '';
 SET @ts_config = '';
 SET @ts_config_includes = CONCAT ('EXT:rkw_template/Configuration/TsConfig/Kompetenzzentrum/_Websites/', @configuration_name, '/TsConfig.ts');
