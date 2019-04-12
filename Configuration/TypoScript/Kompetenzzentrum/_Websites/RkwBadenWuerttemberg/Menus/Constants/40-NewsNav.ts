@@ -1,3 +1,3 @@
 newsNavConfig {
-    pid = 3629
+    pid = 5090
 }

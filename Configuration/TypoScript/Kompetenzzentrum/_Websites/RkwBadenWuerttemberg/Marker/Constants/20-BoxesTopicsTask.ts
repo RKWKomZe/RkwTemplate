@@ -1,4 +1,4 @@
 boxesTopicsTaskConfig {
-    pid = 3595
+    pid = 5062
     topicHeadline = Unsere Schwerpunkte
 }

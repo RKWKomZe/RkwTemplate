@@ -22,7 +22,7 @@ page {
 
 
             // change domain at the end
-            25.10.conf.tx_rkwbasics_domain_model_department.20.value = example.com
+            25.10.conf.tx_rkwbasics_domain_model_department.20.value = rkw-bw.de
 
         }
 

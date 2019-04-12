@@ -3,30 +3,30 @@ plugin.tx_rkwevents {
 
 	persistence {
 		// cat=plugin.tx_rkwevents; type=integer; label=Default storage PID
-		storagePid = 3621,4244
+		storagePid = 5088
 	}
 	settings {
 
 		// cat=plugin.tx_rkwevents; type=integer; label=PID for list view
-		listPid = 3599
+		listPid = 5066
 
 		// cat=plugin.tx_rkwevents; type=integer; label=PID for detail view
-		showPid = 3605
+		showPid = 5072
 
 		// cat=plugin.tx_rkwevents; type=integer; label=PID for create new reservation
-		reservationPid = 3607
+		reservationPid = 5074
 
 		// cat=plugin.tx_rkwevents; type=integer; label=PID for terms and conditions (AGB)
-		termsPid = 3614
+		termsPid = 5081
 
 		// cat=plugin.tx_rkwevents; type=integer; label=PID for terms and conditions (AGB)
-		terms2Pid = 3613
+		terms2Pid = 5080
 
 		// cat=plugin.tx_rkwevents; type=integer; label=PID for gallery and sheets for event view
-		sheetsForEventPid = 3605
+		sheetsForEventPid = 5072
 
 		// cat=plugin.tx_rkwevents; type=integer; label=PID for archive list
-		archivePid = 3606
+		archivePid = 5073
 	}
 }
 

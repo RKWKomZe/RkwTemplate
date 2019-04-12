@@ -1,4 +1,4 @@
 boxesRightColConfig {
-    relatedPid = 4367
+    relatedPid = 5043
     relatedEvents =
 }

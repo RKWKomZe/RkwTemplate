@@ -1,25 +1,16 @@
 module.tx_rkwmailer {
 
-    view {
-        partialRootPath = fileadmin/templates/_EXAMPLE-WEBSITE_/html/Extensions/RkwMailer/Partials
-    }
-
     settings {
 
         // Page for redirect plugin
-        redirectPid = 3617
+        redirectPid = 5084
 
         // Link plugin for pixel counter (HTML-mails only)
-        counterPixelPid = 3617
+        counterPixelPid = 5084
 
         // URL for hard-links in templates
-        baseUrl = https://www.rkw-nord.de
+        baseUrl = https://www.rkw-bw.de
 
-        // Path for images in templates
-        basePathImages = fileadmin/templates/_EXAMPLE-WEBSITE_/images/emails
-
-        // Path for logo in templates
-        basePathLogo = fileadmin/templates/_EXAMPLE-WEBSITE_/images/logos/logo-emails.png
     }
 }
 
