@@ -12,7 +12,7 @@ plugin.tx_rkwtemplate_config {
 
     # cat=plugin.tx_rkwtemplate_config; type=string; label=baseUrl (With / at the end for ClickEnlarge)
     # baseUrl = http://www.ecostep-online.de
-    baseUrl = http://ecostep.rkw-kompetenzzentrum.de
+    baseUrl = https://ecostep.rkw-kompetenzzentrum.de
 
     website {
 
