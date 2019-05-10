@@ -11,7 +11,7 @@ plugin.tx_rkwtemplate_config {
     }
 
     # cat=plugin.tx_rkwtemplate_config; type=string; label=baseUrl (With / at the end for ClickEnlarge)
-    baseUrl = https://gem.rkw-kompetenzzentrum.de.de/
+    baseUrl = https://gem.rkw-kompetenzzentrum.de/
 
     website {
 
