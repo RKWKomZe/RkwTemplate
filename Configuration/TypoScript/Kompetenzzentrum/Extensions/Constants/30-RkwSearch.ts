@@ -9,7 +9,8 @@ plugin.tx_rkwsearch {
         import {
 
             // cat=plugin.tx_rkwsearch; type=string; label=Comma-separated list of PIDs. All objects that are in the rootline of this pages will be imported
-            rootPages = 1,11
+            rootPages = 1,132,137,2109,2699,139,133
+            // rootPages = 1,11
         }
 
 		search {
