@@ -46,7 +46,7 @@ page {
                             typolink {
                                 parameter.field = header_link
                                 ATagParams = class="box"
-                                userFunc = RKW\RkwEtracker\UserFunctions\Typolink->getParsedLink
+                                userFunc = RKW\RkwEtracker\UserFunctions\Typolink->getParsedLinkWithDataAttributes
                             }
                         }
                     }
