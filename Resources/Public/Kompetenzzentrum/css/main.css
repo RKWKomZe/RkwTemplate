@@ -9356,7 +9356,7 @@ body.topic-4 .accordion--styled .accordion-trigger {
 .order-list {
   margin: 0;
   padding: 0;
-  margin-top: 32px; }
+  margin-top: 16px; }
   .order-list__item {
     display: -ms-flexbox;
     display: flex;
@@ -9415,10 +9415,14 @@ body.topic-4 .accordion--styled .accordion-trigger {
       .order-list__subtitle {
         font-size: 16px;
         line-height: 24px; } }
-  .order-list__belongs {
+  .order-list__status, .order-list__belongs {
     font-family: "ff-tisa-sans-web-pro", "Arial", "Tahoma", "Verdana", sans-serif;
     color: #808080;
     font-size: 80%; }
+  .order-list__status {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 12px; }
   .order-list__contents {
     margin-bottom: 16px; }
     .order-list__contents span {
@@ -9439,6 +9443,23 @@ body.topic-4 .accordion--styled .accordion-trigger {
     height: 35px;
     line-height: 12px;
     margin-right: 8px; }
+
+body.topic-1 .order-list__status--warn {
+  color: #e64415;
+  font-weight: bold;
+  margin-bottom: 12px; }
+
+body.topic-2 .order-list__status--warn {
+  color: #74b929; }
+
+body.topic-3 .order-list__status--warn {
+  color: #009fee; }
+
+body.topic-4 .order-list__status--warn {
+  color: #c6007b; }
+
+body.project-aprodi .order-list__status--warn--warn {
+  color: #0075aa; }
 
 .container {
   *zoom: 1;
