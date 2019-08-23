@@ -10017,8 +10017,7 @@ body.publication {
     body.publication .publications-article__image {
       z-index: 2;
       display: block;
-      -webkit-filter: blur(4px);
-              filter: blur(4px);
+      filter: blur(4px);
       transform: scale(1.05); }
       body.publication .publications-article__image--hidden {
         display: none; }

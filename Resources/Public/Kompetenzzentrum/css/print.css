@@ -1413,6 +1413,11 @@ span.checkbox {
     font-family: "ff-tisa-web-pro", "Times New Roman", "Times", serif;
     font-size: 20px;
     font-weight: 400; }
+    @media (max-width: 1024px) {
+      span.radio label,
+      span.checkbox label {
+        font-size: 16px;
+        line-height: 24px; } }
   span.radio .jcf-radio,
   span.radio .jcf-checkbox,
   span.checkbox .jcf-radio,
