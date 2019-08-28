@@ -7,7 +7,7 @@ page {
         // Set CSS-Class fixed on project
         30 = TEXT
         30 {
-            value = project-digiscouts
+            value = project-digiscouts topic-4
             stdWrap.noTrimWrap = | ||
         }
     }
