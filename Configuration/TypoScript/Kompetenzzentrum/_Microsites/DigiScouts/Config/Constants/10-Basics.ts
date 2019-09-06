@@ -11,7 +11,7 @@ plugin.tx_rkwtemplate_config {
     }
 
     # cat=plugin.tx_rkwtemplate_config; type=string; label=baseUrl (With / at the end for ClickEnlarge)
-    baseUrl = https://digiscouts.rkw-kompetenzzentrum.de/
+    baseUrl = https://www.digiscouts.de/
 
     website {
 
