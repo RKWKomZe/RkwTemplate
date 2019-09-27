@@ -95,6 +95,8 @@ plugin.tx_rkwtemplate_config {
         # cat=plugin.tx_rkwtemplate_config/file; type=string; label=Broken link logo of website
         logoBrokenLinkFile = {$plugin.tx_rkwtemplate_config.paths.default.logos}/broken-link.png
 
+        # cat=plugin.tx_rkwtemplate_config; type=string; label=Link on logo
+        logoUrl = /
     }
 
 

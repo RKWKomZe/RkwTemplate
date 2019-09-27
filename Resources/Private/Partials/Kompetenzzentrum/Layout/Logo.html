@@ -1,7 +1,7 @@
 
 <f:section name="Default">
     <figure class="content-page__logo-container">
-        <a href="/" title="<f:translate key='LLL:EXT:rkw_template/Resources/Private/Language/Kompetenzzentrum/locallang.xlf:partials_logo.homeLink' />">
+        <a href="{settings.websiteLogoUrl}" title="<f:translate key='LLL:EXT:rkw_template/Resources/Private/Language/Kompetenzzentrum/locallang.xlf:partials_logo.homeLink' />">
             <img src="{settings.websiteLogoFile}" alt="{settings.websiteName}" class="content-page__logo">
         </a>
     </figure>
@@ -13,7 +13,7 @@
 <f:section name="Microsite">
 
     <figure class="content-page__logo-container content-page__logo-container--microsite">
-        <a href="/" title="<f:translate key='LLL:EXT:rkw_template/Resources/Private/Language/Kompetenzzentrum/locallang.xlf:partials_logo.homeLink' />">
+        <a href="{settings.websiteLogoUrl}" title="<f:translate key='LLL:EXT:rkw_template/Resources/Private/Language/Kompetenzzentrum/locallang.xlf:partials_logo.homeLink' />">
             <img src="{settings.websiteLogoFile}" alt="{settings.websiteName}" class="content-page__logo content-page__logo--desktop">
             <f:if condition="{settings.micrositeLogoTabletFile}">
                 <f:then>

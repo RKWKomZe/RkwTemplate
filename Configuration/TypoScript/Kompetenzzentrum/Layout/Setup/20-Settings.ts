@@ -14,6 +14,7 @@ page {
             websiteLogoOffcanvasFile = {$plugin.tx_rkwtemplate_config.website.logoOffcanvasFile}
             websiteLogoOffcanvasIconOnlyFile = {$plugin.tx_rkwtemplate_config.website.logoOffcanvasIconOnlyFile}
             websiteLogoBrokenLinkFile = {$plugin.tx_rkwtemplate_config.website.logoBrokenLinkFile}
+            websiteLogoUrl = {$plugin.tx_rkwtemplate_config.website.logoUrl}
 
             micrositeLogoTabletFile = {$plugin.tx_rkwtemplate_config.microsite.logoTabletFile}
             micrositeTextVertical = {$plugin.tx_rkwtemplate_config.microsite.textVertical}
