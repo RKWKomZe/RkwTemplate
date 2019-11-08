@@ -1,4 +1,4 @@
-TxRkwRssPage {
+txRkwRssPage {
 
 	config {
 
@@ -7,4 +7,4 @@ TxRkwRssPage {
 	}
 }
 
-TxRkwRssInstantArticles.config.absRefPrefix < TxRkwRssPage.config.absRefPrefix
+txRkwRssInstantArticles.config.absRefPrefix < txRkwRssPage.config.absRefPrefix
