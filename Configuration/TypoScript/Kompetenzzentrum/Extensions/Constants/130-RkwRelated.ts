@@ -2,7 +2,7 @@ module.tx_rkwrelated {
 
     settings {
         # cat=plugin.tx_rkwrelated; type=string; label=List of PIDs whose cache is to delete, when contents are saved
-        clearCachePageList = 1,3757,4425
+        clearCachePageList = 1, 3561, 158, 378, 3795, 3595, 3471, 3757
     }
 }
 
@@ -14,7 +14,7 @@ plugin.tx_rkwrelated_similarcontent {
         startingPid =
 
         # cat=plugin.tx_rkwrelated_morecontent//f; type=string; label=PIDs to include in list (comma separated)
-        startingPidList = 1, 3595, 3471, 3757
+        startingPidList = 1, 3561, 158, 378, 3795, 3595, 3471, 3757
 
         # cat=plugin.tx_rkwrelated_similarcontent//a; type=float; label=Items per hundred signs
         itemsPerHundredSigns = 0.30
@@ -47,7 +47,7 @@ plugin.tx_rkwrelated_morecontent {
         startingPid =
 
         # cat=plugin.tx_rkwrelated_morecontent//f; type=string; label=PIDs to include in list (comma separated)
-        startingPidList = 1, 3595, 3471, 3757
+        startingPidList = 1, 3561, 158, 378, 3795, 3595, 3471, 3757
 
         # cat=plugin.tx_rkwrelated_morecontent//a; type=integer; label=Default header text cropping
         headerCrop = 60
