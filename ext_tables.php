@@ -4,6 +4,10 @@ defined('TYPO3_MODE') || die('Access denied.');
 call_user_func(
     function($extKey)
     {
+
+        //=================================================================
+        // Add TypoScript
+        //=================================================================
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Configuration/TypoScript/_Core', 'RKW Template: Core only');
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Configuration/TypoScript/Kompetenzzentrum', 'RKW Template: Kompetenzzentrum');
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Configuration/TypoScript/Kompetenzzentrum/_Microsites/Aprodi', 'RKW Template/Microsite KomZe: Aprodi');
