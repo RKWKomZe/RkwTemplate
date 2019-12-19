@@ -33,7 +33,7 @@ plugin.tx_rkwnewsletter {
         subscriptionPid = 4695
 
         # cat=plugin.tx_rkwnewsletter//a; type=string; label=Required fields for subscription
-        requiredFieldsSubscription = txRkwregistrationGender, firstName, lastName
+        requiredFieldsSubscription =
 
         pages {
 
