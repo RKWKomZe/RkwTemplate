@@ -13,6 +13,9 @@ plugin.tx_rkwauthors {
 
 		// cat=plugin.tx_rkwauthors//a; type=boolean; label=show pid
 		showPid = 4778
+
+        # cat=plugin.tx_rkwauthors//a; type=integer; label=Phone extension length
+        phoneExtensionLength = 2
     }
 }
 
