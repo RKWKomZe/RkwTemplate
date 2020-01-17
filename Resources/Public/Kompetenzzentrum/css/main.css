@@ -615,6 +615,48 @@ body.search {
    Gallery and partner boxes grid
    =================================================
 */
+.promoters {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-bottom: 32px;
+  padding: 32px 48px 0 48px; }
+  .promoters__item-list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-direction: row;
+        flex-direction: row; }
+  .promoters div:last-child .promoters__item-list {
+    -ms-flex-pack: end;
+        justify-content: flex-end; }
+    .promoters div:last-child .promoters__item-list .promoters__item:last-child {
+      margin-right: 0; }
+  .promoters__headline {
+    font-family: "ff-tisa-sans-web-pro", "Arial", "Tahoma", "Verdana", sans-serif;
+    font-size: 50%;
+    display: block;
+    margin-bottom: 24px; }
+  .promoters__item {
+    margin-right: 48px;
+    margin-bottom: 48px;
+    -ms-flex-preferred-size: content;
+        flex-basis: content; }
+    .promoters__item picture {
+      max-height: 70px; }
+      .promoters__item picture img {
+        max-height: 70px; }
+
 .boxes-gallery,
 .boxes-partners {
   display: -ms-flexbox;
@@ -1811,8 +1853,8 @@ body.project-aprodi main .sections a:not(.toggle-filter):not(.button):not(.featu
 
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot?w5aky2");
-  src: url("../fonts/icomoon.eot?w5aky2#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?w5aky2") format("truetype"), url("../fonts/icomoon.woff?w5aky2") format("woff"), url("../fonts/icomoon.svg?w5aky2#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?v1-1");
+  src: url("../fonts/icomoon.eot?v1-1#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?v1-1") format("truetype"), url("../fonts/icomoon.woff?v1-1") format("woff"), url("../fonts/icomoon.svg?v1-1#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -1830,6 +1872,9 @@ body.project-aprodi main .sections a:not(.toggle-filter):not(.button):not(.featu
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+
+.icon-light-bulb:before {
+  content: "\e909"; }
 
 .icon-circle-right:before {
   content: "\e908"; }
@@ -1959,11 +2004,11 @@ body.project-aprodi main .sections a:not(.toggle-filter):not(.button):not(.featu
 .icon-file:before {
   content: "\e619"; }
 
-.icon-rss:before {
-  content: "\e901"; }
+.icon-clipboard:before {
+  content: "\e90a"; }
 
-.icon-instagram:before {
-  content: "\e909"; }
+.icon-leaf:before {
+  content: "\e90b"; }
 
 .jcf-checkbox span:before {
   content: "\e610"; }
@@ -9433,7 +9478,7 @@ body.topic-4 .accordion--styled .accordion-trigger {
           font-size: 100%; } }
     .order-list__contents li {
       font-size: 80%;
-      line-height: 80%; }
+      line-height: 1.5em; }
       @media (max-width: 1024px) {
         .order-list__contents li {
           font-size: 100%;

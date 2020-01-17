@@ -1101,8 +1101,8 @@ body.project-aprodi main .sections a:not(.toggle-filter):not(.button):not(.featu
 
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot?w5aky2");
-  src: url("../fonts/icomoon.eot?w5aky2#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?w5aky2") format("truetype"), url("../fonts/icomoon.woff?w5aky2") format("woff"), url("../fonts/icomoon.svg?w5aky2#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?v1-1");
+  src: url("../fonts/icomoon.eot?v1-1#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?v1-1") format("truetype"), url("../fonts/icomoon.woff?v1-1") format("woff"), url("../fonts/icomoon.svg?v1-1#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -1120,6 +1120,9 @@ body.project-aprodi main .sections a:not(.toggle-filter):not(.button):not(.featu
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+
+.icon-light-bulb:before {
+  content: "\e909"; }
 
 .icon-circle-right:before {
   content: "\e908"; }
@@ -1249,11 +1252,11 @@ body.project-aprodi main .sections a:not(.toggle-filter):not(.button):not(.featu
 .icon-file:before {
   content: "\e619"; }
 
-.icon-rss:before {
-  content: "\e901"; }
+.icon-clipboard:before {
+  content: "\e90a"; }
 
-.icon-instagram:before {
-  content: "\e909"; }
+.icon-leaf:before {
+  content: "\e90b"; }
 
 .jcf-checkbox span:before {
   content: "\e610"; }
