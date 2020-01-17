@@ -142,7 +142,18 @@ mod {
                         colCount = 2
                         rowCount = 8
                         rows {
+
                             1 {
+                                columns {
+                                    1 {
+                                        name = Förderer
+                                        colPos = 19
+                                    }
+
+                                }
+                            }
+
+                            2 {
                                 columns {
                                     1 {
                                         name = Inhalt
@@ -158,7 +169,7 @@ mod {
                                 }
                             }
 
-                            2 {
+                            3 {
                                 columns {
                                     1 {
                                         name = Call-To-Action
@@ -167,7 +178,7 @@ mod {
                                 }
                             }
 
-                            3 {
+                            4 {
                                 columns {
                                     1 {
                                         name = Boxen 1 - NUR für Publikationen und Tools verwenden!
@@ -177,7 +188,7 @@ mod {
                                 }
                             }
 
-                            4 {
+                            5 {
                                 columns {
                                     1 {
                                         name = Kooperationen und Partner (Datensatzsammlung, Headline variabel)
@@ -187,7 +198,7 @@ mod {
                                 }
                             }
 
-                            5 {
+                            6 {
                                 columns {
                                     1 {
                                         name = Boxen 2 - Für weitere Inhalte
@@ -197,7 +208,7 @@ mod {
                                 }
                             }
 
-                            6 {
+                            7 {
                                 columns {
                                     1 {
                                         name = Boxen 2 - Für weitere Inhalte (nur für Artikel-Unterseiten)
@@ -207,7 +218,7 @@ mod {
                                 }
                             }
 
-                            7 {
+                            8 {
                                 columns {
                                     1 {
                                         name = Referenzen
