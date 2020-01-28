@@ -73,5 +73,33 @@ TCEFORM.pages {
         // addItems.4 = Fachkräftesicherung
         // addItems.5 = Hauptmenü 5
     }
+
+    //===============================================================
+    // Remove fields form yoast-extension!
+    //===============================================================
+    // fields for use
+    tx_yoastseo_readability_analysis.disabled = 1
+    tx_yoastseo_snippetpreview.disabled = 1
+    tx_yoastseo_focuskeyword.disabled = 1
+    tx_yoastseo_focuskeyword_analysis.disabled = 1
+    tx_yoastseo_score_readability.disabled = 1
+    tx_yoastseo_score_seo.disabled = 1
+    seo_title.disabled = 1
+
+    // fields that should not be used
+    tx_yoastseo_hide_snippet_preview.disabled = 1
+    tx_yoastseo_dont_use.disabled = 1
+    canonical_url.disabled = 1
+    no_index.disabled = 1
+    no_follow.disabled = 1
+    og_title.disabled = 1
+    og_description.disabled = 1
+    og_image.disabled = 1
+    twitter_title.disabled = 1
+    twitter_description.disabled = 1
+    twitter_image.disabled = 1
+    tx_yoastseo_cornerstone.disabled = 1
+    last_mod.disabled = 1
+
 }
 
