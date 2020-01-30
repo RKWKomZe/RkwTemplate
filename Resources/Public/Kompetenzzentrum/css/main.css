@@ -637,10 +637,10 @@ body.search {
         flex-wrap: wrap;
     -ms-flex-direction: row;
         flex-direction: row; }
-  .promoters div:last-child .promoters__item-list {
+  .promoters div:nth-child(2) .promoters__item-list {
     -ms-flex-pack: end;
         justify-content: flex-end; }
-    .promoters div:last-child .promoters__item-list .promoters__item:last-child {
+    .promoters div:nth-child(2) .promoters__item-list .promoters__item:last-child {
       margin-right: 0; }
   .promoters__headline {
     font-family: "ff-tisa-sans-web-pro", "Arial", "Tahoma", "Verdana", sans-serif;

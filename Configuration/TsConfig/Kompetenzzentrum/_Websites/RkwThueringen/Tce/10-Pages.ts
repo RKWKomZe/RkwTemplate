@@ -3,7 +3,7 @@
 // ############################################################################
 TCEFORM.pages{
 
-	//===============================================================
+    //===============================================================
 	// Frontendlayout ohne Unterseiten
 	//===============================================================
 	// Die Layouts die man auswählen kann können hier benannt werden
@@ -26,7 +26,7 @@ TCEFORM.pages{
         // 210 = Experten Detailseite
         // 300 = Veranstaltungen Detailseite
 
-        removeItems = 4,6,7,8,9,100
+        removeItems = 6,7,8,9,100
 
 	}
 
@@ -51,8 +51,7 @@ TCEFORM.pages{
 		// 210 = Experten Detailseite
 		// 300 = Veranstaltungen Detailseite
 
-        removeItems = 4,6,7,8,9
-
+        removeItems = 6,7,8,9
     }
 
 }

@@ -5,7 +5,7 @@
 plugin.tx_rkwtemplate_config {
 
 	# IMPORTANT: With / at the end for ClickEnlarge
-	baseUrl = http://rkw-bremen.rkw.local/
+	baseUrl = http://bremen.rkw.local/
 
 }
 

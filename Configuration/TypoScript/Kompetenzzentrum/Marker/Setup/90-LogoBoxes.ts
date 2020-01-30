@@ -365,7 +365,7 @@ page {
                                     }
 
                                     // only if link is set
-                                    if.isTrue.field = header_link
+                                    // if.isTrue.field = header_link
 
                                     wrap = <div class="promoters__item">|</div>
                                 }
