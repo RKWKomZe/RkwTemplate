@@ -1822,16 +1822,16 @@ body.project-aprodi input[type="password"]:focus, body.project-aprodi textarea:h
     .wysiwyg a[class^="icon-"]:before {
       width: 16px;
       margin-right: 9px; }
-  .wysiwyg ul:not(.links-list):not(.steps) {
+  .wysiwyg ul:not(.links-list):not(.steps):not(.sg-cookie-optin-box-cookie-list) {
     margin-left: 0; }
-    .wysiwyg ul:not(.links-list):not(.steps) li {
+    .wysiwyg ul:not(.links-list):not(.steps):not(.sg-cookie-optin-box-cookie-list) li {
       position: relative;
       padding-left: 36px;
       list-style: none; }
       @media (max-width: 1024px) {
-        .wysiwyg ul:not(.links-list):not(.steps) li {
+        .wysiwyg ul:not(.links-list):not(.steps):not(.sg-cookie-optin-box-cookie-list) li {
           padding-left: 26px; } }
-      .wysiwyg ul:not(.links-list):not(.steps) li:before {
+      .wysiwyg ul:not(.links-list):not(.steps):not(.sg-cookie-optin-box-cookie-list) li:before {
         content: '';
         position: absolute;
         display: inline-block;
@@ -1844,14 +1844,14 @@ body.project-aprodi input[type="password"]:focus, body.project-aprodi textarea:h
         line-height: 1;
         vertical-align: middle; }
         @media (max-width: 1024px) {
-          .wysiwyg ul:not(.links-list):not(.steps) li:before {
+          .wysiwyg ul:not(.links-list):not(.steps):not(.sg-cookie-optin-box-cookie-list) li:before {
             top: 13px;
             width: 10px; } }
-      .wysiwyg ul:not(.links-list):not(.steps) li ol,
-      .wysiwyg ul:not(.links-list):not(.steps) li ul {
+      .wysiwyg ul:not(.links-list):not(.steps):not(.sg-cookie-optin-box-cookie-list) li ol,
+      .wysiwyg ul:not(.links-list):not(.steps):not(.sg-cookie-optin-box-cookie-list) li ul {
         margin-top: 0;
         margin-bottom: 0; }
-    .wysiwyg ul:not(.links-list):not(.steps) li + li {
+    .wysiwyg ul:not(.links-list):not(.steps):not(.sg-cookie-optin-box-cookie-list) li + li {
       margin-top: 10px; }
   .wysiwyg ol li {
     padding-left: 10px; }
@@ -2148,16 +2148,16 @@ body:not(.first-letter-normal) .wysiwyg:not(.first-letter-normal) .csc-element-n
     .featherlight-content a[class^="icon-"]:before {
       width: 16px;
       margin-right: 9px; }
-  .featherlight-content ul:not(.links-list):not(.steps) {
+  .featherlight-content ul:not(.links-list):not(.steps):not(.sg-cookie-optin-box-cookie-list) {
     margin-left: 0; }
-    .featherlight-content ul:not(.links-list):not(.steps) li {
+    .featherlight-content ul:not(.links-list):not(.steps):not(.sg-cookie-optin-box-cookie-list) li {
       position: relative;
       padding-left: 36px;
       list-style: none; }
       @media (max-width: 1024px) {
-        .featherlight-content ul:not(.links-list):not(.steps) li {
+        .featherlight-content ul:not(.links-list):not(.steps):not(.sg-cookie-optin-box-cookie-list) li {
           padding-left: 26px; } }
-      .featherlight-content ul:not(.links-list):not(.steps) li:before {
+      .featherlight-content ul:not(.links-list):not(.steps):not(.sg-cookie-optin-box-cookie-list) li:before {
         content: '';
         position: absolute;
         display: inline-block;
@@ -2170,14 +2170,14 @@ body:not(.first-letter-normal) .wysiwyg:not(.first-letter-normal) .csc-element-n
         line-height: 1;
         vertical-align: middle; }
         @media (max-width: 1024px) {
-          .featherlight-content ul:not(.links-list):not(.steps) li:before {
+          .featherlight-content ul:not(.links-list):not(.steps):not(.sg-cookie-optin-box-cookie-list) li:before {
             top: 13px;
             width: 10px; } }
-      .featherlight-content ul:not(.links-list):not(.steps) li ol,
-      .featherlight-content ul:not(.links-list):not(.steps) li ul {
+      .featherlight-content ul:not(.links-list):not(.steps):not(.sg-cookie-optin-box-cookie-list) li ol,
+      .featherlight-content ul:not(.links-list):not(.steps):not(.sg-cookie-optin-box-cookie-list) li ul {
         margin-top: 0;
         margin-bottom: 0; }
-    .featherlight-content ul:not(.links-list):not(.steps) li + li {
+    .featherlight-content ul:not(.links-list):not(.steps):not(.sg-cookie-optin-box-cookie-list) li + li {
       margin-top: 10px; }
   .featherlight-content ol li {
     padding-left: 10px; }
@@ -2372,7 +2372,8 @@ table.contenttable-events th {
   text-transform: uppercase;
   vertical-align: middle;
   transition: background 0.25s ease;
-  white-space: nowrap; }
+  white-space: nowrap;
+  word-spacing: 0.2em; }
   .button.secondary {
     background: #808080 !important; }
     .button.secondary:hover, .button.secondary:focus {
