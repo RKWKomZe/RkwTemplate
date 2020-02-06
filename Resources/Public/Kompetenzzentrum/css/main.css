@@ -652,6 +652,8 @@ body.search {
     margin-bottom: 48px;
     -ms-flex-preferred-size: content;
         flex-basis: content; }
+    .promoters__item picture > img {
+      width: auto; }
     .promoters__item picture {
       max-height: 70px; }
       .promoters__item picture img {
@@ -8246,6 +8248,7 @@ body.project-aprodi #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-coo
 body.project-aprodi #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-cookie-list .sg-cookie-optin-box-cookie-list-item .sg-cookie-optin-checkbox:not(:disabled) + .sg-cookie-optin-checkbox-label::before {
   border: 2px solid #0075aa; }
 
+/** Opt-in in page */
 .sg-cookie-optin-plugin {
   margin-top: 1em; }
 
