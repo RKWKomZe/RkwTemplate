@@ -544,13 +544,13 @@ a[class^="icon-"] {
     width: 16px;
     margin-right: 9px; }
 
-ul:not(.links-list):not(.steps) {
+ul:not(.links-list):not(.steps):not(.sg-cookie-optin-box-cookie-list) {
   margin-left: 0; }
-  ul:not(.links-list):not(.steps) li {
+  ul:not(.links-list):not(.steps):not(.sg-cookie-optin-box-cookie-list) li {
     position: relative;
     padding-left: 36px;
     list-style: none; }
-    ul:not(.links-list):not(.steps) li:before {
+    ul:not(.links-list):not(.steps):not(.sg-cookie-optin-box-cookie-list) li:before {
       content: '';
       position: absolute;
       display: inline-block;
@@ -562,11 +562,11 @@ ul:not(.links-list):not(.steps) {
       text-align: center;
       line-height: 1;
       vertical-align: middle; }
-    ul:not(.links-list):not(.steps) li ol,
-    ul:not(.links-list):not(.steps) li ul {
+    ul:not(.links-list):not(.steps):not(.sg-cookie-optin-box-cookie-list) li ol,
+    ul:not(.links-list):not(.steps):not(.sg-cookie-optin-box-cookie-list) li ul {
       margin-top: 0;
       margin-bottom: 0; }
-  ul:not(.links-list):not(.steps) li + li {
+  ul:not(.links-list):not(.steps):not(.sg-cookie-optin-box-cookie-list) li + li {
     margin-top: 10px; }
 
 ol li {
