@@ -5,8 +5,8 @@ It inherits the ```_Core```- scripts.
 
 ## What you find here
 In this folder you find two main files:
-- constants.ts (lowercase is obligatory in order to be loaded by TYPO3)
-- setup.ts (lowercase is obligatory in order to be loaded by TYPO3)
+- constants.typoscript (lowercase is obligatory in order to be loaded by TYPO3)
+- setup.typoscript (lowercase is obligatory in order to be loaded by TYPO3)
 
 This files are included in the TS-template settings of the TYPO3-Backend of the current project.
 The files are used as a container in order to inherit the settings from the "_Core"-folder and
@@ -14,10 +14,10 @@ to override or extend them with further settings.
 
 Example:
 ```
-<INCLUDE_TYPOSCRIPT: source="FILE:../_Core/Setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:../_Core/Setup.typoscript">
 
-<INCLUDE_TYPOSCRIPT: source="FILE:./Config/Setup.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:./Extensions/Setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:./Config/Setup.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:./Extensions/Setup.typoscript">
 ...
 ```
 **NOTE: Please use relative paths to include the TypoScript-files via INCLUDE_TYPOSCRIPT.**
@@ -49,7 +49,7 @@ Contains all configuration concerning BE-Layouts, RTE, TCE, and basic configurat
 
 ### Extensions
 Contains configurations for used extensions. The files here override existing extension settings.
-Please create a new file for each extension  (e.g. RkwSearch.ts)
+Please create a new file for each extension  (e.g. RkwSearch.typoscript)
 
 ### Layouts
 Contains configuration concerning Body-Tag, CSS- and JS-Inclusion, paths to templates

@@ -1,1 +1,1 @@
-<INCLUDE_TYPOSCRIPT: source="DIR:./Setup" extensions="ts">
+<INCLUDE_TYPOSCRIPT: source="DIR:./Setup" extensions="typoscript">

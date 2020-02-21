@@ -6,14 +6,14 @@ This folder contains all basic typoscripts and constants that are used **FOR ALL
 
 ## What you find here
 In this folder you find two main files:
-- constants.ts (lowercase is obligatory in order to be loaded by TYPO3)
-- setup.ts (lowercase is obligatory in order to be loaded by TYPO3)
+- constants.typoscript (lowercase is obligatory in order to be loaded by TYPO3)
+- setup.typoscript (lowercase is obligatory in order to be loaded by TYPO3)
 
 This files are included in the TS-template settings of subsequent wesbites.
 
 Example:
 ```
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:rkw_template/Configuration/TypoScript/_Core/Setup.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:rkw_template/Configuration/TypoScript/_Core/Setup.typoscript">
 ```
 
 ## The subfolders
@@ -31,7 +31,7 @@ Contains all configuration concerning BE-Layouts, RTE, TCE, and basic configurat
 
 ### Extensions
 Contains configurations for used extensions. The files here override existing extension settings.
-Please create a new file for each extension  (e.g. RkwSearch.ts)
+Please create a new file for each extension  (e.g. RkwSearch.typoscript)
 
 ### Marker
 Contains all configuration for markers/variables

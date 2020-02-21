@@ -21,7 +21,7 @@ SET @sys_template_include_static_file = CONCAT ('EXT:css_styled_content/static/,
 SET @sys_template_constants = CONCAT ('#=====================================================================\r\n# Security relevant setups!\r\nplugin.tx_rkwgeolocation {\r\n\r\n  settings {\r\n    googleApiKey = ', @google_api_key, '\r\n    googleApiKeyJs = ', @google_api_key_js, '\r\n  }\r\n}\r\n\r\n\r\n#=====================================================================\r\nplugin.tx_rkwetracker {\r\n  settings {\r\n    apiEmail = \r\n    apiPassword = \r\n    apiToken = \r\n    apiAccountId = \r\n    \r\n    secureCode = 12345\r\n    \r\n    singleSignOnAccountId = \r\n    singleSignOnPassword = \r\n   \r\n    singleSignOnAllowedIps = 127.0.0.1, 195.63.251.130\r\n\r\n  }\r\n}\r\n');
 SET @sys_template_setup = '';
 SET @ts_config = '';
-SET @ts_config_includes = CONCAT ('EXT:rkw_template/Configuration/TsConfig/Kompetenzzentrum/_Websites/', @configuration_name, '/TsConfig.ts');
+SET @ts_config_includes = CONCAT ('EXT:rkw_template/Configuration/TsConfig/Kompetenzzentrum/_Websites/', @configuration_name, '/TsConfig.typoscript');
 
 SET @file_mount_title = CONCAT ('Media ', @website_title, ' (RW)');
 SET @file_mount_description = CONCAT ('Diese Freigabe ist für das ', @website_title);

@@ -5,13 +5,13 @@ It inherits the ```_Core```- scripts.
 
 ## What you find here
 In this folder you find one main file:
-- TsConfig.ts
+- TsConfig.typoscript
 
 This file has to be included in the TsConfig of the rootpage of the websites.
 
 Example:
 ```
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:rkw_template/Configuration/TsConfig/Kompetenzzentum/TsConfig.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:rkw_template/Configuration/TsConfig/Kompetenzzentum/TsConfig.typoscript">
 ...
 ```
 **NOTE: Please not that it is NOT possible to use relative paths to include the TypoScript-files via INCLUDE_TYPOSCRIPT here.**

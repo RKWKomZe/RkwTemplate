@@ -11,22 +11,20 @@ page {
 			
 			// Linke Spalte, vererben nach unten
 			leftContent = CONTENT
-			leftContent < styles.content.getLeft
-			leftContent.slide = -1
+			leftContent < styles.content.get
+            leftContent.select.where = {#colPos}=1
+            leftContent.slide = -1
 
 			// Rechte Spalte, vererben nach unten
 			rightContent = CONTENT
-			rightContent < styles.content.getRight
+			rightContent < styles.content.get
+            rightContent.select.where = {#colPos}=2
 			rightContent.slide = -1
 			
 			// Untere Spalte (falls definiert)
 			borderContent = CONTENT
-			borderContent.table = tt_content
-			borderContent.select {
-				where = colPos = 3
-				orderBy = sorting
-				languageField = sys_language_uid
-			}
+			borderContent < styles.content.get
+
 		}
 	}
 }

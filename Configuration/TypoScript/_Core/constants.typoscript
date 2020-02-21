@@ -1,4 +1,4 @@
-<INCLUDE_TYPOSCRIPT: source="FILE:./Config/Constants.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:./Extensions/Constants.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:./Marker/Constants.ts">
-<INCLUDE_TYPOSCRIPT: source="FILE:./Pages/Constants.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE:./Config/Constants.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:./Extensions/Constants.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:./Marker/Constants.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:./Pages/Constants.typoscript">

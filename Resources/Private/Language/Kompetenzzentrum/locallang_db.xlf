@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-11-11T13:43:13Z" product-name="rkw_template">
+		<header/>
+		<body>
+
+			<trans-unit id="contentElement.slider.title">
+				<source>Slider</source>
+			</trans-unit>
+			<trans-unit id="contentElement.slider.description">
+				<source>Displays a slider</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>
