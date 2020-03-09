@@ -1,11 +1,10 @@
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:rkw_template/Configuration/TsConfig/_Core/TsConfig.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:rkw_template/Configuration/Themes/_Core/TsConfig/TsConfig.typoscript">
 
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:rkw_template/Configuration/TsConfig/Kompetenzzentrum/Config" extensions="typoscript">
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:rkw_template/Configuration/TsConfig/Kompetenzzentrum/Extensions" extensions="typoscript">
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:rkw_template/Configuration/TsConfig/Kompetenzzentrum/ContentElements" extensions="typoscript">
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:rkw_template/Configuration/TsConfig/Kompetenzzentrum/Tce" extensions="typoscript">
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:rkw_template/Configuration/TsConfig/Kompetenzzentrum/Rte" extensions="typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:rkw_template/Configuration/Themes/Kompetenzzentrum/TsConfig/Config" extensions="typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:rkw_template/Configuration/Themes/Kompetenzzentrum/TsConfig/Extensions" extensions="typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:rkw_template/Configuration/Themes/Kompetenzzentrum/TsConfig/Tce" extensions="typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:rkw_template/Configuration/Themes/Kompetenzzentrum/TsConfig/Rte" extensions="typoscript">
 
 [PIDinRootline = 3561,158,378,3566,1370]
-    <INCLUDE_TYPOSCRIPT: source="FILE:EXT:rkw_template/Configuration/TsConfig/Kompetenzzentrum/Permissions/10-Publications.typoscript">
+    <INCLUDE_TYPOSCRIPT: source="FILE:EXT:rkw_template/Configuration/Themes/Kompetenzzentrum/TsConfig/Permissions/10-Publications.typoscript">
 [global]

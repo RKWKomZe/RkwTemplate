@@ -8,7 +8,6 @@ call_user_func(
         //=================================================================
         // Add TypoScript
         //=================================================================
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Configuration/Themes/_Core/TypoScript', 'RKW Template: Core only');
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Configuration/Themes/Kompetenzzentrum/TypoScript', 'RKW Template: Kompetenzzentrum');
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Configuration/Themes/Kompetenzzentrum/TypoScript/_Microsites/Aprodi', 'RKW Template/Microsite KomZe: Aprodi');
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Configuration/Themes/Kompetenzzentrum/TypoScript/_Microsites/BauMitBim', 'RKW Template/Microsite KomZe: BauMitBim');
@@ -28,7 +27,6 @@ call_user_func(
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Configuration/Themes/Kompetenzzentrum/TypoScript/_Websites/RkwThueringen', 'RKW Template/Website KomZe: RkwThüringen');
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Configuration/Themes/WePstra/TypoScript', 'RKW Template: WePstra');
 
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Configuration/Themes/_Core/TsConfig/TsConfig.typoscript', 'RKW Template: Core only');
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Configuration/Themes/Kompetenzzentrum/TsConfig/TsConfig.typoscript', 'RKW Template: Kompetenzzentrum');
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Configuration/Themes/Kompetenzzentrum/TsConfig/_Microsites/Aprodi/TsConfig.typoscript', 'RKW Template/Microsite KomZe: Aprodi');
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Configuration/Themes/Kompetenzzentrum/TsConfig/_Microsites/BauMitBim/TsConfig.typoscript', 'RKW Template/Microsite KomZe: BauMitBim');
@@ -49,6 +47,21 @@ call_user_func(
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Configuration/Themes/Kompetenzzentrum/TsConfig/_Websites/RkwThueringen/TsConfig.typoscript', 'RKW Template/Website KomZe: RkwThüringen');
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Configuration/Themes/WePstra/TsConfig/TsConfig.typoscript', 'RKW Template: WePstra');
 
+
+        // Force include of extension settings
+        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTypoScript(
+            'YoastSeo',
+            'constants',
+            '<INCLUDE_TYPOSCRIPT: source="FILE:EXT:rkw_template/Configuration/TypoScript/constants.typoscript">'
+        );
+        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTypoScript(
+            'YoastSeo',
+            'setup',
+            '<INCLUDE_TYPOSCRIPT: source="FILE:EXT:rkw_template/Configuration/TypoScript/setup.typoscript">'
+        );
+        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig(
+            '<INCLUDE_TYPOSCRIPT: source="FILE:EXT:rkw_template/Configuration/TsConfig/TsConfig.typoscript">'
+        );
     },
     $_EXTKEY
 );

@@ -1,7 +1,7 @@
 module.tx_rkwmailer {
 
     view {
-        partialRootPath = {$plugin.tx_rkwtemplate_config.paths.extensions.partials}/RkwMailer
+        partialRootPath = {$plugin.tx_rkwtemplate_themeconfig.paths.extensions.partials}/RkwMailer
     }
 
     settings {

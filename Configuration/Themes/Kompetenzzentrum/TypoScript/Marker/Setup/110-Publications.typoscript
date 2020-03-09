@@ -71,7 +71,7 @@ page {
                         10 {
                             file.import >
                             file.ext >
-                            file = {$plugin.tx_rkwtemplate_config.paths.default.images}/placeholder-files-doc.jpg
+                            file = {$plugin.tx_rkwtemplate_themeconfig.paths.default.images}/placeholder-files-doc.jpg
                             if.equals = doc
                         }
 
@@ -82,7 +82,7 @@ page {
                         12.if.equals = docm
 
                         20 < .10
-                        20.file = {$plugin.tx_rkwtemplate_config.paths.default.images}/placeholder-files-xls.jpg
+                        20.file = {$plugin.tx_rkwtemplate_themeconfig.paths.default.images}/placeholder-files-xls.jpg
                         20.if.equals = xls
 
                         21 < .20

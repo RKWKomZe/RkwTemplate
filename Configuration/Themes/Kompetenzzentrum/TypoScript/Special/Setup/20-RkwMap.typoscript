@@ -6,7 +6,7 @@ page {
 		variables  {
 
 			rkwMapImagePath = TEXT
-            rkwMapImagePath.value = {$plugin.tx_rkwtemplate_config.paths.default.images}/map
+            rkwMapImagePath.value = {$plugin.tx_rkwtemplate_themeconfig.paths.default.images}/map
 
 		}
 	}

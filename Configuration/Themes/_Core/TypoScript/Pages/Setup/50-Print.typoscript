@@ -39,7 +39,7 @@ pagePrint {
 	//===============================================================
 	// CSS löschen und spezielles setzen
 	includeCSS >
-	includeCSS.file1 = {$plugin.tx_rkwtemplate_config.paths.default.css}/print.css
+	includeCSS.file1 = {$plugin.tx_rkwtemplate_themeconfig.paths.default.css}/print.css
 	includeCSS.file1.media = screen, print	
 	
 	//===============================================================
@@ -60,7 +60,7 @@ pagePrint {
 			10 = TEMPLATE
 			10 {
 				template = FILE
-				template.file = {$plugin.tx_rkwtemplate_config.paths.default.templates}/Print.html
+				template.file = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/Print.html
 			}
 		}
 

@@ -9,11 +9,6 @@ In this folder you find one main file:
 
 This file has to be included in the TsConfig of the rootpage of the websites.
 
-Example:
-```
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:rkw_template/Configuration/TsConfig/Kompetenzzentum/TsConfig.typoscript">
-...
-```
 **NOTE: Please not that it is NOT possible to use relative paths to include the TypoScript-files via INCLUDE_TYPOSCRIPT here.**
 
 ## The subfolders
@@ -27,6 +22,9 @@ Contains configurations for websites that inherit the configuration of this site
 
 ### Config
 Contains basic configurations
+
+### ContentElements
+Contains configurations of custom content elements
 
 ### Permissions
 Contains all configurations for page permissions

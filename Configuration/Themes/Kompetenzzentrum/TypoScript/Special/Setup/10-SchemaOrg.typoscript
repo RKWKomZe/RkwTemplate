@@ -17,12 +17,12 @@ page {
 			#=================================================================
 			headerImageSchemaOrg < page.headerData.5000.60.10
 			headerImageSchemaOrg.10.renderObj.file.maxW = 1000
-			headerImageSchemaOrg.wrap = {$plugin.tx_rkwtemplate_config.baseUrl}|
+			headerImageSchemaOrg.wrap = {$plugin.tx_rkwtemplate_themeconfig.baseUrl}|
 
 			#=================================================================
 
 			logoUrlSchemaOrg = TEXT
-			logoUrlSchemaOrg.value = {$plugin.tx_rkwtemplate_config.baseUrl}{$plugin.tx_rkwtemplate_config.website.logoFile}
+			logoUrlSchemaOrg.value = {$plugin.tx_rkwtemplate_themeconfig.baseUrl}{$plugin.tx_rkwtemplate_themeconfig.website.logoFile}
 
 			#=================================================================
 			pageAuthorsSchemaOrg = USER

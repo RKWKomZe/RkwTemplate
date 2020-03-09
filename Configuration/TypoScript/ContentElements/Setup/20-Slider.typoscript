@@ -1,0 +1,6 @@
+tt_content {
+    rkwtemplate_slider =< lib.contentElement
+    rkwtemplate_slider {
+        templateName = Slider
+    }
+}

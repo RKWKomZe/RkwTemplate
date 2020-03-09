@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-11-11T13:43:13Z" product-name="rkw_template">
+		<header/>
+		<body>
+
+			<trans-unit id="contentElement.slider.title">
+				<source>Slider</source>
+			</trans-unit>
+			<trans-unit id="contentElement.slider.description">
+				<source>Adds a slider</source>
+			</trans-unit>
+			<trans-unit id="contentElement.slider.type.I.default">
+				<source>Black font, no gradient</source>
+			</trans-unit>
+			<trans-unit id="contentElement.slider.type.I.1">
+				<source>Black font, white gradient</source>
+			</trans-unit>
+			<trans-unit id="contentElement.slider.type.I.2">
+				<source>White font, no gradient</source>
+			</trans-unit>
+			<trans-unit id="contentElement.slider.type.I.3">
+				<source>White font, black gradient</source>
+			</trans-unit>
+
+
+		</body>
+	</file>
+</xliff>

@@ -20,7 +20,7 @@ config {
 	sendCacheHeaders = 1
 	
 	// WICHTIG: Abschließender Slash, damit Click-Enlarge funktioniert!
-	baseURL = {$plugin.tx_rkwtemplate_config.baseUrl}
+	baseURL = {$plugin.tx_rkwtemplate_themeconfig.baseUrl}
 
 	//===============================================================
 	// Speaking URLs /SEO

@@ -147,7 +147,7 @@ page {
         60 {
             value = microsite
             stdWrap.noTrimWrap = | ||
-            if.isTrue = {$plugin.tx_rkwtemplate_config.isMicrosite}
+            if.isTrue = {$plugin.tx_rkwtemplate_themeconfig.isMicrosite}
         }
 
         // CSS clas for grid

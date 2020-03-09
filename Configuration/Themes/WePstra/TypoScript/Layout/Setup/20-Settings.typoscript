@@ -7,13 +7,13 @@ page {
 
 		// make settings available in template
 		settings {
-            imagesPath = /{$plugin.tx_rkwtemplate_config.paths.default.images}
-            websiteName = {$plugin.tx_rkwtemplate_config.website.name}
-            websiteLogoFile = {$plugin.tx_rkwtemplate_config.website.logoFile}
+            imagesPath = /{$plugin.tx_rkwtemplate_themeconfig.paths.default.images}
+            websiteName = {$plugin.tx_rkwtemplate_themeconfig.website.name}
+            websiteLogoFile = {$plugin.tx_rkwtemplate_themeconfig.website.logoFile}
 
             websiteName = TEST
 
-            websiteLogoFile = {$plugin.tx_rkwtemplate_config.website.logoFile}
+            websiteLogoFile = {$plugin.tx_rkwtemplate_themeconfig.website.logoFile}
 		}
 	}
 

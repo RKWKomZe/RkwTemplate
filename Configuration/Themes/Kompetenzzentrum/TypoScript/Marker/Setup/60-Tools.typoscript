@@ -34,7 +34,7 @@ page {
             pageLayoutSwitch = TEXT
             pageLayoutSwitch.value = Default
             pageLayoutSwitch.override = Microsite
-            pageLayoutSwitch.override.if.isTrue = {$plugin.tx_rkwtemplate_config.isMicrosite}
+            pageLayoutSwitch.override.if.isTrue = {$plugin.tx_rkwtemplate_themeconfig.isMicrosite}
 
             //=================================================================
 

@@ -11,7 +11,7 @@ page {
 		20 = TEXT
 		20 {
 
-			value = <script src="{$plugin.tx_rkwtemplate_config.paths.default.js}/libs/html5shiv.js</script>
+			value = <script src="{$plugin.tx_rkwtemplate_themeconfig.paths.default.js}/libs/html5shiv.js</script>
 			wrap = <!--[if lte IE 8]>|<![endif]-->
 		}
 
@@ -39,7 +39,7 @@ page {
         }
 
         // Landingpage only!
-        file20 = {$plugin.tx_rkwtemplate_config.paths.default.css}/main.css
+        file20 = {$plugin.tx_rkwtemplate_themeconfig.paths.default.css}/main.css
         file20.media = screen,print
         file20.if {
             value = 5
@@ -85,7 +85,7 @@ page {
         }
 
         // Landingpage only!
-        file20 = {$plugin.tx_rkwtemplate_config.paths.default.js}/main.js
+        file20 = {$plugin.tx_rkwtemplate_themeconfig.paths.default.js}/main.js
         file20.if {
             value = 5
             equals.data = levelfield:-2,tx_rkwbasics_fe_layout_next_level,slide

@@ -1,4 +1,4 @@
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:rkw_template/Configuration/TsConfig/_Core/Config" extensions="typoscript">
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:rkw_template/Configuration/TsConfig/_Core/Permissions" extensions="typoscript">
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:rkw_template/Configuration/TsConfig/_Core/Tce" extensions="typoscript">
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:rkw_template/Configuration/TsConfig/_Core/Rte" extensions="typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:rkw_template/Configuration/Themes/_Core/TsConfig/Config" extensions="typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:rkw_template/Configuration/Themes/_Core/TsConfig/Permissions" extensions="typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:rkw_template/Configuration/Themes/_Core/TsConfig/Tce" extensions="typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:rkw_template/Configuration/Themes/_Core/TsConfig/Rte" extensions="typoscript">

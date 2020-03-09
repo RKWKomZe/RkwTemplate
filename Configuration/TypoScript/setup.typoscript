@@ -1,0 +1,29 @@
+plugin.tx_rkwtemplate {
+
+	view {
+		layoutRootPaths {
+			0 = EXT:rkw_template/Resources/Private/Layouts/
+			1 = {$plugin.tx_rkwtemplate.view.layoutRootPath}
+		}
+		templateRootPaths {
+			0 = EXT:rkw_template/Resources/Private/Templates/
+            1 = {$plugin.tx_rkwtemplate.view.templateRootPath}
+        }
+		partialRootPaths {
+			0 = EXT:rkw_template/Resources/Private/Partials/
+			1 = {$plugin.tx_rkwtemplate.view.partialRootPath}
+        }
+	}
+
+	persistence {
+		storagePid = {$plugin.tx_rkwtemplate.persistence.storagePid}
+	}
+
+	settings {
+
+
+	}
+}
+
+
+<INCLUDE_TYPOSCRIPT: source="FILE:./ContentElements/Setup.typoscript">

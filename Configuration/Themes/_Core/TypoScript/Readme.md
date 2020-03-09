@@ -11,10 +11,6 @@ In this folder you find two main files:
 
 This files are included in the TS-template settings of subsequent wesbites.
 
-Example:
-```
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:rkw_template/Configuration/TypoScript/_Core/Setup.typoscript">
-```
 
 ## The subfolders
 

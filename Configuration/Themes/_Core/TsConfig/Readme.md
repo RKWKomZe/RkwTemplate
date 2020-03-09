@@ -11,11 +11,6 @@ In this folder you find one main file:
 This file has to be included in the TsConfig of the rootpage of relevant websites.
 In most cases this file will be included indirectly be including a concrete TsConfig that uses this core configuration.
 
-Example:
-```
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:rkw_template/Configuration/TsConfig/_Core/TsConfig.typoscript">
-...
-```
 
 **NOTE: Please not that it is NOT possible to use relative paths to include the TypoScript-files via INCLUDE_TYPOSCRIPT here.**
 

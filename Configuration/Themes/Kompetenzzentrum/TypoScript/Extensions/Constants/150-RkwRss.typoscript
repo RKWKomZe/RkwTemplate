@@ -13,7 +13,7 @@ plugin.tx_rkwrss {
             feedDescription = Veranstaltungshinweise, Publikationen, Blog-Beiträge und vieles mehr. Bleiben Sie mit unserem RSS-Feed immer auf dem Laufenden.
 
             // cat=plugin.tx_rkwsearch; type=string; label=Relative Path to Icon of Feed
-            feedIcon = {$plugin.tx_rkwtemplate_config.paths.default.images}/website-icons/favicon-32x32.png
+            feedIcon = {$plugin.tx_rkwtemplate_themeconfig.paths.default.images}/website-icons/favicon-32x32.png
 
             // cat=plugin.tx_rkwrss; type=string; label=Field that is used for sorting
             orderField = txRkwsearchPubdate

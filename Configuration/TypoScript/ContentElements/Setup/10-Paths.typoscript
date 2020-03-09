@@ -1,0 +1,5 @@
+lib.contentElement {
+    layoutRootPaths.900 = {$plugin.tx_rkwtemplate.view.layoutRootPath}/ContentElements
+    templateRootPaths.900 = {$plugin.tx_rkwtemplate.view.templateRootPath}/ContentElements
+    partialRootPaths.900 = {$plugin.tx_rkwtemplate.view.partialRootPath}/ContentElements
+}
