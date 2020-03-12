@@ -4,6 +4,12 @@
 page {
     10 {
         variables {
+
+            sliderHome = CONTENT
+            sliderHome < styles.content.get
+            sliderHome.select.where = {#colPos}=4
+
+        /*
             sliderHome = CONTENT
             sliderHome {
                 table = tt_content
@@ -229,7 +235,12 @@ page {
                     stdWrap.wrap = <div class="slide {field:rowDescription}">|</div>
                     stdWrap.insertData = 1
                 }
+
             }
+
+            */
         }
+
+
     }
 }

@@ -4,12 +4,12 @@
 		<header/>
 		<body>
 			<trans-unit id="contentElement.slider.title">
-				<source>Slider</source>
-				<target>Slider</target>
+				<source>Slider-Element</source>
+				<target>Slider-Element</target>
 			</trans-unit>
 			<trans-unit id="contentElement.slider.description">
 				<source>Displays a slider</source>
-				<target>Zeigt einen Slider an</target>
+				<target>Fügt ein Slider-Element ein</target>
 			</trans-unit>
 			<trans-unit id="contentElement.slider.type.I.default">
 				<source>Black font, no gradient</source>

@@ -1,0 +1,22 @@
+tx_gridelements.setup.1 {
+
+    title = Startseite
+    config {
+        colCount = 1
+        rowCount = 1
+        rows {
+            1 {
+                columns {
+                    1 {
+                        name = Slider
+                        colPos = 4
+                        allowed {
+                            CType = rkwtemplate_slider
+                        }
+                        maxitems = 7
+                    }
+                }
+            }
+        }
+    }
+}

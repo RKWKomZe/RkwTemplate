@@ -1,3 +1,6 @@
+//=========================================================
+// Add contentElement to Wizard
+//=========================================================
 mod.wizards.newContentElement.wizardItems.common {
     elements {
         rkwtemplate_slider {
@@ -8,6 +11,30 @@ mod.wizards.newContentElement.wizardItems.common {
                 CType = rkwtemplate_slider
             }
         }
-        show := addToList(rkwtemplate_slider)
+    }
+    show := addToList(rkwtemplate_slider)
+}
+
+
+//=========================================================
+// Change some fields
+//=========================================================
+TCEFORM.tt_content {
+
+    header_layout {
+        types.rkwtemplate_slider {
+            removeItems = 3,4,5,100
+            altLabels.0 = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.slider.type.I.default
+            altLabels.1 = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.slider.type.I.1
+            altLabels.2 = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.slider.type.I.2
+        }
+    }
+
+    header_position {
+        types.rkwtemplate_slider {
+            removeItems = center, right
+            altLabels.. =  LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_position.I.2
+        }
+
     }
 }

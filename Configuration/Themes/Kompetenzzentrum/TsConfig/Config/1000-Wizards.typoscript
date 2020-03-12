@@ -3,6 +3,7 @@
 // add specific elements to wizards - by colPos and backend_layout
 // ############################################################################
 
+
 //============================================================================
 // homePage, slider
 //============================================================================
@@ -15,4 +16,7 @@
     mod.wizards.newContentElement.wizardItems.plugins.show =
     mod.wizards.newContentElement.wizardItems.menu.show =
     mod.wizards.newContentElement.wizardItems.common.show := addToList(rkwtemplate_slider)
+
 [end]
+
+

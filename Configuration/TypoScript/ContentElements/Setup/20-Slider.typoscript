@@ -2,5 +2,12 @@ tt_content {
     rkwtemplate_slider =< lib.contentElement
     rkwtemplate_slider {
         templateName = Slider
+        stdWrap {
+            editIcons = tt_content: bodytext
+            editIcons {
+                beforeLastTag = 1
+                iconTitle.data = LLL:EXT:fluid_styled_content/Resources/Private/Language/FrontendEditing.xlf:editIcon.html
+            }
+        }
     }
 }
