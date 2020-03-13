@@ -6,66 +6,6 @@ page {
         variables {
 
 
-            //=================================================================
-            // Box with task
-            //=================================================================
-            boxTask = CONTENT
-            boxTask {
-                table = tt_content
-                select {
-                    where = colPos = 12
-                    pidInList = {$boxesTopicsTaskConfig.pid}
-                    orderBy = sorting
-                    languageField = sys_language_uid
-                }
-
-                renderObj = CASE
-                renderObj {
-                    key.field = CType
-
-                    // default: ignore all
-                    default = COA
-                    default >
-
-                    // render only image
-                    text = COA
-                    text {
-                        // set header
-                        10 = TEXT
-                        10 {
-                            field = header
-                            wrap = <h1 class="home__header" id="headline-statement">|</h1>
-                            required = 1
-                        }
-
-                        // set content
-                        20 = TEXT
-                        20 {
-                            field = bodytext
-                            wrap = <div class="home__text">|</div>
-                            required = 1
-
-                            # HTML-Parsing
-                            stdWrap.parseFunc =< lib.parseFunc_RTE
-                            stdWrap.HTMLparser = 1
-                            stdWrap.HTMLparser {
-                                keepNonMatchedTags = 0
-                                allowTags = a,p,h2
-                                nesting = 0
-                                htmlSpecialChars = 0
-                                xhtml_cleaning = 0
-                            }
-                        }
-                    }
-                }
-
-                stdWrap {
-                    wrap = <div class="home__aufgabe">|</div>
-                    required = 1
-                }
-            }
-
-
             //==========================================================
             // Topic boxes
             //==========================================================
@@ -286,27 +226,6 @@ page {
             }
 
 
-            //=================================================================
-            // Boxes with task only - special case for RKW Map
-            //=================================================================
-            boxIntroductionMap < .boxTask
-            boxIntroductionMap {
-
-                renderObj {
-                    text {
-                        10 {
-                            wrap = <h2 id="headline-statement">|</h2>
-                        }
-
-                        20 {
-                            wrap = <p>|</p>
-                        }
-                    }
-                }
-
-                stdWrap >
-
-            }
 
             //=================================================================
             // Boxes overview - special case for RKW Map

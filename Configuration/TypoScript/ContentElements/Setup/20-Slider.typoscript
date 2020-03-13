@@ -2,12 +2,12 @@ tt_content {
     rkwtemplate_slider =< lib.contentElement
     rkwtemplate_slider {
         templateName = Slider
-        stdWrap {
-            editIcons = tt_content: bodytext
-            editIcons {
-                beforeLastTag = 1
-                iconTitle.data = LLL:EXT:fluid_styled_content/Resources/Private/Language/FrontendEditing.xlf:editIcon.html
-            }
+
+        // loading images as references
+        dataProcessing {
+            10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+            10.references.fieldName = image
+            10.as = image
         }
     }
 }

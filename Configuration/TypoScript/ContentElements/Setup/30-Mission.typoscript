@@ -1,0 +1,7 @@
+tt_content {
+    rkwtemplate_mission =< lib.contentElement
+    rkwtemplate_mission {
+        templateName = Mission
+
+    }
+}

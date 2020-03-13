@@ -4,6 +4,7 @@
 		<header/>
 		<body>
 
+            <!-- Slider element -->
 			<trans-unit id="contentElement.slider.title">
 				<source>Slider</source>
 			</trans-unit>
@@ -22,7 +23,26 @@
 			<trans-unit id="contentElement.slider.type.I.3">
 				<source>White font, black gradient</source>
 			</trans-unit>
+			<trans-unit id="contentElement.slider.rowDescription">
+				<source>Label for Button</source>
+			</trans-unit>
+            <trans-unit id="contentElement.slider.imageManipulation.desktop">
+                <source>Desktop</source>
+            </trans-unit>
+            <trans-unit id="contentElement.slider.imageManipulation.tablet">
+                <source>Tablet</source>
+            </trans-unit>
+            <trans-unit id="contentElement.slider.imageManipulation.mobile">
+                <source>Mobile</source>
+            </trans-unit>
 
+            <!-- Mission Statement -->
+            <trans-unit id="contentElement.mission.title">
+                <source>Mission Statement</source>
+            </trans-unit>
+            <trans-unit id="contentElement.mission.description">
+                <source>Adds a Mission Statement</source>
+            </trans-unit>
 
 		</body>
 	</file>

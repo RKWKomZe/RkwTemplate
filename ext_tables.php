@@ -9,7 +9,6 @@ call_user_func(
         // Add TypoScript
         //=================================================================
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Configuration/TypoScript', 'RKW Template');
-
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Configuration/Themes/Kompetenzzentrum/TypoScript', 'RKW Template - Theme: Kompetenzzentrum');
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Configuration/Themes/Kompetenzzentrum/TypoScript/_Microsites/Aprodi', 'RKW Template - Theme: Aprodi');
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Configuration/Themes/Kompetenzzentrum/TypoScript/_Microsites/BauMitBim', 'RKW Template - Theme: BauMitBim');
@@ -29,6 +28,7 @@ call_user_func(
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Configuration/Themes/Kompetenzzentrum/TypoScript/_Websites/RkwThueringen', 'RKW Template - Theme: RkwThüringen');
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Configuration/Themes/WePstra/TypoScript', 'RKW Template - Theme: WePstra');
 
+        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Configuration/TsConfig/TsConfig.typoscript', 'RKW Template');
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Configuration/Themes/Kompetenzzentrum/TsConfig/TsConfig.typoscript', 'RKW Template - Theme: Kompetenzzentrum');
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Configuration/Themes/Kompetenzzentrum/TsConfig/_Microsites/Aprodi/TsConfig.typoscript', 'RKW Template - Theme: Aprodi');
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Configuration/Themes/Kompetenzzentrum/TsConfig/_Microsites/BauMitBim/TsConfig.typoscript', 'RKW Template - Theme: BauMitBim');

@@ -3,6 +3,9 @@
 	<file source-language="en" datatype="plaintext" original="messages" date="2015-11-11T13:43:13Z" product-name="rkw_template">
 		<header/>
 		<body>
+
+
+            <!-- Slider element -->
 			<trans-unit id="contentElement.slider.title">
 				<source>Slider-Element</source>
 				<target>Slider-Element</target>
@@ -27,6 +30,19 @@
 				<source>White font, black gradient</source>
                 <target>Weiße Schrift, schwarzer Verlauf</target>
 			</trans-unit>
+			<trans-unit id="contentElement.slider.rowDescription">
+				<source>Label for Button</source>
+				<target>Beschriftung für Button</target>
+			</trans-unit>
+            <trans-unit id="contentElement.slider.imageManipulation.desktop">
+                <source>Desktop</source>
+            </trans-unit>
+            <trans-unit id="contentElement.slider.imageManipulation.tablet">
+                <source>Tablet</source>
+            </trans-unit>
+            <trans-unit id="contentElement.slider.imageManipulation.mobile">
+                <source>Mobile</source>
+            </trans-unit>
 
 		</body>
 	</file>

@@ -1,0 +1,25 @@
+<f:if condition="{data.header}">
+    <div class="slide-text">
+
+        <p class="headline">
+            {data.header}
+        </p>
+
+        <f:if condition="{data.subheader}">
+            <h2 class="h1">
+                <f:format.stripTags> {data.subheader}</f:format.stripTags>
+            </h2>
+        </f:if>
+
+
+        <f:if condition="{data.rowDescription}">
+            <p class="slide-button">
+                <span>
+                    <rkwEtracker:link.typolink parameter="{data.header_link}" class="button">
+                        <f:format.stripTags>{data.rowDescription}</f:format.stripTags>
+                    </rkwEtracker:link.typolink>
+                </span>
+            </p>
+        </f:if>
+    </div>
+</f:if>

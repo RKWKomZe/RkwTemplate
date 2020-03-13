@@ -1,0 +1,59 @@
+<rkwEtracker:link.typolink parameter="{data.header_link}">
+    <f:if condition="{f:count(subject: image)} == 3">
+        <f:then>
+            <figure class="slide-image">
+                <picture>
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" srcset="{f:uri.image(image:image.0,width:'1500',height:'800')}" alt="{data.header}" />
+                </picture>
+            </figure>
+
+            <!-- if vw < 1024 -->
+            <figure class="slide-image-tablet">
+                <picture>
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" srcset="{f:uri.image(image:image.1,width:'1100',height:'800')}" alt="{data.header}" />
+                </picture>
+            </figure>
+
+            <!-- if vw < 540 -->
+            <figure class="slide-image-mobile">
+                <picture>
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" srcset="{f:uri.image(image:image.2,width:'520',height:'440')}" alt="{data.header}" />
+                </picture>
+            </figure>
+        </f:then>
+        <f:else>
+
+            <f:comment>
+                <!-- regular solutuion -->
+                <figure class="slide-image">
+                    <picture>
+                        <source srcset="{f:uri.image(image:image.0,width:'1500',height:'800',cropVariant:'desktop')}" media="(min-width: 1024px)" />
+                        <source srcset="{f:uri.image(image:image.0,width:'1100',height:'800',cropVariant:'tablet')}" media="(min-width:768px)" />
+                        <source srcset="{f:uri.image(image:image.0,width:'520',height:'440',cropVariant:'mobile')}" media="(min-width:0px)" />
+                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" srcset="{f:uri.image(image:image.0,width:'1500',height:'800',cropVariant:'desktop')}" alt="{data.header}" />
+                    </picture>
+                </figure>
+            </f:comment>
+
+            <figure class="slide-image">
+                <picture>
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" srcset="{f:uri.image(image:image.0,width:'1500',height:'800',cropVariant:'desktop')}" alt="{data.header}" />
+                </picture>
+            </figure>
+
+            <!-- if vw < 1024 -->
+            <figure class="slide-image-tablet">
+                <picture>
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" srcset="{f:uri.image(image:image.0,width:'1100',height:'800',cropVariant:'tablet')}" alt="{data.header}" />
+                </picture>
+            </figure>
+
+            <!-- if vw < 540 -->
+            <figure class="slide-image-mobile">
+                <picture>
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" srcset="{f:uri.image(image:image.0,width:'520',height:'440',cropVariant:'mobile')}" alt="{data.header}" />
+                </picture>
+            </figure>
+        </f:else>
+    </f:if>
+</rkwEtracker:link.typolink>

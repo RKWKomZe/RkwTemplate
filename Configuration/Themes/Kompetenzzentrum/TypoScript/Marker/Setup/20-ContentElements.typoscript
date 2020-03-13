@@ -1,0 +1,22 @@
+page {
+    10 {
+        variables {
+
+
+            sliderHome = CONTENT
+            sliderHome < styles.content.get
+            sliderHome.select.where = {#colPos} =4
+
+
+            boxTask = CONTENT
+            boxTask < styles.content.get
+            boxTask {
+                table = tt_content
+                select {
+                    where = {#colPos} = 12
+                    pidInList = {$boxesTopicsTaskConfig.pid}
+                }
+            }
+        }
+    }
+}

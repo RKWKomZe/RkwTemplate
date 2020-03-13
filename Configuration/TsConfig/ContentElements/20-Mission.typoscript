@@ -3,16 +3,16 @@
 //=========================================================
 mod.wizards.newContentElement.wizardItems.common {
     elements {
-        rkwtemplate_slider {
+        rkwtemplate_mission {
             iconIdentifier = rkw_template
-            title = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.slider.title
-            description = LLL:EXT:rkw_template/Resources/Kompetenzzentrum/Language/locallang_db.xlf:contentElement.slider.description
+            title = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.mission.title
+            description = LLL:EXT:rkw_template/Resources/Kompetenzzentrum/Language/locallang_db.xlf:contentElement.mission.description
             tt_content_defValues {
-                CType = rkwtemplate_slider
+                CType = rkwtemplate_mission
             }
         }
     }
-    show := addToList(rkwtemplate_slider)
+    show := addToList(rkwtemplate_mission)
 }
 
 
@@ -30,6 +30,9 @@ TCEFORM.tt_content {
             altLabels.3 = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.slider.type.I.3
 
         }
+        types.rkwtemplate_mission {
+            removeItems = 0,3,4,5,100
+        }
     }
 
     header_position {
@@ -37,6 +40,5 @@ TCEFORM.tt_content {
             removeItems = center, right
             altLabels.. =  LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_position.I.2
         }
-
     }
 }

@@ -19,9 +19,8 @@
     </f:if>
 
     <!-- Statement and topic-boxes -->
-    <header aria-labelledby="headline-statement">
-        <f:format.html parseFuncTSPath="">{boxTask}</f:format.html>
-    </header>
+    <f:format.html parseFuncTSPath="">{boxTask}</f:format.html>
+
 
     <f:if condition="<rkwBasics:isEmpty string='{boxSpecial}' /> == 0">
         <f:format.html parseFuncTSPath="">{boxSpecial}</f:format.html>

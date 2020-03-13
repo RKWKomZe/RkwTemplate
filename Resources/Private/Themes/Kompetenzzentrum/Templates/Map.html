@@ -12,10 +12,7 @@
     <div class="content-page__content">
 
         <!--  Welcome Section -->
-        <header class="page-headings">
-            <h1>{pageSubTitle}</h1>
-            <f:format.html parseFuncTSPath="">{boxIntroductionMap}</f:format.html>
-        </header>
+        <f:format.html parseFuncTSPath="">{boxTask}</f:format.html>
 
         <f:if condition="<rkwBasics:isEmpty string='{boxSpecial}' /> == 0">
             <f:format.html parseFuncTSPath="">{boxSpecial}</f:format.html>
