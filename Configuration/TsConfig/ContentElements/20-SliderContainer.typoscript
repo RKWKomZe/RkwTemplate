@@ -1,0 +1,44 @@
+//=========================================================
+// Add contentElement to Wizard
+//=========================================================
+mod.wizards.newContentElement.wizardItems.common {
+    elements {
+        rkwtemplate_slidercontainer {
+            iconIdentifier = rkw_template
+            title = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.slidercontainer.title
+            description = LLL:EXT:rkw_template/Resources/Kompetenzzentrum/Language/locallang_db.xlf:contentElement.slidercontainer.description
+            tt_content_defValues {
+                CType = rkwtemplate_slidercontainer
+            }
+        }
+    }
+    show := addToList(rkwtemplate_slidercontainer)
+}
+
+
+//=========================================================
+// Change some fields
+//=========================================================
+/*
+TCEFORM.tt_content {
+
+    header_layout {
+        types.rkwtemplate_slider {
+            removeItems = 4,5,100
+            altLabels.0 = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.slider.type.I.default
+            altLabels.1 = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.slider.type.I.1
+            altLabels.2 = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.slider.type.I.2
+            altLabels.3 = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.slider.type.I.3
+
+        }
+    }
+
+    header_position {
+        types.rkwtemplate_slider {
+            removeItems = center, right
+            altLabels.. =  LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_position.I.2
+        }
+
+    }
+}
+*/

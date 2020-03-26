@@ -36,6 +36,14 @@
                 <source>Mobile</source>
             </trans-unit>
 
+            <!-- SliderContainer element -->
+			<trans-unit id="contentElement.sliderContainer.title">
+				<source>SliderContainer</source>
+			</trans-unit>
+			<trans-unit id="contentElement.sliderContainer.description">
+				<source>Adds a slide-container</source>
+			</trans-unit>
+
             <!-- Mission Statement -->
             <trans-unit id="contentElement.mission.title">
                 <source>Mission Statement</source>
