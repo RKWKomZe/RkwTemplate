@@ -1702,70 +1702,70 @@ picture > img {
 fieldset {
   border: 0; }
 
-.pre-queries a:not(.toggle-filter):not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button):not(.feature-box__link):not(.jp-next):not(.jp-previous),
-main .article a:not(.toggle-filter):not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button):not(.feature-box__link):not(.jp-next):not(.jp-previous),
-main .related-box a:not(.toggle-filter):not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button):not(.feature-box__link):not(.jp-next):not(.jp-previous),
-main .sections a:not(.toggle-filter):not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button):not(.feature-box__link):not(.jp-next):not(.jp-previous) {
+.pre-queries a:not(.toggle-filter):not(.button):not(.feature-box__link):not(.jp-next):not(.jp-previous),
+main .article a:not(.toggle-filter):not(.button):not(.feature-box__link):not(.jp-next):not(.jp-previous),
+main .related-box a:not(.toggle-filter):not(.button):not(.feature-box__link):not(.jp-next):not(.jp-previous),
+main .sections a:not(.toggle-filter):not(.button):not(.feature-box__link):not(.jp-next):not(.jp-previous) {
   text-decoration: none;
   color: #e64415;
   /*outline: 0; */ }
-  .pre-queries a:not(.toggle-filter):not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button):not(.feature-box__link):not(.jp-next):not(.jp-previous):hover,
-  main .article a:not(.toggle-filter):not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button):not(.feature-box__link):not(.jp-next):not(.jp-previous):hover,
-  main .related-box a:not(.toggle-filter):not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button):not(.feature-box__link):not(.jp-next):not(.jp-previous):hover,
-  main .sections a:not(.toggle-filter):not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button):not(.feature-box__link):not(.jp-next):not(.jp-previous):hover {
+  .pre-queries a:not(.toggle-filter):not(.button):not(.feature-box__link):not(.jp-next):not(.jp-previous):hover,
+  main .article a:not(.toggle-filter):not(.button):not(.feature-box__link):not(.jp-next):not(.jp-previous):hover,
+  main .related-box a:not(.toggle-filter):not(.button):not(.feature-box__link):not(.jp-next):not(.jp-previous):hover,
+  main .sections a:not(.toggle-filter):not(.button):not(.feature-box__link):not(.jp-next):not(.jp-previous):hover {
     outline: 0;
     text-decoration: underline; }
-  .pre-queries a:not(.toggle-filter):not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button):not(.feature-box__link):not(.jp-next):not(.jp-previous):active,
-  main .article a:not(.toggle-filter):not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button):not(.feature-box__link):not(.jp-next):not(.jp-previous):active,
-  main .related-box a:not(.toggle-filter):not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button):not(.feature-box__link):not(.jp-next):not(.jp-previous):active,
-  main .sections a:not(.toggle-filter):not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button):not(.feature-box__link):not(.jp-next):not(.jp-previous):active {
+  .pre-queries a:not(.toggle-filter):not(.button):not(.feature-box__link):not(.jp-next):not(.jp-previous):active,
+  main .article a:not(.toggle-filter):not(.button):not(.feature-box__link):not(.jp-next):not(.jp-previous):active,
+  main .related-box a:not(.toggle-filter):not(.button):not(.feature-box__link):not(.jp-next):not(.jp-previous):active,
+  main .sections a:not(.toggle-filter):not(.button):not(.feature-box__link):not(.jp-next):not(.jp-previous):active {
     outline: 0; }
-  .pre-queries a:not(.toggle-filter):not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button):not(.feature-box__link):not(.jp-next):not(.jp-previous):focus,
-  main .article a:not(.toggle-filter):not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button):not(.feature-box__link):not(.jp-next):not(.jp-previous):focus,
-  main .related-box a:not(.toggle-filter):not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button):not(.feature-box__link):not(.jp-next):not(.jp-previous):focus,
-  main .sections a:not(.toggle-filter):not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button):not(.feature-box__link):not(.jp-next):not(.jp-previous):focus {
+  .pre-queries a:not(.toggle-filter):not(.button):not(.feature-box__link):not(.jp-next):not(.jp-previous):focus,
+  main .article a:not(.toggle-filter):not(.button):not(.feature-box__link):not(.jp-next):not(.jp-previous):focus,
+  main .related-box a:not(.toggle-filter):not(.button):not(.feature-box__link):not(.jp-next):not(.jp-previous):focus,
+  main .sections a:not(.toggle-filter):not(.button):not(.feature-box__link):not(.jp-next):not(.jp-previous):focus {
     outline: #000 dotted 1px; }
-  .pre-queries a:not(.toggle-filter):not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button):not(.feature-box__link):not(.jp-next):not(.jp-previous).text-hide:hover, .pre-queries a:not(.toggle-filter):not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button):not(.feature-box__link):not(.jp-next):not(.jp-previous):hover:before,
-  main .article a:not(.toggle-filter):not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button):not(.feature-box__link):not(.jp-next):not(.jp-previous).text-hide:hover,
-  main .article a:not(.toggle-filter):not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button):not(.feature-box__link):not(.jp-next):not(.jp-previous):hover:before,
-  main .related-box a:not(.toggle-filter):not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button):not(.feature-box__link):not(.jp-next):not(.jp-previous).text-hide:hover,
-  main .related-box a:not(.toggle-filter):not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button):not(.feature-box__link):not(.jp-next):not(.jp-previous):hover:before,
-  main .sections a:not(.toggle-filter):not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button):not(.feature-box__link):not(.jp-next):not(.jp-previous).text-hide:hover,
-  main .sections a:not(.toggle-filter):not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button):not(.feature-box__link):not(.jp-next):not(.jp-previous):hover:before {
+  .pre-queries a:not(.toggle-filter):not(.button):not(.feature-box__link):not(.jp-next):not(.jp-previous).text-hide:hover, .pre-queries a:not(.toggle-filter):not(.button):not(.feature-box__link):not(.jp-next):not(.jp-previous):hover:before,
+  main .article a:not(.toggle-filter):not(.button):not(.feature-box__link):not(.jp-next):not(.jp-previous).text-hide:hover,
+  main .article a:not(.toggle-filter):not(.button):not(.feature-box__link):not(.jp-next):not(.jp-previous):hover:before,
+  main .related-box a:not(.toggle-filter):not(.button):not(.feature-box__link):not(.jp-next):not(.jp-previous).text-hide:hover,
+  main .related-box a:not(.toggle-filter):not(.button):not(.feature-box__link):not(.jp-next):not(.jp-previous):hover:before,
+  main .sections a:not(.toggle-filter):not(.button):not(.feature-box__link):not(.jp-next):not(.jp-previous).text-hide:hover,
+  main .sections a:not(.toggle-filter):not(.button):not(.feature-box__link):not(.jp-next):not(.jp-previous):hover:before {
     text-decoration: none; }
-  .pre-queries a:not(.toggle-filter):not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button):not(.feature-box__link):not(.jp-next):not(.jp-previous):not(.icon-phone),
-  main .article a:not(.toggle-filter):not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button):not(.feature-box__link):not(.jp-next):not(.jp-previous):not(.icon-phone),
-  main .related-box a:not(.toggle-filter):not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button):not(.feature-box__link):not(.jp-next):not(.jp-previous):not(.icon-phone),
-  main .sections a:not(.toggle-filter):not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button):not(.feature-box__link):not(.jp-next):not(.jp-previous):not(.icon-phone) {
+  .pre-queries a:not(.toggle-filter):not(.button):not(.feature-box__link):not(.jp-next):not(.jp-previous):not(.icon-phone),
+  main .article a:not(.toggle-filter):not(.button):not(.feature-box__link):not(.jp-next):not(.jp-previous):not(.icon-phone),
+  main .related-box a:not(.toggle-filter):not(.button):not(.feature-box__link):not(.jp-next):not(.jp-previous):not(.icon-phone),
+  main .sections a:not(.toggle-filter):not(.button):not(.feature-box__link):not(.jp-next):not(.jp-previous):not(.icon-phone) {
     transition: all 0.5s ease; }
 
-body.topic-1 .pre-queries a:not(.toggle-filter):not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button):not(.feature-box__link):not(.jp-next):not(.jp-previous),
-body.topic-1 main .article a:not(.toggle-filter):not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button):not(.feature-box__link):not(.jp-next):not(.jp-previous),
-body.topic-1 main .related-box a:not(.toggle-filter):not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button):not(.feature-box__link):not(.jp-next):not(.jp-previous),
-body.topic-1 main .sections a:not(.toggle-filter):not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button):not(.feature-box__link):not(.jp-next):not(.jp-previous) {
+body.topic-1 .pre-queries a:not(.toggle-filter):not(.button):not(.feature-box__link):not(.jp-next):not(.jp-previous),
+body.topic-1 main .article a:not(.toggle-filter):not(.button):not(.feature-box__link):not(.jp-next):not(.jp-previous),
+body.topic-1 main .related-box a:not(.toggle-filter):not(.button):not(.feature-box__link):not(.jp-next):not(.jp-previous),
+body.topic-1 main .sections a:not(.toggle-filter):not(.button):not(.feature-box__link):not(.jp-next):not(.jp-previous) {
   color: #e64415; }
 
-body.topic-2 .pre-queries a:not(.toggle-filter):not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button):not(.feature-box__link):not(.jp-next):not(.jp-previous),
-body.topic-2 main .article a:not(.toggle-filter):not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button):not(.feature-box__link):not(.jp-next):not(.jp-previous),
-body.topic-2 main .related-box a:not(.toggle-filter):not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button):not(.feature-box__link):not(.jp-next):not(.jp-previous),
-body.topic-2 main .sections a:not(.toggle-filter):not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button):not(.feature-box__link):not(.jp-next):not(.jp-previous) {
+body.topic-2 .pre-queries a:not(.toggle-filter):not(.button):not(.feature-box__link):not(.jp-next):not(.jp-previous),
+body.topic-2 main .article a:not(.toggle-filter):not(.button):not(.feature-box__link):not(.jp-next):not(.jp-previous),
+body.topic-2 main .related-box a:not(.toggle-filter):not(.button):not(.feature-box__link):not(.jp-next):not(.jp-previous),
+body.topic-2 main .sections a:not(.toggle-filter):not(.button):not(.feature-box__link):not(.jp-next):not(.jp-previous) {
   color: #74b929; }
 
-body.topic-3 main .article a:not(.toggle-filter):not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button):not(.feature-box__link):not(.jp-next):not(.jp-previous),
-body.topic-3 main .related-box a:not(.toggle-filter):not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button):not(.feature-box__link):not(.jp-next):not(.jp-previous),
-body.topic-3 main .sections a:not(.toggle-filter):not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button):not(.feature-box__link):not(.jp-next):not(.jp-previous) {
+body.topic-3 main .article a:not(.toggle-filter):not(.button):not(.feature-box__link):not(.jp-next):not(.jp-previous),
+body.topic-3 main .related-box a:not(.toggle-filter):not(.button):not(.feature-box__link):not(.jp-next):not(.jp-previous),
+body.topic-3 main .sections a:not(.toggle-filter):not(.button):not(.feature-box__link):not(.jp-next):not(.jp-previous) {
   color: #009fee; }
 
-body.topic-4 .pre-queries a:not(.toggle-filter):not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button):not(.feature-box__link):not(.jp-next):not(.jp-previous),
-body.topic-4 main .article a:not(.toggle-filter):not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button):not(.feature-box__link):not(.jp-next):not(.jp-previous),
-body.topic-4 main .related-box a:not(.toggle-filter):not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button):not(.feature-box__link):not(.jp-next):not(.jp-previous),
-body.topic-4 main .sections a:not(.toggle-filter):not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button):not(.feature-box__link):not(.jp-next):not(.jp-previous) {
+body.topic-4 .pre-queries a:not(.toggle-filter):not(.button):not(.feature-box__link):not(.jp-next):not(.jp-previous),
+body.topic-4 main .article a:not(.toggle-filter):not(.button):not(.feature-box__link):not(.jp-next):not(.jp-previous),
+body.topic-4 main .related-box a:not(.toggle-filter):not(.button):not(.feature-box__link):not(.jp-next):not(.jp-previous),
+body.topic-4 main .sections a:not(.toggle-filter):not(.button):not(.feature-box__link):not(.jp-next):not(.jp-previous) {
   color: #c6007b; }
 
-body.project-aprodi .pre-queries a:not(.toggle-filter):not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button):not(.feature-box__link):not(.jp-next):not(.jp-previous),
-body.project-aprodi main .article a:not(.toggle-filter):not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button):not(.feature-box__link):not(.jp-next):not(.jp-previous),
-body.project-aprodi main .related-box a:not(.toggle-filter):not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button):not(.feature-box__link):not(.jp-next):not(.jp-previous),
-body.project-aprodi main .sections a:not(.toggle-filter):not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button):not(.feature-box__link):not(.jp-next):not(.jp-previous) {
+body.project-aprodi .pre-queries a:not(.toggle-filter):not(.button):not(.feature-box__link):not(.jp-next):not(.jp-previous),
+body.project-aprodi main .article a:not(.toggle-filter):not(.button):not(.feature-box__link):not(.jp-next):not(.jp-previous),
+body.project-aprodi main .related-box a:not(.toggle-filter):not(.button):not(.feature-box__link):not(.jp-next):not(.jp-previous),
+body.project-aprodi main .sections a:not(.toggle-filter):not(.button):not(.feature-box__link):not(.jp-next):not(.jp-previous) {
   color: #0075aa; }
 
 .text-bold {
@@ -2015,7 +2015,7 @@ body.project-aprodi main .sections a:not(.toggle-filter):not(.button):not(#SgCoo
 .jcf-checkbox span:before {
   content: "\e610"; }
 
-.button.menu-button.active.search:hover:before, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.menu-button.active.search:hover:before, .wysiwyg .sg-cookie-optin-iframe-consent button.menu-button.active.search:hover:before {
+.button.menu-button.active.search:hover:before {
   content: "\e608"; }
 
 @keyframes fadeIn {
@@ -3115,8 +3115,6 @@ body.project-aprodi input[type="password"]:focus, body.project-aprodi textarea:h
     .wysiwyg figcaption .copyright-hint:before {
       content: ' ';
       white-space: pre; }
-  .wysiwyg .csc-textpic-border img {
-    border: 1px solid #808080; }
   .wysiwyg h1,
   .wysiwyg .h1 {
     font-size: 46px;
@@ -3219,10 +3217,10 @@ body.project-aprodi input[type="password"]:focus, body.project-aprodi textarea:h
         font-size: 13px; } }
   .wysiwyg dt {
     font-weight: 700; }
-  .wysiwyg a:not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button):not(.jp-next):not(.jp-previous) {
+  .wysiwyg a:not(.button):not(.jp-next):not(.jp-previous) {
     color: #e64415;
     text-decoration: none; }
-    .wysiwyg a:not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button):not(.jp-next):not(.jp-previous):hover {
+    .wysiwyg a:not(.button):not(.jp-next):not(.jp-previous):hover {
       text-decoration: underline; }
   .wysiwyg a[class^="icon-"] {
     display: block;
@@ -3290,8 +3288,16 @@ body.project-aprodi input[type="password"]:focus, body.project-aprodi textarea:h
     text-align: justify !important; }
   .wysiwyg .indent {
     margin-left: 2em; }
-  .wysiwyg iframe {
-    max-width: 100%; }
+  .wysiwyg .frame h2:first-child,
+  .wysiwyg .frame h3:first-child,
+  .wysiwyg .frame h4:first-child,
+  .wysiwyg .frame h5:first-child,
+  .wysiwyg .frame h6:first-child,
+  .wysiwyg .frame .h2:first-child,
+  .wysiwyg .frame .h3:first-child,
+  .wysiwyg .frame .h4:first-child,
+  .wysiwyg .frame .h5:first-child,
+  .wysiwyg .frame .h6:first-child,
   .wysiwyg .csc-element-n1 h2:first-child,
   .wysiwyg .csc-element-n1 h3:first-child,
   .wysiwyg .csc-element-n1 h4:first-child,
@@ -3303,22 +3309,8 @@ body.project-aprodi input[type="password"]:focus, body.project-aprodi textarea:h
   .wysiwyg .csc-element-n1 .h5:first-child,
   .wysiwyg .csc-element-n1 .h6:first-child {
     margin-top: 0; }
-  .wysiwyg > div:last-of-type p:last-child,
-  .wysiwyg > div:last-of-type ol:last-child,
-  .wysiwyg > div:last-of-type ul:last-child,
-  .wysiwyg > div:last-of-type table:last-child,
-  .wysiwyg > div:last-of-type blockquote:last-child,
-  .wysiwyg > div:last-of-type iframe:last-child {
-    margin-bottom: 0; }
-  .wysiwyg p:last-child,
-  .wysiwyg ol:last-child,
-  .wysiwyg ul:last-child,
-  .wysiwyg table:last-child,
-  .wysiwyg blockquote:last-child,
-  .wysiwyg iframe:last-child {
-    margin-bottom: 0; }
-  .wysiwyg > p .button, .wysiwyg > p #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button .wysiwyg > p button, .wysiwyg > p .sg-cookie-optin-iframe-consent button {
-    margin-top: 16px; }
+  .wysiwyg .csc-textpic-border img {
+    border: 1px solid #808080; }
   .wysiwyg div.csc-textpic-center .csc-textpic-center-outer,
   .wysiwyg div.csc-textpic-center .csc-textpic-center-inner {
     position: static;
@@ -3333,21 +3325,74 @@ body.project-aprodi input[type="password"]:focus, body.project-aprodi textarea:h
     margin-top: 16px; }
   .wysiwyg .csc-textpic-above .csc-textpic-image {
     width: 100%; }
+  .wysiwyg .frame:first-child header,
+  .wysiwyg .frame:first-child > h1,
+  .wysiwyg .frame:first-child > h2,
+  .wysiwyg .frame:first-child > h3,
+  .wysiwyg .frame:first-child > h4,
+  .wysiwyg .frame:first-child > h5,
+  .wysiwyg .frame:first-child > h6,
+  .wysiwyg .frame:first-child > .h1,
+  .wysiwyg .frame:first-child > .h2,
+  .wysiwyg .frame:first-child > .h3,
+  .wysiwyg .frame:first-child > .h4,
+  .wysiwyg .frame:first-child > .h5,
+  .wysiwyg .frame:first-child > .h6 {
+    display: none; }
+  .wysiwyg .ce-border img {
+    border: 1px solid #808080; }
+  .wysiwyg .ce-intext.ce-left ol, .wysiwyg .ce-intext.ce-left ul {
+    padding-left: 0; }
+  .wysiwyg .ce-textpic {
+    margin-top: 16px; }
+  .wysiwyg .ce-center .ce-outer,
+  .wysiwyg .ce-center .ce-inner {
+    position: static;
+    float: none; }
+  .wysiwyg div.csc-textpic-center .csc-textpic-center-outer,
+  .wysiwyg div.csc-textpic-center .csc-textpic-center-inner {
+    position: static;
+    float: none;
+    right: 0; }
+  .wysiwyg div.csc-textpic .csc-textpic-imagewrap .csc-textpic-image {
+    margin-bottom: 0;
+    margin-top: 0; }
+  .wysiwyg .csc-textpic-above .csc-textpic-image {
+    width: 100%; }
+  .wysiwyg iframe {
+    max-width: 100%; }
+  .wysiwyg > div:last-of-type p:last-child,
+  .wysiwyg > div:last-of-type ol:last-child,
+  .wysiwyg > div:last-of-type ul:last-child,
+  .wysiwyg > div:last-of-type table:last-child,
+  .wysiwyg > div:last-of-type blockquote:last-child,
+  .wysiwyg > div:last-of-type iframe:last-child {
+    margin-bottom: 0; }
+  .wysiwyg p:last-child,
+  .wysiwyg ol:last-child,
+  .wysiwyg ul:last-child,
+  .wysiwyg table:last-child,
+  .wysiwyg blockquote:last-child,
+  .wysiwyg iframe:last-child {
+    margin-bottom: 0; }
+  .wysiwyg > p .button {
+    margin-top: 16px; }
   .wysiwyg .typo3-messages:first-child {
     margin-top: 0; }
 
+/*
 body:not(.first-letter-normal) .wysiwyg:not(.first-letter-normal) .csc-element-n1 div.csc-textpic-text > p:first-child::first-letter,
 body:not(.first-letter-normal) .wysiwyg:not(.first-letter-normal) .csc-element-n1 > p:first-child::first-letter {
   float: left;
   margin-top: 10px;
   margin-right: 9px;
   font-size: 64px;
-  font-weight: normal; }
-  @media (max-width: 1024px) {
-    body:not(.first-letter-normal) .wysiwyg:not(.first-letter-normal) .csc-element-n1 div.csc-textpic-text > p:first-child::first-letter,
-    body:not(.first-letter-normal) .wysiwyg:not(.first-letter-normal) .csc-element-n1 > p:first-child::first-letter {
-      font-size: 48px; } }
-
+  font-weight:normal;
+  @include media('<desktop') {
+    font-size: 48px;
+  }
+}
+*/
 .featherlight-content {
   /*
  * Styles for content
@@ -3441,8 +3486,6 @@ body:not(.first-letter-normal) .wysiwyg:not(.first-letter-normal) .csc-element-n
     .featherlight-content figcaption .copyright-hint:before {
       content: ' ';
       white-space: pre; }
-  .featherlight-content .csc-textpic-border img {
-    border: 1px solid #808080; }
   .featherlight-content h1,
   .featherlight-content .h1 {
     font-size: 46px;
@@ -3545,10 +3588,10 @@ body:not(.first-letter-normal) .wysiwyg:not(.first-letter-normal) .csc-element-n
         font-size: 13px; } }
   .featherlight-content dt {
     font-weight: 700; }
-  .featherlight-content a:not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button):not(.jp-next):not(.jp-previous) {
+  .featherlight-content a:not(.button):not(.jp-next):not(.jp-previous) {
     color: #e64415;
     text-decoration: none; }
-    .featherlight-content a:not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button):not(.jp-next):not(.jp-previous):hover {
+    .featherlight-content a:not(.button):not(.jp-next):not(.jp-previous):hover {
       text-decoration: underline; }
   .featherlight-content a[class^="icon-"] {
     display: block;
@@ -3632,58 +3675,75 @@ body:not(.first-letter-normal) .wysiwyg:not(.first-letter-normal) .csc-element-n
 body.topic-1 .wysiwyg ul:not(.links-list) li:before {
   background: #e64415; }
 
-body.topic-1 .wysiwyg a:not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button):not(.jp-next):not(.jp-previous),
+body.topic-1 .wysiwyg a:not(.button):not(.jp-next):not(.jp-previous),
 body.topic-1 .wysiwyg blockquote:before {
   color: #e64415; }
 
-body.topic-1:not(.first-letter-normal) .wysiwyg:not(.first-letter-normal) .csc-element-n1 div.csc-textpic-text > p:first-child::first-letter,
-body.topic-1:not(.first-letter-normal) .wysiwyg:not(.first-letter-normal) .csc-element-n1 > p:first-child::first-letter {
-  color: #e64415; }
-
+/*
+body.topic-1:not(.first-letter-normal) .wysiwyg:not(.first-letter-normal) {
+  .csc-element-n1 div.csc-textpic-text > p:first-child::first-letter,
+  .csc-element-n1 > p:first-child::first-letter  {
+    color: $topic-1;
+  }
+}*/
 body.topic-2 .wysiwyg ul:not(.links-list) li:before {
   background: #74b929; }
 
-body.topic-2 .wysiwyg a:not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button):not(.jp-next):not(.jp-previous),
+body.topic-2 .wysiwyg a:not(.button):not(.jp-next):not(.jp-previous),
 body.topic-2 .wysiwyg blockquote:before {
   color: #74b929; }
 
-body.topic-2:not(.first-letter-normal) .wysiwyg:not(.first-letter-normal) .csc-element-n1 div.csc-textpic-text > p:first-child::first-letter,
-body.topic-2:not(.first-letter-normal) .wysiwyg:not(.first-letter-normal) .csc-element-n1 > p:first-child::first-letter {
-  color: #74b929; }
-
+/*
+body.topic-2:not(.first-letter-normal) .wysiwyg:not(.first-letter-normal) {
+  .csc-element-n1 div.csc-textpic-text > p:first-child::first-letter,
+  .csc-element-n1 > p:first-child::first-letter  {
+    color: $topic-2;
+  }
+}*/
 body.topic-3 .wysiwyg ul:not(.links-list) li:before {
   background: #009fee; }
 
-body.topic-3 .wysiwyg a:not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button):not(.jp-next):not(.jp-previous),
+body.topic-3 .wysiwyg a:not(.button):not(.jp-next):not(.jp-previous),
 body.topic-3 .wysiwyg blockquote:before {
   color: #009fee; }
 
-body.topic-3:not(.first-letter-normal) .wysiwyg:not(.first-letter-normal) .csc-element-n1 div.csc-textpic-text > p:first-child::first-letter,
-body.topic-3:not(.first-letter-normal) .wysiwyg:not(.first-letter-normal) .csc-element-n1 > p:first-child::first-letter {
-  color: #009fee; }
-
+/*
+body.topic-3:not(.first-letter-normal) .wysiwyg:not(.first-letter-normal) {
+  .csc-element-n1 div.csc-textpic-text > p:first-child::first-letter,
+  .csc-element-n1 > p:first-child::first-letter  {
+    color: $topic-3;
+  }
+} */
 body.topic-4 .wysiwyg ul:not(.links-list) li:before {
   background: #c6007b; }
 
-body.topic-4 .wysiwyg a:not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button):not(.jp-next):not(.jp-previous),
+body.topic-4 .wysiwyg a:not(.button):not(.jp-next):not(.jp-previous),
 body.topic-4 .wysiwyg blockquote:before {
   color: #c6007b; }
 
-body.topic-4:not(.first-letter-normal) .wysiwyg:not(.first-letter-normal) .csc-element-n1 div.csc-textpic-text > p:first-child::first-letter,
-body.topic-4:not(.first-letter-normal) .wysiwyg:not(.first-letter-normal) .csc-element-n1 > p:first-child::first-letter {
-  color: #c6007b; }
-
+/*
+body.topic-4:not(.first-letter-normal) .wysiwyg:not(.first-letter-normal) {
+  .csc-element-n1 div.csc-textpic-text > p:first-child::first-letter,
+  .csc-element-n1 > p:first-child::first-letter  {
+    color: $topic-4;
+  }
+}
+*/
 body.project-aprodi .wysiwyg ul:not(.links-list) li:before {
   background: #0075aa; }
 
-body.project-aprodi .wysiwyg a:not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button):not(.jp-next):not(.jp-previous),
+body.project-aprodi .wysiwyg a:not(.button):not(.jp-next):not(.jp-previous),
 body.project-aprodi .wysiwyg blockquote:before {
   color: #0075aa; }
 
-body.project-aprodi:not(.first-letter-normal) .wysiwyg:not(.first-letter-normal) .csc-element-n1 div.csc-textpic-text > p:first-child::first-letter,
-body.project-aprodi:not(.first-letter-normal) .wysiwyg:not(.first-letter-normal) .csc-element-n1 > p:first-child::first-letter {
-  color: #0075aa; }
-
+/*
+body.project-aprodi:not(.first-letter-normal) .wysiwyg:not(.first-letter-normal) {
+  .csc-element-n1 div.csc-textpic-text > p:first-child::first-letter,
+  .csc-element-n1 > p:first-child::first-letter  {
+    color: $project-aprodi;
+  }
+}
+*/
 .top-menu {
   position: relative;
   padding: 0 16px 0;
@@ -4040,7 +4100,7 @@ table.contenttable-events th {
   -ms-flex-pack: justify;
       justify-content: space-between; }
 
-.button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button, .wysiwyg .sg-cookie-optin-iframe-consent button {
+.button {
   overflow: hidden;
   display: inline-block;
   padding: 0 14px;
@@ -4058,169 +4118,158 @@ table.contenttable-events th {
   transition: background 0.25s ease;
   white-space: nowrap;
   word-spacing: 0.2em; }
-  .button.secondary, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.secondary, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button-accept-specific,
-  #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button-accept-essential, .wysiwyg .sg-cookie-optin-iframe-consent button.secondary {
+  .button.secondary {
     background: #808080 !important; }
-    .button.secondary:hover, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.secondary:hover, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button-accept-specific:hover,
-    #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button-accept-essential:hover, .wysiwyg .sg-cookie-optin-iframe-consent button.secondary:hover, .button.secondary:focus, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.secondary:focus, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button-accept-specific:focus,
-    #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button-accept-essential:focus, .wysiwyg .sg-cookie-optin-iframe-consent button.secondary:focus {
+    .button.secondary:hover, .button.secondary:focus {
       border-color: #808080 !important;
       color: #808080 !important; }
-  .button.disabled, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.disabled, .wysiwyg .sg-cookie-optin-iframe-consent button.disabled {
+  .button.disabled {
     opacity: 0.6;
     cursor: pointer; }
-  .button.block, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.block, .wysiwyg .sg-cookie-optin-iframe-consent button.block {
+  .button.block {
     display: block;
     width: 100%; }
-  .button:hover, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button:hover, .wysiwyg .sg-cookie-optin-iframe-consent button:hover {
+  .button:hover {
     background: #fff !important;
     border: 2px solid #e64415;
     text-decoration: none;
     color: #e64415; }
-  .button:focus, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button:focus, .wysiwyg .sg-cookie-optin-iframe-consent button:focus {
+  .button:focus {
     outline: 1px dotted #000; }
-  .button.topic-1, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.topic-1, .wysiwyg .sg-cookie-optin-iframe-consent button.topic-1 {
+  .button.topic-1 {
     background: #e64415 !important;
     color: #fff !important; }
-    .button.topic-1:active, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.topic-1:active, .wysiwyg .sg-cookie-optin-iframe-consent button.topic-1:active, .button.topic-1.active, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.topic-1.active, .wysiwyg .sg-cookie-optin-iframe-consent button.topic-1.active, .button.topic-1:hover, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.topic-1:hover, .wysiwyg .sg-cookie-optin-iframe-consent button.topic-1:hover {
+    .button.topic-1:active, .button.topic-1.active, .button.topic-1:hover {
       border-color: #e64415 !important;
       background: #fff !important;
       color: #e64415 !important; }
-    .button.topic-1:focus, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.topic-1:focus, .wysiwyg .sg-cookie-optin-iframe-consent button.topic-1:focus {
+    .button.topic-1:focus {
       border-color: #e64415 !important; }
-  .button.topic-2, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.topic-2, .wysiwyg .sg-cookie-optin-iframe-consent button.topic-2 {
+  .button.topic-2 {
     background: #74b929 !important;
     color: #fff !important; }
-    .button.topic-2:active, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.topic-2:active, .wysiwyg .sg-cookie-optin-iframe-consent button.topic-2:active, .button.topic-2.active, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.topic-2.active, .wysiwyg .sg-cookie-optin-iframe-consent button.topic-2.active, .button.topic-2:hover, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.topic-2:hover, .wysiwyg .sg-cookie-optin-iframe-consent button.topic-2:hover {
+    .button.topic-2:active, .button.topic-2.active, .button.topic-2:hover {
       border-color: #74b929 !important;
       background: #fff !important;
       color: #74b929 !important; }
-    .button.topic-2:focus, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.topic-2:focus, .wysiwyg .sg-cookie-optin-iframe-consent button.topic-2:focus {
+    .button.topic-2:focus {
       border-color: #74b929 !important; }
-  .button.topic-3, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.topic-3, .wysiwyg .sg-cookie-optin-iframe-consent button.topic-3 {
+  .button.topic-3 {
     background: #009fee !important;
     color: #fff !important; }
-    .button.topic-3:active, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.topic-3:active, .wysiwyg .sg-cookie-optin-iframe-consent button.topic-3:active, .button.topic-3.active, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.topic-3.active, .wysiwyg .sg-cookie-optin-iframe-consent button.topic-3.active, .button.topic-3:hover, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.topic-3:hover, .wysiwyg .sg-cookie-optin-iframe-consent button.topic-3:hover {
+    .button.topic-3:active, .button.topic-3.active, .button.topic-3:hover {
       border-color: #009fee !important;
       background: #fff !important;
       color: #009fee !important; }
-    .button.topic-3:focus, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.topic-3:focus, .wysiwyg .sg-cookie-optin-iframe-consent button.topic-3:focus {
+    .button.topic-3:focus {
       border-color: #009fee !important; }
-  .button.topic-4, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.topic-4, .wysiwyg .sg-cookie-optin-iframe-consent button.topic-4 {
+  .button.topic-4 {
     background: #c6007b !important;
     color: #fff !important; }
-    .button.topic-4:active, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.topic-4:active, .wysiwyg .sg-cookie-optin-iframe-consent button.topic-4:active, .button.topic-4.active, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.topic-4.active, .wysiwyg .sg-cookie-optin-iframe-consent button.topic-4.active, .button.topic-4:hover, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.topic-4:hover, .wysiwyg .sg-cookie-optin-iframe-consent button.topic-4:hover {
+    .button.topic-4:active, .button.topic-4.active, .button.topic-4:hover {
       border-color: #c6007b !important;
       background: #fff !important;
       color: #c6007b !important; }
-    .button.topic-4:focus, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.topic-4:focus, .wysiwyg .sg-cookie-optin-iframe-consent button.topic-4:focus {
+    .button.topic-4:focus {
       border-color: #c6007b !important; }
-  .button.text-hide, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.text-hide, .wysiwyg .sg-cookie-optin-iframe-consent button.text-hide {
+  .button.text-hide {
     width: 40px;
     padding-left: 0;
     padding-right: 0;
     text-indent: -999em; }
-  .button.text-hide[class*="icon-"]:before, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.text-hide[class*="icon-"]:before, .wysiwyg .sg-cookie-optin-iframe-consent button.text-hide[class*="icon-"]:before {
+  .button.text-hide[class*="icon-"]:before {
     float: right;
     width: 100%;
     margin: auto;
     text-align: center; }
-  .button:before, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button:before, .wysiwyg .sg-cookie-optin-iframe-consent button:before,
-  .button > span:before, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button > span:before, .wysiwyg .sg-cookie-optin-iframe-consent button > span:before {
+  .button:before,
+  .button > span:before {
     font-size: 16px;
     line-height: 28px;
     text-indent: 0;
     text-shadow: none;
     z-index: 2; }
-  .button:before, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button:before, .wysiwyg .sg-cookie-optin-iframe-consent button:before {
+  .button:before {
     float: right;
     margin-left: 8px; }
-  .button.left-icon:before, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.left-icon:before, .wysiwyg .sg-cookie-optin-iframe-consent button.left-icon:before {
+  .button.left-icon:before {
     float: left;
     margin-left: 0;
     margin-right: 8px; }
-  .button > span:before, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button > span:before, .wysiwyg .sg-cookie-optin-iframe-consent button > span:before {
+  .button > span:before {
     float: left;
     width: 16px;
     margin-right: 8px; }
-  .button.icon-arrow-down:before, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.icon-arrow-down:before, .wysiwyg .sg-cookie-optin-iframe-consent button.icon-arrow-down:before {
+  .button.icon-arrow-down:before {
     font-size: 8px; }
-  .button.social-icon, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.social-icon, .wysiwyg .sg-cookie-optin-iframe-consent button.social-icon {
+  .button.social-icon {
     width: 32px;
     height: 32px;
     padding: 0;
     border: 0;
     border-radius: 8px; }
-    .button.social-icon:before, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.social-icon:before, .wysiwyg .sg-cookie-optin-iframe-consent button.social-icon:before {
+    .button.social-icon:before {
       display: inline-block;
       font-size: 16px;
       line-height: 32px; }
-    .button.social-icon.icon-facebook, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.social-icon.icon-facebook, .wysiwyg .sg-cookie-optin-iframe-consent button.social-icon.icon-facebook {
+    .button.social-icon.icon-facebook {
       background: #3b5998; }
-      .button.social-icon.icon-facebook:hover, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.social-icon.icon-facebook:hover, .wysiwyg .sg-cookie-optin-iframe-consent button.social-icon.icon-facebook:hover {
+      .button.social-icon.icon-facebook:hover {
         background: #3b5998 !important;
         color: #fff; }
-    .button.social-icon.icon-twitter, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.social-icon.icon-twitter, .wysiwyg .sg-cookie-optin-iframe-consent button.social-icon.icon-twitter {
+    .button.social-icon.icon-twitter {
       background: #55acee; }
-      .button.social-icon.icon-twitter:hover, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.social-icon.icon-twitter:hover, .wysiwyg .sg-cookie-optin-iframe-consent button.social-icon.icon-twitter:hover {
+      .button.social-icon.icon-twitter:hover {
         background: #55acee !important;
         color: #fff; }
-    .button.social-icon.icon-twitter:before, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.social-icon.icon-twitter:before, .wysiwyg .sg-cookie-optin-iframe-consent button.social-icon.icon-twitter:before {
+    .button.social-icon.icon-twitter:before {
       font-size: 13px; }
-    .button.social-icon.icon-google, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.social-icon.icon-google, .wysiwyg .sg-cookie-optin-iframe-consent button.social-icon.icon-google {
+    .button.social-icon.icon-google {
       background: #dd4b39; }
-      .button.social-icon.icon-google:hover, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.social-icon.icon-google:hover, .wysiwyg .sg-cookie-optin-iframe-consent button.social-icon.icon-google:hover {
+      .button.social-icon.icon-google:hover {
         background: #dd4b39 !important;
         color: #fff; }
-    .button.social-icon.icon-google:before, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.social-icon.icon-google:before, .wysiwyg .sg-cookie-optin-iframe-consent button.social-icon.icon-google:before {
+    .button.social-icon.icon-google:before {
       font-size: 14px; }
-    .button.social-icon.icon-xing, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.social-icon.icon-xing, .wysiwyg .sg-cookie-optin-iframe-consent button.social-icon.icon-xing {
+    .button.social-icon.icon-xing {
       background: #026466; }
-      .button.social-icon.icon-xing:hover, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.social-icon.icon-xing:hover, .wysiwyg .sg-cookie-optin-iframe-consent button.social-icon.icon-xing:hover {
+      .button.social-icon.icon-xing:hover {
         background: #026466 !important;
         color: #fff; }
-    .button.social-icon.icon-linkedin, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.social-icon.icon-linkedin, .wysiwyg .sg-cookie-optin-iframe-consent button.social-icon.icon-linkedin {
+    .button.social-icon.icon-linkedin {
       background: #0077b5; }
-      .button.social-icon.icon-linkedin:hover, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.social-icon.icon-linkedin:hover, .wysiwyg .sg-cookie-optin-iframe-consent button.social-icon.icon-linkedin:hover {
+      .button.social-icon.icon-linkedin:hover {
         background: #0077b5 !important;
         color: #fff; }
-    .button.social-icon.icon-linkedin:before, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.social-icon.icon-linkedin:before, .wysiwyg .sg-cookie-optin-iframe-consent button.social-icon.icon-linkedin:before {
+    .button.social-icon.icon-linkedin:before {
       font-size: 15px; }
-  .button.download-button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.download-button, .wysiwyg .sg-cookie-optin-iframe-consent button.download-button, .button.accordion-button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.accordion-button, .wysiwyg .sg-cookie-optin-iframe-consent button.accordion-button {
+  .button.download-button, .button.accordion-button {
     background: #fff !important;
     border-color: #fff !important;
     color: #c6007b;
     font-size: 12px; }
-    .button.download-button span:before, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.download-button span:before, .wysiwyg .sg-cookie-optin-iframe-consent button.download-button span:before, .button.accordion-button span:before, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.accordion-button span:before, .wysiwyg .sg-cookie-optin-iframe-consent button.accordion-button span:before {
+    .button.download-button span:before, .button.accordion-button span:before {
       color: #c6007b; }
-  .button.accordion-button span:before, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.accordion-button span:before, .wysiwyg .sg-cookie-optin-iframe-consent button.accordion-button span:before {
+  .button.accordion-button span:before {
     font-size: 10px; }
-  .button.print-button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.print-button, .wysiwyg .sg-cookie-optin-iframe-consent button.print-button, .button.mark-button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.mark-button, .wysiwyg .sg-cookie-optin-iframe-consent button.mark-button {
+  .button.print-button, .button.mark-button {
     background: #808080 !important; }
-    .button.print-button:hover, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.print-button:hover, .wysiwyg .sg-cookie-optin-iframe-consent button.print-button:hover, .button.print-button:focus, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.print-button:focus, .wysiwyg .sg-cookie-optin-iframe-consent button.print-button:focus, .button.mark-button:hover, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.mark-button:hover, .wysiwyg .sg-cookie-optin-iframe-consent button.mark-button:hover, .button.mark-button:focus, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.mark-button:focus, .wysiwyg .sg-cookie-optin-iframe-consent button.mark-button:focus {
+    .button.print-button:hover, .button.print-button:focus, .button.mark-button:hover, .button.mark-button:focus {
       border-color: #808080 !important;
       background: #fff !important;
       color: #808080 !important; }
-    .button.print-button:before, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.print-button:before, .wysiwyg .sg-cookie-optin-iframe-consent button.print-button:before, .button.mark-button:before, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.mark-button:before, .wysiwyg .sg-cookie-optin-iframe-consent button.mark-button:before {
+    .button.print-button:before, .button.mark-button:before {
       font-size: 14px; }
-  .button.mark-button:before, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.mark-button:before, .wysiwyg .sg-cookie-optin-iframe-consent button.mark-button:before {
+  .button.mark-button:before {
     font-size: 16px; }
-  .button.read-more, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.read-more, .wysiwyg .sg-cookie-optin-iframe-consent button.read-more {
+  .button.read-more {
     margin-bottom: 16px; }
 
-body.desktop .button.menu-button:hover, body.desktop #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.menu-button:hover, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button body.desktop button.menu-button:hover, body.desktop .wysiwyg .sg-cookie-optin-iframe-consent button.menu-button:hover, .wysiwyg .sg-cookie-optin-iframe-consent body.desktop button.menu-button:hover,
-body.desktop .button.menu-button:focus,
-body.desktop #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.menu-button:focus, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button
-body.desktop button.menu-button:focus,
-body.desktop .wysiwyg .sg-cookie-optin-iframe-consent button.menu-button:focus, .wysiwyg .sg-cookie-optin-iframe-consent
-body.desktop button.menu-button:focus {
+body.desktop .button.menu-button:hover,
+body.desktop .button.menu-button:focus {
   background: #808080 !important; }
-  body.desktop .button.menu-button:hover:after, body.desktop #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.menu-button:hover:after, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button body.desktop button.menu-button:hover:after, body.desktop .wysiwyg .sg-cookie-optin-iframe-consent button.menu-button:hover:after, .wysiwyg .sg-cookie-optin-iframe-consent body.desktop button.menu-button:hover:after,
-  body.desktop .button.menu-button:focus:after,
-  body.desktop #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.menu-button:focus:after, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button
-  body.desktop button.menu-button:focus:after,
-  body.desktop .wysiwyg .sg-cookie-optin-iframe-consent button.menu-button:focus:after, .wysiwyg .sg-cookie-optin-iframe-consent
-  body.desktop button.menu-button:focus:after {
+  body.desktop .button.menu-button:hover:after,
+  body.desktop .button.menu-button:focus:after {
     border-left-color: #808080 !important; }
 
 .button-checked {
@@ -4251,54 +4300,54 @@ body.desktop button.menu-button:focus {
 body.webkit .button-checked .jcf-checkbox span:before {
   line-height: 32px; }
 
-body.topic-1 .button, body.topic-1 #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button body.topic-1 button, body.topic-1 .wysiwyg .sg-cookie-optin-iframe-consent button, .wysiwyg .sg-cookie-optin-iframe-consent body.topic-1 button {
+body.topic-1 .button {
   background: #e64415;
   color: #fff; }
-  body.topic-1 .button:hover, body.topic-1 #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button:hover, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button body.topic-1 button:hover, body.topic-1 .wysiwyg .sg-cookie-optin-iframe-consent button:hover, .wysiwyg .sg-cookie-optin-iframe-consent body.topic-1 button:hover, body.topic-1 .button:focus, body.topic-1 #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button:focus, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button body.topic-1 button:focus, body.topic-1 .wysiwyg .sg-cookie-optin-iframe-consent button:focus, .wysiwyg .sg-cookie-optin-iframe-consent body.topic-1 button:focus {
+  body.topic-1 .button:hover, body.topic-1 .button:focus {
     border-color: #e64415;
     background: #fff;
     color: #e64415; }
-  body.topic-1 .button.download-button span:before, body.topic-1 #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.download-button span:before, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button body.topic-1 button.download-button span:before, body.topic-1 .wysiwyg .sg-cookie-optin-iframe-consent button.download-button span:before, .wysiwyg .sg-cookie-optin-iframe-consent body.topic-1 button.download-button span:before, body.topic-1 .button.accordion-button span:before, body.topic-1 #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.accordion-button span:before, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button body.topic-1 button.accordion-button span:before, body.topic-1 .wysiwyg .sg-cookie-optin-iframe-consent button.accordion-button span:before, .wysiwyg .sg-cookie-optin-iframe-consent body.topic-1 button.accordion-button span:before {
+  body.topic-1 .button.download-button span:before, body.topic-1 .button.accordion-button span:before {
     color: #e64415; }
 
-body.topic-2 .button, body.topic-2 #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button body.topic-2 button, body.topic-2 .wysiwyg .sg-cookie-optin-iframe-consent button, .wysiwyg .sg-cookie-optin-iframe-consent body.topic-2 button {
+body.topic-2 .button {
   background: #74b929;
   color: #fff; }
-  body.topic-2 .button:hover, body.topic-2 #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button:hover, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button body.topic-2 button:hover, body.topic-2 .wysiwyg .sg-cookie-optin-iframe-consent button:hover, .wysiwyg .sg-cookie-optin-iframe-consent body.topic-2 button:hover, body.topic-2 .button:focus, body.topic-2 #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button:focus, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button body.topic-2 button:focus, body.topic-2 .wysiwyg .sg-cookie-optin-iframe-consent button:focus, .wysiwyg .sg-cookie-optin-iframe-consent body.topic-2 button:focus {
+  body.topic-2 .button:hover, body.topic-2 .button:focus {
     border-color: #74b929;
     background: #fff;
     color: #74b929; }
-  body.topic-2 .button.download-button span:before, body.topic-2 #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.download-button span:before, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button body.topic-2 button.download-button span:before, body.topic-2 .wysiwyg .sg-cookie-optin-iframe-consent button.download-button span:before, .wysiwyg .sg-cookie-optin-iframe-consent body.topic-2 button.download-button span:before, body.topic-2 .button.accordion-button span:before, body.topic-2 #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.accordion-button span:before, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button body.topic-2 button.accordion-button span:before, body.topic-2 .wysiwyg .sg-cookie-optin-iframe-consent button.accordion-button span:before, .wysiwyg .sg-cookie-optin-iframe-consent body.topic-2 button.accordion-button span:before {
+  body.topic-2 .button.download-button span:before, body.topic-2 .button.accordion-button span:before {
     color: #74b929; }
 
-body.topic-3 .button, body.topic-3 #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button body.topic-3 button, body.topic-3 .wysiwyg .sg-cookie-optin-iframe-consent button, .wysiwyg .sg-cookie-optin-iframe-consent body.topic-3 button {
+body.topic-3 .button {
   background: #009fee;
   color: #fff; }
-  body.topic-3 .button:hover, body.topic-3 #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button:hover, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button body.topic-3 button:hover, body.topic-3 .wysiwyg .sg-cookie-optin-iframe-consent button:hover, .wysiwyg .sg-cookie-optin-iframe-consent body.topic-3 button:hover, body.topic-3 .button:focus, body.topic-3 #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button:focus, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button body.topic-3 button:focus, body.topic-3 .wysiwyg .sg-cookie-optin-iframe-consent button:focus, .wysiwyg .sg-cookie-optin-iframe-consent body.topic-3 button:focus {
+  body.topic-3 .button:hover, body.topic-3 .button:focus {
     border-color: #009fee;
     background: #fff;
     color: #009fee; }
-  body.topic-3 .button.download-button span:before, body.topic-3 #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.download-button span:before, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button body.topic-3 button.download-button span:before, body.topic-3 .wysiwyg .sg-cookie-optin-iframe-consent button.download-button span:before, .wysiwyg .sg-cookie-optin-iframe-consent body.topic-3 button.download-button span:before, body.topic-3 .button.accordion-button span:before, body.topic-3 #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.accordion-button span:before, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button body.topic-3 button.accordion-button span:before, body.topic-3 .wysiwyg .sg-cookie-optin-iframe-consent button.accordion-button span:before, .wysiwyg .sg-cookie-optin-iframe-consent body.topic-3 button.accordion-button span:before {
+  body.topic-3 .button.download-button span:before, body.topic-3 .button.accordion-button span:before {
     color: #009fee; }
 
-body.topic-4 .button, body.topic-4 #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button body.topic-4 button, body.topic-4 .wysiwyg .sg-cookie-optin-iframe-consent button, .wysiwyg .sg-cookie-optin-iframe-consent body.topic-4 button {
+body.topic-4 .button {
   background: #c6007b;
   color: #fff; }
-  body.topic-4 .button:hover, body.topic-4 #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button:hover, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button body.topic-4 button:hover, body.topic-4 .wysiwyg .sg-cookie-optin-iframe-consent button:hover, .wysiwyg .sg-cookie-optin-iframe-consent body.topic-4 button:hover, body.topic-4 .button:focus, body.topic-4 #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button:focus, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button body.topic-4 button:focus, body.topic-4 .wysiwyg .sg-cookie-optin-iframe-consent button:focus, .wysiwyg .sg-cookie-optin-iframe-consent body.topic-4 button:focus {
+  body.topic-4 .button:hover, body.topic-4 .button:focus {
     border-color: #c6007b;
     background: #fff;
     color: #c6007b; }
-  body.topic-4 .button.download-button span:before, body.topic-4 #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.download-button span:before, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button body.topic-4 button.download-button span:before, body.topic-4 .wysiwyg .sg-cookie-optin-iframe-consent button.download-button span:before, .wysiwyg .sg-cookie-optin-iframe-consent body.topic-4 button.download-button span:before, body.topic-4 .button.accordion-button span:before, body.topic-4 #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.accordion-button span:before, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button body.topic-4 button.accordion-button span:before, body.topic-4 .wysiwyg .sg-cookie-optin-iframe-consent button.accordion-button span:before, .wysiwyg .sg-cookie-optin-iframe-consent body.topic-4 button.accordion-button span:before {
+  body.topic-4 .button.download-button span:before, body.topic-4 .button.accordion-button span:before {
     color: #c6007b; }
 
-body.project-aprodi .button, body.project-aprodi #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button body.project-aprodi button, body.project-aprodi .wysiwyg .sg-cookie-optin-iframe-consent button, .wysiwyg .sg-cookie-optin-iframe-consent body.project-aprodi button {
+body.project-aprodi .button {
   background: #0075aa;
   color: #fff; }
-  body.project-aprodi .button:hover, body.project-aprodi #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button:hover, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button body.project-aprodi button:hover, body.project-aprodi .wysiwyg .sg-cookie-optin-iframe-consent button:hover, .wysiwyg .sg-cookie-optin-iframe-consent body.project-aprodi button:hover, body.project-aprodi .button:focus, body.project-aprodi #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button:focus, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button body.project-aprodi button:focus, body.project-aprodi .wysiwyg .sg-cookie-optin-iframe-consent button:focus, .wysiwyg .sg-cookie-optin-iframe-consent body.project-aprodi button:focus {
+  body.project-aprodi .button:hover, body.project-aprodi .button:focus {
     border-color: #0075aa;
     background: #fff;
     color: #0075aa; }
-  body.project-aprodi .button.download-button span:before, body.project-aprodi #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.download-button span:before, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button body.project-aprodi button.download-button span:before, body.project-aprodi .wysiwyg .sg-cookie-optin-iframe-consent button.download-button span:before, .wysiwyg .sg-cookie-optin-iframe-consent body.project-aprodi button.download-button span:before, body.project-aprodi .button.accordion-button span:before, body.project-aprodi #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.accordion-button span:before, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button body.project-aprodi button.accordion-button span:before, body.project-aprodi .wysiwyg .sg-cookie-optin-iframe-consent button.accordion-button span:before, .wysiwyg .sg-cookie-optin-iframe-consent body.project-aprodi button.accordion-button span:before {
+  body.project-aprodi .button.download-button span:before, body.project-aprodi .button.accordion-button span:before {
     color: #0075aa; }
 
 .tcon {
@@ -4392,11 +4441,11 @@ body.project-aprodi .button, body.project-aprodi #SgCookieOptin .sg-cookie-optin
   margin-top: 16px; }
   .content-box .pagination .mobile-text {
     display: none; }
-  .content-box .pagination .button, .content-box .pagination #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button .content-box .pagination button, .content-box .pagination .wysiwyg .sg-cookie-optin-iframe-consent button, .wysiwyg .sg-cookie-optin-iframe-consent .content-box .pagination button {
+  .content-box .pagination .button {
     float: left; }
-    .content-box .pagination .button.next, .content-box .pagination #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.next, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button .content-box .pagination button.next, .content-box .pagination .wysiwyg .sg-cookie-optin-iframe-consent button.next, .wysiwyg .sg-cookie-optin-iframe-consent .content-box .pagination button.next {
+    .content-box .pagination .button.next {
       float: right; }
-    .content-box .pagination .button.previous:before, .content-box .pagination #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.previous:before, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button .content-box .pagination button.previous:before, .content-box .pagination .wysiwyg .sg-cookie-optin-iframe-consent button.previous:before, .wysiwyg .sg-cookie-optin-iframe-consent .content-box .pagination button.previous:before {
+    .content-box .pagination .button.previous:before {
       transform: rotate(180deg);
       margin-left: 0;
       margin-right: 8px;
@@ -4909,47 +4958,47 @@ body.chrome.desktop .pre-queries {
     .box.publication.expert footer p {
       left: 36px;
       padding: 0; }
-    .box.publication.expert footer .button, .box.publication.expert footer #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button .box.publication.expert footer button, .box.publication.expert footer .wysiwyg .sg-cookie-optin-iframe-consent button, .wysiwyg .sg-cookie-optin-iframe-consent .box.publication.expert footer button {
+    .box.publication.expert footer .button {
       display: inline-block;
       margin-top: -3px; }
     body.topic-1 .box.publication.expert a, .box.publication.expert.topic-1 a, body.topic-1 .inherit-color .publication.expert.box a {
       color: #e64415; }
     body.topic-1 .box.publication.expert .contact-info-box a, .box.publication.expert.topic-1 .contact-info-box a, body.topic-1 .inherit-color .publication.expert.box .contact-info-box a {
       color: #fff; }
-    body.topic-1 .box.publication.expert footer .button, body.topic-1 .box.publication.expert footer #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button body.topic-1 .box.publication.expert footer button, body.topic-1 .box.publication.expert footer .wysiwyg .sg-cookie-optin-iframe-consent button, .wysiwyg .sg-cookie-optin-iframe-consent body.topic-1 .box.publication.expert footer button, .box.publication.expert.topic-1 footer .button, body.topic-1 .inherit-color .publication.expert.box footer .button, .box.publication.expert.topic-1 footer #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button .box.publication.expert.topic-1 footer button, body.topic-1 .inherit-color .publication.expert.box footer #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button body.topic-1 .inherit-color .publication.expert.box footer button, .box.publication.expert.topic-1 footer .wysiwyg .sg-cookie-optin-iframe-consent button, .wysiwyg .sg-cookie-optin-iframe-consent .box.publication.expert.topic-1 footer button, body.topic-1 .inherit-color .publication.expert.box footer .wysiwyg .sg-cookie-optin-iframe-consent button, .wysiwyg .sg-cookie-optin-iframe-consent body.topic-1 .inherit-color .publication.expert.box footer button {
+    body.topic-1 .box.publication.expert footer .button, .box.publication.expert.topic-1 footer .button, body.topic-1 .inherit-color .publication.expert.box footer .button {
       background: #e64415;
       color: #fff; }
-      body.topic-1 .box.publication.expert footer .button:hover, body.topic-1 .box.publication.expert footer #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button:hover, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button body.topic-1 .box.publication.expert footer button:hover, body.topic-1 .box.publication.expert footer .wysiwyg .sg-cookie-optin-iframe-consent button:hover, .wysiwyg .sg-cookie-optin-iframe-consent body.topic-1 .box.publication.expert footer button:hover, .box.publication.expert.topic-1 footer .button:hover, body.topic-1 .inherit-color .publication.expert.box footer .button:hover, .box.publication.expert.topic-1 footer #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button:hover, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button .box.publication.expert.topic-1 footer button:hover, body.topic-1 .inherit-color .publication.expert.box footer #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button:hover, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button body.topic-1 .inherit-color .publication.expert.box footer button:hover, .box.publication.expert.topic-1 footer .wysiwyg .sg-cookie-optin-iframe-consent button:hover, .wysiwyg .sg-cookie-optin-iframe-consent .box.publication.expert.topic-1 footer button:hover, body.topic-1 .inherit-color .publication.expert.box footer .wysiwyg .sg-cookie-optin-iframe-consent button:hover, .wysiwyg .sg-cookie-optin-iframe-consent body.topic-1 .inherit-color .publication.expert.box footer button:hover {
+      body.topic-1 .box.publication.expert footer .button:hover, .box.publication.expert.topic-1 footer .button:hover, body.topic-1 .inherit-color .publication.expert.box footer .button:hover {
         border-color: #e64415;
         color: #e64415; }
     body.topic-2 .box.publication.expert a, .box.publication.expert.topic-2 a, body.topic-2 .inherit-color .publication.expert.box a {
       color: #74b929; }
     body.topic-2 .box.publication.expert .contact-info-box a, .box.publication.expert.topic-2 .contact-info-box a, body.topic-2 .inherit-color .publication.expert.box .contact-info-box a {
       color: #fff; }
-    body.topic-2 .box.publication.expert footer .button, body.topic-2 .box.publication.expert footer #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button body.topic-2 .box.publication.expert footer button, body.topic-2 .box.publication.expert footer .wysiwyg .sg-cookie-optin-iframe-consent button, .wysiwyg .sg-cookie-optin-iframe-consent body.topic-2 .box.publication.expert footer button, .box.publication.expert.topic-2 footer .button, body.topic-2 .inherit-color .publication.expert.box footer .button, .box.publication.expert.topic-2 footer #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button .box.publication.expert.topic-2 footer button, body.topic-2 .inherit-color .publication.expert.box footer #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button body.topic-2 .inherit-color .publication.expert.box footer button, .box.publication.expert.topic-2 footer .wysiwyg .sg-cookie-optin-iframe-consent button, .wysiwyg .sg-cookie-optin-iframe-consent .box.publication.expert.topic-2 footer button, body.topic-2 .inherit-color .publication.expert.box footer .wysiwyg .sg-cookie-optin-iframe-consent button, .wysiwyg .sg-cookie-optin-iframe-consent body.topic-2 .inherit-color .publication.expert.box footer button {
+    body.topic-2 .box.publication.expert footer .button, .box.publication.expert.topic-2 footer .button, body.topic-2 .inherit-color .publication.expert.box footer .button {
       background: #74b929;
       color: #fff; }
-      body.topic-2 .box.publication.expert footer .button:hover, body.topic-2 .box.publication.expert footer #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button:hover, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button body.topic-2 .box.publication.expert footer button:hover, body.topic-2 .box.publication.expert footer .wysiwyg .sg-cookie-optin-iframe-consent button:hover, .wysiwyg .sg-cookie-optin-iframe-consent body.topic-2 .box.publication.expert footer button:hover, .box.publication.expert.topic-2 footer .button:hover, body.topic-2 .inherit-color .publication.expert.box footer .button:hover, .box.publication.expert.topic-2 footer #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button:hover, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button .box.publication.expert.topic-2 footer button:hover, body.topic-2 .inherit-color .publication.expert.box footer #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button:hover, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button body.topic-2 .inherit-color .publication.expert.box footer button:hover, .box.publication.expert.topic-2 footer .wysiwyg .sg-cookie-optin-iframe-consent button:hover, .wysiwyg .sg-cookie-optin-iframe-consent .box.publication.expert.topic-2 footer button:hover, body.topic-2 .inherit-color .publication.expert.box footer .wysiwyg .sg-cookie-optin-iframe-consent button:hover, .wysiwyg .sg-cookie-optin-iframe-consent body.topic-2 .inherit-color .publication.expert.box footer button:hover {
+      body.topic-2 .box.publication.expert footer .button:hover, .box.publication.expert.topic-2 footer .button:hover, body.topic-2 .inherit-color .publication.expert.box footer .button:hover {
         border-color: #74b929;
         color: #74b929; }
     body.topic-3 .box.publication.expert a, .box.publication.expert.topic-3 a, body.topic-3 .inherit-color .publication.expert.box a {
       color: #009fee; }
     body.topic-3 .box.publication.expert .contact-info-box a, .box.publication.expert.topic-3 .contact-info-box a, body.topic-3 .inherit-color .publication.expert.box .contact-info-box a {
       color: #fff; }
-    body.topic-3 .box.publication.expert footer .button, body.topic-3 .box.publication.expert footer #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button body.topic-3 .box.publication.expert footer button, body.topic-3 .box.publication.expert footer .wysiwyg .sg-cookie-optin-iframe-consent button, .wysiwyg .sg-cookie-optin-iframe-consent body.topic-3 .box.publication.expert footer button, .box.publication.expert.topic-3 footer .button, body.topic-3 .inherit-color .publication.expert.box footer .button, .box.publication.expert.topic-3 footer #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button .box.publication.expert.topic-3 footer button, body.topic-3 .inherit-color .publication.expert.box footer #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button body.topic-3 .inherit-color .publication.expert.box footer button, .box.publication.expert.topic-3 footer .wysiwyg .sg-cookie-optin-iframe-consent button, .wysiwyg .sg-cookie-optin-iframe-consent .box.publication.expert.topic-3 footer button, body.topic-3 .inherit-color .publication.expert.box footer .wysiwyg .sg-cookie-optin-iframe-consent button, .wysiwyg .sg-cookie-optin-iframe-consent body.topic-3 .inherit-color .publication.expert.box footer button {
+    body.topic-3 .box.publication.expert footer .button, .box.publication.expert.topic-3 footer .button, body.topic-3 .inherit-color .publication.expert.box footer .button {
       background: #009fee;
       color: #fff; }
-      body.topic-3 .box.publication.expert footer .button:hover, body.topic-3 .box.publication.expert footer #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button:hover, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button body.topic-3 .box.publication.expert footer button:hover, body.topic-3 .box.publication.expert footer .wysiwyg .sg-cookie-optin-iframe-consent button:hover, .wysiwyg .sg-cookie-optin-iframe-consent body.topic-3 .box.publication.expert footer button:hover, .box.publication.expert.topic-3 footer .button:hover, body.topic-3 .inherit-color .publication.expert.box footer .button:hover, .box.publication.expert.topic-3 footer #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button:hover, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button .box.publication.expert.topic-3 footer button:hover, body.topic-3 .inherit-color .publication.expert.box footer #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button:hover, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button body.topic-3 .inherit-color .publication.expert.box footer button:hover, .box.publication.expert.topic-3 footer .wysiwyg .sg-cookie-optin-iframe-consent button:hover, .wysiwyg .sg-cookie-optin-iframe-consent .box.publication.expert.topic-3 footer button:hover, body.topic-3 .inherit-color .publication.expert.box footer .wysiwyg .sg-cookie-optin-iframe-consent button:hover, .wysiwyg .sg-cookie-optin-iframe-consent body.topic-3 .inherit-color .publication.expert.box footer button:hover {
+      body.topic-3 .box.publication.expert footer .button:hover, .box.publication.expert.topic-3 footer .button:hover, body.topic-3 .inherit-color .publication.expert.box footer .button:hover {
         border-color: #009fee;
         color: #009fee; }
     body.topic-4 .box.publication.expert a, .box.publication.expert.topic-4 a, body.topic-4 .inherit-color .publication.expert.box a {
       color: #c6007b; }
     body.topic-4 .box.publication.expert .contact-info-box a, .box.publication.expert.topic-4 .contact-info-box a, body.topic-4 .inherit-color .publication.expert.box .contact-info-box a {
       color: #fff; }
-    body.topic-4 .box.publication.expert footer .button, body.topic-4 .box.publication.expert footer #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button body.topic-4 .box.publication.expert footer button, body.topic-4 .box.publication.expert footer .wysiwyg .sg-cookie-optin-iframe-consent button, .wysiwyg .sg-cookie-optin-iframe-consent body.topic-4 .box.publication.expert footer button, .box.publication.expert.topic-4 footer .button, body.topic-4 .inherit-color .publication.expert.box footer .button, .box.publication.expert.topic-4 footer #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button .box.publication.expert.topic-4 footer button, body.topic-4 .inherit-color .publication.expert.box footer #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button body.topic-4 .inherit-color .publication.expert.box footer button, .box.publication.expert.topic-4 footer .wysiwyg .sg-cookie-optin-iframe-consent button, .wysiwyg .sg-cookie-optin-iframe-consent .box.publication.expert.topic-4 footer button, body.topic-4 .inherit-color .publication.expert.box footer .wysiwyg .sg-cookie-optin-iframe-consent button, .wysiwyg .sg-cookie-optin-iframe-consent body.topic-4 .inherit-color .publication.expert.box footer button {
+    body.topic-4 .box.publication.expert footer .button, .box.publication.expert.topic-4 footer .button, body.topic-4 .inherit-color .publication.expert.box footer .button {
       background: #c6007b;
       color: #fff; }
-      body.topic-4 .box.publication.expert footer .button:hover, body.topic-4 .box.publication.expert footer #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button:hover, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button body.topic-4 .box.publication.expert footer button:hover, body.topic-4 .box.publication.expert footer .wysiwyg .sg-cookie-optin-iframe-consent button:hover, .wysiwyg .sg-cookie-optin-iframe-consent body.topic-4 .box.publication.expert footer button:hover, .box.publication.expert.topic-4 footer .button:hover, body.topic-4 .inherit-color .publication.expert.box footer .button:hover, .box.publication.expert.topic-4 footer #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button:hover, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button .box.publication.expert.topic-4 footer button:hover, body.topic-4 .inherit-color .publication.expert.box footer #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button:hover, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button body.topic-4 .inherit-color .publication.expert.box footer button:hover, .box.publication.expert.topic-4 footer .wysiwyg .sg-cookie-optin-iframe-consent button:hover, .wysiwyg .sg-cookie-optin-iframe-consent .box.publication.expert.topic-4 footer button:hover, body.topic-4 .inherit-color .publication.expert.box footer .wysiwyg .sg-cookie-optin-iframe-consent button:hover, .wysiwyg .sg-cookie-optin-iframe-consent body.topic-4 .inherit-color .publication.expert.box footer button:hover {
+      body.topic-4 .box.publication.expert footer .button:hover, .box.publication.expert.topic-4 footer .button:hover, body.topic-4 .inherit-color .publication.expert.box footer .button:hover {
         border-color: #c6007b;
         color: #c6007b; }
     body.topic-1 .box.publication .contact-info-box, .box.publication.topic-1 .contact-info-box, body.topic-1 .inherit-color .publication.box .contact-info-box {
@@ -5417,21 +5466,13 @@ body.project .toggled-content .date {
 body.project .toggled-content a {
   color: #fff; }
 
-.project-details .button.accordion-button > span:before, .project-details #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.accordion-button > span:before, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button .project-details button.accordion-button > span:before, .project-details .wysiwyg .sg-cookie-optin-iframe-consent button.accordion-button > span:before, .wysiwyg .sg-cookie-optin-iframe-consent .project-details button.accordion-button > span:before,
-body.project .toggled-content .button.accordion-button > span:before,
-body.project .toggled-content #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.accordion-button > span:before, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button
-body.project .toggled-content button.accordion-button > span:before,
-body.project .toggled-content .wysiwyg .sg-cookie-optin-iframe-consent button.accordion-button > span:before, .wysiwyg .sg-cookie-optin-iframe-consent
-body.project .toggled-content button.accordion-button > span:before {
+.project-details .button.accordion-button > span:before,
+body.project .toggled-content .button.accordion-button > span:before {
   margin-right: 9px;
   font-size: 10px; }
 
-.project-details .button.accordion-button > span.icon-arrow-down:before, .project-details #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.accordion-button > span.icon-arrow-down:before, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button .project-details button.accordion-button > span.icon-arrow-down:before, .project-details .wysiwyg .sg-cookie-optin-iframe-consent button.accordion-button > span.icon-arrow-down:before, .wysiwyg .sg-cookie-optin-iframe-consent .project-details button.accordion-button > span.icon-arrow-down:before,
-body.project .toggled-content .button.accordion-button > span.icon-arrow-down:before,
-body.project .toggled-content #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.accordion-button > span.icon-arrow-down:before, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button
-body.project .toggled-content button.accordion-button > span.icon-arrow-down:before,
-body.project .toggled-content .wysiwyg .sg-cookie-optin-iframe-consent button.accordion-button > span.icon-arrow-down:before, .wysiwyg .sg-cookie-optin-iframe-consent
-body.project .toggled-content button.accordion-button > span.icon-arrow-down:before {
+.project-details .button.accordion-button > span.icon-arrow-down:before,
+body.project .toggled-content .button.accordion-button > span.icon-arrow-down:before {
   margin-right: 9px;
   font-size: 7px; }
 
@@ -5460,8 +5501,8 @@ body.project .toggled-content .box-content {
   body.project .toggled-content .box-content .list-name {
     margin-top: 31px;
     font-weight: 700; }
-  .project-details .box-content a:not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button),
-  body.project .toggled-content .box-content a:not(.button):not(#SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button):not(.wysiwyg .sg-cookie-optin-iframe-consent button) {
+  .project-details .box-content a:not(.button),
+  body.project .toggled-content .box-content a:not(.button) {
     color: #fff !important; }
   .project-details .box-content .info-table,
   body.project .toggled-content .box-content .info-table {
@@ -5992,15 +6033,15 @@ body.project-aprodi .person .person-info .position {
     @media (max-width: 959px) {
       .publication-details .publication-details-buttons p {
         margin-bottom: 15px; } }
-  .publication-details .button.accordion-button > span.icon-arrow-right:before, .publication-details #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.accordion-button > span.icon-arrow-right:before, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button .publication-details button.accordion-button > span.icon-arrow-right:before, .publication-details .wysiwyg .sg-cookie-optin-iframe-consent button.accordion-button > span.icon-arrow-right:before, .wysiwyg .sg-cookie-optin-iframe-consent .publication-details button.accordion-button > span.icon-arrow-right:before {
+  .publication-details .button.accordion-button > span.icon-arrow-right:before {
     font-size: 10px; }
-  .publication-details .button.accordion-button > span.icon-arrow-down:before, .publication-details #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.accordion-button > span.icon-arrow-down:before, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button .publication-details button.accordion-button > span.icon-arrow-down:before, .publication-details .wysiwyg .sg-cookie-optin-iframe-consent button.accordion-button > span.icon-arrow-down:before, .wysiwyg .sg-cookie-optin-iframe-consent .publication-details button.accordion-button > span.icon-arrow-down:before {
+  .publication-details .button.accordion-button > span.icon-arrow-down:before {
     margin-right: 8px;
     font-size: 7px; }
-  .publication-details .publication-details-buttons .button, .publication-details .publication-details-buttons #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button .publication-details .publication-details-buttons button, .publication-details .publication-details-buttons .wysiwyg .sg-cookie-optin-iframe-consent button, .wysiwyg .sg-cookie-optin-iframe-consent .publication-details .publication-details-buttons button {
+  .publication-details .publication-details-buttons .button {
     background: #fff;
     border-color: #fff; }
-    .publication-details .publication-details-buttons .button:hover, .publication-details .publication-details-buttons #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button:hover, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button .publication-details .publication-details-buttons button:hover, .publication-details .publication-details-buttons .wysiwyg .sg-cookie-optin-iframe-consent button:hover, .wysiwyg .sg-cookie-optin-iframe-consent .publication-details .publication-details-buttons button:hover {
+    .publication-details .publication-details-buttons .button:hover {
       border-color: #fff; }
   .publication-details .publication-details-image {
     position: absolute;
@@ -6100,35 +6141,35 @@ body.project-aprodi .person .person-info .position {
 
 body.topic-1 .publication-details {
   background: #e64415; }
-  body.topic-1 .publication-details .publication-details-buttons .button, body.topic-1 .publication-details .publication-details-buttons #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button body.topic-1 .publication-details .publication-details-buttons button, body.topic-1 .publication-details .publication-details-buttons .wysiwyg .sg-cookie-optin-iframe-consent button, .wysiwyg .sg-cookie-optin-iframe-consent body.topic-1 .publication-details .publication-details-buttons button {
+  body.topic-1 .publication-details .publication-details-buttons .button {
     color: #e64415; }
   body.topic-1 .publication-details .link:hover {
     box-shadow: inset 0 -0.06em #ccc; }
 
 body.topic-2 .publication-details {
   background: #74b929; }
-  body.topic-2 .publication-details .publication-details-buttons .button, body.topic-2 .publication-details .publication-details-buttons #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button body.topic-2 .publication-details .publication-details-buttons button, body.topic-2 .publication-details .publication-details-buttons .wysiwyg .sg-cookie-optin-iframe-consent button, .wysiwyg .sg-cookie-optin-iframe-consent body.topic-2 .publication-details .publication-details-buttons button {
+  body.topic-2 .publication-details .publication-details-buttons .button {
     color: #74b929; }
   body.topic-2 .publication-details .link:hover {
     box-shadow: inset 0 -0.1em #006349; }
 
 body.topic-3 .publication-details {
   background: #009fee; }
-  body.topic-3 .publication-details .publication-details-buttons .button, body.topic-3 .publication-details .publication-details-buttons #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button body.topic-3 .publication-details .publication-details-buttons button, body.topic-3 .publication-details .publication-details-buttons .wysiwyg .sg-cookie-optin-iframe-consent button, .wysiwyg .sg-cookie-optin-iframe-consent body.topic-3 .publication-details .publication-details-buttons button {
+  body.topic-3 .publication-details .publication-details-buttons .button {
     color: #009fee; }
   body.topic-3 .publication-details .link:hover {
     box-shadow: inset 0 -0.1em #00244d; }
 
 body.topic-4 .publication-details {
   background: #c6007b; }
-  body.topic-4 .publication-details .publication-details-buttons .button, body.topic-4 .publication-details .publication-details-buttons #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button body.topic-4 .publication-details .publication-details-buttons button, body.topic-4 .publication-details .publication-details-buttons .wysiwyg .sg-cookie-optin-iframe-consent button, .wysiwyg .sg-cookie-optin-iframe-consent body.topic-4 .publication-details .publication-details-buttons button {
+  body.topic-4 .publication-details .publication-details-buttons .button {
     color: #c6007b; }
   body.topic-4 .publication-details .link:hover {
     box-shadow: inset 0 -0.1em #761f36; }
 
 body.project-aprodi .publication-details {
   background: #0075aa; }
-  body.project-aprodi .publication-details .publication-details-buttons .button, body.project-aprodi .publication-details .publication-details-buttons #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button body.project-aprodi .publication-details .publication-details-buttons button, body.project-aprodi .publication-details .publication-details-buttons .wysiwyg .sg-cookie-optin-iframe-consent button, .wysiwyg .sg-cookie-optin-iframe-consent body.project-aprodi .publication-details .publication-details-buttons button {
+  body.project-aprodi .publication-details .publication-details-buttons .button {
     color: #0075aa; }
   body.project-aprodi .publication-details .link:hover {
     box-shadow: inset 0 -0.1em #3c3c3b; }
@@ -8048,10 +8089,10 @@ body.project-aprodi .flyout > li > a:hover {
     font-size: 18px; }
   .comments .comment-login-register {
     padding: 0 16px; }
-  .comments .button, .comments #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button .comments button, .comments .wysiwyg .sg-cookie-optin-iframe-consent button, .wysiwyg .sg-cookie-optin-iframe-consent .comments button {
+  .comments .button {
     margin-left: 12px;
     margin-right: 12px; }
-  .comments table .button, .comments table #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button .comments table button, .comments table .wysiwyg .sg-cookie-optin-iframe-consent button, .wysiwyg .sg-cookie-optin-iframe-consent .comments table button {
+  .comments table .button {
     margin-left: 0; }
 
 .comments-header {
@@ -8206,10 +8247,49 @@ body.project-aprodi .flyout > li > a:hover {
 #SgCookieOptin .sg-cookie-optin-box {
   font-family: "ff-tisa-sans-web-pro", "Arial", "Tahoma", "Verdana", sans-serif !important; }
   #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button {
+    overflow: hidden;
+    display: inline-block;
+    padding: 0 14px !important;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    background: #e64415;
+    color: #fff;
+    font-family: "ff-tisa-sans-web-pro", "Arial", "Tahoma", "Verdana", sans-serif;
     font-size: 12px !important;
-    padding: 0 14px !important; }
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    transition: background 0.25s ease;
+    white-space: nowrap;
+    word-spacing: 0.2em; }
+    #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button:hover {
+      background: #fff !important;
+      border: 2px solid #e64415;
+      text-decoration: none;
+      color: #e64415; }
+    #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button:focus {
+      outline: 1px dotted #000; }
+    #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button:before {
+      font-size: 16px;
+      line-height: 28px;
+      text-indent: 0;
+      text-shadow: none;
+      z-index: 2; }
+    #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button:before {
+      float: right;
+      margin-left: 8px; }
   #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-copyright-link {
     display: none; }
+  #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button-accept-specific,
+  #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button-accept-essential {
+    background: #808080 !important; }
+    #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button-accept-specific:hover, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button-accept-specific:focus,
+    #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button-accept-essential:hover,
+    #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button-accept-essential:focus {
+      border-color: #808080 !important;
+      color: #808080 !important; }
   #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-cookie-list .sg-cookie-optin-box-cookie-list-item .sg-cookie-optin-checkbox:checked:not(:disabled) + .sg-cookie-optin-checkbox-label::before {
     background-color: #e64415; }
   #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-cookie-list .sg-cookie-optin-box-cookie-list-item .sg-cookie-optin-checkbox:not(:disabled) + .sg-cookie-optin-checkbox-label::before {
@@ -8254,7 +8334,39 @@ body.project-aprodi #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-coo
 
 /** external contents */
 .wysiwyg .sg-cookie-optin-iframe-consent button {
-  padding: 0 14px !important; }
+  overflow: hidden;
+  display: inline-block;
+  padding: 0 14px !important;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  background: #e64415;
+  color: #fff;
+  font-family: "ff-tisa-sans-web-pro", "Arial", "Tahoma", "Verdana", sans-serif;
+  font-size: 12px !important;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  transition: background 0.25s ease;
+  white-space: nowrap;
+  word-spacing: 0.2em; }
+  .wysiwyg .sg-cookie-optin-iframe-consent button:hover {
+    background: #fff !important;
+    border: 2px solid #e64415;
+    text-decoration: none;
+    color: #e64415; }
+  .wysiwyg .sg-cookie-optin-iframe-consent button:focus {
+    outline: 1px dotted #000; }
+  .wysiwyg .sg-cookie-optin-iframe-consent button:before {
+    font-size: 16px;
+    line-height: 28px;
+    text-indent: 0;
+    text-shadow: none;
+    z-index: 2; }
+  .wysiwyg .sg-cookie-optin-iframe-consent button:before {
+    float: right;
+    margin-left: 8px; }
 
 .wysiwyg .sg-cookie-optin-iframe-consent a {
   color: #7B7C7E !important;
@@ -8494,21 +8606,21 @@ html.no-scroll body:not(.safari) .cookies-bar {
       margin-top: 16px; }
   .careercheck textarea {
     margin-bottom: 16px; }
-  .careercheck .button.button--grey, .careercheck #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.button--grey, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button .careercheck button.button--grey, .careercheck .wysiwyg .sg-cookie-optin-iframe-consent button.button--grey, .wysiwyg .sg-cookie-optin-iframe-consent .careercheck button.button--grey {
+  .careercheck .button.button--grey {
     background-color: #666; }
-    .careercheck .button.button--grey:hover, .careercheck #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.button--grey:hover, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button .careercheck button.button--grey:hover, .careercheck .wysiwyg .sg-cookie-optin-iframe-consent button.button--grey:hover, .wysiwyg .sg-cookie-optin-iframe-consent .careercheck button.button--grey:hover {
+    .careercheck .button.button--grey:hover {
       border-color: #666;
       color: #666; }
-  .careercheck .button.button--new-check, .careercheck #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.button--new-check, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button .careercheck button.button--new-check, .careercheck .wysiwyg .sg-cookie-optin-iframe-consent button.button--new-check, .wysiwyg .sg-cookie-optin-iframe-consent .careercheck button.button--new-check {
+  .careercheck .button.button--new-check {
     margin-top: 16px; }
-  .careercheck .button.button--xl, .careercheck #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.button--xl, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button .careercheck button.button--xl, .careercheck .wysiwyg .sg-cookie-optin-iframe-consent button.button--xl, .wysiwyg .sg-cookie-optin-iframe-consent .careercheck button.button--xl {
+  .careercheck .button.button--xl {
     font-size: 16px;
     padding: 8px 16px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
     border-radius: 8px;
     transition: all .2s;
     margin: 32px 0; }
-    .careercheck .button.button--xl:hover, .careercheck #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button.button--xl:hover, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button .careercheck button.button--xl:hover, .careercheck .wysiwyg .sg-cookie-optin-iframe-consent button.button--xl:hover, .wysiwyg .sg-cookie-optin-iframe-consent .careercheck button.button--xl:hover {
+    .careercheck .button.button--xl:hover {
       text-decoration: none; }
   .careercheck .careercheck__introduction h2,
   .careercheck .careercheck__introduction .h2 {
@@ -8831,7 +8943,7 @@ html.no-scroll body:not(.safari) .cookies-bar {
           font-size: 38px;
           cursor: pointer;
           transition: color .1s; }
-      .careercheck .question-overlay .question-overlay__inner .button, .careercheck .question-overlay .question-overlay__inner #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button .careercheck .question-overlay .question-overlay__inner button, .careercheck .question-overlay .question-overlay__inner .wysiwyg .sg-cookie-optin-iframe-consent button, .wysiwyg .sg-cookie-optin-iframe-consent .careercheck .question-overlay .question-overlay__inner button {
+      .careercheck .question-overlay .question-overlay__inner .button {
         margin-top: 16px; }
   .careercheck .careercheck__content {
     margin-top: 32px; }
@@ -8984,7 +9096,7 @@ html.no-scroll body:not(.safari) .cookies-bar {
             display: block;
             width: 100%; } }
       @media (max-width: 539px) {
-        .careercheck .share-box .share-box__form .button, .careercheck .share-box .share-box__form #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button .careercheck .share-box .share-box__form button, .careercheck .share-box .share-box__form .wysiwyg .sg-cookie-optin-iframe-consent button, .wysiwyg .sg-cookie-optin-iframe-consent .careercheck .share-box .share-box__form button {
+        .careercheck .share-box .share-box__form .button {
           display: block; } }
     .careercheck .share-box.feedback-box {
       margin-top: 16px;
@@ -9740,7 +9852,7 @@ body.project-aprodi .order-list__status--warn--warn {
     display: none; }
   .form-fields p {
     clear: both; }
-  .form-fields .button, .form-fields #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button .form-fields button, .form-fields .wysiwyg .sg-cookie-optin-iframe-consent button, .wysiwyg .sg-cookie-optin-iframe-consent .form-fields button {
+  .form-fields .button {
     margin-top: 16px; }
   .form-fields fieldset {
     position: static;
@@ -9751,99 +9863,21 @@ body.project-aprodi .order-list__status--warn--warn {
       font-size: 80%;
       font-weight: bold;
       padding: 0 8px; }
-    .form-fields fieldset > .button, .form-fields #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button fieldset > button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button .form-fields fieldset > button, .form-fields .wysiwyg .sg-cookie-optin-iframe-consent fieldset > button, .wysiwyg .sg-cookie-optin-iframe-consent .form-fields fieldset > button,
-    .form-fields fieldset div:first-of-type .button,
-    .form-fields fieldset div:first-of-type #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button
-    .form-fields fieldset div:first-of-type button,
-    .form-fields fieldset div:first-of-type .wysiwyg .sg-cookie-optin-iframe-consent button, .wysiwyg .sg-cookie-optin-iframe-consent
-    .form-fields fieldset div:first-of-type button {
+    .form-fields fieldset > .button,
+    .form-fields fieldset div:first-of-type .button {
       margin-top: -8px; }
-  .form-fields .v320-1-of-2 + div .button, .form-fields .v320-1-of-2 + div #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button .form-fields .v320-1-of-2 + div button, .form-fields .v320-1-of-2 + div .wysiwyg .sg-cookie-optin-iframe-consent button, .wysiwyg .sg-cookie-optin-iframe-consent .form-fields .v320-1-of-2 + div button,
+  .form-fields .v320-1-of-2 + div .button,
   .form-fields .v320-1-of-2 + p .button,
-  .form-fields .v320-1-of-2 + p #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button
-  .form-fields .v320-1-of-2 + p button,
-  .form-fields .v320-1-of-2 + p .wysiwyg .sg-cookie-optin-iframe-consent button, .wysiwyg .sg-cookie-optin-iframe-consent
-  .form-fields .v320-1-of-2 + p button,
   .form-fields .v320-2-of-2 + div .button,
-  .form-fields .v320-2-of-2 + div #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button
-  .form-fields .v320-2-of-2 + div button,
-  .form-fields .v320-2-of-2 + div .wysiwyg .sg-cookie-optin-iframe-consent button, .wysiwyg .sg-cookie-optin-iframe-consent
-  .form-fields .v320-2-of-2 + div button,
   .form-fields .v320-2-of-2 + p .button,
-  .form-fields .v320-2-of-2 + p #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button
-  .form-fields .v320-2-of-2 + p button,
-  .form-fields .v320-2-of-2 + p .wysiwyg .sg-cookie-optin-iframe-consent button, .wysiwyg .sg-cookie-optin-iframe-consent
-  .form-fields .v320-2-of-2 + p button,
   .form-fields .v320-1 + div .button,
-  .form-fields .v320-1 + div #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button
-  .form-fields .v320-1 + div button,
-  .form-fields .v320-1 + div .wysiwyg .sg-cookie-optin-iframe-consent button, .wysiwyg .sg-cookie-optin-iframe-consent
-  .form-fields .v320-1 + div button,
   .form-fields .v320-1 + p .button,
-  .form-fields .v320-1 + p #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button
-  .form-fields .v320-1 + p button,
-  .form-fields .v320-1 + p .wysiwyg .sg-cookie-optin-iframe-consent button, .wysiwyg .sg-cookie-optin-iframe-consent
-  .form-fields .v320-1 + p button,
   .form-fields .v320-1-of-2 + .button,
-  .form-fields #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button .v320-1-of-2 + button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button
-  .form-fields .v320-1-of-2 + button,
-  .form-fields .wysiwyg .sg-cookie-optin-iframe-consent .v320-1-of-2 + button, .wysiwyg .sg-cookie-optin-iframe-consent
-  .form-fields .v320-1-of-2 + button,
   .form-fields .v320-2-of-2 + .button,
-  .form-fields #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button .v320-2-of-2 + button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button
-  .form-fields .v320-2-of-2 + button,
-  .form-fields .wysiwyg .sg-cookie-optin-iframe-consent .v320-2-of-2 + button, .wysiwyg .sg-cookie-optin-iframe-consent
-  .form-fields .v320-2-of-2 + button,
   .form-fields .v320-1-of-2 + .button + .button,
-  .form-fields #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button .v320-1-of-2 + button + .button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button
-  .form-fields .v320-1-of-2 + button + .button,
-  .form-fields .wysiwyg .sg-cookie-optin-iframe-consent .v320-1-of-2 + button + .button, .wysiwyg .sg-cookie-optin-iframe-consent
-  .form-fields .v320-1-of-2 + button + .button,
-  .form-fields #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button .v320-1-of-2 + .button + button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button
-  .form-fields .v320-1-of-2 + .button + button,
-  .form-fields #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button .v320-1-of-2 + button + button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button
-  .form-fields .v320-1-of-2 + button + button,
-  .form-fields .wysiwyg .sg-cookie-optin-iframe-consent .v320-1-of-2 + .button + button, .wysiwyg .sg-cookie-optin-iframe-consent
-  .form-fields .v320-1-of-2 + .button + button,
-  .form-fields #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button .wysiwyg .sg-cookie-optin-iframe-consent .v320-1-of-2 + button + button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button
-  .form-fields .wysiwyg .sg-cookie-optin-iframe-consent .v320-1-of-2 + button + button,
-  .form-fields .wysiwyg .sg-cookie-optin-iframe-consent .v320-1-of-2 + button + button, .wysiwyg .sg-cookie-optin-iframe-consent
-  .form-fields .v320-1-of-2 + button + button,
   .form-fields .v320-2-of-2 + .button + .button,
-  .form-fields #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button .v320-2-of-2 + button + .button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button
-  .form-fields .v320-2-of-2 + button + .button,
-  .form-fields .wysiwyg .sg-cookie-optin-iframe-consent .v320-2-of-2 + button + .button, .wysiwyg .sg-cookie-optin-iframe-consent
-  .form-fields .v320-2-of-2 + button + .button,
-  .form-fields #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button .v320-2-of-2 + .button + button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button
-  .form-fields .v320-2-of-2 + .button + button,
-  .form-fields #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button .v320-2-of-2 + button + button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button
-  .form-fields .v320-2-of-2 + button + button,
-  .form-fields .wysiwyg .sg-cookie-optin-iframe-consent .v320-2-of-2 + .button + button, .wysiwyg .sg-cookie-optin-iframe-consent
-  .form-fields .v320-2-of-2 + .button + button,
-  .form-fields #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button .wysiwyg .sg-cookie-optin-iframe-consent .v320-2-of-2 + button + button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button
-  .form-fields .wysiwyg .sg-cookie-optin-iframe-consent .v320-2-of-2 + button + button,
-  .form-fields .wysiwyg .sg-cookie-optin-iframe-consent .v320-2-of-2 + button + button, .wysiwyg .sg-cookie-optin-iframe-consent
-  .form-fields .v320-2-of-2 + button + button,
   .form-fields .v320-1 + .button,
-  .form-fields #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button .v320-1 + button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button
-  .form-fields .v320-1 + button,
-  .form-fields .wysiwyg .sg-cookie-optin-iframe-consent .v320-1 + button, .wysiwyg .sg-cookie-optin-iframe-consent
-  .form-fields .v320-1 + button,
-  .form-fields .v320-1 + .button + .button,
-  .form-fields #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button .v320-1 + button + .button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button
-  .form-fields .v320-1 + button + .button,
-  .form-fields .wysiwyg .sg-cookie-optin-iframe-consent .v320-1 + button + .button, .wysiwyg .sg-cookie-optin-iframe-consent
-  .form-fields .v320-1 + button + .button,
-  .form-fields #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button .v320-1 + .button + button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button
-  .form-fields .v320-1 + .button + button,
-  .form-fields #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button .v320-1 + button + button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button
-  .form-fields .v320-1 + button + button,
-  .form-fields .wysiwyg .sg-cookie-optin-iframe-consent .v320-1 + .button + button, .wysiwyg .sg-cookie-optin-iframe-consent
-  .form-fields .v320-1 + .button + button,
-  .form-fields #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button .wysiwyg .sg-cookie-optin-iframe-consent .v320-1 + button + button, #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button
-  .form-fields .wysiwyg .sg-cookie-optin-iframe-consent .v320-1 + button + button,
-  .form-fields .wysiwyg .sg-cookie-optin-iframe-consent .v320-1 + button + button, .wysiwyg .sg-cookie-optin-iframe-consent
-  .form-fields .v320-1 + button + button {
+  .form-fields .v320-1 + .button + .button {
     margin-top: 0; }
   @media (max-width: 959px) {
     .form-fields .v320-1-of-2,
@@ -10373,79 +10407,103 @@ body.publication {
     .content-box__buttons .desktop-text {
       display: none; } }
 
-.home__header {
-  font-size: 64px;
-  line-height: 72px;
-  margin-top: 35px;
-  margin-bottom: 16px; }
-  @media (max-width: 1024px) {
-    .home__header {
+.home {
+  /*
+  &__header {
+    font-size: 64px;
+    line-height: 72px;
+    margin-top: 35px;
+    margin-bottom: 16px;
+    @include media('<desktop') {
       font-size: 32px;
       line-height: 42px;
-      word-wrap: break-word; } }
+      word-wrap: break-word;
+    }
+  }
+  &__text {
+    h2 {
+      margin-bottom: 16px;
+    }
+    p + p {
+      margin-top: 32px;
+    }
+  }
+  &__aufgabe {
+    text-align: center;
+    width: 100%;
+    max-width: 1230px;
+    margin: 0 auto;
+    padding-bottom: 45px;
 
-.home__text h2 {
-  margin-bottom: 16px; }
-
-.home__text p + p {
-  margin-top: 32px; }
-
-.home__aufgabe {
-  text-align: center;
-  width: 100%;
-  max-width: 1230px;
-  margin: 0 auto;
-  padding-bottom: 45px;
+    @include media('<desktop') {
+      margin-left: 0;
+      width: 100%;
+      padding-left:16px;
+      padding-right:16px;
+    }
+  }
+   */
   /*.h2,
+   h2 {
+    padding-bottom: 20px;
+    color: #808080;
+  }*/ }
+  .home .page-headings {
+    margin: 60px auto;
+    text-align: center;
+    max-width: 1230px;
+    width: 100%; }
+    .home .page-headings h1 {
+      margin-bottom: 16px;
+      font-size: 64px;
+      line-height: 72px; }
+    .home .page-headings h2 {
+      margin-bottom: 18px; }
+    @media (max-width: 1024px) {
+      .home .page-headings {
+        margin: 0 0 60px;
+        padding: 0px 16px; }
+        .home .page-headings h1 {
+          margin-bottom: 14px;
+          font-size: 32px;
+          line-height: 48px; } }
+  .home__video {
+    text-align: center;
+    width: 65%;
+    margin-left: 18%;
+    /*.h2,
     h2 {
       padding-bottom: 20px;
       color: #808080;
     }*/ }
-  @media (max-width: 1024px) {
-    .home__aufgabe {
-      margin-left: 0;
-      width: 100%;
-      padding-left: 16px;
-      padding-right: 16px; } }
-
-.home__video {
-  text-align: center;
-  width: 65%;
-  margin-left: 18%;
-  /*.h2,
-    h2 {
-      padding-bottom: 20px;
-      color: #808080;
-    }*/ }
-  .home__video iframe {
-    border-radius: 8px; }
-  @media (max-width: 1024px) {
-    .home__video {
-      margin-left: 0;
-      width: 100%;
-      padding-left: 16px;
-      padding-right: 16px; } }
-
-.home .section-header {
-  position: relative; }
-  .home .section-header .jcf-select {
-    position: absolute;
-    top: 48px;
-    right: 0px; }
-  @media (max-width: 1024px) {
-    .home .section-header {
-      padding-bottom: 16px;
-      /*h2 {
+    .home__video iframe {
+      border-radius: 8px; }
+    @media (max-width: 1024px) {
+      .home__video {
+        margin-left: 0;
+        width: 100%;
+        padding-left: 16px;
+        padding-right: 16px; } }
+  .home .section-header {
+    position: relative; }
+    .home .section-header .jcf-select {
+      position: absolute;
+      top: 48px;
+      right: 0px; }
+    @media (max-width: 1024px) {
+      .home .section-header {
+        padding-bottom: 16px;
+        /*h2 {
         padding-bottom: 0;
       }*/ }
-      .home .section-header .jcf-select {
-        position: relative;
-        top: 0;
-        right: 0;
-        margin-top: 16px; } }
-  @media (max-width: 959px) {
-    .home .section-header {
-      padding-left: 10px; } }
+        .home .section-header .jcf-select {
+          position: relative;
+          top: 0;
+          right: 0;
+          margin-top: 16px; } }
+    @media (max-width: 959px) {
+      .home .section-header {
+        padding-left: 10px; } }
 
 body.page-area .page-wrap > .container > main .article .content {
   background: #fff;
