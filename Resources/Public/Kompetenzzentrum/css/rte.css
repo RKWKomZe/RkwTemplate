@@ -465,6 +465,9 @@ figcaption {
     content: ' ';
     white-space: pre; }
 
+.csc-textpic-border img {
+  border: 1px solid #808080; }
+
 h1,
 .h1 {
   font-size: 46px;
