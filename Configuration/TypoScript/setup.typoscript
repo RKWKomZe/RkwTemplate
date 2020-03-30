@@ -26,4 +26,5 @@ plugin.tx_rkwtemplate {
 }
 
 <INCLUDE_TYPOSCRIPT: source="FILE:./ContentElements/Setup.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:./GridElements/Setup.typoscript">
 

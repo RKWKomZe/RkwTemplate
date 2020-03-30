@@ -20,7 +20,7 @@ namespace RKW\RkwTemplate\Hooks;
  *
  * @author Steffen Kroggel <developer@steffenkroggel.de>
  * @copyright Rkw Kompetenzzentrum
- * @package RKW_RkwBasics
+ * @package RKW_RkwTemplates
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  */
 class ReplaceExtensionPathHook

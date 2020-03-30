@@ -7,7 +7,10 @@
 //============================================================================
 // homePage, slider
 //============================================================================
-[globalVar = GP:colPos==4]&&[page|backend_layout = pagets__homePages]
+[page|backend_layout = pagets__homePages]
+
+
+// TCEFORM.tt_content.CType.removeItems = bullets
 
     // remove everything
     mod.wizards.newContentElement.wizardItems.common.show =
@@ -18,5 +21,6 @@
     mod.wizards.newContentElement.wizardItems.common.show := addToList(rkwtemplate_slider)
 
 [end]
+
 
 

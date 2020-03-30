@@ -16,3 +16,4 @@ plugin.tx_rkwtemplate {
 }
 
 <INCLUDE_TYPOSCRIPT: source="FILE:./ContentElements/Constants.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:./GridElements/Constants.typoscript">

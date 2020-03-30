@@ -1,6 +1,6 @@
 tx_gridelements.setup.1 {
 
-    title = Startseite
+    title = Slider-Container
     config {
         colCount = 1
         rowCount = 1

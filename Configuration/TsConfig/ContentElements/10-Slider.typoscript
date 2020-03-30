@@ -6,7 +6,7 @@ mod.wizards.newContentElement.wizardItems.common {
         rkwtemplate_slider {
             iconIdentifier = rkw_template
             title = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.slider.title
-            description = LLL:EXT:rkw_template/Resources/Kompetenzzentrum/Language/locallang_db.xlf:contentElement.slider.description
+            description = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.slider.description
             tt_content_defValues {
                 CType = rkwtemplate_slider
             }

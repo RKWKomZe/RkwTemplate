@@ -50,9 +50,7 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_mission'] = [
     ]
 ];
 
-//===============================================================
-// Configure the default backend fields for the content element
-//===============================================================
+
 $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_slider'] = [
     'showitem' => '
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
@@ -77,16 +75,11 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_slider'] = [
                 'eval' => 'trim,required',
             ]
         ],
-        'header' => [
-            'config' => [
-                'eval' => 'required',
-            ]
-        ],
         'rowDescription' => [
             'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.slider.rowDescription',
             'config' => [
                 'type' => 'input',
-                'eval' => 'trim,required',
+                'eval' => 'trim',
             ]
         ],
         'image' => [
@@ -145,36 +138,6 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_slider'] = [
     ]
 ];
 
-//===============================================================
-// Configure the default backend fields for the content element
-//===============================================================
-$GLOBALS['TCA']['tt_content']['types']['rkwtemplate_slidercontainer'] = [
-    'showitem' => '
-        --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
-            --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
-            header;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header.ALT.shortcut_formlabel,
-            records;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:records_formlabel,
-        --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
-            --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,
-            --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.appearanceLinks;appearanceLinks,
-        --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,
-            --palette--;;language,
-        --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
-            --palette--;;hidden,
-            --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;access,
-        --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:categories,
-            categories,
-        --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:notes,
-            rowDescription,
-        --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended,
-    ',
-    'columnsOverrides' => [
-     //   'records' =>
-
-
-    ]
-];
-
 
 //===============================================================
 // Adds the elements to the "Type" dropdown
@@ -197,18 +160,6 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_slidercontainer'] = [
     [
         'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.slider.title',
         'rkwtemplate_slider',
-        'rkw_template',
-    ],
-    'textmedia',
-    'after'
-);
-
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
-    'tt_content',
-    'CType',
-    [
-        'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.sliderContainer.title',
-        'rkwtemplate_slidercontainer',
         'rkw_template',
     ],
     'textmedia',

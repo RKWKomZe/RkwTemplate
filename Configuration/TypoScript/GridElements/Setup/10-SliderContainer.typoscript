@@ -1,0 +1,18 @@
+
+tt_content.gridelements_pi1.20.10.setup {
+
+    # id of grid element
+    1 < lib.gridelements.defaultGridSetup
+    1 {
+
+        columns {
+
+            # colPos ID
+            4 < .default
+            4.wrap = <section><div class="slider">|</div></section>
+
+        }
+
+        // wrap = <div class="element2cols">|</div>
+    }
+}
