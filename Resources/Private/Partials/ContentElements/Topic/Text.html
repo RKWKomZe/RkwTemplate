@@ -1,0 +1,20 @@
+{namespace rkwEtracker=RKW\RkwEtracker\ViewHelpers}
+{namespace rkwBasics=RKW\RkwBasics\ViewHelpers}
+
+
+<div class="feature-box__content">
+
+    <h3 class="feature-box__title">
+        <rkwEtracker:link.typolink parameter="{data.header_link}" class="feature-box__link">
+            {data.header}
+        </rkwEtracker:link.typolink>
+    </h3>
+
+    <f:if condition="<rkwBasics:isEmpty string='{data.bodytext}' /> == 0">
+        <div class="feature-box__description">
+            <p>
+                <f:format.nl2br><f:format.stripTags>{data.bodytext}</f:format.stripTags></f:format.nl2br>
+            </p>
+        </div>
+    </f:if>
+</div>

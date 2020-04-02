@@ -9,7 +9,7 @@
 				<source>Slider</source>
 			</trans-unit>
 			<trans-unit id="contentElement.slider.description">
-				<source>Adds a slider</source>
+				<source>Adds a slider.</source>
 			</trans-unit>
 			<trans-unit id="contentElement.slider.type.I.default">
 				<source>Black font, no gradient</source>
@@ -41,15 +41,46 @@
 				<source>SliderContainer</source>
 			</trans-unit>
 			<trans-unit id="contentElement.sliderContainer.description">
-				<source>Adds a slide-container</source>
+				<source>Adds a slide-container.</source>
 			</trans-unit>
+
 
             <!-- Mission Statement -->
             <trans-unit id="contentElement.mission.title">
                 <source>Mission Statement</source>
             </trans-unit>
             <trans-unit id="contentElement.mission.description">
-                <source>Adds a Mission Statement</source>
+                <source>Adds a Mission Statement.</source>
+            </trans-unit>
+
+
+            <!-- Topic element -->
+            <trans-unit id="contentElement.topic.title">
+               <source>Topic</source>
+            </trans-unit>
+            <trans-unit id="contentElement.topic.description">
+               <source>Displays a topic.</source>
+            </trans-unit>
+            <trans-unit id="contentElement.topic.imageManipulation.default">
+               <source>Default</source>
+            </trans-unit>
+            <trans-unit id="contentElement.topic.type.I.default">
+				<source>Default</source>
+			</trans-unit>
+			<trans-unit id="contentElement.topic.type.I.2">
+				<source>Entrepreneurship</source>
+			</trans-unit>
+			<trans-unit id="contentElement.topic.type.I.3">
+				<source>Innovation</source>
+			</trans-unit>
+            <trans-unit id="contentElement.topic.type.I.4">
+                <source>Skilled-Workers</source>
+            </trans-unit>
+            <trans-unit id="contentElement.topic.type.I.5">
+                <source>APRODI</source>
+            </trans-unit>
+            <trans-unit id="contentElement.topic.type.I.6">
+                <source>No Color</source>
             </trans-unit>
 
 		</body>

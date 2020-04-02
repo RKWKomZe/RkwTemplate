@@ -7,7 +7,7 @@
 //============================================================================
 // homePage, slider
 //============================================================================
-[page|backend_layout = pagets__homePages]
+[RKW\RkwTemplate\Condition\PageBackendLayout = "pagets__homePages___________"]
 
 
 // TCEFORM.tt_content.CType.removeItems = bullets

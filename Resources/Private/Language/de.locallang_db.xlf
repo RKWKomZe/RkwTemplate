@@ -11,8 +11,8 @@
 				<target>Slider-Element</target>
 			</trans-unit>
 			<trans-unit id="contentElement.slider.description">
-				<source>Displays a slider</source>
-				<target>Fügt ein Slider-Element ein</target>
+				<source>Displays a slider.</source>
+				<target>Fügt ein Slider-Element ein.</target>
 			</trans-unit>
 			<trans-unit id="contentElement.slider.type.I.default">
 				<source>Black font, no gradient</source>
@@ -42,6 +42,67 @@
             </trans-unit>
             <trans-unit id="contentElement.slider.imageManipulation.mobile">
                 <source>Mobile</source>
+            </trans-unit>
+
+
+            <!-- SliderContainer element -->
+            <trans-unit id="contentElement.sliderContainer.title">
+                <source>Slider-Container</source>
+                <target>Slider-Container</target>
+            </trans-unit>
+            <trans-unit id="contentElement.sliderContainer.description">
+                <source>Adds a slide-container.</source>
+                <target>Fügt einen Container für Slider ein.</target>
+            </trans-unit>
+
+
+            <!-- Mission Statement -->
+            <trans-unit id="contentElement.mission.title">
+                <source>Mission Statement</source>
+                <target>Mission Statement</target>
+            </trans-unit>
+            <trans-unit id="contentElement.mission.description">
+                <source>Adds a Mission Statement.</source>
+                <target>Fügt ein Mission Statement ein.</target>
+            </trans-unit>
+
+            
+            <!-- Topic element -->
+            <trans-unit id="contentElement.topic.title">
+                <source>Topic</source>
+                <target>Thema</target>
+            </trans-unit>
+            <trans-unit id="contentElement.topic.description">
+                <source>Displays a topic.</source>
+                <target>Fügt ein Themen-Element ein.</target>
+            </trans-unit>
+            <trans-unit id="contentElement.topic.imageManipulation.default">
+                <source>Default</source>
+                <target>Standard</target>
+            </trans-unit>
+			<trans-unit id="contentElement.topic.type.I.default">
+				<source>Default</source>
+				<target>Standard</target>
+			</trans-unit>
+			<trans-unit id="contentElement.topic.type.I.2">
+				<source>Entrepreneurship</source>
+				<target>Gründung</target>
+			</trans-unit>
+			<trans-unit id="contentElement.topic.type.I.3">
+				<source>Innovation</source>
+                <target>Innovation</target>
+			</trans-unit>
+            <trans-unit id="contentElement.topic.type.I.4">
+                <source>Skilled-Workers</source>
+                <target>Fachkräfte</target>
+            </trans-unit>
+            <trans-unit id="contentElement.topic.type.I.5">
+                <source>APRODI</source>
+                <target>APRODI</target>
+            </trans-unit>
+            <trans-unit id="contentElement.topic.type.I.6">
+                <source>No Color</source>
+                <target>Keine Farbe</target>
             </trans-unit>
 
 		</body>

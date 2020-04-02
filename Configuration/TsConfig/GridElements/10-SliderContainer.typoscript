@@ -1,6 +1,7 @@
-tx_gridelements.setup.1 {
+tx_gridelements.setup.sliderContainer {
 
-    title = Slider-Container
+    title = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.sliderContainer.title
+    description = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.sliderContainer.description
     config {
         colCount = 1
         rowCount = 1
@@ -8,7 +9,7 @@ tx_gridelements.setup.1 {
             1 {
                 columns {
                     1 {
-                        name = Slider
+                        name = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.slider.title
                         colPos = 4
                         allowed {
                             CType = rkwtemplate_slider

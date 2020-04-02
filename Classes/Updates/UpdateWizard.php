@@ -68,7 +68,7 @@ class UpdateWizard extends AbstractUpdate
         $this->updateConfiguration($databaseQueries);
         $this->updateSliderElements($databaseQueries);
         $this->updateMissionStatementElements($databaseQueries);
-
+        $this->updateTopicElements($databaseQueries);
 
         var_dump($databaseQueries);
         die();
@@ -121,6 +121,7 @@ class UpdateWizard extends AbstractUpdate
                         $fileReference = $fileObject->getUid();
                     }
                 } catch (Exception $e) {
+
                 }
             }
 
@@ -379,7 +380,7 @@ class UpdateWizard extends AbstractUpdate
         $updateQueryBuilder->execute();
 
         // move elements into a grid element-wrapper
-        $this->moveElementsToGridElement(4, 'rkwtemplate_slider', 1, $databaseQueries);
+        $this->moveElementsToGridElement(4, 'rkwtemplate_slider', 'sliderContainer', [], $databaseQueries);
 
         $this->setLock(__FUNCTION__);
     }
@@ -435,14 +436,127 @@ class UpdateWizard extends AbstractUpdate
 
 
     /**
+     * Update topic elements
+     *
+     * @param array $databaseQueries Queries done in this update
+     */
+    protected function updateTopicElements(array &$databaseQueries)
+    {
+        if ($this->hasLock(__FUNCTION__)){
+            return;
+        }
+
+
+        /** @var  \TYPO3\CMS\Core\Database\Connection $connection */
+        $connection = GeneralUtility::makeInstance(ConnectionPool::class)->getConnectionForTable('tt_content');
+
+
+        // find all topic elements and move css class from header_link to header_layout
+        /** @var \TYPO3\CMS\Core\Database\Query\QueryBuilder $queryBuilder */
+        $queryBuilder = $connection->createQueryBuilder();
+        $statement = $queryBuilder->select('*')
+            ->from('tt_content')
+            ->where(
+                $queryBuilder->expr()->eq('colPos',
+                    $queryBuilder->createNamedParameter(13, \PDO::PARAM_INT)
+                )
+            )
+            ->execute();
+
+        // go through all elements
+        while ($record = $statement->fetch()) {
+
+            $updateRecord = [];
+
+            if ($headerLink = $record['header_link']) {
+
+                $pattern = '/ ((topic|project)-([0-9a-z]+)|(feature-box--no-color))/';
+                preg_match($pattern, $headerLink, $matches, PREG_OFFSET_CAPTURE);
+                if (
+                    ($matches)
+                    && (isset($matches[2]))
+                    && (isset($matches[3]))
+                ) {
+
+                    if (strpos(trim($matches[0][0]), 'topic') === 0) {
+                        if ($topicId = intval($matches[3][0])) {
+                            if ($topicId > 1) {
+                                $updateRecord['header_layout'] = $topicId;
+                            }
+                        }
+
+                    } else if (strpos(trim($matches[0][0]), 'project') === 0) {
+                        $updateRecord['header_layout'] = 5;
+
+                    } else if (strpos(trim($matches[0][0]), 'feature-box--no-color') === 0) {
+                        $updateRecord['header_layout'] = 6;
+                    }
+
+                    $updateRecord['header_link'] = preg_replace($pattern, ' -', $headerLink);
+
+                    // do update!
+                    $updateQueryBuilder = $connection->createQueryBuilder();
+                    $updateQueryBuilder->update('tt_content')
+                        ->set('header_layout', $updateRecord['header_layout'])
+                        ->set('header_link', $updateRecord['header_link'])
+                        ->where(
+                            $updateQueryBuilder->expr()->eq('uid',
+                                $updateQueryBuilder->createNamedParameter($record['uid'], \PDO::PARAM_INT)
+                            )
+                        );
+                    $databaseQueries[] = $updateQueryBuilder->getSQL();
+                    $updateQueryBuilder->execute();
+                }
+            }
+        }
+
+        /**
+         * UPDATE tt_content SET CType = 'rkwtemplate_topic' WHERE colPos = 13;
+         */
+        $updateQueryBuilder = $connection->createQueryBuilder();
+        $updateQueryBuilder->update('tt_content')
+            ->set('CType', 'rkwtemplate_topic')
+            ->where(
+                $updateQueryBuilder->expr()->eq('colPos',
+                    $updateQueryBuilder->createNamedParameter(13, \PDO::PARAM_INT)
+                )
+            );
+        $databaseQueries[] = $updateQueryBuilder->getSQL();
+        $updateQueryBuilder->execute();
+
+        $labels = [
+            '_default' => 'Unsere Themen',
+            5062 => 'Unsere Schwerpunkte',
+            4763 => 'Unsere Schwerpunkte',
+            3595 => 'Unsere Schwerpunkte',
+            3471 => 'Unsere Schwerpunkte',
+            3757 => 'Unsere Leistungen im Überblick',
+            3865 => 'Unsere Schwerpunkte',
+            4367 => 'Schnelleinstieg',
+            5027 => '',
+            5011 => 'Schnelleinstieg',
+            3684 => 'Schnelleinstieg',
+            5043 => 'Schnelleinstieg',
+            3673 => ''
+        ];
+
+        // move elements into a grid element-wrapper
+        $this->moveElementsToGridElement(13, 'rkwtemplate_topic', 'topicContainer', $labels, $databaseQueries);
+
+        $this->setLock(__FUNCTION__);
+    }
+
+
+    /**
      * Moves elements into a newly added grid element
      *
      * @param int    $colPos
      * @param string $cType
-     * @param int    $gridLayout
+     * @param string    $gridLayout
+     * @param array  $labels
      * @param array  $databaseQueries Queries done in this update
      */
-    protected function moveElementsToGridElement (int $colPos, string $cType, int $gridLayout, array &$databaseQueries)
+    protected function moveElementsToGridElement (int $colPos, string $cType, string $gridLayout, array $labels, array &$databaseQueries)
     {
 
         /** @var  \TYPO3\CMS\Core\Database\Connection $connection */
@@ -467,18 +581,27 @@ class UpdateWizard extends AbstractUpdate
 
             if ($pid = intval($record['pid'])) {
 
+                $label = 'Container';
+                if (isset($labels['_default'])) {
+                    $label = $labels['_default'];
+                }
+                if (isset($labels[$pid])) {
+                    $label = $labels[$pid];
+                }
+
+                $insertQueryBuilder = GeneralUtility::makeInstance(ConnectionPool::class)->getQueryBuilderForTable('tt_content');
+
                 // create a new grid-element
                 $newElement = [
                     'pid' => intval($record['pid']),
                     'sorting' => 0,
                     'colPos' => intval($colPos),
                     'CType' => 'gridelements_pi1',
-                    'header' => 'Container',
-                    'tx_gridelements_backend_layout' => intval($gridLayout)
+                    'header' => $label,
+                    'tx_gridelements_backend_layout' => $gridLayout
                 ];
 
                 /** @var \TYPO3\CMS\Core\Database\Query\QueryBuilder $insertQueryBuilder */
-                $insertQueryBuilder = GeneralUtility::makeInstance(ConnectionPool::class)->getQueryBuilderForTable('tt_content');
                 $insertQueryBuilder->insert('tt_content')->values($newElement)->execute();
                 $databaseQueries[] = $insertQueryBuilder->getSQL();
                 $newElementUid = $insertQueryBuilder->getConnection()->lastInsertId();

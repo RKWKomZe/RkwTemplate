@@ -17,6 +17,16 @@ page {
                     pidInList = {$boxesTopicsTaskConfig.pid}
                 }
             }
+
+            boxTopics = CONTENT
+            boxTopics < styles.content.get
+            boxTopics {
+                 table = tt_content
+                 select {
+                     where = {#colPos} = 13
+                     pidInList = {$boxesTopicsTaskConfig.pid}
+                 }
+            }
         }
     }
 }

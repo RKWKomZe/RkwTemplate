@@ -1,11 +1,6 @@
-{namespace rkwEtracker=RKW\RkwEtracker\ViewHelpers}
-
 <div class="slide slide--left {f:if(condition: '{data.header_layout} == 1', then: 'slide--gradient-left ')}{f:if(condition: '{data.header_layout} == 2', then: 'slide--white ')}{f:if(condition: '{data.header_layout} == 3', then: 'slide--white slide--gradient-left ')}">
 
-    <!-- image handling -->
     <f:render partial="Slider/Image" arguments="{_all}"/>
-
-    <!-- text -->
     <f:render partial="Slider/Text" arguments="{_all}"/>
 
 </div>
