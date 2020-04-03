@@ -5,12 +5,10 @@ tt_content.gridelements_pi1.20.10.setup {
     sliderContainer < lib.gridelements.defaultGridSetup
     sliderContainer {
 
-        columns {
-
-            # colPos ID
-            4 < .default
-            4.wrap = <section><div class="slider">|</div></section>
-
+        cObject = FLUIDTEMPLATE
+        cObject {
+            file = {$plugin.tx_rkwtemplate.view.templateRootPath}GridElements/SliderContainer.html
         }
+        outerWrap = |
     }
 }

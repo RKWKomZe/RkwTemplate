@@ -6,6 +6,7 @@ page {
         variables {
 
             //=================================================================
+            /*
             logoBoxes = CONTENT
             logoBoxes {
                 table = tt_content
@@ -148,6 +149,9 @@ page {
                 }
             }
 
+
+
+
             //=================================================================
             logoBoxesHome2 < .logoBoxesHome
             logoBoxesHome2 {
@@ -161,6 +165,8 @@ page {
                     stdWrap.wrap = <section role="banner" aria-labelledby="headline-partner2">|</section>
                 }
             }
+
+
 
             //=================================================================
             cooperationBoxes < .logoBoxes
@@ -177,6 +183,7 @@ page {
                 }
 
             }
+            */
 
             //=================================================================
             projectLogoBoxes = COA

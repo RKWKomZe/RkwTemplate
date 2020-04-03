@@ -5,7 +5,7 @@
 		<body>
 
 
-            <!-- Slider element -->
+            <!-- Slider -->
 			<trans-unit id="contentElement.slider.title">
 				<source>Slider-Element</source>
 				<target>Slider-Element</target>
@@ -45,7 +45,7 @@
             </trans-unit>
 
 
-            <!-- SliderContainer element -->
+            <!-- SliderContainer -->
             <trans-unit id="contentElement.sliderContainer.title">
                 <source>Slider-Container</source>
                 <target>Slider-Container</target>
@@ -67,7 +67,7 @@
             </trans-unit>
 
             
-            <!-- Topic element -->
+            <!-- Topic -->
             <trans-unit id="contentElement.topic.title">
                 <source>Topic</source>
                 <target>Thema</target>
@@ -105,6 +105,49 @@
                 <target>Keine Farbe</target>
             </trans-unit>
 
+
+            <!-- TopicContainer -->
+            <trans-unit id="contentElement.topicContainer.title">
+                <source>Topic-Container</source>
+                <target>Themen-Container</target>
+            </trans-unit>
+            <trans-unit id="contentElement.topicContainer.description">
+                <source>Adds a topic-container.</source>
+                <target>Fügt einen Container für Themen ein.</target>
+            </trans-unit>
+
+
+            <!-- Media -->
+            <trans-unit id="contentElement.media.title">
+                <source>Media</source>
+                <target>Medien</target>
+            </trans-unit>
+            <trans-unit id="contentElement.media.description">
+                <source>Adds a Media-Element.</source>
+                <target>Fügt ein Medien-Element ein.</target>
+            </trans-unit>
+
+
+            <!-- Logo -->
+            <trans-unit id="contentElement.logo.title">
+                <source>Logo</source>
+                <target>Logo</target>
+            </trans-unit>
+            <trans-unit id="contentElement.logo.description">
+                <source>Adds a Logo-Element.</source>
+                <target>Fügt ein Logo-Element hinzu</target>
+            </trans-unit>
+
+
+            <!-- LogoContainer -->
+            <trans-unit id="contentElement.logoContainer.title">
+                <source>Logo-Container</source>
+                <target>Logo-Container</target>
+            </trans-unit>
+            <trans-unit id="contentElement.logoContainer.description">
+                <source>Adds a logo-container.</source>
+                <target>Fügt einen Container für Logos ein.</target>
+            </trans-unit>
 		</body>
 	</file>
 </xliff>

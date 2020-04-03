@@ -10,13 +10,10 @@
     </f:if>
 
     <!-- Slider Section -->
-    <f:if condition="{sliderHome}">
-        <f:format.html parseFuncTSPath="">{sliderHome}</f:format.html>
-    </f:if>
+    <f:format.html parseFuncTSPath="">{sliderHome}</f:format.html>
 
     <!-- Statement and topic-boxes -->
     <f:format.html parseFuncTSPath="">{boxTask}</f:format.html>
-
 
     <f:if condition="<rkwBasics:isEmpty string='{boxSpecial}' /> == 0">
         <f:format.html parseFuncTSPath="">{boxSpecial}</f:format.html>
@@ -25,27 +22,11 @@
     <f:format.html parseFuncTSPath="">{boxTopics}</f:format.html>
 
     <!-- Video -->
-    <f:if condition="<rkwBasics:isEmpty string='{htmlOnly}' /> == 0">
-        <section>
-            <div class="home__video">
-                <f:format.html parseFuncTSPath="">{htmlOnly}</f:format.html>
-            </div>
-        </section>
-    </f:if>
+    <f:format.html parseFuncTSPath="">{htmlOnly}</f:format.html>
 
     <!-- News Section -->
-    <f:if condition="<rkwBasics:isEmpty string='{newsContent}' /> == 0">
-        <f:then>
-            <section role="complementary" aria-labelledby="headline-news">
-                <f:format.html parseFuncTSPath="">{newsContent}</f:format.html>
-            </section>
-        </f:then>
-        <f:else>
-            <f:if condition="<rkwBasics:isEmpty string='{newsNav}' /> == 0">
-                <f:format.html parseFuncTSPath="">{newsNav}</f:format.html>
-            </f:if>
-        </f:else>
-    </f:if>
+    <f:format.html parseFuncTSPath="">{newsContent}</f:format.html>
+
 
     <!-- Content -->
     <f:if condition="<rkwBasics:isEmpty string='{content}' /> == 0">

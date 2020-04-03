@@ -21,6 +21,7 @@ use TYPO3\CMS\Core\Resource\File;
 use TYPO3\CMS\Core\Resource\ResourceFactory;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Core\Utility\MathUtility;
+use TYPO3\CMS\Backend\Utility\BackendUtility;
 
 
 /**
@@ -39,6 +40,15 @@ class UpdateWizard extends AbstractUpdate
      * @var string
      */
     protected $title = 'Updater for rkw_template to update from TYPO3 7.6 to TYPO3 8.7';
+
+
+    /**
+     * Integer: The interval between sorting numbers used with tables with a 'sorting' field defined. Min 1
+     *
+     * @var int
+     */
+    protected $sortIntervals = 256;
+
 
     /**
      * Checks whether updates are required.
@@ -74,6 +84,7 @@ class UpdateWizard extends AbstractUpdate
         $this->updateSliderElements($databaseQueries);
         $this->updateMissionStatementElements($databaseQueries);
         $this->updateTopicElements($databaseQueries);
+        $this->updateLogoElements($databaseQueries);
 
         return true;
         var_dump($databaseQueries);
@@ -445,7 +456,7 @@ class UpdateWizard extends AbstractUpdate
         $updateQueryBuilder->execute();
 
         // move elements into a grid element-wrapper
-        $this->moveElementsToGridElement(4, 'rkwtemplate_slider', 'sliderContainer', [], $databaseQueries);
+        $this->moveElementsFromColToGridContainer(4, 'rkwtemplate_slider', 4, 'sliderContainer', [], $databaseQueries);
 
         $this->setLock(__FUNCTION__);
     }
@@ -466,6 +477,7 @@ class UpdateWizard extends AbstractUpdate
         /** @var  \TYPO3\CMS\Core\Database\Connection $connection */
         $connection = GeneralUtility::makeInstance(ConnectionPool::class)->getConnectionForTable('tt_content');
 
+
         /**
          * Updates for mission statement
          *
@@ -482,6 +494,48 @@ class UpdateWizard extends AbstractUpdate
             );
         $databaseQueries[] = $updateQueryBuilder->getSQL();
         $updateQueryBuilder->execute();
+
+
+        // Check for sub-headlines and transfer them to the subheader
+        // find go through all pages
+        /** @var \TYPO3\CMS\Core\Database\Query\QueryBuilder $queryBuilder */
+        $queryBuilder = $connection->createQueryBuilder();
+        $statement = $queryBuilder->select('*')
+            ->from('tt_content')
+            ->where(
+                $queryBuilder->expr()->eq('colPos',
+                    $queryBuilder->createNamedParameter(12, \PDO::PARAM_INT)
+                )
+            )
+            ->execute();
+
+        // go through all pages
+        while ($record = $statement->fetch()) {
+
+            // <h2>Menschen. Unternehmen. Zukunft!</h2>
+            $pattern = '#<h[0-9]+>([^<]+)</h[0-9]+>#';
+            preg_match($pattern, $record['bodytext'], $matches, PREG_OFFSET_CAPTURE);
+            if (
+                ($matches)
+                && ($matches[1][0])
+            ){
+
+                $record['bodytext'] = preg_replace($pattern, '', $record['bodytext']);
+                $record['subheader'] = $matches[1][0];
+
+                $updateQueryBuilder = $connection->createQueryBuilder();
+                $updateQueryBuilder->update('tt_content')
+                    ->set('bodytext', $record['bodytext'])
+                    ->set('subheader', $record['subheader'])
+                    ->where(
+                        $updateQueryBuilder->expr()->eq('uid',
+                            $updateQueryBuilder->createNamedParameter($record['uid'] , \PDO::PARAM_INT)
+                        )
+                    );
+                $databaseQueries[] = $updateQueryBuilder->getSQL();
+                $updateQueryBuilder->execute();
+            }
+        }
 
 
         $updateQueryBuilder = $connection->createQueryBuilder();
@@ -606,22 +660,64 @@ class UpdateWizard extends AbstractUpdate
         ];
 
         // move elements into a grid element-wrapper
-        $this->moveElementsToGridElement(13, 'rkwtemplate_topic', 'topicContainer', $labels, $databaseQueries);
+        $this->moveElementsFromColToGridContainer(13, 'rkwtemplate_topic', 13, 'topicContainer', $labels, $databaseQueries);
 
         $this->setLock(__FUNCTION__);
     }
 
 
+
     /**
-     * Moves elements into a newly added grid element
+     * Update logo elements
+     *
+     * @param array $databaseQueries Queries done in this update
+     */
+    protected function updateLogoElements(array &$databaseQueries)
+    {
+        if ($this->hasLock(__FUNCTION__)){
+            return;
+        }
+
+        /** @var  \TYPO3\CMS\Core\Database\Connection $connection */
+        $connection = GeneralUtility::makeInstance(ConnectionPool::class)->getConnectionForTable('tt_content');
+
+        // find all shortcuts in given cols
+        /** @var \TYPO3\CMS\Core\Database\Query\QueryBuilder $queryBuilder */
+        $queryBuilder = $connection->createQueryBuilder();
+        $statement = $queryBuilder->select('*')
+            ->from('tt_content')
+            ->where(
+                $queryBuilder->expr()->eq('CType',
+                    $queryBuilder->createNamedParameter('shortcut', \PDO::PARAM_STR)
+                )
+            )
+            ->execute();
+
+
+        // go through all elements
+        while ($record = $statement->fetch()) {
+
+            // move shortcut elements into a grid element-wrapper
+            $this->moveElementsFromShortCutToGridContainer($record, 'rkwtemplate_logo', 5, 'logoContainer', $databaseQueries);
+        }
+
+        $this->setLock(__FUNCTION__);
+    }
+
+
+
+
+    /**
+     * Moves elements into a newly added grid container
      *
      * @param int    $colPos
      * @param string $cType
-     * @param string    $gridLayout
+     * @param int    $gridColPos
+     * @param string $gridLayout
      * @param array  $labels
      * @param array  $databaseQueries Queries done in this update
      */
-    protected function moveElementsToGridElement (int $colPos, string $cType, string $gridLayout, array $labels, array &$databaseQueries)
+    protected function moveElementsFromColToGridContainer (int $colPos, string $cType, int $gridColPos, string $gridLayout, array $labels, array &$databaseQueries)
     {
 
         /** @var  \TYPO3\CMS\Core\Database\Connection $connection */
@@ -676,7 +772,7 @@ class UpdateWizard extends AbstractUpdate
                 $updateQueryBuilder = $connection->createQueryBuilder();
                 $updateQueryBuilder->update('tt_content')
                     ->set('tx_gridelements_container', intval($newElementUid))
-                    ->set('tx_gridelements_columns', intval($colPos))
+                    ->set('tx_gridelements_columns', intval($gridColPos))
                     ->set('colPos', -1)
                     ->where(
                         $updateQueryBuilder->expr()->eq('CType',
@@ -723,6 +819,106 @@ class UpdateWizard extends AbstractUpdate
 
 
     /**
+     * Moves elements into a newly added grid container
+     *
+     * @param array $shortCut
+     * @param string $cType
+     * @param int $gridColPos
+     * @param string $gridLayout
+     * @param array  $databaseQueries Queries done in this update
+     */
+    protected function moveElementsFromShortCutToGridContainer (array $shortCut, string $cType, int $gridColPos, string $gridLayout, array &$databaseQueries)
+    {
+
+        /** @var  \TYPO3\CMS\Core\Database\Connection $connection */
+        $connection = GeneralUtility::makeInstance(ConnectionPool::class)->getConnectionForTable('tt_content');
+
+        // create a new grid-element
+        $insertQueryBuilder = GeneralUtility::makeInstance(ConnectionPool::class)->getQueryBuilderForTable('tt_content');
+        $newElement = [
+            'pid' => intval($shortCut['pid']),
+            'colPos' => intval($shortCut['colPos']),
+            'sorting' => 0,
+            'CType' => 'gridelements_pi1',
+            'header' => $shortCut['header'],
+            'tx_gridelements_backend_layout' => $gridLayout
+        ];
+
+        /** @var \TYPO3\CMS\Core\Database\Query\QueryBuilder $insertQueryBuilder */
+        $insertQueryBuilder->insert('tt_content')->values($newElement)->execute();
+        $databaseQueries[] = $insertQueryBuilder->getSQL();
+        $newElementUid = $insertQueryBuilder->getConnection()->lastInsertId();
+
+
+        // now get the records of the shortcut and set their sorting according to the sorting in the shortcut.
+        // higher sorting numbers mean that elements are displayed lower in the list.
+        // also change their cType and add them to the new gridElement
+        if ($items = explode(',', $shortCut['records'])) {
+
+            $sorting = $this->sortIntervals;
+            foreach ($items as $item) {
+
+                $updateQueryBuilder = $connection->createQueryBuilder();
+                $updateQueryBuilder->update('tt_content')
+                    ->set('CType', $cType)
+                    ->set('sorting', $sorting)
+                    ->set('pid', intval($shortCut['pid']))
+                    ->set('tx_gridelements_container', intval($newElementUid))
+                    ->set('tx_gridelements_columns', intval($gridColPos))
+                    ->set('colPos', -1)
+                    ->where(
+                        $updateQueryBuilder->expr()->eq('uid',
+                            $updateQueryBuilder->createNamedParameter($item, \PDO::PARAM_INT)
+                        )
+                    );
+
+                $databaseQueries[] = $updateQueryBuilder->getSQL();
+                $updateQueryBuilder->execute();
+
+                $sorting += $this->sortIntervals;
+            }
+        }
+
+
+        // now delete shortcut
+        $updateQueryBuilder = $connection->createQueryBuilder();
+        $updateQueryBuilder->update('tt_content')
+            ->set('deleted', 1)
+            ->where(
+                $updateQueryBuilder->expr()->eq('uid',
+                    $updateQueryBuilder->createNamedParameter($shortCut['uid'], \PDO::PARAM_INT)
+                )
+            );
+        $databaseQueries[] = $updateQueryBuilder->getSQL();
+        $updateQueryBuilder->execute();
+
+
+        // delete all other elements from the col and page of the shortcut
+        $updateQueryBuilder = $connection->createQueryBuilder();
+        $updateQueryBuilder->update('tt_content')
+            ->set('deleted', 1)
+            ->where(
+                $updateQueryBuilder->expr()->eq('pid',
+                    $updateQueryBuilder->createNamedParameter($shortCut['pid'], \PDO::PARAM_INT)
+                ),
+                $updateQueryBuilder->expr()->eq('colPos',
+                    $updateQueryBuilder->createNamedParameter($shortCut['colPos'], \PDO::PARAM_INT)
+                ),
+                $updateQueryBuilder->expr()->neq('CType',
+                    $updateQueryBuilder->createNamedParameter($cType, \PDO::PARAM_STR)
+                ),
+                $updateQueryBuilder->expr()->neq('CType',
+                    $updateQueryBuilder->createNamedParameter('gridelements_pi1', \PDO::PARAM_STR)
+                )
+            );
+
+        $databaseQueries[] = $updateQueryBuilder->getSQL();
+        $updateQueryBuilder->execute();
+
+
+    }
+
+    /**
      * Checks the lock
      *
      * @param string $method
@@ -730,7 +926,7 @@ class UpdateWizard extends AbstractUpdate
      */
     protected function hasLock ($method)
     {
-        return file_exists(PATH_site . 'typo3temp/locks/tx_rkwtemplate_' . $method . '.lock');
+        return file_exists(PATH_site . 'typo3temp/var/locks/tx_rkwtemplate_' . $method . '.lock');
     }
 
 
@@ -742,7 +938,7 @@ class UpdateWizard extends AbstractUpdate
      */
     protected function setLock ($method)
     {
-        return touch(PATH_site . 'typo3temp/locks/tx_rkwtemplate_' . $method . '.lock');
+        return touch(PATH_site . 'typo3temp/var/locks/tx_rkwtemplate_' . $method . '.lock');
     }
 
 }

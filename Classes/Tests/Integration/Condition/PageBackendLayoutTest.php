@@ -1,5 +1,5 @@
 <?php
-namespace RKW\RkwTemplate\Tests\Integration\UserFunction;
+namespace RKW\RkwTemplate\Tests\Integration\Condition;
 
 /*
  * This file is part of the TYPO3 CMS project.

@@ -1,0 +1,15 @@
+
+tt_content.gridelements_pi1.20.10.setup {
+
+    # id of grid element
+    logoContainer < lib.gridelements.defaultGridSetup
+    logoContainer {
+
+        cObject = FLUIDTEMPLATE
+        cObject {
+            file = {$plugin.tx_rkwtemplate.view.templateRootPath}GridElements/LogoContainer.html
+        }
+        outerWrap = |
+
+    }
+}

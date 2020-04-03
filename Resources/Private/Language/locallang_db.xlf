@@ -4,7 +4,7 @@
 		<header/>
 		<body>
 
-            <!-- Slider element -->
+            <!-- Slider -->
 			<trans-unit id="contentElement.slider.title">
 				<source>Slider</source>
 			</trans-unit>
@@ -36,7 +36,8 @@
                 <source>Mobile</source>
             </trans-unit>
 
-            <!-- SliderContainer element -->
+
+            <!-- SliderContainer -->
 			<trans-unit id="contentElement.sliderContainer.title">
 				<source>SliderContainer</source>
 			</trans-unit>
@@ -54,7 +55,7 @@
             </trans-unit>
 
 
-            <!-- Topic element -->
+            <!-- Topic -->
             <trans-unit id="contentElement.topic.title">
                <source>Topic</source>
             </trans-unit>
@@ -83,6 +84,32 @@
                 <source>No Color</source>
             </trans-unit>
 
+
+            <!-- TopicContainer -->
+            <trans-unit id="contentElement.topicContainer.title">
+                <source>Topic-Container</source>
+            </trans-unit>
+            <trans-unit id="contentElement.topicContainer.description">
+                <source>Adds a topic-container.</source>
+            </trans-unit>
+
+
+            <!-- Media -->
+            <trans-unit id="contentElement.media.title">
+                <source>Media</source>
+            </trans-unit>
+            <trans-unit id="contentElement.media.description">
+                <source>Adds a Media-Element.</source>
+            </trans-unit>
+
+
+            <!-- Logo -->
+            <trans-unit id="contentElement.logo.title">
+                <source>Logo</source>
+            </trans-unit>
+            <trans-unit id="contentElement.logo.description">
+                <source>Adds a Logo-Element.</source>
+            </trans-unit>
 		</body>
 	</file>
 </xliff>
