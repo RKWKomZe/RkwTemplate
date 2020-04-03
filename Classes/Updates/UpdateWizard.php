@@ -38,7 +38,7 @@ class UpdateWizard extends AbstractUpdate
     /**
      * @var string
      */
-    protected $title = 'Title of this updater';
+    protected $title = 'Updater for rkw_template to update from TYPO3 7.6 to TYPO3 8.7';
 
     /**
      * Checks whether updates are required.
@@ -48,6 +48,10 @@ class UpdateWizard extends AbstractUpdate
      */
     public function checkForUpdate(&$description)
     {
+        // version check!!!!
+
+
+
         if ($this->isWizardDone()) {
             return false;
         }
@@ -65,11 +69,13 @@ class UpdateWizard extends AbstractUpdate
     public function performUpdate(array &$databaseQueries, &$customMessage)
     {
 
+
         $this->updateConfiguration($databaseQueries);
         $this->updateSliderElements($databaseQueries);
         $this->updateMissionStatementElements($databaseQueries);
         $this->updateTopicElements($databaseQueries);
 
+        return true;
         var_dump($databaseQueries);
         die();
 
@@ -181,18 +187,28 @@ class UpdateWizard extends AbstractUpdate
         while ($record = $statement->fetch()) {
 
             $search = [
-                'Configuration/TypoScript/Kompetenzzentrum',
-                'Configuration/TypoScript/WePstra',
+                'EXT:rkw_template/Configuration/TypoScript/Kompetenzzentrum',
+                'EXT:rkw_template/Configuration/TypoScript/WePstra',
+                'EXT:rkw_template/Configuration/Themes/Kompetenzzentrum/TypoScript',
+                'EXT:rkw_template/Configuration/Themes/WePstra/TypoScript',
                 'EXT:css_styled_content/Configuration/TypoScript/,',
                 'EXT:rtehtmlarea/static/clickenlarge/,',
             ];
             $replace = [
-                'Configuration/Themes/Kompetenzzentrum/TypoScript',
-                'Configuration/Themes/WePstra/TypoScript',
-                'EXT:fluid_styled_content/Configuration/TypoScript/,EXT:fluid_styled_content/Configuration/TypoScript/Styling/,EXT:gridelements/Configuration/TypoScript/,EXT:rkw_template/Configuration/TypoScript,',
+                'EXT:rkw_template/Themes/Kompetenzzentrum/Configuration/TypoScript',
+                'EXT:rkw_template/Themes/WePstra/Configuration/TypoScript',
+                'EXT:rkw_template/Themes/Kompetenzzentrum/Configuration/TypoScript',
+                'EXT:rkw_template/Themes/WePstra/Configuration/TypoScript',
+                '',
                 '',
             ];
             $record['include_static_file'] = str_replace($search, $replace, $record['include_static_file']);
+
+            // add default templates
+            if (strpos($record['include_static_file'], 'EXT:fluid_styled_content/Configuration/TypoScript/') === false) {
+                $record['include_static_file'] =  'EXT:fluid_styled_content/Configuration/TypoScript/,EXT:fluid_styled_content/Configuration/TypoScript/Styling/,EXT:gridelements/Configuration/TypoScript/,EXT:rkw_template/Configuration/TypoScript,'
+                    . $record['include_static_file'];
+            }
 
             // update
             /** @var \TYPO3\CMS\Core\Database\Query\QueryBuilder $updateQueryBuilder */
@@ -229,17 +245,25 @@ class UpdateWizard extends AbstractUpdate
 
             $search = [
                 '.ts',
-                'Configuration/TsConfig/Kompetenzzentrum',
-                'Configuration/TsConfig/WePstra',
+                'EXT:rkw_template/Configuration/TsConfig/Kompetenzzentrum',
+                'EXT:rkw_template/Configuration/TsConfig/WePstra',
+                'EXT:rkw_template/Configuration/Themes/Kompetenzzentrum/TsConfig',
+                'EXT:rkw_template/Configuration/Themes/WePstra/TsConfig',
             ];
             $replace = [
                 '.typoscript',
-                'Configuration/Themes/Kompetenzzentrum/TsConfig',
-                'Configuration/Themes/WePstra/TsConfig',
+                'EXT:rkw_template/Themes/Kompetenzzentrum/Configuration/TsConfig',
+                'EXT:rkw_template/Themes/WePstra/Configuration/TsConfig',
+                'EXT:rkw_template/Themes/Kompetenzzentrum/Configuration/TsConfig',
+                'EXT:rkw_template/Themes/WePstra/Configuration/TsConfig',
             ];
-            $record['tsconfig_includes'] =
-                'EXT:rkw_template/Configuration/TsConfig/TsConfig.typoscript,' .
-                str_replace($search, $replace, $record['tsconfig_includes']);
+
+            $record['tsconfig_includes'] = str_replace($search, $replace, $record['tsconfig_includes']);
+
+            // add default template
+            if (strpos($record['tsconfig_includes'], 'EXT:rkw_template/Configuration/TsConfig/TsConfig.typoscript') === false) {
+                $record['tsconfig_includes'] = 'EXT:rkw_template/Configuration/TsConfig/TsConfig.typoscript,' . $record['tsconfig_includes'];
+            }
 
             // update
             /** @var \TYPO3\CMS\Core\Database\Query\QueryBuilder $updateQueryBuilder */
@@ -254,6 +278,47 @@ class UpdateWizard extends AbstractUpdate
             $databaseQueries[] = $updateQueryBuilder->getSQL();
             $updateQueryBuilder->execute();
         }
+
+
+        /** @var  \TYPO3\CMS\Core\Database\Connection $connection */
+        $connection = GeneralUtility::makeInstance(ConnectionPool::class)->getConnectionForTable('be_groups');
+
+        // find relevant root sys_templates
+        /** @var \TYPO3\CMS\Core\Database\Query\QueryBuilder $queryBuilder */
+        $queryBuilder = $connection->createQueryBuilder();
+        $statement = $queryBuilder->select('*')
+            ->from('be_groups')
+            ->execute();
+
+        // go through all sys_templates
+        while ($record = $statement->fetch()) {
+
+            $search = [
+                'EXT:rkw_template/Configuration/TsConfigBeGroups/_Core/',
+                'EXT:rkw_template/Configuration/TsConfigBeGroups/Kompetenzzentrum/',
+                'EXT:rkw_template/Configuration/TsConfigBeGroups/WePstra/',
+            ];
+            $replace = [
+                'EXT:rkw_template/Themes/_Core/Configuration/TsConfigBeGroups/',
+                'EXT:rkw_template/Themes/Kompetenzzentrum/Configuration/TsConfigBeGroups/',
+                'EXT:rkw_template/Themes/WePstra/Configuration/TsConfigBeGroups/',
+            ];
+            $record['TSconfig'] = str_replace($search, $replace, $record['TSconfig']);
+
+            // update
+            /** @var \TYPO3\CMS\Core\Database\Query\QueryBuilder $updateQueryBuilder */
+            $updateQueryBuilder = $connection->createQueryBuilder();
+            $updateQueryBuilder->update('be_groups')
+                ->set('TSconfig', $record['TSconfig'])
+                ->where(
+                    $updateQueryBuilder->expr()->eq('uid',
+                        $updateQueryBuilder->createNamedParameter($record['uid'], \PDO::PARAM_INT)
+                    )
+                );
+            $databaseQueries[] = $updateQueryBuilder->getSQL();
+            $updateQueryBuilder->execute();
+        }
+
 
         $this->setLock(__FUNCTION__);
 

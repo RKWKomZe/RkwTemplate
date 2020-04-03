@@ -1,4 +1,0 @@
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:rkw_template/Configuration/Themes/_Core/TsConfig/Config" extensions="typoscript">
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:rkw_template/Configuration/Themes/_Core/TsConfig/Permissions" extensions="typoscript">
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:rkw_template/Configuration/Themes/_Core/TsConfig/Tce" extensions="typoscript">
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:rkw_template/Configuration/Themes/_Core/TsConfig/Rte" extensions="typoscript">

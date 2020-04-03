@@ -1,0 +1,51 @@
+// ############################################################################
+// Global paths
+// ############################################################################
+plugin.tx_rkwtemplate_themeconfig {
+    paths {
+        default {
+
+            # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Path to logos
+            logos = EXT:rkw_template/Themes/Kompetenzzentrum/Resources/Public/_Websites/RkwSachsenAnhalt/images/logos
+
+            # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Path to icons
+            icons = EXT:rkw_template/Themes/Kompetenzzentrum/Resources/Public/images/icons/grey
+        }
+
+        extensions {
+
+            # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Path to partials
+            partials = EXT:rkw_template/Themes/{$plugin.tx_rkwtemplate_themeconfig.themeName}/Resources/Private/Partials/_Websites/RkwSachsenAnhalt/Extensions
+        }
+    }
+
+    # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=baseUrl (With / at the end for ClickEnlarge)
+    baseUrl = https://www.rkw-sachsenanhalt.de/
+
+    website {
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Name of website
+        name = RKW Sachsen-Anhalt
+
+        # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Logo of website (desktop-version)
+        logoFile = {$plugin.tx_rkwtemplate_themeconfig.paths.default.logos}/logo.png
+
+        # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Logo of website (offcanvas-version)
+        logoOffcanvasFile = {$plugin.tx_rkwtemplate_themeconfig.paths.default.logos}/logo-offcanvas.png
+
+        # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Icon of website (offcanvas-version)
+        logoOffcanvasIconOnlyFile = {$plugin.tx_rkwtemplate_themeconfig.paths.default.logos}/logo-offcanvas-icon.png
+
+        # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Broken link logo of website
+        logoBrokenLinkFile = {$plugin.tx_rkwtemplate_themeconfig.paths.default.logos}/broken-link.png
+    }
+
+
+    # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Show social media icons
+    socialMedia = 0
+
+    # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Is this website a microsite?
+    isMicrosite = 0
+
+}
+

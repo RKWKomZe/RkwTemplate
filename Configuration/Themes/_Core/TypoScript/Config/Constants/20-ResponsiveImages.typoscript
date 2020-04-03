@@ -1,6 +1,0 @@
-tx_smsresponsiveimages {
-
-    srcset = {$plugin.tx_rkwtemplate_themeconfig.breakpoints.mobile}, {$plugin.tx_rkwtemplate_themeconfig.breakpoints.tablet}, {$plugin.tx_rkwtemplate_themeconfig.breakpoints.desktop}
-    sizes = (min-width: {$plugin.tx_rkwtemplate_themeconfig.breakpoints.desktop}px) {$plugin.tx_rkwtemplate_themeconfig.breakpoints.desktop}px, (min-width: {$plugin.tx_rkwtemplate_themeconfig.breakpoints.tablet}px) {$plugin.tx_rkwtemplate_themeconfig.breakpoints.tablet}px, (min-width: {$plugin.tx_rkwtemplate_themeconfig.breakpoints.mobile}px) {$plugin.tx_rkwtemplate_themeconfig.breakpoints.mobile}px, 100vw
-
-}
