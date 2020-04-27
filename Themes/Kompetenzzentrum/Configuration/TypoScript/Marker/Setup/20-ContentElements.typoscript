@@ -2,38 +2,34 @@ page {
     10 {
         variables {
 
+            contentHome = CONTENT
+            contentHome < styles.content.get
+            contentHome.select.where = {#colPos} = 100
 
-            sliderHome = CONTENT
-            sliderHome < styles.content.get
-            sliderHome.select.where = {#colPos} =4
+            keyvisual = CONTENT
+            keyvisual < styles.content.get
+            keyvisual.select.where = {#colPos} = 201
+            keyvisual.slide = -1
 
+
+
+
+            // toDo
             boxTask = CONTENT
             boxTask < styles.content.get
             boxTask.select.where = {#colPos} = 12
-
-            boxTopics = CONTENT
-            boxTopics < styles.content.get
-            boxTopics.select.where = {#colPos} = 13
-
-            htmlOnly = CONTENT
-            htmlOnly < styles.content.get
-            htmlOnly.select.where = {#colPos} = 15
 
             logoBoxes = CONTENT
             logoBoxes < styles.content.get
             logoBoxes.select.where = {#colPos} = 5
 
-            logoBoxesHome = CONTENT
-            logoBoxesHome < styles.content.get
-            logoBoxesHome.select.where = {#colPos} = 5
-
-            logoBoxesHome2 = CONTENT
-            logoBoxesHome2 < styles.content.get
-            logoBoxesHome2.select.where = {#colPos} = 14
-
             cooperationBoxes = CONTENT
             cooperationBoxes < styles.content.get
             cooperationBoxes.select.where = {#colPos} = 8
+
+                        promoterBoxes = CONTENT
+                        promoterBoxes < styles.content.get
+                        promoterBoxes.select.where = {#colPos} = 19
         }
     }
 }

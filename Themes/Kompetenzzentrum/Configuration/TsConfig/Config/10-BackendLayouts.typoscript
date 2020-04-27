@@ -11,82 +11,19 @@ mod {
                 config {
                     backend_layout {
                         colCount = 2
-                        rowCount = 8
+                        rowCount = 1
                         rows {
                             1 {
                                 columns {
                                     1 {
-                                        name = Slider
-                                        colPos = 4
+                                        name = Content
+                                        colPos = 100
                                     }
 
                                     2 {
                                         name = Ähnliche Artikel
                                         rowspan = 6
                                         colPos = 7
-                                    }
-                                }
-                            }
-
-                            2 {
-                                columns {
-                                    1 {
-                                        name = Aufgabe
-                                        colPos = 12
-                                    }
-                                }
-                            }
-
-                            3 {
-                                columns {
-                                    1 {
-                                        name = Themen
-                                        colPos = 13
-                                    }
-                                }
-                            }
-
-                            4 {
-                                columns {
-                                    1 {
-                                        name = Video (nur HTML-Elemente)
-                                        colPos = 15
-                                    }
-                                }
-                            }
-
-                            5 {
-                                columns {
-                                    1 {
-                                        name = News
-                                        colPos = 16
-                                    }
-                                }
-                            }
-
-                            6 {
-                                columns {
-                                    1 {
-                                        name = Das RKW
-                                        colPos = 0
-                                    }
-                                }
-                            }
-
-                            7 {
-                                columns {
-                                    1 {
-                                        name = Logo-Leiste I
-                                        colPos = 5
-                                    }
-                                }
-                            }
-
-                            8 {
-                                columns {
-                                    1 {
-                                        name = Logo-Leiste II
-                                        colPos = 14
                                     }
                                 }
                             }
@@ -142,10 +79,20 @@ mod {
                 config {
                     backend_layout {
                         colCount = 2
-                        rowCount = 8
+                        rowCount = 9
                         rows {
 
                             1 {
+                                columns {
+                                    1 {
+                                        name = KeyVisual
+                                        colPos = 201
+                                    }
+
+                                }
+                            }
+
+                            2 {
                                 columns {
                                     1 {
                                         name = Förderer
@@ -155,7 +102,7 @@ mod {
                                 }
                             }
 
-                            2 {
+                            3 {
                                 columns {
                                     1 {
                                         name = Inhalt
@@ -171,7 +118,7 @@ mod {
                                 }
                             }
 
-                            3 {
+                            4 {
                                 columns {
                                     1 {
                                         name = Call-To-Action
@@ -180,7 +127,7 @@ mod {
                                 }
                             }
 
-                            4 {
+                            5 {
                                 columns {
                                     1 {
                                         name = Boxen 1 - NUR für Publikationen und Tools verwenden!
@@ -190,7 +137,7 @@ mod {
                                 }
                             }
 
-                            5 {
+                            6 {
                                 columns {
                                     1 {
                                         name = Kooperationen und Partner (Datensatzsammlung, Headline variabel)
@@ -200,7 +147,7 @@ mod {
                                 }
                             }
 
-                            6 {
+                            7 {
                                 columns {
                                     1 {
                                         name = Boxen 2 - Für weitere Inhalte
@@ -210,7 +157,7 @@ mod {
                                 }
                             }
 
-                            7 {
+                            8 {
                                 columns {
                                     1 {
                                         name = Boxen 2 - Für weitere Inhalte (nur für Artikel-Unterseiten)
@@ -220,7 +167,7 @@ mod {
                                 }
                             }
 
-                            8 {
+                            9 {
                                 columns {
                                     1 {
                                         name = Referenzen

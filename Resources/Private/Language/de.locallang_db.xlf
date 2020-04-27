@@ -148,6 +148,40 @@
                 <source>Adds a logo-container.</source>
                 <target>Fügt einen Container für Logos ein.</target>
             </trans-unit>
+
+
+            <!-- Promoter -->
+            <trans-unit id="contentElement.promoter.title">
+                <source>Promoter</source>
+                <target>Förderer</target>
+            </trans-unit>
+            <trans-unit id="contentElement.promoter.description">
+                <source>Adds a Promoter-Element.</source>
+                <target>Fügt ein Förderer-Element hinzu</target>
+            </trans-unit>
+
+
+            <!-- PromoterContainer -->
+            <trans-unit id="contentElement.promoterContainer.title">
+                <source>Promoter-Container</source>
+                <target>Förderer-Container</target>
+            </trans-unit>
+            <trans-unit id="contentElement.promoterContainer.description">
+                <source>Adds a Promoter-Container.</source>
+                <target>Fügt einen Container für Förderer ein.</target>
+            </trans-unit>
+
+
+            <!-- Key Visual -->
+            <trans-unit id="contentElement.keyvisual.title">
+                <source>Key Visual</source>
+                <target>Key Visual</target>
+            </trans-unit>
+            <trans-unit id="contentElement.keyvisual.description">
+                <source>Adds a KeyVisual.</source>
+                <target>Fügt ein KeyVisual ein.</target>
+            </trans-unit>
+
 		</body>
 	</file>
 </xliff>

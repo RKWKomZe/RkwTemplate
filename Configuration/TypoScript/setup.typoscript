@@ -24,6 +24,42 @@ plugin.tx_rkwtemplate {
 
 	}
 }
+lib.headerpic = IMAGE
+lib.headerpic {
+  file {
+    import.data = levelmedia:-1, slide
+    treatIdAsReference = 1
+    import.listNum = 0
+  }
+}
+
+
+lib {
+
+    pageTitle = TEXT
+    pageTitle.data = page:title
+
+    pageSubTitle = TEXT
+    pageSubTitle.data = page:subtitle
+
+    pageAbstract = TEXT
+    pageAbstract.data = page:abstract
+
+    headerImage = FILES
+    headerImage {
+        references {
+            table = pages
+            data = levelmedia:-1,slide
+        }
+
+         renderObj = TEXT
+         renderObj {
+            data = file:current:uid
+         }
+    }
+
+}
+
 
 <INCLUDE_TYPOSCRIPT: source="FILE:./ContentElements/Setup.typoscript">
 <INCLUDE_TYPOSCRIPT: source="FILE:./GridElements/Setup.typoscript">

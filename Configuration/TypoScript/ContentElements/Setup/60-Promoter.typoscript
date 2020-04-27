@@ -1,0 +1,13 @@
+tt_content {
+    rkwtemplate_promoter =< lib.contentElement
+    rkwtemplate_promoter{
+        templateName = Promoter
+
+        // loading images as references
+        dataProcessing {
+            10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+            10.references.fieldName = image
+            10.as = image
+        }
+    }
+}

@@ -3,16 +3,16 @@
 //=========================================================
 mod.wizards.newContentElement.wizardItems.common {
     elements {
-        rkwtemplate_logo {
+        rkwtemplate_promoter {
             iconIdentifier = rkw_template
-            title = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.logo.title
-            description = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.logo.description
+            title = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.promoter.title
+            description = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.promoter.description
             tt_content_defValues {
-                CType = rkwtemplate_logo
+                CType = rkwtemplate_promoter
             }
         }
     }
-    show := addToList(rkwtemplate_logo)
+    show := addToList(rkwtemplate_promoter)
 }
 
 //=========================================================
@@ -21,7 +21,7 @@ mod.wizards.newContentElement.wizardItems.common {
 TCEFORM.tt_content {
 
     header_layout {
-        types.rkwtemplate_logo {
+        types.rkwtemplate_promoter {
             removeItems = 1,2,100
 
         }

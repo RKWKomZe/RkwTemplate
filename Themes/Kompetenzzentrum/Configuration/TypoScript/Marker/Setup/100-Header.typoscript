@@ -54,7 +54,7 @@ page {
                     data = levelmedia:-1,slide
                 }
 
-                renderObj = IMG_RESOURCE
+               /* renderObj = IMG_RESOURCE
                 renderObj {
                     // picture version
                     layoutKey = picture
@@ -67,6 +67,7 @@ page {
                     file.maxW = 2000
 
                 }
+                */
             }
 
 

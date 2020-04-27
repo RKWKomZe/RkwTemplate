@@ -1,8 +1,8 @@
 <?php
-namespace RKW\RkwTemplate\Condition;
+namespace RKW\RkwTemplate\Condition\Backend;
 
 /**
- * Class PageBackendLayout
+ * Class BackendLayout
  *
  * @author Steffen Kroggel <developer@steffenkroggel.de>
  * @copyright Rkw Kompetenzzentrum
@@ -13,7 +13,7 @@ namespace RKW\RkwTemplate\Condition;
 use \TYPO3\CMS\Backend\Utility\BackendUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
-class PageBackendLayout extends \TYPO3\CMS\Core\Configuration\TypoScript\ConditionMatching\AbstractCondition
+class BackendLayoutCondition extends \TYPO3\CMS\Core\Configuration\TypoScript\ConditionMatching\AbstractCondition
 {
 
 
@@ -25,15 +25,40 @@ class PageBackendLayout extends \TYPO3\CMS\Core\Configuration\TypoScript\Conditi
      */
     public function matchCondition (array $conditionParameters)
     {
-
+#
         $condition = $conditionParameters[0];
         $backendLayout = $conditionParameters[1];
-        $pid = $conditionParameters[2];
+        $pid = intval($conditionParameters[2]);
+        $colPos = GeneralUtility::_GP('colPos'); // no intval here; must be able to be false
 
+        // get pid from params or from element
         if (!$pid) {
+
             $pid = intval(GeneralUtility::_GP('id'));
+            if ($editArray = GeneralUtility::_GP('edit')) {
+                if (
+                    ($table = array_key_first($editArray))
+                    && ($table != 'pages')
+                ){
+
+                    if ($uid = array_key_first($editArray[$table])) {
+                        $pid = BackendUtility::getRecord($table, $uid, 'pid')['pid'];
+
+                        if ($table == 'tt_content') {
+                            $colPos = BackendUtility::getRecord($table, $uid, 'colPos')['colPos'];
+                        }
+                    }
+                }
+            }
         }
 
+        // do not use this on gridElements
+        // those have colPos = -1
+        if ($colPos < 0){
+            return false;
+        }
+
+        // check backendLayout
         if (
             ($backendLayout)
             && ($pid)

@@ -1,0 +1,15 @@
+
+tt_content.gridelements_pi1.20.10.setup {
+
+    # id of grid element
+    promoterContainer < lib.gridelements.defaultGridSetup
+    promoterContainer {
+
+        cObject = FLUIDTEMPLATE
+        cObject {
+            file = {$plugin.tx_rkwtemplate.view.templateRootPath}GridElements/PromoterContainer.html
+        }
+        outerWrap = |
+
+    }
+}

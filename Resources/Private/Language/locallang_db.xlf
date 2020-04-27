@@ -110,6 +110,49 @@
             <trans-unit id="contentElement.logo.description">
                 <source>Adds a Logo-Element.</source>
             </trans-unit>
+            <trans-unit id="contentElement.logo.imageManipulation.default">
+               <source>Default</source>
+            </trans-unit>
+
+
+            <!-- LogoContainer -->
+            <trans-unit id="contentElement.logoContainer.title">
+                <source>Logo-Container</source>
+            </trans-unit>
+            <trans-unit id="contentElement.logoContainer.description">
+                <source>Adds a logo-container.</source>
+            </trans-unit>
+
+
+            <!-- Promoter -->
+            <trans-unit id="contentElement.promoter.title">
+                <source>Promoter</source>
+            </trans-unit>
+            <trans-unit id="contentElement.promoter.description">
+                <source>Adds a Promoter-Element.</source>
+            </trans-unit>
+
+
+            <!-- PromoterContainer -->
+            <trans-unit id="contentElement.promoterContainer.title">
+                <source>Promoter-Container</source>
+            </trans-unit>
+            <trans-unit id="contentElement.promoterContainer.description">
+                <source>Adds a Promoter-Container.</source>
+            </trans-unit>
+
+
+            <!-- Key Visual -->
+            <trans-unit id="contentElement.keyvisual.title">
+                <source>Key Visual</source>
+            </trans-unit>
+            <trans-unit id="contentElement.keyvisual.description">
+                <source>Adds a KeyVisual.</source>
+            </trans-unit>
+            <trans-unit id="contentElement.keyvisual.imageManipulation.desktop">
+               <source>Desktop</source>
+            </trans-unit>
+
 		</body>
 	</file>
 </xliff>
