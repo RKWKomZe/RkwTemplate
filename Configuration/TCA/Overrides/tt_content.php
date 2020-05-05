@@ -397,88 +397,6 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_promoter'] = $GLOBALS['TCA']
 
 
 
-
-$GLOBALS['TCA']['tt_content']['types']['rkwtemplate_keyvisual'] = [
-    'showitem' => '
-        --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
-            --palette--;;general,
-            --palette--;;headers,
-        bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,            
-        --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.images,
-            image,            
-        --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,
-            --palette--;;language,
-        --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
-            --palette--;;hidden,
-    ',
-    'columnsOverrides' => [
-        'date' => [
-            'config' => [
-                'type' => 'passthrough'
-            ]
-        ],
-        'header_position' => [
-            'config' => [
-                'type' => 'passthrough'
-            ]
-        ],
-        'header_layout' => [
-            'config' => [
-                'type' => 'passthrough'
-            ]
-        ],
-        'header' => [
-            'config' => [
-                'eval' => 'required',
-            ]
-        ],
-        'header_link' => [
-            'config' => [
-                'type' => 'passthrough'
-            ]
-        ],
-        'image' => [
-            'config' => [
-                'minitems' => 1,
-                'maxitems' => 1,
-                'overrideChildTca' => [
-                    'columns' => [
-                        'crop' => [
-                            'config' => [
-                                'cropVariants' => [
-                                    'default' => [
-                                        'title' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.keyvisual.imageManipulation.desktop',
-                                        'allowedAspectRatios' => [
-                                            '2000:320' => [
-                                                'title' => '2000 x 320',
-                                                'value' => 2000 / 320
-                                            ]
-                                        ],
-                                        'coverAreas' => [
-                                            [
-                                                'x' => 0,
-                                                'y' => 0,
-                                                'width' => 0.55,
-                                                'height' => 1,
-                                            ],
-                                        ]
-                                    ],
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ],
-        'bodytext' => [
-            'config' => [
-                'enableRichtext' => false,
-            ]
-        ],
-    ]
-];
-
-
 //===============================================================
 // Adds the elements to the "Type" dropdown
 //===============================================================
@@ -549,18 +467,6 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_keyvisual'] = [
     [
         'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.promoter.title',
         'rkwtemplate_promoter',
-        'rkw_template',
-    ],
-    'textmedia',
-    'after'
-);
-
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
-    'tt_content',
-    'CType',
-    [
-        'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.keyvisual.title',
-        'rkwtemplate_keyvisual',
         'rkw_template',
     ],
     'textmedia',

@@ -81,13 +81,16 @@ class UpdateWizard extends AbstractUpdate
     {
 
 
-        $this->updateConfiguration($databaseQueries);
-        $this->updateSliderElements($databaseQueries);
-        $this->updateMissionStatementElements($databaseQueries);
-        $this->updateTopicElements($databaseQueries);
-        $this->updateLogoElements($databaseQueries);
-        // $this->updateKeyvisuals($databaseQueries);
-        $this->updatePromoterElements($databaseQueries);
+        $this->migrateConfiguration($databaseQueries);
+        $this->migrateCropping($databaseQueries);
+        $this->migrateTeaserText($databaseQueries);
+
+
+        $this->migrateSliderElements($databaseQueries);
+        $this->migrateMissionStatementElements($databaseQueries);
+        $this->migrateTopicElements($databaseQueries);
+        $this->migrateLogoElements($databaseQueries);
+        $this->migratePromoterElements($databaseQueries);
 
         $this->mergeCols($databaseQueries);
 
@@ -176,7 +179,7 @@ class UpdateWizard extends AbstractUpdate
      *
      * @param array $databaseQueries Queries done in this update
      */
-    protected function updateConfiguration(array &$databaseQueries)
+    protected function migrateConfiguration(array &$databaseQueries)
     {
 
         if ($this->hasLock(__FUNCTION__)){
@@ -341,13 +344,281 @@ class UpdateWizard extends AbstractUpdate
     }
 
 
+    /**
+     * Update cropping for header image elements
+     *
+     * @param array $databaseQueries Queries done in this update
+     */
+    protected function migrateCropping(array &$databaseQueries)
+    {
+        if ($this->hasLock(__FUNCTION__)){
+            return;
+        }
+
+        // first of all we need all pages with a certain backendLayout and all pages
+        // which inherit this certain backendLayout
+
+        // multiple cases per BE-Layout!!!!!!
+        $backendLayoutArray = [
+            'pagets__topicPages' => [
+                'media' => [
+                    'field' => 'media',
+                    'fieldTarget' => 'media',
+                    'cropTarget' => 'topicDesktop',
+                    'sortingTarget' => $this->sortIntervals
+                ],
+                'tx_rkwbasics_article_image' => [
+                    'field' => 'txRkwBasicsArticleImage',
+                    'fieldTarget' => 'media',
+                    'cropTarget' => 'articleDesktop',
+                    'sortingTarget' => $this->sortIntervals * 2
+                ],
+                'tx_rkwbasics_teaser_image' => [
+                    'field' => 'txRkwBasicsTeaserImage',
+                    'fieldTarget' => 'txRkwBasicsTeaserImage',
+                    'cropTarget' => 'teaser',
+                    'sortingTarget' => $this->sortIntervals
+                ]
+            ],
+            'pagets__contentPages' => [
+                'media' => [
+                    'field' => 'media',
+                    'fieldTarget' => 'media',
+                    'cropTarget' => 'topicDesktop',
+                    'sortingTarget' => $this->sortIntervals * 2
+                ],
+                'tx_rkwbasics_article_image' => [
+                    'field' => 'txRkwBasicsArticleImage',
+                    'fieldTarget' => 'media',
+                    'cropTarget' => 'articleDesktop',
+                    'sortingTarget' => $this->sortIntervals
+                ],
+                'tx_rkwbasics_teaser_image' => [
+                    'field' => 'txRkwBasicsTeaserImage',
+                    'fieldTarget' => 'txRkwBasicsTeaserImage',
+                    'cropTarget' => 'teaser',
+                    'sortingTarget' => $this->sortIntervals
+                ]
+            ]
+        ];
+
+
+        /** @var  \TYPO3\CMS\Core\Database\Connection $connectionPages */
+        $connectionPages = GeneralUtility::makeInstance(ConnectionPool::class)->getConnectionForTable('pages');
+
+        /** @var  \TYPO3\CMS\Core\Database\Connection $connectionReference */
+        $connectionReference = GeneralUtility::makeInstance(ConnectionPool::class)->getConnectionForTable('sys_file_reference');
+
+        /** @var \TYPO3\CMS\Core\Database\Query\QueryBuilder $queryBuilderPages */
+        $queryBuilderPages = $connectionPages->createQueryBuilder();
+        $statement = $queryBuilderPages->select('*')
+            ->from('pages')
+            ->orWhere(
+                $queryBuilderPages->expr()->in('backend_layout',
+                    $queryBuilderPages->createNamedParameter(array_keys($backendLayoutArray), Connection::PARAM_STR_ARRAY)
+                ),
+                $queryBuilderPages->expr()->in('backend_layout',
+                    $queryBuilderPages->createNamedParameter(0,  \PDO::PARAM_INT)
+                )
+            )
+            ->execute();
+
+
+        // go through all elements
+        while ($record = $statement->fetch()) {
+
+            $recordBackendLayout = $record['backend_layout'];
+
+            // if there is no backendLayout in the current record, we check for inheritance
+            if (empty($recordBackendLayout)) {
+
+                $rootline = \TYPO3\CMS\Backend\Utility\BackendUtility::BEgetRootLine($record['uid']);
+                foreach ($rootline as $rootlinePage) {
+                    if ($rootlinePage['uid'] == $record['uid']) {
+                        continue;
+                    }
+
+                    if ($recordBackendLayout = $rootlinePage['backend_layout_next_level']) {
+                        break;
+                    }
+                }
+            }
+
+            // now check for backendLayout and work through all pages with valid backendLayout
+            if (in_array($recordBackendLayout, array_keys($backendLayoutArray))) {
+
+                foreach ($backendLayoutArray[$recordBackendLayout] as $dbField => $config) {
+
+                    if ($record[$dbField]) {
+
+                        // get all sys_file_references of current page
+                        /** @var \TYPO3\CMS\Core\Database\Query\QueryBuilder $queryBuilderReference */
+                        $queryBuilderReference = $connectionReference->createQueryBuilder();
+                        $statementReference = $queryBuilderReference->select('*')
+                            ->from('sys_file_reference')
+                            ->where(
+                                $queryBuilderReference->expr()->in('tablenames',
+                                    $queryBuilderReference->createNamedParameter('pages',  \PDO::PARAM_STR)
+                                ),
+                                $queryBuilderReference->expr()->in('fieldname',
+                                    $queryBuilderReference->createNamedParameter($config['field'],  \PDO::PARAM_STR)
+                                ),
+                                $queryBuilderReference->expr()->in('uid_foreign',
+                                    $queryBuilderReference->createNamedParameter($record['uid'],  \PDO::PARAM_INT)
+                                )
+                            )
+                            ->execute();
+
+                        while ($reference = $statementReference->fetch()) {
+
+                            // update reference elements
+                            /** @var \TYPO3\CMS\Core\Database\Query\QueryBuilder $updateQueryBuilder */
+                            $updateQueryBuilder = $connectionReference->createQueryBuilder();
+                            $updateQueryBuilder->update('sys_file_reference')
+                                ->set('tablenames', 'pages')
+                                ->set('fieldname', $config['fieldTarget'])
+                                ->set('sorting', $config['sortingTarget'])
+                                ->where(
+                                    $updateQueryBuilder->expr()->eq('uid',
+                                        $updateQueryBuilder->createNamedParameter(intval($reference['uid']), \PDO::PARAM_INT)
+                                    )
+                                );
+
+
+                            if ($reference['crop']) {
+
+                                // updating cropName
+                                $referenceCrop = json_decode($reference['crop'], true);
+                                if ($referenceCrop['default']) {
+                                    $cropNew = [
+                                        $config['cropTarget'] => $referenceCrop['default']
+                                    ];
+
+                                    // now update the crop configuration in the reference
+                                    $updateQueryBuilder->set('crop', json_encode($cropNew));
+                                }
+                            }
+
+                            $databaseQueries[] = $updateQueryBuilder->getSQL();
+                            $updateQueryBuilder->execute();
+                        }
+                    }
+                }
+            }
+        }
+
+        $this->setLock(__FUNCTION__);
+    }
+
+
+    /**
+     * Update cropping for header image elements
+     *
+     * @param array $databaseQueries Queries done in this update
+     */
+    protected function migrateTeaserText(array &$databaseQueries)
+    {
+        if ($this->hasLock(__FUNCTION__)){
+            return;
+        }
+
+
+        /** @var  \TYPO3\CMS\Core\Database\Connection $connectionPages */
+        $connectionPages = GeneralUtility::makeInstance(ConnectionPool::class)->getConnectionForTable('pages');
+
+        /** @var \TYPO3\CMS\Core\Database\Query\QueryBuilder $queryBuilderPages */
+        $queryBuilderPages = $connectionPages->createQueryBuilder();
+        $statement = $queryBuilderPages->select('*')
+            ->from('pages')
+            ->where(
+                $queryBuilderPages->expr()->neq('tx_rkwbasics_teaser_text',
+                    $queryBuilderPages->createNamedParameter('',  \PDO::PARAM_STR)
+                )
+
+            )
+            ->execute();
+
+
+        // go through all elements
+        while ($record = $statement->fetch()) {
+
+
+            // update record elements
+            /** @var \TYPO3\CMS\Core\Database\Query\QueryBuilder $updateQueryBuilder */
+            $updateQueryBuilder = $connectionPages->createQueryBuilder();
+            $updateQueryBuilder->update('pages')
+                ->set('abstract', $record['tx_rkwbasics_teaser_text'])
+                ->where(
+                    $updateQueryBuilder->expr()->eq('uid',
+                        $updateQueryBuilder->createNamedParameter(intval($record['uid']), \PDO::PARAM_INT)
+                    )
+                );
+
+            $databaseQueries[] = $updateQueryBuilder->getSQL();
+            $updateQueryBuilder->execute();
+
+        }
+
+        $this->setLock(__FUNCTION__);
+    }
+
+    /**
+     * Update cropping for header image elements
+     *
+     * @param array $databaseQueries Queries done in this update
+     */
+    protected function migratePublicationDate(array &$databaseQueries)
+    {
+        if ($this->hasLock(__FUNCTION__)){
+            return;
+        }
+
+
+        /** @var  \TYPO3\CMS\Core\Database\Connection $connectionPages */
+        $connectionPages = GeneralUtility::makeInstance(ConnectionPool::class)->getConnectionForTable('pages');
+
+        /** @var \TYPO3\CMS\Core\Database\Query\QueryBuilder $queryBuilderPages */
+        $queryBuilderPages = $connectionPages->createQueryBuilder();
+        $statement = $queryBuilderPages->select('*')
+            ->from('pages')
+            ->where(
+                $queryBuilderPages->expr()->neq('tx_rkwbasics_teaser_text',
+                    $queryBuilderPages->createNamedParameter('',  \PDO::PARAM_STR)
+                )
+
+            )
+            ->execute();
+
+
+        // go through all elements
+        while ($record = $statement->fetch()) {
+
+
+            // update record elements
+            /** @var \TYPO3\CMS\Core\Database\Query\QueryBuilder $updateQueryBuilder */
+            $updateQueryBuilder = $connectionPages->createQueryBuilder();
+            $updateQueryBuilder->update('pages')
+                ->set('abstract', $record['tx_rkwbasics_teaser_text'])
+                ->where(
+                    $updateQueryBuilder->expr()->eq('uid',
+                        $updateQueryBuilder->createNamedParameter(intval($record['uid']), \PDO::PARAM_INT)
+                    )
+                );
+
+            $databaseQueries[] = $updateQueryBuilder->getSQL();
+            $updateQueryBuilder->execute();
+
+        }
+
+        $this->setLock(__FUNCTION__);
+    }
 
     /**
      * Update slider elements
      *
      * @param array $databaseQueries Queries done in this update
      */
-    protected function updateSliderElements(array &$databaseQueries)
+    protected function migrateSliderElements(array &$databaseQueries)
     {
         if ($this->hasLock(__FUNCTION__)){
             return;
@@ -472,7 +743,7 @@ class UpdateWizard extends AbstractUpdate
      *
      * @param array $databaseQueries Queries done in this update
      */
-    protected function updateMissionStatementElements(array &$databaseQueries)
+    protected function migrateMissionStatementElements(array &$databaseQueries)
     {
 
         if ($this->hasLock(__FUNCTION__)){
@@ -564,7 +835,7 @@ class UpdateWizard extends AbstractUpdate
      *
      * @param array $databaseQueries Queries done in this update
      */
-    protected function updateTopicElements(array &$databaseQueries)
+    protected function migrateTopicElements(array &$databaseQueries)
     {
         if ($this->hasLock(__FUNCTION__)){
             return;
@@ -680,7 +951,7 @@ class UpdateWizard extends AbstractUpdate
      *
      * @param array $databaseQueries Queries done in this update
      */
-    protected function updateLogoElements(array &$databaseQueries)
+    protected function migrateLogoElements(array &$databaseQueries)
     {
         if ($this->hasLock(__FUNCTION__)){
             return;
@@ -760,7 +1031,7 @@ class UpdateWizard extends AbstractUpdate
      *
      * @param array $databaseQueries Queries done in this update
      */
-    protected function updatePromoterElements(array &$databaseQueries)
+    protected function migratePromoterElements(array &$databaseQueries)
     {
         if ($this->hasLock(__FUNCTION__)){
             return;
@@ -797,132 +1068,6 @@ class UpdateWizard extends AbstractUpdate
 
 
     /**
-     * Update header image elements
-     *
-     * @param array $databaseQueries Queries done in this update
-     */
-    protected function updateKeyvisuals(array &$databaseQueries)
-    {
-        if ($this->hasLock(__FUNCTION__)){
-            return;
-        }
-
-        // first of all we need all pages with a certain backendLayout and all pages
-        // which inherit this certain backendLayout
-        $backendLayoutArray = [
-            'pagets__topicPages' => [
-                'colPos' => 201,
-                'crop' => 'topicDesktop'
-            ]
-        ];
-
-        /** @var  \TYPO3\CMS\Core\Database\Connection $connectionPages */
-        $connectionPages = GeneralUtility::makeInstance(ConnectionPool::class)->getConnectionForTable('pages');
-
-        /** @var  \TYPO3\CMS\Core\Database\Connection $connectionReference */
-        $connectionReference = GeneralUtility::makeInstance(ConnectionPool::class)->getConnectionForTable('sys_file_reference');
-
-        /** @var \TYPO3\CMS\Core\Database\Query\QueryBuilder $queryBuilderPages */
-        $queryBuilderPages = $connectionPages->createQueryBuilder();
-        $statement = $queryBuilderPages->select('*')
-            ->from('pages')
-            ->orWhere(
-                $queryBuilderPages->expr()->in('backend_layout',
-                    $queryBuilderPages->createNamedParameter(array_keys($backendLayoutArray), Connection::PARAM_STR_ARRAY)
-                ),
-                $queryBuilderPages->expr()->in('backend_layout',
-                    $queryBuilderPages->createNamedParameter(0,  \PDO::PARAM_INT)
-                )
-            )
-            ->execute();
-
-
-        // go through all elements
-        while ($record = $statement->fetch()) {
-
-            $recordBackendLayout = $record['backend_layout'];
-
-            // if there is no backendLayout in the current record, we check for inheritance
-            if (empty($recordBackendLayout)) {
-
-                $rootline = \TYPO3\CMS\Backend\Utility\BackendUtility::BEgetRootLine($record['uid']);
-                foreach ($rootline as $rootlinePage) {
-                    if ($rootlinePage['uid'] == $record['uid']) {
-                        continue;
-                    }
-
-                    if ($recordBackendLayout = $rootlinePage['backend_layout_next_level']) {
-                        break;
-                    }
-                }
-            }
-
-            // now check for backendLayout and work through all pages with valid backendLayout
-            if (in_array($recordBackendLayout, array_keys($backendLayoutArray))) {
-
-                if ($record['media']) {
-
-                    // first step is to add a new content element in the defined col
-                    $insertQueryBuilder = GeneralUtility::makeInstance(ConnectionPool::class)->getQueryBuilderForTable('tt_content');
-                    $newElement = [
-                        'pid'       => intval($record['uid']),
-                        'sorting'   => 0,
-                        'colPos'    => intval($backendLayoutArray[$recordBackendLayout]['colPos']),
-                        'CType'     => 'rkwtemplate_keyvisual',
-                        'image'     => intval($record['media'])
-                    ];
-
-                    /** @var \TYPO3\CMS\Core\Database\Query\QueryBuilder $insertQueryBuilder */
-                    $insertQueryBuilder->insert('tt_content')->values($newElement)->execute();
-                    $databaseQueries[] = $insertQueryBuilder->getSQL();
-                    $newElementUid = $insertQueryBuilder->getConnection()->lastInsertId();
-
-                    // now update the reference table
-                    // update sub elements
-                    /** @var \TYPO3\CMS\Core\Database\Query\QueryBuilder $updateQueryBuilder */
-                    $updateQueryBuilder = $connectionReference->createQueryBuilder();
-                    $updateQueryBuilder->update('sys_file_reference')
-                        ->set('uid_foreign', intval($newElementUid))
-                        ->set('tablenames', 'tt_content')
-                        ->set('fieldname', 'image')
-                        ->where(
-                            $updateQueryBuilder->expr()->eq('uid_foreign',
-                                $updateQueryBuilder->createNamedParameter(intval($record['uid']), \PDO::PARAM_INT)
-                            ),
-                            $updateQueryBuilder->expr()->eq('tablenames',
-                                $updateQueryBuilder->createNamedParameter('pages', \PDO::PARAM_STR)
-                            ),
-                            $updateQueryBuilder->expr()->eq('fieldname',
-                                $updateQueryBuilder->createNamedParameter('media', \PDO::PARAM_STR)
-                            )
-                        );
-                    $databaseQueries[] = $updateQueryBuilder->getSQL();
-                    $updateQueryBuilder->execute();
-
-                    // also update page - move contents from teaser-text to abstract
-                    // now update the reference table
-                    // update sub elements
-                    /** @var \TYPO3\CMS\Core\Database\Query\QueryBuilder $updateQueryBuilder */
-                    $updatePageQueryBuilder = $connectionPages->createQueryBuilder();
-                    $updatePageQueryBuilder->update('pages')
-                        ->set('abstract', $record['tx_rkwbasics_teaser_text'])
-                        ->set('tx_rkwbasics_teaser_text', '')
-                        ->where(
-                            $updatePageQueryBuilder->expr()->eq('uid',
-                                $updatePageQueryBuilder->createNamedParameter(intval($record['uid']), \PDO::PARAM_INT)
-                            )
-                        );
-                    $databaseQueries[] = $updatePageQueryBuilder->getSQL();
-                    $updatePageQueryBuilder->execute();
-                }
-            }
-        }
-
-        $this->setLock(__FUNCTION__);
-    }
-
-
-    /**
      * Merge cols
      *
      * @param array $databaseQueries Queries done in this update
@@ -936,6 +1081,9 @@ class UpdateWizard extends AbstractUpdate
         // order is important!
         $colPosList = [4,12,13,15,16,5,14];
         $this->moveElementsFromColsIntoCol($colPosList, 'pagets__homePages', 100, $databaseQueries);
+
+       // $colPosList = [19];
+       // $this->moveElementsFromColsIntoCol($colPosList, 'pagets__topicPages', 200, $databaseQueries);
 
 
         $this->setLock(__FUNCTION__);

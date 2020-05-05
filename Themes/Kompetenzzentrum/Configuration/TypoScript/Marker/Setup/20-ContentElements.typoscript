@@ -6,10 +6,10 @@ page {
             contentHome < styles.content.get
             contentHome.select.where = {#colPos} = 100
 
-            keyvisual = CONTENT
-            keyvisual < styles.content.get
-            keyvisual.select.where = {#colPos} = 201
-            keyvisual.slide = -1
+            promotion = CONTENT
+            promotion < styles.content.get
+            promotion.select.where = {#colPos} = 201
+            promotion.slide = -1
 
 
 

@@ -49,7 +49,7 @@ Contains all configuration concerning BE-Layouts, RTE, TCE, and basic configurat
 
 ### Extensions
 Contains configurations for used extensions. The files here override existing extension settings.
-Please create a new file for each extension  (e.g. RkwSearch.typoscript)
+Please create a new file for each extension  (e.g. 10-RkwExample.typoscript)
 
 ### Layouts
 Contains configuration concerning Body-Tag, CSS- and JS-Inclusion, paths to templates

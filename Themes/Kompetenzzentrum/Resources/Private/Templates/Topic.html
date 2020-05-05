@@ -6,8 +6,10 @@
     <!-- top-menu -->
     <f:render partial="SubNav" section="Default" arguments="{_all}"/>
 
+    <!-- key-visual -->
     <f:render partial="Keyvisual/Header" section="Default" arguments="{_all}"/>
 
+    <f:format.html parseFuncTSPath="">{keyvisual}</f:format.html>
 
     <f:if condition="{promoterBoxes}">
         <f:format.html parseFuncTSPath="">{promoterBoxes}</f:format.html>

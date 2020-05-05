@@ -1,0 +1,38 @@
+plugin.tx_rkwrss {
+    persistence {
+        # cat=plugin.tx_rkwrss//a; type=string; label=Default storage PID
+        storagePid = 1
+    }
+
+
+    settings {
+
+        global {
+
+            # cat=plugin.tx_rkwrss; type=string; label=Field that is used for sorting
+            orderField = lastUpdated
+
+            # cat=plugin.tx_rkwrss; type=string; label=List of colPos that is used to fetch contents from (for e.g. Facebook Instant Articles)
+            contentColPos = 0
+        }
+
+        rss {
+            # cat=plugin.tx_rkwrss; type=string; label=Name for RSS-Feed
+            feedName = RSS-Feed des RKW Kompetenzzentrums
+
+            # cat=plugin.tx_rkwrss; type=string; label=Page Description
+            feedDescription = Veranstaltungshinweise, Publikationen, Blog-Beiträge und vieles mehr. Bleiben Sie mit unserem RSS-Feed immer auf dem Laufenden.
+
+            # cat=plugin.tx_rkwrss; type=string; label=Relative Path to Icon of Feed
+            feedIcon = {$plugin.tx_rkwtemplate_themeconfig.paths.default.images}/website-icons/favicon-32x32.png
+
+            # cat=plugin.tx_rkwrss; type=string; label=Copyright hint
+            copyrightHint = RKW Kompetenzzentrum
+        }
+
+        instantArticles < .rss
+        instantArticles.typeNum = 1449588489
+    }
+}
+
+

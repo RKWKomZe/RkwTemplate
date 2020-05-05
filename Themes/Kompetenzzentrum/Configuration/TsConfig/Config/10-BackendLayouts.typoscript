@@ -85,8 +85,8 @@ mod {
                             1 {
                                 columns {
                                     1 {
-                                        name = KeyVisual
-                                        colPos = 201
+                                        name = Content
+                                        colPos = 200
                                     }
 
                                 }

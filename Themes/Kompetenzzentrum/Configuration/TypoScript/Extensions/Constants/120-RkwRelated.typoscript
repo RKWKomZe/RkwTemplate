@@ -32,7 +32,7 @@ plugin.tx_rkwrelated_similarcontent {
         footerCrop = 20
 
         # cat=plugin.tx_rkwrelated_similarcontent//a; type=boolean; label=Use rkw_search fields for sorting if installed 1 = yes
-        useRkwSearchForSorting = 1
+        useRkwSearchForSorting = 0
 
         # cat=plugin.tx_rkwrelated_similarcontent//a; type=boolean; label=ID of parent sys_category for similar search
         sysCategoryParentUid = 24
@@ -65,6 +65,6 @@ plugin.tx_rkwrelated_morecontent {
         staticInitialYearForFilter =
 
         # cat=plugin.tx_rkwrelated_morecontent//a; type=boolean; label=Use rkw_search fields for sorting if installed 1 = yes
-        useRkwSearchForSorting = 1
+        useRkwSearchForSorting = 0
     }
 }

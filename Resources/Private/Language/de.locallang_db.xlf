@@ -4,6 +4,20 @@
 		<header/>
 		<body>
 
+		    <!-- Cropping for pages media-field -->
+            <trans-unit id="pages.keyvisual.imageManipulation.topicDesktop">
+               <source>Topic (Desktop)</source>
+               <target>Themen (Desktop)</target>
+            </trans-unit>
+            <trans-unit id="pages.keyvisual.imageManipulation.articleDesktop">
+               <source>Article (Desktop)</source>
+               <target>Artikel (Desktop)</target>
+            </trans-unit>
+            <trans-unit id="pages.keyvisual.imageManipulation.teaser">
+               <source>Teaser</source>
+               <target>Teaser</target>
+            </trans-unit>
+
 
             <!-- Slider -->
 			<trans-unit id="contentElement.slider.title">
@@ -172,15 +186,6 @@
             </trans-unit>
 
 
-            <!-- Key Visual -->
-            <trans-unit id="contentElement.keyvisual.title">
-                <source>Key Visual</source>
-                <target>Key Visual</target>
-            </trans-unit>
-            <trans-unit id="contentElement.keyvisual.description">
-                <source>Adds a KeyVisual.</source>
-                <target>Fügt ein KeyVisual ein.</target>
-            </trans-unit>
 
 		</body>
 	</file>
