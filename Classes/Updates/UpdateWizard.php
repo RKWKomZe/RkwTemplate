@@ -84,7 +84,7 @@ class UpdateWizard extends AbstractUpdate
         $this->migrateConfiguration($databaseQueries);
         $this->migrateCropping($databaseQueries);
         $this->migrateTeaserText($databaseQueries);
-
+        $this->migratePublicationDate($databaseQueries);
 
         $this->migrateSliderElements($databaseQueries);
         $this->migrateMissionStatementElements($databaseQueries);
@@ -563,7 +563,7 @@ class UpdateWizard extends AbstractUpdate
     }
 
     /**
-     * Update cropping for header image elements
+     * Update publication date handling
      *
      * @param array $databaseQueries Queries done in this update
      */
@@ -582,7 +582,7 @@ class UpdateWizard extends AbstractUpdate
         $statement = $queryBuilderPages->select('*')
             ->from('pages')
             ->where(
-                $queryBuilderPages->expr()->neq('tx_rkwbasics_teaser_text',
+                $queryBuilderPages->expr()->neq('tx_rkwsearch_pubdate',
                     $queryBuilderPages->createNamedParameter('',  \PDO::PARAM_STR)
                 )
 
@@ -598,7 +598,7 @@ class UpdateWizard extends AbstractUpdate
             /** @var \TYPO3\CMS\Core\Database\Query\QueryBuilder $updateQueryBuilder */
             $updateQueryBuilder = $connectionPages->createQueryBuilder();
             $updateQueryBuilder->update('pages')
-                ->set('abstract', $record['tx_rkwbasics_teaser_text'])
+                ->set('lastUpdated', $record['tx_rkwsearch_pubdate'])
                 ->where(
                     $updateQueryBuilder->expr()->eq('uid',
                         $updateQueryBuilder->createNamedParameter(intval($record['uid']), \PDO::PARAM_INT)
@@ -1082,8 +1082,8 @@ class UpdateWizard extends AbstractUpdate
         $colPosList = [4,12,13,15,16,5,14];
         $this->moveElementsFromColsIntoCol($colPosList, 'pagets__homePages', 100, $databaseQueries);
 
-       // $colPosList = [19];
-       // $this->moveElementsFromColsIntoCol($colPosList, 'pagets__topicPages', 200, $databaseQueries);
+        $colPosList = [19];
+        $this->moveElementsFromColsIntoCol($colPosList, 'pagets__topicPages', 201, $databaseQueries);
 
 
         $this->setLock(__FUNCTION__);

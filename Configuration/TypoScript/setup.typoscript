@@ -26,8 +26,7 @@ plugin.tx_rkwtemplate {
 }
 
 
-
-lib {
+lib.txRkwTemplate {
 
     pageTitle = TEXT
     pageTitle.data = page:title
@@ -53,7 +52,7 @@ lib {
 
 }
 
-
+<INCLUDE_TYPOSCRIPT: source="FILE:./FluidStyledContents/Setup.typoscript">
 <INCLUDE_TYPOSCRIPT: source="FILE:./ContentElements/Setup.typoscript">
 <INCLUDE_TYPOSCRIPT: source="FILE:./GridElements/Setup.typoscript">
 

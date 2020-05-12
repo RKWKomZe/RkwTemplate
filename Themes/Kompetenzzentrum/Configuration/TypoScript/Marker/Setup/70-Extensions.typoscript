@@ -108,28 +108,7 @@ page {
                 }
             }
 
-            //=================================================================
-            // Author-Box on topic pages
-            //=================================================================
 
-            pageAuthorsBox = USER
-            pageAuthorsBox {
-                userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
-                extensionName = RkwAuthors
-                pluginName = Rkwauthors
-                vendorName = RKW
-                controller = Authors
-                switchableControllerActions {
-                    // Again: Controller-Name and Action
-                    Authors {
-                        1 = pageBox
-                    }
-                }
-
-                view =< plugin.tx_rkwauthors.view
-                persistence =< plugin.tx_rkwauthors.persistence
-                settings =< plugin.tx_rkwauthors.settings
-            }
 
             //=================================================================
             // first author box on article pages
@@ -281,64 +260,6 @@ page {
                 }
             }
 
-            //=================================================================
-            // loads image resources for article pages
-            //=================================================================
-
-            imageResourcesArticles = USER
-            imageResourcesArticles {
-                userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
-                extensionName = RkwBasics
-                pluginName = Rkwmediasources
-                vendorName = RKW
-                controller = MediaSources
-                switchableControllerActions {
-                    // Again: Controller-Name and Action
-                    MediaSources {
-                        1 = listPage
-                    }
-                }
-
-                view =< plugin.tx_rkwbasics.view
-                persistence =< plugin.tx_rkwbasics.persistence
-                settings =< plugin.tx_rkwbasics.settings
-                settings.includeFieldsList = pages.tx_rkwbasics_teaser_image, pages.tx_rkwbasics_article_image
-            }
-
-            //=================================================================
-            // loads image resources for publications and topics
-            //=================================================================
-
-            imageResources = USER
-            imageResources < .imageResourcesArticles
-            imageResources {
-                settings.includeFieldsList = pages.tx_rkwbasics_teaser_image, pages.media, tt_content.image
-            }
-
-            //=================================================================
-            // add the add-to-watchlist- button on each page
-            //=================================================================
-            /*
-            addToWatchlist = USER
-            addToWatchlist {
-                userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
-                extensionName = RkwWatchlist
-                pluginName = AddToWatchlist
-                vendorName = RKW
-                controller = Watchlist
-                switchableControllerActions {
-                    // Again: Controller-Name and Action
-                    Watchlist {
-                        1 = add
-                        2 = addToWatchlist
-                    }
-                }
-
-                view =< plugin.tx_rkwwatchlist.view
-                persistence =< plugin.tx_rkwwatchlist.persistence
-                settings =< plugin.tx_rkwwatchlist.settings
-            }
-            */
 
             //=================================================================
             // Info-Overlay
@@ -595,4 +516,50 @@ page {
 }
 
 
+lib.txRkwTemplate {
 
+    //=================================================================
+    // loads image resources for pages
+    //=================================================================
+    imageResources = USER
+    imageResources {
+        userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+        extensionName = RkwBasics
+        pluginName = Rkwmediasources
+        vendorName = RKW
+        controller = MediaSources
+        switchableControllerActions {
+            // Again: Controller-Name and Action
+            MediaSources {
+                1 = listPage
+            }
+        }
+
+        view =< plugin.tx_rkwbasics.view
+        persistence =< plugin.tx_rkwbasics.persistence
+        settings =< plugin.tx_rkwbasics.settings
+        settings.includeFieldsList = pages.tx_rkwbasics_teaser_image, pages.media, tt_content.image
+    }
+
+    //=================================================================
+    // Author-Box on topic pages
+    //=================================================================
+    pageAuthorsBox = USER
+    pageAuthorsBox {
+        userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+        extensionName = RkwAuthors
+        pluginName = Rkwauthors
+        vendorName = RKW
+        controller = Authors
+        switchableControllerActions {
+            // Again: Controller-Name and Action
+            Authors {
+                1 = pageBox
+            }
+        }
+
+        view =< plugin.tx_rkwauthors.view
+        persistence =< plugin.tx_rkwauthors.persistence
+        settings =< plugin.tx_rkwauthors.settings
+    }
+}

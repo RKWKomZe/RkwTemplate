@@ -14,4 +14,9 @@ This file has to be included in the TsConfig of the rootpage of the websites.
 **NOTE: The file names of the files in the subfolders have to be preceded by a consecutive number (in steps of ten). This numbering determines the loading order of the files.**
 
 ### ContentElements
-Contains configurations of custom content elements
+Contains default configurations of custom content elements. These can be overridden by configurations of themes.
+
+### GridElements
+Contains default configurations of grid elements. These can be overridden by configurations of themes.
+
+Please note the special subfolder ```ContentContainer``` here which contains all grids related to col-based display of standard contents.

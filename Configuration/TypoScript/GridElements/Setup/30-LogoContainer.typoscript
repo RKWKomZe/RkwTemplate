@@ -7,7 +7,12 @@ tt_content.gridelements_pi1.20.10.setup {
 
         cObject = FLUIDTEMPLATE
         cObject {
-            file = {$plugin.tx_rkwtemplate.view.templateRootPath}GridElements/LogoContainer.html
+
+            layoutRootPaths < lib.gridelements.defaultGridSetup.layoutRootPaths
+            templateRootPaths < lib.gridelements.defaultGridSetup.templateRootPaths
+            partialRootPaths < lib.gridelements.defaultGridSetup.partialRootPaths
+
+            templateName = LogoContainer.html
         }
         outerWrap = |
 

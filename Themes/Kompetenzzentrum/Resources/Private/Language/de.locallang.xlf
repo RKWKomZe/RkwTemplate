@@ -4,6 +4,22 @@
 		<header/>
 		<body>
 
+
+			<trans-unit id="partials.gridElements.contentContainer.content.imageResources">
+				<source>Image Resources</source>
+				<target>Bildnachweise</target>
+			</trans-unit>
+
+
+
+            <trans-unit id="templates.gridElements.contentContainer.twoCols.asideHeadline">
+				<source>More Information</source>
+				<target>Weitere Informationen</target>
+            </trans-unit>
+
+
+
+
 			<!--Templates/Home -->
 			<trans-unit id="templates_home.labelSearch">
 				<source>Search</source>

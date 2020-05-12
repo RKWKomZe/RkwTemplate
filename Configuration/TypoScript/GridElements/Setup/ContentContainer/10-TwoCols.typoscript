@@ -1,9 +1,11 @@
-
+#############################################################################
+// STANDARD- SEITENOBJEKT
+#############################################################################
 tt_content.gridelements_pi1.20.10.setup {
 
     # id of grid element
-    topicContainer < lib.gridelements.defaultGridSetup
-    topicContainer {
+    contentContainerTwoCols < lib.gridelements.defaultGridSetup
+    contentContainerTwoCols {
 
         cObject = FLUIDTEMPLATE
         cObject {
@@ -12,9 +14,8 @@ tt_content.gridelements_pi1.20.10.setup {
             templateRootPaths < lib.gridelements.defaultGridSetup.templateRootPaths
             partialRootPaths < lib.gridelements.defaultGridSetup.partialRootPaths
 
-            templateName = TopicContainer.html
+            templateName = ContentContainer/TwoCols.html
         }
         outerWrap = |
-
     }
 }

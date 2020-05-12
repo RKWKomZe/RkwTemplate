@@ -1,0 +1,28 @@
+{namespace rkwBasics=RKW\RkwBasics\ViewHelpers}
+
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+    <div class="content-box content">
+
+        <!-- breadcrumb -->
+        <f:cObject typoscriptObjectPath="lib.txRkwTemplate.breadcrumbNav" />
+
+        <!-- content -->
+        <div class="wysiwyg">
+            <f:format.html parseFuncTSPath="">{data.tx_gridelements_view_column_0}</f:format.html>
+        </div>
+
+        <!-- read more nav -->
+        <f:format.html parseFuncTSPath="">{readMoreNav}</f:format.html>
+
+        <!-- image resources -->
+        <f:if condition="<rkwBasics:isEmpty string='{f:cObject(typoscriptObjectPath: 'lib.txRkwTemplate.imageResources')}' /> == 0">
+            <div class="media-sources {f:if(condition: '<rkwBasics:isEmpty string=\'{data.tx_gridelements_view_column_18}\' /> == 0', then: 'media-sources--space')}" role="contentinfo">
+                <strong><f:translate key="LLL:EXT:rkw_template/Themes/Kompetenzzentrum/Resources/Private/Language/locallang.xlf:partials.gridElements.contentContainer.content.imageResources" />: </strong>
+                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.imageResources" />
+            </div>
+        </f:if>
+    </div>
+
+</html>
+

@@ -2,9 +2,9 @@
 
     <f:section name="Default">
 
-        <f:if condition="{f:cObject(typoscriptObjectPath: \'lib.headerImage\')}">
+        <f:if condition="{f:cObject(typoscriptObjectPath: \'lib.txRkwTemplate.headerImage\')}">
             <f:then>
-                <div class="header-container {f:if(condition: '{data.abstract}', then: 'header-container--secondary', else: '')}" style="background-image: url('{f:uri.image(src:'{f:cObject(typoscriptObjectPath: \'lib.headerImage\')}',treatIdAsReference:'1',width:'2000',cropVariant:'default')}');">
+                <div class="header-container {f:if(condition: '{data.abstract}', then: 'header-container--secondary', else: '')}" style="background-image: url('{f:uri.image(src:'{f:cObject(typoscriptObjectPath: \'lib.txRkwTemplate.headerImage\')}',treatIdAsReference:'1',width:'2000',cropVariant:'default')}');">
                     <header class="page-headings">
                         <f:render section="Sub" arguments="{_all}"/>
                     </header>

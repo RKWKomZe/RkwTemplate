@@ -186,7 +186,27 @@
             </trans-unit>
 
 
-
+            <!-- ContentContainerTwoCols -->
+            <trans-unit id="contentElement.contentContainerTwoCols.title">
+                <source>Content-Container with two Cols</source>
+                <target>Inhalts-Container mit zwei Spalten</target>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerTwoCols.description">
+                <source>Add a Content-Container with two Cols.</source>
+                <target>Fügt Inhalts-Container mit zwei Spalten ein.</target>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerTwoCols.content">
+                <source>Content</source>
+                <target>Inhalt</target>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerTwoCols.aside">
+                <source>Aside</source>
+                <target>Marginalspalte</target>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerTwoCols.callToAction">
+                <source>Call To Action</source>
+                <target>Call To Action</target>
+            </trans-unit>
 		</body>
 	</file>
 </xliff>

@@ -1,0 +1,14 @@
+lib.contentElement {
+
+    layoutRootPaths {
+        5 = {$plugin.tx_rkwtemplate_themeconfig.paths.extensions.layouts}/FluidStyledContent
+    }
+
+    templateRootPaths {
+        5 = {$plugin.tx_rkwtemplate_themeconfig.paths.extensions.templates}/FluidStyledContent
+    }
+
+    partialRootPaths {
+        5 =  {$plugin.tx_rkwtemplate_themeconfig.paths.extensions.partials}/FluidStyledContent
+    }
+ }

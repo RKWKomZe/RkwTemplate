@@ -1,0 +1,11 @@
+lib.gridelements.defaultGridSetup {
+     layoutRootPaths.900 = {$plugin.tx_rkwtemplate.view.layoutRootPath}GridElements
+     layoutRootPaths.1000 = {$plugin.tx_rkwtemplate_themeconfig.paths.default.layouts}/GridElements
+
+     templateRootPaths.900 = {$plugin.tx_rkwtemplate.view.templateRootPath}GridElements
+     templateRootPaths.1000 = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/GridElements
+
+     partialRootPaths.900 = {$plugin.tx_rkwtemplate.view.partialRootPath}GridElements
+     partialRootPaths.1000 = {$plugin.tx_rkwtemplate_themeconfig.paths.default.partials}/GridElements
+
+}

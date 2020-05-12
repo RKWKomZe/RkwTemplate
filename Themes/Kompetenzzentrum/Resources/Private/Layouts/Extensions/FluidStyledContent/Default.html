@@ -2,7 +2,7 @@
 <f:spaceless>
 
 	<f:comment>special rendering for plugins that are not in colPos 0</f:comment>
-	<f:if condition="({data.CType} = 'list') && ({data.colPos} != 0)">
+	<f:if condition="({data.CType} == 'list') && ({data.colPos} != 0)">
 		<f:then>
 			<section role="complementary" aria-labelledby="section-header-{data.uid}">
 				<h2 class="section-header" id="section-header-{data.uid}">
