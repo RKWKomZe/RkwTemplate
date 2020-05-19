@@ -2,15 +2,6 @@
 // Customizing tt_content
 //############################################################################
 TCEFORM.tt_content {
-    //===============================================================
-    // For layout-settings in tt_content elements (e.g. tables)
-    //===============================================================
-    layout {
-        addItems.4 = Link
-        addItems.5 = Download
-        addItems.6 = Publikation
-        addItems.7 = Thema / Projekt
-    }
 
     //===============================================================
     // for image orientation

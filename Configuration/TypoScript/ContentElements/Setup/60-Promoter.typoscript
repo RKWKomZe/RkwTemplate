@@ -7,7 +7,7 @@ tt_content {
         dataProcessing {
             10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
             10.references.fieldName = image
-            10.as = image
+            10.as = images
         }
     }
 }

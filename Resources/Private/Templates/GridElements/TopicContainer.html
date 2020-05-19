@@ -2,14 +2,14 @@
 
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
-    <f:if condition="<rkwBasics:isEmpty string='{data.tx_gridelements_view_column_13}' /> == 0">
+    <f:if condition="<rkwBasics:isEmpty string='{data.tx_gridelements_view_column_20}' /> == 0">
         <section aria-labelledby="section-header-{data.uid}" class="section-colored padding-mobile">
 
             <h{f:if(condition: data.header_layout, then: '{data.header_layout}', else: '2')} class="section-header section-header--center" id="section-header-{data.uid}">
                 {data.header}
             </h{f:if(condition: data.header_layout, then: '{data.header_layout}', else: '2')}>
             <div class="boxes-home">
-                <f:format.raw>{data.tx_gridelements_view_column_13}</f:format.raw>
+                <f:format.raw>{data.tx_gridelements_view_column_20}</f:format.raw>
             </div>
         </section>
     </f:if>

@@ -24,11 +24,11 @@ page {
 
             // default template file
             default = TEXT
-            default.value = project
+            default.value = project page-grid--4
 
             1 = TEXT
             1 {
-                value = project
+                value = project page-grid--4
             }
 
             2 = TEXT
@@ -38,57 +38,57 @@ page {
 
             3 = TEXT
             3 {
-                value = page-area
+                value = page-area page-grid--4
             }
 
             4 = TEXT
             4 {
-                value = publication
+                value = publication page-grid--4
             }
 
             5 = TEXT
             5 {
-                value =
+                value = page-grid--4
             }
 
             6 = TEXT
             6 {
-                value =
+                value = page-grid--4
             }
 
             7 = TEXT
             7 {
-                value = page-area first-letter-normal
+                value = page-area first-letter-normal page-grid--4
             }
 
             8 = TEXT
             8 {
-                value = project first-letter-normal
+                value = project first-letter-normal page-grid--4
             }
 
             9 = TEXT
             9 {
-                value = page-area
+                value = page-area page-grid--4
             }
 
             10 = TEXT
             10 {
-                value = page-broken-link
+                value = page-broken-link page-grid--4
             }
 
             11 = TEXT
             11 {
-                value = page-map
+                value = page-map page-grid--4
             }
 
             12 = TEXT
             12 {
-                value =  project project--full
+                value =  project project--full page-grid--4
             }
 
             200 = TEXT
             200 {
-                value =
+                value = page-grid--4
             }
 
             210 = COA_INT

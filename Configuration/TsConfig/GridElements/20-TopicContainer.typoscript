@@ -10,7 +10,7 @@ tx_gridelements.setup.topicContainer {
                 columns {
                     1 {
                         name = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.topic.title
-                        colPos = 13
+                        colPos = 20
                         allowed {
                             CType = rkwtemplate_topic
                         }

@@ -12,6 +12,7 @@ page {
             //=================================================================
             // Additional boxes below the contents
             //=================================================================
+            /*
             boxContent = CONTENT
             boxContent {
                 slide = -1
@@ -47,32 +48,92 @@ page {
                     wrap = <section class="section" role="complementary">|</section>
                 }
             }
+            */
 
             //=================================================================
             // Additional boxes below the contents
             //=================================================================
-            boxContentPublications < .boxContent
+            boxContentPublications = CONTENT
             boxContentPublications {
 
+                slide = -1
+                table = tt_content
                 select {
                     where = colPos = 3
+                    orderBy = sorting
+                    languageField = sys_language_uid
+                }
+
+                renderObj = COA
+                renderObj < tt_content.list
+                renderObj {
+                    5 = LOAD_REGISTER
+                    5 {
+                        contentCounterBoxes.data = register:contentCounterBoxes
+                        contentCounterBoxes.stdWrap.wrap = |+1
+                        contentCounterBoxes.prioriCalc = 1
+                    }
+
+                    // set header
+                    10 = TEXT
+                    10 {
+                        field = header
+                        wrap = <h4 class="section-header h2" id="box-normal-{register:contentCounterBoxes}">|</h4>
+                        wrap.insertData = 1
+                        required = 1
+                    }
+
+                    // set plugin content
+                    20 < tt_content.list.20
+
+                    wrap = <section class="section" role="complementary">|</section>
                 }
             }
 
             //=================================================================
             // Additional boxes below the contents for articles
             //=================================================================
-            boxContentArticles < .boxContent
+            boxContentArticles = CONTENT
             boxContentArticles {
 
+                slide = -1
+                table = tt_content
                 select {
                     where = colPos = 17
+                    orderBy = sorting
+                    languageField = sys_language_uid
+                }
+
+                renderObj = COA
+                renderObj < tt_content.list
+                renderObj {
+                    5 = LOAD_REGISTER
+                    5 {
+                        contentCounterBoxes.data = register:contentCounterBoxes
+                        contentCounterBoxes.stdWrap.wrap = |+1
+                        contentCounterBoxes.prioriCalc = 1
+                    }
+
+                    // set header
+                    10 = TEXT
+                    10 {
+                        field = header
+                        wrap = <h4 class="section-header h2" id="box-normal-{register:contentCounterBoxes}">|</h4>
+                        wrap.insertData = 1
+                        required = 1
+                    }
+
+                    // set plugin content
+                    20 < tt_content.list.20
+
+                    wrap = <section class="section" role="complementary">|</section>
                 }
             }
 
             //=================================================================
             // Additional boxes below the contents
             //=================================================================
+            /*
             boxContentPrio = CONTENT
             boxContentPrio {
                 slide = -1
@@ -107,6 +168,7 @@ page {
                     wrap = <section class="section" role="complementary">|</section>
                 }
             }
+            */
 
             //=================================================================
             // plugin only

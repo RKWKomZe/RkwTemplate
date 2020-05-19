@@ -10,20 +10,17 @@ tx_gridelements.setup.contentContainerTwoCols {
                 columns {
                     1 {
                         name = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.contentContainerTwoCols.content
-                        colPos = 0
-                        allowed {
-                          //  CType = rkwtemplate_promoter
-                        }
+                        colPos = 50
                     }
                     2 {
                         name = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.contentContainerTwoCols.aside
-                        colPos = 2
+                        colPos = 60
                         rowspan = 2
+                        maxitems = 3
                         allowed {
-                          //  CType = rkwtemplate_promoter
+                            CType = rkwtemplate_shortlink
                         }
                     }
-
                 }
             }
 
@@ -32,8 +29,7 @@ tx_gridelements.setup.contentContainerTwoCols {
                 columns {
                     1 {
                         name = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.contentContainerTwoCols.callToAction
-
-                        colPos = 18
+                        colPos = 70
                         allowed {
                             CType = list
                         }

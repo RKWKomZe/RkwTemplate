@@ -16,7 +16,7 @@ mod {
                             1 {
                                 columns {
                                     1 {
-                                        name = Content
+                                        name = Inhalte
                                         colPos = 100
                                     }
 
@@ -40,8 +40,8 @@ mod {
                 title = Themenseiten / Mein RKW
                 config {
                     backend_layout {
-                        colCount = 2
-                        rowCount = 9
+                        colCount = 1
+                        rowCount = 4
                         rows {
 
                             1 {
@@ -64,19 +64,11 @@ mod {
                                 }
                             }
 
-
                             3 {
                                 columns {
                                     1 {
-                                        name = Inhalt
-                                        colPos = 111111111111111111111111111111110
-                                    }
-
-                                    2 {
-                                        name = Rechte Spalte
-                                        colPos = 2
-                                        rowspan = 2
-
+                                        name = Boxen ohne Vererbung auf Unterseiten
+                                        colPos = 202
                                     }
                                 }
                             }
@@ -84,58 +76,8 @@ mod {
                             4 {
                                 columns {
                                     1 {
-                                        name = Call-To-Action
-                                        colPos = 18
-                                    }
-                                }
-                            }
-
-                            5 {
-                                columns {
-                                    1 {
-                                        name = Boxen 1 - NUR für Publikationen und Tools verwenden!
-                                        colspan = 2
-                                        colPos = 9
-                                    }
-                                }
-                            }
-
-                            6 {
-                                columns {
-                                    1 {
-                                        name = Kooperationen und Partner (Datensatzsammlung, Headline variabel)
-                                        colspan = 2
-                                        colPos = 8
-                                    }
-                                }
-                            }
-
-                            7 {
-                                columns {
-                                    1 {
-                                        name = Boxen 2 - Für weitere Inhalte
-                                        colspan = 2
-                                        colPos = 6
-                                    }
-                                }
-                            }
-
-                            8 {
-                                columns {
-                                    1 {
-                                        name = Boxen 2 - Für weitere Inhalte (nur für Artikel-Unterseiten)
-                                        colspan = 2
-                                        colPos = 17
-                                    }
-                                }
-                            }
-
-                            9 {
-                                columns {
-                                    1 {
-                                        name = Referenzen
-                                        colspan = 2
-                                        colPos = 5
+                                        name = Boxen mit Vererbung auf Unterseiten
+                                        colPos = 10
                                     }
                                 }
                             }

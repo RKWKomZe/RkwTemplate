@@ -12,43 +12,34 @@
 
     </div>
 
-    <!-- comments -->
-    <f:comment>
-        <div class="comments">
-            <h4 class="section-header h2">
-                <f:translate key="LLL:EXT:rkw_template/Resources/Private/Language/Kompetenzzentrum/locallang.xlf:templates_article.commentsHeadline" />
-            </h4>
-
-            <f:format.html parseFuncTSPath="">{commentsBox}</f:format.html>
-        </div>
-    </f:comment>
 </f:section>
 
 <!-- ################################################################################# -->
 
 <f:section name="Topic">
+    <f:comment>
+        <div class="sections">
 
-    <div class="sections">
+            <!-- cooperation boxes -->
+            <f:if condition="<rkwBasics:isEmpty string='{cooperationBoxes}' /> == 0" >
+                <f:format.html parseFuncTSPath="">{cooperationBoxes}</f:format.html>
+            </f:if>
 
-        <!-- cooperation boxes -->
-        <f:if condition="<rkwBasics:isEmpty string='{cooperationBoxes}' /> == 0" >
-            <f:format.html parseFuncTSPath="">{cooperationBoxes}</f:format.html>
-        </f:if>
+            <!-- prio- boxes -->
+            <f:format.html parseFuncTSPath="">{boxContentPrio}</f:format.html>
 
-        <!-- prio- boxes -->
-        <f:format.html parseFuncTSPath="">{boxContentPrio}</f:format.html>
+            <!-- alerts -->
+            <f:render partial="AlertsBox" arguments="{_all}"/>
 
-        <!-- alerts -->
-        <f:render partial="AlertsBox" arguments="{_all}"/>
+            <!-- further boxes -->
+            <f:format.html parseFuncTSPath="">{boxContent}</f:format.html>
 
-        <!-- further boxes -->
-        <f:format.html parseFuncTSPath="">{boxContent}</f:format.html>
-
-        <!-- reference boxes -->
-        <f:if condition="<rkwBasics:isEmpty string='{logoBoxes}' /> == 0" >
-            <f:format.html parseFuncTSPath="">{logoBoxes}</f:format.html>
-        </f:if>
-    </div>
+            <!-- reference boxes -->
+            <f:if condition="<rkwBasics:isEmpty string='{logoBoxes}' /> == 0" >
+                <f:format.html parseFuncTSPath="">{logoBoxes}</f:format.html>
+            </f:if>
+        </div>
+    </f:comment>
 
 </f:section>
 
@@ -75,17 +66,6 @@
         <f:render partial="AlertsBox" arguments="{_all}"/>
 
     </div>
-
-    <!-- comments -->
-    <f:comment>
-        <div class="comments">
-            <h4 class="section-header h2">
-                <f:translate key="LLL:EXT:rkw_template/Resources/Private/Language/Kompetenzzentrum/locallang.xlf:templates_article.commentsHeadline" />
-            </h4>
-
-            <f:format.html parseFuncTSPath="">{commentsBox}</f:format.html>
-        </div>
-    </f:comment>
 
 </f:section>
 

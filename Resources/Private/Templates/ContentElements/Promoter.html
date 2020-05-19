@@ -2,20 +2,16 @@
 
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
-    <f:if condition="{f:count(subject: image)} > 0">
+    <f:if condition="{f:count(subject: images)} > 0">
         <div class="promoters__item">
             <f:if condition="<rkwEtracker:link.typolink parameter='{data.header_link}' />">
                 <f:then>
                     <rkwEtracker:link.typolink parameter="{data.header_link}" additionalAttributes="{rel:'no_follow'}">
-                        <picture>
-                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" srcset="{f:uri.image(image:image.0,width:'320',cropVariant:'default')}" alt="{data.header}" />
-                        </picture>
+                        <f:render partial="Promoter/Inner" arguments="{_all}"/>
                     </rkwEtracker:link.typolink>
                 </f:then>
                 <f:else>
-                    <picture>
-                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" srcset="{f:uri.image(image:image.0,width:'320',cropVariant:'default')}" alt="{data.header}" />
-                    </picture>
+                    <f:render partial="Promoter/Inner" arguments="{_all}"/>
                 </f:else>
             </f:if>
         </div>

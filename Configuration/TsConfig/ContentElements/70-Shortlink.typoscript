@@ -1,0 +1,35 @@
+//=========================================================
+// Add contentElement to Wizard
+//=========================================================
+mod.wizards.newContentElement.wizardItems.common {
+    elements {
+        rkwtemplate_shortlink {
+            iconIdentifier = rkw_template
+            title = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.shortlink.title
+            description = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.shortlink.description
+            tt_content_defValues {
+                CType = rkwtemplate_shortlink
+            }
+        }
+    }
+    show := addToList(rkwtemplate_shortlink)
+}
+
+//=========================================================
+// Change some fields
+//=========================================================
+TCEFORM.tt_content {
+
+    header_layout {
+        types.rkwtemplate_shortlink {
+            removeItems = 1,2,3,100
+
+            altLabels.0 = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.shortlink.type.I.0
+            altLabels.4 = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.shortlink.type.I.4
+            altLabels.5 = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.shortlink.type.I.5
+            addItems.6 = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.shortlink.type.I.6
+            addItems.7 = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.shortlink.type.I.7
+
+        }
+    }
+}

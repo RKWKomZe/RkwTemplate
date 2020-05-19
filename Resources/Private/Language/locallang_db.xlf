@@ -77,7 +77,7 @@
             <trans-unit id="contentElement.topic.imageManipulation.default">
                <source>Default</source>
             </trans-unit>
-            <trans-unit id="contentElement.topic.type.I.default">
+            <trans-unit id="contentElement.topic.type.I.0">
 				<source>Default</source>
 			</trans-unit>
 			<trans-unit id="contentElement.topic.type.I.2">
@@ -170,6 +170,31 @@
             <trans-unit id="contentElement.contentContainerTwoCols.callToAction">
                 <source>Call To Action</source>
             </trans-unit>
+
+
+            <!-- Shortlink -->
+            <trans-unit id="contentElement.shortlink.title">
+                <source>Shortlink</source>
+            </trans-unit>
+            <trans-unit id="contentElement.shortlink.description">
+                <source>Adds a Shortlink-Element.</source>
+            </trans-unit>
+			<trans-unit id="contentElement.shortlink.type.I.0">
+				<source>Default (Article)</source>
+			</trans-unit>
+            <trans-unit id="contentElement.shortlink.type.I.4">
+                <source>Link</source>
+            </trans-unit>
+            <trans-unit id="contentElement.shortlink.type.I.5">
+                <source>Download</source>
+            </trans-unit>
+            <trans-unit id="contentElement.shortlink.type.I.6">
+                <source>Publication</source>
+            </trans-unit>
+            <trans-unit id="contentElement.shortlink.type.I.7">
+                <source>Project</source>
+            </trans-unit>
+
 		</body>
 	</file>
 </xliff>

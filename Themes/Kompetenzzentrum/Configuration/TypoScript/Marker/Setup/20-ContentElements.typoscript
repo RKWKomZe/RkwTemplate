@@ -11,7 +11,14 @@ page {
             promotion.select.where = {#colPos} = 201
             promotion.slide = -1
 
+            boxesContent = CONTENT
+            boxesContent < styles.content.get
+            boxesContent.select.where = {#colPos} = 202
 
+            boxesContentInherit = CONTENT
+            boxesContentInherit < styles.content.get
+            boxesContentInherit.select.where = {#colPos} = 10
+            boxesContentInherit.slide = -1
 
 
             // toDo
@@ -23,13 +30,14 @@ page {
             logoBoxes < styles.content.get
             logoBoxes.select.where = {#colPos} = 5
 
-            cooperationBoxes = CONTENT
-            cooperationBoxes < styles.content.get
-            cooperationBoxes.select.where = {#colPos} = 8
 
-                        promoterBoxes = CONTENT
-                        promoterBoxes < styles.content.get
-                        promoterBoxes.select.where = {#colPos} = 19
+            boxContentPrio = CONTENT
+            boxContentPrio < styles.content.get
+            boxContentPrio.select.where = {#colPos} = 9
+            boxContentPrio.slide = -1
+
+
+
         }
     }
 }

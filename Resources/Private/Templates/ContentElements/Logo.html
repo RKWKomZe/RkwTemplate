@@ -2,20 +2,20 @@
 
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
-    <f:if condition="{f:count(subject: image)} > 0">
+    <f:if condition="{f:count(subject: images)} > 0">
         <div>
             <f:if condition="<rkwEtracker:link.typolink parameter='{data.header_link}' />">
                 <f:then>
                     <rkwEtracker:link.typolink parameter="{data.header_link}" class="box partner">
                         <picture>
-                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" srcset="{f:uri.image(image:image.0,width:'160',height:'320m',cropVariant:'default')}" alt="{data.header}" />
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" srcset="{f:uri.image(image:images.0,width:'160',height:'320m',cropVariant:'default')}" alt="{data.header}" />
                         </picture>
                     </rkwEtracker:link.typolink>
                 </f:then>
                 <f:else>
                     <a href="#" class="box partner">
                         <picture>
-                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" srcset="{f:uri.image(image:image.0,width:'160',height:'320m',cropVariant:'default')}" alt="{data.header}" />
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" srcset="{f:uri.image(image:images.0,width:'160',height:'320m',cropVariant:'default')}" alt="{data.header}" />
                         </picture>
                     </a>
                 </f:else>

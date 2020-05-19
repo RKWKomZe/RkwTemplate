@@ -94,7 +94,7 @@
                 <source>Default</source>
                 <target>Standard</target>
             </trans-unit>
-			<trans-unit id="contentElement.topic.type.I.default">
+			<trans-unit id="contentElement.topic.type.I.0">
 				<source>Default</source>
 				<target>Standard</target>
 			</trans-unit>
@@ -207,6 +207,38 @@
                 <source>Call To Action</source>
                 <target>Call To Action</target>
             </trans-unit>
+
+
+            <!-- Shortlink -->
+            <trans-unit id="contentElement.shortlink.title">
+                <source>Shortlink</source>
+                <target>Schnell-Verweis</target>
+            </trans-unit>
+            <trans-unit id="contentElement.shortlink.description">
+                <source>Adds a Shortlink-Element.</source>
+                <target>Fügt ein Schnell-Verweis-Element hinzu</target>
+            </trans-unit>
+			<trans-unit id="contentElement.shortlink.type.I.0">
+				<source>Default (Article)</source>
+				<target>Standard (Artikel)</target>
+			</trans-unit>
+            <trans-unit id="contentElement.shortlink.type.I.4">
+                <source>Link</source>
+                <target>Link</target>
+            </trans-unit>
+            <trans-unit id="contentElement.shortlink.type.I.5">
+                <source>Download</source>
+                <target>Download</target>
+            </trans-unit>
+            <trans-unit id="contentElement.shortlink.type.I.6">
+                <source>Publication</source>
+                <target>Publikation</target>
+            </trans-unit>
+            <trans-unit id="contentElement.shortlink.type.I.7">
+                <source>Project</source>
+                <target>Projekt</target>
+            </trans-unit>
+
 		</body>
 	</file>
 </xliff>

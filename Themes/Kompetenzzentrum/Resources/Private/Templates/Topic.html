@@ -9,14 +9,11 @@
     <!-- key-visual -->
     <f:render partial="Keyvisual/Header" section="Default" arguments="{_all}"/>
 
-    <f:if condition="{promoterBoxes}">
-        <f:format.html parseFuncTSPath="">{promoterBoxes}</f:format.html>
+    <f:if condition="{promotion}">
+        <f:format.html parseFuncTSPath="">{promotion}</f:format.html>
     </f:if>
 
     <f:if condition="{content}">
-
-        <!-- schema.org -->
-        <f:render partial="SchemaOrg" section="Default" arguments="{_all}"/>
 
 
         <div class="page-area-grid content-page__content">
@@ -72,7 +69,16 @@
 
     <!-- box party - but not for MeinRKW ! -->
     <f:if condition="{pageLayoutType} != 7">
-        <f:render partial="AdditionalBoxes" section="Topic" arguments="{_all}"/>
+        <div class="sections">
+
+            <!-- alerts -->
+            <f:render partial="AlertsBox" arguments="{_all}"/>
+
+            <!-- boxes -->
+            <f:format.html parseFuncTSPath="">{boxesContent}</f:format.html>
+            <f:format.html parseFuncTSPath="">{boxesContentInherit}</f:format.html>
+
+        </div>
     </f:if>
 
 </f:section>

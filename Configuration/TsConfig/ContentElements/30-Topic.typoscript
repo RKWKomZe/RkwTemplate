@@ -25,7 +25,7 @@ TCEFORM.tt_content {
         types.rkwtemplate_topic {
             removeItems = 1,100
 
-            altLabels.0 = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.topic.type.I.default
+            altLabels.0 = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.topic.type.I.0
             altLabels.2 = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.topic.type.I.2
             altLabels.3 = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.topic.type.I.3
             altLabels.4 = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.topic.type.I.4

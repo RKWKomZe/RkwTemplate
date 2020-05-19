@@ -4,12 +4,7 @@
 page {
     10 {
         variables {
-            //=================================================================
-            // Comment section
-            //=================================================================
 
-            commentsBox < lib.tx_rkwsocialcomments
-            commentsBox.settings.usingConfig = default
 
             //=================================================================
             // Gets the alerts box below the pages
@@ -309,97 +304,6 @@ page {
             }
 
             //=================================================================
-            // add googleMaps to consultant view
-            //=================================================================
-            consultantMaps = USER
-            consultantMaps {
-                userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
-                extensionName = RkwConsultant
-                pluginName = Rkwconsultantmaps
-                vendorName = RKW
-                controller = Consultant
-                switchableControllerActions {
-                    // Again: Controller-Name and Action
-                    Consultant {
-                        1 = maps
-                    }
-                }
-
-                view =< plugin.tx_rkwconsultant.view
-                persistence =< plugin.tx_rkwconsultant.persistence
-                settings =< plugin.tx_rkwconsultant.settings
-
-                stdWrap.wrap = <picture class="article-picture">|</picture>
-
-            }
-
-            //=================================================================
-            // add gallery to consultant view
-            //=================================================================
-            consultantGallery = USER
-            consultantGallery {
-                userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
-                extensionName = RkwConsultant
-                pluginName = Rkwconsultantgallery
-                vendorName = RKW
-                controller = Consultant
-                switchableControllerActions {
-                    // Again: Controller-Name and Action
-                    Consultant {
-                        1 = gallery
-                    }
-                }
-
-                view =< plugin.tx_rkwconsultant.view
-                persistence =< plugin.tx_rkwconsultant.persistence
-                settings =< plugin.tx_rkwconsultant.settings
-            }
-
-            //=================================================================
-            // add infobox to consultant view
-            //=================================================================
-            consultantInfo = USER
-            consultantInfo {
-                userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
-                extensionName = RkwConsultant
-                pluginName = Rkwconsultantinfo
-                vendorName = RKW
-                controller = Consultant
-                switchableControllerActions {
-                    // Again: Controller-Name and Action
-                    Consultant {
-                        1 = info
-                    }
-                }
-
-                view =< plugin.tx_rkwconsultant.view
-                persistence =< plugin.tx_rkwconsultant.persistence
-                settings =< plugin.tx_rkwconsultant.settings
-            }
-
-            //=================================================================
-            // add company name of consultant to consultant view
-            //=================================================================
-            consultantCompany = USER
-            consultantCompany {
-                userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
-                extensionName = RkwConsultant
-                pluginName = Rkwconsultantcompany
-                vendorName = RKW
-                controller = Consultant
-                switchableControllerActions {
-                    // Again: Controller-Name and Action
-                    Consultant {
-                        1 = company
-                    }
-                }
-
-                view =< plugin.tx_rkwconsultant.view
-                persistence =< plugin.tx_rkwconsultant.persistence
-                settings =< plugin.tx_rkwconsultant.settings
-            }
-
-            //=================================================================
             // add googleMaps to event view
             //=================================================================
             eventMaps = USER
@@ -460,50 +364,6 @@ page {
                     // Again: Controller-Name and Action
                     Event {
                         1 = title
-                    }
-                }
-
-                view =< plugin.tx_rkwevents.view
-                persistence =< plugin.tx_rkwevents.persistence
-                settings =< plugin.tx_rkwevents.settings
-            }
-
-            //=================================================================
-            // add event gallery 1
-            //=================================================================
-            galleryOne = USER
-            galleryOne {
-                userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
-                extensionName = RkwEvents
-                pluginName = Galleryone
-                vendorName = RKW
-                controller = Event
-                switchableControllerActions {
-                    // Again: Controller-Name and Action
-                    Event {
-                        1 = showGalleryOne
-                    }
-                }
-
-                view =< plugin.tx_rkwevents.view
-                persistence =< plugin.tx_rkwevents.persistence
-                settings =< plugin.tx_rkwevents.settings
-            }
-
-            //=================================================================
-            // add event gallery 2
-            //=================================================================
-            galleryTwo = USER
-            galleryTwo {
-                userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
-                extensionName = RkwEvents
-                pluginName = Gallerytwo
-                vendorName = RKW
-                controller = Event
-                switchableControllerActions {
-                    // Again: Controller-Name and Action
-                    Event {
-                        1 = showGalleryTwo
                     }
                 }
 

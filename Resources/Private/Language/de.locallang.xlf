@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-11-11T13:43:13Z" product-name="rkw_template">
+		<header/>
+		<body>
+
+
+            <!-- Shortlink -->
+			<trans-unit id="contentElement.shortlink.type.I.0">
+				<source>Default (Article)</source>
+				<target>Standard (Artikel)</target>
+			</trans-unit>
+            <trans-unit id="contentElement.shortlink.type.I.4">
+                <source>Link</source>
+                <target>Link</target>
+            </trans-unit>
+            <trans-unit id="contentElement.shortlink.type.I.5">
+                <source>Download</source>
+                <target>Download</target>
+            </trans-unit>
+            <trans-unit id="contentElement.shortlink.type.I.6">
+                <source>Publication</source>
+                <target>Publikation</target>
+            </trans-unit>
+            <trans-unit id="contentElement.shortlink.type.I.7">
+                <source>Project</source>
+                <target>Projekt</target>
+            </trans-unit>
+
+		</body>
+	</file>
+</xliff>

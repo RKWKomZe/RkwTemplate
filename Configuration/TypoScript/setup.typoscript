@@ -50,6 +50,26 @@ lib.txRkwTemplate {
          }
     }
 
+/*
+    evenOddCounter = COA
+    evenOddCounter {
+        10 = LOAD_REGISTER
+        10 {
+            CeCounter.stdWrap.dataWrap = {register:CeCounter} + 1
+            CeCounter.prioriCalc = intval
+            // siehe Modulos http://php.net/manual/de/language.operators.arithmetic.php
+            // %2 gibt Dir eine Kette 0,1,0,1,0,1 Werten
+            // %3 würde Dir eine Kette von 0,1,2,0,1,2,0,1,2 geben zum Beispiel
+            moduloCeCount.stdWrap.dataWrap = {register:CeCounter}%2
+            moduloCeCount.prioriCalc = intval
+        }
+
+        20 = TEXT
+        20.data = register:moduloCeCount
+
+    }
+*/
+
 }
 
 <INCLUDE_TYPOSCRIPT: source="FILE:./FluidStyledContents/Setup.typoscript">

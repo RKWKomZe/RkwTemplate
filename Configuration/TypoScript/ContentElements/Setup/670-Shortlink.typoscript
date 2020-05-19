@@ -1,7 +1,7 @@
 tt_content {
-    rkwtemplate_slider =< lib.contentElement
-    rkwtemplate_slider {
-        templateName = Slider
+    rkwtemplate_shortlink =< lib.contentElement
+    rkwtemplate_shortlink {
+        templateName = Shortlink
 
         // loading images as references
         dataProcessing {
