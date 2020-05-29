@@ -62,9 +62,5 @@ lib.txRkwTemplate {
             settings < plugin.tx_rkwauthors.settings
 
         }
-
-
-
     }
-
 }

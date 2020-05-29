@@ -34,32 +34,6 @@ page {
                         altText.data = file:current:title
                         titleText.data = file:current:alternative
 
-                        // inherit default settings
-                        layout < tt_content.image.20.1.layout
-                        layoutKey < tt_content.image.20.1.layoutKey
-                        sourceCollection < plugin.tx_rkwbasics.libs.responsiveImages.sourceCollection
-
-                        / redefine settings based on individual maxW
-                        // only override if individual maxW < maxW of breakpoint
-                        sourceCollection {
-                            mobile.maxW.override = 215
-                            mobile.maxW.override.if {
-                                value = {$plugin.tx_rkwbasics.settings.responsiveImages.breakpoints.mobile}
-                                isLessThan = 215
-                            }
-
-                            mobileRetina2.maxW.override < .mobile.maxW.override
-
-                            tablet.maxW.override < .mobile.maxW.override
-                            tablet.maxW.override.if.value = {$plugin.tx_rkwbasics.settings.responsiveImages.breakpoints.tablet}
-                            tabletRetina2.maxW.override < .tablet.maxW.override
-                            tabletRetina3.maxW.override < .tablet.maxW.override
-
-                            desktop.maxW.override < .mobile.maxW.override
-                            desktop.maxW.override.if.value = {$plugin.tx_rkwbasics.settings.responsiveImages.breakpoints.desktop}
-                            desktopRetina2.maxW.override < .desktop.maxW.override
-                        }
-
                         if.value.data = file:current:extension
                         if.equals = pdf
                     }

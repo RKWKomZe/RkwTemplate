@@ -48,7 +48,7 @@ mod {
                                 columns {
                                     1 {
                                         name = Förderer
-                                        colPos = 201
+                                        colPos = 210
                                     }
 
                                 }
@@ -68,7 +68,7 @@ mod {
                                 columns {
                                     1 {
                                         name = Boxen ohne Vererbung auf Unterseiten
-                                        colPos = 202
+                                        colPos = 220
                                     }
                                 }
                             }
@@ -85,6 +85,41 @@ mod {
                     }
                 }
             }
+
+
+
+            //======================================
+            // Content Pages
+            //======================================
+            contentPages {
+                title = Beitrag
+                config {
+                    backend_layout {
+                        colCount = 1
+                        rowCount = 2
+                        rows {
+                            1 {
+                                columns {
+                                    1 {
+                                        name = Inhalt
+                                        colPos = 0
+                                    }
+                                }
+                            }
+
+                            2 {
+                                columns {
+                                    1 {
+                                        name = Boxen
+                                        colPos = 310
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
 
             //======================================
             // Map page
@@ -126,57 +161,23 @@ mod {
 
 
 
-            //======================================
-            // Content Pages
-            //======================================
-            contentPages {
-                title = Inhalt plus Boxen
-                config {
-                    backend_layout {
-                        colCount = 1
-                        rowCount = 3
-                        rows {
-                            1 {
-                                columns {
-                                    1 {
-                                        name = Inhalt
-                                        colPos = 0
-                                    }
-                                }
-                            }
-
-                            2 {
-                                columns {
-                                    1 {
-                                        name = Call-To-Action
-                                        colPos = 18
-                                    }
-                                }
-                            }
-
-                            3 {
-                                columns {
-                                    1 {
-                                        name = Boxen
-                                        colPos = 17
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
 
             //======================================
             // Publication Pages
             //======================================
-            publicationPages < .contentPages
             publicationPages {
                 title = Publikationen
                 config.backend_layout {
                     rowCount = 2
                     rows {
+                        1 {
+                            columns {
+                                1 {
+                                    name = Inhalt
+                                    colPos = 0
+                                }
+                            }
+                        }
                         2 {
                             columns {
                                 1 {

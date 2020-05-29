@@ -8,12 +8,16 @@ page {
 
             promotion = CONTENT
             promotion < styles.content.get
-            promotion.select.where = {#colPos} = 201
+            promotion.select.where = {#colPos} = 210
             promotion.slide = -1
 
-            boxesContent = CONTENT
-            boxesContent < styles.content.get
-            boxesContent.select.where = {#colPos} = 202
+           # boxesContentTopic = CONTENT
+           # boxesContentTopic < styles.content.get
+           # boxesContentTopic.select.where = {#colPos} = 220
+
+            #boxesContentArticle = CONTENT
+            #boxesContentArticle < styles.content.get
+            #boxesContentArticle.select.where = {#colPos} = 310
 
             boxesContentInherit = CONTENT
             boxesContentInherit < styles.content.get

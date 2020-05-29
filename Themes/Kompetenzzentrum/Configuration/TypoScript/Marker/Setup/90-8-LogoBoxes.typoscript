@@ -1,0 +1,55 @@
+lib.txRkwTemplate {
+
+    boxes {
+
+        projectLogo = COA
+        projectLogo {
+
+            10 = LOAD_REGISTER
+            10 {
+                pageUid.cObject = TEXT
+                pageUid.cObject {
+                    field = pageUid
+                    ifEmpty.cObject = TEXT
+                    ifEmpty.cObject {
+                        value.current = 1
+                        ifEmpty = 0
+                    }
+
+                }
+            }
+
+            20 = RECORDS
+            20 {
+
+                source.data = register:pageUid
+                source.intval = 1
+
+                dontCheckPid = 1
+                tables = pages
+                max = 1
+
+                conf.pages = RECORDS
+                conf.pages {
+
+                    source.field = tx_rkwprojects_project_uid
+                    tables = tx_rkwprojects_domain_model_projects
+                    conf.tx_rkwprojects_domain_model_projects = FLUIDTEMPLATE
+                    conf.tx_rkwprojects_domain_model_projects {
+
+                        file = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/FluidTemplateLibs/ProjectLogos.html
+                        dataProcessing {
+                            10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+                            10 {
+                                references.fieldName = partnerLogos
+                                as = logos
+                            }
+                        }
+                    }
+                }
+            }
+
+            90 = RESTORE_REGISTER
+        }
+    }
+}

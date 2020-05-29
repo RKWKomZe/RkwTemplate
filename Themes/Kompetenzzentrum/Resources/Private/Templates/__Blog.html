@@ -7,8 +7,13 @@
     <!-- top-menu -->
     <f:render partial="SubNav" section="Default" arguments="{_all}"/>
 
-    <!-- key-visual and slogan -->
-    <f:render partial="KeyVisualHeadline" section="Default" arguments="{_all}"/>
+    <!-- key-visual -->
+    <f:render partial="Keyvisual/Header" section="Default" arguments="{_all}"/>
+
+    <!-- promotion -->
+    <f:if condition="{promotion}">
+        <f:format.html parseFuncTSPath="">{promotion}</f:format.html>
+    </f:if>
 
     <!-- @toDo: WAS MACHT blog??? --->
     <div class="page-area-grid blog content-page__content">

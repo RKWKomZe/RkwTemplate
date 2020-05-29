@@ -133,7 +133,7 @@ page {
 				10 = COA
 				10 {
 
-					// teaser immage with fallbaacks
+					// teaser immage with fallbacks
 					10 = FILES
 					10 {
 
@@ -142,8 +142,7 @@ page {
                             data =  levelmedia : -1,slide
 							override.data = levelfield : -1, tx_rkwbasics_teaser_image, slide
 							override.required = 1
-							override.override.data = levelfield : -1, tx_rkwbasics_article_image, slide
-                            override.override.required = 1
+
 						}
 
 						maxItems = 1

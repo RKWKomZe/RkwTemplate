@@ -172,6 +172,21 @@
             </trans-unit>
 
 
+            <!-- ContentContainerOneCol -->
+            <trans-unit id="contentElement.contentContainerOneCol.title">
+                <source>Content-Container with one Col</source>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerOneCol.description">
+                <source>Add a Content-Container with one Col.</source>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerOneCol.content">
+                <source>Content</source>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerOneCol.callToAction">
+                <source>Call To Action</source>
+            </trans-unit>
+
+
             <!-- Shortlink -->
             <trans-unit id="contentElement.shortlink.title">
                 <source>Shortlink</source>

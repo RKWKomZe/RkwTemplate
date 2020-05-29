@@ -5,7 +5,7 @@
     <div class="content-box content">
 
         <!-- breadcrumb -->
-        <f:cObject typoscriptObjectPath="lib.txRkwTemplate.breadcrumbNav" />
+        <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.breadcrumb" />
 
         <!-- content -->
         <div class="wysiwyg">
@@ -13,15 +13,18 @@
         </div>
 
         <!-- read more nav -->
-        <f:format.html parseFuncTSPath="">{readMoreNav}</f:format.html>
+        <f:if condition="{data.tx_gridelements_backend_layout} == 'contentContainerOneCol'">
+            <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.readMore" />
+        </f:if>
 
         <!-- image resources -->
-        <f:if condition="<rkwBasics:isEmpty string='{f:cObject(typoscriptObjectPath: 'lib.txRkwTemplate.imageResources')}' /> == 0">
+        <f:if condition="<rkwBasics:isEmpty string='{f:cObject(typoscriptObjectPath: 'lib.txRkwTemplate.extension.imageResources')}' /> == 0">
             <div class="media-sources {f:if(condition: '<rkwBasics:isEmpty string=\'{data.tx_gridelements_view_column_18}\' /> == 0', then: 'media-sources--space')}" role="contentinfo">
                 <strong><f:translate key="LLL:EXT:rkw_template/Themes/Kompetenzzentrum/Resources/Private/Language/locallang.xlf:partials.gridElements.contentContainer.content.imageResources" />: </strong>
-                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.imageResources" />
+                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.extension.imageResources" />
             </div>
         </f:if>
+
     </div>
 
 </html>

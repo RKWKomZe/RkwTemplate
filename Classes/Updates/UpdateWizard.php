@@ -95,8 +95,12 @@ class UpdateWizard extends AbstractUpdate
         $this->migrateLogoElements($databaseQueries);
         $this->migratePromoterElements($databaseQueries);
         $this->migrateShortlinkElements($databaseQueries);
+        $this->migrateVideoLinks($databaseQueries);
 
         $this->migrateContentsForTopicPages($databaseQueries);
+        $this->migrateContentsForContentPages($databaseQueries);
+
+        $this->migratePageLayouts($databaseQueries);
 
         $this->mergeCols($databaseQueries);
 
@@ -404,41 +408,41 @@ class UpdateWizard extends AbstractUpdate
                     'field' => 'media',
                     'fieldTarget' => 'media',
                     'cropTarget' => 'topicDesktop',
-                    'sortingTarget' => $this->sortIntervals
+                    'sortingTarget' => $this->sortIntervals,
                 ],
                 'tx_rkwbasics_article_image' => [
                     'field' => 'txRkwBasicsArticleImage',
                     'fieldTarget' => 'media',
                     'cropTarget' => 'articleDesktop',
-                    'sortingTarget' => $this->sortIntervals * 2
+                    'sortingTarget' => $this->sortIntervals * 2,
                 ],
                 'tx_rkwbasics_teaser_image' => [
                     'field' => 'txRkwBasicsTeaserImage',
                     'fieldTarget' => 'txRkwBasicsTeaserImage',
                     'cropTarget' => 'teaser',
-                    'sortingTarget' => $this->sortIntervals
-                ]
+                    'sortingTarget' => $this->sortIntervals,
+                ],
             ],
             'pagets__contentPages' => [
                 'media' => [
                     'field' => 'media',
                     'fieldTarget' => 'media',
                     'cropTarget' => 'topicDesktop',
-                    'sortingTarget' => $this->sortIntervals * 2
+                    'sortingTarget' => $this->sortIntervals * 2,
                 ],
                 'tx_rkwbasics_article_image' => [
                     'field' => 'txRkwBasicsArticleImage',
                     'fieldTarget' => 'media',
                     'cropTarget' => 'articleDesktop',
-                    'sortingTarget' => $this->sortIntervals
+                    'sortingTarget' => $this->sortIntervals,
                 ],
                 'tx_rkwbasics_teaser_image' => [
                     'field' => 'txRkwBasicsTeaserImage',
                     'fieldTarget' => 'txRkwBasicsTeaserImage',
                     'cropTarget' => 'teaser',
-                    'sortingTarget' => $this->sortIntervals
-                ]
-            ]
+                    'sortingTarget' => $this->sortIntervals,
+                ],
+            ],
         ];
 
 
@@ -542,7 +546,7 @@ class UpdateWizard extends AbstractUpdate
                                 $referenceCrop = json_decode($reference['crop'], true);
                                 if ($referenceCrop['default']) {
                                     $cropNew = [
-                                        $config['cropTarget'] => $referenceCrop['default']
+                                        $config['cropTarget'] => $referenceCrop['default'],
                                     ];
 
                                     // now update the crop configuration in the reference
@@ -675,6 +679,109 @@ class UpdateWizard extends AbstractUpdate
 
         $this->setLock(__FUNCTION__);
     }
+
+
+    /**
+     * Update shortlink elements
+     *
+     * @param array $databaseQueries Queries done in this update
+     * @throws Exception\ExistingTargetFileNameException
+     */
+    protected function migrateVideoLinks(array &$databaseQueries)
+    {
+        if ($this->hasLock(__FUNCTION__)){
+            return;
+        }
+
+        /** @var  \TYPO3\CMS\Core\Database\Connection $connectionPages */
+        $connectionPages = GeneralUtility::makeInstance(ConnectionPool::class)->getConnectionForTable('pages');
+
+        /** @var \TYPO3\CMS\Core\Database\Query\QueryBuilder $queryBuilder */
+        $queryBuilder = $connectionPages->createQueryBuilder();
+        $statement = $queryBuilder->select('*')
+            ->from('pages')
+            ->where(
+                $queryBuilder->expr()->neq('tx_rkwbasics_article_video',
+                    $queryBuilder->createNamedParameter('', \PDO::PARAM_STR)
+                )
+            )
+            ->execute();
+
+        // find default storage
+        /** @var \TYPO3\CMS\Core\Resource\StorageRepository $storageRepository */
+        $storageRepository = GeneralUtility::makeInstance(\TYPO3\CMS\Core\Resource\StorageRepository::class);
+        $storages = $storageRepository->findAll();
+        $defaultStorage = null;
+
+        /** @var \TYPO3\CMS\Core\Resource\ResourceStorage $storage */
+        foreach ($storages as $storage) {
+            if (strpos($storage->getName(), 'fileadmin') === 0) {
+                $defaultStorage = $storage;
+                break;
+            }
+        }
+
+        // go through all elements
+        while ($record = $statement->fetch()) {
+
+            // strip params
+            if (strpos($record['tx_rkwbasics_article_video'], '?')) {
+                $parts = parse_url($record['tx_rkwbasics_article_video']);
+                parse_str($parts['query'], $query);
+                $youTubeCode = $query['v'];
+            } else {
+                $exploded = explode('/', $record['tx_rkwbasics_article_video']);
+                $youTubeCode = $exploded[count($exploded) - 1];
+            }
+
+            if ($youTubeCode) {
+
+                // write code to file
+                $fileName = time() . '_' . $youTubeCode . '.youtube';
+                $filePath = PATH_site . '/typo3temp/';
+                file_put_contents( $filePath . $fileName, $youTubeCode);
+
+                // add file to storage
+                /** @var \TYPO3\CMS\Core\Resource\FileInterface $fileObject */
+                $fileObject = $defaultStorage->addFile(
+                    $filePath . $fileName,
+                    $storage->getRootLevelFolder(),
+                    $fileName
+                );
+
+                // Add file reference
+                $fields = [
+                    'fieldname' => 'media',
+                    'table_local' => 'sys_file',
+                    'pid' => $record['uid'],
+                    'uid_foreign' => $record['uid'],
+                    'uid_local' => $fileObject->getUid(),
+                    'tablenames' => 'pages',
+                    'crdate' => time(),
+                    'tstamp' => time(),
+                ];
+
+                /** @var \TYPO3\CMS\Core\Database\Query\QueryBuilder $insertQueryBuilder */
+                $insertQueryBuilder = GeneralUtility::makeInstance(ConnectionPool::class)->getQueryBuilderForTable('sys_file_reference');
+                $insertQueryBuilder->insert('sys_file_reference')->values($fields)->execute();
+
+                // Update page
+                $updateQueryBuilder = $connectionPages->createQueryBuilder();
+                $updateQueryBuilder->update('pages')
+                    ->set('media', $record['media']+1)
+                    ->where(
+                        $updateQueryBuilder->expr()->eq('uid',
+                            $updateQueryBuilder->createNamedParameter($record['uid'], \PDO::PARAM_INT)
+                        )
+                    );
+                $databaseQueries[] = $updateQueryBuilder->getSQL();
+                $updateQueryBuilder->execute();
+            }
+        }
+
+        $this->setLock(__FUNCTION__);
+    }
+
 
     /**
      * Update slider elements
@@ -1008,7 +1115,7 @@ class UpdateWizard extends AbstractUpdate
             5011 => 'Schnelleinstieg',
             3684 => 'Schnelleinstieg',
             5043 => 'Schnelleinstieg',
-            3673 => ''
+            3673 => '',
         ];
 
         // move elements into a grid element-wrapper
@@ -1197,6 +1304,8 @@ class UpdateWizard extends AbstractUpdate
     }
 
 
+
+
     /**
      * Update topic elements
      *
@@ -1209,11 +1318,93 @@ class UpdateWizard extends AbstractUpdate
         }
 
         // move elements into a grid element-wrapper
-        $this->moveElementsFromColToGridContainer([0 => 50, 2 => 60, 18 => 70], 0, 'contentContainerTwoCols', 0, [], $databaseQueries, 'pagets__topicPages');
+        $this->moveElementsFromColToGridContainer(
+            [
+                0 => 50,
+                2 => 60,
+                18 => 70,
+            ],
+            0,
+            'contentContainerTwoCols',
+            0,
+            [],
+            $databaseQueries,
+            'pagets__topicPages'
+        );
 
         $this->setLock(__FUNCTION__);
     }
 
+
+    /**
+     * Update topic elements
+     *
+     * @param array $databaseQueries Queries done in this update
+     */
+    protected function migrateContentsForContentPages(array &$databaseQueries)
+    {
+        if ($this->hasLock(__FUNCTION__)){
+            return;
+        }
+
+        // move elements into a grid element-wrapper
+        $this->moveElementsFromColToGridContainer(
+            [
+                0 => 50,
+                18 => 70,
+            ],
+            0,
+            'contentContainerOneCol',
+            0,
+            [],
+            $databaseQueries,
+            'pagets__contentPages'
+        );
+        $this->setLock(__FUNCTION__);
+    }
+
+
+    /**
+     * Update page layouts
+     *
+     * @param array $databaseQueries Queries done in this update
+     */
+    protected function migratePageLayouts(array &$databaseQueries)
+    {
+        if ($this->hasLock(__FUNCTION__)){
+            return;
+        }
+
+        /** @var  \TYPO3\CMS\Core\Database\Connection $connectionPages */
+        $connectionPages = GeneralUtility::makeInstance(ConnectionPool::class)->getConnectionForTable('pages');
+
+
+        // migrate blog-template to topic-template
+        $updateQueryBuilder = $connectionPages->createQueryBuilder();
+        $updateQueryBuilder->update('pages')
+            ->set('layout', 1)
+            ->where(
+                $updateQueryBuilder->expr()->eq('layout',
+                    $updateQueryBuilder->createNamedParameter(9, \PDO::PARAM_INT)
+                )
+            );
+        $databaseQueries[] = $updateQueryBuilder->getSQL();
+        $updateQueryBuilder->execute();
+
+        $updateQueryBuilder = $connectionPages->createQueryBuilder();
+        $updateQueryBuilder->update('pages')
+            ->set('tx_rkwbasics_fe_layout_next_level', 1)
+            ->where(
+                $updateQueryBuilder->expr()->eq('tx_rkwbasics_fe_layout_next_level',
+                    $updateQueryBuilder->createNamedParameter(9, \PDO::PARAM_INT)
+                )
+            );
+        $databaseQueries[] = $updateQueryBuilder->getSQL();
+        $updateQueryBuilder->execute();
+
+
+        $this->setLock(__FUNCTION__);
+    }
 
 
     /**
@@ -1232,13 +1423,18 @@ class UpdateWizard extends AbstractUpdate
         $this->moveElementsFromColsIntoCol($colPosList, 100, $databaseQueries, 'pagets__homePages');
 
         $colPosList = [19];
-        $this->moveElementsFromColsIntoCol($colPosList, 201, $databaseQueries, 'pagets__topicPages');
+        $this->moveElementsFromColsIntoCol($colPosList, 210, $databaseQueries, 'pagets__topicPages');
 
         $colPosList = [8,9,6,5];
-        $this->moveElementsFromColsIntoCol($colPosList, 202, $databaseQueries, 'pagets__topicPages');
+        $this->moveElementsFromColsIntoCol($colPosList, 220, $databaseQueries, 'pagets__topicPages');
+
+        $colPosList = [17];
+        $this->moveElementsFromColsIntoCol($colPosList, 310, $databaseQueries, 'pagets__contentPages');
 
         $this->setLock(__FUNCTION__);
     }
+
+
 
 
     /**
@@ -1327,7 +1523,7 @@ class UpdateWizard extends AbstractUpdate
 
 
         // delete pages
-        $pageUids = [2525,2524,2523,1917,2820,2264,2819,2341,2340];
+        $pageUids = [2525,2524,2523,1917,2820,2264,2819,2341,2340,4350,4382];
         $updateQueryBuilder = $connectionPages->createQueryBuilder();
         $updateQueryBuilder->update('pages')
             ->set('deleted', 1)
@@ -1412,8 +1608,6 @@ class UpdateWizard extends AbstractUpdate
                     $gridLabel = $gridLabels[$pid];
                 }
 
-                $insertQueryBuilder = GeneralUtility::makeInstance(ConnectionPool::class)->getQueryBuilderForTable('tt_content');
-
                 // create a new grid-element
                 $newElement = [
                     'pid' => intval($record['pid']),
@@ -1422,10 +1616,13 @@ class UpdateWizard extends AbstractUpdate
                     'CType' => 'gridelements_pi1',
                     'header' => $gridLabel,
                     'header_layout' => $gridHeaderLayout,
-                    'tx_gridelements_backend_layout' => $gridLayout
+                    'tx_gridelements_backend_layout' => $gridLayout,
                 ];
 
+
                 /** @var \TYPO3\CMS\Core\Database\Query\QueryBuilder $insertQueryBuilder */
+                $insertQueryBuilder = GeneralUtility::makeInstance(ConnectionPool::class)->getQueryBuilderForTable('tt_content');
+
                 $insertQueryBuilder->insert('tt_content')->values($newElement)->execute();
                 $databaseQueries[] = $insertQueryBuilder->getSQL();
                 $newElementUid = $insertQueryBuilder->getConnection()->lastInsertId();
@@ -1593,6 +1790,7 @@ class UpdateWizard extends AbstractUpdate
         $connection = GeneralUtility::makeInstance(ConnectionPool::class)->getConnectionForTable('tt_content');
 
         // create a new grid-element
+        /** @var \TYPO3\CMS\Core\Database\Query\QueryBuilder $insertQueryBuilder */
         $insertQueryBuilder = GeneralUtility::makeInstance(ConnectionPool::class)->getQueryBuilderForTable('tt_content');
         $newElement = [
             'pid' => intval($shortCut['pid']),
@@ -1601,10 +1799,9 @@ class UpdateWizard extends AbstractUpdate
             'CType' => 'gridelements_pi1',
             'header' => $shortCut['header'] ? $shortCut['header'] : $gridDefaultLabel,
             'header_layout' => $gridHeaderLayout,
-            'tx_gridelements_backend_layout' => $gridLayout
+            'tx_gridelements_backend_layout' => $gridLayout,
         ];
 
-        /** @var \TYPO3\CMS\Core\Database\Query\QueryBuilder $insertQueryBuilder */
         $insertQueryBuilder->insert('tt_content')->values($newElement)->execute();
         $databaseQueries[] = $insertQueryBuilder->getSQL();
         $newElementUid = $insertQueryBuilder->getConnection()->lastInsertId();

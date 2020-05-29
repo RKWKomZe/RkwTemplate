@@ -36,22 +36,6 @@ page {
 # STANDARD- MARKER
 #############################################################################
 
-plugin.tx_rkwconsultant {
-
-	settings {
-
-		# for preview and unlocking of an hidden consultant profile (after create / edit)
-		allowedRemoteAddr = 127.0.0.1
-
-		consultant {
-
-			# max profiles per user (no value = no limit)
-			maxProfilesUser >
-		}
-
-	}
-}
-
 # Module configuration
 module.tx_rkwmailer {
 

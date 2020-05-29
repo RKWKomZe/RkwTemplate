@@ -17,30 +17,45 @@
                 <!-- date -->
                 <p>
                     <strong>
-                        <f:translate key="LLL:EXT:rkw_template/Resources/Private/Language/Kompetenzzentrum/locallang.xlf:partials_infoBox.labelDate"/>:
+                        <f:translate key="LLL:EXT:rkw_template/Themes/Kompetenzzentrum/Resources/Private/Language/locallang.xlf:partials.infoBox.labelDate"/>:
                     </strong>
-                    <f:format.date format="d.m.Y">{importParentPagePubDate}</f:format.date>
+                    <f:format.date format="d.m.Y">{data.lastUpdated}</f:format.date>
                 </p>
 
                 <!-- project link -->
                 <f:if condition="{projectLink}">
-                    <p><strong>
-                        <f:translate key="LLL:EXT:rkw_template/Resources/Private/Language/Kompetenzzentrum/locallang.xlf:partials_infoBox.labelProject"/>:
-                    </strong>
-                        <f:format.html parseFuncTSPath="">{projectLink}</f:format.html>
-                    </p>
+                    <f:then>
+                        <p>
+                            <strong>
+                                <f:translate key="LLL:EXT:rkw_template/Themes/Kompetenzzentrum/Resources/Private/Language/locallang.xlf:partials.infoBox.labelProject"/>:
+                            </strong>
+                            <f:format.html parseFuncTSPath="">{projectLink}</f:format.html>
+                        </p>
+                    </f:then>
+                    <f:else>
+                        <f:if condition="{projectName}">
+                            <p>
+                                <strong>
+                                    <f:translate key="LLL:EXT:rkw_template/Themes/Kompetenzzentrum/Resources/Private/Language/locallang.xlf:partials.infoBox.labelProject"/>:
+                                </strong>
+                                <f:format.html parseFuncTSPath="">{projectName}</f:format.html>
+                            </p>
+                        </f:if>
+                    </f:else>
                 </f:if>
 
                 <!-- abstract -->
-                <f:if condition="{pageAbstractInherit}">
+                <f:if condition="{data.abstract}">
                     <p>
                         <strong>
-                            <f:translate key="LLL:EXT:rkw_template/Resources/Private/Language/Kompetenzzentrum/locallang.xlf:partials_infoBox.labelAbstract"/>:
+                            <f:translate key="LLL:EXT:rkw_template/Themes/Kompetenzzentrum/Resources/Private/Language/locallang.xlf:partials.infoBox.labelAbstract"/>:
                         </strong>
-                        <f:format.crop maxCharacters="250" respectWordBoundaries="TRUE">{pageAbstractInherit}</f:format.crop>
+                        <f:format.crop maxCharacters="250" respectWordBoundaries="true">{data.abstract}</f:format.crop>
                     </p>
                 </f:if>
             </div>
+            <f:comment>
+
             <f:if condition="<rkwBasics:notEmptyOr or1='{pageInformation}' or2='{pageAuthorsDetailRest}'/>">
                 <div class="buttons-set" role="tablist">
 
@@ -65,6 +80,8 @@
                     </f:if>
                 </div>
             </f:if>
+
+            </f:comment>
         </div>
     </div>
 

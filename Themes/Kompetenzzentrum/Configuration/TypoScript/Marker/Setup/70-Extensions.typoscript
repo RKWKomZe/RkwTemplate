@@ -35,45 +35,6 @@ page {
                 settings =< plugin.tx_rkwalerts.settings
             }
 
-            //=================================================================
-            // Lists all documents form one series as boxes
-            //=================================================================
-            seriesBoxes = USER
-            seriesBoxes {
-                userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
-                extensionName = RkwSearch
-                pluginName = Rkwsearch
-                vendorName = RKW
-                controller = Search
-                switchableControllerActions {
-                    // Again: Controller-Name and Action
-                    Search {
-                        1 = publicationsSeries
-                        2 = home
-                        3 = search
-                        4 = publications
-                        5 = publicationsSpecial
-                        6 = related
-                        7 = blog
-                        8 = news
-                        9 = series
-                        10 = consultants
-                        11 = consultantsInternal
-                        12 = example
-                        13 = recentArticle
-                        14 = recent
-                        15 = pageNotFound
-                    }
-                }
-
-                view =< plugin.tx_rkwsearch.view
-                persistence =< plugin.tx_rkwsearch.persistence
-                settings =< plugin.tx_rkwsearch.settings
-
-                // deactivate autoload
-                settings.search.noAutoloadMore = 1
-            }
-
 
             //=================================================================
             // Author-Box for showing works
@@ -105,51 +66,6 @@ page {
 
 
 
-            //=================================================================
-            // first author box on article pages
-            //=================================================================
-
-            pageAuthorsDetailFirst = USER
-            pageAuthorsDetailFirst {
-                userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
-                extensionName = RkwAuthors
-                pluginName = Rkwauthors
-                vendorName = RKW
-                controller = Authors
-                switchableControllerActions {
-                    // Again: Controller-Name and Action
-                    Authors {
-                        1 = pageBoxSmallFirst
-                    }
-                }
-
-                view =< plugin.tx_rkwauthors.view
-                persistence =< plugin.tx_rkwauthors.persistence
-                settings =< plugin.tx_rkwauthors.settings
-            }
-
-            //=================================================================
-            // other authors on article pages
-            //=================================================================
-
-            pageAuthorsDetailRest = USER
-            pageAuthorsDetailRest {
-                userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
-                extensionName = RkwAuthors
-                pluginName = Rkwauthors
-                vendorName = RKW
-                controller = Authors
-                switchableControllerActions {
-                    // Again: Controller-Name and Action
-                    Authors {
-                        1 = pageBoxSmallRest
-                    }
-                }
-
-                view =< plugin.tx_rkwauthors.view
-                persistence =< plugin.tx_rkwauthors.persistence
-                settings =< plugin.tx_rkwauthors.settings
-            }
 
             //=================================================================
             // Comma separated list of authors for publication pages
@@ -226,7 +142,6 @@ page {
             //=================================================================
             // Get title of parent import page
             //=================================================================
-
             importParentPagePubDate = USER
             importParentPagePubDate {
                 userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
@@ -244,14 +159,13 @@ page {
                 view =< plugin.tx_bmpdf2content.view
                 persistence =< plugin.tx_bmpdf2content.persistence
                 settings =< plugin.tx_bmpdf2content.settings
-                settings.importParentPage.showField = pubDate
+                settings.importParentPage.showField = lastUpdated
 
                 // Fallback for those without active RKW Search
                 stdWrap.ifEmpty.cObject = TEXT
                 stdWrap.ifEmpty.cObject {
                     field = crdate
                     field.override = lastUpdated
-
                 }
             }
 
@@ -378,48 +292,95 @@ page {
 
 lib.txRkwTemplate {
 
-    //=================================================================
-    // loads image resources for pages
-    //=================================================================
-    imageResources = USER
-    imageResources {
-        userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
-        extensionName = RkwBasics
-        pluginName = Rkwmediasources
-        vendorName = RKW
-        controller = MediaSources
-        switchableControllerActions {
-            // Again: Controller-Name and Action
-            MediaSources {
-                1 = listPage
+    extension {
+
+        //=================================================================
+        // loads image resources for pages
+        //=================================================================
+        imageResources = USER
+        imageResources {
+            userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+            extensionName = RkwBasics
+            pluginName = Rkwmediasources
+            vendorName = RKW
+            controller = MediaSources
+            switchableControllerActions {
+                // Again: Controller-Name and Action
+                MediaSources {
+                    1 = listPage
+                }
             }
+
+            view =< plugin.tx_rkwbasics.view
+            persistence =< plugin.tx_rkwbasics.persistence
+            settings =< plugin.tx_rkwbasics.settings
+            settings.includeFieldsList = pages.tx_rkwbasics_teaser_image, pages.media, tt_content.image
         }
 
-        view =< plugin.tx_rkwbasics.view
-        persistence =< plugin.tx_rkwbasics.persistence
-        settings =< plugin.tx_rkwbasics.settings
-        settings.includeFieldsList = pages.tx_rkwbasics_teaser_image, pages.media, tt_content.image
-    }
-
-    //=================================================================
-    // Author-Box on topic pages
-    //=================================================================
-    pageAuthorsBox = USER
-    pageAuthorsBox {
-        userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
-        extensionName = RkwAuthors
-        pluginName = Rkwauthors
-        vendorName = RKW
-        controller = Authors
-        switchableControllerActions {
-            // Again: Controller-Name and Action
-            Authors {
-                1 = pageBox
+        //=================================================================
+        // Author-Box on topic pages
+        //=================================================================
+        pageAuthorsBox = USER
+        pageAuthorsBox {
+            userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+            extensionName = RkwAuthors
+            pluginName = Rkwauthors
+            vendorName = RKW
+            controller = Authors
+            switchableControllerActions {
+                // Again: Controller-Name and Action
+                Authors {
+                    1 = pageBox
+                }
             }
+
+            view =< plugin.tx_rkwauthors.view
+            persistence =< plugin.tx_rkwauthors.persistence
+            settings =< plugin.tx_rkwauthors.settings
         }
 
-        view =< plugin.tx_rkwauthors.view
-        persistence =< plugin.tx_rkwauthors.persistence
-        settings =< plugin.tx_rkwauthors.settings
+        //=================================================================
+        // first author box on article pages
+        //=================================================================
+        pageAuthorsDetailFirst = USER
+        pageAuthorsDetailFirst {
+            userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+            extensionName = RkwAuthors
+            pluginName = Rkwauthors
+            vendorName = RKW
+            controller = Authors
+            switchableControllerActions {
+                // Again: Controller-Name and Action
+                Authors {
+                    1 = pageBoxSmallFirst
+                }
+            }
+
+            view =< plugin.tx_rkwauthors.view
+            persistence =< plugin.tx_rkwauthors.persistence
+            settings =< plugin.tx_rkwauthors.settings
+        }
+
+        //=================================================================
+        // other authors on article pages
+        //=================================================================
+        pageAuthorsDetailRest = USER
+        pageAuthorsDetailRest {
+            userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+            extensionName = RkwAuthors
+            pluginName = Rkwauthors
+            vendorName = RKW
+            controller = Authors
+            switchableControllerActions {
+                // Again: Controller-Name and Action
+                Authors {
+                    1 = pageBoxSmallRest
+                }
+            }
+
+            view =< plugin.tx_rkwauthors.view
+            persistence =< plugin.tx_rkwauthors.persistence
+            settings =< plugin.tx_rkwauthors.settings
+        }
     }
 }

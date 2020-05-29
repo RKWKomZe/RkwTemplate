@@ -4,61 +4,83 @@
 		<header/>
 		<body>
 
-
+            <!-- Partials -->
 			<trans-unit id="partials.gridElements.contentContainer.content.imageResources">
 				<source>Image Resources</source>
 				<target>Bildnachweise</target>
 			</trans-unit>
+            <trans-unit id="partials.alertsBox.headline">
+                <source>Stay tuned</source>
+                <target>Bleiben Sie auf dem Laufenden</target>
+            </trans-unit>
+            <trans-unit id="partials.infoBox.labelAbstract">
+				<source>Abstract</source>
+				<target>Zusammenfassung</target>
+			</trans-unit>
+			<trans-unit id="partials.infoBox.labelDate">
+				<source>Published</source>
+				<target>Veröffentlicht</target>
+			</trans-unit>
+			<trans-unit id="partials.infoBox.labelMore">
+				<source>More Information</source>
+				<target>Mehr Informationen</target>
+			</trans-unit>
+			<trans-unit id="partials.infoBox.labelPubYear">
+				<source>Year of Publication</source>
+				<target>Jahr der Veröffentlichung</target>
+			</trans-unit>
+			<trans-unit id="partials.infoBox.labelFilesize">
+				<source>Filesize</source>
+				<target>Dateigröße</target>
+			</trans-unit>
+			<trans-unit id="partials.infoBox.labelAuthors">
+				<source>Authors</source>
+				<target>Autoren</target>
+			</trans-unit>
+            <trans-unit id="partials.infoBox.labelProject">
+                <source>Project</source>
+                <target>Projekt</target>
+            </trans-unit>
+            <trans-unit id="partials.infoBox.labelTableOfContents">
+                <source>Table of Contents</source>
+                <target>Inhaltsverzeichnis</target>
+            </trans-unit>
+            <trans-unit id="partials.infoBox.labelPublication">
+                <source>Publication</source>
+                <target>Publikation</target>
+            </trans-unit>
 
 
 
+			<!-- Templates -->
             <trans-unit id="templates.gridElements.contentContainer.twoCols.asideHeadline">
 				<source>More Information</source>
 				<target>Weitere Informationen</target>
             </trans-unit>
 
 
-
-
-			<!--Templates/Home -->
-			<trans-unit id="templates_home.labelSearch">
-				<source>Search</source>
-				<target>Suche</target>
-			</trans-unit>
-			<trans-unit id="templates_home.headlineNews">
-				<source>News from RKW Competence Center</source>
-				<target>Neues aus dem RKW Kompetenzzentrum</target>
-			</trans-unit>
-            <trans-unit id="templates_home.headlineAlternativeNews">
-                <source>News</source>
-                <target>Aktuelles</target>
+            <!-- TypoScript -->
+            <trans-unit id="typoscript.navigation.readMore.previous">
+                <source>Previous Page</source>
+                <target>Vorherige Seite</target>
             </trans-unit>
-            <trans-unit id="templates_home.headlineDepartments">
-				<source>Our Topics</source>
-				<target>Unsere Themen</target>
-			</trans-unit>
-            <trans-unit id="templates_home.headlineContent">
-                <source>Why RKW?</source>
-                <target>Menschen. Unternehmen. Zukunft.</target>
+            <trans-unit id="typoscript.navigation.readMore.previousShort">
+                <source>Back</source>
+                <target>Zurück</target>
+            </trans-unit>
+            <trans-unit id="typoscript.navigation.readMore.next">
+                <source>Next Page</source>
+                <target>Nächste Seite</target>
+            </trans-unit>
+            <trans-unit id="typoscript.navigation.readMore.nextShort">
+                <source>Next</source>
+                <target>Vor</target>
             </trans-unit>
 
 
-            <!--Templates/Topic -->
-			<trans-unit id="templates_topic.headlineMoreInformation">
-				<source>More Information</source>
-				<target>Weitere Informationen</target>
-			</trans-unit>
 
 
-			<!--Templates/Article -->
-			<trans-unit id="templates_article.imageResources">
-				<source>Image Resources</source>
-				<target>Bildnachweise</target>
-			</trans-unit>
-			<trans-unit id="templates_article.commentsHeadline">
-				<source>Comments</source>
-				<target>Kommentare</target>
-			</trans-unit>
+
 
 
 			<!--Templates/Publications -->
@@ -167,11 +189,7 @@
             </trans-unit>
 
 
-            <!-- Partials/AlertsBox.html -->
-			<trans-unit id="partials_alertsBox.headline">
-				<source>Stay tuned</source>
-				<target>Bleiben Sie auf dem Laufenden</target>
-			</trans-unit>
+
 
 
             <!-- Partials/Logo.html -->
@@ -191,23 +209,7 @@
 				]]></target>
 			</trans-unit>
 
-            <!-- TypoScript -->
-            <trans-unit id="typoscript_readMore_previous">
-                <source>Previous Page</source>
-                <target>Vorherige Seite</target>
-            </trans-unit>
-            <trans-unit id="typoscript_readMore_previousShort">
-                <source>Back</source>
-                <target>Zurück</target>
-            </trans-unit>
-            <trans-unit id="typoscript_readMore_next">
-                <source>Next Page</source>
-                <target>Nächste Seite</target>
-            </trans-unit>
-            <trans-unit id="typoscript_readMore_nextShort">
-                <source>Next</source>
-                <target>Vor</target>
-            </trans-unit>
+
 
 		</body>
 	</file>

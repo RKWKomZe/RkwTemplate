@@ -16,8 +16,6 @@ page {
 
             //=================================================================
 
-            pageAbstract = TEXT
-            pageAbstract.field = tx_rkwbasics_teaser_text
 
             //=================================================================
 
@@ -187,13 +185,9 @@ page {
 
             //=================================================================
 
-            headerImageArticle < .headerImageSubpage
-            headerImageArticle.renderObj.layout.picture.element  = <picture class="article-picture">###SOURCECOLLECTION###<img src="###SRC###"###PARAMS######ALTPARAMS######SELFCLOSINGTAGSLASH###></picture>
-
-            //=================================================================
-
-            headerVideoArticle = TEXT
-            headerVideoArticle.field = tx_rkwbasics_article_video
         }
     }
 }
+
+
+

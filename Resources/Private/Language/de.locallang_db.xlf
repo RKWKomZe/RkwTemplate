@@ -207,6 +207,25 @@
                 <source>Call To Action</source>
                 <target>Call To Action</target>
             </trans-unit>
+            
+            
+            <!-- ContentContainerOneCol -->
+            <trans-unit id="contentElement.contentContainerOneCol.title">
+                <source>Content-Container with one Col</source>
+                <target>Inhalts-Container mit einer Spalte</target>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerOneCol.description">
+                <source>Add a Content-Container with one Col.</source>
+                <target>Fügt Inhalts-Container mit einer Spalte ein.</target>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerOneCol.content">
+                <source>Content</source>
+                <target>Inhalt</target>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerOneCol.callToAction">
+                <source>Call To Action</source>
+                <target>Call To Action</target>
+            </trans-unit>
 
 
             <!-- Shortlink -->

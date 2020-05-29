@@ -1,0 +1,32 @@
+tx_gridelements.setup.contentContainerOneCol {
+
+    title = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.contentContainerOneCol.title
+    description = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.contentContainerOneCol.description
+    config {
+        colCount = 1
+        rowCount = 2
+        rows {
+            1 {
+                columns {
+                    1 {
+                        name = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.contentContainerOneCol.content
+                        colPos = 50
+                    }
+                }
+            }
+
+            2 {
+
+                columns {
+                    1 {
+                        name = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.contentContainerOneCol.callToAction
+                        colPos = 70
+                        allowed {
+                            CType = list
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
