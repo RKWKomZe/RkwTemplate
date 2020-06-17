@@ -13,85 +13,72 @@ page {
 
             // default template file
             default = TEXT
-            default.value = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/Article.html
+            default.value = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/Topic.html
 
-            1 = TEXT
-            1 {
-                value = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/Article.html
-            }
-
-            2 = TEXT
-            2 {
-                value = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/Home.html
-            }
-
-            3 = TEXT
-            3 {
+            10 = TEXT
+            10 {
                 value = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/Topic.html
             }
 
-            4 = TEXT
-            4 {
+            11 = TEXT
+            11 {
+                value = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/PluginOnly.html
+            }
+
+            12 = TEXT
+            12 {
+                value = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/Topic.html
+            }
+
+            20 = TEXT
+            20 {
+                value = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/Article.html
+            }
+
+            21 = TEXT
+            21 {
+                value = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/Article.html
+            }
+
+            22 = TEXT
+            22 {
+                value = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/Article.html
+            }
+
+            30 = TEXT
+            30 {
                 value = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/Publications.html
             }
 
-            5 = TEXT
-            5 {
-                value = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/Search.html
+            40 = TEXT
+            40 {
+                value = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/Home.html
             }
+
+            50 = TEXT
+            50 {
+                value = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/Map.html
+            }
+
 
             6 = TEXT
             6 {
                 value = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/SearchEmptyResults.html
             }
 
-            7 = TEXT
-            7 {
-                value = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/Topic.html
-            }
 
-            8 = TEXT
-            8 {
-                value = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/Special.html
-            }
-
-            9 = TEXT
-            9 {
-                value = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/Blog.html
-            }
-
-            10 = TEXT
-            10 {
+            77777 = TEXT
+            77777 {
                 value = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/BrokenLink.html
             }
 
-            11 = TEXT
-            11 {
-                value = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/Map.html
-            }
-
-            12 = TEXT
-            12 {
-                value = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/Tools.html
-            }
-
-            100 = TEXT
-            100 {
-                value = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/ConsultantDetail.html
-            }
-
-            200 = TEXT
-            200 {
-                value = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/AuthorList.html
-            }
-
-            210 = TEXT
-            210 {
+            10000 = TEXT
+            10000 {
                 value = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/AuthorDetail.html
             }
 
-            300 = TEXT
-            300 {
+            20000 = TEXT
+            20000 {
                 value = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/EventDetail.html
             }
         }

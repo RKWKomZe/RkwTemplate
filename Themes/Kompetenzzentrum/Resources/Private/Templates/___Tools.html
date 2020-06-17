@@ -19,7 +19,7 @@
                 <f:render partial="KeyVisualHeadline" section="Tools" arguments="{_all}"/>
 
                 <!-- infobox -->
-                <f:render partial="InfoBox" section="Default" arguments="{_all}"/>
+                <f:render partial="InfoBox/Article" arguments="{_all}"/>
 
                 <!-- main part -->
                 <div class="content-box content">
@@ -47,10 +47,10 @@
                 <footer class="article-footer">
 
                     <!-- print and save -->
-                    <f:render partial="Common/PrintSave" arguments="{_all}"/>
+                    <f:render partial="ArticleFooter/PrintSave" arguments="{_all}"/>
 
                     <!-- social media -->
-                    <f:render partial="Common/SocialMedia" arguments="{_all}"/>
+                    <f:render partial="ArticleFooter/SocialMedia" arguments="{_all}"/>
                 </footer>
             </article>
 

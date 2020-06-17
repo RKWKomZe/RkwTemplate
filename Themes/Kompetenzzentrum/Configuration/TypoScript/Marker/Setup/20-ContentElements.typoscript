@@ -2,46 +2,66 @@ page {
     10 {
         variables {
 
-            contentHome = CONTENT
-            contentHome < styles.content.get
-            contentHome.select.where = {#colPos} = 100
-
-            promotion = CONTENT
-            promotion < styles.content.get
-            promotion.select.where = {#colPos} = 210
-            promotion.slide = -1
-
-           # boxesContentTopic = CONTENT
-           # boxesContentTopic < styles.content.get
-           # boxesContentTopic.select.where = {#colPos} = 220
-
-            #boxesContentArticle = CONTENT
-            #boxesContentArticle < styles.content.get
-            #boxesContentArticle.select.where = {#colPos} = 310
-
-            boxesContentInherit = CONTENT
-            boxesContentInherit < styles.content.get
-            boxesContentInherit.select.where = {#colPos} = 10
-            boxesContentInherit.slide = -1
-
-
             // toDo
             boxTask = CONTENT
             boxTask < styles.content.get
             boxTask.select.where = {#colPos} = 12
 
-            logoBoxes = CONTENT
-            logoBoxes < styles.content.get
-            logoBoxes.select.where = {#colPos} = 5
-
-
-            boxContentPrio = CONTENT
-            boxContentPrio < styles.content.get
-            boxContentPrio.select.where = {#colPos} = 9
-            boxContentPrio.slide = -1
-
-
-
         }
+    }
+}
+
+lib.txRkwTemplate {
+
+    content {
+
+        home = CONTENT
+        home < styles.content.get
+        home.select.where = {#colPos} = 100
+
+        related = CONTENT
+        related < styles.content.get
+        related.select.where = {#colPos} = 110
+        related.slide = -1
+
+        promotion = CONTENT
+        promotion < styles.content.get
+        promotion.select.where = {#colPos} = 210
+        promotion.slide = -1
+
+        boxesTopic = CONTENT
+        boxesTopic < styles.content.get
+        boxesTopic.select.where = {#colPos} = 220
+
+        boxesTopicInherit = CONTENT
+        boxesTopicInherit < styles.content.get
+        boxesTopicInherit.select.where = {#colPos} = 230
+        boxesTopicInherit.slide = -1
+
+        boxesArticle = CONTENT
+        boxesArticle < styles.content.get
+        boxesArticle.select.where = {#colPos} = 310
+
+        boxesPublication = CONTENT
+        boxesPublication < styles.content.get
+        boxesPublication.select.where = {#colPos} = 410
+
+        boxesPublicationInherit = CONTENT
+        boxesPublicationInherit < styles.content.get
+        boxesPublicationInherit.select.where = {#colPos} = 420
+        boxesPublicationInherit.slide = -1
+
+        pluginOnly = CONTENT
+        pluginOnly < styles.content.get
+        pluginOnly.select.where = {#colPos} = 500
+
+        headlineExpert = CONTENT
+        headlineExpert < styles.content.get
+        headlineExpert.select.where = {#colPos} = 610
+
+        boxesExpert = CONTENT
+        boxesExpert < styles.content.get
+        boxesExpert.select.where = {#colPos} = 620
+
     }
 }

@@ -4,7 +4,7 @@
         <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.boxes.projectLogo', data:'{pageUid: data.pid}' )}">
             <f:cObject typoscriptObjectPath="lib.txRkwTemplate.boxes.projectLogo" data="{pageUid: data.pid}" />
         </f:if>
-        <f:cObject typoscriptObjectPath="lib.txRkwTemplate.extension.pageAuthorsBox" />
+        <f:cObject typoscriptObjectPath="lib.txRkwTemplate.pageInfo.authorsBox" />
         <f:format.html parseFuncTSPath="">{data.tx_gridelements_view_column_60}</f:format.html>
     </div>
 

@@ -11,26 +11,24 @@ TCEFORM.pages {
     // determine selectable layouts
     // value = 0 equals inheritance, value = 1 is default
     layout {
-        // removeItems = 100
+        removeItems = 1,2,3,4,100
+
         altLabels.0 = Vererben
-        altLabels.1 = Artikel
-        altLabels.2 = Home
-        altLabels.3 = Thema
+        addItems.10 = Thema
+        addItems.11 = Thema: Nur Plugin
+        addItems.12 = Thema: Mein RKW
+        addItems.20 = Artikel
+        addItems.21 = Artikel: Tools
+        addItems.22 = Artikel: Spezial
+        addItems.30 = Publikationen
+        addItems.40 = Home
+        addItems.50 = RKW Karte
 
         // add more items
-        addItems.4 = Publikationen
-        addItems.5 = Suche: Standard
         addItems.6 = Suche: Keine Ergebnisse
-        addItems.7 = Mein RKW
-        addItems.8 = Spezialseiten
-        addItems.9 = Blog Startseite
-        addItems.10 = Broken Link
-        addItems.11 = RKW Karte
-        addItems.12 = Tools
-        addItems.100 = Berater Detailseite
-        addItems.200 = Experten Listenansicht
-        addItems.210 = Experten Detailseite
-        addItems.300 = Veranstaltungen Detailseite
+        addItems.77777 = Broken Link
+        addItems.10000 = Detailseite: Experten
+        addItems.20000 = Detailseite: Veranstaltungen
     }
 
     //===============================================================
@@ -39,25 +37,25 @@ TCEFORM.pages {
     // determine selectable layouts
     // value = 0 equals inheritance, value = 1 is default
     tx_rkwbasics_fe_layout_next_level {
+
+        removeItems = 1,2,3,4,100
+
         altLabels.0 = Vererben
-        altLabels.1 = Artikel
-        altLabels.2 = Home
-        altLabels.3 = Thema
+        addItems.10 = Thema
+        addItems.11 = Thema: Nur Plugin
+        addItems.12 = Thema: Mein RKW
+        addItems.20 = Artikel
+        addItems.21 = Artikel: Tools
+        addItems.22 = Artikel: Spezial
+        addItems.30 = Publikationen
+        addItems.40 = Home
+        addItems.50 = RKW Karte
 
         // add more items
-        addItems.4 = Publikationen
-        addItems.5 = Suche: Standard
         addItems.6 = Suche: Keine Ergebnisse
-        addItems.7 = Mein RKW
-        addItems.8 = Spezialseiten
-        addItems.9 = Blog Startseite
-        addItems.10 = Broken Link
-        addItems.11 = RKW Karte
-        addItems.12 = Tools
-        addItems.100 = Berater Detailseite
-        addItems.200 = Experten Listenansicht
-        addItems.210 = Experten Detailseite
-        addItems.300 = Veranstaltungen Detailseite
+        addItems.77777 = Broken Link
+        addItems.10000 = Detailseite: Experten
+        addItems.20000 = Detailseite: Veranstaltungen
     }
 
     //===============================================================

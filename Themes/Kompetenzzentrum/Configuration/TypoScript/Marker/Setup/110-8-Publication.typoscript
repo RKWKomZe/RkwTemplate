@@ -1,0 +1,87 @@
+lib.txRkwTemplate {
+
+    publication {
+
+        isParentPage = TEXT
+        isParentPage.value = 1
+        isParentPage.if.isTrue.field = tx_bmpdf2content_is_import
+        isParentPage.if.isTrue.if.isFalse.field = tx_bmpdf2content_is_import_sub
+
+        //=================================================================
+        isSubPage = TEXT
+        isSubPage.value = 1
+        isSubPage.if.isTrue.field = tx_bmpdf2content_is_import
+        isSubPage.if.isTrue.if.isTrue.field = tx_bmpdf2content_is_import_sub
+
+        //=================================================================
+        parentTitle = USER
+        parentTitle {
+            userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+            extensionName = BmPdf2content
+            pluginName = Pi1
+            vendorName = BM
+            controller = DisplayPages
+            switchableControllerActions {
+                // Again: Controller-Name and Action
+                DisplayPages {
+                    1 = importParentPage
+                }
+            }
+
+            view =< plugin.tx_bmpdf2content.view
+            persistence =< plugin.tx_bmpdf2content.persistence
+            settings =< plugin.tx_bmpdf2content.settings
+            settings.importParentPage.showField = title
+        }
+
+        //=================================================================
+        parentUid = USER
+        parentUid {
+            userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+            extensionName = BmPdf2content
+            pluginName = Pi1
+            vendorName = BM
+            controller = DisplayPages
+            switchableControllerActions {
+                // Again: Controller-Name and Action
+                DisplayPages {
+                    1 = importParentPage
+                }
+            }
+
+            view =< plugin.tx_bmpdf2content.view
+            persistence =< plugin.tx_bmpdf2content.persistence
+            settings =< plugin.tx_bmpdf2content.settings
+            settings.importParentPage.showField = uid
+        }
+
+        //=================================================================
+        parentPubDate = USER
+        parentPubDate {
+            userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+            extensionName = BmPdf2content
+            pluginName = Pi1
+            vendorName = BM
+            controller = DisplayPages
+            switchableControllerActions {
+                // Again: Controller-Name and Action
+                DisplayPages {
+                    1 = importParentPage
+                }
+            }
+
+            view =< plugin.tx_bmpdf2content.view
+            persistence =< plugin.tx_bmpdf2content.persistence
+            settings =< plugin.tx_bmpdf2content.settings
+            settings.importParentPage.showField = lastUpdated
+
+            // Fallback for those without active RKW Search
+            stdWrap.ifEmpty.cObject = TEXT
+            stdWrap.ifEmpty.cObject {
+                field = crdate
+                field.override = lastUpdated
+            }
+        }
+
+    }
+}

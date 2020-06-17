@@ -1,98 +1,46 @@
-{namespace rkwBasics=RKW\RkwBasics\ViewHelpers}
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
-<f:layout name="{pageLayoutSwitch}" />
+    <f:layout name="{pageLayoutSwitch}" />
 
-<f:section name="content">
+    <f:section name="content">
 
-    <!-- top-menu -->
-    <f:render partial="SubNav" section="Default" arguments="{_all}"/>
+        <!-- top-menu -->
+        <f:render partial="SubNav" section="Default" arguments="{_all}"/>
 
-    <div class="page-area-grid content-page__content">
+        <div class="page-area-grid content-page__content">
+            <div class="article">
+                <article class="publications-article {f:if(condition: '{f:cObject(typoscriptObjectPath:\'lib.txRkwTemplate.publication.isSubPage\', data:\'{data}\')} == \'1\'', then: 'publications-article--chapter')}" aria-labelledby="article-headline">
 
-        <!-- schema.org -->
-        <f:render partial="SchemaOrg" section="Publications" arguments="{_all}"/>
+                    <!-- key-visual-->
+                    <f:render partial="Keyvisual/Publication" arguments="{_all}"/>
 
-        <!-- article -->
-        <div class="article">
-            <article class="publications-article {f:if(condition: '{isImportSubPage} == \'1\'', then: 'publications-article--chapter')}" aria-labelledby="article-headline">
-
-                <!-- key-visual and slogan -->
-                <f:if condition="{isImportSubPage} == 1">
-                    <f:then>
-                        <f:render partial="KeyVisualHeadline" section="PublicationSubs" arguments="{_all}"/>
-                    </f:then>
-                    <f:else>
-                        <f:render partial="KeyVisualHeadline" section="Publications" arguments="{_all}"/>
-                    </f:else>
-                </f:if>
-
-                <!-- info box -->
-                <f:if condition="{isImportSubPage} == 1">
-                    <f:then>
-                        <f:render partial="InfoBox" section="PublicationSubs" arguments="{_all}"/>
-                    </f:then>
-                    <f:else>
-                        <f:render partial="InfoBox" section="Publications" arguments="{_all}"/>
-                    </f:else>
-                </f:if>
-
-                <div class="content-box content">
-
-                    <!-- breadcrumb -->
-                    <f:format.html parseFuncTSPath="">{breadcrumbNav}</f:format.html>
+                    <!-- info box -->
+                    <f:render partial="InfoBox/Publication" arguments="{_all}"/>
 
                     <!-- content -->
-                    <div class="wysiwyg">
-                        <f:if condition="{isImportSubPage} == 1">
-                            <f:then>
-                                <f:format.html parseFuncTSPath="">{content}</f:format.html>
-                            </f:then>
-                            <f:else>
-                                <div class="csc-default csc-element-n1">
-                                    <p><f:format.html parseFuncTSPath="">{pageAbstractInherit}</f:format.html></p>
-                                    <f:if condition="<rkwBasics:isEmpty string='{pageInformation}' /> == 0"><f:format.html parseFuncTSPath="lib.parseFunc_RTE">{pageInformation}</f:format.html></f:if>
-                                    <f:format.html parseFuncTSPath="">{content}</f:format.html>
-                                </div>
-                            </f:else>
-                        </f:if>
-                    </div>
+                    <f:format.html parseFuncTSPath="">{content}</f:format.html>
 
-                    <!-- read-more button -->
-                    <f:if condition="{isImportSubPage} == 1">
-                        <f:then>
-                            <f:format.html parseFuncTSPath="">{readMoreNav}</f:format.html>
-                        </f:then>
-                        <f:else>
-                            <f:format.html parseFuncTSPath="">{beginReadNav}</f:format.html>
-                        </f:else>
-                    </f:if>
+                    <!-- share, print and save -->
+                    <footer class="article-footer">
+                        <f:render partial="SharePrint/PrintSave" arguments="{_all}"/>
+                        <f:render partial="SharePrint/SocialMedia" arguments="{_all}"/>
+                    </footer>
+                </article>
 
-                    <!-- image resources -->
-                    <f:if condition="<rkwBasics:isEmpty string='{imageResourcesArticles}' /> == 0">
-                        <div class="media-sources" role="contentinfo">
-                            <strong><f:translate key="LLL:EXT:rkw_template/Resources/Private/Language/Kompetenzzentrum/locallang.xlf:templates_publications.imageResources" />: </strong>
-                            <f:format.html parseFuncTSPath="">{imageResourcesArticles}</f:format.html>
-                        </div>
-                    </f:if>
+                <div class="sections narrow">
+
+                    <!-- boxes -->
+                    <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.boxesPublication" data="{data}" />
+                    <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.boxesPublicationInherit" data="{data}" />
+
                 </div>
+            </div>
 
-                <!-- share, print and save -->
-                <footer class="article-footer">
-                    <f:render partial="Common/PrintSave" arguments="{_all}"/>
-                    <f:render partial="Common/SocialMedia" arguments="{_all}"/>
-                </footer>
-
-            </article>
-
-            <!-- further boxes here -->
-            <f:render partial="AdditionalBoxes" section="Publications" arguments="{_all}"/>
+            <!-- related -->
+            <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.related" data="{data}" />
 
         </div>
 
-        <!-- related here -->
-        <f:format.html parseFuncTSPath="">{relatedBoxes}</f:format.html>
+    </f:section>
 
-    </div>
-
-</f:section>
-
+</html>

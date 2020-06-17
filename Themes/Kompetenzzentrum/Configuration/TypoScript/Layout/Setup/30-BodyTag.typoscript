@@ -24,75 +24,67 @@ page {
 
             // default template file
             default = TEXT
-            default.value = project page-grid--4
+            default.value = page-area page-grid--4
 
-            1 = TEXT
-            1 {
-                value = project page-grid--4
-            }
-
-            2 = TEXT
-            2 {
-                value = home page-grid--4
-            }
-
-            3 = TEXT
-            3 {
+            10 = TEXT
+            10 {
                 value = page-area page-grid--4
             }
 
-            4 = TEXT
-            4 {
+            11 = TEXT
+            11 {
+                # value = page-grid--4
+                value = page-area page-grid--4
+            }
+
+            12 = TEXT
+            12 {
+                value = page-area first-letter-normal page-grid--4
+            }
+
+            20 = TEXT
+            20 {
+                value = project page-grid--4
+            }
+
+            21 = TEXT
+            21 {
+                value = project project--full page-grid--4
+            }
+
+            22 = TEXT
+            22 {
+                value = project first-letter-normal page-grid--4
+            }
+
+            30 = TEXT
+            30 {
                 value = publication page-grid--4
             }
 
-            5 = TEXT
-            5 {
-                value = page-grid--4
+            40 = TEXT
+            40 {
+                value = home page-grid--4
             }
+
+            50 = TEXT
+            50 {
+                value = page-map page-grid--4
+            }
+
 
             6 = TEXT
             6 {
                 value = page-grid--4
             }
 
-            7 = TEXT
-            7 {
-                value = page-area first-letter-normal page-grid--4
-            }
-
-            8 = TEXT
-            8 {
-                value = project first-letter-normal page-grid--4
-            }
-
-            9 = TEXT
-            9 {
-                value = page-area page-grid--4
-            }
-
-            10 = TEXT
-            10 {
+            77777 = TEXT
+            77777 {
                 value = page-broken-link page-grid--4
             }
 
-            11 = TEXT
-            11 {
-                value = page-map page-grid--4
-            }
-
-            12 = TEXT
-            12 {
-                value =  project project--full page-grid--4
-            }
-
-            200 = TEXT
-            200 {
-                value = page-grid--4
-            }
-
-            210 = COA_INT
-            210 {
+            10000 = COA_INT
+            10000 {
                 10 = TEXT
                 10.value {
                     // create nested select db query
@@ -114,8 +106,8 @@ page {
                 20.noTrimWrap = | ||
             }
 
-            300 = COA_INT
-            300 {
+            20000 = COA_INT
+            20000 {
                 10 = TEXT
                 10.value {
                     // create nested select db query

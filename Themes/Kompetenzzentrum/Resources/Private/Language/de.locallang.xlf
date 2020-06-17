@@ -13,42 +13,60 @@
                 <source>Stay tuned</source>
                 <target>Bleiben Sie auf dem Laufenden</target>
             </trans-unit>
+
+
             <trans-unit id="partials.infoBox.labelAbstract">
 				<source>Abstract</source>
 				<target>Zusammenfassung</target>
-			</trans-unit>
-			<trans-unit id="partials.infoBox.labelDate">
-				<source>Published</source>
-				<target>Veröffentlicht</target>
 			</trans-unit>
 			<trans-unit id="partials.infoBox.labelMore">
 				<source>More Information</source>
 				<target>Mehr Informationen</target>
 			</trans-unit>
-			<trans-unit id="partials.infoBox.labelPubYear">
-				<source>Year of Publication</source>
-				<target>Jahr der Veröffentlichung</target>
-			</trans-unit>
-			<trans-unit id="partials.infoBox.labelFilesize">
-				<source>Filesize</source>
-				<target>Dateigröße</target>
-			</trans-unit>
-			<trans-unit id="partials.infoBox.labelAuthors">
-				<source>Authors</source>
-				<target>Autoren</target>
-			</trans-unit>
-            <trans-unit id="partials.infoBox.labelProject">
+
+
+
+
+
+
+            <trans-unit id="partials.infoBox.partials.project.labelProject">
                 <source>Project</source>
                 <target>Projekt</target>
             </trans-unit>
-            <trans-unit id="partials.infoBox.labelTableOfContents">
+			<trans-unit id="partials.infoBox.partials.date.labelDate">
+				<source>Published</source>
+				<target>Veröffentlicht</target>
+			</trans-unit>
+			<trans-unit id="partials.infoBox.partials.date.labelPubYear">
+				<source>Year of Publication</source>
+				<target>Jahr der Veröffentlichung</target>
+			</trans-unit>
+            <trans-unit id="partials.infoBox.partials.fileSize.labelFileSize">
+                <source>Filesize</source>
+                <target>Dateigröße</target>
+            </trans-unit>
+            <trans-unit id="partials.infoBox.partials.authors.labelAuthors">
+				<source>Authors</source>
+				<target>Autoren</target>
+			</trans-unit>
+            <trans-unit id="partials.infoBox.partials.tableOfContents.labelTableOfContents">
                 <source>Table of Contents</source>
                 <target>Inhaltsverzeichnis</target>
-            </trans-unit>
-            <trans-unit id="partials.infoBox.labelPublication">
+			</trans-unit>
+            <trans-unit id="partials.infoBox.partials.parentPage.labelParentPage">
                 <source>Publication</source>
                 <target>Publikation</target>
             </trans-unit>
+
+
+
+
+            <trans-unit id="partials.keyVisual.labelChapter">
+                <source>Chapter</source>
+                <target>Kapitel</target>
+            </trans-unit>
+
+
 
 
 
@@ -143,11 +161,6 @@
             </trans-unit>
 
 
-            <!-- Partials/KeyVisualHeadline -->
-            <trans-unit id="partials_keyVisualHeadline.labelChapter">
-                <source>Chapter</source>
-                <target>Kapitel</target>
-            </trans-unit>
 
 
             <!-- Partials/InfoBox -->

@@ -11,7 +11,7 @@ page {
             //=================================================================
             // Introduction
             //=================================================================
-            searchDescription = CONTENT
+            /*searchDescription = CONTENT
             searchDescription {
                 table = tt_content
                 select {
@@ -20,6 +20,7 @@ page {
                     languageField = sys_language_uid
                 }
             }
+            */
 
             //=================================================================
             // Headline-Content

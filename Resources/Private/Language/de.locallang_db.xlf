@@ -13,6 +13,10 @@
                <source>Article (Desktop)</source>
                <target>Artikel (Desktop)</target>
             </trans-unit>
+            <trans-unit id="pages.keyvisual.imageManipulation.publicationDesktop">
+               <source>Publication (Desktop)</source>
+               <target>Publikation (Desktop)</target>
+            </trans-unit>
             <trans-unit id="pages.keyvisual.imageManipulation.teaser">
                <source>Teaser</source>
                <target>Teaser</target>

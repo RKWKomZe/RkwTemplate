@@ -133,35 +133,61 @@ page {
 				10 = COA
 				10 {
 
-					// teaser immage with fallbacks
+					// teaser image with fallbacks
 					10 = FILES
 					10 {
 
 						references {
 							table = pages
                             data =  levelmedia : -1,slide
-							override.data = levelfield : -1, tx_rkwbasics_teaser_image, slide
-							override.required = 1
-
+							# override.data = levelfield : -1, tx_rkwbasics_teaser_image, slide
+							# override.required = 1
 						}
 
 						maxItems = 1
 
-						renderObj = IMG_RESOURCE
+						renderObj = COA
 						renderObj {
 
-							// Aktuellen file einfach nehmen
-							file.import.data = file:current:publicUrl
+                            // we need to use register here because inside GIFBUILDER "file" ist not available
+                            10 = LOAD_REGISTER
+                            10 {
+                               param = TEXT
+                               param.data = file:current:publicUrl
+                            }
 
-							// maximale Breite des Fallback-Images
-							// see: https://developers.facebook.com/docs/sharing/best-practices#images
-							file {
-								maxW = 1200
-								maxH = 630
+                            20 = IMG_RESOURCE
+                            20 {
 
-								minW = 200
-								minH = 200
-							}
+                                file = GIFBUILDER
+                                file {
+
+                                    // define format and size
+                                    // see: https://developers.facebook.com/docs/sharing/best-practices#images
+                                    XY = 1200,630
+                                    format = jpg
+
+                                    // add image
+                                    10 = IMAGE
+                                    10 {
+                                        file {
+                                            import.data = register:param
+                                            width = 1200c
+                                            height = 630c
+                                        }
+                                    }
+
+                                    // add watermark
+                                    20 = IMAGE
+                                    20 {
+                                        file = {$plugin.tx_rkwtemplate_themeconfig.paths.default.icons}/favicon-96x96.png
+                                        # offset = 1104,534
+                                        offset = 0,0
+                                    }
+                                }
+                            }
+
+                            90 = RESTORE_REGISTER
 						}
 					}
 

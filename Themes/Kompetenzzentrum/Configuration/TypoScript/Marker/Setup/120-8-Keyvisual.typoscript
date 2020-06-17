@@ -26,8 +26,8 @@ lib.txRkwTemplate {
                 }
             }
 
-            15 = FLUIDTEMPLATE
-            15 {
+            20 = FLUIDTEMPLATE
+            20 {
 
                 file = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/FluidTemplateLibs/Keyvisual/Topic.html
                 dataProcessing {
@@ -36,10 +36,10 @@ lib.txRkwTemplate {
 
                         files.data = register:imageIdList
                         as = images
-                        }
                     }
+                }
 
-                    stdWrap.replacement {
+                stdWrap.replacement {
                     1 {
                         search = #\s#
                         replace =
@@ -55,8 +55,6 @@ lib.txRkwTemplate {
 
         article = FLUIDTEMPLATE
         article {
-
-            partialRootPaths.0 = EXT:rkw_basics/Resources/Private/Templates/FluidTemplateLibs
 
             file = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/FluidTemplateLibs/Keyvisual/Article.html
             dataProcessing {
@@ -88,6 +86,39 @@ lib.txRkwTemplate {
                     mobile2 = articleDesktop
                     mobile = articleDesktop
                     fallback = articleDesktop
+                }
+            }
+        }
+
+        #============================================================
+        publication < .topic
+        publication {
+
+            20 >
+            20 < lib.txRkwTemplate.keyvisual.article
+            20 {
+
+                file = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/FluidTemplateLibs/Keyvisual/Publication.html
+                dataProcessing >
+                dataProcessing {
+                    10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+                    10 {
+
+                        files.data = register:imageIdList
+                        as = images
+                    }
+                }
+
+                settings {
+
+                    additionalAttributes = class="publications-article__picture"
+
+                    cropVariant {
+                        tablet = publicationDesktop
+                        mobile2 = publicationDesktop
+                        mobile = publicationDesktop
+                        fallback = publicationDesktop
+                    }
                 }
             }
         }

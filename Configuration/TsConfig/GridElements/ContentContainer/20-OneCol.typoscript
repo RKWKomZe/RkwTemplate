@@ -16,7 +16,6 @@ tx_gridelements.setup.contentContainerOneCol {
             }
 
             2 {
-
                 columns {
                     1 {
                         name = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.contentContainerOneCol.callToAction

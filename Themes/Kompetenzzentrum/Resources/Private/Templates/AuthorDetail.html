@@ -2,7 +2,9 @@
 
 <f:section name="content">
 
-	<f:format.html parseFuncTSPath="">{headlineContent}</f:format.html>
+	<header class="page-headings page-headings--no-image">
+		<f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.headlineExpert" data="{data}" />
+	</header>
 
 	<!-- details -->
 	<div class="expert-grid">
@@ -11,7 +13,7 @@
 
         <!-- further boxes -->
         <div class="sections">
-			<f:format.html parseFuncTSPath="">{authorWork}</f:format.html>
+			<f:cObject typoscriptObjectPath="lib.txRkwTemplate.expert.work" data="{data}" />
 		</div>
 	</div>
 

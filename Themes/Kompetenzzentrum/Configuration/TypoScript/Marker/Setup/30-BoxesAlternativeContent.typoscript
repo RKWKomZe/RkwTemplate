@@ -53,7 +53,7 @@ page {
             //=================================================================
             // Additional boxes below the contents
             //=================================================================
-            boxContentPublications = CONTENT
+            /*boxContentPublications = CONTENT
             boxContentPublications {
 
                 slide = -1
@@ -89,11 +89,12 @@ page {
                     wrap = <section class="section" role="complementary">|</section>
                 }
             }
+            */
 
             //=================================================================
             // Additional boxes below the contents for articles
             //=================================================================
-            boxContentArticles = CONTENT
+            /*boxContentArticles = CONTENT
             boxContentArticles {
 
                 slide = -1
@@ -128,7 +129,7 @@ page {
 
                     wrap = <section class="section" role="complementary">|</section>
                 }
-            }
+            }*/
 
             //=================================================================
             // Additional boxes below the contents
@@ -173,6 +174,7 @@ page {
             //=================================================================
             // plugin only
             //=================================================================
+            /*
             pluginOnly = CONTENT
             pluginOnly {
                 slide = -1
@@ -197,6 +199,7 @@ page {
                     20 < tt_content.list.20
                 }
             }
+            */
 
 
 
@@ -204,6 +207,7 @@ page {
             //=================================================================
             // News-Content
             //=================================================================
+            /*
             callToAction = CONTENT
             callToAction {
 
@@ -219,6 +223,7 @@ page {
                 renderObj < tt_content.list
                 renderObj.10 >
             }
+            */
         }
     }
 }

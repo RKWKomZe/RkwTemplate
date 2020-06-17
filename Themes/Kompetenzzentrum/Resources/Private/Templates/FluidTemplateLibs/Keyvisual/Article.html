@@ -14,10 +14,10 @@
         </f:switch>
     </f:if>
 
-    <!-- ======================================================================== -->
+    <f:comment><!-- ======================================================================== --></f:comment>
 
     <f:section name="Image">
-        <f:render partial="ResponsiveImages" arguments="{fileReference: '{file.uid}', settings: settings}"/>
+        <f:cObject typoscriptObjectPath="lib.txRkwBasics.responsiveImage" data="{file: '{file.uid}', treatIdAsReference: 1, settings: settings}" />
     </f:section>
 
     <f:section name="Video">

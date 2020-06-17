@@ -1,53 +1,146 @@
-{namespace rkwBasics=RKW\RkwBasics\ViewHelpers}
-<f:layout name="{pageLayoutSwitch}" />
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
-<f:section name="content">
+    <f:layout name="{pageLayoutSwitch}" />
 
-    <!-- top-menu -->
-    <f:render partial="SubNav" section="Default" arguments="{_all}"/>
+    <f:section name="content">
 
-    <div class="page-area-grid">
-        <div class="article">
+        <f:if condition="{pageLayoutType} == 22">
+            <f:then>
+                <f:render section="Special" arguments="{_all}"/>
+            </f:then>
+            <f:else>
+                <f:if condition="{pageLayoutType} == 21">
+                    <f:then>
+                        <f:render section="Tools" arguments="{_all}"/>
+                    </f:then>
+                    <f:else>
+                        <f:render section="Default" arguments="{_all}"/>
+                    </f:else>
+                </f:if>
+            </f:else>
+        </f:if>
 
-
-            <article class="project-article" aria-labelledby="article-headline">
-
-                <!-- key-visual and slogan -->
-                <f:render partial="Keyvisual/Article" arguments="{_all}"/>
-
-                <!-- infobox -->
-                <f:render partial="InfoBox" section="Default" arguments="{_all}"/>
-
-                <!-- content -->
-                <f:format.html parseFuncTSPath="">{content}</f:format.html>
-
-                <!-- footer -->
-                <footer class="article-footer">
-
-                    <!-- print and save -->
-                    <f:render partial="Common/PrintSave" arguments="{_all}"/>
-
-                    <!-- social media -->
-                    <f:render partial="Common/SocialMedia" arguments="{_all}"/>
-                </footer>
-            </article>
+    </f:section>
 
 
-            <div class="sections narrow">
+    <f:comment><!-- ======================================================================== --></f:comment>
 
-                <!-- alerts -->
-                <f:render partial="AlertsBox" arguments="{_all}"/>
+    <f:section name="Default">
 
-                <!-- boxes -->
-                <f:format.html parseFuncTSPath="">{boxesContentArticle}</f:format.html>
+        <!-- top-menu -->
+        <f:render partial="SubNav" section="Default" arguments="{_all}"/>
 
+        <div class="page-area-grid">
+            <div class="article">
+
+                <article class="project-article" aria-labelledby="article-headline">
+
+                    <!-- key-visual and slogan -->
+                    <f:render partial="Keyvisual/Article/Default" arguments="{_all}"/>
+
+                    <!-- infobox -->
+                    <f:render partial="InfoBox/Article" arguments="{_all}"/>
+
+                    <!-- content -->
+                    <f:format.html parseFuncTSPath="">{content}</f:format.html>
+
+                    <!-- footer -->
+                    <footer class="article-footer">
+                        <f:render partial="SharePrint/PrintSave" arguments="{_all}"/>
+                        <f:render partial="SharePrint/SocialMedia" arguments="{_all}"/>
+                    </footer>
+                </article>
+
+                <div class="sections narrow">
+
+                    <!-- alerts -->
+                    <f:render partial="AlertsBox" arguments="{_all}"/>
+
+                    <!-- boxes -->
+                    <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.boxesArticle" data="{data}" />
+
+                </div>
             </div>
 
+            <!-- related -->
+            <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.related" data="{data}" />
+        </div>
+    </f:section>
+
+    <f:comment><!-- ======================================================================== --></f:comment>
+
+    <f:section name="Tools">
+
+        <!-- top-menu -->
+        <f:render partial="SubNav" section="Default" arguments="{_all}"/>
+
+        <div class="page-area-grid">
+            <div class="article">
+
+                <article class="project-article" aria-labelledby="article-headline">
+
+                    <!-- key-visual and slogan -->
+                    <f:render partial="Keyvisual/Article/Tools" arguments="{_all}"/>
+
+                    <!-- infobox -->
+                    <f:render partial="InfoBox/Article" arguments="{_all}"/>
+
+                    <!-- content -->
+                    <f:format.html parseFuncTSPath="">{content}</f:format.html>
+
+                    <!-- footer -->
+                    <footer class="article-footer">
+                        <f:render partial="SharePrint/PrintSave" arguments="{_all}"/>
+                        <f:render partial="SharePrint/SocialMedia" arguments="{_all}"/>
+                    </footer>
+                </article>
+
+                <div class="sections narrow">
+
+                    <!-- alerts -->
+                    <f:render partial="AlertsBox" arguments="{_all}"/>
+
+                    <!-- boxes -->
+                    <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.boxesArticle" data="{data}" />
+
+                </div>
+            </div>
+
+            <!-- related -->
+            <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.related" data="{data}" />
         </div>
 
-        <!-- related -->
-        <f:format.html parseFuncTSPath="">{relatedBoxes}</f:format.html>
-    </div>
+    </f:section>
 
-</f:section>
 
+    <f:comment><!-- ======================================================================== --></f:comment>
+
+    <f:section name="Special">
+
+        <div class="page-area-grid">
+            <div class="article">
+
+                <article class="project-article" aria-labelledby="article-headline">
+
+                    <!-- key-visual and slogan -->
+                    <f:render partial="Keyvisual/Article/Special" arguments="{_all}"/>
+
+                    <!-- main part -->
+                    <div class="content-box content wysiwyg">
+                        <f:format.html parseFuncTSPath="">{content}</f:format.html>
+                    </div>
+
+                </article>
+
+                <div class="sections narrow">
+
+                    <!-- boxes -->
+                    <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.boxesArticle" data="{data}" />
+
+                </div>
+            </div>
+        </div>
+
+    </f:section>
+
+</html>

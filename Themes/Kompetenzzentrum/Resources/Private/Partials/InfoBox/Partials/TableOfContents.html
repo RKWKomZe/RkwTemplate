@@ -1,0 +1,52 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+    <f:section name="TabToggle">
+
+        <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.navigation.toc', data:'{data}')}">
+            <p role="tab">
+                <a class="accordion-button toggle-project button" data-toggle="tab-1" href="#">
+                    <span class="icon-arrow-right">
+                        <f:translate key="LLL:EXT:rkw_template/Themes/Kompetenzzentrum/Resources/Private/Language/locallang.xlf:partials.infoBox.partials.tableOfContents.labelTableOfContents"/>
+                    </span>
+                </a>
+            </p>
+        </f:if>
+
+    </f:section>
+
+    <f:comment><!-- ======================================================================== --></f:comment>
+
+    <f:section name="TabToggleSticky">
+
+        <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.navigation.toc', data:'{data}')}">
+            <p class="sticky-slide" role="tab">
+                <a class="accordion-button toggle-project button" data-toggle="tab-1" href="#">
+                    <span class="icon-arrow-right">
+                        <f:translate key="LLL:EXT:rkw_template/Themes/Kompetenzzentrum/Resources/Private/Language/locallang.xlf:partials.infoBox.partials.tableOfContents.labelTableOfContents"/>
+                    </span>
+                </a>
+            </p>
+        </f:if>
+
+    </f:section>
+
+    <f:comment><!-- ======================================================================== --></f:comment>
+
+    <f:section name="TabContent">
+
+        <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.navigation.toc', data:'{data}')}">
+            <div class="toggled-content" data-tab="tab-1">
+                <div class="box-content infobox-content wysiwyg">
+                    <div class="publications-contents-table">
+                        <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.toc" data="{data}" />
+                    </div>
+                    <div class="publications-contents-table__close-container">
+                        <a href="#" class="publications-contents-table__close-icon icon-close link"></a>
+                    </div>
+                </div>
+            </div>
+        </f:if>
+
+    </f:section>
+
+</html>

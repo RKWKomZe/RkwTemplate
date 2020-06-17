@@ -4,13 +4,44 @@
 	<f:comment>special rendering for plugins that are not in colPos 0</f:comment>
 	<f:if condition="({data.CType} == 'list') && ({data.colPos} != 0)">
 		<f:then>
-			<section role="complementary" aria-labelledby="section-header-{data.uid}">
-				<h4 class="h2 section-header" id="section-header-{data.uid}">
-					{data.header}
-				</h4>
-				<f:render section="Main"/>
-			</section>
 
+			<f:if condition="{data.colPos} == '110'">
+				<f:then>
+					<aside class="related-box" aria-labelledby="section-header-{data.uid}">
+					<f:if condition="{data.header}">
+						<div class="related-box-title">
+							<h4 class="h2 section-header" id="section-header-{data.uid}">
+								{data.header}
+							</h4>
+						</div>
+					</f:if>
+				</f:then>
+				<f:else>
+					<f:if condition="{data.header}">
+						<f:then>
+							<section role="complementary" aria-labelledby="section-header-{data.uid}">
+								<h4 class="h2 section-header" id="section-header-{data.uid}">
+									{data.header}
+								</h4>
+						</f:then>
+						<f:else>
+							<section aria-labelledby="article-headline" role="search">
+						</f:else>
+					</f:if>
+
+				</f:else>
+			</f:if>
+
+			<f:render section="Main"/>
+
+			<f:if condition="{data.colPos} == '110'">
+				<f:then>
+					</aside>
+				</f:then>
+				<f:else>
+					</section>
+				</f:else>
+			</f:if>
 		</f:then>
 		<f:else>
 			<f:if condition="{data.frame_class} != none">

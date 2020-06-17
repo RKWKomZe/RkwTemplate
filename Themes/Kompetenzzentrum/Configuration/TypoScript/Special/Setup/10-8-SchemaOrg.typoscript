@@ -17,6 +17,12 @@ lib.txRkwTemplate {
         websiteName = TEXT
         websiteName.value = {$plugin.tx_rkwtemplate_themeconfig.website.name}
 
+        //=================================================================
+        isSubPage = TEXT
+        isSubPage.value = 1
+        isSubPage.if.isTrue.data = field:tx_bmpdf2content_is_import
+        isSubPage.if.isTrue.if.isTrue.data = field:tx_bmpdf2content_is_import_sub
+
         #=================================================================
         pageHeader < page.headerData.5000.60.10
         pageHeader.10.renderObj.file.maxW = 1000
@@ -27,8 +33,62 @@ lib.txRkwTemplate {
         pageTitle.data = page:title
 
         #=================================================================
+        pageParentTitle = USER
+        pageParentTitle {
+            userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+            extensionName = BmPdf2content
+            pluginName = Pi1
+            vendorName = BM
+            controller = DisplayPages
+            switchableControllerActions {
+                // Again: Controller-Name and Action
+                DisplayPages {
+                    1 = importParentPage
+                }
+            }
+
+            view =< plugin.tx_bmpdf2content.view
+            persistence =< plugin.tx_bmpdf2content.persistence
+            settings =< plugin.tx_bmpdf2content.settings
+            settings.importParentPage.showField = title
+        }
+
+        #=================================================================
         pageLastUpdated = TEXT
         pageLastUpdated.data = page:lastUpdated
+
+        #=================================================================
+        pageParentPubDate = USER
+        pageParentPubDate {
+            userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+            extensionName = BmPdf2content
+            pluginName = Pi1
+            vendorName = BM
+            controller = DisplayPages
+            switchableControllerActions {
+                // Again: Controller-Name and Action
+                DisplayPages {
+                    1 = importParentPage
+                }
+            }
+
+            view =< plugin.tx_bmpdf2content.view
+            persistence =< plugin.tx_bmpdf2content.persistence
+            settings =< plugin.tx_bmpdf2content.settings
+            settings.importParentPage.showField = lastUpdated
+
+            // Fallback for those without active RKW Search
+            stdWrap.ifEmpty.cObject = TEXT
+            stdWrap.ifEmpty.cObject {
+                field = crdate
+                field.override = lastUpdated
+            }
+        }
+
+        #=================================================================
+        pageLayout = TEXT
+        pageLayout.data = levelfield:-2,tx_rkwbasics_fe_layout_next_level,slide
+        pageLayout.override.field = layout
 
         #=================================================================
         pageAbstract = TEXT
