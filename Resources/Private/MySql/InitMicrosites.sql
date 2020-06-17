@@ -1,10 +1,10 @@
 START TRANSACTION;
 
-SET @website_title = 'EEPA';
-SET @configuration_name = 'EEPA';
+SET @website_title = 'RKW Geschichte';
+SET @configuration_name = 'RkwGeschichte';
 SET @dataset_root = 11;
-SET @domain = 'eepa.rkw-kompetenzzentrum.de';
-SET @media_path = '/media_eepa/';
+SET @domain = 'geschichte.rkw.de';
+SET @media_path = '/media_geschichte/';
 SET @basic_layout_be = 'pagets__topicPages';
 SET @basic_layout_fe = 3;
 SET @google_api_key = '';
@@ -79,15 +79,15 @@ INSERT INTO `tt_content` ( `pid`, `tstamp`, `crdate`, `cruser_id`, `hidden`, `so
 
 -- =================================================
 -- Datasets
-INSERT INTO `pages` ( `pid`, `tstamp`, `sorting`, `deleted`, `perms_userid`, `perms_groupid`, `perms_user`, `perms_group`, `perms_everybody`, `editlock`, `crdate`, `cruser_id`, `hidden`, `title`, `doktype`, `TSconfig`, `is_siteroot`, `php_tree_stop`, `tx_impexp_origuid`, `url`, `starttime`, `endtime`, `urltype`, `shortcut`, `shortcut_mode`, `no_cache`, `fe_group`, `subtitle`, `layout`, `url_scheme`, `target`, `media`, `lastUpdated`, `keywords`, `cache_timeout`, `cache_tags`, `newUntil`, `description`, `no_search`, `SYS_LASTCHANGED`, `abstract`, `module`, `extendToSubpages`, `author`, `author_email`, `nav_title`, `nav_hide`, `content_from_pid`, `mount_pid`, `mount_pid_ol`, `alias`, `l18n_cfg`, `fe_login_mode`, `backend_layout`, `backend_layout_next_level`, `categories`, `tx_rkwbasics_fe_layout_next_level`, `tx_rkwbasics_css_class`, `tx_rkwbasics_department`, `tx_rkwbasics_document_type`) VALUES
-(@dataset_root,  @tstamp, 640, 0, 1, 1, 31, 31, 31, 0, @tstamp, 1, 0, @website_title, 254, @ts_config, 0, 0, 0, '', 0, 0, 1, 0, 0, 0, '0', '', 0, 0, '', 0, 0, '', 0, '', 0, '', 0, 0, '', '', 0, '', '', '', 0, 0, 0, 0, '', 0, 0, '', '', 0, 0, 0, 0, 0);
-SET @dataset_folder = last_insert_id();
+-- INSERT INTO `pages` ( `pid`, `tstamp`, `sorting`, `deleted`, `perms_userid`, `perms_groupid`, `perms_user`, `perms_group`, `perms_everybody`, `editlock`, `crdate`, `cruser_id`, `hidden`, `title`, `doktype`, `TSconfig`, `is_siteroot`, `php_tree_stop`, `tx_impexp_origuid`, `url`, `starttime`, `endtime`, `urltype`, `shortcut`, `shortcut_mode`, `no_cache`, `fe_group`, `subtitle`, `layout`, `url_scheme`, `target`, `media`, `lastUpdated`, `keywords`, `cache_timeout`, `cache_tags`, `newUntil`, `description`, `no_search`, `SYS_LASTCHANGED`, `abstract`, `module`, `extendToSubpages`, `author`, `author_email`, `nav_title`, `nav_hide`, `content_from_pid`, `mount_pid`, `mount_pid_ol`, `alias`, `l18n_cfg`, `fe_login_mode`, `backend_layout`, `backend_layout_next_level`, `categories`, `tx_rkwbasics_fe_layout_next_level`, `tx_rkwbasics_css_class`, `tx_rkwbasics_department`, `tx_rkwbasics_document_type`) VALUES
+-- (@dataset_root,  @tstamp, 640, 0, 1, 1, 31, 31, 31, 0, @tstamp, 1, 0, @website_title, 254, @ts_config, 0, 0, 0, '', 0, 0, 1, 0, 0, 0, '0', '', 0, 0, '', 0, 0, '', 0, '', 0, '', 0, 0, '', '', 0, '', '', '', 0, 0, 0, 0, '', 0, 0, '', '', 0, 0, 0, 0, 0);
+-- SET @dataset_folder = last_insert_id();
 
-INSERT INTO `pages` (`pid`, `tstamp`, `sorting`, `deleted`, `perms_userid`, `perms_groupid`, `perms_user`, `perms_group`, `perms_everybody`, `editlock`, `crdate`, `cruser_id`, `hidden`, `title`, `doktype`, `TSconfig`, `is_siteroot`, `php_tree_stop`, `tx_impexp_origuid`, `url`, `starttime`, `endtime`, `urltype`, `shortcut`, `shortcut_mode`, `no_cache`, `fe_group`, `subtitle`, `layout`, `url_scheme`, `target`, `media`, `lastUpdated`, `keywords`, `cache_timeout`, `cache_tags`, `newUntil`, `description`, `no_search`, `SYS_LASTCHANGED`, `abstract`, `module`, `extendToSubpages`, `author`, `author_email`, `nav_title`, `nav_hide`, `content_from_pid`, `mount_pid`, `mount_pid_ol`, `alias`, `l18n_cfg`, `fe_login_mode`, `backend_layout`, `backend_layout_next_level`, `categories`, `tx_rkwbasics_fe_layout_next_level`, `tx_rkwbasics_css_class`, `tx_rkwbasics_department`, `tx_rkwbasics_document_type`) VALUES
-(@dataset_folder, @tstamp, 256, 0, 1, 1, 31, 31, 31, 0, @tstamp, 1, 0, 'Autoren', 254, NULL, 0, 0, 0, '', 0, 0, 1, 0, 0, 0, '0', '', 0, 0, '', 0, 0, NULL, 0, '', 0, NULL, 0, 0, NULL, '', 0, '', '', '', 0, 0, 0, 0, '', 0, 0, '', '', 0, 0, 0, 0, 0),
-(@dataset_folder, @tstamp, 512, 0, 1, 1, 31, 31, 31, 0, @tstamp, 1, 0, 'Projekte', 254, NULL, 0, 0, 0, '', 0, 0, 1, 0, 0, 0, '0', '', 0, 0, '', 0, 0, NULL, 0, '', 0, NULL, 0, 0, NULL, '', 0, '', '', '', 0, 0, 0, 0, '', 0, 0, '', '', 0, 0, 0, 0, 0),
-(@dataset_folder, @tstamp, 768, 0, 1, 1, 31, 31, 31, 0, @tstamp, 1, 0, 'Veranstaltungen', 254, NULL, 0, 0, 0, '', 0, 0, 1, 0, 0, 0, '0', '', 0, 0, '', 0, 0, NULL, 0, '', 0, NULL, 0, 0, NULL, '', 0, '', '', '', 0, 0, 0, 0, '', 0, 0, '', '', 0, 0, 0, 0, 0),
-(@dataset_folder, @tstamp, 384, 0, 1, 1, 31, 31, 31, 0, @tstamp, 1, 0, 'Info-Layer Inhalte', 254, '', 0, 0, 0, '', 0, 0, 1, 0, 0, 0, '0', '', 0, 0, '', 0, 0, '', 0, '', 0, '', 0, 0, '', '', 0, '', '', '', 0, 0, 0, 0, '', 0, 0, '', '', 0, 0, 0, 0, 0);
+-- INSERT INTO `pages` (`pid`, `tstamp`, `sorting`, `deleted`, `perms_userid`, `perms_groupid`, `perms_user`, `perms_group`, `perms_everybody`, `editlock`, `crdate`, `cruser_id`, `hidden`, `title`, `doktype`, `TSconfig`, `is_siteroot`, `php_tree_stop`, `tx_impexp_origuid`, `url`, `starttime`, `endtime`, `urltype`, `shortcut`, `shortcut_mode`, `no_cache`, `fe_group`, `subtitle`, `layout`, `url_scheme`, `target`, `media`, `lastUpdated`, `keywords`, `cache_timeout`, `cache_tags`, `newUntil`, `description`, `no_search`, `SYS_LASTCHANGED`, `abstract`, `module`, `extendToSubpages`, `author`, `author_email`, `nav_title`, `nav_hide`, `content_from_pid`, `mount_pid`, `mount_pid_ol`, `alias`, `l18n_cfg`, `fe_login_mode`, `backend_layout`, `backend_layout_next_level`, `categories`, `tx_rkwbasics_fe_layout_next_level`, `tx_rkwbasics_css_class`, `tx_rkwbasics_department`, `tx_rkwbasics_document_type`) VALUES
+-- (@dataset_folder, @tstamp, 256, 0, 1, 1, 31, 31, 31, 0, @tstamp, 1, 0, 'Autoren', 254, NULL, 0, 0, 0, '', 0, 0, 1, 0, 0, 0, '0', '', 0, 0, '', 0, 0, NULL, 0, '', 0, NULL, 0, 0, NULL, '', 0, '', '', '', 0, 0, 0, 0, '', 0, 0, '', '', 0, 0, 0, 0, 0),
+-- (@dataset_folder, @tstamp, 512, 0, 1, 1, 31, 31, 31, 0, @tstamp, 1, 0, 'Projekte', 254, NULL, 0, 0, 0, '', 0, 0, 1, 0, 0, 0, '0', '', 0, 0, '', 0, 0, NULL, 0, '', 0, NULL, 0, 0, NULL, '', 0, '', '', '', 0, 0, 0, 0, '', 0, 0, '', '', 0, 0, 0, 0, 0),
+-- (@dataset_folder, @tstamp, 768, 0, 1, 1, 31, 31, 31, 0, @tstamp, 1, 0, 'Veranstaltungen', 254, NULL, 0, 0, 0, '', 0, 0, 1, 0, 0, 0, '0', '', 0, 0, '', 0, 0, NULL, 0, '', 0, NULL, 0, 0, NULL, '', 0, '', '', '', 0, 0, 0, 0, '', 0, 0, '', '', 0, 0, 0, 0, 0),
+-- (@dataset_folder, @tstamp, 384, 0, 1, 1, 31, 31, 31, 0, @tstamp, 1, 0, 'Info-Layer Inhalte', 254, '', 0, 0, 0, '', 0, 0, 1, 0, 0, 0, '0', '', 0, 0, '', 0, 0, '', 0, '', 0, '', 0, 0, '', '', 0, '', '', '', 0, 0, 0, 0, '', 0, 0, '', '', 0, 0, 0, 0, 0);
 
 -- =================================================
 -- Sys-Template
@@ -101,11 +101,11 @@ INSERT INTO `sys_domain` ( `pid`, `tstamp`, `crdate`, `cruser_id`, `hidden`, `do
 
 -- =================================================
 -- File mount
-INSERT INTO `sys_filemounts` (`pid`, `tstamp`, `title`, `path`, `base`, `hidden`, `deleted`, `sorting`, `description`, `read_only`) VALUES
-(0, @tstamp, @file_mount_title, @media_path, 1, 0, 0, 32, @file_mount_description, 0);
-SET @file_mount  = last_insert_id();
+-- INSERT INTO `sys_filemounts` (`pid`, `tstamp`, `title`, `path`, `base`, `hidden`, `deleted`, `sorting`, `description`, `read_only`) VALUES
+-- (0, @tstamp, @file_mount_title, @media_path, 1, 0, 0, 32, @file_mount_description, 0);
+-- SET @file_mount  = last_insert_id();
 
--- SET @file_mount  = '';
+SET @file_mount = '';
 -- =================================================
 -- BE groups
 INSERT INTO `be_groups` (`pid`, `tstamp`, `title`, `non_exclude_fields`, `explicit_allowdeny`, `allowed_languages`, `custom_options`, `db_mountpoints`, `pagetypes_select`, `tables_select`, `tables_modify`, `crdate`, `cruser_id`, `groupMods`, `file_mountpoints`, `hidden`, `description`, `lockToDomain`, `deleted`, `TSconfig`, `subgroup`, `hide_in_lists`, `workspace_perms`, `file_permissions`, `category_perms`) VALUES

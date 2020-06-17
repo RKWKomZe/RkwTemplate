@@ -18,6 +18,7 @@ call_user_func(
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Configuration/TypoScript/Kompetenzzentrum/_Microsites/FrauenAmBau', 'RKW Template/Microsite KomZe: FrauenAmBau');
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Configuration/TypoScript/Kompetenzzentrum/_Microsites/Gem', 'RKW Template/Microsite KomZe: GEM');
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Configuration/TypoScript/Kompetenzzentrum/_Microsites/MeinRkw', 'RKW Template/Microsite KomZe: MeinRkw');
+        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Configuration/TypoScript/Kompetenzzentrum/_Microsites/RkwGeschichte', 'RKW Template/Microsite KomZe: RkwGeschichte');
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Configuration/TypoScript/Kompetenzzentrum/_Microsites/RessinnoBau', 'RKW Template/Microsite KomZe: RessinnoBau');
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Configuration/TypoScript/Kompetenzzentrum/_Microsites/WebsiteCheck', 'RKW Template/Microsite KomZe: WebsiteCheck');
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Configuration/TypoScript/Kompetenzzentrum/_Websites/Eanpc', 'RKW Template/Website KomZe: Eanpc');
@@ -39,6 +40,7 @@ call_user_func(
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Configuration/TsConfig/Kompetenzzentrum/_Microsites/FrauenAmBau/TsConfig.ts', 'RKW Template/Microsite KomZe: FrauenAmBau');
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Configuration/TsConfig/Kompetenzzentrum/_Microsites/Gem/TsConfig.ts', 'RKW Template/Microsite KomZe: GEM');
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Configuration/TsConfig/Kompetenzzentrum/_Microsites/MeinRkw/TsConfig.ts', 'RKW Template/Microsite KomZe: MeinRkw');
+        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Configuration/TsConfig/Kompetenzzentrum/_Microsites/RkwGeschichte/TsConfig.ts', 'RKW Template/Microsite KomZe: RkwGeschichte');
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Configuration/TsConfig/Kompetenzzentrum/_Microsites/RessinnoBau/TsConfig.ts', 'RKW Template/Microsite KomZe: RessinnoBau');
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Configuration/TsConfig/Kompetenzzentrum/_Microsites/WebsiteCheck/TsConfig.ts', 'RKW Template/Microsite KomZe: WebsiteCheck');
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Configuration/TsConfig/Kompetenzzentrum/_Websites/Eanpc/TsConfig.ts', 'RKW Template/Microsite KomZe: Eanpc');
