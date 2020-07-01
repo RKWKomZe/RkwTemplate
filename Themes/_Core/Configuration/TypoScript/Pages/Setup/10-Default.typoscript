@@ -193,7 +193,7 @@ page {
 
 				}
 
-				wrap = <meta property="og:image" content="{$plugin.tx_rkwtemplate_themeconfig.baseUrl}|">
+				wrap = <meta property="og:image" content="{$plugin.tx_rkwtemplate_themeconfig.website.baseUrl}|">
 			}
 
 			70 = TEXT

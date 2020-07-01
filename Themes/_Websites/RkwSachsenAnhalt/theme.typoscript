@@ -1,0 +1,43 @@
+plugin.tx_rkwtemplate_themeconfig {
+
+    # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Name of main-theme
+    themeName = Kompetenzzentrum
+
+    # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Name of the sub-theme
+    subThemeName = _Websites/RkwSachsenAnhalt
+
+    paths {
+        default {
+
+            # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Path to logos
+            logos = EXT:rkw_template/Themes/{$plugin.tx_rkwtemplate_themeconfig.subThemeName}/Resources/Public/images/logos
+
+            # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Path to icons
+            icons = EXT:rkw_template/Themes/Kompetenzzentrum/Resources/Public/icons/grey
+        }
+
+        extensions {
+
+            # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Path to partials
+            partials = EXT:rkw_template/Themes/{$plugin.tx_rkwtemplate_themeconfig.subThemeName}/Resources/Private/Partials/Extensions
+        }
+    }
+
+    website {
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Name of website
+        name = RKW Sachsen-Anhalt
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=baseUrl (With / at the end for ClickEnlarge)
+        baseUrl = https://www.rkw-sachsenanhalt.de/
+    }
+
+
+    # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Show social media icons
+    socialMedia = 0
+
+    # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Is this website a microsite?
+    isMicrosite = 0
+
+}
+

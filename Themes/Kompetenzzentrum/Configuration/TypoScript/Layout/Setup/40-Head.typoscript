@@ -144,7 +144,6 @@ page {
 
                         field = tx_bmpdf2content_is_import
                     }
-
                 }
             }
 

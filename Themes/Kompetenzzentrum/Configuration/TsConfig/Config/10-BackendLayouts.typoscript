@@ -2,6 +2,34 @@ mod {
     web_layout {
         BackendLayouts {
 
+            //======================================
+            // Home
+            //======================================
+            homePages {
+                title = Home
+                config {
+                    backend_layout {
+                        colCount = 2
+                        rowCount = 1
+                        rows {
+                            1 {
+                                columns {
+                                    1 {
+                                        name = Inhalte
+                                        colPos = 100
+                                    }
+
+                                    2 {
+                                        name = Ähnliche Artikel
+                                        colPos = 110
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
 
             //======================================
             // Topic Pages
@@ -152,77 +180,6 @@ mod {
                 }
             }
 
-
-            //======================================
-            // Home
-            //======================================
-            homePages {
-                title = Home
-                config {
-                    backend_layout {
-                        colCount = 2
-                        rowCount = 1
-                        rows {
-                            1 {
-                                columns {
-                                    1 {
-                                        name = Inhalte
-                                        colPos = 100
-                                    }
-
-                                    2 {
-                                        name = Ähnliche Artikel
-                                        colPos = 110
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
-
-            //======================================
-            // Map page
-            //======================================
-            rkwMaps {
-                title = RKW Karte
-                config {
-                    backend_layout {
-                        colCount = 2
-                        rowCount = 2
-                        rows {
-                            1 {
-                                columns {
-                                    1 {
-                                        name = Aufgabe
-                                        colPos = 12
-                                    }
-
-                                    2 {
-                                        name = Ähnliche Artikel
-                                        rowspan = 2
-                                        colPos = 7
-                                    }
-                                }
-                            }
-
-                            2 {
-                                columns {
-                                    1 {
-                                        name = Boxen
-                                        colPos = 13
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
-
-
-
             //======================================
             // Expert Pages Details
             //======================================
@@ -265,10 +222,41 @@ mod {
             }
 
             //======================================
-            // Event Detials
+            // Event Pages Details
             //======================================
             eventsDetail {
                 title = Detailseite: Veranstaltungen
+                config {
+                    backend_layout {
+                        colCount = 1
+                        rowCount = 1
+                        rows {
+                            1 {
+                                columns {
+                                    1 {
+                                        name = Inhalt
+                                        colPos = 0
+                                    }
+
+                                    //2 {
+                                    //    name = Ähnliche Artikel
+                                    //    rowspan = 2
+                                    //    colPos = 710
+                                    //}
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
+
+            //======================================
+            // Map page
+            //======================================
+            rkwMaps {
+                title = RKW Karte
                 config {
                     backend_layout {
                         colCount = 2
@@ -277,8 +265,8 @@ mod {
                             1 {
                                 columns {
                                     1 {
-                                        name = Inhalt
-                                        colPos = 0
+                                        name = Aufgabe
+                                        colPos = 12
                                     }
 
                                     2 {
@@ -293,7 +281,7 @@ mod {
                                 columns {
                                     1 {
                                         name = Boxen
-                                        colPos = 6
+                                        colPos = 13
                                     }
                                 }
                             }

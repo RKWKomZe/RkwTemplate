@@ -3,7 +3,7 @@
     <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.pageInfo.fileSize', data:'{data}')} > 0">
         <p>
             <strong>
-                <f:translate key="LLL:EXT:rkw_template/Themes/Kompetenzzentrum/Resources/Private/Language/locallang.xlf:partials.infoBox.partials.fileSize.labelFileSize"/>:
+                <f:translate key="{settings.themeLanguageFile}:partials.infoBox.partials.fileSize.labelFileSize"/>:
             </strong>
             <f:format.bytes units="B,KB,MB,GB"><f:cObject typoscriptObjectPath="lib.txRkwTemplate.pageInfo.fileSize" data="{data}" /></f:format.bytes>
         </p>

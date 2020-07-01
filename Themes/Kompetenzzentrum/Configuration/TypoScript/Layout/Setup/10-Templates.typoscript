@@ -60,15 +60,8 @@ page {
                 value = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/Map.html
             }
 
-
-            6 = TEXT
-            6 {
-                value = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/SearchEmptyResults.html
-            }
-
-
-            77777 = TEXT
-            77777 {
+            900 = TEXT
+            900 {
                 value = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/BrokenLink.html
             }
 

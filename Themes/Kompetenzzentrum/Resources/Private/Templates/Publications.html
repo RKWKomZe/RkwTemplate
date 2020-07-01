@@ -18,11 +18,11 @@
                     <f:render partial="InfoBox/Publication" arguments="{_all}"/>
 
                     <!-- content -->
-                    <f:format.html parseFuncTSPath="">{content}</f:format.html>
+                    <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.main" data="{data}" />
 
                     <!-- share, print and save -->
                     <footer class="article-footer">
-                        <f:render partial="SharePrint/PrintSave" arguments="{_all}"/>
+                        <f:render partial="SharePrint/Print" arguments="{_all}"/>
                         <f:render partial="SharePrint/SocialMedia" arguments="{_all}"/>
                     </footer>
                 </article>

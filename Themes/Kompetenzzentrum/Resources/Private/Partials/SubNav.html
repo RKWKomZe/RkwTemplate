@@ -1,7 +1,7 @@
 <f:section name="Default">
-    <f:if condition="{subNav}">
+    <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.navigation.sub')}">
         <f:then>
-            <f:format.html parseFuncTSPath="">{subNav}</f:format.html>
+            <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.sub" data="{data}" />
         </f:then>
         <f:else>
             <p>&nbsp;</p>

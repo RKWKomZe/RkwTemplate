@@ -1,15 +1,15 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
-    <f:layout name="{pageLayoutSwitch}" />
+    <f:layout name="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.utility.pageLayoutSwitch')}" />
 
     <f:section name="content">
 
-        <f:if condition="{pageLayoutType} == 22">
+        <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.utility.pageLayoutType')} == 22">
             <f:then>
                 <f:render section="Special" arguments="{_all}"/>
             </f:then>
             <f:else>
-                <f:if condition="{pageLayoutType} == 21">
+                <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.utility.pageLayoutType')} == 21">
                     <f:then>
                         <f:render section="Tools" arguments="{_all}"/>
                     </f:then>
@@ -42,11 +42,11 @@
                     <f:render partial="InfoBox/Article" arguments="{_all}"/>
 
                     <!-- content -->
-                    <f:format.html parseFuncTSPath="">{content}</f:format.html>
+                    <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.main" data="{data}" />
 
                     <!-- footer -->
                     <footer class="article-footer">
-                        <f:render partial="SharePrint/PrintSave" arguments="{_all}"/>
+                        <f:render partial="SharePrint/Print" arguments="{_all}"/>
                         <f:render partial="SharePrint/SocialMedia" arguments="{_all}"/>
                     </footer>
                 </article>
@@ -86,11 +86,11 @@
                     <f:render partial="InfoBox/Article" arguments="{_all}"/>
 
                     <!-- content -->
-                    <f:format.html parseFuncTSPath="">{content}</f:format.html>
+                    <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.main" data="{data}" />
 
                     <!-- footer -->
                     <footer class="article-footer">
-                        <f:render partial="SharePrint/PrintSave" arguments="{_all}"/>
+                        <f:render partial="SharePrint/Print" arguments="{_all}"/>
                         <f:render partial="SharePrint/SocialMedia" arguments="{_all}"/>
                     </footer>
                 </article>
@@ -127,7 +127,7 @@
 
                     <!-- main part -->
                     <div class="content-box content wysiwyg">
-                        <f:format.html parseFuncTSPath="">{content}</f:format.html>
+                        <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.main" data="{data}" />
                     </div>
 
                 </article>

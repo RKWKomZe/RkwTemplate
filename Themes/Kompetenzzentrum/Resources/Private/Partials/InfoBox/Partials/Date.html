@@ -3,7 +3,7 @@
     <f:section name="Article">
         <p>
             <strong>
-                <f:translate key="LLL:EXT:rkw_template/Themes/Kompetenzzentrum/Resources/Private/Language/locallang.xlf:partials.infoBox.partials.date.labelDate"/>:
+                <f:translate key="{settings.themeLanguageFile}:partials.infoBox.partials.date.labelDate"/>:
             </strong>
             <f:format.date format="d.m.Y">{data.lastUpdated}</f:format.date>
         </p>
@@ -14,7 +14,7 @@
     <f:section name="Publication">
         <p>
             <strong>
-                <f:translate key="LLL:EXT:rkw_template/Themes/Kompetenzzentrum/Resources/Private/Language/locallang.xlf:partials.infoBox.partials.date.labelPubYear"/>:
+                <f:translate key="{settings.themeLanguageFile}:partials.infoBox.partials.date.labelPubYear"/>:
             </strong>
             <f:format.date format="Y"><f:cObject typoscriptObjectPath="lib.txRkwTemplate.publication.parentPubDate" data="{data}" /></f:format.date>
         </p>

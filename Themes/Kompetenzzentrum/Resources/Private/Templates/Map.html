@@ -1,11 +1,11 @@
 {namespace rkwBasics=RKW\RkwBasics\ViewHelpers}
 
-<f:layout name="{pageLayoutSwitch}" />
+<f:layout name="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.utility.pageLayoutSwitch')}" />
 
 <f:section name="content">
 
     <!-- top-menu -->
-    <f:if condition="'{pageLayoutSwitch}' == 'Microsite'">
+    <f:if condition="'{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.utility.pageLayoutSwitch')}' == 'Microsite'">
         <f:render partial="SubNav" section="Default" arguments="{_all}"/>
     </f:if>
 

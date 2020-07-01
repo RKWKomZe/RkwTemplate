@@ -25,8 +25,7 @@ TCEFORM.pages {
         addItems.50 = RKW Karte
 
         // add more items
-        addItems.6 = Suche: Keine Ergebnisse
-        addItems.77777 = Broken Link
+        addItems.900 = Broken Link
         addItems.10000 = Detailseite: Experten
         addItems.20000 = Detailseite: Veranstaltungen
     }
@@ -52,8 +51,7 @@ TCEFORM.pages {
         addItems.50 = RKW Karte
 
         // add more items
-        addItems.6 = Suche: Keine Ergebnisse
-        addItems.77777 = Broken Link
+        addItems.900 = Broken Link
         addItems.10000 = Detailseite: Experten
         addItems.20000 = Detailseite: Veranstaltungen
     }

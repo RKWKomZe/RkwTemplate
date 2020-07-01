@@ -5,26 +5,18 @@ page {
 	10 {
 		variables{
 		
-			// Hauptspalte
 			content = CONTENT
 			content < styles.content.get
-			
-			// Linke Spalte, vererben nach unten
-			leftContent = CONTENT
-			leftContent < styles.content.get
-            leftContent.select.where = {#colPos}=1
-            leftContent.slide = -1
-
-			// Rechte Spalte, vererben nach unten
-			rightContent = CONTENT
-			rightContent < styles.content.get
-            rightContent.select.where = {#colPos}=2
-			rightContent.slide = -1
-			
-			// Untere Spalte (falls definiert)
-			borderContent = CONTENT
-			borderContent < styles.content.get
 
 		}
 	}
+}
+
+lib.txRkwTemplate {
+
+    content {
+
+        main = CONTENT
+        main < styles.content.get
+    }
 }

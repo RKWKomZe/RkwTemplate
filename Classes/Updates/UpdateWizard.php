@@ -161,23 +161,26 @@ class UpdateWizard extends \RKW\RkwBasics\Updates\AbstractUpdate
         // go through all sys_templates
         while ($record = $statement->fetch()) {
 
+            //  'Themes/Kompetenzzentrum/Configuration/TsConfig/_Websites/RkwThueringen/TsConfig.typoscript);
             $search = [
-                'EXT:rkw_template/Configuration/TypoScript/Kompetenzzentrum',
-                'EXT:rkw_template/Configuration/TypoScript/WePstra',
-                'EXT:rkw_template/Configuration/Themes/Kompetenzzentrum/TypoScript',
-                'EXT:rkw_template/Configuration/Themes/WePstra/TypoScript',
-                'EXT:css_styled_content/Configuration/TypoScript/,',
-                'EXT:rtehtmlarea/static/clickenlarge/,',
+                '#EXT:rkw_template\/Configuration\/TypoScript\/Kompetenzzentrum#i',
+                '#EXT:rkw_template\/Configuration\/TypoScript\/WePstra#i',
+                '#EXT:rkw_template\/Configuration\/Themes\/Kompetenzzentrum\/TypoScript#i',
+                '#EXT:rkw_template\/Configuration\/Themes\/WePstra\/TypoScript#i',
+                '#EXT:rkw_template\/Themes\/Kompetenzzentrum\/Configuration\/TypoScript\/(_Websites|_Microsites)\/([^\/]+)#i',
+                '#EXT:css_styled_content\/Configuration/TypoScript/,#i',
+                '#EXT:rtehtmlarea\/static\/clickenlarge/,#i',
             ];
             $replace = [
                 'EXT:rkw_template/Themes/Kompetenzzentrum/Configuration/TypoScript',
                 'EXT:rkw_template/Themes/WePstra/Configuration/TypoScript',
                 'EXT:rkw_template/Themes/Kompetenzzentrum/Configuration/TypoScript',
                 'EXT:rkw_template/Themes/WePstra/Configuration/TypoScript',
+                'EXT:rkw_template/Themes/$1/$2/Configuration/TypoScript',
                 '',
                 '',
             ];
-            $record['include_static_file'] = str_replace($search, $replace, $record['include_static_file']);
+            $record['include_static_file'] = preg_replace($search, $replace, $record['include_static_file']);
 
             // add default templates
             if (strpos($record['include_static_file'], 'EXT:fluid_styled_content/Configuration/TypoScript/') === false) {
@@ -225,11 +228,12 @@ class UpdateWizard extends \RKW\RkwBasics\Updates\AbstractUpdate
         while ($record = $statement->fetch()) {
 
             $search = [
-                '.ts',
-                'EXT:rkw_template/Configuration/TsConfig/Kompetenzzentrum',
-                'EXT:rkw_template/Configuration/TsConfig/WePstra',
-                'EXT:rkw_template/Configuration/Themes/Kompetenzzentrum/TsConfig',
-                'EXT:rkw_template/Configuration/Themes/WePstra/TsConfig',
+                '#.ts#',
+                '#EXT:rkw_template\/Configuration\/TsConfig\/Kompetenzzentrum#i',
+                '#EXT:rkw_template\/Configuration\/TsConfig\/WePstra#i',
+                '#EXT:rkw_template\/Configuration\/Themes/Kompetenzzentrum/TsConfig#i',
+                '#EXT:rkw_template\/Configuration\/Themes\/WePstra\/TsConfig#i',
+                '#EXT:rkw_template\/Themes\/Kompetenzzentrum\/Configuration\/TsConfig\/(_Websites|_Microsites)\/([^\/]+)/#i',
             ];
             $replace = [
                 '.typoscript',
@@ -237,9 +241,10 @@ class UpdateWizard extends \RKW\RkwBasics\Updates\AbstractUpdate
                 'EXT:rkw_template/Themes/WePstra/Configuration/TsConfig',
                 'EXT:rkw_template/Themes/Kompetenzzentrum/Configuration/TsConfig',
                 'EXT:rkw_template/Themes/WePstra/Configuration/TsConfig',
+                'EXT:rkw_template/Themes/$1/$2/Configuration/TsConfig/'
             ];
 
-            $record['tsconfig_includes'] = str_replace($search, $replace, $record['tsconfig_includes']);
+            $record['tsconfig_includes'] = preg_replace($search, $replace, $record['tsconfig_includes']);
 
             // add default template
             if (strpos($record['tsconfig_includes'], 'EXT:rkw_template/Configuration/TsConfig/TsConfig.typoscript') === false) {
@@ -256,10 +261,11 @@ class UpdateWizard extends \RKW\RkwBasics\Updates\AbstractUpdate
                         $updateQueryBuilder->createNamedParameter($record['uid'], \PDO::PARAM_INT)
                     )
                 );
+
             $databaseQueries[] = $updateQueryBuilder->getSQL();
             $updateQueryBuilder->execute();
-        }
 
+        }
 
         /** @var  \TYPO3\CMS\Core\Database\Connection $connection */
         $connection = GeneralUtility::makeInstance(ConnectionPool::class)->getConnectionForTable('be_groups');
@@ -1296,13 +1302,14 @@ class UpdateWizard extends \RKW\RkwBasics\Updates\AbstractUpdate
 
         $layouts = [
             100 => 99999,   // rise number for consultant template
-            210 => 10000,   // rise number for experts details template
-            230 => 20000,   // rise number for events details template
+            6 => 99998,     // rise number for empty results
 
-            10 => 77777,    // migrate broken-link-template (3) to temporary placeholder for broken-link-template (77777)
+            210 => 10000,   // rise number for experts details template
+            300 => 20000,   // rise number for events details template
 
             12 => 21,       // renumber tools-template (12) to new tools-template (21)
             11 => 50,       // renumber rkwMap-template (7) to new rkwMap-template (50)
+            10 => 900,      // migrate broken-link-template (3) to new broken-link-template (900)
             8 => 22,        // renumber special-template (8) to new special-template (22)
             7 => 12,        // renumber meinRkw-template (7) to new meinRkw-template (12)
             5 => 11,        // renumber search-template (5) to new pluginOnly-template (11)
@@ -1385,6 +1392,9 @@ class UpdateWizard extends \RKW\RkwBasics\Updates\AbstractUpdate
 
         $colPosList = [6];
         $this->moveElementsFromColsIntoCol($colPosList, 620, $databaseQueries, 'pagets__expertPagesDetail');
+
+        $colPosList = [7];
+        $this->moveElementsFromColsIntoCol($colPosList, 710, $databaseQueries, 'pagets__eventsDetail');
 
 
         $this->setLock(__FUNCTION__);

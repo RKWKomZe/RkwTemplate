@@ -4,29 +4,59 @@
 		<header/>
 		<body>
 
+            <!-- ================================================================= -->
             <!-- Partials -->
+            <!-- ================================================================= -->
 			<trans-unit id="partials.gridElements.contentContainer.content.imageResources">
 				<source>Image Resources</source>
 				<target>Bildnachweise</target>
 			</trans-unit>
+
+
             <trans-unit id="partials.alertsBox.headline">
                 <source>Stay tuned</source>
                 <target>Bleiben Sie auf dem Laufenden</target>
             </trans-unit>
 
 
-            <trans-unit id="partials.infoBox.labelAbstract">
+            <trans-unit id="partials.basics.header.labelHeader">
+                <source>Home-Link and main menu</source>
+                <target>Link zur Startseite und Hauptmenü</target>
+            </trans-unit>
+            <trans-unit id="partials.basics.header.labelHeaderMainWebsite">
+                <source>Open main website</source>
+                <target>Hauptseite öffnen</target>
+            </trans-unit>
+            <trans-unit id="partials.basics.header.labelMobileMenuOpenButton">
+                <source>Open main menu</source>
+                <target>Hauptmenü öffnen</target>
+            </trans-unit>
+            <trans-unit id="partials.basics.header.labelMobileMenuCloseButton">
+                <source>Close main menu</source>
+                <target>Hauptmenü schließen</target>
+            </trans-unit>
+            <trans-unit id="partials.basics.header.labelMenuCloseButton">
+                <source>Close main menu</source>
+                <target>Hauptmenü schließen</target>
+            </trans-unit>
+            <trans-unit id="partials.basics.logo.homeLink">
+                <source>Home</source>
+                <target>Zur Startseite</target>
+            </trans-unit>
+			<trans-unit id="partials.basics.browserWarning.warning">
+				<source><![CDATA[
+					Unfortunately our browser is outdated and not supported any more. Please use a modern browser instead, e.g. Chrome, Firefox, Safari or Internet Explorer (>= Version 11)
+				]]></source>
+				<target><![CDATA[
+					Ihr Browser wird leider nicht mehr unterstützt. Bitte verwenden Sie einen aktuellen Browser, z.B. Chrome, Firefox, Safari oder den Internet Explorer ab Version 11.
+				]]></target>
+			</trans-unit>
+
+
+            <trans-unit id="partials.infoBox.article.labelAbstract">
 				<source>Abstract</source>
 				<target>Zusammenfassung</target>
 			</trans-unit>
-			<trans-unit id="partials.infoBox.labelMore">
-				<source>More Information</source>
-				<target>Mehr Informationen</target>
-			</trans-unit>
-
-
-
-
 
 
             <trans-unit id="partials.infoBox.partials.project.labelProject">
@@ -59,25 +89,46 @@
             </trans-unit>
 
 
-
-
-            <trans-unit id="partials.keyVisual.labelChapter">
+            <trans-unit id="partials.keyVisual.publication.labelChapter">
                 <source>Chapter</source>
                 <target>Kapitel</target>
             </trans-unit>
 
 
+			<trans-unit id="partials.sharePrint.socialMedia.labelShare">
+				<source>Share</source>
+				<target>Teilen</target>
+			</trans-unit>
+			<trans-unit id="partials.sharePrint.socialMedia.labelShareFacebook">
+				<source>Share on Facebook</source>
+				<target>Auf Facebook teilen</target>
+			</trans-unit>
+			<trans-unit id="partials.sharePrint.socialMedia.labelShareTwitter">
+				<source>Share on Twitter</source>
+				<target>Auf Twitter teilen</target>
+			</trans-unit>
+			<trans-unit id="partials.sharePrint.socialMedia.labelShareXing">
+				<source>Share on XING</source>
+				<target>Auf XING teilen</target>
+			</trans-unit>
+            <trans-unit id="partials.sharePrint.print.ariaLabelPrintToolbar">
+                <source>Print article or save for later</source>
+                <target>Artikel drucken oder für später speichern</target>
+            </trans-unit>
 
 
-
+            <!-- ================================================================= -->
 			<!-- Templates -->
+            <!-- ================================================================= -->
             <trans-unit id="templates.gridElements.contentContainer.twoCols.asideHeadline">
 				<source>More Information</source>
 				<target>Weitere Informationen</target>
             </trans-unit>
 
 
+            <!-- ================================================================== -->
             <!-- TypoScript -->
+            <!-- ================================================================== -->
             <trans-unit id="typoscript.navigation.readMore.previous">
                 <source>Previous Page</source>
                 <target>Vorherige Seite</target>
@@ -94,135 +145,6 @@
                 <source>Next</source>
                 <target>Vor</target>
             </trans-unit>
-
-
-
-
-
-
-
-			<!--Templates/Publications -->
-			<trans-unit id="templates_publications.imageResources">
-				<source>Image Resources</source>
-				<target>Bildnachweise</target>
-			</trans-unit>
-			<trans-unit id="templates_publications.headlineSeries">
-				<source>In this series</source>
-				<target>Aus dieser Reihe</target>
-			</trans-unit>
-
-
-			<!-- Partials/Common/SocialMedia -->
-			<trans-unit id="partials_common_socialMedia.labelShare">
-				<source>Share</source>
-				<target>Teilen</target>
-			</trans-unit>
-			<trans-unit id="partials_common_socialMedia.labelShareFacebook">
-				<source>Share on Facebook</source>
-				<target>Auf Facebook teilen</target>
-			</trans-unit>
-			<trans-unit id="partials_common_socialMedia.labelShareTwitter">
-				<source>Share on Twitter</source>
-				<target>Auf Twitter teilen</target>
-			</trans-unit>
-			<trans-unit id="partials_common_socialMedia.labelShareXing">
-				<source>Share on XING</source>
-				<target>Auf XING teilen</target>
-			</trans-unit>
-
-
-			<!-- Partials/Common/PrintSave.html -->
-			<trans-unit id="partials_common_printSave">
-				<source>Print article or save for later</source>
-				<target>Artikel drucken oder für später speichern</target>
-			</trans-unit>
-
-
-            <!-- Partials/Header -->
-            <trans-unit id="partials_header.labelHeader">
-                <source>Home-Link and main menu</source>
-                <target>Link zur Startseite und Hauptmenü</target>
-            </trans-unit>
-            <trans-unit id="partials_header.labelHeaderMainWebsite">
-                <source>Open main website</source>
-                <target>Hauptseite öffnen</target>
-            </trans-unit>
-            <trans-unit id="partials_header.labelMobileMenuOpenButton">
-                <source>Open main menu</source>
-                <target>Hauptmenü öffnen</target>
-            </trans-unit>
-            <trans-unit id="partials_header.labelMobileMenuCloseButton">
-                <source>Close main menu</source>
-                <target>Hauptmenü schließen</target>
-            </trans-unit>
-            <trans-unit id="partials_header.labelMenuCloseButton">
-                <source>Close main menu</source>
-                <target>Hauptmenü schließen</target>
-            </trans-unit>
-
-
-
-
-            <!-- Partials/InfoBox -->
-			<trans-unit id="partials_infoBox.labelAbstract">
-				<source>Abstract</source>
-				<target>Zusammenfassung</target>
-			</trans-unit>
-			<trans-unit id="partials_infoBox.labelDate">
-				<source>Published</source>
-				<target>Veröffentlicht</target>
-			</trans-unit>
-			<trans-unit id="partials_infoBox.labelMore">
-				<source>More Information</source>
-				<target>Mehr Informationen</target>
-			</trans-unit>
-			<trans-unit id="partials_infoBox.labelPubYear">
-				<source>Year of Publication</source>
-				<target>Jahr der Veröffentlichung</target>
-			</trans-unit>
-			<trans-unit id="partials_infoBox.labelFilesize">
-				<source>Filesize</source>
-				<target>Dateigröße</target>
-			</trans-unit>
-			<trans-unit id="partials_infoBox.labelAuthors">
-				<source>Authors</source>
-				<target>Autoren</target>
-			</trans-unit>
-            <trans-unit id="partials_infoBox.labelProject">
-                <source>Project</source>
-                <target>Projekt</target>
-            </trans-unit>
-            <trans-unit id="partials_infoBox.labelTableOfContents">
-                <source>Table of Contents</source>
-                <target>Inhaltsverzeichnis</target>
-            </trans-unit>
-            <trans-unit id="partials_infoBox.labelPublication">
-                <source>Publication</source>
-                <target>Publikation</target>
-            </trans-unit>
-
-
-
-
-
-            <!-- Partials/Logo.html -->
-            <trans-unit id="partials_logo.homeLink">
-                <source>Home</source>
-                <target>Zur Startseite</target>
-            </trans-unit>
-
-
-			<!-- Partials/BrowserWarning -->
-			<trans-unit id="partials_browserWarning.warning">
-				<source><![CDATA[
-					Unfortunately our browser is outdated and not supported any more. Please use a modern browser instead, e.g. Chrome, Firefox, Safari or Internet Explorer (>= Version 11)
-				]]></source>
-				<target><![CDATA[
-					Ihr Browser wird leider nicht mehr unterstützt. Bitte verwenden Sie einen aktuellen Browser, z.B. Chrome, Firefox, Safari oder den Internet Explorer ab Version 11.
-				]]></target>
-			</trans-unit>
-
-
 
 		</body>
 	</file>

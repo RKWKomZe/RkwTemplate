@@ -22,7 +22,7 @@
                 <f:if condition="{data.abstract}">
                     <p>
                         <strong>
-                            <f:translate key="LLL:EXT:rkw_template/Themes/Kompetenzzentrum/Resources/Private/Language/locallang.xlf:partials.infoBox.labelAbstract"/>:
+                            <f:translate key="{settings.themeLanguageFile}:partials.infoBox.article.labelAbstract"/>:
                         </strong>
                         <f:format.crop maxCharacters="250" respectWordBoundaries="true">{data.abstract}</f:format.crop>
                     </p>

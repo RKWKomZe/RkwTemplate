@@ -1,7 +1,7 @@
 plugin.tx_rkwtemplate_themeconfig  {
 
 	# IMPORTANT: With / at the end for ClickEnlarge
-	baseUrl = http://wepstra-app.rkw.codes/
+	website.baseUrl = http://wepstra-app.rkw.codes/
 
 }
 

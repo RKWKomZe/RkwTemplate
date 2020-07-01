@@ -1,9 +1,9 @@
 {namespace rkwBasics=RKW\RkwBasics\ViewHelpers}
 
-<f:render partial="Layout/BrowserWarning" />
+<f:render partial="Basics/BrowserWarning" />
 
 <!-- Page header -->
-<f:render partial="Layout/Header" section="Microsite" arguments="{_all}"/>
+<f:render partial="Basics/Header" section="Microsite" arguments="{_all}"/>
 
 <div class="page-wrap">
 
@@ -12,16 +12,16 @@
 
 	<div class="container" id="page-top">
 		<main id="main">
-            <f:render partial="Layout/Logo" section="Microsite"  />
+            <f:render partial="Basics/Logo" section="Microsite"  />
             <f:render section="content" />
 		</main>
 	</div>
 
 	<!-- Footer -->
-	<f:render partial="Layout/Footer" arguments="{_all}"/>
+	<f:render partial="Basics/Footer" arguments="{_all}"/>
 
 	<!-- Overlay -->
-	<f:format.html parseFuncTSPath="">{overlayContent}</f:format.html>
-	<f:format.html parseFuncTSPath="">{meinRkwLayer}</f:format.html>
+	<f:cObject typoscriptObjectPath="lib.txRkwTemplate.various.overlay" data="{data}" />
+	<f:cObject typoscriptObjectPath="lib.txRkwTemplate.various.overlayMeinRKW" data="{data}" />
 
 </div>

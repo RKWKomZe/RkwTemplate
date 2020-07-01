@@ -1,0 +1,50 @@
+plugin.tx_rkwtemplate_themeconfig {
+
+    # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Name of main-theme
+    themeName = Kompetenzzentrum
+
+    # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Name of the sub-theme
+    subThemeName = _Microsites/EcoStep
+
+    paths {
+        default {
+
+            # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Path to logos
+            logos = EXT:rkw_template/Themes/{$plugin.tx_rkwtemplate_themeconfig.subThemeName}/Resources/Public/images/logos
+        }
+    }
+
+    website {
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Name of website
+        name = EcoStep
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=baseUrl (With / at the end for ClickEnlarge)
+        # baseUrl = http://www.ecostep-online.de
+        baseUrl = https://ecostep.rkw-kompetenzzentrum.de
+    }
+
+    microsite {
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Vertical text (on microsites only)
+        textVertical = Ein Angebot des RKW Bremen
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to main website (on microsites only)
+        mainWebsiteUrl = https://www.rkw-bremen.de
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Name of main website (on microsites only)
+        mainWebsiteName = RKW Bremen
+
+        # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Icon of main website (on microsites only)
+        mainWebsiteLogoFile =
+
+    }
+
+    # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Show social media icons
+    socialMedia = 0
+
+    # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Is this website a microsite?
+    isMicrosite = 1
+
+}
+

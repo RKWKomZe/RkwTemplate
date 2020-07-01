@@ -1,5 +1,5 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:../../../_Core/Configuration/TypoScript/constants.typoscript">
-<INCLUDE_TYPOSCRIPT: source="FILE:./theme.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:../../theme.typoscript">
 
 <INCLUDE_TYPOSCRIPT: source="FILE:./Config/Constants.typoscript">
 <INCLUDE_TYPOSCRIPT: source="FILE:../../../Kompetenzzentrum/Extensions/Constants/10-RkwBasics.typoscript">

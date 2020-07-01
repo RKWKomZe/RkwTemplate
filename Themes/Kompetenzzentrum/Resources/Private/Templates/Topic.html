@@ -1,6 +1,6 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
-    <f:layout name="{pageLayoutSwitch}" />
+    <f:layout name="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.utility.pageLayoutSwitch')}" />
 
     <f:section name="content">
 
@@ -18,12 +18,12 @@
         <!-- content -->
         <f:if condition="{content}">
             <div class="page-area-grid content-page__content">
-                <f:format.html parseFuncTSPath="">{content}</f:format.html>
+                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.main" data="{data}" />
             </div>
         </f:if>
 
         <!-- box party - but not for MeinRKW ! -->
-        <f:if condition="{pageLayoutType} != 12">
+        <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.utility.pageLayoutType')} != 12">
             <div class="sections">
 
                 <!-- alerts -->

@@ -1,0 +1,65 @@
+
+<f:section name="Default">
+
+    <header class="page-header" aria-label="<f:translate key='{settings.themeLanguageFile}:partials.basics.header.labelHeader' />">
+
+        <!-- mobile logo vertical navigation -->
+        <a href="#" rel="nofollow" class="page-header__mobile-button" aria-controls="main-menu" title="<f:translate key='{settings.themeLanguageFile}:partials.basics.header.labelMobileMenuOpenButton' />">
+            <figure class="page-header__logo-container">
+                <img src="{settings.websiteLogoOffcanvasIconOnlyFile}" alt="{settings.websiteName}" class="page-header__logo-image">
+            </figure>
+        </a>
+
+        <!-- main menu -->
+        <a href="#" rel="nofollow" class="page-header__close-mobile-button icon-close link" aria-controls="main-menu" title="<f:translate key='{settings.themeLanguageFile}:partials.basics.header.labelMenuCloseButton' />"></a>
+        <div class="page-header__container container">
+            <nav class="main-menu" id="main-menu">
+                <a href="#" rel="nofollow" class="page-header__close-button" aria-controls="main-menu" title="<f:translate key='{settings.themeLanguageFile}:partials.basics.header.labelMobileMenuCloseButton' />">
+                    <figure class="page-header__expanded-logo-container">
+                        <img src="{settings.websiteLogoOffcanvasFile}" alt="{settings.websiteName}" class="page-header___expanded-logo-image">
+                    </figure>
+                </a>
+                <f:format.html parseFuncTSPath="">{mainNav}</f:format.html>
+            </nav>
+        </div>
+    </header>
+</f:section>
+
+<!-- ################################################################################# -->
+
+<f:section name="Microsite">
+
+    <div class="page-header__microsite-navigation">
+        <f:if condition="{settings.micrositeMainWebsiteLogoFile}">
+            <a href="{settings.micrositeMainWebsiteUrl}" rel="nofollow"  target="_blank" class="page-header__microsite-button" aria-controls="main-menu" title="{settings.micrositeMainWebsiteName}">
+                <figure class="page-header__microsite-logo-container">
+                    <img src="{settings.micrositeMainWebsiteLogoFile}" alt="{settings.micrositeMainWebsiteName}" class="page-header__microsite-logo">
+                </figure>
+            </a>
+        </f:if>
+        <f:if condition="{settings.micrositeTextVertical}">
+            <div class="page-header__text-container">
+                <p class="page-header__vertical-text"><a href="{settings.micrositeMainWebsiteUrl}" rel="nofollow" target="_blank" title="{settings.micrositeMainWebsiteName}">{settings.micrositeTextVertical}</a></p>
+            </div>
+        </f:if>
+    </div>
+
+    <header class="page-header page-header--microsite" role="banner" aria-label="<f:translate key='{settings.themeLanguageFile}:partials.basics.header.labelHeader' />">
+
+        <!-- mobile logo vertical navigation -->
+        <a href="#" class="page-header__mobile-button page-header__mobile-button--microsite icon-burger"></a>
+
+        <!-- main menu -->
+        <div class="page-header__container container">
+            <nav class="main-menu main-menu--microsite" id="main-menu">
+                <a href="#" rel="nofollow" class="page-header__close-button" aria-controls="main-menu" title="<f:translate key='{settings.themeLanguageFile}:partials.basics.header.labelMobileMenuCloseButton' />">
+                    <figure class="page-header__expanded-logo-container">
+                        <img src="{settings.websiteLogoOffcanvasFile}" alt="{settings.websiteName}" class="page-header___expanded-logo-image--microsite">
+                    </figure>
+                </a>
+                <a href="#" rel="nofollow" class="page-header__close-mobile-button icon-close link" aria-controls="main-menu" title="<f:translate key='{settings.themeLanguageFile}:partials.basics.header.labelMenuCloseButton' />"></a>
+                <f:format.html parseFuncTSPath="">{mainNavMicrosite}</f:format.html>
+            </nav>
+        </div>
+    </header>
+</f:section>

@@ -1,0 +1,4 @@
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:rkw_template/Themes/Kompetenzzentrum/Configuration/TsConfig/TsConfig.typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:rkw_template/Themes/_Websites/RkwBadenWuerttemberg/Configuration/TsConfig/Tce" extensions="typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:rkw_template/Themes/_Websites/RkwBadenWuerttemberg/Configuration/TsConfig/Extensions" extensions="typoscript">
+

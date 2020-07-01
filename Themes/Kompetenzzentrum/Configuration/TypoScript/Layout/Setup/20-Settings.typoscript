@@ -6,6 +6,9 @@ page {
     10 {
         // make settings available in template
         settings {
+            themeName = {$plugin.tx_rkwtemplate_themeconfig.themeName}
+            themeLanguageFile = LLL:EXT:rkw_template/Themes/{$plugin.tx_rkwtemplate_themeconfig.themeName}/Resources/Private/Language/locallang.xlf
+
             imagesPath = /{$plugin.tx_rkwtemplate_themeconfig.paths.default.images}
 
             websiteName = {$plugin.tx_rkwtemplate_themeconfig.website.name}
@@ -25,4 +28,11 @@ page {
             socialMedia = {$plugin.tx_rkwtemplate_themeconfig.socialMedia}
         }
     }
+}
+
+
+// add settings to relevant grid elements
+tt_content.gridelements_pi1.20.10.setup {
+    contentContainerTwoCols.cObject.settings < page.10.settings
+    contentContainerOneCol.cObject.settings < .contentContainerTwoCols.cObject.settings
 }

@@ -1,71 +1,56 @@
-{namespace rkwBasics=RKW\RkwBasics\ViewHelpers}
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
-<f:layout name="{pageLayoutSwitch}" />
+    <f:layout name="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.utility.pageLayoutSwitch')}" />
 
-<f:section name="content">
+    <f:section name="content">
 
-    <!-- top-menu -->
-    <f:comment>
-        <f:render partial="SubNav" section="Default" arguments="{_all}"/>
-    </f:comment>
-    <p>&nbsp;</p>
+        <!-- top-menu -->
+        <f:comment>
+            <f:render partial="SubNav" section="Default" arguments="{_all}"/>
+        </f:comment>
+        <p>&nbsp;</p>
 
 
-    <div class="page-area-grid">
+        <div class="page-area-grid">
+            <div class="article">
 
-        <!-- main part -->
-        <div class="article">
+                <div class="project-article" aria-labelledby="article-headline">
 
-            <div class="project-article" aria-labelledby="article-headline">
+                    <!-- header -->
+                    <header class="content-box content article-header wysiwyg" id="article-headline">
+                        <f:cObject typoscriptObjectPath="lib.txRkwTemplate.event.title" data="{data}" />
+                    </header>
 
-                <!-- header -->
-                <header class="content-box content article-header wysiwyg" id="article-headline">
-                    <f:format.html parseFuncTSPath="">{eventTitle}</f:format.html>
-                </header>
+                    <!-- GoogleMaps -->
+                    <picture class="article-picture">
+                        <f:format.raw><f:cObject typoscriptObjectPath="lib.txRkwTemplate.event.maps" data="{data}" /></f:format.raw>
+                    </picture>
 
-                <!-- GoogleMaps -->
-                <f:if condition="{consultantMaps}">
-                    <f:format.html parseFuncTSPath="">{eventMaps}</f:format.html>
-                </f:if>
+                    <!-- overview -->
+                    <f:cObject typoscriptObjectPath="lib.txRkwTemplate.event.info" data="{data}" />
 
-                <!-- consultant overview with download files -->
-                <f:format.html parseFuncTSPath="">{eventInfo}</f:format.html>
+                    <div class="content-box content wysiwyg">
 
-                <div class="content-box content wysiwyg">
+                        <!-- content -->
+                        <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.main" data="{data}" />
 
-                    <!-- Content -->
-                    <f:format.html parseFuncTSPath="">{content}</f:format.html>
+                    </div>
 
+                    <!-- footer -->
+                    <footer class="article-footer">
+                        <f:render partial="SharePrint/Print" arguments="{_all}"/>
+                        <f:render partial="SharePrint/SocialMedia" arguments="{_all}"/>
+                    </footer>
                 </div>
-
-                <footer class="article-footer">
-
-                    <!-- Print and Save -->
-                    <f:render partial="ArticleFooter/Print" arguments="{_all}"/>
-
-                    <!-- SocialMedia -->
-                    <f:render partial="ArticleFooter/SocialMedia" arguments="{_all}"/>
-                </footer>
             </div>
 
 
-            <div class="sections">
-
-                <!-- Gallery 1 -->
-                <f:format.html parseFuncTSPath="">{galleryOne}</f:format.html>
-
-                <!-- Gallery 2 -->
-                <f:format.html parseFuncTSPath="">{galleryTwo}</f:format.html>
-
-            </div>
-
+            <f:comment>
+                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.related" data="{data}" />
+            </f:comment>
 
         </div>
 
-        <!-- related -->
-        <f:format.html parseFuncTSPath="">{relatedBoxesEvents}</f:format.html>
+    </f:section>
 
-    </div>
-
-</f:section>
-
+</html>

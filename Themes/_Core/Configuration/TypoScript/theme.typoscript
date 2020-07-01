@@ -6,6 +6,9 @@ plugin.tx_rkwtemplate_themeconfig {
     # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Name of theme
     themeName = _Core
 
+	# cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=BaseUrl - IMPORTANT: With / at the end for ClickEnlarge
+	baseUrl = https://www.example.com/
+
     paths {
 
         default {

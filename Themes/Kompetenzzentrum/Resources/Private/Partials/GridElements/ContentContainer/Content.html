@@ -28,7 +28,7 @@
         <!-- image resources -->
         <f:if condition="<rkwBasics:isEmpty string='{f:cObject(typoscriptObjectPath: \'lib.txRkwTemplate.pageInfo.imageResources\')}' /> == 0">
             <div class="media-sources {f:if(condition: '<rkwBasics:isEmpty string=\'{data.tx_gridelements_view_column_18}\' /> == 0', then: 'media-sources--space')}" role="contentinfo">
-                <strong><f:translate key="LLL:EXT:rkw_template/Themes/Kompetenzzentrum/Resources/Private/Language/locallang.xlf:partials.gridElements.contentContainer.content.imageResources" />: </strong>
+                <strong><f:translate key="{settings.themeLanguageFile}:partials.gridElements.contentContainer.content.imageResources" />: </strong>
                 <f:cObject typoscriptObjectPath="lib.txRkwTemplate.pageInfo.imageResources" />
             </div>
         </f:if>
