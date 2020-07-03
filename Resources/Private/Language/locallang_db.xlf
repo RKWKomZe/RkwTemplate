@@ -210,6 +210,56 @@
                 <source>Project</source>
             </trans-unit>
 
+
+            <!-- Overview -->
+            <trans-unit id="contentElement.overview.title">
+                <source>Overview</source>
+            </trans-unit>
+            <trans-unit id="contentElement.overview.description">
+                <source>Adds an overview text.</source>
+            </trans-unit>
+
+
+            <!-- CollapsedText -->
+            <trans-unit id="contentElement.collapsed.title">
+                <source>Collapsed Text</source>
+            </trans-unit>
+            <trans-unit id="contentElement.collapsed.description">
+                <source>Adds a collapsed text element.</source>
+            </trans-unit>
+            <trans-unit id="contentElement.collapsed.rowDescription">
+                <source>Short Version</source>
+            </trans-unit>
+
+
+            <!-- ImageList -->
+            <trans-unit id="contentElement.imageList.title">
+                <source>Image List</source>
+            </trans-unit>
+            <trans-unit id="contentElement.imageList.description">
+                <source>Adds an image list -element.</source>
+            </trans-unit>
+            <trans-unit id="contentElement.imageList.rowDescription">
+                <source>Short Version</source>
+            </trans-unit>
+            <trans-unit id="contentElement.imageList.imageManipulation.default">
+                <source>Default</source>
+            </trans-unit>
+
+
+            <!-- ImageTextOverlay -->
+            <trans-unit id="contentElement.imageTextOverlay.title">
+                <source>Image with text overlay</source>
+            </trans-unit>
+            <trans-unit id="contentElement.imageTextOverlay.description">
+                <source>Adds an image-text-overlay -element.</source>
+            </trans-unit>
+            <trans-unit id="contentElement.imageTextOverlay.rowDescription">
+                <source>Short Version</source>
+            </trans-unit>
+            <trans-unit id="contentElement.imageTextOverlay.imageManipulation.default">
+                <source>Default</source>
+            </trans-unit>
 		</body>
 	</file>
 </xliff>

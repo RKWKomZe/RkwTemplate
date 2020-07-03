@@ -1,16 +1,17 @@
-
 {namespace rkwBasics=RKW\RkwBasics\ViewHelpers}
 
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
-<f:render partial="BrowserWarning" />
+	<f:render partial="BrowserWarning" />
 
-<div class="page-wrap">
+	<div class="page-wrap">
 
-	<!-- Main Part -->
-	<f:render section="content" />
+		<!-- Main Part -->
+		<f:render section="content" />
 
-	<!-- Footer -->
-	<f:render partial="Footer" arguments="{_all}"/>
+		<!-- Footer -->
+		<f:render partial="Footer" arguments="{_all}"/>
 
-</div>
+	</div>
 
+</html>

@@ -1,41 +1,42 @@
-
 {namespace rkwBasics=RKW\RkwBasics\ViewHelpers}
 
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
-<f:render partial="BrowserWarning" />
+    <f:render partial="BrowserWarning" />
 
-<div class="page-wrapper">
+    <div class="page-wrapper">
 
-    <!-- Header -->
-    <f:render partial="Landingpage/Header" arguments="{_all}"/>
+        <!-- Header -->
+        <f:render partial="Landingpage/Header" arguments="{_all}"/>
 
-    <main>
-	    <!-- Content Section 1 -->
-	    <f:render section="Content-1" />
+        <main>
+            <!-- Content Section 1 -->
+            <f:render section="Content-1" />
 
-        <!-- Image Section 1 -->
-        <section class="image-section">
-            <figure class="image-section__image-container">
-                <img src="{settings.imagesPath}/landingpage/masterplan-background.png" alt="Masterplan" class="image-section__image">
-            </figure>
-        </section>
+            <!-- Image Section 1 -->
+            <section class="image-section">
+                <figure class="image-section__image-container">
+                    <img src="{settings.imagesPath}/landingpage/masterplan-background.png" alt="Masterplan" class="image-section__image">
+                </figure>
+            </section>
 
-        <!-- Content Section 2 -->
-        <f:render section="Content-2" />
+            <!-- Content Section 2 -->
+            <f:render section="Content-2" />
 
-        <!-- Image Section 2 -->
-        <section class="image-section">
-            <figure class="image-section__image-container">
-                <img src="{settings.imagesPath}/landingpage/navigation-background.png" alt="Masterplan" class="image-section__image">
-            </figure>
-        </section>
+            <!-- Image Section 2 -->
+            <section class="image-section">
+                <figure class="image-section__image-container">
+                    <img src="{settings.imagesPath}/landingpage/navigation-background.png" alt="Masterplan" class="image-section__image">
+                </figure>
+            </section>
 
-        <!-- Content Section 3 -->
-        <f:render section="Content-3" />
+            <!-- Content Section 3 -->
+            <f:render section="Content-3" />
 
-    </main>
-</div>
+        </main>
+    </div>
 
-<!-- Footer -->
-<f:render partial="Landingpage/Footer" arguments="{_all}"/>
+    <!-- Footer -->
+    <f:render partial="Landingpage/Footer" arguments="{_all}"/>
 
+</html>

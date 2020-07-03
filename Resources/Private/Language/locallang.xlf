@@ -21,6 +21,14 @@
                 <source>Project</source>
             </trans-unit>
 
+
+            <!-- CollapsedText -->
+            <trans-unit id="contentElement.collapsed.showMore">
+                <source>show more</source>
+            </trans-unit>
+            <trans-unit id="contentElement.collapsed.showLess">
+                <source>show less</source>
+            </trans-unit>
 		</body>
 	</file>
 </xliff>

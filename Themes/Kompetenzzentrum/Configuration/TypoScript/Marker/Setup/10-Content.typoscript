@@ -50,5 +50,13 @@ lib.txRkwTemplate {
         boxesExpert < styles.content.get
         boxesExpert.select.where = {#colPos} = 620
 
+        mapHeader = CONTENT
+        mapHeader < styles.content.get
+        mapHeader.select.where = {#colPos} = 810
+
+        mapOverview = CONTENT
+        mapOverview < styles.content.get
+        mapOverview.select.where = {#colPos} = 820
+
     }
 }

@@ -1,12 +1,32 @@
+plugin.tx_rkwwepstra {
+	view {
+		layoutRootPaths {
+            10 = {$plugin.tx_rkwtemplate_themeconfig.paths.extensions.layouts}/RkwWepstra
+			20 = {$plugin.tx_rkwwepstra.view.layoutRootPath}
+		}
+		templateRootPaths {
+    	    10 = {$plugin.tx_rkwtemplate_themeconfig.paths.extensions.templates}/RkwWepstra
+            20 ={$plugin.tx_rkwwepstra.view.templateRootPath}
+        }
+		partialRootPaths {
+		    10 = {$plugin.tx_rkwtemplate_themeconfig.paths.extensions.partials}/RkwWepstra
+			20 =  {$plugin.tx_rkwwepstra.view.partialRootPath}
+        }
+	}
 
+    // make settings available in overwritten templates
+	settings {
+        imagesPath = /{$plugin.tx_rkwtemplate_themeconfig.paths.default.images}
+        websiteName = {$plugin.tx_rkwtemplate_themeconfig.website.name}
+        websiteLogoFile = {$plugin.tx_rkwtemplate_themeconfig.website.logoFile}
+        websiteLogoFilePrint = {$plugin.tx_rkwtemplate_themeconfig.website.logoFilePrint}
+	}
+}
 
 # =========================================================================================
-# FOR PRINT
 txRkwWepstraPrint {
 
-	#===============================================================
 	# Include TypeKit
-	#===============================================================
 	headerData {
 
 		30 = TEXT

@@ -17,6 +17,10 @@ lib.txRkwTemplate {
         websiteName = TEXT
         websiteName.value = {$plugin.tx_rkwtemplate_themeconfig.website.name}
 
+        #=================================================================
+        publisher = TEXT
+        publisher.value = {$plugin.tx_rkwtemplate_themeconfig.website.publisher}
+
         //=================================================================
         isSubPage = TEXT
         isSubPage.value = 1
@@ -55,7 +59,17 @@ lib.txRkwTemplate {
 
         #=================================================================
         pageLastUpdated = TEXT
-        pageLastUpdated.data = page:lastUpdated
+        pageLastUpdated {
+            data = page:tstamp
+        }
+
+        #=================================================================
+        pagePubDate = TEXT
+        pagePubDate {
+            data = page:lastUpdated
+            override.data = page:crdate
+            override.if.isFalse.data = page:lastUpdated
+        }
 
         #=================================================================
         pageParentPubDate = USER

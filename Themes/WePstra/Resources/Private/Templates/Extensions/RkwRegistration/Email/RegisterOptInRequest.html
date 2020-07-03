@@ -1,6 +1,7 @@
 {namespace vh=RKW\RkwMailer\ViewHelpers}
-<f:layout name="Email/{mailType}" />
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
+	<f:layout name="Email/{mailType}" />
 
 <!-- PLAINTEXT -->
 <f:section name="Plaintext">
@@ -15,16 +16,17 @@
 <vh:frontend.link action="loginOptIn" controller="Step" extensionName="rkwWepstra" pluginName="rkwWepstra" absolute="TRUE" noCacheHash="TRUE" pageUid="{registrationPid}" additionalParams="{tx_rkwwepstra_rkwwepstra: {token_no: tokenNo, user: userSha1}}" />
 </f:section>
 
-<!-- HTML -->
-<f:section name="Html">
-	<h1><vh:frontend.translate key="templates_email_registerOptInRequest.headline" languageKey="{frontendUser.txRkwregistrationLanguageKey}" extensionName="rkwRegistration" arguments="{0 : frontendUser.email, 1: ''}" /></h1>
-	<p><vh:frontend.translate key="templates_email_registerOptInRequest.text1" languageKey="{frontendUser.txRkwregistrationLanguageKey}" extensionName="rkwRegistration" /></p>
-	<p>
-		<vh:frontend.translate key="templates_email_registerOptInRequest.textOptIn" languageKey="{frontendUser.txRkwregistrationLanguageKey}" extensionName="rkwRegistration"/><br>
-		<a href="<vh:frontend.link action='loginOptIn' controller='Step' extensionName='rkwWepstra' pluginName='rkwWepstra' absolute='TRUE' noCacheHash='TRUE' pageUid='{registrationPid}' additionalParams='{tx_rkwwepstra_rkwwepstra: {token_yes: tokenYes, user: userSha1}}' />"><vh:frontend.translate key="templates_email_registerOptInRequest.textOptInLinkLabel" languageKey="{frontendUser.txRkwregistrationLanguageKey}" extensionName="rkwRegistration"/></a>
-	</p>
-	<p>
-		<vh:frontend.translate key="templates_email_registerOptInRequest.textOptOut" languageKey="{frontendUser.txRkwregistrationLanguageKey}" extensionName="rkwRegistration" /><br>
-		<a href="<vh:frontend.link action='loginOptIn' controller='Step' extensionName='rkwWepstra' pluginName='rkwWepstra' absolute='TRUE' noCacheHash='TRUE' pageUid='{registrationPid}' additionalParams='{tx_rkwwepstra_rkwwepstra: {token_no: tokenNo, user: userSha1}}'  />"><vh:frontend.translate key="templates_email_registerOptInRequest.textOptOutLinkLabel" languageKey="{frontendUser.txRkwregistrationLanguageKey}" extensionName="rkwRegistration"/></a>
-	</p>
-</f:section>
+	<!-- HTML -->
+	<f:section name="Html">
+		<h1><vh:frontend.translate key="templates_email_registerOptInRequest.headline" languageKey="{frontendUser.txRkwregistrationLanguageKey}" extensionName="rkwRegistration" arguments="{0 : frontendUser.email, 1: ''}" /></h1>
+		<p><vh:frontend.translate key="templates_email_registerOptInRequest.text1" languageKey="{frontendUser.txRkwregistrationLanguageKey}" extensionName="rkwRegistration" /></p>
+		<p>
+			<vh:frontend.translate key="templates_email_registerOptInRequest.textOptIn" languageKey="{frontendUser.txRkwregistrationLanguageKey}" extensionName="rkwRegistration"/><br>
+			<a href="<vh:frontend.link action='loginOptIn' controller='Step' extensionName='rkwWepstra' pluginName='rkwWepstra' absolute='TRUE' noCacheHash='TRUE' pageUid='{registrationPid}' additionalParams='{tx_rkwwepstra_rkwwepstra: {token_yes: tokenYes, user: userSha1}}' />"><vh:frontend.translate key="templates_email_registerOptInRequest.textOptInLinkLabel" languageKey="{frontendUser.txRkwregistrationLanguageKey}" extensionName="rkwRegistration"/></a>
+		</p>
+		<p>
+			<vh:frontend.translate key="templates_email_registerOptInRequest.textOptOut" languageKey="{frontendUser.txRkwregistrationLanguageKey}" extensionName="rkwRegistration" /><br>
+			<a href="<vh:frontend.link action='loginOptIn' controller='Step' extensionName='rkwWepstra' pluginName='rkwWepstra' absolute='TRUE' noCacheHash='TRUE' pageUid='{registrationPid}' additionalParams='{tx_rkwwepstra_rkwwepstra: {token_no: tokenNo, user: userSha1}}'  />"><vh:frontend.translate key="templates_email_registerOptInRequest.textOptOutLinkLabel" languageKey="{frontendUser.txRkwregistrationLanguageKey}" extensionName="rkwRegistration"/></a>
+		</p>
+	</f:section>
+</html>

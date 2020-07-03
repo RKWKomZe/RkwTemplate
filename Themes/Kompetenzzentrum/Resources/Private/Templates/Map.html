@@ -11,20 +11,14 @@
 
     <div class="content-page__content">
 
-        <!--  Welcome Section -->
-        <f:format.html parseFuncTSPath="">{boxTask}</f:format.html>
-
-        <f:if condition="<rkwBasics:isEmpty string='{boxSpecial}' /> == 0">
-            <f:format.html parseFuncTSPath="">{boxSpecial}</f:format.html>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-        </f:if>
+        <!--  welcome section -->
+        <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.mapHeader" data="{data}" />
 
         <!-- boxes -->
         <div class="page-area-grid">
             <div class="boxes">
 
-                <f:format.html parseFuncTSPath="">{boxOverviewBoxesMap}</f:format.html>
+                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.mapOverview" data="{data}" />
 
                 <!-- map for mobile-->
                 <div class="box regions-mobile">

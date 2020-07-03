@@ -162,7 +162,7 @@ mod {
                             2 {
                                 columns {
                                     1 {
-                                        name = Bestellformular / Boxen
+                                        name = Bestellformular / Boxen ohne Vererbung auf Unterseiten
                                         colPos = 410
                                     }
                                 }
@@ -237,19 +237,12 @@ mod {
                                         name = Inhalt
                                         colPos = 0
                                     }
-
-                                    //2 {
-                                    //    name = Ähnliche Artikel
-                                    //    rowspan = 2
-                                    //    colPos = 710
-                                    //}
                                 }
                             }
                         }
                     }
                 }
             }
-
 
 
             //======================================
@@ -259,20 +252,14 @@ mod {
                 title = RKW Karte
                 config {
                     backend_layout {
-                        colCount = 2
+                        colCount = 1
                         rowCount = 2
                         rows {
                             1 {
                                 columns {
                                     1 {
                                         name = Aufgabe
-                                        colPos = 12
-                                    }
-
-                                    2 {
-                                        name = Ähnliche Artikel
-                                        rowspan = 2
-                                        colPos = 7
+                                        colPos = 810
                                     }
                                 }
                             }
@@ -281,7 +268,7 @@ mod {
                                 columns {
                                     1 {
                                         name = Boxen
-                                        colPos = 13
+                                        colPos = 820
                                     }
                                 }
                             }

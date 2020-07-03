@@ -1,0 +1,49 @@
+//############################################################################
+// Maximum image width per row (0,1,2 usw.)
+//############################################################################
+tt_content.image.20 {
+
+}
+
+//############################################################################
+// Tuning for headlines
+//############################################################################
+lib.stdheader {
+    // Always ignore first headline of tt_content
+    if {
+        value = 1
+        isGreaterThan.data = cObj:parentRecordNumber
+    }
+}
+
+
+tt_content.textpic {
+
+    // remove header for imageorient <= 18
+    10.if.value = 18
+
+    20 {
+
+        // remove div around header for imageorient 25/26
+        text.10 >
+    }
+}
+
+
+//############################################################################
+// Tuning for RTE
+//############################################################################
+lib.parseFunc_RTE {
+    externalBlocks {
+        //===============================================================
+        // Adaption of CSS-classes for tables and lists
+        //===============================================================
+        table.stdWrap.HTMLparser = 1
+        table.stdWrap.HTMLparser.tags.table.fixAttrib.class {
+            default = contenttable responsive
+            always = 1
+            list = responsive,contenttable,contenttable-1,contenttable-events
+        }
+    }
+}
+

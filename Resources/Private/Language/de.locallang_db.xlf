@@ -155,6 +155,10 @@
                 <source>Adds a Logo-Element.</source>
                 <target>Fügt ein Logo-Element hinzu</target>
             </trans-unit>
+            <trans-unit id="contentElement.logo.imageManipulation.default">
+                <source>Default</source>
+                <target>Standard</target>
+            </trans-unit>
 
 
             <!-- LogoContainer -->
@@ -261,6 +265,81 @@
                 <source>Project</source>
                 <target>Projekt</target>
             </trans-unit>
+
+
+            <!-- Overview -->
+            <trans-unit id="contentElement.overview.title">
+                <source>Overview</source>
+                <target>Übersicht</target>
+            </trans-unit>
+            <trans-unit id="contentElement.overview.description">
+                <source>Adds an overview text.</source>
+                <target>Fügt einen Übersichtstext ein.</target>
+            </trans-unit>
+
+
+            <!-- TableOfContents -->
+            <trans-unit id="contentElement.toc.title">
+                <source>Table Of Contents</source>
+                <target>Inhaltsverzeichnis</target>
+            </trans-unit>
+            <trans-unit id="contentElement.toc.description">
+                <source>Adds a table of contents.</source>
+                <target>Fügt ein Inhaltsverzeichnis ein.</target>
+            </trans-unit>
+
+
+            <!-- CollapsedText -->
+            <trans-unit id="contentElement.collapsed.title">
+                <source>Collapsed Text</source>
+                <target>Verkürzter Text</target>
+            </trans-unit>
+            <trans-unit id="contentElement.collapsed.description">
+                <source>Adds a collapsed text element.</source>
+                <target>Fügt ein Textelement mit verkürztem Text ein, der über einen Link komplett angezeigt werden kann.</target>
+            </trans-unit>
+            <trans-unit id="contentElement.collapsed.rowDescription">
+                <source>Short Version</source>
+                <target>Kurzfassung</target>
+            </trans-unit>
+
+
+            <!-- ImageList -->
+            <trans-unit id="contentElement.imageList.title">
+                <source>Image List</source>
+                <target>Bebilderte Liste</target>
+            </trans-unit>
+            <trans-unit id="contentElement.imageList.description">
+                <source>Adds an image list -element.</source>
+                <target>Fügt eine Bilderliste hinzu.</target>
+            </trans-unit>
+            <trans-unit id="contentElement.imageList.rowDescription">
+                <source>Short Version</source>
+                <target>Kurzfassung</target>
+            </trans-unit>
+            <trans-unit id="contentElement.imageList.imageManipulation.default">
+                <source>Default</source>
+                <target>Standard</target>
+            </trans-unit>
+            
+            
+            <!-- ImageTextOverlay -->
+            <trans-unit id="contentElement.imageTextOverlay.title">
+                <source>Image with text overlay</source>
+                <target>Bild mit überlagerndem Text</target>
+            </trans-unit>
+            <trans-unit id="contentElement.imageTextOverlay.description">
+                <source>Adds an image-text-overlay -element.</source>
+                <target>Fügt ein Bild mit überlagerndem Text hinzu.</target>
+            </trans-unit>
+            <trans-unit id="contentElement.imageTextOverlay.rowDescription">
+                <source>Short Version</source>
+                <target>Kurzfassung</target>
+            </trans-unit>
+            <trans-unit id="contentElement.imageTextOverlay.imageManipulation.default">
+                <source>Default</source>
+                <target>Standard</target>
+            </trans-unit>            
 
 		</body>
 	</file>

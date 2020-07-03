@@ -1,0 +1,6 @@
+tt_content {
+    rkwtemplate_collapsed =< lib.contentElement
+    rkwtemplate_collapsed {
+        templateName = CollapsedText
+    }
+}

@@ -1,6 +1,6 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
-	<f:if condition="({f:cObject(typoscriptObjectPath: 'lib.txRkwTemplate.schemaOrg.pageLayout')} == 10) || ({f:cObject(typoscriptObjectPath: 'lib.txRkwTemplate.schemaOrg.pageLayout')} == 10)">
+	<f:if condition="({f:cObject(typoscriptObjectPath: 'lib.txRkwTemplate.schemaOrg.pageLayout')} == 20)">
 		<f:render section="Article" arguments="{_all}"/>
 	</f:if>
 	<f:if condition="({f:cObject(typoscriptObjectPath: 'lib.txRkwTemplate.schemaOrg.pageLayout')} == 30)">
@@ -21,17 +21,17 @@
 			"headline": "{f:cObject(typoscriptObjectPath: 'lib.txRkwTemplate.schemaOrg.pageTitle')}",
 			"articleBody" : "<f:format.htmlspecialchars><f:format.htmlentitiesDecode><f:format.stripTags ><f:if condition="{data.tx_gridelements_view_column_50}"><f:then>{data.tx_gridelements_view_column_50}</f:then><f:else>{f:cObject(typoscriptObjectPath: 'lib.txRkwTemplate.schemaOrg.pageAbstract')}</f:else></f:if></f:format.stripTags></f:format.htmlentitiesDecode></f:format.htmlspecialchars>",
 			"description" : "<f:format.htmlspecialchars><f:format.htmlentitiesDecode>{f:cObject(typoscriptObjectPath: 'lib.txRkwTemplate.schemaOrg.pageAbstract')}</f:format.htmlentitiesDecode></f:format.htmlspecialchars>",
-			<f:comment>"datePublished": "<f:format.date format="Y-m-d">{f:cObject(typoscriptObjectPath: 'lib.txRkwTemplate.schemaOrg.pageLastUpdated')}</f:format.date>",</f:comment>
+			"datePublished": "<f:format.date format="Y-m-d">{f:cObject(typoscriptObjectPath: 'lib.txRkwTemplate.schemaOrg.pagePubDate')}</f:format.date>",
 			"dateModified": "<f:format.date format="Y-m-d">{f:cObject(typoscriptObjectPath: 'lib.txRkwTemplate.schemaOrg.pageLastUpdated')}</f:format.date>",
 			"image" : "{f:cObject(typoscriptObjectPath: 'lib.txRkwTemplate.schemaOrg.pageHeader')}",
 			"url" : "{f:cObject(typoscriptObjectPath: 'lib.txRkwTemplate.schemaOrg.url')}",
 			"copyrightHolder" : {
 				"@type" : "Organization",
-				"name" : "<f:cObject typoscriptObjectPath="lib.txRkwTemplate.schemaOrg.websiteName" />"
+				"name" : "<f:cObject typoscriptObjectPath="lib.txRkwTemplate.schemaOrg.publisher" />"
 			},
 			"publisher" : {
 				"@type" : "Organization",
-				"name" : "<f:cObject typoscriptObjectPath="lib.txRkwTemplate.schemaOrg.websiteName" />",
+				"name" : "<f:cObject typoscriptObjectPath="lib.txRkwTemplate.schemaOrg.publisher" />",
 				"logo" : "<f:cObject typoscriptObjectPath="lib.txRkwTemplate.schemaOrg.logoUrl" />"
 			}
 		}
@@ -58,11 +58,11 @@
 			"url" : "{f:cObject(typoscriptObjectPath: 'lib.txRkwTemplate.schemaOrg.url')}",
 			"copyrightHolder" : {
 			"@type" : "Organization",
-			"name" : "<f:cObject typoscriptObjectPath="lib.txRkwTemplate.schemaOrg.websiteName" />"
+			"name" : "<f:cObject typoscriptObjectPath="lib.txRkwTemplate.schemaOrg.publisher" />"
 			},
 			"publisher" : {
 			"@type" : "Organization",
-			"name" : "<f:cObject typoscriptObjectPath="lib.txRkwTemplate.schemaOrg.websiteName" />",
+			"name" : "<f:cObject typoscriptObjectPath="lib.txRkwTemplate.schemaOrg.publisher" />",
 			"logo" : "<f:cObject typoscriptObjectPath="lib.txRkwTemplate.schemaOrg.logoUrl" />"
 			}
 			}

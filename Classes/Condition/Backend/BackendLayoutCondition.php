@@ -112,6 +112,8 @@ class BackendLayoutCondition extends \TYPO3\CMS\Core\Configuration\TypoScript\Co
                                 }
                                 break;
                         }
+
+                        break;
                     }
                 }
             }

@@ -1,4 +1,4 @@
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:rkw_template/Themes/Kompetenzzentrum/Configuration/setup.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:rkw_template/Themes/Kompetenzzentrum/Configuration/TypoScript/setup.typoscript">
 
 <INCLUDE_TYPOSCRIPT: source="FILE:./Config/Setup.typoscript">
 <INCLUDE_TYPOSCRIPT: source="FILE:./Extensions/Setup.typoscript">

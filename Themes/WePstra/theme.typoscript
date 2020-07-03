@@ -77,5 +77,8 @@ plugin.tx_rkwtemplate_themeconfig {
 
         # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Logo of website (desktop-version)
         logoFile = {$plugin.tx_rkwtemplate_themeconfig.paths.default.logos}/logo.svg
+
+        # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Logo of website (print-version)
+        logoFilePrint = {$plugin.tx_rkwtemplate_themeconfig.paths.default.logos}/logo-black.svg
     }
 }

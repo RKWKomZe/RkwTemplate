@@ -83,6 +83,9 @@ plugin.tx_rkwtemplate_themeconfig {
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=baseUrl (With / at the end for ClickEnlarge)
         baseUrl = https://www.rkw-kompetenzzentrum.de/
 
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Publisher of website
+        publisher = RKW Kompetenzzentrum
+
         # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Logo of website (desktop-version)
         logoFile = {$plugin.tx_rkwtemplate_themeconfig.paths.default.logos}/logo.png
 

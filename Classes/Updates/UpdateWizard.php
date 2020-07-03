@@ -106,10 +106,15 @@ class UpdateWizard extends \RKW\RkwBasics\Updates\AbstractUpdate
         $this->migrateLogoElements($databaseQueries);
         $this->migratePromoterElements($databaseQueries);
         $this->migrateShortlinkElements($databaseQueries);
+        $this->migrateOverviewElements($databaseQueries);
 
         $this->migrateContentsForTopicPages($databaseQueries);
         $this->migrateContentsForContentPages($databaseQueries);
         $this->migrateContentsForPublicationPages($databaseQueries);
+        $this->migrateTableOfContentsElements($databaseQueries);
+        $this->migrateCollapsedTextElements($databaseQueries);
+        $this->migrateImageListElements($databaseQueries);
+        $this->migrateImageTextOverlayElements($databaseQueries);
 
         $this->migratePageLayouts($databaseQueries);
 
@@ -125,7 +130,7 @@ class UpdateWizard extends \RKW\RkwBasics\Updates\AbstractUpdate
     }
 
     /**
-     * Update mission statement elements
+     * Update configuration
      *
      * @param array $databaseQueries Queries done in this update
      */
@@ -233,7 +238,7 @@ class UpdateWizard extends \RKW\RkwBasics\Updates\AbstractUpdate
                 '#EXT:rkw_template\/Configuration\/TsConfig\/WePstra#i',
                 '#EXT:rkw_template\/Configuration\/Themes/Kompetenzzentrum/TsConfig#i',
                 '#EXT:rkw_template\/Configuration\/Themes\/WePstra\/TsConfig#i',
-                '#EXT:rkw_template\/Themes\/Kompetenzzentrum\/Configuration\/TsConfig\/(_Websites|_Microsites)\/([^\/]+)/#i',
+                '#EXT:rkw_template\/Themes\/Kompetenzzentrum\/Configuration\/TsConfig\/(_Websites|_Microsites)\/([^\/]+)\/#i',
             ];
             $replace = [
                 '.typoscript',
@@ -995,8 +1000,12 @@ class UpdateWizard extends \RKW\RkwBasics\Updates\AbstractUpdate
             ->where(
                 $updateQueryBuilder->expr()->eq('colPos',
                     $updateQueryBuilder->createNamedParameter(13, \PDO::PARAM_INT)
+                ),
+                $updateQueryBuilder->expr()->neq('pid',
+                    $updateQueryBuilder->createNamedParameter(4347, \PDO::PARAM_INT)
                 )
             );
+
         $databaseQueries[] = $updateQueryBuilder->getSQL();
         $updateQueryBuilder->execute();
 
@@ -1017,7 +1026,16 @@ class UpdateWizard extends \RKW\RkwBasics\Updates\AbstractUpdate
         ];
 
         // move elements into a grid element-wrapper
-        $this->moveElementsFromColToGridContainer([13 => 20], 13, 'topicContainer', 2, $labels, $databaseQueries, '', 'rkwtemplate_topic');
+        $this->moveElementsFromColToGridContainer(
+            [13 => 20],
+            13,
+            'topicContainer',
+            2,
+            $labels,
+            $databaseQueries,
+            'pagets_homePages',
+            'rkwtemplate_topic'
+        );
 
         $this->setLock(__FUNCTION__);
     }
@@ -1202,6 +1220,254 @@ class UpdateWizard extends \RKW\RkwBasics\Updates\AbstractUpdate
     }
 
 
+    /**
+     * Update overview elements
+     *
+     * @param array $databaseQueries Queries done in this update
+     */
+    protected function migrateOverviewElements(array &$databaseQueries)
+    {
+
+        if ($this->hasLock(__FUNCTION__)){
+            return;
+        }
+
+        /** @var  \TYPO3\CMS\Core\Database\Connection $connection */
+        $connection = GeneralUtility::makeInstance(ConnectionPool::class)->getConnectionForTable('tt_content');
+
+        /**
+         * Updates for overviews
+         **/
+        $updateQueryBuilder = $connection->createQueryBuilder();
+        $updateQueryBuilder->update('tt_content')
+            ->set('CType', 'rkwtemplate_overview')
+            ->where(
+                $updateQueryBuilder->expr()->eq('colPos',
+                    $updateQueryBuilder->createNamedParameter(13, \PDO::PARAM_INT)
+                ),
+                $updateQueryBuilder->expr()->eq('pid',
+                    $updateQueryBuilder->createNamedParameter(4347, \PDO::PARAM_INT)
+                )
+            );
+        $databaseQueries[] = $updateQueryBuilder->getSQL();
+        $updateQueryBuilder->execute();
+
+
+        // Check for button labels and transfer them to the subheader
+        // find go through all pages
+        /** @var \TYPO3\CMS\Core\Database\Query\QueryBuilder $queryBuilder */
+        $queryBuilder = $connection->createQueryBuilder();
+        $queryBuilder->getRestrictions()
+            ->removeByType(StartTimeRestriction::class)
+            ->removeByType(EndTimeRestriction::class)
+            ->removeByType(HiddenRestriction::class)
+            ->removeByType(DeletedRestriction::class);
+
+        $statement = $queryBuilder->select('*')
+            ->from('tt_content')
+            ->where(
+                $queryBuilder->expr()->eq('colPos',
+                    $queryBuilder->createNamedParameter(13, \PDO::PARAM_INT)
+                ),
+                $queryBuilder->expr()->eq('pid',
+                    $queryBuilder->createNamedParameter(4347, \PDO::PARAM_INT)
+                )
+            )
+            ->execute();
+
+        // go through all elements
+        while ($record = $statement->fetch()) {
+
+            $updateQueryBuilder = $connection->createQueryBuilder();
+            $updateQueryBuilder->update('tt_content')
+                ->set('subheader', $record['tx_rkwbasics_header_link_caption'])
+                ->where(
+                    $updateQueryBuilder->expr()->eq('uid',
+                        $updateQueryBuilder->createNamedParameter($record['uid'] , \PDO::PARAM_INT)
+                    )
+                );
+            $databaseQueries[] = $updateQueryBuilder->getSQL();
+            $updateQueryBuilder->execute();
+        }
+
+
+        $this->setLock(__FUNCTION__);
+    }
+
+    /**
+     * Update table of content elements
+     *
+     * @param array $databaseQueries Queries done in this update
+     */
+    protected function migrateTableOfContentsElements(array &$databaseQueries)
+    {
+
+        if ($this->hasLock(__FUNCTION__)){
+            return;
+        }
+
+        /** @var  \TYPO3\CMS\Core\Database\Connection $connection */
+        $connection = GeneralUtility::makeInstance(ConnectionPool::class)->getConnectionForTable('tt_content');
+
+        /**
+         * Updates for table of contents
+         **/
+        $updateQueryBuilder = $connection->createQueryBuilder();
+        $updateQueryBuilder->update('tt_content')
+            ->set('CType', 'rkwtemplate_toc')
+            ->where(
+                $updateQueryBuilder->expr()->eq('section_frame',
+                    $updateQueryBuilder->createNamedParameter(101, \PDO::PARAM_INT)
+                )
+            );
+        $databaseQueries[] = $updateQueryBuilder->getSQL();
+        $updateQueryBuilder->execute();
+
+
+        // Check for headlines
+        /** @var \TYPO3\CMS\Core\Database\Query\QueryBuilder $queryBuilder */
+        $queryBuilder = $connection->createQueryBuilder();
+        $queryBuilder->getRestrictions()
+            ->removeByType(StartTimeRestriction::class)
+            ->removeByType(EndTimeRestriction::class)
+            ->removeByType(HiddenRestriction::class)
+            ->removeByType(DeletedRestriction::class);
+
+        $statement = $queryBuilder->select('*')
+            ->from('tt_content')
+            ->where(
+                $queryBuilder->expr()->eq('CType',
+                    $queryBuilder->createNamedParameter('rkwtemplate_toc', \PDO::PARAM_STR)
+                ),
+                $queryBuilder->expr()->eq('section_frame',
+                    $queryBuilder->createNamedParameter(101, \PDO::PARAM_INT)
+                ),
+                $queryBuilder->expr()->eq('header',
+                    $queryBuilder->createNamedParameter('', \PDO::PARAM_STR)
+                )
+            )
+            ->execute();
+
+        // go through all elements
+        while ($record = $statement->fetch()) {
+
+            $updateQueryBuilder = $connection->createQueryBuilder();
+            $updateQueryBuilder->update('tt_content')
+                ->set('header', 'Inhalt')
+                ->where(
+                    $updateQueryBuilder->expr()->eq('uid',
+                        $updateQueryBuilder->createNamedParameter($record['uid'] , \PDO::PARAM_INT)
+                    )
+                );
+            $databaseQueries[] = $updateQueryBuilder->getSQL();
+            $updateQueryBuilder->execute();
+        }
+
+
+        $this->setLock(__FUNCTION__);
+    }
+
+
+
+    /**
+     * Update collapsed text elements
+     *
+     * @param array $databaseQueries Queries done in this update
+     */
+    protected function migrateCollapsedTextElements(array &$databaseQueries)
+    {
+
+        if ($this->hasLock(__FUNCTION__)){
+            return;
+        }
+
+        /** @var  \TYPO3\CMS\Core\Database\Connection $connection */
+        $connection = GeneralUtility::makeInstance(ConnectionPool::class)->getConnectionForTable('tt_content');
+
+        /**
+         * Updates for collapsed text
+         **/
+        $updateQueryBuilder = $connection->createQueryBuilder();
+        $updateQueryBuilder->update('tt_content')
+            ->set('CType', 'rkwtemplate_collapsed')
+            ->where(
+                $updateQueryBuilder->expr()->eq('section_frame',
+                    $updateQueryBuilder->createNamedParameter(100, \PDO::PARAM_INT)
+                )
+            );
+        $databaseQueries[] = $updateQueryBuilder->getSQL();
+        $updateQueryBuilder->execute();
+
+
+        $this->setLock(__FUNCTION__);
+    }
+
+
+
+    /**
+     * Update image list elements
+     *
+     * @param array $databaseQueries Queries done in this update
+     */
+    protected function migrateImageListElements(array &$databaseQueries)
+    {
+
+        if ($this->hasLock(__FUNCTION__)){
+            return;
+        }
+
+        /** @var  \TYPO3\CMS\Core\Database\Connection $connection */
+        $connection = GeneralUtility::makeInstance(ConnectionPool::class)->getConnectionForTable('tt_content');
+
+        /**
+         * Updates for table of contents
+         **/
+        $updateQueryBuilder = $connection->createQueryBuilder();
+        $updateQueryBuilder->update('tt_content')
+            ->set('CType', 'rkwtemplate_imagelist')
+            ->where(
+                $updateQueryBuilder->expr()->eq('imageorient',
+                    $updateQueryBuilder->createNamedParameter(18, \PDO::PARAM_INT)
+                )
+            );
+        $databaseQueries[] = $updateQueryBuilder->getSQL();
+        $updateQueryBuilder->execute();
+
+        $this->setLock(__FUNCTION__);
+    }
+
+
+    /**
+     * Update image text overlay elements
+     *
+     * @param array $databaseQueries Queries done in this update
+     */
+    protected function migrateImageTextOverlayElements(array &$databaseQueries)
+    {
+
+        if ($this->hasLock(__FUNCTION__)){
+            return;
+        }
+
+        /** @var  \TYPO3\CMS\Core\Database\Connection $connection */
+        $connection = GeneralUtility::makeInstance(ConnectionPool::class)->getConnectionForTable('tt_content');
+
+        /**
+         * Updates for table of contents
+         **/
+        $updateQueryBuilder = $connection->createQueryBuilder();
+        $updateQueryBuilder->update('tt_content')
+            ->set('CType', 'rkwtemplate_imagelist')
+            ->where(
+                $updateQueryBuilder->expr()->eq('imageorient',
+                    $updateQueryBuilder->createNamedParameter(26, \PDO::PARAM_INT)
+                )
+            );
+        $databaseQueries[] = $updateQueryBuilder->getSQL();
+        $updateQueryBuilder->execute();
+
+        $this->setLock(__FUNCTION__);
+    }
 
 
     /**
@@ -1235,7 +1501,7 @@ class UpdateWizard extends \RKW\RkwBasics\Updates\AbstractUpdate
 
 
     /**
-     * Update topic elements
+     * Migrate contents for content pages
      *
      * @param array $databaseQueries Queries done in this update
      */
@@ -1315,13 +1581,15 @@ class UpdateWizard extends \RKW\RkwBasics\Updates\AbstractUpdate
             5 => 11,        // renumber search-template (5) to new pluginOnly-template (11)
             4 => 30,        // renumber publication-template (4) to new publication-template (30)
             3 => 10,        // renumber topic-template (3) to new topic-template (10) (=default)
-            2 => 40,        // renumber home-template (7) to new home-template (40)
+            2 => 40,        // renumber home-template (2) to new home-template (40)
             1 => 20,        // renumber article-template (1) to new article-template (20)
 
             9 => 10,        // migrate blog-template (9) to topic-template (10)
             200 => 11,      // migrate expertList-template (200) to plugin-Only-template (11)
 
         ];
+
+        $excludePageIds = [2854,3229,2856,2878,2879,2855,2876,2875,2877];
 
         /** @var  \TYPO3\CMS\Core\Database\Connection $connectionPages */
         $connectionPages = GeneralUtility::makeInstance(ConnectionPool::class)->getConnectionForTable('pages');
@@ -1333,6 +1601,9 @@ class UpdateWizard extends \RKW\RkwBasics\Updates\AbstractUpdate
                 ->where(
                     $updateQueryBuilder->expr()->eq('layout',
                         $updateQueryBuilder->createNamedParameter($sourceNumber, \PDO::PARAM_INT)
+                    ),
+                    $updateQueryBuilder->expr()->notIn('uid',
+                        $updateQueryBuilder->createNamedParameter($excludePageIds, Connection::PARAM_INT_ARRAY)
                     )
                 );
             $databaseQueries[] = $updateQueryBuilder->getSQL();
@@ -1344,6 +1615,9 @@ class UpdateWizard extends \RKW\RkwBasics\Updates\AbstractUpdate
                 ->where(
                     $updateQueryBuilder->expr()->eq('tx_rkwbasics_fe_layout_next_level',
                         $updateQueryBuilder->createNamedParameter($sourceNumber, \PDO::PARAM_INT)
+                    ),
+                    $updateQueryBuilder->expr()->notIn('uid',
+                        $updateQueryBuilder->createNamedParameter($excludePageIds, Connection::PARAM_INT_ARRAY)
                     )
                 );
             $databaseQueries[] = $updateQueryBuilder->getSQL();
@@ -1395,6 +1669,12 @@ class UpdateWizard extends \RKW\RkwBasics\Updates\AbstractUpdate
 
         $colPosList = [7];
         $this->moveElementsFromColsIntoCol($colPosList, 710, $databaseQueries, 'pagets__eventsDetail');
+
+        $colPosList = [12];
+        $this->moveElementsFromColsIntoCol($colPosList, 810, $databaseQueries, 'pagets__rkwMaps');
+
+        $colPosList = [13];
+        $this->moveElementsFromColsIntoCol($colPosList, 820, $databaseQueries, 'pagets__rkwMaps');
 
 
         $this->setLock(__FUNCTION__);
