@@ -199,6 +199,28 @@ class UpdateWizard extends \RKW\RkwBasics\Updates\AbstractUpdate
                     . $record['include_static_file'];
             }
 
+            // add cookie-opt-in and remove rkw_overlay - but not on WePstra!
+            if (strpos($record['include_static_file'], 'Themes/WePstra') !== false) {
+
+                // simply remove rkw_info_layer
+                $record['include_static_file'] = str_replace('EXT:rkw_info_layer/Configuration/TypoScript,', '', $record['include_static_file']);
+
+            } else {
+
+                if (strpos($record['include_static_file'], 'EXT:sg_cookie_optin/Configuration/TypoScript/Frontend') === false) {
+
+                    // add cookie opt in and remove rkw_info_layer
+                    $record['include_static_file'] = str_replace('EXT:rkw_template/Configuration/TypoScript,', 'EXT:sg_cookie_optin/Configuration/TypoScript/Frontend,EXT:rkw_template/Configuration/TypoScript,', $record['include_static_file']);
+                    $record['include_static_file'] = str_replace('EXT:rkw_info_layer/Configuration/TypoScript,', '', $record['include_static_file']);
+
+                    // add rkw_privacy-extension
+                    if (strpos($record['include_static_file'], 'EXT:rkw_privacy/Configuration/TypoScript') === false) {
+                        $record['include_static_file'] = str_replace(',EXT:rkw_template/Themes/', ',EXT:rkw_privacy/Configuration/TypoScript,EXT:rkw_template/Themes/', $record['include_static_file']);
+                    }
+                }
+
+            }
+
             // update
             /** @var \TYPO3\CMS\Core\Database\Query\QueryBuilder $updateQueryBuilder */
             $updateQueryBuilder = $connection->createQueryBuilder();

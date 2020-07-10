@@ -3229,16 +3229,16 @@ body.project-aprodi input[type="password"]:focus, body.project-aprodi textarea:h
     .wysiwyg a[class^="icon-"]:before {
       width: 16px;
       margin-right: 9px; }
-  .wysiwyg ul:not(.links-list):not(.steps):not(.sg-cookie-optin-box-cookie-list) {
+  .wysiwyg ul:not(.links-list):not(.steps):not(.sg-cookie-optin-box-cookie-list):not(.order-list) {
     margin-left: 0; }
-    .wysiwyg ul:not(.links-list):not(.steps):not(.sg-cookie-optin-box-cookie-list) li {
+    .wysiwyg ul:not(.links-list):not(.steps):not(.sg-cookie-optin-box-cookie-list):not(.order-list) li {
       position: relative;
       padding-left: 36px;
       list-style: none; }
       @media (max-width: 1024px) {
-        .wysiwyg ul:not(.links-list):not(.steps):not(.sg-cookie-optin-box-cookie-list) li {
+        .wysiwyg ul:not(.links-list):not(.steps):not(.sg-cookie-optin-box-cookie-list):not(.order-list) li {
           padding-left: 26px; } }
-      .wysiwyg ul:not(.links-list):not(.steps):not(.sg-cookie-optin-box-cookie-list) li:before {
+      .wysiwyg ul:not(.links-list):not(.steps):not(.sg-cookie-optin-box-cookie-list):not(.order-list) li:before {
         content: '';
         position: absolute;
         display: inline-block;
@@ -3251,14 +3251,14 @@ body.project-aprodi input[type="password"]:focus, body.project-aprodi textarea:h
         line-height: 1;
         vertical-align: middle; }
         @media (max-width: 1024px) {
-          .wysiwyg ul:not(.links-list):not(.steps):not(.sg-cookie-optin-box-cookie-list) li:before {
+          .wysiwyg ul:not(.links-list):not(.steps):not(.sg-cookie-optin-box-cookie-list):not(.order-list) li:before {
             top: 13px;
             width: 10px; } }
-      .wysiwyg ul:not(.links-list):not(.steps):not(.sg-cookie-optin-box-cookie-list) li ol,
-      .wysiwyg ul:not(.links-list):not(.steps):not(.sg-cookie-optin-box-cookie-list) li ul {
+      .wysiwyg ul:not(.links-list):not(.steps):not(.sg-cookie-optin-box-cookie-list):not(.order-list) li ol,
+      .wysiwyg ul:not(.links-list):not(.steps):not(.sg-cookie-optin-box-cookie-list):not(.order-list) li ul {
         margin-top: 0;
         margin-bottom: 0; }
-    .wysiwyg ul:not(.links-list):not(.steps):not(.sg-cookie-optin-box-cookie-list) li + li {
+    .wysiwyg ul:not(.links-list):not(.steps):not(.sg-cookie-optin-box-cookie-list):not(.order-list) li + li {
       margin-top: 10px; }
   .wysiwyg ol li {
     padding-left: 10px; }
@@ -3278,12 +3278,16 @@ body.project-aprodi input[type="password"]:focus, body.project-aprodi textarea:h
       line-height: 72px; }
     .wysiwyg blockquote p {
       margin-bottom: 0; }
+  .wysiwyg .text-left,
   .wysiwyg .align-left {
     text-align: left !important; }
+  .wysiwyg .text-center,
   .wysiwyg .align-center {
     text-align: center !important; }
+  .wysiwyg .text-right,
   .wysiwyg .align-right {
     text-align: right !important; }
+  .wysiwyg .text-justify,
   .wysiwyg .align-justify {
     text-align: justify !important; }
   .wysiwyg .indent {
@@ -3600,16 +3604,16 @@ body:not(.first-letter-normal) .wysiwyg:not(.first-letter-normal) .csc-element-n
     .featherlight-content a[class^="icon-"]:before {
       width: 16px;
       margin-right: 9px; }
-  .featherlight-content ul:not(.links-list):not(.steps):not(.sg-cookie-optin-box-cookie-list) {
+  .featherlight-content ul:not(.links-list):not(.steps):not(.sg-cookie-optin-box-cookie-list):not(.order-list) {
     margin-left: 0; }
-    .featherlight-content ul:not(.links-list):not(.steps):not(.sg-cookie-optin-box-cookie-list) li {
+    .featherlight-content ul:not(.links-list):not(.steps):not(.sg-cookie-optin-box-cookie-list):not(.order-list) li {
       position: relative;
       padding-left: 36px;
       list-style: none; }
       @media (max-width: 1024px) {
-        .featherlight-content ul:not(.links-list):not(.steps):not(.sg-cookie-optin-box-cookie-list) li {
+        .featherlight-content ul:not(.links-list):not(.steps):not(.sg-cookie-optin-box-cookie-list):not(.order-list) li {
           padding-left: 26px; } }
-      .featherlight-content ul:not(.links-list):not(.steps):not(.sg-cookie-optin-box-cookie-list) li:before {
+      .featherlight-content ul:not(.links-list):not(.steps):not(.sg-cookie-optin-box-cookie-list):not(.order-list) li:before {
         content: '';
         position: absolute;
         display: inline-block;
@@ -3622,14 +3626,14 @@ body:not(.first-letter-normal) .wysiwyg:not(.first-letter-normal) .csc-element-n
         line-height: 1;
         vertical-align: middle; }
         @media (max-width: 1024px) {
-          .featherlight-content ul:not(.links-list):not(.steps):not(.sg-cookie-optin-box-cookie-list) li:before {
+          .featherlight-content ul:not(.links-list):not(.steps):not(.sg-cookie-optin-box-cookie-list):not(.order-list) li:before {
             top: 13px;
             width: 10px; } }
-      .featherlight-content ul:not(.links-list):not(.steps):not(.sg-cookie-optin-box-cookie-list) li ol,
-      .featherlight-content ul:not(.links-list):not(.steps):not(.sg-cookie-optin-box-cookie-list) li ul {
+      .featherlight-content ul:not(.links-list):not(.steps):not(.sg-cookie-optin-box-cookie-list):not(.order-list) li ol,
+      .featherlight-content ul:not(.links-list):not(.steps):not(.sg-cookie-optin-box-cookie-list):not(.order-list) li ul {
         margin-top: 0;
         margin-bottom: 0; }
-    .featherlight-content ul:not(.links-list):not(.steps):not(.sg-cookie-optin-box-cookie-list) li + li {
+    .featherlight-content ul:not(.links-list):not(.steps):not(.sg-cookie-optin-box-cookie-list):not(.order-list) li + li {
       margin-top: 10px; }
   .featherlight-content ol li {
     padding-left: 10px; }
@@ -3649,12 +3653,16 @@ body:not(.first-letter-normal) .wysiwyg:not(.first-letter-normal) .csc-element-n
       line-height: 72px; }
     .featherlight-content blockquote p {
       margin-bottom: 0; }
+  .featherlight-content .text-left,
   .featherlight-content .align-left {
     text-align: left !important; }
+  .featherlight-content .text-center,
   .featherlight-content .align-center {
     text-align: center !important; }
+  .featherlight-content .text-right,
   .featherlight-content .align-right {
     text-align: right !important; }
+  .featherlight-content .text-justify,
   .featherlight-content .align-justify {
     text-align: justify !important; }
   .featherlight-content .indent {
@@ -6674,16 +6682,18 @@ body.project-aprodi .navigation-list li.active a {
 
 /* file */
 .jcf-file {
-  display: inline-block;
+  display: block;
   white-space: nowrap;
   position: relative;
   overflow: hidden;
-  background: #fff; }
+  background: #fff;
+  margin-bottom: 16px; }
 
 .jcf-file .jcf-real-element {
   position: absolute;
-  font-size: 200px;
-  height: 200px;
+  font-size: 12px;
+  width: 100%;
+  height: 100%;
   margin: 0;
   right: 0;
   top: 0; }
@@ -6694,23 +6704,39 @@ body.project-aprodi .navigation-list li.active a {
   white-space: nowrap;
   vertical-align: top;
   overflow: hidden;
-  border: 1px solid #777;
-  padding: 0 8px;
-  font-size: 13px;
-  line-height: 28px;
-  height: 28px;
-  width: 125px; }
+  font-size: 12px;
+  line-height: 40px;
+  width: 125px;
+  height: 45px;
+  padding: 0 14px;
+  border: 2px solid #ccc;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  font-family: "ff-tisa-sans-web-pro", "Arial", "Tahoma", "Verdana", sans-serif; }
+  .jcf-file .jcf-fake-input:hover, .jcf-file .jcf-fake-input:focus {
+    border-color: #e64415; }
 
 .jcf-file .jcf-upload-button {
   display: inline-block;
-  vertical-align: top;
   white-space: nowrap;
   overflow: hidden;
-  border: 1px solid #777;
   margin: 0 0 0 -1px;
-  padding: 0 10px;
-  line-height: 28px;
-  height: 28px; }
+  height: 45px;
+  padding: 0 14px;
+  border: 2px solid transparent;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background: #e64415;
+  color: #fff;
+  font-family: "ff-tisa-sans-web-pro", "Arial", "Tahoma", "Verdana", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 40px;
+  vertical-align: middle;
+  transition: background 0.25s ease;
+  word-spacing: 0.2em; }
 
 /* scrollbars */
 .jcf-scrollable-wrapper {
@@ -8245,7 +8271,9 @@ body.project-aprodi .flyout > li > a:hover {
 
 /** Cookie overlay */
 #SgCookieOptin .sg-cookie-optin-box {
-  font-family: "ff-tisa-sans-web-pro", "Arial", "Tahoma", "Verdana", sans-serif !important; }
+  font-family: "ff-tisa-sans-web-pro", "Arial", "Tahoma", "Verdana", sans-serif !important;
+  -ms-overflow-style: auto !important;
+  scrollbar-width: auto !important; }
   #SgCookieOptin .sg-cookie-optin-box .sg-cookie-optin-box-button button {
     overflow: hidden;
     display: inline-block;

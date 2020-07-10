@@ -1,7 +1,7 @@
 plugin.tx_rkwtemplate_themeconfig {
 
     # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Name of main-theme
-    themeName = Kompetenzzentrum
+    themeName = Kompetenzzentrum2016
 
     # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Name of the sub-theme
     subThemeName = _Microsites/Aprodi

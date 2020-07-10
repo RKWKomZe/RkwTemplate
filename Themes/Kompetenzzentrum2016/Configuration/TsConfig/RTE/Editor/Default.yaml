@@ -17,6 +17,7 @@ editor:
     contentsCss: "EXT:rkw_template/Themes/Kompetenzzentrum2016/Resources/Public/css/rte.css"
 
     stylesSet:
-
+      # block level styles
+      - { name: 'Tabelle Events', element: 'table', attributes: { 'class': 'contenttable-events responsive' } }
       # List styles
       - { name: 'Download-Liste', element: 'ul', attributes: { 'class': 'links-list' } }

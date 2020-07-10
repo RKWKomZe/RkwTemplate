@@ -35,7 +35,6 @@ editor:
       # block level styles
       - { name: 'Tabelle Normal', element: 'table', attributes: { 'class': 'contenttable responsive' } }
       - { name: 'Tabelle Abwechselnd', element: 'table', attributes: { 'class': 'contenttable-1 responsive' } }
-      - { name: 'Tabelle Events', element: 'table', attributes: { 'class': 'contenttable-events responsive' } }
 
     toolbarGroups:
       - { name: clipboard, groups: [clipboard, undo] }

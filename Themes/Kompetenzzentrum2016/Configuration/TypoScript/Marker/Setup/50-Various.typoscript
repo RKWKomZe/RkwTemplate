@@ -29,27 +29,6 @@ lib.txRkwTemplate {
             settings =< plugin.tx_rkwalerts.settings
         }
 
-        //=================================================================
-        overlay = USER
-        overlay {
-            userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
-            extensionName = RkwInfoLayer
-            pluginName = Infolayer
-            vendorName = RKW
-            controller = Infolayer
-            switchableControllerActions {
-                // Again: Controller-Name and Action
-                Infolayer {
-                    1 = show
-                    2 = conten
-                    3 = cookie
-                    4 = dismiss
-                }
-            }
-            view =< plugin.tx_rkwinfolayer.view
-            persistence =< plugin.tx_rkwinfolayer.persistence
-            settings =< plugin.tx_rkwinfolayer.settings
-        }
 
         //=================================================================
         overlayMeinRkw = USER
