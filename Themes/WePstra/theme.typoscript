@@ -29,7 +29,7 @@ plugin.tx_rkwtemplate_themeconfig {
             logos = EXT:rkw_template/Themes/{$plugin.tx_rkwtemplate_themeconfig.themeName}/Resources/Public/images
 
             # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Path to icons
-            icons = EXT:rkw_template/Resources/Public/Themes/Kompetenzzentrum/images/icons/white
+            icons = EXT:rkw_template/Resources/Public/Themes/Kompetenzzentrum2016/images/icons/white
 
             # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Path to JavaScripts
             js = EXT:rkw_template/Themes/{$plugin.tx_rkwtemplate_themeconfig.themeName}/Resources/Public/js
@@ -43,15 +43,8 @@ plugin.tx_rkwtemplate_themeconfig {
 
         extensions {
 
-            # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Path to templates
-            templates = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/Extensions
-
-            # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Path to partials
-            partials = {$plugin.tx_rkwtemplate_themeconfig.paths.default.partials}/Extensions
-
-            # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Path to layouts
-            layouts = {$plugin.tx_rkwtemplate_themeconfig.paths.default.layouts}/Extensions
-
+            # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Root path for extension layouts, templates and partials
+            root = EXT:rkw_template/Themes/{$plugin.tx_rkwtemplate_themeconfig.themeName}/Resources/Private/Extensions
         }
     }
 

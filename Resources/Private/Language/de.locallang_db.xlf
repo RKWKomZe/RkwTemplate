@@ -30,7 +30,7 @@
 			</trans-unit>
 			<trans-unit id="contentElement.slider.description">
 				<source>Displays a slider.</source>
-				<target>Fügt ein Slider-Element ein.</target>
+				<target>Ein Slider-Element für die Verwendung im Slider-Container.</target>
 			</trans-unit>
 			<trans-unit id="contentElement.slider.type.I.default">
 				<source>Black font, no gradient</source>
@@ -70,7 +70,7 @@
             </trans-unit>
             <trans-unit id="contentElement.sliderContainer.description">
                 <source>Adds a slide-container.</source>
-                <target>Fügt einen Container für Slider ein.</target>
+                <target>Fügt einen Container für Slider ein. Üblicherweise wird dieses Element auf der Startseite eingesetzt.</target>
             </trans-unit>
 
 
@@ -81,7 +81,7 @@
             </trans-unit>
             <trans-unit id="contentElement.mission.description">
                 <source>Adds a Mission Statement.</source>
-                <target>Fügt ein Mission Statement ein.</target>
+                <target>Fügt ein Mission Statement ein. Üblicherweise wird dieses Element auf der Startseite eingesetzt.</target>
             </trans-unit>
 
             
@@ -92,7 +92,7 @@
             </trans-unit>
             <trans-unit id="contentElement.topic.description">
                 <source>Displays a topic.</source>
-                <target>Fügt ein Themen-Element ein.</target>
+                <target>Eine Box für den Verweis auf zentrale Themen und/oder Inhalte einer Website zur Verwendung im Themen-Container.</target>
             </trans-unit>
             <trans-unit id="contentElement.topic.imageManipulation.default">
                 <source>Default</source>
@@ -131,7 +131,7 @@
             </trans-unit>
             <trans-unit id="contentElement.topicContainer.description">
                 <source>Adds a topic-container.</source>
-                <target>Fügt einen Container für Themen ein.</target>
+                <target>Fügt einen Container für Themen-Elemente ein. Üblicherweise wird dieses Element auf der Startseite eingesetzt.</target>
             </trans-unit>
 
 
@@ -142,7 +142,7 @@
             </trans-unit>
             <trans-unit id="contentElement.media.description">
                 <source>Adds a Media-Element.</source>
-                <target>Fügt ein Medien-Element ein.</target>
+                <target>Ein Youtube-Video oder ein anderes Medien-Element. Üblicherweise wird dieses Element auf der Startseite eingesetzt.</target>
             </trans-unit>
 
 
@@ -153,7 +153,7 @@
             </trans-unit>
             <trans-unit id="contentElement.logo.description">
                 <source>Adds a Logo-Element.</source>
-                <target>Fügt ein Logo-Element hinzu</target>
+                <target>Ein verlinktes Logo eines Partners zur Verwendung im Logo-Container.</target>
             </trans-unit>
             <trans-unit id="contentElement.logo.imageManipulation.default">
                 <source>Default</source>
@@ -168,7 +168,7 @@
             </trans-unit>
             <trans-unit id="contentElement.logoContainer.description">
                 <source>Adds a logo-container.</source>
-                <target>Fügt einen Container für Logos ein.</target>
+                <target>Fügt einen Container für Logos ein. Überlicherweise wird dieses Element auf Themen-Seiten eingesetzt.</target>
             </trans-unit>
 
 
@@ -179,7 +179,7 @@
             </trans-unit>
             <trans-unit id="contentElement.promoter.description">
                 <source>Adds a Promoter-Element.</source>
-                <target>Fügt ein Förderer-Element hinzu</target>
+                <target>Ein Logo eines Förderer für die Einblendung eines offiziellen Förderhinweises zur Verwendung im Förderer-Container.</target>
             </trans-unit>
 
 
@@ -190,7 +190,7 @@
             </trans-unit>
             <trans-unit id="contentElement.promoterContainer.description">
                 <source>Adds a Promoter-Container.</source>
-                <target>Fügt einen Container für Förderer ein.</target>
+                <target>Fügt einen Container für Förderer ein. Üblicherweise wird dieses Element an prominenter Stelle auf Themen-Seiten eingesetzt.</target>
             </trans-unit>
 
 
@@ -201,7 +201,7 @@
             </trans-unit>
             <trans-unit id="contentElement.contentContainerTwoCols.description">
                 <source>Add a Content-Container with two Cols.</source>
-                <target>Fügt Inhalts-Container mit zwei Spalten ein.</target>
+                <target>Fügt einen Inhalts-Container mit einem zweispaltigen Layout ein (Inhalts- und Randspalte).</target>
             </trans-unit>
             <trans-unit id="contentElement.contentContainerTwoCols.content">
                 <source>Content</source>
@@ -224,7 +224,7 @@
             </trans-unit>
             <trans-unit id="contentElement.contentContainerOneCol.description">
                 <source>Add a Content-Container with one Col.</source>
-                <target>Fügt Inhalts-Container mit einer Spalte ein.</target>
+                <target>Fügt einen Inhalts-Container mit einer Spalte ein (nur Inhaltsspalte).</target>
             </trans-unit>
             <trans-unit id="contentElement.contentContainerOneCol.content">
                 <source>Content</source>
@@ -243,7 +243,7 @@
             </trans-unit>
             <trans-unit id="contentElement.shortlink.description">
                 <source>Adds a Shortlink-Element.</source>
-                <target>Fügt ein Schnell-Verweis-Element hinzu</target>
+                <target>Setzt in der Randspalte eine Verlinkung zu relevanten Inhalten.</target>
             </trans-unit>
 			<trans-unit id="contentElement.shortlink.type.I.0">
 				<source>Default (Article)</source>
@@ -274,7 +274,7 @@
             </trans-unit>
             <trans-unit id="contentElement.overview.description">
                 <source>Adds an overview text.</source>
-                <target>Fügt einen Übersichtstext ein.</target>
+                <target>Ein kurzer Text mit prominenter Verlinkung zur Darstellung zentraler inhaltlicher Einstiegspunkte. Üblicherweise wird dieses Element auf der Startseite der rkw.de eingesetzt.</target>
             </trans-unit>
 
 
@@ -285,7 +285,7 @@
             </trans-unit>
             <trans-unit id="contentElement.toc.description">
                 <source>Adds a table of contents.</source>
-                <target>Fügt ein Inhaltsverzeichnis ein.</target>
+                <target>Fügt ein Inhaltsverzeichnis ein. Berücksichtigt werden darin die Überschriften (Feld: Überschrift) aller Inhaltselemente der aktuellen Seite.</target>
             </trans-unit>
 
 
@@ -296,7 +296,7 @@
             </trans-unit>
             <trans-unit id="contentElement.collapsed.description">
                 <source>Adds a collapsed text element.</source>
-                <target>Fügt ein Textelement mit verkürztem Text ein, der über einen Link komplett angezeigt werden kann.</target>
+                <target>Ein Kurztext mit einem Mehr-Link. Bei Klick auf den Mehr-Link wird ein längerer Text eingeblendet.</target>
             </trans-unit>
             <trans-unit id="contentElement.collapsed.rowDescription">
                 <source>Short Version</source>
@@ -311,7 +311,7 @@
             </trans-unit>
             <trans-unit id="contentElement.imageList.description">
                 <source>Adds an image list -element.</source>
-                <target>Fügt eine Bilderliste hinzu.</target>
+                <target>Ein quadratisches Bild, linksbündig ausgerichtet und daneben ein Text, der über einen Mehr-Link bei Bedarf ausgeklappt werden kann. Diese Darstellung eignet sich gut, um eine listenartige Aufzählung mit Bildern und erweitertem Inhalt anzureichern.</target>
             </trans-unit>
             <trans-unit id="contentElement.imageList.rowDescription">
                 <source>Short Version</source>
@@ -330,7 +330,7 @@
             </trans-unit>
             <trans-unit id="contentElement.imageTextOverlay.description">
                 <source>Adds an image-text-overlay -element.</source>
-                <target>Fügt ein Bild mit überlagerndem Text hinzu.</target>
+                <target>Ein großflächig dargestelltes Bild, das ca. zur Hälfte durch eine halbtransparente Textbox überlagert wird.</target>
             </trans-unit>
             <trans-unit id="contentElement.imageTextOverlay.rowDescription">
                 <source>Short Version</source>

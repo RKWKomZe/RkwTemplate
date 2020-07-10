@@ -101,7 +101,7 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_slider'] = [
     [
         'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.slider.title',
         'rkwtemplate_slider',
-        'rkw_template',
+        'rkw-template-slider',
     ],
     'textmedia',
     'after'

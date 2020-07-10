@@ -95,7 +95,7 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_imagelist'] = [
     [
         'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.imageList.title',
         'rkwtemplate_imagelist',
-        'rkw_template',
+        'rkw-template-imagelist',
     ],
     'textmedia',
     'after'

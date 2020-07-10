@@ -4,7 +4,7 @@
 mod.wizards.newContentElement.wizardItems.common {
     elements {
         rkwtemplate_topic {
-            iconIdentifier = rkw_template
+            iconIdentifier = rkw-template-topic
             title = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.topic.title
             description = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.topic.description
             tt_content_defValues {

@@ -3,7 +3,7 @@ module.tx_rkwmailer {
     view {
         partialRootPaths >
         partialRootPaths {
-            0 = {$plugin.tx_rkwtemplate_themeconfig.paths.extensions.partials}/RkwMailer
+            0 = {$plugin.tx_rkwtemplate_themeconfig.paths.extensions.root}/RkwMailer/Partials
         }
     }
 }

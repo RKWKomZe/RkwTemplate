@@ -1,0 +1,80 @@
+RTE {
+    default {
+
+        // Set YAML-configuration for editor
+        preset = rkwTemplateWePstra
+
+        // Set default link classes
+        classesAnchor {
+
+            externalLink {
+                class = external-link
+                name = Externer Link
+                type = url
+                titleText = Öffnet Link in neuem Fenster
+                target = _blank
+                image =
+                #params =
+                rel =
+            }
+
+            internalLink {
+                class = internal-link
+                name = Interner Link
+                type = page
+                titleText = Öffnet Link in gleichem Fenster
+                target =
+                image =
+                #params =
+                rel =
+            }
+
+            download {
+                class = download
+                name = Download
+                type = file
+                titleText = Datei herunterladen
+                target =
+                image =
+                #params =
+                rel =
+            }
+
+            mail {
+                class = mail
+                name = E-Mail
+                type = mail
+                titleText = E-Mail schreiben
+                target =
+                image =
+                #params =
+                rel =
+            }
+        }
+
+        buttons {
+
+            link {
+                options.removeItems = folder
+
+                // Default classes
+                page.properties {
+                    class.default = internal-link
+                }
+                file.properties {
+                    class.default = download
+                }
+                url.properties {
+                    class.default = external-link
+                }
+                mail.properties {
+                    class.default = mail
+                }
+
+                // allowed classes
+                properties.class.allowedClasses = external-link,internal-link,download,mail
+                queryParametersSelector.enabled = 1
+            }
+        }
+    }
+}

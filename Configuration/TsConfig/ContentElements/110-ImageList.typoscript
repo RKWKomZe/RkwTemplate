@@ -4,7 +4,7 @@
 mod.wizards.newContentElement.wizardItems.common {
     elements {
         rkwtemplate_imagelist {
-            iconIdentifier = rkw_template
+            iconIdentifier = rkw-template-imagelist
             title = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.imageList.title
             description = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.imageList.description
             tt_content_defValues {

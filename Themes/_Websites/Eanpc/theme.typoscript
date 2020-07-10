@@ -13,16 +13,15 @@ plugin.tx_rkwtemplate_themeconfig {
             logos = EXT:rkw_template/Themes/{$plugin.tx_rkwtemplate_themeconfig.subThemeName}/Resources/Public/images/logos
 
             # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Path to icons
-            # icons = EXT:rkw_template/Themes/Kompetenzzentrum/Resources/Public/icons/grey
+            # icons = EXT:rkw_template/Themes/Kompetenzzentrum2016/Resources/Public/icons/grey
         }
 
         extensions {
 
-            # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Path to partials
-            # partials = EXT:rkw_template/Themes/{$plugin.tx_rkwtemplate_themeconfig.subThemeName}/Resources/Private/Partials/Extensions
+            # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Root path for extension layouts, templates and partials
+            # root = EXT:rkw_template/Themes/{$plugin.tx_rkwtemplate_themeconfig.subThemeName}/Resources/Private/Extensions
         }
     }
-
 
     website {
 

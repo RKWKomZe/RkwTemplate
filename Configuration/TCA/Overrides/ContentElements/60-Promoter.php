@@ -18,7 +18,7 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_promoter'] = $GLOBALS['TCA']
     [
         'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.promoter.title',
         'rkwtemplate_promoter',
-        'rkw_template',
+        'rkw-template-promoter',
     ],
     'textmedia',
     'after'

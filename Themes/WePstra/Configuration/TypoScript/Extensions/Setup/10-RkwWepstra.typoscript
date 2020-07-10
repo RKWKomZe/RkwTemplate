@@ -1,15 +1,15 @@
 plugin.tx_rkwwepstra {
 	view {
 		layoutRootPaths {
-            10 = {$plugin.tx_rkwtemplate_themeconfig.paths.extensions.layouts}/RkwWepstra
+            10 = {$plugin.tx_rkwtemplate_themeconfig.paths.extensions.root}/RkwWepstra/Layouts
 			20 = {$plugin.tx_rkwwepstra.view.layoutRootPath}
 		}
 		templateRootPaths {
-    	    10 = {$plugin.tx_rkwtemplate_themeconfig.paths.extensions.templates}/RkwWepstra
+    	    10 = {$plugin.tx_rkwtemplate_themeconfig.paths.extensions.root}/RkwWepstra/Templates
             20 ={$plugin.tx_rkwwepstra.view.templateRootPath}
         }
 		partialRootPaths {
-		    10 = {$plugin.tx_rkwtemplate_themeconfig.paths.extensions.partials}/RkwWepstra
+		    10 = {$plugin.tx_rkwtemplate_themeconfig.paths.extensions.root}/RkwWepstra/Partials
 			20 =  {$plugin.tx_rkwwepstra.view.partialRootPath}
         }
 	}

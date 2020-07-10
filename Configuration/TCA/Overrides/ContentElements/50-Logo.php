@@ -87,7 +87,7 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_logo'] = [
     [
         'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.logo.title',
         'rkwtemplate_logo',
-        'rkw_template',
+        'rkw-template-logo',
     ],
     'textmedia',
     'after'

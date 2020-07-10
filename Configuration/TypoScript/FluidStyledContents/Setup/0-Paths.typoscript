@@ -1,14 +1,14 @@
 lib.contentElement {
 
     layoutRootPaths {
-        5 = {$plugin.tx_rkwtemplate_themeconfig.paths.extensions.layouts}/FluidStyledContent
+        5 = {$plugin.tx_rkwtemplate_themeconfig.paths.extensions.root}/FluidStyledContent/Layouts
     }
 
     templateRootPaths {
-        5 = {$plugin.tx_rkwtemplate_themeconfig.paths.extensions.templates}/FluidStyledContent
+        5 = {$plugin.tx_rkwtemplate_themeconfig.paths.extensions.root}/FluidStyledContent/Template
     }
 
     partialRootPaths {
-        5 =  {$plugin.tx_rkwtemplate_themeconfig.paths.extensions.partials}/FluidStyledContent
+        5 =  {$plugin.tx_rkwtemplate_themeconfig.paths.extensions.root}/FluidStyledContent/Partials
     }
  }

@@ -4,7 +4,7 @@
 mod.wizards.newContentElement.wizardItems.common {
     elements {
         rkwtemplate_collapsed {
-            iconIdentifier = rkw_template
+            iconIdentifier = rkw-template-collapsed
             title = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.collapsed.title
             description = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.collapsed.description
             tt_content_defValues {

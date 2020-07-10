@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{display:inline;fill:#5599FF;}
+	.st2{display:inline;}
+	.st3{fill:#FFFFFF;}
+	.st4{fill:#666666;}
+	.st5{display:inline;fill:#3473CE;}
+	.st6{display:inline;fill:#FFFFFF;}
+	.st7{display:inline;fill:#999999;}
+	.st8{display:inline;fill:#B9B9B9;}
+	.st9{fill:#5599FF;}
+	.st10{fill:#B9B9B9;}
+	.st11{fill:#999999;}
+	.st12{fill:#663399;}
+	.st13{opacity:0.2;enable-background:new    ;}
+	.st14{fill:#FF8700;}
+	.st15{display:inline;fill:#666666;}
+	.st16{display:inline;fill:#FF8700;}
+</style>
+<g id="_x30_1_x5F_Slider" class="st0">
+	<path class="st1" d="M14,4H2v8h12V4z"/>
+	<g class="st2">
+		<circle class="st3" cx="5" cy="10" r="1"/>
+		<circle class="st4" cx="8" cy="10" r="1"/>
+		<circle class="st4" cx="11" cy="10" r="1"/>
+	</g>
+	<path class="st5" d="M2,4h12v8H2V4 M1,3v10h14V3H1z"/>
+</g>
+<g id="_x30_2_x5F_Verk.Text" class="st0">
+	<path class="st6" d="M1,1h14v14H1V1z"/>
+	<path class="st6" d="M1,1h14v14H1V1z"/>
+	<path class="st7" d="M1,1v14h14V1H1z M2,2h12v12H2V2z"/>
+	<path class="st8" d="M3,7.6h10v1H3V7.6z M3,9.6h10v1H3V9.6z M3,11.6h10v1H3V11.6z"/>
+	<g class="st2">
+		<rect x="3" y="3.6" class="st4" width="10" height="1"/>
+		<rect x="3" y="5.6" class="st4" width="10" height="1"/>
+	</g>
+</g>
+<g id="_x30_3_x5F_Beb.Liste" class="st0">
+	<path class="st6" d="M1,1h14v14H1V1z"/>
+	<path class="st6" d="M1,1h14v14H1V1z"/>
+	<path class="st7" d="M1,1v14h14V1H1z M2,2h12v12H2V2z"/>
+	<g class="st2">
+		<path class="st9" d="M2.9,3.3h4v4h-4V3.3z"/>
+		<path class="st3" d="M5.5,6.6h-2L4,6l0.5-0.7L5,6L5.5,6.6z"/>
+		<path class="st3" d="M6.2,6.6H4.4l0.4-0.4l0.4-0.4l0.4,0.4L6.2,6.6z"/>
+		<ellipse class="st3" cx="5.9" cy="5" rx="0.3" ry="0.3"/>
+	</g>
+	<g class="st2">
+		<path class="st4" d="M7.9,5.3h5v1h-5V5.3z"/>
+		<path class="st4" d="M7.9,3.3h5v1h-5V3.3z"/>
+	</g>
+	<g class="st2">
+		<path class="st9" d="M2.9,8.7h4v4h-4V8.7z"/>
+		<path class="st3" d="M5.5,12h-2L4,11.4l0.5-0.7L5,11.4L5.5,12z"/>
+		<path class="st3" d="M6.2,12H4.4l0.4-0.4l0.4-0.4l0.4,0.4L6.2,12z"/>
+		<ellipse class="st3" cx="5.9" cy="10.4" rx="0.3" ry="0.3"/>
+	</g>
+	<g class="st2">
+		<path class="st4" d="M7.9,10.7h5v1h-5V10.7z"/>
+		<path class="st4" d="M7.9,8.7h5v1h-5V8.7z"/>
+	</g>
+</g>
+<g id="_x30_4_x5F_Bild_x5F_ueberl.Text" class="st0">
+	<path class="st1" d="M15,3.4H1v9h14V3.4z"/>
+	<path class="st1" d="M1,3.4h14v9H1V3.4"/>
+	<g class="st2">
+		<path class="st3" d="M5,9.4H2l0.8-1l0.8-1l0.8,1L5,9.4z"/>
+		<path class="st3" d="M6,9.4H3.3L4,8.8l0.7-0.7l0.7,0.7L6,9.4z"/>
+		<ellipse class="st3" cx="5.5" cy="6.9" rx="0.5" ry="0.5"/>
+	</g>
+	<rect x="7.9" y="4.4" class="st6" width="6" height="6.9"/>
+	<path class="st8" d="M8.8,5.4h4.1v1H8.8V5.4z M8.8,7.4h4.1v1H8.8V7.4z M8.8,9.4h4.1v1H8.8V9.4z"/>
+</g>
+<g id="_x30_5_x5F_Mission_x5F_St." class="st0">
+	<g class="st2">
+		<path class="st10" d="M2,5.5h11.6v1H2V5.5z M2,7.5h11.6v1H2V7.5z"/>
+		<g>
+			<path class="st10" d="M2,9.4h11.6v1H2V9.4z"/>
+			<path class="st4" d="M10.2,13v-1.4h1.3v1.1c0,0.6-0.1,1-0.2,1.3c-0.2,0.4-0.5,0.6-0.9,0.8l-0.3-0.5c0.2-0.1,0.4-0.3,0.5-0.5
+				c0.1-0.2,0.2-0.5,0.2-0.9H10.2z M12.3,13v-1.4h1.3v1.1c0,0.6-0.1,1-0.2,1.3c-0.2,0.4-0.5,0.6-0.9,0.8l-0.3-0.5
+				c0.2-0.1,0.4-0.3,0.5-0.5c0.1-0.2,0.2-0.5,0.2-0.9H12.3z"/>
+			<path class="st4" d="M3.4,2.9v1.4H2.1V3.2c0-0.6,0.1-1,0.2-1.3c0.2-0.4,0.5-0.6,0.9-0.8l0.3,0.5C3.2,1.6,3,1.8,2.9,2
+				C2.8,2.2,2.7,2.5,2.7,2.9H3.4z M5.4,2.9v1.4H4.1V3.2c0-0.6,0.1-1,0.2-1.3c0.2-0.4,0.5-0.6,0.9-0.8l0.3,0.5C5.3,1.6,5.1,1.8,5,2
+				C4.9,2.2,4.8,2.5,4.8,2.9H5.4z"/>
+		</g>
+	</g>
+</g>
+<g id="_x30_6_x5F_Thema">
+	<path class="st3" d="M1,1h14v14H1V1z"/>
+	<path class="st11" d="M14,2v12H2V2H14 M15,1H1v14h14V1z"/>
+	<path class="st9" d="M3,3h10v8H3V3z"/>
+	<g>
+		<path class="st3" d="M9.3,9.3H4.7l1.1-1.5L7,6.2l1.1,1.5L9.3,9.3z"/>
+		<path class="st3" d="M10.8,9.3H6.8l1-1l1-1l1,1L10.8,9.3z"/>
+		<ellipse class="st3" cx="10.1" cy="5.4" rx="0.8" ry="0.8"/>
+	</g>
+	<g>
+		<path class="st4" d="M3,12h10v1H3V12z"/>
+	</g>
+</g>
+<g id="_x30_7_x5F_Medien" class="st0">
+	<path class="st6" d="M1,1h14v14H1V1z"/>
+	<path class="st7" d="M14,2v12H2V2H14 M15,1H1v14h14V1z"/>
+	<g class="st2">
+		<path class="st12" d="M3,3.7h9.9v8.5H3V3.7z"/>
+		<g>
+			<path class="st13" d="M12.2,4.5v7.1H3.7V4.5H12.2 M12.9,3.7H3v8.5h9.9V3.7z"/>
+			<path class="st3" d="M6.6,9.8V6.2l1.8,0.9L10.1,8L8.3,8.9L6.6,9.8z"/>
+		</g>
+	</g>
+</g>
+<g id="_x30_8_x5F_Logo" class="st0">
+	<path class="st6" d="M1,1h14v14H1V1z"/>
+	<path class="st7" d="M14,2v12H2V2H14 M15,1H1v14h14V1z"/>
+	<g class="st2">
+		
+			<rect x="3.9" y="3.9" transform="matrix(4.514795e-11 -1 1 4.514795e-11 6.727955e-06 16)" class="st14" width="8.1" height="8.1"/>
+		<g>
+			<path class="st3" d="M6.6,5.4h1.2v4.4H10v1H6.6V5.4z"/>
+		</g>
+	</g>
+</g>
+<g id="_x30_9_x5F_Foerderer" class="st0">
+	<path class="st6" d="M1,1h14v14H1V1z"/>
+	<path class="st7" d="M14,2v12H2V2H14 M15,1H1v14h14V1z"/>
+	<path class="st15" d="M3.9,3.9L3.9,3.9v8.2h8.1V3.9H3.9z"/>
+	<g class="st2">
+		<path class="st3" d="M6.3,5.2h3.5v1.1H7.6v1.3h2.1v1.1H7.6V11H6.3V5.2z"/>
+	</g>
+</g>
+<g id="_x31_0_x5F_Verweis" class="st0">
+	<path class="st6" d="M1,1h14v14H1V1z"/>
+	<path class="st6" d="M1,1h14v14H1V1z"/>
+	<path class="st7" d="M1,1v14h14V1H1z M2,2h12v12H2V2z"/>
+	<polygon class="st15" points="8.9,10.4 3.3,10.4 3.3,11.4 8.9,11.4 	"/>
+	<polygon class="st1" points="11.6,4.7 10.3,3.7 10.3,5.1 6.7,5.1 5.5,5.1 5.5,6.2 5.5,9.2 6.7,9.2 6.7,6.2 10.3,6.2 10.3,7.7 
+		11.6,6.7 12.8,5.7 	"/>
+</g>
+<g id="_x31_1_x5F_Uebersicht_1_" class="st0">
+	<path class="st6" d="M1,1h14v14H1V1z"/>
+	<path class="st6" d="M1,1h14v14H1V1z"/>
+	<path class="st7" d="M1,1v14h14V1H1z M2,2h12v12H2V2z"/>
+	<path class="st8" d="M3,9h10v4H3V9z"/>
+	<path class="st15" d="M3,3h10v1H3V3z M3,5h10v1H3V5z M3,7h10v1H3V7z"/>
+</g>
+<g id="_x31_2_x5F_Inhalsverzeichnis" class="st0">
+	<path class="st6" d="M1,1h14v14H1V1z"/>
+	<path class="st7" d="M1,1v14h14V1H1z M2,2h12v12H2V2z"/>
+	<path class="st16" d="M13,11.7h-1v-1h1V11.7z M13,9.7h-1v-1h1V9.7z M13,7.7h-1v-1h1V7.7z M13,5.7h-1v-1h1V5.7z"/>
+	<path class="st15" d="M11,11.7H3v-1h8V11.7z M11,9.7H3v-1h8V9.7z M11,7.7H3v-1h8V7.7z M11,5.7H3v-1h8V5.7z"/>
+</g>
+</svg>

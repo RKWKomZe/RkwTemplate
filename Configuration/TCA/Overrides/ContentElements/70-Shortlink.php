@@ -54,7 +54,7 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_shortlink'] = [
     [
         'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.shortlink.title',
         'rkwtemplate_shortlink',
-        'rkw_template',
+        'rkw-template-shortlink',
     ],
     'textmedia',
     'after'

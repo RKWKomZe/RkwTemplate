@@ -1,0 +1,136 @@
+// details see: TYPO3\CMS\RteCKEditor\Controller\Controller\BrowseLinksController
+
+RTE {
+    default {
+
+        // Set YAML-configuration for editor
+        preset = rkwTemplateKompetenzzentrum2016
+
+        // Set default link classes
+        classesAnchor {
+
+            externalLink {
+                class = external-link
+                name = Externer Link
+                type = url
+                titleText = Öffnet Link in neuem Fenster
+                target = _blank
+                image =
+                #params =
+                rel =
+            }
+
+            externalLinkIconPlanet {
+                class = icon-planet
+                name = Externer Link (Icon)
+                type = url
+                titleText = Öffnet Link in neuem Fenster
+                target = _blank
+                image =
+                #params =
+                rel =
+            }
+
+            internalLink {
+                class = internal-link
+                name = Interner Link
+                type = page
+                titleText = Öffnet Link in gleichem Fenster
+                target =
+                image =
+                #params =
+                rel =
+            }
+
+            internalLinkIconArticle {
+                class = icon-article
+                name = Artikel (Icon)
+                type = page
+                titleText = Öffnet Link in gleichem Fenster
+                target =
+                image =
+                #params =
+                rel =
+            }
+
+            internalLinkIconBook {
+                class = icon-book
+                name = Publikation (Icon)
+                type = page
+                titleText = Öffnet Link in gleichem Fenster
+                target =
+                image =
+                #params =
+                rel =
+            }
+
+            download {
+                class = download
+                name = Download
+                type = file
+                titleText = Datei herunterladen
+                target =
+                image =
+                #params =
+                rel =
+            }
+
+            downloadIcon {
+                class = icon-file
+                name = Download (Icon)
+                type = file
+                titleText = Datei herunterladen
+                target =
+                image =
+                #params =
+                rel =
+            }
+
+            mail {
+                class = mail
+                name = E-Mail
+                type = mail
+                titleText = E-Mail schreiben
+                target =
+                image =
+                #params =
+                rel =
+            }
+        }
+
+        buttons {
+
+            link {
+
+                // Remove folder tab
+                options.removeItems = folder
+
+                // Default classes
+                page.properties {
+                    class.default = internal-link
+                }
+                file.properties {
+                    class.default = download
+                }
+                url.properties {
+                    class.default = external-link
+                }
+                mail.properties {
+                    class.default = mail
+                }
+
+                // allowed classes
+                properties.class.allowedClasses = external-link,icon-planet,internal-link,icon-article,icon-book,download,icon-file,mail
+
+                // allow additional params
+                queryParametersSelector.enabled = true
+
+                // allow related-attribute
+                relAttribute.enabled = true
+
+                // disallow target selector
+                targetSelector.disabled = true
+            }
+        }
+    }
+}

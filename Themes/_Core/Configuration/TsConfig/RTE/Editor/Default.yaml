@@ -1,0 +1,88 @@
+####
+#  CKEditor configuration for rkw_template
+###
+
+# Load default processing options
+imports:
+  - { resource: "EXT:rte_ckeditor/Configuration/RTE/Processing.yaml" }
+  - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Base.yaml" }
+  - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Plugins.yaml" }
+  - { resource: 'EXT:rkw_template/Themes/_Core/Configuration/TsConfig/RTE/Editor/Imports/Processing.yaml' }
+
+# Add configuration for the editor
+# For complete documentation see http://docs.ckeditor.com/#!/api/CKEDITOR.config
+editor:
+
+  # see: https://ckeditor.com/docs/ckeditor4/latest/api/CKEDITOR_config.html
+  config:
+
+    # set default language, will be overridden by content
+    defaultContentLanguage: "de"
+    defaultLanguage: "de"
+    wsc_lang: "de_DE"
+
+    # activate spellchecker
+    scayt_autoStartup: true
+    scayt_sLang: "de_DE"
+
+    # the CSS file to be used inside the editor
+    contentsCss: "EXT:rkw_template/Themes/_Core/Resources/Public/css/rte.css"
+
+    # block-formats available
+    format_tags: 'p;h1;h2;h3;h4'
+
+    stylesSet:
+      # block level styles
+      - { name: 'Tabelle Normal', element: 'table', attributes: { 'class': 'contenttable responsive' } }
+      - { name: 'Tabelle Abwechselnd', element: 'table', attributes: { 'class': 'contenttable-1 responsive' } }
+      - { name: 'Tabelle Events', element: 'table', attributes: { 'class': 'contenttable-events responsive' } }
+
+    toolbarGroups:
+      - { name: clipboard, groups: [clipboard, undo] }
+      - { name: editing,   groups: [find, selection, spellchecker] }
+      - { name: links }
+      - { name: insert }
+      - { name: tools }
+      - { name: table }
+      - { name: tabletools }
+      - { name: document,  groups: [ mode, document, doctools ] }
+      - { name: others }
+      - "/"
+      - { name: basicstyles, groups: [ basicstyles, align, cleanup ] }
+      - { name: paragraph,   groups: [ list, blocks, align] }
+      - { name: specialcharacters,   groups: [ insertcharacters ] }
+      - "/"
+      - { name: styles }
+
+    justifyClasses:
+      - align-left
+      - align-center
+      - align-right
+      - align-justify
+
+    extraPlugins:
+      - justify
+      - find
+      - selectall
+
+    removePlugins:
+      - image
+      - font
+      - bidi
+
+    # see https://ckeditor.com/latest/samples/toolbarconfigurator/index.html#advanced
+    removeButtons:
+      - Separator
+      - Strike
+      - BidiLtr
+      - BidiRtl
+      - Language
+      - HorizontalRule
+      - PageBreak
+      - Iframe
+      - TextColor
+      - BGColor
+      - ShowBlocks
+      - CreateDiv
+      - About
+      - Flash

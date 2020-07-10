@@ -103,7 +103,7 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_imagetextoverlay'] = [
     [
         'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.imageTextOverlay.title',
         'rkwtemplate_imagetextoverlay',
-        'rkw_template',
+        'rkw-template-imagetextoverlay',
     ],
     'textmedia',
     'after'

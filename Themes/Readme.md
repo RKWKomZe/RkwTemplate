@@ -39,19 +39,19 @@ This structure is shown and explained below.
 ├── Configuration
 │   ├── TsConfig
 │   │   ├── Config
-│   │   │     > Contains theme-specific TsConfig, e. g. backend layouts
+│   │   │      > Contains theme-specific TsConfig, e. g. backend layouts
 │   │   ├── Extensions
-│   │   │     > Contains theme-specific TsConfig for extensions
+│   │   │      > Contains theme-specific TsConfig for extensions
 │   │   ├── Permissions
-│   │   │     > Contains theme-specific TsConfig for page permissions 
-│   │   ├── Rte
-│   │   │     > Contains theme-specific TsConfig for the RTE
-│   │   ├── Tce
-│   │   │     > Contains theme-specific TsConfig for folders for TCA, overrides for BE fields etc. 
+│   │   │      > Contains theme-specific TsConfig for page permissions 
+│   │   ├── RTE
+│   │   │      > Contains theme-specific TsConfig for the RTE
+│   │   ├── TCE
+│   │   │      > Contains theme-specific TsConfig for folders for TCA, overrides for BE fields etc. 
 │   │   ├── Wizards
-│   │   │     > ontains theme-specific TsConfig for allowed content elements in wizards 
+│   │   │      > ontains theme-specific TsConfig for allowed content elements in wizards 
 │   │   └── TsConfig.typoscript
-│   │         > This is the main file which is included in BE
+│   │          > This is the main file which is included in BE
 │   ├── TsConfigBeGroups
 │   │     > Contains configurations to be included in BE-Groups
 │   └── TypoScript
@@ -72,9 +72,9 @@ This structure is shown and explained below.
 │       │   ├── Setup
 │       │   │   └── ...
 │       │   ├── Constants.typoscript
-│       │   │     > Includes all Constants-configurations from the subfolder "Constants" 
+│       │   │      > Includes all Constants-configurations from the subfolder "Constants" 
 │       │   └── Setup.typoscript
-│       │        > Includes all TypoScript-configurations from the subfolder "Setup" 
+│       │          > Includes all TypoScript-configurations from the subfolder "Setup" 
 │       ├── Extensions
 │       │   │   > Contains configurations for used extensions. The files here override existing extension settings.
 │       │   │     Please create a new file for each extension  (e.g. 10-RkwBasics.typoscript)
@@ -83,9 +83,9 @@ This structure is shown and explained below.
 │       │   ├── Setup
 │       │   │   └── ...
 │       │   ├── Constants.typoscript
-│       │   │     > Includes all Constants-configurations from the subfolder "Constants" 
+│       │   │      > Includes all Constants-configurations from the subfolder "Constants" 
 │       │   └── Setup.typoscript
-│       │        > Includes all TypoScript-configurations from the subfolder "Setup"
+│       │          > Includes all TypoScript-configurations from the subfolder "Setup"
 │       ├── Layout
 │       │   │   > Contains configuration concerning Body-Tag, CSS-  
 │       │   │     and JS-Inclusion, paths to templates
@@ -94,9 +94,9 @@ This structure is shown and explained below.
 │       │   ├── Setup
 │       │   │   └── ...
 │       │   ├── Constants.typoscript
-│       │   │     > Includes all Constants-configurations from the subfolder "Constants" 
+│       │   │      > Includes all Constants-configurations from the subfolder "Constants" 
 │       │   └── Setup.typoscript
-│       │        > Includes all TypoScript-configurations from the subfolder "Setup"
+│       │          > Includes all TypoScript-configurations from the subfolder "Setup"
 │       ├── Marker
 │       │   │   > Contains all configuration for markers/variables
 │       │   ├── Constants
@@ -104,9 +104,9 @@ This structure is shown and explained below.
 │       │   ├── Setup
 │       │   │   └── ...
 │       │   ├── Constants.typoscript
-│       │   │     > Includes all Constants-configurations from the subfolder "Constants" 
+│       │   │      > Includes all Constants-configurations from the subfolder "Constants" 
 │       │   └── Setup.typoscript
-│       │        > Includes all TypoScript-configurations from the subfolder "Setup"
+│       │          > Includes all TypoScript-configurations from the subfolder "Setup"
 │       ├── Menus
 │       │   │   > Contains all configuration for menus
 │       │   ├── Constants
@@ -114,9 +114,9 @@ This structure is shown and explained below.
 │       │   ├── Setup
 │       │   │   └── ...
 │       │   ├── Constants.typoscript
-│       │   │     > Includes all Constants-configurations from the subfolder "Constants" 
+│       │   │      > Includes all Constants-configurations from the subfolder "Constants" 
 │       │   └── Setup.typoscript
-│       │        > Includes all TypoScript-configurations from the subfolder "Setup"
+│       │          > Includes all TypoScript-configurations from the subfolder "Setup"
 │       ├── Special
 │       │   │   > Contains special configuations like schema.org-stuff etc.  
 │       │   │     Everything that does not belong in one of the other folders ;-)
@@ -125,9 +125,9 @@ This structure is shown and explained below.
 │       │   ├── Setup
 │       │   │   └── ...
 │       │   ├── Constants.typoscript
-│       │   │     > Includes all Constants-configurations from the subfolder "Constants" 
+│       │   │      > Includes all Constants-configurations from the subfolder "Constants" 
 │       │   └── Setup.typoscript
-│       │        > Includes all TypoScript-configurations from the subfolder "Setup"
+│       │          > Includes all TypoScript-configurations from the subfolder "Setup"
 │       ├── constants.typoscript
 │       │      > This file includes all "Constants.typoscript"-files from the subfolder and is included in the BE
 │       │        Note the lower case here!
@@ -135,47 +135,45 @@ This structure is shown and explained below.
 │              > This file includes all "Setup.typoscript"-files from the subfolder and is included in the BE.
 │                Note the lower case here!
 ├── Readme.md
-│     > Well, should be evident, stupid!
+│      > Well, should be evident, stupid!
 ├── Resources
 │   ├── Private
+│   │   ├── Extensions
+│   │   │   │   > Contains overrides for layouts, partials and/or templates of other extensions.
+│   │   │   │   Each extensions gets a separate subfolder here, named in UpperCamelCase
+│   │   │   └── RkwExample
+│   │   │       ├── Layouts
+│   │   │       ├── Templates
+│   │   │       └── Partials
 │   │   ├── Language
-│   │   │   <ContainsLanguage files relevant for the theme>
+│   │   │       > ContainsLanguage files relevant for the theme
 │   │   ├── Layouts
 │   │   │   │   > Contains layout files relevant for the theme
-│   │   │   ├── Extensions
-│   │   │   │     > Contains layouts that override templates of other extensions. 
-│   │   │   │       Each extensions gets a separate subfolder here
 │   │   │   └── ...
 │   │   ├── Partials
 │   │   │   │   > Contains partial files relevant for the theme
-│   │   │   ├── Extensions
-│   │   │   │     > Contains partials that override templates of other extensions. 
-│   │   │   │       Each extensions gets a separate subfolder here>
 │   │   │   ├── GridElements
-│   │   │   │     > Contains theme-specific overrides of grid-elements defined 
-│   │   │   │       in the extension
+│   │   │   │      > Contains theme-specific overrides of grid-elements defined 
+│   │   │   │        in the extension
 │   │   │   └── ...
 │   │   └── Templates
 │   │       │   > Contains template files relevant for the theme
-│   │       ├── Extensions
-│   │       │     > Contains zemplates that override templates of other extensions. 
-│   │       │       Each extensions gets a separate subfolder here
 │   │       ├── FluidTemplateLibs
-│   │       │     > Contains templates that are used in TypoScript libs 
-│   │       │       with FluidTemplate e.g. for Responsive Images
+│   │       │      > Contains templates that are used in TypoScript libs 
+│   │       │        with FluidTemplate e.g. for Responsive Images
 │   │       ├── GridElements
-│   │       │     > Contains theme-specific overrides of grid-elements defined 
-│   │       │       in the extension>
+│   │       │      > Contains theme-specific overrides of grid-elements defined 
+│   │       │        in the extension>
 │   │       └── ...
 │   └── Public
 │       ├── css
-│       │     > Contains CSS files relevant for the theme
+│       │      > Contains CSS files relevant for the theme
 │       ├── fonts
-│       │     > Contains font files relevant for the theme
+│       │      > Contains font files relevant for the theme
 │       ├── images
-│       │     > Contains images relevant for the theme
+│       │      > Contains images relevant for the theme
 │       └── js
-│             > Contains JS-files relevant for the theme
+│              > Contains JS-files relevant for the theme
 └── theme.typoscript
       > Contains the basic configuation of the theme
 ```
