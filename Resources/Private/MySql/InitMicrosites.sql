@@ -1,7 +1,7 @@
 START TRANSACTION;
 
 SET @website_title = 'GEM';
-SET @configuration_name = 'Gem';
+SET @configuration_name = 'GEM';
 SET @dataset_root = 11;
 SET @domain = 'gem.rkw-kompetenzzentrum.de';
 SET @media_path = '/media_gem/';

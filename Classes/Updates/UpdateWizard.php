@@ -174,6 +174,8 @@ class UpdateWizard extends \RKW\RkwBasics\Updates\AbstractUpdate
                 '#EXT:rkw_template\/Configuration\/Themes\/WePstra\/TypoScript#i',
                 '#EXT:rkw_template\/Themes\/Kompetenzzentrum\/Configuration\/TypoScript\/(_Websites|_Microsites)\/([^\/]+)#i',
                 '#EXT:rkw_template\/Themes\/Kompetenzzentrum\/Configuration\/TypoScript#i',
+                '#EXT:rkw_template\/Themes\/_Microsites\/Gem\/#i',
+                '#EXT:rkw_template\/Themes\/_Websites\/Eanpc\/#i',
                 '#EXT:css_styled_content\/Configuration/TypoScript/,#i',
                 '#EXT:rtehtmlarea\/static\/clickenlarge/,#i',
             ];
@@ -184,6 +186,8 @@ class UpdateWizard extends \RKW\RkwBasics\Updates\AbstractUpdate
                 'EXT:rkw_template/Themes/WePstra/Configuration/TypoScript',
                 'EXT:rkw_template/Themes/$1/$2/Configuration/TypoScript',
                 'EXT:rkw_template/Themes/Kompetenzzentrum2016/Configuration/TypoScript',
+                'EXT:rkw_template/Themes/_Microsites/GEM/',
+                'EXT:rkw_template/Themes/_Websites/EANPC/',
                 '',
                 '',
             ];

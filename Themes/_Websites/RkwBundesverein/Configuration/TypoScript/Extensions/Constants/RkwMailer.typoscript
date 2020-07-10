@@ -8,10 +8,6 @@ module.tx_rkwmailer {
 
         // Link plugin for pixel counter (HTML-mails only)
         counterPixelPid = 4363
-
-        // URL for hard-links in templates
-        baseUrl = https://www.rkw.de
-
     }
 }
 

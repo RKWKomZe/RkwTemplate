@@ -2,6 +2,9 @@ module.tx_rkwmailer {
 
     settings {
 
+        // URL for hard-links in templates
+        baseUrl = {$plugin.tx_rkwtemplate_themeconfig.website.baseUrl}
+
         // Path for logo in templates
         basePathLogo = {$plugin.tx_rkwtemplate_themeconfig.paths.default.logos}/logo-emails.png
 
