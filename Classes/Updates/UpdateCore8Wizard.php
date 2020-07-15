@@ -1495,12 +1495,12 @@ class UpdateCore8Wizard extends \RKW\RkwBasics\Updates\AbstractUpdate
          **/
         $updateQueryBuilder = $connection->createQueryBuilder();
         $updateQueryBuilder->update('tt_content')
-            ->set('CType', 'rkwtemplate_imagelist')
+            ->set('CType', 'rkwtemplate_imagetextoverlay')
             ->where(
                 $updateQueryBuilder->expr()->eq('CType',
                     $updateQueryBuilder->createNamedParameter('textpic', \PDO::PARAM_STR)
                 ),
-                $updateQueryBuilder->expr()->eq('imagetextoverlay',
+                $updateQueryBuilder->expr()->eq('imageorient',
                     $updateQueryBuilder->createNamedParameter(26, \PDO::PARAM_INT)
                 )
             );

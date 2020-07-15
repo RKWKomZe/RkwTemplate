@@ -1,6 +1,19 @@
-# Upgrade from 7.6 to 8.7 – Step-by-step
+# Upgrade from 7.6 to 8.7
 
-## Step 1: Login
+## Server
+* Make sure your vHost has PHP 7.2 installed
+* Make sure PHP imap-ext is installed
+```
+apt-get install php7.2-imap
+```
+
+
+
+# 
+
+## TYPO3
+
+### Step 1: Login
 * Go to: http://rkw-kompetenzzentrum.rkw.local/typo3/install.php 
 * On your console do: 
 ```
@@ -8,7 +21,7 @@ touch typo3conf/ENABLE_INSTALL_TOOL
 ```
 * Log in
 
-## Step 2: Execute Wizards
+### Step 2: Execute Wizards
 **If you execute the upgrade for the second time on the same system, make sure to delete all .lock-files in /typo3temp/var/locks!**
 
 
@@ -43,10 +56,10 @@ ALTER TABLE `tt_content` CHANGE `colPos` `colPos` INT(11) NOT NULL DEFAULT '0';
 * Migrate the field "section_frame" for all content elements to "frame_class"
 
 
-## Step 3: Update database schema
+### Step 3: Update database schema
 Excecute "Update database schema: Modify tables and fields" (again). 
 
-## Step 4: Database analyzer
+### Step 4: Database analyzer
 Execute the database analyser.
 * **Remove tables (rename with prefix)** can be executed right away
 * **Remove unused fields (rename with prefix)** can be executed right away
@@ -95,14 +108,14 @@ DROP TABLE `zzz_deleted_tx_rkwsocialcomments_domain_model_report`
 DROP TABLE `zzz_deleted_tx_rkwwatchlist_domain_model_item`
 DROP TABLE `zzz_deleted_tx_rkwwatchlist_domain_model_watchlist`
 ```
-## Step 5: Do "Clear all cache"
-## Step 6: Do "Check for broken extensions"
-## Step 6: Check image rendering
+### Step 5: Do "Clear all cache"
+### Step 6: Do "Check for broken extensions"
+### Step 6: Check image rendering
 
 
 
 ## Cookie Opt-In
-* Cookie-Opt-In Datensätze in Datenbank einfügen
+* Insert Cookie-Opt-In datasets into database
 ```
 
 --
@@ -155,6 +168,6 @@ INSERT INTO `tx_sgcookieoptin_domain_model_script` (`uid`, `pid`, `title`, `scri
 (2, 1, 'Disable eTracker', '_etracker.disableCookies();', '', 0, 1, 1, 1580970536, 1580827579, 1, 1, 0, 0, 0, 0x613a343a7b733a363a2268696464656e223b4e3b733a353a227469746c65223b4e3b733a363a22736372697074223b4e3b733a343a2268746d6c223b4e3b7d, NULL);
 
 ```
-* Im Backend auf Cookie-Module klicken, dort Einstellungen öffnen und neu speichern
-* Im Browser alle Cookies der Domain löschen
-* Jetzt sollte der Cookie-Hinweis im Frontend erscheinen.
+* Click on Cookie modules in the backend, open settings there and save them again
+* Delete all cookies of the domain in the browser
+* Now the cookie hint should appear in the frontend.
