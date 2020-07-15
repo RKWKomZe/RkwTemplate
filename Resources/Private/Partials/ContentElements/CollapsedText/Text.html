@@ -6,7 +6,7 @@
 
     <f:if condition="{data.bodytext}">
         <div class="collapsed-text" data-show="{f:translate(key:'LLL:EXT:rkw_template/Resources/Private/Language/locallang.xlf:contentElement.collapsed.showMore')}" data-hide="{f:translate(key:'LLL:EXT:rkw_template/Resources/Private/Language/locallang.xlf:contentElement.collapsed.showLess')}">
-            <f:format.html parseFuncTSPath="lib.parseFunc">{data.bodytext}</f:format.html>
+            <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data.bodytext}</f:format.html>
         </div>
     </f:if>
 

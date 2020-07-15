@@ -51,6 +51,7 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_collapsed'] = [
         'bodytext' => [
             'config' => [
                 'eval' => 'trim,required',
+                'enableRichtext' => true,
             ]
         ]
     ]

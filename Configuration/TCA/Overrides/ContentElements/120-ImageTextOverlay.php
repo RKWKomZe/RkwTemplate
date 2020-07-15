@@ -53,6 +53,7 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_imagetextoverlay'] = [
         'bodytext' => [
             'config' => [
                 'eval' => 'trim,required',
+                'enableRichtext' => true,
             ]
         ],
         'image' => [

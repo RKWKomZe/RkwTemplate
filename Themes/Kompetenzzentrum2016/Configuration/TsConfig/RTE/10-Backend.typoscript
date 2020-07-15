@@ -31,9 +31,31 @@ RTE {
                 rel =
             }
 
+            externalLinkButton {
+                class = button
+                name = Button
+                type = url
+                titleText = Öffnet Link in neuem Fenster
+                target = _blank
+                image =
+                #params =
+                rel =
+            }
+
             internalLink {
                 class = internal-link
                 name = Interner Link
+                type = page
+                titleText = Öffnet Link in gleichem Fenster
+                target =
+                image =
+                #params =
+                rel =
+            }
+
+            internalLinkButton {
+                class = button
+                name = Button
                 type = page
                 titleText = Öffnet Link in gleichem Fenster
                 target =
@@ -120,7 +142,7 @@ RTE {
                 }
 
                 // allowed classes
-                properties.class.allowedClasses = external-link,icon-planet,internal-link,icon-article,icon-book,download,icon-file,mail
+                properties.class.allowedClasses = external-link,icon-planet,internal-link,icon-article,icon-book,download,icon-file,mail,button
 
                 // allow additional params
                 queryParametersSelector.enabled = true
