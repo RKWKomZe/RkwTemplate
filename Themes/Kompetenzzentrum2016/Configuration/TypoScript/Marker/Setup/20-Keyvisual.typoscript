@@ -20,7 +20,7 @@ lib.txRkwTemplate {
                     5 {
                         imageIdList.cObject = TEXT
                         imageIdList.cObject.data = register:imageIdList
-                        imageIdList.cObject.wrap = |,{file:current:uid_local}
+                        imageIdList.cObject.wrap = |,{file:current:uid}
                         imageIdList.cObject.wrap.insertData = 1
                     }
                 }
@@ -30,12 +30,18 @@ lib.txRkwTemplate {
             20 {
 
                 file = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/FluidTemplateLibs/Keyvisual/Topic.html
-                dataProcessing {
-                    10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-                    10 {
+                variables {
 
-                        files.data = register:imageIdList
-                        as = images
+                    imageReference = TEXT
+                    imageReference {
+                        data = register:imageIdList
+                        stdWrap.replacement {
+                            1 {
+                                search = #(.+)?,([0-9]+)$#
+                                replace = ${2}
+                                useRegExp = 1
+                            }
+                        }
                     }
                 }
 
@@ -57,6 +63,8 @@ lib.txRkwTemplate {
         article {
 
             file = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/FluidTemplateLibs/Keyvisual/Article.html
+            partialRootPaths.0 = {$plugin.tx_rkwbasics.view.templateRootPath}
+
             dataProcessing {
                 10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
                 10 {
@@ -72,7 +80,7 @@ lib.txRkwTemplate {
             settings < lib.txRkwBasics.responsiveImage.settings
             settings {
 
-                additionalAttributes = class="article-image"
+                additionalAttributes = class="article-picture"
                 breakpoint {
                     desktop >
                 }
@@ -82,6 +90,7 @@ lib.txRkwTemplate {
                 }
 
                 cropVariant {
+                    desktop = articleDesktop
                     tablet = articleDesktop
                     mobile2 = articleDesktop
                     mobile = articleDesktop
@@ -99,6 +108,8 @@ lib.txRkwTemplate {
             20 {
 
                 file = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/FluidTemplateLibs/Keyvisual/Publication.html
+                partialRootPaths.0 = {$plugin.tx_rkwbasics.view.templateRootPath}
+
                 dataProcessing >
                 dataProcessing {
                     10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor

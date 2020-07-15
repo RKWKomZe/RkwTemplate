@@ -1,3 +1,10 @@
+# What is this?
+The themes extend the standard configuration of the extension by a specific layout.
+This includes corresponding configurations.
+
+Each theme contains a folder structure that is essentially identical to the folder structure of TYPO3-extensions.
+This structure is shown and explained below.
+
 # Basic Rules
 * The file names of the files in the ```Configuration```-folder **have to be preceded by a consecutive number (in steps of ten)**. This numbering determines the loading order of the files.
 * We use prefer to use ```lib``` instead of ```page.variables``` in the TypoScript-section because they can e. g. be used nicely in combination with GridElements
@@ -26,13 +33,6 @@ lib.txRkwTemplate {  <-- Namespace
         sub {
            ...
 ```
-
-# What is this?
-The themes extend the standard configuration of the extension by a specific layout.
-This includes corresponding configurations.
-
-Each theme contains a folder structure that is essentially identical to the folder structure of TYPO3-extensions.
-This structure is shown and explained below.
 
 # The folders and their function
 ```

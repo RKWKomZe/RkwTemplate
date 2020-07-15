@@ -41,9 +41,9 @@ call_user_func(
             ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/Topic.svg']
         );
         $iconRegistry->registerIcon(
-            'rkw-template-media', // Icon-Identifier, e.g. tx-myext-action-preview
+            'rkw-template-multimedia', // Icon-Identifier, e.g. tx-myext-action-preview
             \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-            ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/Media.svg']
+            ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/Multimedia.svg']
         );
         $iconRegistry->registerIcon(
             'rkw-template-logo', // Icon-Identifier, e.g. tx-myext-action-preview
@@ -95,7 +95,7 @@ call_user_func(
         //=================================================================
         // register update wizard
         //=================================================================
-        $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['ext/install']['update'][\RKW\RkwTemplate\Updates\UpdateWizard::class] = \RKW\RkwTemplate\Updates\UpdateWizard::class;
+        $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['ext/install']['update'][\RKW\RkwTemplate\Updates\UpdateCore8Wizard::class] = \RKW\RkwTemplate\Updates\UpdateCore8Wizard::class;
     },
     $_EXTKEY
 );

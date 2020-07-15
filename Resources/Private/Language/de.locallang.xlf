@@ -7,8 +7,8 @@
 
             <!-- Shortlink -->
 			<trans-unit id="contentElement.shortlink.type.I.0">
-				<source>Default (Article)</source>
-				<target>Standard (Artikel)</target>
+				<source>Article</source>
+				<target>Artikel</target>
 			</trans-unit>
             <trans-unit id="contentElement.shortlink.type.I.4">
                 <source>Link</source>

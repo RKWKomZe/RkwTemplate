@@ -39,7 +39,7 @@ use TYPO3\CMS\Core\Package\PackageManager;
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  */
 
-class UpdateWizard extends \RKW\RkwBasics\Updates\AbstractUpdate
+class UpdateCore8Wizard extends \RKW\RkwBasics\Updates\AbstractUpdate
 {
 
 
@@ -94,7 +94,6 @@ class UpdateWizard extends \RKW\RkwBasics\Updates\AbstractUpdate
     public function performUpdate(array &$databaseQueries, &$customMessage)
     {
 
-
         $this->migrateConfiguration($databaseQueries);
         $this->migrateCropping($databaseQueries);
         $this->migrateFieldPublicationDate($databaseQueries);
@@ -117,15 +116,13 @@ class UpdateWizard extends \RKW\RkwBasics\Updates\AbstractUpdate
         $this->migrateImageTextOverlayElements($databaseQueries);
 
         $this->migratePageLayouts($databaseQueries);
-
         $this->mergeCols($databaseQueries);
 
         $this->removeRkwSearch($databaseQueries);
         $this->removeRkwConsultant($databaseQueries);
 
+        $this->markWizardAsDone();
         return true;
-        var_dump($databaseQueries);
-        die();
 
     }
 
@@ -834,7 +831,16 @@ class UpdateWizard extends \RKW\RkwBasics\Updates\AbstractUpdate
         $updateQueryBuilder->execute();
 
         // move elements into a grid element-wrapper
-        $this->moveElementsFromColToGridContainer([4 => 10],  4, 'sliderContainer', 100, [], $databaseQueries, '', 'rkwtemplate_slider');
+        $this->moveElementsFromColToGridContainer(
+            [4 => 10],
+            4,
+            'sliderContainer',
+            100,
+            [],
+            $databaseQueries,
+            '',
+            'rkwtemplate_slider'
+        );
 
         $this->setLock(__FUNCTION__);
     }
@@ -949,7 +955,6 @@ class UpdateWizard extends \RKW\RkwBasics\Updates\AbstractUpdate
             return;
         }
 
-
         /** @var  \TYPO3\CMS\Core\Database\Connection $connection */
         $connection = GeneralUtility::makeInstance(ConnectionPool::class)->getConnectionForTable('tt_content');
 
@@ -1063,7 +1068,7 @@ class UpdateWizard extends \RKW\RkwBasics\Updates\AbstractUpdate
             2,
             $labels,
             $databaseQueries,
-            'pagets_homePages',
+            'pagets__homePages',
             'rkwtemplate_topic'
         );
 
@@ -1456,6 +1461,9 @@ class UpdateWizard extends \RKW\RkwBasics\Updates\AbstractUpdate
         $updateQueryBuilder->update('tt_content')
             ->set('CType', 'rkwtemplate_imagelist')
             ->where(
+                $updateQueryBuilder->expr()->eq('CType',
+                    $updateQueryBuilder->createNamedParameter('textpic', \PDO::PARAM_STR)
+                ),
                 $updateQueryBuilder->expr()->eq('imageorient',
                     $updateQueryBuilder->createNamedParameter(18, \PDO::PARAM_INT)
                 )
@@ -1489,7 +1497,10 @@ class UpdateWizard extends \RKW\RkwBasics\Updates\AbstractUpdate
         $updateQueryBuilder->update('tt_content')
             ->set('CType', 'rkwtemplate_imagelist')
             ->where(
-                $updateQueryBuilder->expr()->eq('imageorient',
+                $updateQueryBuilder->expr()->eq('CType',
+                    $updateQueryBuilder->createNamedParameter('textpic', \PDO::PARAM_STR)
+                ),
+                $updateQueryBuilder->expr()->eq('imagetextoverlay',
                     $updateQueryBuilder->createNamedParameter(26, \PDO::PARAM_INT)
                 )
             );
@@ -1585,6 +1596,8 @@ class UpdateWizard extends \RKW\RkwBasics\Updates\AbstractUpdate
     }
 
 
+
+
     /**
      * Update page layouts
      *
@@ -1605,7 +1618,7 @@ class UpdateWizard extends \RKW\RkwBasics\Updates\AbstractUpdate
 
             12 => 21,       // renumber tools-template (12) to new tools-template (21)
             11 => 50,       // renumber rkwMap-template (7) to new rkwMap-template (50)
-            10 => 900,      // migrate broken-link-template (3) to new broken-link-template (900)
+            10 => 9000,      // migrate broken-link-template (3) to new broken-link-template (900)
             8 => 22,        // renumber special-template (8) to new special-template (22)
             7 => 12,        // renumber meinRkw-template (7) to new meinRkw-template (12)
             5 => 11,        // renumber search-template (5) to new pluginOnly-template (11)
@@ -1691,6 +1704,9 @@ class UpdateWizard extends \RKW\RkwBasics\Updates\AbstractUpdate
         $colPosList = [6];
         $this->moveElementsFromColsIntoCol($colPosList, 500, $databaseQueries, 'pagets__pluginOnlyPages');
 
+        $colPosList = [0];
+        $this->moveElementsFromColsIntoCol($colPosList, 600, $databaseQueries, 'pagets__expertPagesDetail');
+
         $colPosList = [11];
         $this->moveElementsFromColsIntoCol($colPosList, 610, $databaseQueries, 'pagets__expertPagesDetail');
 
@@ -1722,10 +1738,10 @@ class UpdateWizard extends \RKW\RkwBasics\Updates\AbstractUpdate
             return;
         }
 
-        $packageManager = GeneralUtility::makeInstance(PackageManager::class);
+        /*$packageManager = GeneralUtility::makeInstance(PackageManager::class);
         if (!$packageManager->isPackageAvailable('rkw_search')) {
             return;
-        }
+        }*/
 
         /** @var  \TYPO3\CMS\Core\Database\Connection $connection */
         $connection = GeneralUtility::makeInstance(ConnectionPool::class)->getConnectionForTable('tt_content');
@@ -1762,9 +1778,10 @@ class UpdateWizard extends \RKW\RkwBasics\Updates\AbstractUpdate
         $databaseQueries[] = $updateQueryBuilder->getSQL();
         $updateQueryBuilder->execute();
 
+        /*
         if ($packageManager->isPackageActive('rkw_search')) {
             $packageManager->deactivatePackage('rkw_search');
-        }
+        }*/
 
         $this->setLock(__FUNCTION__);
     }
@@ -1780,10 +1797,10 @@ class UpdateWizard extends \RKW\RkwBasics\Updates\AbstractUpdate
             return;
         }
 
-        $packageManager = GeneralUtility::makeInstance(PackageManager::class);
+        /*$packageManager = GeneralUtility::makeInstance(PackageManager::class);
         if (!$packageManager->isPackageAvailable('rkw_consultant')) {
             return;
-        }
+        }*/
 
         /** @var  \TYPO3\CMS\Core\Database\Connection $connection */
         $connection = GeneralUtility::makeInstance(ConnectionPool::class)->getConnectionForTable('tt_content');
@@ -1838,10 +1855,9 @@ class UpdateWizard extends \RKW\RkwBasics\Updates\AbstractUpdate
         $databaseQueries[] = $updateQueryBuilder->getSQL();
         $updateQueryBuilder->execute();
 
-
-        if ($packageManager->isPackageActive('rkw_consultant')) {
+        /*if ($packageManager->isPackageActive('rkw_consultant')) {
             $packageManager->deactivatePackage('rkw_consultant');
-        }
+        }*/
 
         $this->setLock(__FUNCTION__);
 

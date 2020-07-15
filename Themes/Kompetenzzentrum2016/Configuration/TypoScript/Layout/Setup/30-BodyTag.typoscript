@@ -78,8 +78,8 @@ page {
                 value = page-grid--4
             }
 
-            900 = TEXT
-            900 {
+            9000 = TEXT
+            9000 {
                 value = page-broken-link page-grid--4
             }
 

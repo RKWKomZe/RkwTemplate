@@ -4,7 +4,7 @@
 // Define element fields
 //===============================================================
 
-$GLOBALS['TCA']['tt_content']['types']['rkwtemplate_media'] = [
+$GLOBALS['TCA']['tt_content']['types']['rkwtemplate_multimedia'] = [
     'showitem' => '
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
             --palette--;;general,
@@ -84,9 +84,9 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_media'] = [
     'tt_content',
     'CType',
     [
-        'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.media.title',
-        'rkwtemplate_media',
-        'rkw-template-media',
+        'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.multimedia.title',
+        'rkwtemplate_multimedia',
+        'rkw-template-multimedia',
     ],
     'textmedia',
     'after'

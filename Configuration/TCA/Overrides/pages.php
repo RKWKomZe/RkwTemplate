@@ -38,9 +38,9 @@ $GLOBALS['TCA']['pages']['columns']['media']['config']['overrideChildTca']['colu
     'topicDesktop' => [
         'title' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:pages.keyvisual.imageManipulation.topicDesktop',
         'allowedAspectRatios' => [
-            '2000:320' => [
-                'title' => '2000 x 320',
-                'value' => 2000 / 320
+            '2000:450' => [
+                'title' => '2000 x 450',
+                'value' => 2000 / 450
             ]
         ],
         'coverAreas' => [
@@ -55,7 +55,7 @@ $GLOBALS['TCA']['pages']['columns']['media']['config']['overrideChildTca']['colu
     'articleDesktop' => [
         'title' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:pages.keyvisual.imageManipulation.articleDesktop',
         'allowedAspectRatios' => [
-            '2000:320' => [
+            '2000:550' => [
                 'title' => '1024 x 550',
                 'value' => 1024 / 550
             ]

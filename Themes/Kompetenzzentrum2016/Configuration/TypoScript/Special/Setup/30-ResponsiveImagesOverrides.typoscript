@@ -37,6 +37,10 @@ plugin.tx_rkwrelated.libs {
                 mobile = 450
                 fallback = 450
             }
+            cropVariant {
+                mobile = teaser
+                fallback = teaser
+            }
         }
 	}
 
@@ -112,6 +116,10 @@ plugin.tx_rkwtools.libs {
             maxWidth {
                 mobile = 450
                 fallback = 450
+            }
+            cropVariant {
+                mobile = teaser
+                fallback = teaser
             }
         }
     }

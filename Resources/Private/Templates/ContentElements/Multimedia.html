@@ -8,7 +8,7 @@
         <f:for each="{gallery.rows}" as="row">
             <f:for each="{row.columns}" as="column">
                 <f:if condition="{column.media}">
-                    <f:render partial="Media/Type" arguments="{file: column.media, dimensions: column.dimensions, data: data, settings: settings}" />
+                    <f:render partial="Multimedia/Type" arguments="{file: column.media, dimensions: column.dimensions, data: data, settings: settings}" />
                 </f:if>
             </f:for>
         </f:for>

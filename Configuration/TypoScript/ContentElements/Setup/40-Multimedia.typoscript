@@ -1,7 +1,7 @@
 tt_content {
-    rkwtemplate_media =< lib.contentElement
-    rkwtemplate_media {
-        templateName = Media
+    rkwtemplate_multimedia =< lib.contentElement
+    rkwtemplate_multimedia {
+        templateName = Multimedia
         dataProcessing {
             10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
             10 {

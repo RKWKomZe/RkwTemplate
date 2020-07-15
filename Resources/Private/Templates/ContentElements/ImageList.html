@@ -21,7 +21,14 @@
                 </figure>
 
                 <div class="picture-list__content">
-                    <f:render partial="CollapsedText/Text" arguments="{_all}"/>
+                    <f:if condition="{data.rowDescription}">
+                        <f:then>
+                            <f:render partial="CollapsedText/Text" arguments="{_all}"/>
+                        </f:then>
+                        <f:else>
+                            <f:format.html parseFuncTSPath="lib.parseFunc">{data.bodytext}</f:format.html>
+                        </f:else>
+                    </f:if>
                 </div>
             </div>
         </div>

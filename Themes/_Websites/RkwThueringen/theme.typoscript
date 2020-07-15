@@ -16,7 +16,7 @@ plugin.tx_rkwtemplate_themeconfig {
             logos = EXT:rkw_template/Themes/{$plugin.tx_rkwtemplate_themeconfig.subThemeName}/Resources/Public/images/logos
 
             # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Path to icons
-            icons = EXT:rkw_template/Themes/Kompetenzzentrum2016/Resources/Public/icons/grey
+            icons = EXT:rkw_template/Themes/Kompetenzzentrum2016/Resources/Public/images/icons/grey
         }
 
         extensions {

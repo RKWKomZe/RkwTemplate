@@ -203,7 +203,7 @@ mod {
                                 columns {
                                     1 {
                                         name = Inhalte
-                                        colPos = 0
+                                        colPos = 600
                                     }
                                 }
                             }

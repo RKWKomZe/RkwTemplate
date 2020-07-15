@@ -1,3 +1,104 @@
+# Upgrade from 7.6 to 8.7 – Step-by-step
+
+## Step 1: Login
+* Go to: http://rkw-kompetenzzentrum.rkw.local/typo3/install.php 
+* On your console do: 
+```
+touch typo3conf/ENABLE_INSTALL_TOOL
+```
+* Log in
+
+## Step 2: Execute Wizards
+**If you execute the upgrade for the second time on the same system, make sure to delete all .lock-files in /typo3temp/var/locks!**
+
+
+**Then execute the following wizards under UpgradeWizards:**
+* Update database schema: Create tables and fields (if needed)
+* Set default database charset to utf-8
+* Migrate backend shortcut urls
+* Set the "Files:replace" permission for all BE user/groups with "Files:write" set
+* Update backend user setting "startModule"
+* Migrate all file relations from fe_users.image to sys_file_references
+* Execute database migrations on single rows
+* Fill translation source field (l10n_source)
+* Split menu types into dedicated content elements
+* Migrate "css_styled_content" static template location
+* Update sorting of sys_language records
+
+**DO NOT execute the following wizards, INSTEAD choose "execute" and then "no, don't install" and then "Perfom updates!"** 
+* Install extension "compatibility6" from TER
+* Install extension "compatibility7" from TER
+* Install extension "rtehtmlarea" from TER
+
+**Then execute the following command on PHPMyAdmin. This is to remove the "unsigned"-definition from the field in order to allow negative values**
+```
+ALTER TABLE `tt_content` CHANGE `colPos` `colPos` INT(11) NOT NULL DEFAULT '0';
+```
+
+**Then execute the following wizards under UpgradeWizards:**
+* Updater for rkw_basics from TYPO3 7.6 to TYPO3 8.7.
+* Updater for rkw_template from TYPO3 7.6 to TYPO3 8.7
+
+**Execute the following wizards AFTER ALL OTHER WIZARDS**
+* Migrate the field "section_frame" for all content elements to "frame_class"
+
+
+## Step 3: Update database schema
+Excecute "Update database schema: Modify tables and fields" (again). 
+
+## Step 4: Database analyzer
+Execute the database analyser.
+* **Remove tables (rename with prefix)** can be executed right away
+* **Remove unused fields (rename with prefix)** can be executed right away
+* When executing **Drop fields (really!)** all fields that belong to RKW extensions should be kept.
+* When executing **Drop tables (really!)** all tables that belong to RKW extensions should be kept, except for cache-tables with prefix "cf_"
+
+**SO DO !!!NOT!!! EXECUTE THE FOLLOWING COMANDS:**
+```
+ALTER TABLE `pages` DROP `zzz_deleted_tx_rkwsearch_index_timestamp`
+ALTER TABLE `pages` DROP `zzz_deleted_tx_rkwsearch_index_status`
+ALTER TABLE `pages` DROP `zzz_deleted_tx_rkwsearch_index_result`
+ALTER TABLE `pages` DROP `zzz_deleted_tx_rkwsearch_no_search`
+ALTER TABLE `pages` DROP `zzz_deleted_tx_rkwsearch_pubdate`
+ALTER TABLE `fe_users` DROP `zzz_deleted_tx_rkwsocialcomments_receive_comment_infomails`
+ALTER TABLE `pages_language_overlay` DROP `zzz_deleted_tx_rkwsearch_index_timestamp`
+ALTER TABLE `pages_language_overlay` DROP `zzz_deleted_tx_rkwsearch_index_status`
+ALTER TABLE `pages_language_overlay` DROP `zzz_deleted_tx_rkwsearch_index_result`
+ALTER TABLE `pages_language_overlay` DROP `zzz_deleted_tx_rkwsearch_no_search`
+ALTER TABLE `tx_rkwbasics_domain_model_department` DROP `zzz_deleted_search`
+ALTER TABLE `tx_rkwbasics_domain_model_documenttype` DROP `zzz_deleted_search`
+ALTER TABLE `tx_rkwshop_domain_model_orderitem` DROP `zzz_deleted_ext_order_old`
+ALTER TABLE `tx_rkwshop_domain_model_orderitem` DROP `zzz_deleted_product_old`
+ALTER TABLE `tx_rkwfeecalculator_domain_model_program` DROP `zzz_deleted_company_age`
+ALTER TABLE `tx_rkwfeecalculator_domain_model_program` DROP `zzz_deleted_conditions`
+ALTER TABLE `tx_rkwfeecalculator_domain_model_program` DROP `zzz_deleted_miscellaneous`
+ALTER TABLE `tx_rkwfeecalculator_domain_model_program` DROP `zzz_deleted_institution`
+ALTER TABLE `tx_rkwfeecalculator_domain_model_program` DROP `zzz_deleted_categories`
+ALTER TABLE `tx_rkwfeecalculator_domain_model_program` DROP `zzz_deleted_can_start_prematurely`
+ALTER TABLE `tx_rkwfeecalculator_domain_model_supportrequest` DROP `zzz_deleted_terms`
+ALTER TABLE `tx_rkwetracker_domain_model_reportfilter` DROP `zzz_deleted_domain_required` 
+
+DROP TABLE `zzz_deleted_tx_rkwconsultant_domain_model_basicservice`
+DROP TABLE `zzz_deleted_tx_rkwconsultant_domain_model_consultant`
+DROP TABLE `zzz_deleted_tx_rkwconsultant_domain_model_consultantservice`
+DROP TABLE `zzz_deleted_tx_rkwconsultant_domain_model_contactperson`
+DROP TABLE `zzz_deleted_tx_rkwconsultant_domain_model_qualification`
+DROP TABLE `zzz_deleted_tx_rkwconsultant_domain_model_subservice`
+DROP TABLE `zzz_deleted_tx_rkwfeecalculator_domain_model_institution`
+DROP TABLE `zzz_deleted_tx_rkwmailer_domain_model_statisticmail`
+DROP TABLE `zzz_deleted_tx_rkworder_domain_model_order`
+DROP TABLE `zzz_deleted_tx_rkwsearch_domain_model_queueanalysedkeywords`
+DROP TABLE `zzz_deleted_tx_rkwsearch_domain_model_queuetaggedcontent`
+DROP TABLE `zzz_deleted_tx_rkwsearch_domain_model_ridmapping`
+DROP TABLE `zzz_deleted_tx_rkwsocialcomments_domain_model_comment`
+DROP TABLE `zzz_deleted_tx_rkwsocialcomments_domain_model_report`
+DROP TABLE `zzz_deleted_tx_rkwwatchlist_domain_model_item`
+DROP TABLE `zzz_deleted_tx_rkwwatchlist_domain_model_watchlist`
+```
+## Step 5: Do "Clear all cache"
+## Step 6: Do "Check for broken extensions"
+## Step 6: Check image rendering
+
 
 
 ## Cookie Opt-In

@@ -1,7 +1,7 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
-    <f:if condition="{images.0}">
-        {f:uri.image(src:'{images.0.uid}',width:'2000',cropVariant:'topicDesktop')}
+    <f:if condition="{imageReference}">
+        {f:uri.image(src:'{imageReference}', treatIdAsReference: '1', maxWidth:'1800', cropVariant:'topicDesktop')}
     </f:if>
 
 </html>

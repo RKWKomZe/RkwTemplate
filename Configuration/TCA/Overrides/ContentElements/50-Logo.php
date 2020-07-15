@@ -61,9 +61,9 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_logo'] = [
                                     'default' => [
                                         'title' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.logo.imageManipulation.default',
                                         'allowedAspectRatios' => [
-                                            '160:320' => [
-                                                'title' => '160 x 320',
-                                                'value' => 160 / 320
+                                            '320:160' => [
+                                                'title' => '320 x 160',
+                                                'value' => 320 / 160
                                             ]
                                         ]
                                     ],

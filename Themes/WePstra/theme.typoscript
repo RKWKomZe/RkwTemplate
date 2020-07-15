@@ -10,14 +10,17 @@ plugin.tx_rkwtemplate_themeconfig {
 
         default {
 
+            # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Root path for layouts, templates and partials
+            root = EXT:rkw_template/Themes/{$plugin.tx_rkwtemplate_themeconfig.themeName}/Resources/Private
+
             # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Path to templates
-            templates = EXT:rkw_template/Themes/{$plugin.tx_rkwtemplate_themeconfig.themeName}/Resources/Private/Templates
+            templates = {$plugin.tx_rkwtemplate_themeconfig.paths.default.root}/Templates
 
             # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Path to partials
-            partials = EXT:rkw_template/Themes/{$plugin.tx_rkwtemplate_themeconfig.themeName}/Resources/Private/Partials
+            partials = {$plugin.tx_rkwtemplate_themeconfig.paths.default.root}/Partials
 
             # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Path to layouts
-            layouts = EXT:rkw_template/Themes/{$plugin.tx_rkwtemplate_themeconfig.themeName}/Resources/Private/Layouts
+            layouts = {$plugin.tx_rkwtemplate_themeconfig.paths.default.root}/Layouts
 
             # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Path to CSS-file
             css = EXT:rkw_template/Themes/{$plugin.tx_rkwtemplate_themeconfig.themeName}/Resources/Public/css

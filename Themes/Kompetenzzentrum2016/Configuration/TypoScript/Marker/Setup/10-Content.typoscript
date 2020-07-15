@@ -42,6 +42,10 @@ lib.txRkwTemplate {
         pluginOnly < styles.content.get
         pluginOnly.select.where = {#colPos} = 500
 
+        mainExpert = CONTENT
+        mainExpert < styles.content.get
+        mainExpert.select.where = {#colPos} = 600
+
         headlineExpert = CONTENT
         headlineExpert < styles.content.get
         headlineExpert.select.where = {#colPos} = 610
