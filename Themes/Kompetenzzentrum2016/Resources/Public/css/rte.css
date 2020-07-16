@@ -443,7 +443,10 @@ h6,
   clear: both; }
 
 figure {
-  margin-bottom: 14px; }
+  /*
+  margin-bottom: 14px;
+  */
+  margin-top: 16px; }
 
 img {
   display: inline-block;

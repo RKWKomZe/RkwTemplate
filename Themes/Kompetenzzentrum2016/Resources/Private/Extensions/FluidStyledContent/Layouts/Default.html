@@ -9,52 +9,42 @@
 	<f:if condition="({data.CType} == 'list') && ({data.colPos} > 0)">
 		<f:then>
 
-			<f:if condition="{data.colPos} == '110'">
-				<f:then>
-					<aside class="related-box" aria-labelledby="section-header-{data.uid}">
-					<f:if condition="{data.header}">
-						<div class="related-box-title">
-							<h4 class="h2 section-header" id="section-header-{data.uid}">
-								{data.header}
-							</h4>
-						</div>
-					</f:if>
-				</f:then>
-				<f:else>
-					<f:if condition="{data.header}">
-						<f:then>
-							<section role="complementary" aria-labelledby="section-header-{data.uid}">
-								<h4 class="h2 section-header" id="section-header-{data.uid}">
-									{data.header}
-								</h4>
-						</f:then>
-						<f:else>
-							<section aria-labelledby="article-headline" role="search">
-						</f:else>
-					</f:if>
-
-				</f:else>
-			</f:if>
+			<f:switch expression="{data.colPos}">
+				<f:case value="110">
+					<f:render partial="Wraps/PluginAside" section="Header" arguments="{_all}" />
+				</f:case>
+				<f:case value="600">
+					<f:render partial="Wraps/PluginNone" section="Header" arguments="{_all}" />
+				</f:case>
+				<f:defaultCase>
+					<f:render partial="Wraps/PluginDefault" section="Header" arguments="{_all}" />
+				</f:defaultCase>
+			</f:switch>
 
 			<f:render section="Main"/>
 
-			<f:if condition="{data.colPos} == '110'">
-				<f:then>
-					</aside>
-				</f:then>
-				<f:else>
-					</section>
-				</f:else>
-			</f:if>
+			<f:switch expression="{data.colPos}">
+				<f:case value="110">
+					<f:render partial="Wraps/PluginAside" section="Footer" arguments="{_all}" />
+				</f:case>
+				<f:case value="600">
+					<f:render partial="Wraps/PluginNone" section="Footer" arguments="{_all}" />
+				</f:case>
+				<f:defaultCase>
+					<f:render partial="Wraps/PluginDefault" section="Footer" arguments="{_all}" />
+				</f:defaultCase>
+			</f:switch>
+
 		</f:then>
 		<f:else>
 
 			<f:comment>
 				<!-- =============================================================
-                    special rendering for plugins that are CallToAction-Elements
+                    special rendering for plugins
+      				OLD: ({data.CType} == 'list') && ({data.colPos} == -1) && ({data.tx_gridelements_columns} == 70)
                 ============================================================= -->
 			</f:comment>
-			<f:if condition="({data.CType} == 'list') && ({data.colPos} == -1) && ({data.tx_gridelements_columns} == 70)">
+			<f:if condition="({data.CType} == 'list')">
 				<f:then>
 					<f:render section="Main"/>
 				</f:then>

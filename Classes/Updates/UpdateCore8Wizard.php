@@ -94,6 +94,15 @@ class UpdateCore8Wizard extends \RKW\RkwBasics\Updates\AbstractUpdate
     public function performUpdate(array &$databaseQueries, &$customMessage)
     {
 
+        /** @var \TYPO3\CMS\Core\Package\PackageManager $packageManager */
+        $packageManager = GeneralUtility::makeInstance(PackageManager::class);
+        if (!$packageManager->isPackageAvailable('gridelements')) {
+            return false;
+        }
+        if (!$packageManager->isPackageActive('gridelements')) {
+            return false;
+        }
+
         $this->migrateConfiguration($databaseQueries);
         $this->migrateCropping($databaseQueries);
         $this->migrateFieldPublicationDate($databaseQueries);
@@ -261,7 +270,7 @@ class UpdateCore8Wizard extends \RKW\RkwBasics\Updates\AbstractUpdate
                 '#.ts#',
                 '#EXT:rkw_template\/Configuration\/TsConfig\/Kompetenzzentrum#i',
                 '#EXT:rkw_template\/Configuration\/TsConfig\/WePstra#i',
-                '#EXT:rkw_template\/Configuration\/Themes/Kompetenzzentrum/TsConfig#i',
+                '#EXT:rkw_template\/Configuration\/Themes\/Kompetenzzentrum\/TsConfig#i',
                 '#EXT:rkw_template\/Configuration\/Themes\/WePstra\/TsConfig#i',
                 '#EXT:rkw_template\/Themes\/Kompetenzzentrum\/Configuration\/TsConfig\/(_Websites|_Microsites)\/([^\/]+)\/#i',
                 '#EXT:rkw_template\/Themes\/Kompetenzzentrum\/Configuration\/TsConfig#i'
@@ -319,16 +328,17 @@ class UpdateCore8Wizard extends \RKW\RkwBasics\Updates\AbstractUpdate
         while ($record = $statement->fetch()) {
 
             $search = [
-                'EXT:rkw_template/Configuration/TsConfigBeGroups/_Core/',
-                'EXT:rkw_template/Configuration/TsConfigBeGroups/Kompetenzzentrum/',
-                'EXT:rkw_template/Configuration/TsConfigBeGroups/WePstra/',
+                '#EXT:rkw_template\/Configuration\/TsConfigBeGroups\/_Core\/#i',
+                '#EXT:rkw_template\/Configuration\/TsConfigBeGroups\/Kompetenzzentrum\/#i',
+                '#EXT:rkw_template\/Configuration\/TsConfigBeGroups\/WePstra\/#i',
+
             ];
             $replace = [
                 'EXT:rkw_template/Themes/_Core/Configuration/TsConfigBeGroups/',
-                'EXT:rkw_template/Themes/Kompetenzzentrum/Configuration/TsConfigBeGroups/',
+                'EXT:rkw_template/Themes/Kompetenzzentrum2016/Configuration/TsConfigBeGroups/',
                 'EXT:rkw_template/Themes/WePstra/Configuration/TsConfigBeGroups/',
             ];
-            $record['TSconfig'] = str_replace($search, $replace, $record['TSconfig']);
+            $record['TSconfig'] = preg_replace($search, $replace, $record['TSconfig']);
 
             // update
             /** @var \TYPO3\CMS\Core\Database\Query\QueryBuilder $updateQueryBuilder */
@@ -345,6 +355,37 @@ class UpdateCore8Wizard extends \RKW\RkwBasics\Updates\AbstractUpdate
         }
 
 
+        // insert TsConfig to datasets
+        $pidArray = [
+            11 => 'EXT:rkw_template/Configuration/TsConfig/TsConfig.typoscript,EXT:rkw_template/Themes/_Core/Configuration/TsConfig/TsConfig.typoscript',
+            3231 => 'EXT:rkw_template/Themes/Kompetenzzentrum2016/Configuration/TsConfig/TsConfig.typoscript',
+            5085 => 'EXT:rkw_template/Themes/_Websites/RkwBadenWuerttemberg/Configuration/TsConfig/TsConfig.typoscript',
+            4786 => 'EXT:rkw_template/Themes/_Websites/RkwBremen/Configuration/TsConfig/TsConfig.typoscript',
+            4364 => 'EXT:rkw_template/Themes/_Websites/RkwBundesverein/Configuration/TsConfig/TsConfig.typoscript',
+            3618 => 'EXT:rkw_template/Themes/_Websites/RkwNord/Configuration/TsConfig/TsConfig.typoscript',
+            3232 => 'EXT:rkw_template/Themes/_Websites/RkwSachsen/Configuration/TsConfig/TsConfig.typoscript',
+            3466 => 'EXT:rkw_template/Themes/_Websites/RkwSachsenAnhalt/Configuration/TsConfig/TsConfig.typoscript',
+            3649 => 'EXT:rkw_template/Themes/_Websites/RkwThueringen/Configuration/TsConfig/TsConfig.typoscript',
+            3904 => 'EXT:rkw_template/Themes/_Websites/EANPC/Configuration/TsConfig/TsConfig.typoscript',
+        ];
+
+        foreach ($pidArray as $pid => $config) {
+
+            // update
+            /** @var \TYPO3\CMS\Core\Database\Query\QueryBuilder $updateQueryBuilder */
+            $updateQueryBuilder = $connection->createQueryBuilder();
+            $updateQueryBuilder->update('pages')
+                ->set('tsconfig_includes', $config)
+                ->where(
+                    $updateQueryBuilder->expr()->eq('uid',
+                        $updateQueryBuilder->createNamedParameter($pid, \PDO::PARAM_INT)
+                    )
+                );
+
+            $databaseQueries[] = $updateQueryBuilder->getSQL();
+            $updateQueryBuilder->execute();
+
+        }
         $this->setLock(__FUNCTION__);
 
     }

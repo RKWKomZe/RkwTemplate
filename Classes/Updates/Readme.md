@@ -48,13 +48,15 @@ touch typo3conf/ENABLE_INSTALL_TOOL
 ALTER TABLE `tt_content` CHANGE `colPos` `colPos` INT(11) NOT NULL DEFAULT '0';
 ```
 
+**Make sure the extension gridelements is installed before you proceed!**
+
 **Then execute the following wizards under UpgradeWizards:**
 * Updater for rkw_basics from TYPO3 7.6 to TYPO3 8.7.
 * Updater for rkw_template from TYPO3 7.6 to TYPO3 8.7
 
 **Execute the following wizards AFTER ALL OTHER WIZARDS**
 * Migrate the field "section_frame" for all content elements to "frame_class"
-
+* Update sys_file_processedfile records to match new checksum calculation.
 
 ### Step 3: Update database schema
 Excecute "Update database schema: Modify tables and fields" (again). 
