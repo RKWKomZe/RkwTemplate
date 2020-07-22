@@ -3,6 +3,10 @@ lib.txRkwTemplate {
     utility {
 
         //=================================================================
+        baseUrl = TEXT
+        baseUrl.value = {$plugin.tx_rkwtemplate_themeconfig.baseUrl}
+
+        //=================================================================
         websiteUrl = TEXT
         websiteUrl < plugin.tx_rkwbasics.libs.canonical.10
         websiteUrl.wrap >

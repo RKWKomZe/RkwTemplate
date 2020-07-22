@@ -19,8 +19,9 @@
     "require": {
         "php": ">=5.6",
         "typo3/cms-core": "~7.6.0 || ~8.7.0",
-        "rkw/rkw-basics": "~8.7.0",
-        "rkw/rkw-etracker": "~8.7.0"
+        "gridelementsteam/gridelements" : "~8.6.3",
+        "rkw/rkw-basics": "~8.7.23",
+        "rkw/rkw-etracker": "~8.7.16"
     },
     "autoload": {
         "psr-4": {

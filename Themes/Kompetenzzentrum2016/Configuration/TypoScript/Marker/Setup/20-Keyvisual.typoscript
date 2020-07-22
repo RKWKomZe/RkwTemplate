@@ -100,29 +100,62 @@ lib.txRkwTemplate {
         }
 
         #============================================================
-        publication < .topic
+        publication = COA
         publication {
 
-            20 >
-            20 < lib.txRkwTemplate.keyvisual.article
+            10 = FILES
+            10 {
+
+                references {
+                    table = pages
+                    data = levelfield: -1, media, slide
+                }
+
+                renderObj = COA
+                renderObj {
+
+                    5 = LOAD_REGISTER
+                    5 {
+                        imageIdList.cObject = TEXT
+                        imageIdList.cObject.data = register:imageIdList
+                        imageIdList.cObject.wrap = |,{file:current:uid}
+                        imageIdList.cObject.wrap.insertData = 1
+                    }
+                }
+            }
+
+            20 = FLUIDTEMPLATE
             20 {
 
                 file = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/FluidTemplateLibs/Keyvisual/Publication.html
                 partialRootPaths.0 = {$plugin.tx_rkwbasics.view.templateRootPath}
 
-                dataProcessing >
-                dataProcessing {
-                    10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-                    10 {
+                variables {
 
-                        files.data = register:imageIdList
-                        as = images
+                    imageReference = TEXT
+                    imageReference {
+                        data = register:imageIdList
+                        stdWrap.replacement {
+                            1 {
+                                search = #(.+)?,([0-9]+)$#
+                                replace = ${2}
+                                useRegExp = 1
+                            }
+                        }
                     }
                 }
 
+                settings < lib.txRkwBasics.responsiveImage.settings
                 settings {
 
                     additionalAttributes = class="publications-article__picture"
+                    breakpoint {
+                        desktop >
+                    }
+
+                    maxWidth {
+                        tablet = 1024
+                    }
 
                     cropVariant {
                         tablet = publicationDesktop
@@ -132,6 +165,9 @@ lib.txRkwTemplate {
                     }
                 }
             }
+
+            90 = RESTORE_REGISTER
+
         }
     }
 }

@@ -87,6 +87,9 @@
 			<trans-unit id="partials.sharePrint.socialMedia.labelShareXing">
 				<source>Share on XING</source>
 			</trans-unit>
+			<trans-unit id="partials.sharePrint.socialMedia.labelShareRss">
+				<source>RSS-Feed</source>
+			</trans-unit>
             <trans-unit id="partials.sharePrint.print.ariaLabelPrintToolbar">
                 <source>Print article or save for later</source>
             </trans-unit>

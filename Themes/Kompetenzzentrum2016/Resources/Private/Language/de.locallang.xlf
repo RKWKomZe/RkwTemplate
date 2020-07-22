@@ -111,6 +111,10 @@
 				<source>Share on XING</source>
 				<target>Auf XING teilen</target>
 			</trans-unit>
+			<trans-unit id="partials.sharePrint.socialMedia.labelShareRss">
+				<source>RSS-Feed</source>
+				<target>RSS-Feed</target>
+			</trans-unit>
             <trans-unit id="partials.sharePrint.print.ariaLabelPrintToolbar">
                 <source>Print article or save for later</source>
                 <target>Artikel drucken oder für später speichern</target>

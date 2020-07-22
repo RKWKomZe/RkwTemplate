@@ -386,6 +386,22 @@ class UpdateCore8Wizard extends \RKW\RkwBasics\Updates\AbstractUpdate
             $updateQueryBuilder->execute();
 
         }
+
+        
+        // Fix for sorting of root-pages!
+        /** @var \TYPO3\CMS\Core\Database\Query\QueryBuilder $updateQueryBuilder */
+        $updateQueryBuilder = $connection->createQueryBuilder();
+        $updateQueryBuilder->update('pages')
+            ->set('sorting', 255)
+            ->where(
+                $updateQueryBuilder->expr()->eq('uid',
+                    $updateQueryBuilder->createNamedParameter(1, \PDO::PARAM_INT)
+                )
+            );
+
+        $databaseQueries[] = $updateQueryBuilder->getSQL();
+        $updateQueryBuilder->execute();
+
         $this->setLock(__FUNCTION__);
 
     }

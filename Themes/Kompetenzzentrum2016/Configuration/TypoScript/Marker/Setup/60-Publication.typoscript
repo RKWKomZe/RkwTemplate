@@ -4,14 +4,14 @@ lib.txRkwTemplate {
 
         isParentPage = TEXT
         isParentPage.value = 1
-        isParentPage.if.isTrue.field = tx_bmpdf2content_is_import
-        isParentPage.if.isTrue.if.isFalse.field = tx_bmpdf2content_is_import_sub
+        isParentPage.if.isTrue.data = page:tx_bmpdf2content_is_import
+        isParentPage.if.isTrue.if.isFalse.data = page:tx_bmpdf2content_is_import_sub
 
         //=================================================================
         isSubPage = TEXT
         isSubPage.value = 1
-        isSubPage.if.isTrue.field = tx_bmpdf2content_is_import
-        isSubPage.if.isTrue.if.isTrue.field = tx_bmpdf2content_is_import_sub
+        isSubPage.if.isTrue.data = page:tx_bmpdf2content_is_import
+        isSubPage.if.isTrue.if.isTrue.data = page:tx_bmpdf2content_is_import_sub
 
         //=================================================================
         parentTitle = USER

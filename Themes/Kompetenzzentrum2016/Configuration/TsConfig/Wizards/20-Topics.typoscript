@@ -18,7 +18,7 @@
     mod.wizards.newContentElement.wizardItems.common.show := addToList(rkwtemplate_mission, rkwtemplate_media)
 
     // remove grid elements by their ID (aka name)
-    tx_gridelements.excludeLayoutIds = sliderContainer, topicContainer, logoContainer, promoterContainer
+    tx_gridelements.excludeLayoutIds = sliderContainer, topicContainer, logoContainer, promoterContainer, contentContainerOneCol
 
 [end]
 
