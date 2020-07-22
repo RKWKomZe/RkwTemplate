@@ -24,6 +24,9 @@ touch typo3conf/ENABLE_INSTALL_TOOL
 ### Step 2: Execute Wizards
 **If you execute the upgrade for the second time on the same system, make sure to delete all .lock-files in /typo3temp/var/locks!**
 
+**Make sure the extension gridelements is installed before you proceed!**
+**Make sure the extension rkw_pdf2content is installed before you proceed!**
+
 
 **Then execute the following wizards under UpgradeWizards:**
 * Update database schema: Create tables and fields (if needed)
@@ -48,11 +51,10 @@ touch typo3conf/ENABLE_INSTALL_TOOL
 ALTER TABLE `tt_content` CHANGE `colPos` `colPos` INT(11) NOT NULL DEFAULT '0';
 ```
 
-**Make sure the extension gridelements is installed before you proceed!**
-
-**Then execute the following wizards under UpgradeWizards:**
+**Then execute the following wizards under UpgradeWizards (in this order!):**
 * Updater for rkw_basics from TYPO3 7.6 to TYPO3 8.7.
 * Updater for rkw_template from TYPO3 7.6 to TYPO3 8.7
+* Updates "tx_bmpdf2content_*" fields to "tx_rkwpdf2content_" 
 
 **Execute the following wizards AFTER ALL OTHER WIZARDS**
 * Migrate the field "section_frame" for all content elements to "frame_class"

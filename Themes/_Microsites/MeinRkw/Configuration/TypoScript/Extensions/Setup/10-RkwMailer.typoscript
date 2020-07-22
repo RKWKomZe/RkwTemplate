@@ -7,4 +7,4 @@ module.tx_rkwmailer {
     }
 }
 
-plugin.tx_rkwmailer.view < module.tx_rkwmailer.view
+plugin.tx_rkwmailer < module.tx_rkwmailer

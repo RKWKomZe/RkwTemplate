@@ -227,6 +227,9 @@ class UpdateCore8Wizard extends \RKW\RkwBasics\Updates\AbstractUpdate
 
             }
 
+            // Replace bm_pdf2content
+            $record['include_static_file'] = str_replace('EXT:bm_pdf2content/Configuration/TypoScript,', 'EXT:rkw_pdf2content/Configuration/TypoScript,', $record['include_static_file']);
+            
             // update
             /** @var \TYPO3\CMS\Core\Database\Query\QueryBuilder $updateQueryBuilder */
             $updateQueryBuilder = $connection->createQueryBuilder();
@@ -404,6 +407,8 @@ class UpdateCore8Wizard extends \RKW\RkwBasics\Updates\AbstractUpdate
 
         $this->setLock(__FUNCTION__);
 
+        
+   
     }
 
 
@@ -692,10 +697,10 @@ class UpdateCore8Wizard extends \RKW\RkwBasics\Updates\AbstractUpdate
         $statement = $queryBuilderPages->select('*')
             ->from('pages')
             ->where(
-                $queryBuilderPages->expr()->eq('tx_bmpdf2content_is_import',
+                $queryBuilderPages->expr()->eq('tx_rkwpdf2content_is_import',
                     $queryBuilderPages->createNamedParameter(1,  \PDO::PARAM_INT)
                 ),
-                $queryBuilderPages->expr()->eq('tx_bmpdf2content_is_import_sub',
+                $queryBuilderPages->expr()->eq('tx_rkwpdf2content_is_import_sub',
                     $queryBuilderPages->createNamedParameter(0,  \PDO::PARAM_INT)
                 )
             )

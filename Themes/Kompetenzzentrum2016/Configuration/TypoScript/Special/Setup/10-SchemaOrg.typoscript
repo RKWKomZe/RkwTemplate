@@ -24,8 +24,8 @@ lib.txRkwTemplate {
         //=================================================================
         isSubPage = TEXT
         isSubPage.value = 1
-        isSubPage.if.isTrue.data = field:tx_bmpdf2content_is_import
-        isSubPage.if.isTrue.if.isTrue.data = field:tx_bmpdf2content_is_import_sub
+        isSubPage.if.isTrue.data = field:tx_rkwpdf2content_is_import
+        isSubPage.if.isTrue.if.isTrue.data = field:tx_rkwpdf2content_is_import_sub
 
         #=================================================================
         pageHeader < page.headerData.5000.60.10
@@ -40,9 +40,9 @@ lib.txRkwTemplate {
         pageParentTitle = USER
         pageParentTitle {
             userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
-            extensionName = BmPdf2content
+            extensionName = RkwPdf2content
             pluginName = Pi1
-            vendorName = BM
+            vendorName = RKW
             controller = DisplayPages
             switchableControllerActions {
                 // Again: Controller-Name and Action
@@ -51,9 +51,9 @@ lib.txRkwTemplate {
                 }
             }
 
-            view =< plugin.tx_bmpdf2content.view
-            persistence =< plugin.tx_bmpdf2content.persistence
-            settings =< plugin.tx_bmpdf2content.settings
+            view =< plugin.tx_rkwpdf2content.view
+            persistence =< plugin.tx_rkwpdf2content.persistence
+            settings =< plugin.tx_rkwpdf2content.settings
             settings.importParentPage.showField = title
         }
 
@@ -75,9 +75,9 @@ lib.txRkwTemplate {
         pageParentPubDate = USER
         pageParentPubDate {
             userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
-            extensionName = BmPdf2content
+            extensionName = RkwPdf2content
             pluginName = Pi1
-            vendorName = BM
+            vendorName = RKW
             controller = DisplayPages
             switchableControllerActions {
                 // Again: Controller-Name and Action
@@ -86,9 +86,9 @@ lib.txRkwTemplate {
                 }
             }
 
-            view =< plugin.tx_bmpdf2content.view
-            persistence =< plugin.tx_bmpdf2content.persistence
-            settings =< plugin.tx_bmpdf2content.settings
+            view =< plugin.tx_rkwpdf2content.view
+            persistence =< plugin.tx_rkwpdf2content.persistence
+            settings =< plugin.tx_rkwpdf2content.settings
             settings.importParentPage.showField = lastUpdated
 
             // Fallback for those without active RKW Search

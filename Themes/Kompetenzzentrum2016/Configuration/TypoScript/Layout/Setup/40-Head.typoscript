@@ -39,9 +39,9 @@ page {
                 10 = USER
                 10 {
                     userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
-                    extensionName = BmPdf2content
+                    extensionName = RKWPdf2content
                     pluginName = Pi1
-                    vendorName = BM
+                    vendorName = RKW
                     controller = DisplayPages
                     switchableControllerActions {
                         // Again: Controller-Name and Action
@@ -50,16 +50,16 @@ page {
                         }
                     }
 
-                    view =< plugin.tx_bmpdf2content.view
-                    persistence =< plugin.tx_bmpdf2content.persistence
-                    settings =< plugin.tx_bmpdf2content.settings
+                    view =< plugin.tx_rkwpdf2content.view
+                    persistence =< plugin.tx_rkwpdf2content.persistence
+                    settings =< plugin.tx_rkwpdf2content.settings
                     settings.importParentPage.showField = title
                 }
 
                 stdWrap.noTrimWrap = ||: |
                 if {
                     value = 1
-                    equals.field = tx_bmpdf2content_is_import_sub
+                    equals.field = tx_rkwpdf2content_is_import_sub
                 }
             }
 
@@ -142,7 +142,7 @@ page {
                     value = 1
                     equals {
 
-                        field = tx_bmpdf2content_is_import
+                        field = tx_rkwpdf2content_is_import
                     }
                 }
             }

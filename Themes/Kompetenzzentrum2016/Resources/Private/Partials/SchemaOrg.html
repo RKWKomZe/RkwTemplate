@@ -38,7 +38,7 @@
 		[
 			<f:format.raw>{pageAuthorsSchemaOrg}</f:format.raw>
 		],
-		"headline": "<f:if condition="{data.tx_bmpdf2content_is_import_sub}"><f:then>{importParentPageTitle} - {pageTitle}</f:then><f:else>{importParentPageTitle}</f:else></f:if>",
+		"headline": "<f:if condition="{data.tx_rkwpdf2content_is_import_sub}"><f:then>{importParentPageTitle} - {pageTitle}</f:then><f:else>{importParentPageTitle}</f:else></f:if>",
 		"articleBody" : "<f:format.htmlspecialchars><f:format.htmlentitiesDecode><f:format.stripTags ><f:if condition="{content}"><f:then>{content}</f:then><f:else>{pageAbstractInherit}</f:else></f:if></f:format.stripTags></f:format.htmlentitiesDecode></f:format.htmlspecialchars>",
 		"description" : "<f:format.htmlspecialchars><f:format.htmlentitiesDecode>{descriptionSchemaOrg}</f:format.htmlentitiesDecode></f:format.htmlspecialchars>",
 		<f:comment>"datePublished": "<f:format.date format="Y-m-d">{importParentPagePubDate}</f:format.date>",</f:comment>
