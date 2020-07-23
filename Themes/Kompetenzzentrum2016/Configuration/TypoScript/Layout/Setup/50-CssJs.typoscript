@@ -9,9 +9,9 @@ page {
         file10 = {$plugin.tx_rkwtemplate_themeconfig.paths.default.css}/main.css
         file10.media = screen,print
 
-        file20 = {$plugin.tx_rkwtemplate_themeconfig.paths.default.css}/ie9.css
-        file20.media = screen,print
-        file20.allWrap = <!--[if IE]>|<![endif]-->
+        // file20 = {$plugin.tx_rkwtemplate_themeconfig.paths.default.css}/ie9.css
+        // file20.media = screen,print
+        // file20.allWrap = <!--[if IE]>|<![endif]-->
 
         // Nur auf den Druck-Seiten!
         // file30 = {$plugin.tx_rkwtemplate_themeconfig.paths.default.css}/print.css
