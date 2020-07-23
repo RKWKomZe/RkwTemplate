@@ -55,8 +55,8 @@ ALTER TABLE `tt_content` CHANGE `colPos` `colPos` INT(11) NOT NULL DEFAULT '0';
 
 **Then execute the following wizards under UpgradeWizards (in this order!):**
 * Updater for rkw_basics from TYPO3 7.6 to TYPO3 8.7.
-* Updater for rkw_template from TYPO3 7.6 to TYPO3 8.7
 * Updates "tx_bmpdf2content_*" fields to "tx_rkwpdf2content_" 
+* Updater for rkw_template from TYPO3 7.6 to TYPO3 8.7
 
 **Execute the following wizards AFTER ALL OTHER WIZARDS**
 * Migrate the field "section_frame" for all content elements to "frame_class"

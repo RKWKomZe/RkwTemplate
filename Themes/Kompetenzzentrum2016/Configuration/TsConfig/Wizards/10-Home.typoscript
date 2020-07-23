@@ -7,7 +7,7 @@
 
     // remove everything - except for some items
     // Important: this also has to include gridelements_pi1 for the gridContainer if needed!
-    TCEFORM.tt_content.CType.keepItems := addToList(gridelements_pi1, rkwtemplate_mission, rkwtemplate_media, list)
+    TCEFORM.tt_content.CType.keepItems := addToList(gridelements_pi1, rkwtemplate_mission, rkwtemplate_multimedia, list)
 
     // remove everything - except for some items
     mod.wizards.newContentElement.wizardItems.common.show =
@@ -15,7 +15,7 @@
     mod.wizards.newContentElement.wizardItems.forms.show =
     mod.wizards.newContentElement.wizardItems.plugins.show = *
     mod.wizards.newContentElement.wizardItems.menu.show =
-    mod.wizards.newContentElement.wizardItems.common.show := addToList(rkwtemplate_mission, rkwtemplate_media)
+    mod.wizards.newContentElement.wizardItems.common.show := addToList(rkwtemplate_mission, rkwtemplate_multimedia)
 
     // remove grid elements by their ID (aka name)
     tx_gridelements.excludeLayoutIds = contentContainerTwoCols, contentContainerOneCol, promoterContainer
