@@ -136,11 +136,11 @@
 
 
             <!-- Media -->
-            <trans-unit id="contentElement.media.title">
+            <trans-unit id="contentElement.multimedia.title">
                 <source>Media</source>
                 <target>Medien</target>
             </trans-unit>
-            <trans-unit id="contentElement.media.description">
+            <trans-unit id="contentElement.multimedia.description">
                 <source>Adds a Media-Element.</source>
                 <target>Ein Youtube-Video oder ein anderes Medien-Element. Üblicherweise wird dieses Element auf der Startseite eingesetzt.</target>
             </trans-unit>
