@@ -107,10 +107,10 @@
 
 
             <!-- Media -->
-            <trans-unit id="contentElement.media.title">
+            <trans-unit id="contentElement.multimedia.title">
                 <source>Media</source>
             </trans-unit>
-            <trans-unit id="contentElement.media.description">
+            <trans-unit id="contentElement.multimedia.description">
                 <source>Adds a Media-Element.</source>
             </trans-unit>
 
