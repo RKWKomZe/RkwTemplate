@@ -31,7 +31,9 @@ touch typo3conf/ENABLE_INSTALL_TOOL
 **Then execute the following wizards under UpgradeWizards:**
 * Update database schema: Create tables and fields (if needed)
 * Set default database charset to utf-8
+* Move "wizard done" flags from LocalConfiguration.php to system registry
 * Migrate backend shortcut urls
+* Remove unneeded CLI backend users
 * Set the "Files:replace" permission for all BE user/groups with "Files:write" set
 * Update backend user setting "startModule"
 * Migrate all file relations from fe_users.image to sys_file_references
@@ -59,6 +61,7 @@ ALTER TABLE `tt_content` CHANGE `colPos` `colPos` INT(11) NOT NULL DEFAULT '0';
 **Execute the following wizards AFTER ALL OTHER WIZARDS**
 * Migrate the field "section_frame" for all content elements to "frame_class"
 * Update sys_file_processedfile records to match new checksum calculation.
+* Migrates existing fe_session_data into fe_sessions
 
 ### Step 3: Update database schema
 Excecute "Update database schema: Modify tables and fields" (again). 

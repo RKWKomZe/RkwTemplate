@@ -726,7 +726,7 @@ class UpdateCore8Wizard extends \RKW\RkwBasics\Updates\AbstractUpdate
                         $queryBuilder->createNamedParameter($record['uid'], \PDO::PARAM_INT)
                     ),
                     $queryBuilder->expr()->eq('colPos',
-                        $queryBuilder->createNamedParameter(0, Connection::PARAM_INT_ARRAY)
+                        $queryBuilder->createNamedParameter(0, \PDO::PARAM_INT)
                     )
                 )
                 ->execute();
