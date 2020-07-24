@@ -149,6 +149,9 @@
 .icon-xing:before {
   content: "\e618"; }
 
+.icon-feed:before {
+  content: "\e90c"; }
+
 .icon-file:before {
   content: "\e619"; }
 

@@ -46,9 +46,13 @@
 			</f:comment>
 			<f:if condition="({data.CType} == 'list')">
 				<f:then>
-					<f:render section="Header" optional="true">
-						<f:render partial="Header/All" arguments="{_all}" />
-					</f:render>
+					<f:if condition="({data.colPos} == -1) && ({data.tx_gridelements_columns} == 70)">
+						<f:else>
+							<f:render section="Header" optional="true">
+								<f:render partial="Header/All" arguments="{_all}" />
+							</f:render>
+						</f:else>
+					</f:if>
 					<f:render section="Main"/>
 				</f:then>
 
