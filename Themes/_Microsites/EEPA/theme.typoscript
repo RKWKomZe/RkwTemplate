@@ -20,7 +20,7 @@ plugin.tx_rkwtemplate_themeconfig {
         name = Europäischer Unternehmensförderpreis
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=baseUrl (With / at the end for ClickEnlarge)
-        baseUrl = https://www.europaeischer-unternehmensfoerderpreis.de/
+        baseUrl = https://eepa.rkw-kompetenzzentrum.de/
     }
 
     microsite {
