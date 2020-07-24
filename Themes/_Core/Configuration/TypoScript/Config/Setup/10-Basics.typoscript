@@ -16,7 +16,7 @@ config {
 	// AdminPanel (auch für FE-Editing benötigt)
 	admPanel = 0
 	
-	// Cache- Headers für intern gecachte Seiten
+	// Cache- Headers (@see: https://docs.typo3.org/m/typo3/reference-typoscript/master/en-us/Setup/Config/Index.html#sendcacheheaders)
 	sendCacheHeaders = 1
 	
 	// WICHTIG: Abschließender Slash, damit Click-Enlarge funktioniert!
