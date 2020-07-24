@@ -7,17 +7,20 @@
                     <f:translate key="{settings.themeLanguageFile}:partials.infoBox.partials.project.labelProject"/>:
                 </strong>
                 <f:cObject typoscriptObjectPath="lib.txRkwTemplate.pageInfo.projectLink" data="{data}" />
+            </p>
         </f:then>
-        <f:else>
-            <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.pageInfo.projectName', data:'{data}')}">
-                <p>
-                    <strong>
-                        <f:translate key="{settings.themeLanguageFile}:partials.infoBox.partials.project.labelProject"/>:
-                    </strong>
-                    <f:cObject typoscriptObjectPath="lib.txRkwTemplate.pageInfo.projectName" data="{data}" />
-                </p>
-            </f:if>
-        </f:else>
+        <f:comment>
+            <f:else>
+                <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.pageInfo.projectName', data:'{data}')}">
+                    <p>
+                        <strong>
+                            <f:translate key="{settings.themeLanguageFile}:partials.infoBox.partials.project.labelProject"/>:
+                        </strong>
+                        <f:cObject typoscriptObjectPath="lib.txRkwTemplate.pageInfo.projectName" data="{data}" />
+                    </p>
+                </f:if>
+            </f:else>
+        </f:comment>
     </f:if>
 
 </html>

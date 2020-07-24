@@ -38,7 +38,7 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_overview'] = [
         ],
         'header_link' => [
             'config' => [
-                'eval' => 'trim,required',
+                'eval' => 'trim',
             ]
         ],
         'bodytext' => [
