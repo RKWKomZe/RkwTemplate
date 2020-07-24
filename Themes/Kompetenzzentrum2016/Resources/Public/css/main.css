@@ -2003,6 +2003,9 @@ body.project-aprodi main .sections a:not(.toggle-filter):not(.button):not(.featu
 .icon-xing:before {
   content: "\e618"; }
 
+.icon-feed:before {
+  content: "\e90c"; }
+
 .icon-file:before {
   content: "\e619"; }
 
@@ -3025,7 +3028,10 @@ body.project-aprodi input[type="password"]:focus, body.project-aprodi textarea:h
 .wysiwyg {
   /*
  * Styles for content
- */ }
+ */
+  /*div.csc-textpic.csc-textpic-above .csc-textpic-imagewrap .csc-textpic-image {
+  margin-top:16px;
+}*/ }
   .wysiwyg p,
   .wysiwyg dl,
   .wysiwyg h1,
@@ -3318,8 +3324,6 @@ body.project-aprodi input[type="password"]:focus, body.project-aprodi textarea:h
   .wysiwyg div.csc-textpic .csc-textpic-imagewrap .csc-textpic-image {
     margin-bottom: 0;
     margin-top: 0; }
-  .wysiwyg div.csc-textpic.csc-textpic-above .csc-textpic-imagewrap .csc-textpic-image {
-    margin-top: 16px; }
   .wysiwyg .csc-textpic-above .csc-textpic-image {
     width: 100%; }
   .wysiwyg .frame:first-child header:first-child,
@@ -3345,6 +3349,8 @@ body.project-aprodi input[type="password"]:focus, body.project-aprodi textarea:h
   .wysiwyg .frame:first-child .h5:first-child,
   .wysiwyg .frame:first-child .h6:first-child {
     margin-top: 0; }
+  .wysiwyg .frame:last-child p:blank:last-of-type {
+    display: none; }
   .wysiwyg .ce-border img {
     border: 1px solid #808080; }
   .wysiwyg .ce-intext.ce-left ol, .wysiwyg .ce-intext.ce-left ul {
@@ -7669,12 +7675,13 @@ html.old-ie .old-browser {
     width: 152px;
     border-radius: 8px;
     vertical-align: top;
-    overflow: hidden; }
+    overflow: hidden;
+    margin-top: 8px; }
     .picture-list__image img {
       display: block;
       width: 100%; }
     .wysiwyg .picture-list__image {
-      margin-bottom: 0; }
+      margin-top: 8px; }
     @media (max-width: 420px) {
       .picture-list__image {
         display: block;
@@ -10494,7 +10501,7 @@ body.publication {
       margin-bottom: 18px; }
     @media (max-width: 1024px) {
       .home .page-headings {
-        margin: 0 0 60px;
+        margin: 40px 0 60px 0;
         padding: 0px 16px; }
         .home .page-headings h1 {
           margin-bottom: 14px;
