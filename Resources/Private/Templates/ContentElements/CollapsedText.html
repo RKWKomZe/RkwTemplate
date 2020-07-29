@@ -3,7 +3,7 @@
     <f:if condition="{data.header} && {data.header_layout} != 100">
         <f:if condition="{data.header_layout}">
             <f:then>
-                <h{data.header_layout}>{data.header}</h{data.header_layout}>
+                <h{data.header_layout} id="c{data.uid}">{data.header}</h{data.header_layout}>
             </f:then>
             <f:else>
                 <h2>{data.header}</h2>

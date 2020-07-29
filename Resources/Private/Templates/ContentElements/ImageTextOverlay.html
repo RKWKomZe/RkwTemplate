@@ -15,7 +15,7 @@
                 <f:if condition="{data.header} && {data.header_layout} != 100">
                     <f:if condition="{data.header_layout}">
                         <f:then>
-                            <h{data.header_layout} class="picture-list__header">{data.header}</h{data.header_layout}>
+                            <h{data.header_layout} class="picture-list__header" id="c{data.uid}">{data.header}</h{data.header_layout}>
                         </f:then>
                         <f:else>
                             <h2 class="picture-list__header">{data.header}</h2>

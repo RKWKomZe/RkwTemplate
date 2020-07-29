@@ -1952,16 +1952,12 @@ body.project-aprodi input[type="password"]:focus, body.project-aprodi textarea:h
   .wysiwyg .ce-center .ce-inner {
     position: static;
     float: none; }
-  .wysiwyg div.csc-textpic-center .csc-textpic-center-outer,
-  .wysiwyg div.csc-textpic-center .csc-textpic-center-inner {
-    position: static;
-    float: none;
-    right: 0; }
-  .wysiwyg div.csc-textpic .csc-textpic-imagewrap .csc-textpic-image {
-    margin-bottom: 0;
-    margin-top: 0; }
-  .wysiwyg .csc-textpic-above .csc-textpic-image {
-    width: 100%; }
+  .wysiwyg .ce-gallery .ce-column:only-child {
+    float: none; }
+    .wysiwyg .ce-gallery .ce-column:only-child figure {
+      display: block; }
+      .wysiwyg .ce-gallery .ce-column:only-child figure img[src$=".svg"] {
+        height: 100%; }
   .wysiwyg iframe {
     max-width: 100%; }
   .wysiwyg > div:last-of-type p:last-child,
