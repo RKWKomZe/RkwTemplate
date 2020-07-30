@@ -1,0 +1,19 @@
+// ###########################################################################
+// Anpassung für Seiteneigenschaften -> Erscheinungsbild -> Layout
+// ############################################################################
+TCEFORM.pages{
+
+    //===============================================================
+    // add fields form yoast-extension!
+    //===============================================================
+    // fields for use
+    tx_yoastseo_readability_analysis.disabled = 0
+    tx_yoastseo_snippetpreview.disabled = 0
+    tx_yoastseo_focuskeyword.disabled = 0
+    tx_yoastseo_focuskeyword_analysis.disabled = 0
+    tx_yoastseo_score_readability.disabled = 0
+    tx_yoastseo_score_seo.disabled = 0
+    seo_title.disabled = 0
+
+}
+

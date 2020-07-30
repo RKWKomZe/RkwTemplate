@@ -56,12 +56,7 @@ class ColPosCondition extends \TYPO3\CMS\Core\Configuration\TypoScript\Condition
                 break;
         }
 
-
-
-
-
         return false;
-
     }
 
 }
