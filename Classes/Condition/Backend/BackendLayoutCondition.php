@@ -85,7 +85,6 @@ class BackendLayoutCondition extends \TYPO3\CMS\Core\Configuration\TypoScript\Co
                 return false;
             }
 
-
             // get rootline
             $rootline = BackendUtility::BEgetRootLine($pid);
             if ($count = (count($rootline) -1)) {
