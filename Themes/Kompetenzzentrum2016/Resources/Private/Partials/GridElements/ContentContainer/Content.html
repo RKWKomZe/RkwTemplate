@@ -9,7 +9,11 @@
 
         <!-- content -->
         <div class="wysiwyg">
-            <f:format.html parseFuncTSPath="">{data.tx_gridelements_view_column_50}</f:format.html>
+            <rkwBasics:format.removeEmptyParagraphs>
+                <f:format.html parseFuncTSPath="">
+                    {data.tx_gridelements_view_column_50}
+                </f:format.html>
+            </rkwBasics:format.removeEmptyParagraphs>
         </div>
 
         <!-- read more nav -->
