@@ -1,0 +1,158 @@
+#=================================================================================
+# RKW Shop
+#=================================================================================
+plugin.tx_rkwshop.libs.responsiveThumbnail >
+plugin.tx_rkwshop.libs.responsiveThumbnail < lib.txRkwBasics.responsiveImage
+plugin.tx_rkwshop.libs.responsiveThumbnail {
+
+    settings {
+        breakpoint {
+            desktop >
+            tablet >
+            mobile2 >
+            mobile >
+        }
+        maxWidth {
+            fallback = 90
+        }
+    }
+}
+
+
+#=================================================================================
+# RKW Related
+#=================================================================================
+plugin.tx_rkwrelated.libs {
+
+	responsiveImageThumbnail >
+	responsiveImageThumbnail < lib.txRkwBasics.responsiveImage
+	responsiveImageThumbnail {
+        settings {
+            breakpoint {
+                desktop >
+                tablet >
+                mobile2 >
+            }
+            maxWidth {
+                mobile = 450
+                fallback = 450
+            }
+            cropVariant {
+                mobile = teaser
+                fallback = teaser
+            }
+        }
+	}
+
+    responsiveLogoThumbnail >
+	responsiveLogoThumbnail < lib.txRkwBasics.responsiveImage
+	responsiveLogoThumbnail {
+        settings {
+            breakpoint {
+                desktop >
+                tablet >
+                mobile2 >
+            }
+            maxWidth {
+                mobile = 440
+                fallback = 440
+            }
+        }
+	}
+
+	responsivePdfThumbnail >
+	responsivePdfThumbnail < lib.txRkwBasics.responsiveImage
+	responsivePdfThumbnail {
+        settings {
+            breakpoint {
+                desktop >
+                tablet >
+                mobile2 >
+                mobile >
+            }
+            maxWidth {
+                fallback = 215
+            }
+        }
+	}
+}
+
+#=================================================================================
+# RKW Authors
+#=================================================================================
+plugin.tx_rkwauthors.libs {
+
+    responsiveImageThumbnail >
+	responsiveImageThumbnail < lib.txRkwBasics.responsiveImage
+	responsiveImageThumbnail {
+        settings {
+            breakpoint {
+                desktop >
+                tablet >
+                mobile2 >
+                mobile >
+            }
+            maxWidth {
+                fallback = 152
+            }
+        }
+	}
+}
+
+#=================================================================================
+# RKW Tools
+#=================================================================================
+plugin.tx_rkwtools.libs {
+
+    responsiveImageThumbnail >
+    responsiveImageThumbnail < lib.txRkwBasics.responsiveImage
+    responsiveImageThumbnail {
+        settings {
+            breakpoint {
+                desktop >
+                tablet >
+                mobile2 >
+            }
+            maxWidth {
+                mobile = 450
+                fallback = 450
+            }
+            cropVariant {
+                mobile = teaser
+                fallback = teaser
+            }
+        }
+    }
+
+    responsiveLogoThumbnail >
+    responsiveLogoThumbnail < lib.txRkwBasics.responsiveImage
+    responsiveLogoThumbnail {
+        settings {
+            breakpoint {
+                desktop >
+                tablet >
+                mobile2 >
+            }
+            maxWidth {
+                mobile = 440
+                fallback = 440
+            }
+        }
+    }
+
+    responsivePdfThumbnail >
+    responsivePdfThumbnail < lib.txRkwBasics.responsiveImage
+    responsivePdfThumbnail {
+        settings {
+            breakpoint {
+                desktop >
+                tablet >
+                mobile2 >
+                mobile >
+            }
+            maxWidth {
+                fallback = 215
+            }
+        }
+    }
+}

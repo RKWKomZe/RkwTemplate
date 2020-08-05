@@ -1,0 +1,56 @@
+// ############################################################################
+// Mainmenu
+// ############################################################################
+lib.txRkwTemplate {
+
+    navigation {
+
+        main = FLUIDTEMPLATE
+        main {
+
+            file = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/Menus/Main.html
+            partialRootPaths.0 = {$plugin.tx_rkwtemplate_themeconfig.paths.default.partials}/Menus/Main
+
+            dataProcessing {
+                10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+                10 {
+                   special = directory
+                   special.value = {$mainNavConfig.pid}
+                   levels = 5
+                   entryLevel = 0
+                   expandAll = 1
+                   includeSpacer = 0
+                   maxItems = 10
+                   titleField = nav_title // title
+                   excludeUidList = {$plugin.tx_rkwauthors.settings.listPid}, {$mainNavConfig.xdlPid}
+
+                   as = menuItems
+
+                   dataProcessing {
+                     10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+                     10 {
+                        references.fieldName = media
+                        as = image
+                     }
+                   }
+                }
+
+                20 < lib.txRkwTemplate.navigation.meta.dataProcessing.10
+                20 {
+                   as = menuItemsMeta
+                }
+            }
+
+            variables {
+
+                contactPid = TEXT
+                contactPid.value = {$plugin.tx_rkwauthors.settings.listPid}
+
+                loginPid = TEXT
+                loginPid.value = {$mainNavConfig.xdlPid}
+            }
+
+            settings < page.10.settings
+        }
+    }
+}

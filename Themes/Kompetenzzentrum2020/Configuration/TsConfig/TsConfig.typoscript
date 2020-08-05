@@ -1,0 +1,11 @@
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:rkw_template/Themes/_Core/Configuration/TsConfig/TsConfig.typoscript">
+
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:rkw_template/Themes/Kompetenzzentrum2020/Configuration/TsConfig/Config" extensions="typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:rkw_template/Themes/Kompetenzzentrum2020/Configuration/TsConfig/Extensions" extensions="typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:rkw_template/Themes/Kompetenzzentrum2020/Configuration/TsConfig/TCE" extensions="typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:rkw_template/Themes/Kompetenzzentrum2020/Configuration/TsConfig/RTE" extensions="typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:rkw_template/Themes/Kompetenzzentrum2020/Configuration/TsConfig/Wizards" extensions="typoscript">
+
+[PIDinRootline = 3561,158,378,3566,1370]
+    <INCLUDE_TYPOSCRIPT: source="FILE:EXT:rkw_template/Themes/Kompetenzzentrum2020/Configuration/TsConfig/Permissions/10-Publications.typoscript">
+[global]

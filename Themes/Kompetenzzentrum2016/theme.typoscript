@@ -44,7 +44,11 @@ plugin.tx_rkwtemplate_themeconfig {
         extensions {
 
             # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Root path for extension layouts, templates and partials
+            rootBase = EXT:rkw_template/Themes/{$plugin.tx_rkwtemplate_themeconfig.themeName}/Resources/Private/Extensions
+
+            # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Root path for extension layouts, templates and partials
             root = EXT:rkw_template/Themes/{$plugin.tx_rkwtemplate_themeconfig.themeName}/Resources/Private/Extensions
+
         }
 
         microsite {

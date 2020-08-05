@@ -1,0 +1,12 @@
+{namespace rkwBasics=RKW\RkwBasics\ViewHelpers}
+
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+    <f:if condition="<rkwBasics:isEmpty string='{data.tx_gridelements_view_column_10}' /> == 0">
+        <section>
+            <div class="slider">
+                <f:format.raw>{data.tx_gridelements_view_column_10}</f:format.raw>
+            </div>
+        </section>
+    </f:if>
+</html>

@@ -1,0 +1,12 @@
+{namespace rkwBasics=RKW\RkwBasics\ViewHelpers}
+
+<f:if condition="<rkwBasics:isEmpty string='{f:cObject(typoscriptObjectPath:\'lib.txRkwTemplate.various.alerts\')}' /> == 0">
+	<section class="section" role="complementary">
+		<h4 class="section-header h2">
+			<f:translate key="{settings.themeLanguageFile}:partials.alertsBox.headline" />
+		</h4>
+		<div class="content-box content">
+			<f:cObject typoscriptObjectPath="lib.txRkwTemplate.various.alerts" data="{data}" />
+		</div>
+	</section>
+</f:if>

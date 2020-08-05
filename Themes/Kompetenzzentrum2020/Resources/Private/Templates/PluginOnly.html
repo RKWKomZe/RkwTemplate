@@ -1,0 +1,18 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+    <f:layout name="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.utility.pageLayoutSwitch')}" />
+
+    <f:section name="content">
+
+        <!-- top-menu -->
+        <f:render partial="SubNav" section="Default" arguments="{_all}"/>
+
+        <!-- key-visual -->
+        <f:render partial="Keyvisual/Topic" arguments="{_all}"/>
+
+        <!-- plugin only -->
+        <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.pluginOnly" data="{data}" />
+
+    </f:section>
+</html>
+

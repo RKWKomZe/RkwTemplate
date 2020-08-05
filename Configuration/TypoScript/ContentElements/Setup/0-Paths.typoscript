@@ -2,16 +2,16 @@ lib.contentElement {
 
     layoutRootPaths {
         900 = {$plugin.tx_rkwtemplate.view.layoutRootPath}ContentElements
-        1000 = {$plugin.tx_rkwtemplate.view.layoutRootPath}ContentElements
+        1000 = {$plugin.tx_rkwtemplate_themeconfig.paths.default.layouts}/ContentElements
     }
 
     templateRootPaths {
         900 = {$plugin.tx_rkwtemplate.view.templateRootPath}ContentElements
-        1000 = {$plugin.tx_rkwtemplate_themeconfig.paths.default.layouts}/ContentElements
+        1000 = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/ContentElements
     }
 
     partialRootPaths {
         900 = {$plugin.tx_rkwtemplate.view.partialRootPath}ContentElements
-        1000 = {$plugin.tx_rkwtemplate_themeconfig.paths.default.layouts}/ContentElements
+        1000 = {$plugin.tx_rkwtemplate_themeconfig.paths.default.partials}/ContentElements
     }
  }

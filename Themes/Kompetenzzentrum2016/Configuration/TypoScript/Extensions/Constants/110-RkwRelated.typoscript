@@ -6,9 +6,22 @@ module.tx_rkwrelated {
     }
 }
 
+
+
 plugin.tx_rkwrelated_similarcontent {
 
     settings {
+
+    	view {
+    		# cat=plugin.tx_rkwrelated_morecontent/file; type=string; label=Path to template root (FE)
+    		templateRootPath = {$plugin.tx_rkwtemplate_themeconfig.paths.extensions.rootBase}/RkwRelated/Templates/
+
+    		# cat=plugin.tx_rkwrelated_morecontent/file; type=string; label=Path to template partials (FE)
+    		partialRootPath = {$plugin.tx_rkwtemplate_themeconfig.paths.extensions.rootBase}/RkwRelated/Partials/
+
+    		# cat=plugin.tx_rkwrelated_morecontent/file; type=string; label=Path to template layouts (FE)
+    		layoutRootPath = {$plugin.tx_rkwtemplate_themeconfig.paths.extensions.rootBase}/RkwRelated/Layouts/
+    	}
 
         # cat=plugin.tx_rkwrelated_morecontent//f; type=integer; label=PID to start search from
         startingPid =
@@ -41,6 +54,18 @@ plugin.tx_rkwrelated_similarcontent {
 
 plugin.tx_rkwrelated_morecontent {
 
+
+	view {
+		# cat=plugin.tx_rkwrelated_morecontent/file; type=string; label=Path to template root (FE)
+		templateRootPath = {$plugin.tx_rkwtemplate_themeconfig.paths.extensions.rootBase}/RkwRelated/Templates/
+
+		# cat=plugin.tx_rkwrelated_morecontent/file; type=string; label=Path to template partials (FE)
+		partialRootPath = {$plugin.tx_rkwtemplate_themeconfig.paths.extensions.rootBase}/RkwRelated/Partials/
+
+		# cat=plugin.tx_rkwrelated_morecontent/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = {$plugin.tx_rkwtemplate_themeconfig.paths.extensions.rootBase}/RkwRelated/Layouts/
+	}
+
     settings {
 
         # cat=plugin.tx_rkwrelated_morecontent//f; type=integer; label=PID to start search from
@@ -68,3 +93,6 @@ plugin.tx_rkwrelated_morecontent {
         useRkwSearchForSorting = 0
     }
 }
+
+plugin.tx_rkwrelated_morecontent2 < plugin.tx_rkwrelated_morecontent
+plugin.tx_rkwrelated_morecontentpublication < plugin.tx_rkwrelated_morecontent

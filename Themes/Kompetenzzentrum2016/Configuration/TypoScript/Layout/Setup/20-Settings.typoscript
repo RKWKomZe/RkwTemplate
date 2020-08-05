@@ -1,38 +1,6 @@
-// ############################################################################
-// Settings from constants for FLUIDTEMPLATE
-// ############################################################################
-// Select template based on layout
 page {
     10 {
         // make settings available in template
-        settings {
-            themeName = {$plugin.tx_rkwtemplate_themeconfig.themeName}
-            themeLanguageFile = LLL:EXT:rkw_template/Themes/{$plugin.tx_rkwtemplate_themeconfig.themeName}/Resources/Private/Language/locallang.xlf
-
-            imagesPath = /{$plugin.tx_rkwtemplate_themeconfig.paths.default.images}
-
-            websiteName = {$plugin.tx_rkwtemplate_themeconfig.website.name}
-
-            websiteLogoFile = {$plugin.tx_rkwtemplate_themeconfig.website.logoFile}
-            websiteLogoOffcanvasFile = {$plugin.tx_rkwtemplate_themeconfig.website.logoOffcanvasFile}
-            websiteLogoOffcanvasIconOnlyFile = {$plugin.tx_rkwtemplate_themeconfig.website.logoOffcanvasIconOnlyFile}
-            websiteLogoBrokenLinkFile = {$plugin.tx_rkwtemplate_themeconfig.website.logoBrokenLinkFile}
-            websiteLogoUrl = {$plugin.tx_rkwtemplate_themeconfig.website.logoUrl}
-
-            micrositeLogoTabletFile = {$plugin.tx_rkwtemplate_themeconfig.microsite.logoTabletFile}
-            micrositeTextVertical = {$plugin.tx_rkwtemplate_themeconfig.microsite.textVertical}
-            micrositeMainWebsiteUrl = {$plugin.tx_rkwtemplate_themeconfig.microsite.mainWebsiteUrl}
-            micrositeMainWebsiteName  = {$plugin.tx_rkwtemplate_themeconfig.microsite.mainWebsiteName}
-            micrositeMainWebsiteLogoFile = {$plugin.tx_rkwtemplate_themeconfig.microsite.mainWebsiteLogoFile}
-
-            socialMedia = {$plugin.tx_rkwtemplate_themeconfig.socialMedia}
-        }
+        settings < lib.txRkwTemplate.themeSettings
     }
-}
-
-
-// add settings to relevant grid elements
-tt_content.gridelements_pi1.20.10.setup {
-    contentContainerTwoCols.cObject.settings < page.10.settings
-    contentContainerOneCol.cObject.settings < .contentContainerTwoCols.cObject.settings
 }

@@ -26,20 +26,8 @@ plugin.tx_rkwtemplate {
 }
 
 
-lib.txRkwTemplate {
-
-    pageTitle = TEXT
-    pageTitle.data = page:title
-
-    pageSubTitle = TEXT
-    pageSubTitle.data = page:subtitle
-
-    pageAbstract = TEXT
-    pageAbstract.data = page:abstract
-
-}
-
 <INCLUDE_TYPOSCRIPT: source="FILE:./FluidStyledContents/Setup.typoscript">
 <INCLUDE_TYPOSCRIPT: source="FILE:./ContentElements/Setup.typoscript">
 <INCLUDE_TYPOSCRIPT: source="FILE:./GridElements/Setup.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:./Themes/Setup.typoscript">
 

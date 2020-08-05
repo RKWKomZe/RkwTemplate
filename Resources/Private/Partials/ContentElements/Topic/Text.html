@@ -3,21 +3,27 @@
 
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
-    <div class="feature-box__content">
+    <f:if condition="<rkwBasics:isEmpty string='{data.bodytext}' /> == 0">
+        <f:then>
+            <h4 class="headline headline--underlined">{data.header}</h4>
+            <p>
+                <f:format.nl2br><f:format.stripTags>{data.bodytext}</f:format.stripTags></f:format.nl2br>
+            </p>
+        </f:then>
+        <f:else>
+            <h4 class="headline">{data.header}</h4>
+        </f:else>
+    </f:if>
 
-        <h3 class="feature-box__title">
-            <rkwEtracker:link.typolink parameter="{data.header_link}" class="feature-box__link">
+    <rkwEtracker:link.typolink parameter="{data.header_link}" class="btn btn--primary mt-2">
+        <f:if condition="{settings.themeLanguageFile}">
+            <f:then>
+                <f:translate key="{settings.themeLanguageFile}:partials.contentElements.topic.readMore" />
+            </f:then>
+            <f:else>
                 {data.header}
-            </rkwEtracker:link.typolink>
-        </h3>
-
-        <f:if condition="<rkwBasics:isEmpty string='{data.bodytext}' /> == 0">
-            <div class="feature-box__description">
-                <p>
-                    <f:format.nl2br><f:format.stripTags>{data.bodytext}</f:format.stripTags></f:format.nl2br>
-                </p>
-            </div>
+            </f:else>
         </f:if>
-    </div>
+    </rkwEtracker:link.typolink>
 
 </html>

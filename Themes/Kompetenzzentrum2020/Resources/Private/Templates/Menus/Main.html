@@ -1,0 +1,51 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+    <f:spaceless>
+        <f:if condition="{menuItems}">
+
+            <nav class="nav nav--primary flex-basis-9 flex flex-end full-width-smalldesk">
+                <f:render partial="List" section="Default" arguments="{_all}"/>
+            </nav>
+
+            <div class="nav-mobile-hamburger flex-container flex-basis-6">
+                <button class="nav-mobile-hamburger__button">
+                    <svg class="icon icon--48 icon-open">
+                        <use xlink:href="#ic-mobile-menu" />
+                    </svg>
+                </button>
+                <button class="nav-mobile-hamburger__button">
+                    <svg class="icon icon--48 icon-close is-none">
+                        <use xlink:href="#ic-mobile-menu-close" />
+                    </svg>
+                </button>
+            </div>
+
+            <nav class="nav-mobile flex-basis-12 flex-end is-closed">
+                <f:render partial="List" section="Mobile" arguments="{_all}"/>
+            </nav>
+        </f:if>
+    </f:spaceless>
+
+
+    <f:security.ifAuthenticated>
+        <f:then>
+            <script type="text/javascript">
+                document.addEventListener("DOMContentLoaded", function(event) {
+                    $('#menu-mein-rkw')
+                        .parent()
+                        .addClass('user--logged-in');
+                });
+            </script>
+        </f:then>
+        <f:else>
+            <script type="text/javascript">
+                document.addEventListener("DOMContentLoaded", function(event) {
+                    $('#menu-mein-rkw')
+                        .parent()
+                        .addClass('user--logged-out');
+                });
+            </script>
+        </f:else>
+    </f:security.ifAuthenticated>
+
+</html>

@@ -1,0 +1,42 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+    <f:section name="Default">
+
+        <f:if condition="{item.image.0}">
+            <f:then>
+                <li class="nav-flyout__item" style="background-image: url('{f:uri.image(image:'{item.image.0}', treatIdAsReference: '1', width:'300c', height:'300c')}');">
+            </f:then>
+            <f:else>
+                <li class="nav-flyout__item" >
+            </f:else>
+        </f:if>
+            <a href="{item.link}" target="{item.target}">
+                <div class="nav-flyout__text">
+                    <p class="nav-flyout__headline">{item.title}</p>
+                    <p class="nav-flyout__content">{item.abstract}Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>
+                </div>
+            </a>
+        </li>
+    </f:section>
+
+
+
+
+    <f:section name="Mobile">
+
+        <li class="nav-mobile__item nav-mobile__item--secondary">
+            <a href="{item.link}" target="{item.target}" {f:if(condition:item.children, then:' aria-haspopup="menu"')}>
+                {item.title}
+            </a>
+
+            <f:if condition="{item.children}">
+                <ul class="nav-mobile__tertiary">
+                    <f:for each="{item.children}" as="item" iteration="iterator">
+                        <f:render partial="ItemLevel3" section="Mobile" arguments="{item: item, counter: iterator.cycle}"/>
+                    </f:for>
+                </ul>
+            </f:if>
+        </li>
+    </f:section>
+
+</html>

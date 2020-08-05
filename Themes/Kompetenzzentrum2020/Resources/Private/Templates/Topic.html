@@ -1,0 +1,40 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+    <f:layout name="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.utility.pageLayoutSwitch')}" />
+
+    <f:section name="content">
+
+        <!-- top-menu -->
+        <f:render partial="SubNav" section="Default" arguments="{_all}"/>
+
+        <!-- key-visual -->
+        <f:render partial="Keyvisual/Topic" arguments="{_all}"/>
+
+        <!-- promotion -->
+        <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.content.promotion', data:'{data}')}">
+            <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.promotion" data="{data}" />
+        </f:if>
+
+        <!-- content -->
+        <f:if condition="{content}">
+            <div class="page-area-grid content-page__content">
+                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.main" data="{data}" />
+            </div>
+        </f:if>
+
+        <!-- box party - but not for MeinRKW ! -->
+        <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.utility.pageLayoutType')} != 12">
+            <div class="sections">
+
+                <!-- alerts -->
+                <f:render partial="AlertsBox" arguments="{_all}"/>
+
+                <!-- boxes -->
+                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.boxesTopic" data="{data}" />
+                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.boxesTopicInherit" data="{data}" />
+            </div>
+        </f:if>
+
+    </f:section>
+
+</html>

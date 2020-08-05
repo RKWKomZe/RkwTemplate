@@ -1,0 +1,34 @@
+
+// ############################################################################
+// add specific elements to wizards - by colPos and backend_layout
+// ############################################################################
+
+[RKW\RkwTemplate\Condition\Backend\BackendLayoutCondition = "pagets__rkwMapsss"]
+
+    // remove everything - except for some items
+    // Important: this also has to include gridelements_pi1 for the gridContainer if needed!
+    TCEFORM.tt_content.CType.keepItems = text
+
+    // remove everything - except for some items
+    mod.wizards.newContentElement.wizardItems.common.show =
+    mod.wizards.newContentElement.wizardItems.special.show =
+    mod.wizards.newContentElement.wizardItems.forms.show =
+    mod.wizards.newContentElement.wizardItems.menu.show =
+    mod.wizards.newContentElement.wizardItems.plugins.show =
+    mod.wizards.newContentElement.wizardItems.common.show = text
+
+    // remove grid elements by their ID (aka name)
+    tx_gridelements.excludeLayoutIds = sliderContainer, logoContainer, topicContainer, contentContainerTwoCols, contentContainerOneCol, promoterContainer
+
+[end]
+
+[RKW\RkwTemplate\Condition\Backend\BackendLayoutCondition = "pagets__rkwMapsss"] && [RKW\RkwTemplate\Condition\Backend\ColPosCondition = "820"]
+
+    // remove everything - except for some items
+    // Important: this also has to include gridelements_pi1 for the gridContainer if needed!
+    TCEFORM.tt_content.CType.keepItems = rkwtemplate_overview
+
+    // remove everything - except for some items
+    mod.wizards.newContentElement.wizardItems.common.show = rkwtemplate_overview
+
+[end]

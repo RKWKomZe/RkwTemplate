@@ -1,0 +1,26 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+    <f:if condition="{images.0}">
+        <f:switch expression="{images.0.type}">
+            <f:case value="2">
+                <f:render section="Image" arguments="{file: images.0}" />
+            </f:case>
+            <f:case value="4">
+                <f:render section="Video" arguments="{file: images.0}" />
+            </f:case>
+            <f:defaultCase>
+                <!-- Nothing -->
+            </f:defaultCase>
+        </f:switch>
+    </f:if>
+
+    <f:comment><!-- ======================================================================== --></f:comment>
+
+    <f:section name="Image">
+        <f:render partial="FluidTemplateLibs/ResponsiveImages" arguments="{file: '{file.uid}', treatIdAsReference: 1, settings: settings}" />
+    </f:section>
+
+    <f:section name="Video">
+        <f:media class="article-video" file="{file}" width="2000" alt="{file.alternative}" title="{file.title}" additionalConfig="{controls: '0', loop: '1', autoplay: '1', modestbranding:'1', no-cookie: '1'}" />
+    </f:section>
+</html>

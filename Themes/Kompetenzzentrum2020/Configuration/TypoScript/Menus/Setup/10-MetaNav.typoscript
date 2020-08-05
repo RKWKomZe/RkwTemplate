@@ -1,0 +1,70 @@
+lib.txRkwTemplate {
+
+    navigation {
+		
+        meta = HMENU
+        meta {
+
+
+            special = directory
+
+            # Id angeben, von der aus wir Starten (alle Unterseiten werden aufgenommen)
+            special.value = {$metaNavConfig.pid}
+
+            # Seiten, die nicht aufgenommen werden sollen
+            excludeUidList >
+
+            1 = TMENU
+            1 {
+
+                NO {
+                    wrapItemAndSub = ||*|&nbsp;&#124;&nbsp;|*|
+                    ATagTitle.field = title
+                    stdWrap.htmlSpecialChars = 1
+                    ATagParams = {$metaNavConfig.ATagParams}
+
+                }
+
+
+                CUR < .NO
+                CUR = 1
+                CUR {
+                    ATagParams = class="active"
+                }
+
+                ACT < .CUR
+                ACT = 1
+
+            }
+        }
+	}
+}
+
+lib.txRkwTemplate {
+
+    navigation {
+
+        meta = FLUIDTEMPLATE
+        meta {
+
+            file = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/Menus/Meta.html
+
+            dataProcessing {
+                10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+                10 {
+                   special = directory
+                   special.value = {$metaNavConfig.pid}
+                   levels = 1
+                   entryLevel = 0
+                   expandAll = 1
+                   includeSpacer = 0
+                   maxItems = 10
+                   titleField = nav_title // title
+                   excludeUidList >
+
+                   as = menuItems
+                }
+            }
+        }
+    }
+}

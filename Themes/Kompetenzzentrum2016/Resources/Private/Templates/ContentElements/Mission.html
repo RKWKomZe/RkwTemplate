@@ -1,0 +1,15 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+    <header aria-labelledby="mission-statement-headline-{data.uid}">
+        <div class="page-headings">
+            <h1 id="mission-statement-headline-{data.uid}">
+                {data.header}
+            </h1>
+            <f:if condition="{data.subheader}">
+                <h2>{data.subheader}</h2>
+            </f:if>
+            <p>
+                <f:format.nl2br><f:format.stripTags>{data.bodytext}</f:format.stripTags></f:format.nl2br>
+            </p>
+        </div>
+    </header>
+</html>

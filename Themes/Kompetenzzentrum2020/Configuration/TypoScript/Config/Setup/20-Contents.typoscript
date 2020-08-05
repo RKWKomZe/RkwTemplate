@@ -1,0 +1,16 @@
+
+lib.parseFunc_RTE {
+    externalBlocks {
+
+        //===============================================================
+        // Adaption of CSS-classes for tables and lists
+        //===============================================================
+        table.stdWrap.HTMLparser = 1
+        table.stdWrap.HTMLparser.tags.table.fixAttrib.class {
+            default = contenttable responsive
+            always = 1
+            list = responsive,contenttable,contenttable-1,contenttable-events
+        }
+    }
+}
+

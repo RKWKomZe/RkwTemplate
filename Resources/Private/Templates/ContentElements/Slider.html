@@ -2,7 +2,7 @@
 
     <f:if condition="{f:count(subject: images)} > 0">
 
-        <div class="slide slide--left {f:if(condition: '{data.header_layout} == 1', then: 'slide--gradient-left ')}{f:if(condition: '{data.header_layout} == 2', then: 'slide--white ')}{f:if(condition: '{data.header_layout} == 3', then: 'slide--white slide--gradient-left ')}">
+        <div class="carousel-item">
             <f:render partial="Slider/Image" arguments="{_all}"/>
             <f:render partial="Slider/Text" arguments="{_all}"/>
         </div>

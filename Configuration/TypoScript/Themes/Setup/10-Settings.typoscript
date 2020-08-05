@@ -1,0 +1,35 @@
+// make settings of themes available in elements
+lib.txRkwTemplate.themeSettings {
+
+    themeName = {$plugin.tx_rkwtemplate_themeconfig.themeName}
+    themeLanguageFile = LLL:EXT:rkw_template/Themes/{$plugin.tx_rkwtemplate_themeconfig.themeName}/Resources/Private/Language/locallang.xlf
+
+    imagesPath = /{$plugin.tx_rkwtemplate_themeconfig.paths.default.images}
+
+    websiteName = {$plugin.tx_rkwtemplate_themeconfig.website.name}
+
+    websiteLogoFile = {$plugin.tx_rkwtemplate_themeconfig.website.logoFile}
+    websiteLogoMobileFile = {$plugin.tx_rkwtemplate_themeconfig.website.logoMobileFile}
+    websiteLogoBrokenLinkFile = {$plugin.tx_rkwtemplate_themeconfig.website.logoBrokenLinkFile}
+    websiteLogoUrl = {$plugin.tx_rkwtemplate_themeconfig.website.logoUrl}
+
+    micrositeLogoTabletFile = {$plugin.tx_rkwtemplate_themeconfig.microsite.logoTabletFile}
+    micrositeTextVertical = {$plugin.tx_rkwtemplate_themeconfig.microsite.textVertical}
+    micrositeMainWebsiteUrl = {$plugin.tx_rkwtemplate_themeconfig.microsite.mainWebsiteUrl}
+    micrositeMainWebsiteName  = {$plugin.tx_rkwtemplate_themeconfig.microsite.mainWebsiteName}
+    micrositeMainWebsiteLogoFile = {$plugin.tx_rkwtemplate_themeconfig.microsite.mainWebsiteLogoFile}
+
+    socialMedia = {$plugin.tx_rkwtemplate_themeconfig.socialMedia}
+}
+
+
+// add settings to relevant grid elements
+tt_content.gridelements_pi1.20.10.setup {
+    contentContainerTwoCols.cObject.settings < lib.txRkwTemplate.themeSettings
+    contentContainerOneCol.cObject.settings < lib.txRkwTemplate.themeSettings
+}
+
+// add settings to relevant custom elements
+tt_content {
+    rkwtemplate_topic.settings < lib.txRkwTemplate.themeSettings
+}

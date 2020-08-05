@@ -1,0 +1,19 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+    <header>
+        <p>
+            {data.header}
+        </p>
+    </header>
+    <footer>
+        <f:switch expression="{data.header_layout}">
+            <f:case value="4"><p class="icon-planet"></f:case>
+            <f:case value="5"><p class="icon-file"></f:case>
+            <f:case value="6"><p class="icon-book"></f:case>
+            <f:case value="7"><p class="icon-list"></f:case>
+            <f:defaultCase><p class="icon-list"></f:defaultCase>
+        </f:switch>
+            <f:translate key="LLL:EXT:rkw_template/Resources/Private/Language/locallang.xlf:contentElement.shortlink.type.I.{data.header_layout}" />
+        </p>
+    </footer>
+</html>

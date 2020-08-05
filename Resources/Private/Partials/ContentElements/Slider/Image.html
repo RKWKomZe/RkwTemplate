@@ -2,65 +2,37 @@
 
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
-    <rkwEtracker:link.typolink parameter="{data.header_link}">
+    <div class="carousel-item__img">
         <f:if condition="{f:count(subject: images)} == 3">
             <f:then>
-                <figure class="slide-image">
-                    <picture>
-                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" srcset="{f:uri.image(image:images.0,width:'1500',height:'800m')}" alt="{data.header}" />
-                    </picture>
-                </figure>
 
-                <!-- if vw < 1024 -->
-                <figure class="slide-image-tablet">
-                    <picture>
-                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" srcset="{f:uri.image(image:images.1,width:'1100',height:'800m')}" alt="{data.header}" />
-                    </picture>
-                </figure>
+                <!-- solution for three separate images -->
+                <picture class="carousel-img">
+                    <source srcset="{f:uri.image(image:images.0,width:'1920',height:'800m',cropVariant:'desktop')}" media="(min-width: 1025px)" />
+                    <source srcset="{f:uri.image(image:images.1,width:'1024',height:'800m',cropVariant:'tablet')}" media="(min-width:769px)" />
+                    <source srcset="{f:uri.image(image:images.1,width:'768',height:'800m',cropVariant:'tablet')}" media="(min-width:481px)" />
+                    <source srcset="{f:uri.image(image:images.2,width:'480',height:'440m',cropVariant:'mobile')}" media="(min-width:321px)" />
+                    <source srcset="{f:uri.image(image:images.2,width:'320',height:'440m',cropVariant:'mobile')}" media="(min-width:0px)" />
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" alt="{data.header}" />
+                </picture>
 
-                <!-- if vw < 540 -->
-                <figure class="slide-image-mobile">
-                    <picture>
-                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" srcset="{f:uri.image(image:images.2,width:'520',height:'440m')}" alt="{data.header}" />
-                    </picture>
-                </figure>
             </f:then>
             <f:else>
 
-                <f:comment>
-                    <!-- regular solutuion -->
-                    <figure class="slide-image">
-                        <picture>
-                            <source srcset="{f:uri.image(image:images.0,width:'1500',height:'800m',cropVariant:'desktop')}" media="(min-width: 1024px)" />
-                            <source srcset="{f:uri.image(image:images.0,width:'1100',height:'800m',cropVariant:'tablet')}" media="(min-width:768px)" />
-                            <source srcset="{f:uri.image(image:images.0,width:'520',height:'440m',cropVariant:'mobile')}" media="(min-width:320px)" />
-                            <source srcset="{f:uri.image(image:images.0,width:'320',height:'440m',cropVariant:'mobile')}" media="(min-width:0px)" />
-                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" srcset="{f:uri.image(image:images.0,width:'1500',height:'800m',cropVariant:'desktop')}" alt="{data.header}" />
-                        </picture>
-                    </figure>
-                </f:comment>
-
-                <figure class="slide-image">
-                    <picture>
-                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" srcset="{f:uri.image(image:images.0,width:'1500',height:'800m',cropVariant:'desktop')}" alt="{data.header}" />
+                <f:if condition="{f:count(subject: images)} > 0">
+                    <!-- solution for one image -->
+                    <picture class="carousel-img">
+                        <source srcset="{f:uri.image(image:images.0,width:'1920',height:'800m',cropVariant:'desktop')}" media="(min-width: 1025px)" />
+                        <source srcset="{f:uri.image(image:images.0,width:'1024',height:'800m',cropVariant:'tablet')}" media="(min-width:769px)" />
+                        <source srcset="{f:uri.image(image:images.0,width:'768',height:'800m',cropVariant:'tablet')}" media="(min-width:481px)" />
+                        <source srcset="{f:uri.image(image:images.0,width:'480',height:'440m',cropVariant:'mobile')}" media="(min-width:321px)" />
+                        <source srcset="{f:uri.image(image:images.0,width:'320',height:'440m',cropVariant:'mobile')}" media="(min-width:0px)" />
+                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" alt="{data.header}" />
                     </picture>
-                </figure>
+                </f:if>
 
-                <!-- if vw < 1024 -->
-                <figure class="slide-image-tablet">
-                    <picture>
-                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" srcset="{f:uri.image(image:images.0,width:'1100',height:'800m',cropVariant:'tablet')}" alt="{data.header}" />
-                    </picture>
-                </figure>
-
-                <!-- if vw < 540 -->
-                <figure class="slide-image-mobile">
-                    <picture>
-                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" srcset="{f:uri.image(image:images.0,width:'520',height:'440m',cropVariant:'mobile')}" alt="{data.header}" />
-                    </picture>
-                </figure>
             </f:else>
         </f:if>
-    </rkwEtracker:link.typolink>
+    </div>
 
 </html>

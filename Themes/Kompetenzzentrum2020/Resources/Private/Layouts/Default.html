@@ -1,0 +1,80 @@
+{namespace rkwBasics=RKW\RkwBasics\ViewHelpers}
+
+
+<div class="pagewrap">
+
+
+	<f:comment><f:render partial="Basics/BrowserWarning" /></f:comment>
+
+	<header class="header" aria-label="<f:translate key='{settings.themeLanguageFile}:partials.basics.header.labelHeader' />">
+
+		<f:render partial="Basics/Header" section="Default" arguments="{_all}"/>
+		<f:render section="Header" />
+	</header>
+
+	<f:render section="Content" />
+
+
+
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+
+	<f:comment>
+		<!-- Main Part -->
+
+		<div class="page-content-wrapper"></div>
+
+		<div class="container" id="page-top">
+			<main id="main">
+				<f:render partial="Basics/Logo" section="Default" arguments="{_all}"/>
+				<f:render section="content" />
+			</main>
+		</div>
+
+		<!-- Footer -->
+		<f:render partial="Basics/Footer" arguments="{_all}"/>
+
+		<!-- Overlay -->
+		<f:cObject typoscriptObjectPath="lib.txRkwTemplate.various.overlayMeinRKW" data="{data}" />
+	</f:comment>
+</div>
+
+
+<!-- to be removed!!!! -->
+<script>
+	try {
+		Typekit.load({
+			 async: true,
+		 });
+	}
+	catch(e) {
+		alert("No fonts");
+	}
+</script>
+
+<f:render partial="Basics/SVGs" />

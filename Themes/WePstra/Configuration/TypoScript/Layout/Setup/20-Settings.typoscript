@@ -1,8 +1,9 @@
 page {
 
 	10 {
+        // make settings available in template
+        settings < lib.txRkwTemplate.themeSettings
 
-		// make settings available in template
 		settings {
             imagesPath = /{$plugin.tx_rkwtemplate_themeconfig.paths.default.images}
             websiteName = {$plugin.tx_rkwtemplate_themeconfig.website.name}
@@ -11,3 +12,4 @@ page {
 		}
 	}
 }
+

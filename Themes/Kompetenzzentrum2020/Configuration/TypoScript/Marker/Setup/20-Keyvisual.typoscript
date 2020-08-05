@@ -1,0 +1,173 @@
+lib.txRkwTemplate {
+
+    keyvisual {
+
+        topic = COA
+        topic {
+
+            10 = FILES
+            10 {
+
+                references {
+                    table = pages
+                    data = levelfield: -1, media, slide
+                }
+
+                renderObj = COA
+                renderObj {
+
+                    5 = LOAD_REGISTER
+                    5 {
+                        imageIdList.cObject = TEXT
+                        imageIdList.cObject.data = register:imageIdList
+                        imageIdList.cObject.wrap = |,{file:current:uid}
+                        imageIdList.cObject.wrap.insertData = 1
+                    }
+                }
+            }
+
+            20 = FLUIDTEMPLATE
+            20 {
+
+                file = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/FluidTemplateLibs/Keyvisual/Topic.html
+                variables {
+
+                    imageReference = TEXT
+                    imageReference {
+                        data = register:imageIdList
+                        stdWrap.replacement {
+                            1 {
+                                search = #(.+)?,([0-9]+)$#
+                                replace = ${2}
+                                useRegExp = 1
+                            }
+                        }
+                    }
+                }
+
+                stdWrap.replacement {
+                    1 {
+                        search = #\s#
+                        replace =
+                        useRegExp = 1
+                    }
+                }
+            }
+
+            90 = RESTORE_REGISTER
+        }
+
+        #============================================================
+
+        article = FLUIDTEMPLATE
+        article {
+
+            file = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/FluidTemplateLibs/Keyvisual/Article.html
+            partialRootPaths.0 = {$plugin.tx_rkwbasics.view.templateRootPath}
+
+            dataProcessing {
+                10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+                10 {
+                    references {
+                        table = pages
+                        fieldName = media
+                    }
+                    as = images
+                }
+            }
+
+
+            settings < lib.txRkwBasics.responsiveImage.settings
+            settings {
+
+                additionalAttributes = class="article-picture"
+                breakpoint {
+                    desktop >
+                }
+
+                maxWidth {
+                    tablet = 1024
+                }
+
+                cropVariant {
+                    desktop = articleDesktop
+                    tablet = articleDesktop
+                    mobile2 = articleDesktop
+                    mobile = articleDesktop
+                    fallback = articleDesktop
+                }
+            }
+        }
+
+        #============================================================
+        publication = COA
+        publication {
+
+            10 = FILES
+            10 {
+
+                references {
+                    table = pages
+                    data = levelfield: -1, media, slide
+                }
+
+                renderObj = COA
+                renderObj {
+
+                    5 = LOAD_REGISTER
+                    5 {
+                        imageIdList.cObject = TEXT
+                        imageIdList.cObject.data = register:imageIdList
+                        imageIdList.cObject.wrap = |,{file:current:uid}
+                        imageIdList.cObject.wrap.insertData = 1
+                    }
+                }
+            }
+
+            20 = FLUIDTEMPLATE
+            20 {
+
+                file = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/FluidTemplateLibs/Keyvisual/Publication.html
+                partialRootPaths.0 = {$plugin.tx_rkwbasics.view.templateRootPath}
+
+                variables {
+
+                    imageReference = TEXT
+                    imageReference {
+                        data = register:imageIdList
+                        stdWrap.replacement {
+                            1 {
+                                search = #(.+)?,([0-9]+)$#
+                                replace = ${2}
+                                useRegExp = 1
+                            }
+                        }
+                    }
+                }
+
+                settings < lib.txRkwBasics.responsiveImage.settings
+                settings {
+
+                    additionalAttributes = class="publications-article__picture"
+                    breakpoint {
+                        desktop >
+                    }
+
+                    maxWidth {
+                        tablet = 1024
+                    }
+
+                    cropVariant {
+                        tablet = publicationDesktop
+                        mobile2 = publicationDesktop
+                        mobile = publicationDesktop
+                        fallback = publicationDesktop
+                    }
+                }
+            }
+
+            90 = RESTORE_REGISTER
+
+        }
+    }
+}
