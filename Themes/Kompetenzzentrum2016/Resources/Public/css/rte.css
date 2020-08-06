@@ -457,7 +457,8 @@ img {
 
 figure img {
   display: block;
-  width: 100%; }
+  /*width: 100%; */
+  max-width: 100%; }
 
 figure.person-image img {
   width: auto; }
@@ -466,7 +467,8 @@ figcaption {
   font-size: 60%;
   line-height: 1em;
   margin-top: 8px;
-  margin-bottom: 16px; }
+  margin-bottom: 16px;
+  display: block; }
   figcaption .copyright-hint:before {
     content: ' ';
     white-space: pre; }

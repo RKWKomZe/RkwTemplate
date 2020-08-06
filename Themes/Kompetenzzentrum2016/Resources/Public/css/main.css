@@ -3113,14 +3113,16 @@ body.project-aprodi input[type="password"]:focus, body.project-aprodi textarea:h
     vertical-align: middle; }
   .wysiwyg figure img {
     display: block;
-    width: 100%; }
+    /*width: 100%; */
+    max-width: 100%; }
   .wysiwyg figure.person-image img {
     width: auto; }
   .wysiwyg figcaption {
     font-size: 60%;
     line-height: 1em;
     margin-top: 8px;
-    margin-bottom: 16px; }
+    margin-bottom: 16px;
+    display: block; }
     .wysiwyg figcaption .copyright-hint:before {
       content: ' ';
       white-space: pre; }
@@ -3388,6 +3390,10 @@ body.project-aprodi input[type="password"]:focus, body.project-aprodi textarea:h
   .wysiwyg .typo3-messages:first-child {
     margin-top: 0; }
 
+body.publication .wysiwyg figure img,
+body.project .wysiwyg figure img {
+  width: 100%; }
+
 /*
 body:not(.first-letter-normal) .wysiwyg:not(.first-letter-normal) .csc-element-n1 div.csc-textpic-text > p:first-child::first-letter,
 body:not(.first-letter-normal) .wysiwyg:not(.first-letter-normal) .csc-element-n1 > p:first-child::first-letter {
@@ -3486,14 +3492,16 @@ body:not(.first-letter-normal) .wysiwyg:not(.first-letter-normal) .csc-element-n
     vertical-align: middle; }
   .featherlight-content figure img {
     display: block;
-    width: 100%; }
+    /*width: 100%; */
+    max-width: 100%; }
   .featherlight-content figure.person-image img {
     width: auto; }
   .featherlight-content figcaption {
     font-size: 60%;
     line-height: 1em;
     margin-top: 8px;
-    margin-bottom: 16px; }
+    margin-bottom: 16px;
+    display: block; }
     .featherlight-content figcaption .copyright-hint:before {
       content: ' ';
       white-space: pre; }
