@@ -458,7 +458,8 @@ img {
 figure img {
   display: block;
   /*width: 100%; */
-  max-width: 100%; }
+  max-width: 100%;
+  height: 100%; }
 
 figure.person-image img {
   width: auto; }
@@ -468,7 +469,9 @@ figcaption {
   line-height: 1em;
   margin-top: 8px;
   margin-bottom: 16px;
-  display: block; }
+  /*display: block;*
+  display: table-caption;
+   */ }
   figcaption .copyright-hint:before {
     content: ' ';
     white-space: pre; }

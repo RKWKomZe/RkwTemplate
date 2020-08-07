@@ -3114,7 +3114,8 @@ body.project-aprodi input[type="password"]:focus, body.project-aprodi textarea:h
   .wysiwyg figure img {
     display: block;
     /*width: 100%; */
-    max-width: 100%; }
+    max-width: 100%;
+    height: 100%; }
   .wysiwyg figure.person-image img {
     width: auto; }
   .wysiwyg figcaption {
@@ -3122,7 +3123,9 @@ body.project-aprodi input[type="password"]:focus, body.project-aprodi textarea:h
     line-height: 1em;
     margin-top: 8px;
     margin-bottom: 16px;
-    display: block; }
+    /*display: block;*
+  display: table-caption;
+   */ }
     .wysiwyg figcaption .copyright-hint:before {
       content: ' ';
       white-space: pre; }
@@ -3364,9 +3367,9 @@ body.project-aprodi input[type="password"]:focus, body.project-aprodi textarea:h
     position: static;
     float: none; }
   .wysiwyg .ce-gallery .ce-column:only-child {
-    float: none; }
+    /*float:none;*/ }
     .wysiwyg .ce-gallery .ce-column:only-child figure {
-      display: block; }
+      /*display: inline-table;*/ }
       .wysiwyg .ce-gallery .ce-column:only-child figure img[src$=".svg"] {
         height: 100%; }
   .wysiwyg iframe {
@@ -3389,10 +3392,6 @@ body.project-aprodi input[type="password"]:focus, body.project-aprodi textarea:h
     margin-top: 16px; }
   .wysiwyg .typo3-messages:first-child {
     margin-top: 0; }
-
-body.publication .wysiwyg figure img,
-body.project .wysiwyg figure img {
-  width: 100%; }
 
 /*
 body:not(.first-letter-normal) .wysiwyg:not(.first-letter-normal) .csc-element-n1 div.csc-textpic-text > p:first-child::first-letter,
@@ -3493,7 +3492,8 @@ body:not(.first-letter-normal) .wysiwyg:not(.first-letter-normal) .csc-element-n
   .featherlight-content figure img {
     display: block;
     /*width: 100%; */
-    max-width: 100%; }
+    max-width: 100%;
+    height: 100%; }
   .featherlight-content figure.person-image img {
     width: auto; }
   .featherlight-content figcaption {
@@ -3501,7 +3501,9 @@ body:not(.first-letter-normal) .wysiwyg:not(.first-letter-normal) .csc-element-n
     line-height: 1em;
     margin-top: 8px;
     margin-bottom: 16px;
-    display: block; }
+    /*display: block;*
+  display: table-caption;
+   */ }
     .featherlight-content figcaption .copyright-hint:before {
       content: ' ';
       white-space: pre; }

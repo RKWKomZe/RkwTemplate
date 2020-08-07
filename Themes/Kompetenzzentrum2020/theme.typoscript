@@ -57,11 +57,20 @@ plugin.tx_rkwtemplate_themeconfig {
         }
     }
 
-
+    // From CSS:
+    // $mq-wide: "only screen and (max-width: 90em)"; // 1440px
+    // $mq-mwide: "only screen and (max-width: 80em)"; // 1280px
+    // $mq-smalldesk: "only screen and (max-width: 64em)"; // 1024px
+    // $mq-medium: "only screen and (max-width: 48em)"; // 768px
+    // $mq-narrow: "only screen and (max-width: 37.5em)"; // 600px
+    // $mq-mobile: "only screen and (max-width: 30em)"; // 480px
     breakpoints {
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=integer; label=Mobile breakpoint (in pixel)
-        mobile = 320
+        mobile = 321
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=integer; label=Second Mobile breakpoint (in pixel)
+        mobile2 = 601
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=integer; label=Tablet breakpoint (in pixel)
         tablet = 768

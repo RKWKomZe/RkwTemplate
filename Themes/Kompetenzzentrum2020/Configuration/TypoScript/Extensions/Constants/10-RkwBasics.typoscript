@@ -7,14 +7,19 @@ plugin.tx_rkwbasics {
     settings {
         responsiveImages {
             breakpoints {
-                // cat=plugin.tx_rkwbasics//a; type=integer; label=Breakpoint for mobile
-                mobile = 320
 
-                // cat=plugin.tx_rkwbasics//a; type=integer; label=Breakpoint for tablet
-                tablet = 768
+                # cat=plugin.tx_rkwbasics//a; type=integer; label=Breakpoint for desktop
+                desktop = {$plugin.tx_rkwtemplate_themeconfig.breakpoints.desktop}
 
-                // cat=plugin.tx_rkwbasics//a; type=integer; label=Breakpoint for desktop
-                desktop = 1024
+                # cat=plugin.tx_rkwbasics//a; type=integer; label=Breakpoint for tablet
+                tablet = {$plugin.tx_rkwtemplate_themeconfig.breakpoints.tablet}
+
+                # cat=plugin.tx_rkwbasics//a; type=integer; label=Second breakpoint for mobile
+                mobile2 = {$plugin.tx_rkwtemplate_themeconfig.breakpoints.mobile2}
+
+                # cat=plugin.tx_rkwbasics//a; type=integer; label=First breakpoint for mobile
+                mobile = {$plugin.tx_rkwtemplate_themeconfig.breakpoints.mobile}
+
             }
         }
     }

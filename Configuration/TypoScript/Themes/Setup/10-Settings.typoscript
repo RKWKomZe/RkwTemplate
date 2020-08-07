@@ -13,6 +13,11 @@ lib.txRkwTemplate.themeSettings {
     websiteLogoBrokenLinkFile = {$plugin.tx_rkwtemplate_themeconfig.website.logoBrokenLinkFile}
     websiteLogoUrl = {$plugin.tx_rkwtemplate_themeconfig.website.logoUrl}
 
+    // @deprecated start
+    websiteLogoOffcanvasFile = {$plugin.tx_rkwtemplate_themeconfig.website.logoOffcanvasFile}
+    websiteLogoOffcanvasIconOnlyFile = {$plugin.tx_rkwtemplate_themeconfig.website.logoOffcanvasIconOnlyFile}
+    // @depecated end
+
     micrositeLogoTabletFile = {$plugin.tx_rkwtemplate_themeconfig.microsite.logoTabletFile}
     micrositeTextVertical = {$plugin.tx_rkwtemplate_themeconfig.microsite.textVertical}
     micrositeMainWebsiteUrl = {$plugin.tx_rkwtemplate_themeconfig.microsite.mainWebsiteUrl}
