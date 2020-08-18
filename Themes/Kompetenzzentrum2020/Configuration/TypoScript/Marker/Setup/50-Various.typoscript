@@ -29,26 +29,5 @@ lib.txRkwTemplate {
             settings =< plugin.tx_rkwalerts.settings
         }
 
-
-        //=================================================================
-        overlayMeinRkw = USER
-        overlayMeinRkw {
-            userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
-            extensionName = RkwRegistration
-            pluginName = RkwregistrationAjax
-            vendorName = RKW
-            controller = Ajax
-            switchableControllerActions {
-                // Again: Controller-Name and Action
-                Ajax {
-                    1 = loginInfoInit
-                }
-            }
-
-            view =< plugin.tx_rkwregistration.view
-            persistence =< plugin.tx_rkwregistration.persistence
-            settings =< plugin.tx_rkwregistration.settings
-        }
-
     }
 }

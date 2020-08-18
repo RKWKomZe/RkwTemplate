@@ -2,10 +2,14 @@
 
     <f:layout name="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.utility.pageLayoutSwitch')}" />
 
-    <f:section name="content">
+    <f:section name="Header">
 
-        <!-- top-menu -->
-        <f:render partial="SubNav" section="Default" arguments="{_all}"/>
+    </f:section>
+
+    <f:comment><!-- ======================================================================== --></f:comment>
+
+
+    <f:section name="Content">
 
         <!-- key-visual -->
         <f:render partial="Keyvisual/Topic" arguments="{_all}"/>

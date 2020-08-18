@@ -176,7 +176,7 @@ lib.txRkwTemplate {
                         wrap = <span class="icon-file">|</span>
 
                         // eTracker
-                        userFunc < lib.parseFunc_RTE.tags.link.typolink.userFunc
+                        userFunc = RKW\RkwEtracker\UserFunctions\Typolink->getParsedLinkWithDataAttributes
                     }
                 }
             }

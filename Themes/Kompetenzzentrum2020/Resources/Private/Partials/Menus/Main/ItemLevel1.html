@@ -4,7 +4,7 @@
         <f:if condition="{iterator.isFirst}">
             <f:else>
                 <li class="nav__item {f:if(condition:item.children, then:' js-dropdown-item')} {f:if(condition:item.active, then:' is-active')}">
-                    <a class="nav__item-link" href="{item.link}" target="{item.target}" tabindex="{iterator.index}" {f:if(condition:item.children, then:' aria-haspopup="menu"')} >
+                    <a class="{f:if(condition:item.children, then:'nav__item-link')}" href="{item.link}" target="{item.target}" tabindex="{iterator.index}" {f:if(condition:item.children, then:' aria-haspopup="menu"')} >
                         {item.title}
                     </a>
 
@@ -23,6 +23,8 @@
             </f:else>
         </f:if>
     </f:section>
+
+    <f:comment><!-- ======================================================================== --></f:comment>
 
 
     <f:section name="Mobile">

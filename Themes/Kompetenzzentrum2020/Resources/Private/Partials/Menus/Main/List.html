@@ -5,12 +5,11 @@
             <f:for each="{menuItems}" as="item" iteration="iterator">
                 <f:render partial="ItemLevel1" section="Default" arguments="{item: item, iterator: iterator}"/>
             </f:for>
-
             <f:render partial="Closure" section="Default" arguments="{_all}"/>
         </ul>
     </f:section>
 
-
+    <f:comment><!-- ======================================================================== --></f:comment>
 
     <f:section name="Mobile">
 
@@ -19,7 +18,6 @@
                 <f:render partial="ItemLevel1" section="Mobile" arguments="{item: item, iterator: iterator}"/>
             </f:for>
         </ul>
-
         <f:render partial="Closure" section="Mobile" arguments="{_all}"/>
 
     </f:section>

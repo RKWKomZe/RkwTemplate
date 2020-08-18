@@ -9,27 +9,14 @@
     </f:section>
 
 
-    <f:section name="Content">
+    <f:comment><!-- ======================================================================== --></f:comment>
 
+
+    <f:section name="Content">
         <main class="main">
             <section class="section content">
-
-                <!-- content -->
                 <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.home" data="{data}" />
-
-
             </section>
         </main>
-
-
-        <!-- top-menu -->
-        <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.utility.pageLayoutSwitch')} == 'Microsite'">
-            <f:render partial="SubNav" section="Default" arguments="{_all}"/>
-        </f:if>
-
-        <!-- spacer -->
-        <p>&nbsp;</p>
-
-
     </f:section>
 </html>

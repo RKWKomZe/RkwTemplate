@@ -2,31 +2,31 @@ lib.txRkwTemplate {
 
     navigation {
 
-        breadcrumb = HMENU
+
+        breadcrumb = FLUIDTEMPLATE
         breadcrumb {
 
-            special = rootline
-            special.range = 1
+            file = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/Menus/Breadcrumb.html
+            partialRootPaths.0 = {$plugin.tx_rkwtemplate_themeconfig.paths.default.partials}/Menus/Breadcrumb
 
-            wrap = <ul class="breadcrumbs">|</ul>
+            dataProcessing {
+                10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+                10 {
+                   special = rootline
+                   special.range = -1
+                   levels = 1
+                   entryLevel = 0
+                   expandAll = 1
+                   includeSpacer = 0
+                   maxItems = 10
+                   titleField = nav_title // title
+                   excludeUidList >
 
-            # LEVEL 0
-            1 = TMENU
-            1 {
-
-                expAll= 1
-
-                NO {
-                    wrapItemAndSub = <li>|</li>
-                    ATagTitle.field = title
-
-                    stdWrap.crop = 30 |...
-
-                    ATagParams.insertData = 1
-                    stdWrap.htmlSpecialChars = 1
-
+                   as = menuItems
                 }
             }
+
+            settings < page.10.settings
         }
     }
 }

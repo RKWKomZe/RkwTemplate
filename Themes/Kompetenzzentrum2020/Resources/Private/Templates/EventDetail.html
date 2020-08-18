@@ -2,50 +2,61 @@
 
     <f:layout name="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.utility.pageLayoutSwitch')}" />
 
-    <f:section name="content">
 
-        <!-- spacer -->
-        <p>&nbsp;</p>
+    <f:section name="Header">
 
-        <div class="page-area-grid">
-            <div class="article">
+    </f:section>
 
-                <div class="project-article" aria-labelledby="article-headline">
+
+    <f:comment><!-- ======================================================================== --></f:comment>
+
+
+    <f:section name="Content">
+
+        <main class="main flex-container space-between no-narrow-padding">
+            <section class="section content flex-item flex-basis-9 full-width-smalldesk no-narrow-padding">
+
+                <div class="siteheader siteheader-extended">
 
                     <!-- header -->
-                    <header class="content-box content article-header wysiwyg" id="article-headline">
-                        <f:cObject typoscriptObjectPath="lib.txRkwTemplate.event.title" data="{data}" />
-                    </header>
+                    <f:cObject typoscriptObjectPath="lib.txRkwTemplate.event.title" data="{data}" />
 
-                    <!-- GoogleMaps -->
-                    <picture class="article-picture">
+                    <div class="siteheader__bg">
+
+                        <!-- GoogleMaps -->
                         <f:format.raw><f:cObject typoscriptObjectPath="lib.txRkwTemplate.event.maps" data="{data}" /></f:format.raw>
-                    </picture>
 
-                    <!-- overview -->
-                    <f:cObject typoscriptObjectPath="lib.txRkwTemplate.event.info" data="{data}" />
-
-                    <div class="content-box content wysiwyg">
-
-                        <!-- content -->
-                        <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.main" data="{data}" />
+                        <!-- overview -->
+                        <f:cObject typoscriptObjectPath="lib.txRkwTemplate.event.info" data="{data}" />
 
                     </div>
 
-                    <!-- footer -->
-                    <footer class="article-footer">
-                        <f:render partial="SharePrint/Print" arguments="{_all}"/>
-                        <f:render partial="SharePrint/SocialMedia" arguments="{_all}"/>
-                    </footer>
                 </div>
-            </div>
+
+                <!-- breadcrumb -->
+                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.breadcrumb" data="{data}" />
+
+                <div class="contentbox contentbox--text contentbox--no-border-radius has-initial no-border-radius-mobile">
+
+                    <!-- content -->
+                    <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.main" data="{data}" />
+
+                </div>
+
+            </section>
+        </main>
 
 
-            <f:comment>
-                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.related" data="{data}" />
-            </f:comment>
+        <f:comment>
+            <aside class="aside-info flex-item flex-basis-3 aside-info--padding">
+                <div class="asideinner">
 
-        </div>
+                    <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.related" data="{data}" />
+
+                </div>
+            </aside>
+        </f:comment>
+
 
     </f:section>
 

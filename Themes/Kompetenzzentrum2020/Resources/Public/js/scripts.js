@@ -13,6 +13,121 @@ $(function () {
   }
 });
 
+//JQuery UI Selectors :tabbable and :focusable
+(function (factory) {
+  if (typeof define === "function" && define.amd) {
+    // AMD. Register as an anonymous module.
+    define(["jquery"], factory);
+  } else {
+    // Browser globals
+    factory(jQuery);
+  }
+})(function ($) {
+  $.ui = $.ui || {};
+
+  var version = ($.ui.version = "1.12.1");
+
+  /*!
+   * jQuery UI Focusable 1.12.1
+   * http://jqueryui.com
+   *
+   * Copyright jQuery Foundation and other contributors
+   * Released under the MIT license.
+   * http://jquery.org/license
+   */
+
+  //>>label: :focusable Selector
+  //>>group: Core
+  //>>description: Selects elements which can be focused.
+  //>>docs: http://api.jqueryui.com/focusable-selector/
+
+  // Selectors
+  $.ui.focusable = function (element, hasTabindex) {
+    var map,
+      mapName,
+      img,
+      focusableIfVisible,
+      fieldset,
+      nodeName = element.nodeName.toLowerCase();
+
+    if ("area" === nodeName) {
+      map = element.parentNode;
+      mapName = map.name;
+      if (!element.href || !mapName || map.nodeName.toLowerCase() !== "map") {
+        return false;
+      }
+      img = $("img[usemap='#" + mapName + "']");
+      return img.length > 0 && img.is(":visible");
+    }
+
+    if (/^(input|select|textarea|button|object)$/.test(nodeName)) {
+      focusableIfVisible = !element.disabled;
+
+      if (focusableIfVisible) {
+        // Form controls within a disabled fieldset are disabled.
+        // However, controls within the fieldset's legend do not get disabled.
+        // Since controls generally aren't placed inside legends, we skip
+        // this portion of the check.
+        fieldset = $(element).closest("fieldset")[0];
+        if (fieldset) {
+          focusableIfVisible = !fieldset.disabled;
+        }
+      }
+    } else if ("a" === nodeName) {
+      focusableIfVisible = element.href || hasTabindex;
+    } else {
+      focusableIfVisible = hasTabindex;
+    }
+
+    return (
+      focusableIfVisible && $(element).is(":visible") && visible($(element))
+    );
+  };
+
+  // Support: IE 8 only
+  // IE 8 doesn't resolve inherit to visible/hidden for computed values
+  function visible(element) {
+    var visibility = element.css("visibility");
+    while (visibility === "inherit") {
+      element = element.parent();
+      visibility = element.css("visibility");
+    }
+    return visibility !== "hidden";
+  }
+
+  $.extend($.expr[":"], {
+    focusable: function (element) {
+      return $.ui.focusable(element, $.attr(element, "tabindex") != null);
+    },
+  });
+
+  var focusable = $.ui.focusable;
+
+  /*!
+   * jQuery UI Tabbable 1.12.1
+   * http://jqueryui.com
+   *
+   * Copyright jQuery Foundation and other contributors
+   * Released under the MIT license.
+   * http://jquery.org/license
+   */
+
+  //>>label: :tabbable Selector
+  //>>group: Core
+  //>>description: Selects elements which can be tabbed to.
+  //>>docs: http://api.jqueryui.com/tabbable-selector/
+
+  var tabbable = $.extend($.expr[":"], {
+    tabbable: function (element) {
+      var tabIndex = $.attr(element, "tabindex"),
+        hasTabindex = tabIndex != null;
+      return (
+        (!hasTabindex || tabIndex >= 0) && $.ui.focusable(element, hasTabindex)
+      );
+    },
+  });
+});
+
 function addSmothScrolling() {
   // Smooth scrolling when clicking an anchor link
   $('[data-target]').on("click", function (e) {
@@ -41,6 +156,7 @@ $(function () {
   var footer = $(".js-fixed-footer");
 
   window.addEventListener("scroll", function () {
+    if ($(".js-header-class").length <= 0) return;
     var top_of_element = $(".js-header-class").offset().top;
     var bottom_of_element =
       $(".js-header-class").offset().top + $(".js-header-class").outerHeight();
@@ -193,6 +309,105 @@ $(function () {
       } else if (e.key == "Enter" || e.code == "Space") {
         e.target.click();
       }
+    },
+  });
+
+  // A really lightweight plugin wrapper around the constructor,
+  // preventing against multiple instantiations
+  $.fn[pluginName] = function (options) {
+    return this.each(function () {
+      if (!$.data(this, "plugin_" + pluginName)) {
+        $.data(this, "plugin_" + pluginName, new Plugin(this, options));
+      }
+    });
+  };
+})(jQuery, window, document);
+
+/*!
+ *
+ * jQuery Plugin – Collapsed Text
+ *
+ * Author: helllicht
+ *
+ * Last updated: 25.05.2020
+ *
+ */
+
+(function ($, window, document, undefined) {
+  // Create the defaults once
+  // Additional options, extending the defaults, can be passed as an object from the initializing call
+  var pluginName = "collapsedText",
+    defaults = {
+      openButton: "show",
+      closeButton: "hide",
+      collapsedContainer: "collapsed-text__container",
+      collapsedText: "collapsed-text",
+      isHidden: "hidden",
+      isNone: "is-none",
+    };
+
+  var plugin;
+
+  // The plugin constructor
+  function Plugin(element, options) {
+    this.element = element;
+    // Merge defaults with passed options
+    this.settings = $.extend({}, defaults, options);
+
+    this._defaults = defaults;
+    this._name = pluginName;
+
+    this.init();
+  }
+
+  $.extend(Plugin.prototype, {
+    init: function () {
+      // Use "plugin" to reference the current instance of the object
+      // Can be used inside of functions to prevent conflict with "this"
+      plugin = this;
+
+      // Setup elements and global variables
+      plugin.settings.$el = $(this.element);
+      plugin.settings.$openBtn = $("." + plugin.settings.openButton);
+      plugin.settings.$closeBtn = $("." + plugin.settings.closeButton);
+      plugin.settings.$container = $("." + plugin.settings.collapsedContainer);
+      plugin.settings.$text = $("." + plugin.settings.collapsedText);
+      plugin.settings.$hidden = $("." + plugin.settings.isHidden);
+
+      plugin.bindEvents();
+    },
+
+    // Bind all event listeners for this plugin
+    bindEvents: function () {
+      plugin.settings.$openBtn.on("click", plugin.open);
+      plugin.settings.$openBtn.on("click", plugin.getTextHeight);
+      plugin.settings.$closeBtn.on("click", plugin.close);
+    },
+
+    //Adjust when a content is toggled
+    open: function (e) {
+      e.preventDefault();
+      plugin.settings.$container.height(plugin.getTextHeight + "2em");
+      plugin.settings.$container.removeClass(plugin.settings.isHidden);
+      plugin.settings.$openBtn.addClass(plugin.settings.isNone);
+      plugin.settings.$closeBtn.removeClass(plugin.settings.isNone);
+      console.log(plugin.settings.$container.height());
+    },
+
+    close: function (e) {
+      e.preventDefault();
+      plugin.settings.$container.addClass(plugin.settings.isHidden);
+      plugin.settings.$openBtn.removeClass(plugin.settings.isNone);
+      plugin.settings.$closeBtn.addClass(plugin.settings.isNone);
+      plugin.settings.$container.height(plugin.getTextHeight + "2em");
+    },
+
+    getTextHeight: function () {
+      var textHeight = 0;
+
+      textHeight = plugin.settings.$text.height();
+      console.log(textHeight);
+      return textHeight;
     },
   });
 
@@ -575,18 +790,45 @@ $(function () {
       return -1;
     },
 
-    keyboardInputManagement: function (e) {
-      if (e.key == "Tab" && e.shiftKey) {
-        return;
-      }
-      e.preventDefault();
-      if (e.key == "Tab") {
-        var tabContentId = $(e.target).attr("aria-controls");
-        if (tabContentId != null) {
-          $("#" + tabContentId).focus();
+    findSelectedAriaIndex: function () {
+      var tabLinkList = plugin.settings.$tabLink;
+      for (var i = 0; i < tabLinkList.length; i++) {
+        if ($(tabLinkList[i]).attr("aria-selected") == "true") {
+          return i;
         }
       }
+      return -1;
+    },
+
+    keyboardInputManagement: function (e) {
+      e.preventDefault();
+      if (e.key == "Tab" && e.shiftKey) {
+        //Focus last element before footer-slideUp in dom
+        var found = $(plugin.settings.$el).find(":tabbable").first()[0];
+        var arr = Array.from($(":tabbable"));
+        var ind = arr.indexOf(found);
+        if (ind < arr.length && ind > 0) $(arr[ind - 1]).focus();
+        else $(arr[0]).focus();
+        return;
+      }
       var tabLinkList = plugin.settings.$tabLink;
+      if (e.key == "Tab") {
+        //Tab into panel
+        var selectedAriaInd = plugin.findSelectedAriaIndex();
+        if (selectedAriaInd > -1) {
+          var tabContentId = $(tabLinkList[selectedAriaInd]).attr(
+            "aria-controls"
+          );
+          $("#" + tabContentId).focus();
+        } else {
+          //Focus next Element after footer-slideUp in dom
+          var found = $(plugin.settings.$el).find(":tabbable").last()[0];
+          var arr = Array.from($(":tabbable"));
+          var ind = arr.indexOf(found);
+          if (ind + 1 < arr.length && ind >= 0) $(arr[ind + 1]).focus();
+          else $(arr[0]).focus();
+        }
+      }
       if (e.key == "ArrowLeft") {
         var value = plugin.findTabLinkIndex(e.target);
         if (value != -1) {
@@ -651,15 +893,23 @@ $(function () {
   // Additional options, extending the defaults, can be passed as an object from the initializing call
   var pluginName = "mobileNavbar",
     defaults = {
-      mobileNavButtonClass: ".nav-mobile-hamburger__button",
+      hamburgerNavButtonClass: ".nav-mobile-hamburger__button",
       mobileNavClass: ".nav-mobile",
       iconOpenClass: ".icon-open",
       iconCloseClass: ".icon-close",
+      navMobileItemClass: ".nav-mobile__item-icon-wrapper",
+      navMobileHomeItemsClass: ".nav-mobile__item--home",
+      navMobileListClass: ".inner-nav-mob",
+      body: "body",
       //CSS classes to add and remove
       isOpen: "is-open",
       isClosed: "is-closed",
       isNone: "is-none",
+      noScroll: "lock-scroll",
       window: "window",
+      isActive: "is-active-list",
+      backLink: "nav-mobile__back-link",
+      iconClass: "icon",
     };
 
   var plugin;
@@ -682,38 +932,121 @@ $(function () {
 
       // Setup elements and global variables
       plugin.settings.$el = $(this.element);
-      plugin.settings.$mobNavButtons = plugin.settings.$el.find(
-        plugin.settings.mobileNavButtonClass
+      plugin.settings.$body = $("." + plugin.settings.body);
+      plugin.settings.$hamburgerNavButtons = plugin.settings.$el.find(
+        plugin.settings.hamburgerNavButtonClass
       );
       plugin.settings.$mobNav = plugin.settings.$el
         .parent()
         .find(plugin.settings.mobileNavClass);
+
+      //Find all nav items
+      plugin.settings.$navMobItems = plugin.settings.$mobNav.find(
+        plugin.settings.navMobileItemClass
+      );
+
+      //Find all nav lists
+      plugin.settings.$navLists = plugin.settings.$mobNav.find(
+        plugin.settings.navMobileListClass
+      );
+
       plugin.settings.$iconOpen = plugin.settings.$el.find(
         plugin.settings.iconOpenClass
       );
       plugin.settings.$iconClose = plugin.settings.$el.find(
         plugin.settings.iconCloseClass
       );
+
+      plugin.settings.$homeItems = plugin.settings.$mobNav.find(
+        plugin.settings.navMobileHomeItemsClass
+      );
+
+      plugin.settings.$lastNavListStorage = undefined;
+
       plugin.bindEvents();
     },
 
     // Bind all event listeners for this plugin
     bindEvents: function () {
-      plugin.settings.$mobNavButtons.on("click", plugin.mobNavTriggered);
+      plugin.settings.$hamburgerNavButtons.on("click", plugin.mobNavTriggered);
+      plugin.settings.$navMobItems.on("click", plugin.navigationItemTriggered);
       $(window).on("resize", plugin.showWindowSize);
+      plugin.settings.$homeItems.on("click", plugin.navigationItemTriggered);
     },
 
     showWindowSize: function (e) {
       // e.preventDefault();
       var windowWidth = $(window).width();
 
-      if (windowWidth > 768) {
+      if (windowWidth > 1024) {
         plugin.settings.$mobNav
           .removeClass(plugin.settings.isOpen)
           .addClass(plugin.settings.isClosed);
         plugin.settings.$iconOpen.removeClass(plugin.settings.isNone);
         plugin.settings.$iconClose.addClass(plugin.settings.isNone);
       }
+    },
+
+    showMobNavList: function (list) {
+      //Hide All
+      plugin.settings.$navLists.removeClass(plugin.settings.isActive);
+
+      //Show List
+      list.addClass(plugin.settings.isActive);
+    },
+
+    navigationItemTriggered: function (e) {
+      if (
+        !$(e.target).hasClass(
+          plugin.settings.navMobileItemClass.substring(1)
+        ) &&
+        !$(e.target)
+          .parent()
+          .hasClass(plugin.settings.navMobileHomeItemsClass.substring(1))
+      ) {
+        e.target = $(e.target)
+          .parents()
+          .filter(plugin.settings.navMobileItemClass)
+          .first();
+      }
+      e.preventDefault();
+      //Get All new list elements
+      var navList = $(e.target)
+        .nextAll()
+        .filter(plugin.settings.navMobileListClass)
+        .first();
+
+      //When item clicked is back_link
+      if (
+        navList.length <= 0 &&
+        $(e.target).parent().hasClass(plugin.settings.backLink)
+      ) {
+        var parentMenus = $(e.target)
+          .parents()
+          .filter(plugin.settings.navMobileListClass);
+        if (parentMenus.length >= 2) {
+          plugin.showMobNavList($(parentMenus[1]));
+          return;
+        }
+      }
+
+      //When item clicked is homeItem
+      if (
+        navList.length <= 0 &&
+        $(e.target)
+          .parent()
+          .hasClass(plugin.settings.navMobileHomeItemsClass.substring(1))
+      ) {
+        var parentMenus = $(e.target)
+          .parents()
+          .filter(plugin.settings.navMobileListClass);
+        plugin.settings.$lastNavListStorage = $(parentMenus[0]);
+        plugin.showMobNavList($(parentMenus[parentMenus.length - 1]));
+        return;
+      }
+
+      //When common navigation item is clicked
+      if (navList.length > 0) plugin.showMobNavList(navList);
     },
 
     mobNavTriggered: function (e) {
@@ -727,6 +1060,7 @@ $(function () {
           .addClass(plugin.settings.isOpen);
         plugin.settings.$iconOpen.addClass(plugin.settings.isNone);
         plugin.settings.$iconClose.removeClass(plugin.settings.isNone);
+        plugin.settings.$body.addClass(plugin.settings.noScroll);
       }
       if (isclosed == true) {
         plugin.settings.$mobNav
@@ -734,7 +1068,113 @@ $(function () {
           .addClass(plugin.settings.isClosed);
         plugin.settings.$iconOpen.removeClass(plugin.settings.isNone);
         plugin.settings.$iconClose.addClass(plugin.settings.isNone);
+        plugin.settings.$body.removeClass(plugin.settings.noScroll);
       }
+    },
+  });
+
+  // A really lightweight plugin wrapper around the constructor,
+  // preventing against multiple instantiations
+  $.fn[pluginName] = function (options) {
+    return this.each(function () {
+      if (!$.data(this, "plugin_" + pluginName)) {
+        $.data(this, "plugin_" + pluginName, new Plugin(this, options));
+      }
+    });
+  };
+})(jQuery, window, document);
+
+/*!
+ *
+ * jQuery Plugin – Modal
+ *
+ * Author: helllicht
+ *
+ * Last updated: 25.05.2020
+ *
+ */
+
+(function ($, window, document, undefined) {
+  // Create the defaults once
+  // Additional options, extending the defaults, can be passed as an object from the initializing call
+  var pluginName = "modal",
+    defaults = {
+      isActive: "is-active",
+      noScroll: "lock-scroll",
+      openButton: "js-open-mdl",
+      closeButton: "js-close-mdl",
+      body: "body",
+      backgroundOverlay: "js-mdl-layer",
+      modal: "mdl",
+    };
+
+  var plugin;
+
+  // The plugin constructor
+  function Plugin(element, options) {
+    this.element = element;
+    // Merge defaults with passed options
+    this.settings = $.extend({}, defaults, options);
+
+    this._defaults = defaults;
+    this._name = pluginName;
+
+    this.init();
+  }
+
+  $.extend(Plugin.prototype, {
+    init: function () {
+      // Use "plugin" to reference the current instance of the object
+      // Can be used inside of functions to prevent conflict with "this"
+      plugin = this;
+
+      // Setup elements and global variables
+      // plugin.settings.$el = $(this.element);
+      plugin.settings.$mdl = $("." + plugin.settings.modal);
+      plugin.settings.$openBtn = $("." + plugin.settings.openButton);
+      plugin.settings.$closeBtn = $("." + plugin.settings.closeButton);
+      plugin.settings.$bgOverlay = $("." + plugin.settings.backgroundOverlay);
+      plugin.settings.$body = $("." + plugin.settings.body);
+      // plugin.settings.$noScroll = $("." + plugin.settings.noScroll);
+
+      plugin.bindEvents();
+    },
+
+    // Bind all event listeners for this plugin
+    bindEvents: function () {
+      plugin.settings.$openBtn.on("click", plugin.open);
+      plugin.settings.$closeBtn.on("click", plugin.close);
+      plugin.settings.$bgOverlay.on("click", plugin.close);
+    },
+
+    open: function (e) {
+      $(this)
+        .parent()
+        .next(plugin.settings.$mdl)
+        .addClass(plugin.settings.isActive);
+
+      $(this)
+        .parent()
+        .next()
+        .next(plugin.settings.$bgOverlay)
+        .addClass(plugin.settings.isActive);
+      plugin.settings.$body.addClass(plugin.settings.noScroll);
+
+      // Remove ESC event listener again
+      $(document).unbind("keyup");
+    },
+
+    close: function () {
+      plugin.settings.$bgOverlay.removeClass(plugin.settings.isActive);
+      plugin.settings.$body.removeClass(plugin.settings.noScroll);
+      plugin.settings.$mdl.removeClass(plugin.settings.isActive);
+
+      // Add ESC event listener
+      $(document).keyup(function (e) {
+        if (e.key === "Escape") {
+          plugin.slideOut(e);
+        }
+      });
     },
   });
 
@@ -4199,14 +4639,32 @@ $(function () {
 })(window.Zepto || window.jQuery, window, document);
 
 $(function () {
+  // $(window).scroll(function () {
+  //   $(".parallax-wrapper").css(
+  //     "background-position",
+  //     "50% " + $(this).scrollTop() / 5 + "px"
+  //   );
+  // });
+});
+
+$(function () {
   // Initialize footerSlideUp
   $(".js-slideup-footer").footerSlideUp();
 
   // Initalize contactSidebar
   $(".js-contact-toggle").contactSidebar();
 
+  // Initalize modal
+  $(".js-open-mdl").modal();
+
+  // Initalize parallax
+  $(".parallax").parallax();
+
   //Initalize accordion
   $(".accordion-controls").accordionPlugin();
+
+  //Initalize collapsed Text
+  $(".collapsed-text__container").collapsedText();
 
   //Initialize mobile Navbar
   $(".nav-mobile-hamburger").mobileNavbar();
@@ -4215,11 +4673,11 @@ $(function () {
   $(".js-dropdown-item").dropdownNavbar();
 
   //Initialize responsive table
-  $("#table").basictable();
+  $(".responsive-table").basictable();
 
   //Initialize AJAX-API
   if ($(".ajax").length > 0) {
-    $(".ajax").ajaxApi();
+   // $(".ajax").ajaxApi();
   }
 
   //Smooth scrolling when clicking on an anchor link

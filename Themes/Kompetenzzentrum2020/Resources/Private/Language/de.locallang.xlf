@@ -7,18 +7,38 @@
             <!-- ================================================================= -->
             <!-- Partials -->
             <!-- ================================================================= -->
-			<trans-unit id="partials.menu.buttons.contact">
+			<trans-unit id="partials.menus.main.buttons.contact">
 				<source>Contact</source>
 				<target>Kontakt</target>
 			</trans-unit>
-			<trans-unit id="partials.menu.buttons.login">
+			<trans-unit id="partials.menus.main.buttons.login">
 				<source>Login</source>
 				<target>Login</target>
 			</trans-unit>
+            <trans-unit id="partials.menus.breadcrumb.list.label">
+                <source>You are here:</source>
+                <target>Sie sind hier:</target>
+            </trans-unit>
+
+
+
+
+
+
+
 			<trans-unit id="partials.contentElements.topic.readMore">
 				<source>read more</source>
 				<target>mehr lesen</target>
 			</trans-unit>
+
+
+
+
+
+
+
+
+
 
 
 

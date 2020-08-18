@@ -33,7 +33,8 @@
                 document.addEventListener("DOMContentLoaded", function(event) {
                     $('#menu-mein-rkw')
                         .parent()
-                        .addClass('user--logged-in');
+                        .addClass('nav__item--logged-in');
+                    $('#menu-mein-rkw').html('Mein RKW');
                 });
             </script>
         </f:then>
@@ -42,7 +43,7 @@
                 document.addEventListener("DOMContentLoaded", function(event) {
                     $('#menu-mein-rkw')
                         .parent()
-                        .addClass('user--logged-out');
+                        .addClass('nav__item--logged-out');
                 });
             </script>
         </f:else>

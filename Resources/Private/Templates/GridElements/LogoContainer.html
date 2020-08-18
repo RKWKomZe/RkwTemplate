@@ -3,16 +3,16 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
     <f:if condition="<rkwBasics:isEmpty string='{data.tx_gridelements_view_column_30}' /> == 0">
-        <section role="contentinfo" class="section" aria-labelledby="section-header-{data.uid}">
+        <div class="introtext introtext-white">
 
-            <h{f:if(condition: data.header_layout, then: '{data.header_layout}', else: '3')} class="section-header h2" id="section-header-{data.uid}">
+            <h{f:if(condition: data.header_layout, then: '{data.header_layout}', else: '3')} class="headline headline--underlined" id="c{data.uid}">
                 {data.header}
             </h{f:if(condition: data.header_layout, then: '{data.header_layout}', else: '3')}>
 
-            <div class="boxes-partners">
+            <div class="logo-list flex valign-center">
                 <f:format.raw>{data.tx_gridelements_view_column_30}</f:format.raw>
             </div>
 
-        </section>
+        </div>
     </f:if>
 </html>

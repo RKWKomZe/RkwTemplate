@@ -1,62 +1,66 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
-<f:section name="Default">
+    <f:section name="Default">
 
-    <div class="meta flex-basis-12 flex-container space-between">
-        <div class="site-logo flex-basis-3">
-            <a href="{settings.websiteLogoUrl}" title="<f:translate key='{settings.themeLanguageFile}:partials.basics.logo.homeLink' />" class="site-logo__link">
-                <img class="site-logo__desktop" src="{settings.websiteLogoFile}" alt="{settings.websiteName}" />
-                <f:if condition="{settings.websiteLogoMobileFile}">
-                    <f:then>
-                        <img class="site-logo__mobile" src="{settings.websiteLogoMobileFile}" alt="{settings.websiteName}" />
-                    </f:then>
-                    <f:else>
-                        <img class="site-logo__mobile" src="{settings.websiteLogoFile}" alt="{settings.websiteName}" />
-                    </f:else>
-                </f:if>
-            </a>
+        <div class="meta flex-basis-12 flex-container space-between">
+            <div class="site-logo flex-basis-3">
+                <a href="{settings.websiteLogoUrl}" title="<f:translate key='{settings.themeLanguageFile}:partials.basics.logo.homeLink' />" class="site-logo__link">
+                    <img class="site-logo__desktop" src="{settings.websiteLogoFile}" alt="{settings.websiteName}" />
+                    <f:if condition="{settings.websiteLogoMobileFile}">
+                        <f:then>
+                            <img class="site-logo__mobile" src="{settings.websiteLogoMobileFile}" alt="{settings.websiteName}" />
+                        </f:then>
+                        <f:else>
+                            <img class="site-logo__mobile" src="{settings.websiteLogoFile}" alt="{settings.websiteName}" />
+                        </f:else>
+                    </f:if>
+                </a>
+            </div>
+
+            <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.main" data="{data}" />
+            <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.sub" data="{data}" />
         </div>
 
-        <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.main" data="{data}" />
-    </div>
-
-</f:section>
+    </f:section>
 
 
-<!-- ################################################################################# -->
+    <f:comment><!-- ======================================================================== --></f:comment>
 
-<f:section name="Microsite">
 
-    <div class="page-header__microsite-navigation">
-        <f:if condition="{settings.micrositeMainWebsiteLogoFile}">
-            <a href="{settings.micrositeMainWebsiteUrl}" rel="nofollow"  target="_blank" class="page-header__microsite-button" aria-controls="main-menu" title="{settings.micrositeMainWebsiteName}">
-                <figure class="page-header__microsite-logo-container">
-                    <img src="{settings.micrositeMainWebsiteLogoFile}" alt="{settings.micrositeMainWebsiteName}" class="page-header__microsite-logo">
-                </figure>
-            </a>
-        </f:if>
-        <f:if condition="{settings.micrositeTextVertical}">
-            <div class="page-header__text-container">
-                <p class="page-header__vertical-text"><a href="{settings.micrositeMainWebsiteUrl}" rel="nofollow" target="_blank" title="{settings.micrositeMainWebsiteName}">{settings.micrositeTextVertical}</a></p>
-            </div>
-        </f:if>
-    </div>
+    <f:section name="Microsite">
 
-    <header class="page-header page-header--microsite" role="banner" aria-label="<f:translate key='{settings.themeLanguageFile}:partials.basics.header.labelHeader' />">
-
-        <!-- mobile logo vertical navigation -->
-        <a href="#" class="page-header__mobile-button page-header__mobile-button--microsite icon-burger"></a>
-
-        <!-- main menu -->
-        <div class="page-header__container container">
-            <nav class="main-menu main-menu--microsite" id="main-menu">
-                <a href="#" rel="nofollow" class="page-header__close-button" aria-controls="main-menu" title="<f:translate key='{settings.themeLanguageFile}:partials.basics.header.labelMobileMenuCloseButton' />">
-                    <figure class="page-header__expanded-logo-container">
-                        <img src="{settings.websiteLogoOffcanvasFile}" alt="{settings.websiteName}" class="page-header___expanded-logo-image--microsite">
+        <div class="page-header__microsite-navigation">
+            <f:if condition="{settings.micrositeMainWebsiteLogoFile}">
+                <a href="{settings.micrositeMainWebsiteUrl}" rel="nofollow"  target="_blank" class="page-header__microsite-button" aria-controls="main-menu" title="{settings.micrositeMainWebsiteName}">
+                    <figure class="page-header__microsite-logo-container">
+                        <img src="{settings.micrositeMainWebsiteLogoFile}" alt="{settings.micrositeMainWebsiteName}" class="page-header__microsite-logo">
                     </figure>
                 </a>
-                <a href="#" rel="nofollow" class="page-header__close-mobile-button icon-close link" aria-controls="main-menu" title="<f:translate key='{settings.themeLanguageFile}:partials.basics.header.labelMenuCloseButton' />"></a>
-                <f:format.html parseFuncTSPath="">{mainNavMicrosite}</f:format.html>
-            </nav>
+            </f:if>
+            <f:if condition="{settings.micrositeTextVertical}">
+                <div class="page-header__text-container">
+                    <p class="page-header__vertical-text"><a href="{settings.micrositeMainWebsiteUrl}" rel="nofollow" target="_blank" title="{settings.micrositeMainWebsiteName}">{settings.micrositeTextVertical}</a></p>
+                </div>
+            </f:if>
         </div>
-    </header>
-</f:section>
+
+        <header class="page-header page-header--microsite" role="banner" aria-label="<f:translate key='{settings.themeLanguageFile}:partials.basics.header.labelHeader' />">
+
+            <!-- mobile logo vertical navigation -->
+            <a href="#" class="page-header__mobile-button page-header__mobile-button--microsite icon-burger"></a>
+
+            <!-- main menu -->
+            <div class="page-header__container container">
+                <nav class="main-menu main-menu--microsite" id="main-menu">
+                    <a href="#" rel="nofollow" class="page-header__close-button" aria-controls="main-menu" title="<f:translate key='{settings.themeLanguageFile}:partials.basics.header.labelMobileMenuCloseButton' />">
+                        <figure class="page-header__expanded-logo-container">
+                            <img src="{settings.websiteLogoOffcanvasFile}" alt="{settings.websiteName}" class="page-header___expanded-logo-image--microsite">
+                        </figure>
+                    </a>
+                    <a href="#" rel="nofollow" class="page-header__close-mobile-button icon-close link" aria-controls="main-menu" title="<f:translate key='{settings.themeLanguageFile}:partials.basics.header.labelMenuCloseButton' />"></a>
+                    <f:format.html parseFuncTSPath="">{mainNavMicrosite}</f:format.html>
+                </nav>
+            </div>
+        </header>
+    </f:section>
+</html>
