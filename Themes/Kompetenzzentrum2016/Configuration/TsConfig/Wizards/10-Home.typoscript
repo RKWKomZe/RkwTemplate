@@ -18,7 +18,14 @@
     mod.wizards.newContentElement.wizardItems.common.show := addToList(rkwtemplate_mission, rkwtemplate_multimedia)
 
     // remove grid elements by their ID (aka name)
-    tx_gridelements.excludeLayoutIds = contentContainerTwoCols, contentContainerOneCol, promoterContainer
+    tx_gridelements.excludeLayoutIds = promoterContainer, contentContainerTwoCols, contentContainerOneCol
+
+[end]
+
+[RKW\RkwTemplate\Condition\Backend\BackendLayoutCondition = "pagets__homePages"] && [RKW\RkwTemplate\Condition\Backend\ColPosCondition = "100"]
+
+    // remove grid elements by their ID (aka name)
+    tx_gridelements.excludeLayoutIds = sliderContainer, promoterContainer, contentContainerTwoCols, contentContainerOneCol
 
 [end]
 
@@ -33,8 +40,21 @@
     mod.wizards.newContentElement.wizardItems.common.show =
 
     // remove grid elements by their ID (aka name)
-    tx_gridelements.excludeLayoutIds = sliderContainer, logoContainer, topicContainer, contentContainerTwoCols, contentContainerOneCol, promoterContainer
+    tx_gridelements.excludeLayoutIds = sliderContainer, promoterContainer, logoContainer, topicContainer, contentContainerTwoCols, contentContainerOneCol
 
 [end]
 
 
+[RKW\RkwTemplate\Condition\Backend\BackendLayoutCondition = "pagets__homePages"] && [RKW\RkwTemplate\Condition\Backend\ColPosCondition = "120"]
+
+    // remove everything - except for some items
+    // Important: this also has to include gridelements_pi1 for the gridContainer if needed!
+    TCEFORM.tt_content.CType.keepItems = gridelements_pi1
+
+    // remove everything - except for some items
+    mod.wizards.newContentElement.wizardItems.common.show =
+
+    // remove grid elements by their ID (aka name)
+    tx_gridelements.excludeLayoutIds = promoterContainer, logoContainer, topicContainer, contentContainerTwoCols, contentContainerOneCol
+
+[end]

@@ -16,7 +16,9 @@
             <section class="section content no-narrow-padding">
 
                 <!-- breadcrumb-->
-                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.breadcrumb" data="{data}" />
+                <div class="breadcrumbs flex-container nav breadcrumb-py">
+                    <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.breadcrumb" data="{data}" />
+                </div>
 
                 <!-- plugin only -->
                 <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.pluginOnly" data="{data}" />

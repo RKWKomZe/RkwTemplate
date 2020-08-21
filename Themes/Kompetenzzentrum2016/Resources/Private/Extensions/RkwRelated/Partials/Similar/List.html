@@ -2,7 +2,7 @@
 
 <f:if condition="{relatedPagesList}">
 	<f:for each="{relatedPagesList}" as="pages" iteration="iterator">
-		<f:if condition="{iterator.index} < {limit}">
+		<f:if condition="{iterator.cycle} =< {limit}">
 			<f:then>
 				<!-- box content -->
 				<f:render partial="Similar/List/Boxes/Default" arguments="{_all}" />

@@ -2,18 +2,14 @@
 
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
-    <div class="article">
-        <article aria-labelledby="article-headline">
-            <f:render partial="ContentContainer/SchemaOrg" arguments="{_all}"/>
-            <f:render partial="ContentContainer/Content" arguments="{_all}"/>
-            <f:render partial="ContentContainer/CallToAction" arguments="{_all}"/>
-        </article>
-    </div>
+    <f:render partial="ContentContainer/SchemaOrg" arguments="{_all}"/>
 
-    <aside class="related-box" aria-labelledby="headline-more-information">
-        <h4 class="section-header h2" id="headline-more-information">
-            <f:translate key="{settings.themeLanguageFile}:templates.gridElements.contentContainer.twoCols.asideHeadline" />
-        </h4>
+    <section class="section content flex-basis-9 full-width-smalldesk no-narrow-padding">
+        <f:render partial="ContentContainer/Content" arguments="{_all}"/>
+        <f:render partial="ContentContainer/CallToAction" arguments="{_all}"/>
+    </section>
+
+    <aside class="aside-info flex-basis-3 full-width-smalldesk aside-info--padding">
         <f:render partial="ContentContainer/Aside" arguments="{_all}"/>
     </aside>
 </html>

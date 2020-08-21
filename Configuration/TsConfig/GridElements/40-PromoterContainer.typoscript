@@ -9,7 +9,7 @@ tx_gridelements.setup.promoterContainer {
             1 {
                 columns {
                     1 {
-                        name = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.promoter.title
+                        name = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.promoterContainer.title
                         colPos = 40
                         allowed {
                             CType = rkwtemplate_promoter

@@ -17,3 +17,5 @@
 [applicationContext = Production/Staging]
     <INCLUDE_TYPOSCRIPT: source="FILE:./__STAGE/Setup.typoscript">
 [global]
+
+txRkwAjaxPage.10 < page.10
