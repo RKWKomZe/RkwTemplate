@@ -5,6 +5,7 @@ plugin.tx_rkwbasics {
     }
 
     settings {
+
         responsiveImages {
             breakpoints {
 

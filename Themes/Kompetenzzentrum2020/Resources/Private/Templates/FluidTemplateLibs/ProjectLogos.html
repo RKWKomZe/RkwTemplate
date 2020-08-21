@@ -2,11 +2,13 @@
 
     <f:if condition="{logos} > 0">
         <f:for each="{logos}" as="logo" key="key">
-            <div class="box-wrapper">
-                <div class="powered-by">
-                    <picture>
-                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" srcset="{f:uri.image(image:logo,width:'320',cropVariant:'default')}" alt="{f:if(condition: '{logo.title}', then: '{logo.title}', else: '{logo.alternative}')}" />
-                    </picture>
+            <div class="flex-item flex-basis-3 logo-tile content-padding">
+                <div class="tile has-logo">
+                    <div class="tile__header">
+                        <div class="tile__img">
+                            <f:image image="{logo}" treatIdAsReference="1"  width="350" cropVariant="default" alt="{f:if(condition: '{logo.title}', then: '{logo.title}', else: '{logo.alternative}')}" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </f:for>

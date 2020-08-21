@@ -1,11 +1,33 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
-    <div class="boxes-grid narrow inherit-color">
+    <div class="asideinner">
+
+        <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.pageInfo.authorsBox')}">
+            <h4 class="asideinner__title content-padding">Ansprechpartner</h4>
+            <f:cObject typoscriptObjectPath="lib.txRkwTemplate.pageInfo.authorsBox" />
+        </f:if>
         <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.boxes.projectLogo', data:'{pageUid: data.pid}' )}">
             <f:cObject typoscriptObjectPath="lib.txRkwTemplate.boxes.projectLogo" data="{pageUid: data.pid}" />
         </f:if>
+    </div>
+
+
+<f:comment>
+
+<aside class="related-box" aria-labelledby="headline-more-information">
+    <h4 class="section-header h2" id="headline-more-information">
+        <f:translate key="{settings.themeLanguageFile}:templates.gridElements.contentContainer.twoCols.asideHeadline" />
+    </h4>
+
+</aside>
+
+    <div class="boxes-grid narrow inherit-color">
+
         <f:cObject typoscriptObjectPath="lib.txRkwTemplate.pageInfo.authorsBox" />
         <f:format.html parseFuncTSPath="">{data.tx_gridelements_view_column_60}</f:format.html>
     </div>
+
+</f:comment>
+
 
 </html>

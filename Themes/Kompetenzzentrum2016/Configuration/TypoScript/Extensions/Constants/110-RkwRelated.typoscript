@@ -10,18 +10,19 @@ module.tx_rkwrelated {
 
 plugin.tx_rkwrelated_similarcontent {
 
+
+    view {
+        # cat=plugin.tx_rkwrelated_morecontent/file; type=string; label=Path to template root (FE)
+        templateRootPath = {$plugin.tx_rkwtemplate_themeconfig.paths.extensions.rootBase}/RkwRelated/Templates/
+
+        # cat=plugin.tx_rkwrelated_morecontent/file; type=string; label=Path to template partials (FE)
+        partialRootPath = {$plugin.tx_rkwtemplate_themeconfig.paths.extensions.rootBase}/RkwRelated/Partials/
+
+        # cat=plugin.tx_rkwrelated_morecontent/file; type=string; label=Path to template layouts (FE)
+        layoutRootPath = {$plugin.tx_rkwtemplate_themeconfig.paths.extensions.rootBase}/RkwRelated/Layouts/
+    }
+
     settings {
-
-    	view {
-    		# cat=plugin.tx_rkwrelated_morecontent/file; type=string; label=Path to template root (FE)
-    		templateRootPath = {$plugin.tx_rkwtemplate_themeconfig.paths.extensions.rootBase}/RkwRelated/Templates/
-
-    		# cat=plugin.tx_rkwrelated_morecontent/file; type=string; label=Path to template partials (FE)
-    		partialRootPath = {$plugin.tx_rkwtemplate_themeconfig.paths.extensions.rootBase}/RkwRelated/Partials/
-
-    		# cat=plugin.tx_rkwrelated_morecontent/file; type=string; label=Path to template layouts (FE)
-    		layoutRootPath = {$plugin.tx_rkwtemplate_themeconfig.paths.extensions.rootBase}/RkwRelated/Layouts/
-    	}
 
         # cat=plugin.tx_rkwrelated_morecontent//f; type=integer; label=PID to start search from
         startingPid =
@@ -33,7 +34,7 @@ plugin.tx_rkwrelated_similarcontent {
         itemsPerHundredSigns = 0.30
 
         # cat=plugin.tx_rkwrelated_similarcontent//a; type=integer; label=Minimum items
-        minItems = 5
+        minItems = 8
 
         # cat=plugin.tx_rkwrelated_similarcontent//a; type=integer; label=Default header text cropping
         headerCrop = 60
@@ -68,6 +69,9 @@ plugin.tx_rkwrelated_morecontent {
 
     settings {
 
+        # cat=plugin.tx_rkwrelated_morecontent//f; type=integer; label=Version to use
+        version = 1
+
         # cat=plugin.tx_rkwrelated_morecontent//f; type=integer; label=PID to start search from
         startingPid =
 
@@ -91,6 +95,10 @@ plugin.tx_rkwrelated_morecontent {
 
         # cat=plugin.tx_rkwrelated_morecontent//a; type=boolean; label=Use rkw_search fields for sorting if installed 1 = yes
         useRkwSearchForSorting = 0
+
+        # cat=plugin.tx_rkwrelated_morecontent//a; type=string; label=Path to powered-by image
+        poweredByImage = EXT:rkw_related/Resources/Public/Images/bmwi-logo.png
+
     }
 }
 

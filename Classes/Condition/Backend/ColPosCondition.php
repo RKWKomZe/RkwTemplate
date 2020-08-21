@@ -28,32 +28,34 @@ class ColPosCondition extends \TYPO3\CMS\Core\Configuration\TypoScript\Condition
 
         $condition = $conditionParameters[0];
         $colPosTarget = intval($conditionParameters[1]);
-
-        if (! $colPos = intval(GeneralUtility::_GP('colPos'))) {
+        $colPos = GeneralUtility::_GP('colPos');
+        if (!isset($colPos)) {
             if ($editArray = GeneralUtility::_GP('edit')) {
                 if (
                     ($table = array_key_first($editArray))
                     && ($table == 'tt_content')
                     && (array_key_first($editArray[$table]))
-                ){
+                ) {
                     $uid = array_key_first($editArray[$table]);
                     $colPos = intval(BackendUtility::getRecord($table, $uid, 'colPos')['colPos']);
                 }
             }
         }
 
-        switch($condition){
-            case '=':
-                if ($colPosTarget == $colPos) {
-                    return true;
-                }
-                break;
+        if (is_numeric($colPos)) {
+            switch ($condition) {
+                case '=':
+                    if ($colPosTarget == $colPos) {
+                        return true;
+                    }
+                    break;
 
-            case '!=':
-                if ($colPosTarget != $colPos) {
-                    return true;
-                }
-                break;
+                case '!=':
+                    if ($colPosTarget != $colPos) {
+                        return true;
+                    }
+                    break;
+            }
         }
 
         return false;

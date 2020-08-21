@@ -4676,8 +4676,10 @@ $(function () {
   $(".responsive-table").basictable();
 
   //Initialize AJAX-API
-  if ($(".ajax").length > 0) {
-   // $(".ajax").ajaxApi();
+  if($.fn.ajaxApi) {
+    if ($(".ajax").length > 0) {
+       $(".ajax").ajaxApi();
+    }
   }
 
   //Smooth scrolling when clicking on an anchor link

@@ -3,7 +3,7 @@
 // add specific elements to wizards - by colPos and backend_layout
 // ############################################################################
 
-[RKW\RkwTemplate\Condition\Backend\BackendLayoutCondition = "pagets__topicPages"]
+[RKW\RkwTemplate\Condition\Backend\BackendLayoutCondition = "pagets__topicPages"] && [RKW\RkwTemplate\Condition\Backend\ColPosCondition = "0"]
 
     // remove everything - except for some items
     // Important: this also has to include gridelements_pi1 for the gridContainer if needed!
@@ -49,7 +49,7 @@
     mod.wizards.newContentElement.wizardItems.common.show =
 
     // remove grid elements by their ID (aka name)
-    tx_gridelements.excludeLayoutIds = sliderContainer, logoContainer, topicContainer, contentContainerTwoCols, contentContainerOneCol, promoterContainer
+    tx_gridelements.excludeLayoutIds = sliderContainer, topicContainer, contentContainerTwoCols, contentContainerOneCol, promoterContainer
 
 [end]
 
@@ -64,6 +64,6 @@
     mod.wizards.newContentElement.wizardItems.common.show =
 
     // remove grid elements by their ID (aka name)
-    tx_gridelements.excludeLayoutIds = sliderContainer, logoContainer, topicContainer, contentContainerTwoCols, contentContainerOneCol, promoterContainer
+    tx_gridelements.excludeLayoutIds = sliderContainer, topicContainer, contentContainerTwoCols, contentContainerOneCol, promoterContainer
 
 [end]
