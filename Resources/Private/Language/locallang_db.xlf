@@ -125,6 +125,9 @@
             <trans-unit id="contentElement.logo.imageManipulation.default">
                <source>Default</source>
             </trans-unit>
+            <trans-unit id="contentElement.logo.imageManipulation.free">
+                <source>Free</source>
+            </trans-unit>
 
 
             <!-- LogoContainer -->
