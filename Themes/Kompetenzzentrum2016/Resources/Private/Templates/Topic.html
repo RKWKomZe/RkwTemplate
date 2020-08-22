@@ -12,7 +12,9 @@
 
         <!-- promotion -->
         <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.content.promotion', data:'{data}')}">
-            <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.promotion" data="{data}" />
+            <section role="contentinfo" class="promoters" aria-labelledby="section-header-{data.uid}">
+                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.promotion" data="{data}" />
+            </section>
         </f:if>
 
         <!-- content -->
