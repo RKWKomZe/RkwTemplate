@@ -21,6 +21,40 @@
             </trans-unit>
 
 
+            <trans-unit id="partials.gridElements.contentContainer.aside.contact">
+                <source>Contact</source>
+                <target>Kontakt</target>
+            </trans-unit>
+            <trans-unit id="partials.gridElements.contentContainer.aside.information">
+                <source>Futher information</source>
+                <target>Weiterführende Links</target>
+            </trans-unit>
+
+
+
+          <!-- ================================================================== -->
+          <!-- TypoScript -->
+          <!-- ================================================================== -->
+            <trans-unit id="typoscript.relatedDefault">
+                <source>From the project</source>
+                <target>Aktuelles aus dem Projekt</target>
+            </trans-unit>
+            <trans-unit id="typoscript.relatedPublication">
+                <source>Publications</source>
+                <target>Publikationen</target>
+            </trans-unit>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

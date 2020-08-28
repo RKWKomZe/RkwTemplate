@@ -24,6 +24,9 @@ plugin.tx_rkwrelated_similarcontent {
 
     settings {
 
+        # cat=plugin.tx_rkwrelated_morecontent//f; type=integer; label=Version to use
+        version = 1
+
         # cat=plugin.tx_rkwrelated_morecontent//f; type=integer; label=PID to start search from
         startingPid =
 

@@ -1,107 +1,141 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
-<f:spaceless>
-	<f:comment>
-		<!-- =============================================================
-			special rendering for plugins that are not in colPos 0
-		============================================================= -->
-	</f:comment>
-	<f:if condition="({data.CType} == 'list') && ({data.colPos} > 0)">
-		<f:then>
+	<f:spaceless>
 
-			<f:switch expression="{data.colPos}">
-				<f:case value="100">
-					<f:render partial="Wraps/PluginRelated" section="Header" arguments="{_all}" />
-				</f:case>
+		<f:if condition="({data.CType} == 'list')">
+			<!-- =============================================================
+				rendering for plugins
+			============================================================= -->
+			<f:then>
 
-				<f:case value="110">
-					<f:render partial="Wraps/PluginAside" section="Header" arguments="{_all}" />
-				</f:case>
-				<f:case value="600">
-					<f:render partial="Wraps/PluginNone" section="Header" arguments="{_all}" />
-				</f:case>
-				<f:defaultCase>
-					<f:render partial="Wraps/PluginDefault" section="Header" arguments="{_all}" />
-				</f:defaultCase>
-			</f:switch>
-
-			<f:render section="Main"/>
-
-			<f:switch expression="{data.colPos}">
-				<f:case value="100">
-					<f:render partial="Wraps/PluginRelated" section="Footer" arguments="{_all}" />
-				</f:case>
-
-				<f:case value="110">
-					<f:render partial="Wraps/PluginAside" section="Footer" arguments="{_all}" />
-				</f:case>
-				<f:case value="600">
-					<f:render partial="Wraps/PluginNone" section="Footer" arguments="{_all}" />
-				</f:case>
-				<f:defaultCase>
-					<f:render partial="Wraps/PluginDefault" section="Footer" arguments="{_all}" />
-				</f:defaultCase>
-			</f:switch>
-
-		</f:then>
-		<f:else>
-
-			<f:comment>
-				<!-- =============================================================
-                    special rendering for plugins
-      				OLD: ({data.CType} == 'list') && ({data.colPos} == -1) && ({data.tx_gridelements_columns} == 70)
-                ============================================================= -->
-			</f:comment>
-			<f:if condition="({data.CType} == 'list')">
-				<f:then>
-					<f:if condition="({data.colPos} == -1) && ({data.tx_gridelements_columns} == 70)">
-						<f:else>
-							<f:render section="Header" optional="true">
-								<f:render partial="Header/All" arguments="{_all}" />
-							</f:render>
-						</f:else>
-					</f:if>
-					<f:render section="Main"/>
-				</f:then>
-
-
-				<f:comment>
+				<f:if condition="{data.colPos} > 0">
 					<!-- =============================================================
-                        everything else
-                    ============================================================= -->
-				</f:comment>
-				<f:else>
+						rendering for plugins that are greater than colPos 0
+					============================================================= -->
+					<f:then>
 
-					<f:if condition="{data.frame_class} != none">
-						<f:then>
+						<f:switch expression="{data.colPos}">
+							<!-- Home: Main -->
+							<f:case value="100">
+								<f:render partial="PluginWraps/Home/Main" section="Header" arguments="{_all}" />
+							</f:case>
 
-							<div id="c{data.uid}" class="frame frame-{data.frame_class} frame-type-{data.CType} frame-layout-{data.layout}{f:if(condition: data.space_before_class, then: ' frame-space-before-{data.space_before_class}')}{f:if(condition: data.space_after_class, then: ' frame-space-after-{data.space_after_class}')}">
-								<f:if condition="{data._LOCALIZED_UID}">
-									<a id="c{data._LOCALIZED_UID}"></a>
-								</f:if>
-								<f:render section="Before" optional="true">
-									<f:render partial="DropIn/Before/All" arguments="{_all}" />
-								</f:render>
+							<!-- Home: Related contents
+							<f:case value="110">
+								<f:render partial="PluginWraps/Home/Aside" section="Header" arguments="{_all}" />
+							</f:case>-->
+
+							<!-- Plugin only -->
+							<f:case value="600">
+								<f:render partial="PluginWraps/PluginOnly/Main" section="Header" arguments="{_all}" />
+							</f:case>
+
+							<f:defaultCase>
+								<f:render partial="PluginWraps/Topic/Main" section="Header" arguments="{_all}" />
+							</f:defaultCase>
+						</f:switch>
+
+						<f:render section="Main"/>
+
+						<f:switch expression="{data.colPos}">
+
+							<!-- Home: Main -->
+							<f:case value="100">
+								<f:render partial="PluginWraps/Home/Main" section="Footer" arguments="{_all}" />
+							</f:case>
+
+							<!-- Home: Related contents
+							<f:case value="110">
+								<f:render partial="PluginWraps/Home/Aside" section="Footer" arguments="{_all}" />
+							</f:case> -->
+
+							<!-- Plugin only -->
+							<f:case value="600">
+								<f:render partial="PluginWraps/PluginOnly/Main" section="Footer" arguments="{_all}" />
+							</f:case>
+
+							<f:defaultCase>
+								<f:render partial="PluginWraps/Topic/Main" section="Footer" arguments="{_all}" />
+							</f:defaultCase>
+						</f:switch>
+
+					</f:then>
+					<f:else>
+
+						<f:if condition="{data.colPos} < 0">
+							<!-- =============================================================
+								rendering for plugins that are lower than colPos 0 (gridelements)
+							============================================================= -->
+							<f:then>
+								<f:switch expression="{data.tx_gridelements_columns}">
+
+									<!-- Rendering for Call2Action -->
+									<f:case value="70">
+										<!-- To be defined -->
+									</f:case>
+
+									<!-- Rendering for Aside -->
+									<f:case value="80">
+										<f:render partial="PluginWraps/Topic/Aside" section="Header" arguments="{_all}" />
+									</f:case>
+
+									<!-- everything else-->
+									<f:defaultCase>
+										<f:render section="Header" optional="true">
+											<f:render partial="Header/All" arguments="{_all}" />
+										</f:render>
+									</f:defaultCase>
+								</f:switch>
+
+								<f:render section="Main"/>
+
+								<f:switch expression="{data.tx_gridelements_columns}">
+
+									<!-- Rendering for Call2Action -->
+									<f:case value="70">
+										<!-- To be defined -->
+									</f:case>
+
+									<!-- Rendering for Aside -->
+									<f:case value="80">
+										<f:render partial="PluginWraps/Topic/Aside" section="Footer" arguments="{_all}" />
+									</f:case>
+
+									<!-- everything else-->
+									<f:defaultCase>
+										<f:render section="Header" optional="true">
+											<f:render partial="Header/All" arguments="{_all}" />
+										</f:render>
+									</f:defaultCase>
+								</f:switch>
+							</f:then>
+
+							<!-- =============================================================
+								rendering for plugins are equal colPos 0 (normal content)
+							============================================================= -->
+							<f:else>
 								<f:render section="Header" optional="true">
 									<f:render partial="Header/All" arguments="{_all}" />
 								</f:render>
-								<f:render section="Main" optional="true" />
-								<f:render section="Footer" optional="true">
-									<f:render partial="Footer/All" arguments="{_all}" />
-								</f:render>
-								<f:render section="After" optional="true">
-									<f:render partial="DropIn/After/All" arguments="{_all}" />
-								</f:render>
-							</div>
+							</f:else>
+						</f:if>
 
-						</f:then>
-						<f:else>
+					</f:else>
 
-							<a id="c{data.uid}"></a>
+				</f:if>
+
+			</f:then>
+			<f:else>
+
+				<!-- =============================================================
+					everything else
+				============================================================= -->
+
+				<f:if condition="{data.frame_class} != none">
+					<f:then>
+
+						<div id="c{data.uid}" class="frame frame-{data.frame_class} frame-type-{data.CType} frame-layout-{data.layout}{f:if(condition: data.space_before_class, then: ' frame-space-before-{data.space_before_class}')}{f:if(condition: data.space_after_class, then: ' frame-space-after-{data.space_after_class}')}">
 							<f:if condition="{data._LOCALIZED_UID}">
 								<a id="c{data._LOCALIZED_UID}"></a>
-							</f:if>
-							<f:if condition="{data.space_before_class}">
-								<div class="frame-space-before-{data.space_before_class}"></div>
 							</f:if>
 							<f:render section="Before" optional="true">
 								<f:render partial="DropIn/Before/All" arguments="{_all}" />
@@ -116,19 +150,39 @@
 							<f:render section="After" optional="true">
 								<f:render partial="DropIn/After/All" arguments="{_all}" />
 							</f:render>
-							<f:if condition="{data.space_after_class}">
-								<div class="frame-space-after-{data.space_after_class}"></div>
-							</f:if>
+						</div>
 
-						</f:else>
-					</f:if>
+					</f:then>
+					<f:else>
 
-				</f:else>
-			</f:if>
+						<a id="c{data.uid}"></a>
+						<f:if condition="{data._LOCALIZED_UID}">
+							<a id="c{data._LOCALIZED_UID}"></a>
+						</f:if>
+						<f:if condition="{data.space_before_class}">
+							<div class="frame-space-before-{data.space_before_class}"></div>
+						</f:if>
+						<f:render section="Before" optional="true">
+							<f:render partial="DropIn/Before/All" arguments="{_all}" />
+						</f:render>
+						<f:render section="Header" optional="true">
+							<f:render partial="Header/All" arguments="{_all}" />
+						</f:render>
+						<f:render section="Main" optional="true" />
+						<f:render section="Footer" optional="true">
+							<f:render partial="Footer/All" arguments="{_all}" />
+						</f:render>
+						<f:render section="After" optional="true">
+							<f:render partial="DropIn/After/All" arguments="{_all}" />
+						</f:render>
+						<f:if condition="{data.space_after_class}">
+							<div class="frame-space-after-{data.space_after_class}"></div>
+						</f:if>
 
-		</f:else>
+					</f:else>
+				</f:if>
+			</f:else>
+		</f:if>
 
-	</f:if>
-
-</f:spaceless>
+	</f:spaceless>
 </html>

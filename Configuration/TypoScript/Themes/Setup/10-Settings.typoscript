@@ -31,6 +31,7 @@ lib.txRkwTemplate.themeSettings {
 // add settings to relevant grid elements
 tt_content.gridelements_pi1.20.10.setup {
     contentContainerTwoCols.cObject.settings < lib.txRkwTemplate.themeSettings
+    contentContainerTwoColsReduced.cObject.settings < lib.txRkwTemplate.themeSettings
     contentContainerOneCol.cObject.settings < lib.txRkwTemplate.themeSettings
 }
 
