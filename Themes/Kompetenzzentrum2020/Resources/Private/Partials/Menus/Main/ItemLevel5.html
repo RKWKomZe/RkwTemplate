@@ -3,10 +3,47 @@
 
     <f:section name="Mobile">
 
-        <li class="nav-mobile__item nav-mobile__item--fifth">
-            <a href="{item.link}" target="{item.target}">
+        <li class="nav-mobile__item">
+            <a href="{item.link}" target="{item.target}" {f:if(condition:item.children, then:' aria-haspopup="true"')}>
                 {item.title}
             </a>
+
+
+            <f:if condition="{item.children}">
+
+                <!-- Arrow -->
+                <span class="nav-mobile__item-icon-wrapper">
+                    <button class="nav-mobile__item-icon">
+                        <svg class="icon icon--12">
+                            <use xlink:href="#ic-arrow-primary" />
+                        </svg>
+                    </button>
+                </span>
+
+                <div class="flex-basis-12 inner-nav-mob">
+                    <ul>
+
+                        <!-- Backlink -->
+                        <li class="nav-mobile__item nav-mobile__back-link">
+                            <span class="nav-mobile__item-icon-wrapper">
+                                <button class="nav-mobile__item-icon" aria-haspopup="true">
+                                    <svg class="icon icon--12">
+                                        <use xlink:href="#ic-arrow-primary" />
+                                    </svg>
+                                </button>
+                            </span>
+                            <strong>
+                                {item.title}
+                            </strong>
+                        </li>
+
+                        <!-- Sub-Items -->
+                        <f:for each="{item.children}" as="item" iteration="iterator">
+                            <f:render partial="ItemLevel3" section="Mobile" arguments="{item: item, counter: iterator.cycle}"/>
+                        </f:for>
+                    </ul>
+                </div>
+            </f:if>
         </li>
 
     </f:section>

@@ -33,20 +33,12 @@
 				<target>Ein Slider-Element für die Verwendung im Slider-Container.</target>
 			</trans-unit>
 			<trans-unit id="contentElement.slider.type.I.default">
-				<source>Black font, no gradient</source>
-				<target>Schwarze Schrift, kein Verlauf</target>
-			</trans-unit>
-			<trans-unit id="contentElement.slider.type.I.1">
-				<source>Black font, white gradient</source>
-				<target>Schwarze Schrift, weißer Verlauf</target>
+				<source>Black font</source>
+				<target>Schwarze Schrift</target>
 			</trans-unit>
 			<trans-unit id="contentElement.slider.type.I.2">
-				<source>White font, no gradient</source>
-				<target>Weiße Schrift, kein Verlauf</target>
-			</trans-unit>
-			<trans-unit id="contentElement.slider.type.I.3">
-				<source>White font, black gradient</source>
-                <target>Weiße Schrift, schwarzer Verlauf</target>
+				<source>White font</source>
+				<target>Weiße Schrift</target>
 			</trans-unit>
 			<trans-unit id="contentElement.slider.rowDescription">
 				<source>Label for Button</source>
@@ -206,7 +198,7 @@
             </trans-unit>
             <trans-unit id="contentElement.contentContainerTwoCols.description">
                 <source>Add a Content-Container with two Cols.</source>
-                <target>Fügt einen Inhalts-Container mit einem zweispaltigen Layout ein (Inhalts- und Randspalte).</target>
+                <target>Fügt einen Inhalts-Container mit einem zweispaltigen Layout ein (Inhalts- und Randspalte). Zusätzlich steht ein Call-To-Action zur Verfügung und es werden weiterführende Inhalte angezeigt.</target>
             </trans-unit>
             <trans-unit id="contentElement.contentContainerTwoCols.content">
                 <source>Content</source>
@@ -216,10 +208,34 @@
                 <source>Aside</source>
                 <target>Marginalspalte</target>
             </trans-unit>
+            <trans-unit id="contentElement.contentContainerTwoCols.asideFurther">
+                <source>Aside - Further Contents</source>
+                <target>Marginalspalte - Weitere Inhalte</target>
+            </trans-unit>
             <trans-unit id="contentElement.contentContainerTwoCols.callToAction">
                 <source>Call To Action</source>
                 <target>Call To Action</target>
             </trans-unit>
+
+
+            <!-- ContentContainerTwoColsReduced -->
+            <trans-unit id="contentElement.contentContainerTwoColsReduced.title">
+                <source>Content-Container with two Cols, reduced</source>
+                <target>Inhalts-Container mit zwei Spalten, reduziert</target>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerTwoColsReduced.description">
+                <source>Add a Content-Container with two Cols (Reduced Design) </source>
+                <target>Fügt einen Inhalts-Container mit einem zweispaltigen Layout ein (Inhalts- und Randspalte). Keine weiteren Elemente werden ausgegeben.</target>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerTwoColsReduced.content">
+                <source>Content</source>
+                <target>Inhalt</target>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerTwoColsReduced.aside">
+                <source>Aside</source>
+                <target>Marginalspalte</target>
+            </trans-unit>
+
             
             
             <!-- ContentContainerOneCol -->

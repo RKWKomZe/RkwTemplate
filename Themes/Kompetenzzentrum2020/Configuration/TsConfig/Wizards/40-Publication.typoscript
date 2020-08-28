@@ -18,7 +18,7 @@
     mod.wizards.newContentElement.wizardItems.common.show := addToList(rkwtemplate_mission, rkwtemplate_multimedia)
 
     // remove grid elements by their ID (aka name)
-    tx_gridelements.excludeLayoutIds = sliderContainer, topicContainer, logoContainer, promoterContainer, contentContainerTwoCols
+    tx_gridelements.excludeLayoutIds = sliderContainer, topicContainer, logoContainer, promoterContainer, contentContainerTwoCols, contentContainerTwoColsReduced
 
 [end]
 
@@ -34,7 +34,7 @@
     mod.wizards.newContentElement.wizardItems.common.show =
 
     // remove grid elements by their ID (aka name)
-    tx_gridelements.excludeLayoutIds = sliderContainer, topicContainer, logoContainer, promoterContainer, contentContainerTwoCols, contentContainerOneCol
+    tx_gridelements.excludeLayoutIds = sliderContainer, topicContainer, logoContainer, promoterContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerOneCol
 
 [end]
 
@@ -49,6 +49,6 @@
     mod.wizards.newContentElement.wizardItems.common.show =
 
     // remove grid elements by their ID (aka name)
-    tx_gridelements.excludeLayoutIds = sliderContainer, topicContainer, logoContainer, promoterContainer, contentContainerTwoCols, contentContainerOneCol
+    tx_gridelements.excludeLayoutIds = sliderContainer, topicContainer, logoContainer, promoterContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerOneCol
 
 [end]

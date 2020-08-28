@@ -338,12 +338,11 @@ $(function () {
   // Additional options, extending the defaults, can be passed as an object from the initializing call
   var pluginName = "collapsedText",
     defaults = {
-      openButton: "show",
-      closeButton: "hide",
+      toggleBtn: "collapsed-text__btn",
       collapsedContainer: "collapsed-text__container",
-      collapsedText: "collapsed-text",
-      isHidden: "hidden",
-      isNone: "is-none",
+      isHidden: "is-hidden",
+      isOpen: "is-open",
+      initialHeight: "100"
     };
 
   var plugin;
@@ -367,48 +366,69 @@ $(function () {
       plugin = this;
 
       // Setup elements and global variables
-      plugin.settings.$el = $(this.element);
-      plugin.settings.$openBtn = $("." + plugin.settings.openButton);
-      plugin.settings.$closeBtn = $("." + plugin.settings.closeButton);
-      plugin.settings.$container = $("." + plugin.settings.collapsedContainer);
-      plugin.settings.$text = $("." + plugin.settings.collapsedText);
-      plugin.settings.$hidden = $("." + plugin.settings.isHidden);
+      this.settings.$el = $(this.element);
+      this.settings.$toggleBtn = $(
+        this.settings.$el.find("." + this.settings.toggleBtn)
+      );
+      this.settings.$container = $(
+        this.settings.$el.find("." + this.settings.collapsedContainer)
+      );
+      this.settings.$hidden = $("." + this.settings.isHidden);
+      this.settings.openText = this.settings.$toggleBtn.data("opentext");
+      this.settings.closeText = this.settings.$toggleBtn.data("closetext");
 
-      plugin.bindEvents();
+      // Set initial (collapsed) container height
+      this.settings.$container.css(
+        "height",
+        this.settings.initialHeight + "px"
+      );
+
+      this.bindEvents();
     },
 
     // Bind all event listeners for this plugin
     bindEvents: function () {
-      plugin.settings.$openBtn.on("click", plugin.open);
-      plugin.settings.$openBtn.on("click", plugin.getTextHeight);
-      plugin.settings.$closeBtn.on("click", plugin.close);
+      this.settings.$toggleBtn.on("click", plugin.toggle.bind(this));
     },
 
     //Adjust when a content is toggled
-    open: function (e) {
-      e.preventDefault();
-      plugin.settings.$container.height(plugin.getTextHeight + "2em");
-      plugin.settings.$container.removeClass(plugin.settings.isHidden);
-      plugin.settings.$openBtn.addClass(plugin.settings.isNone);
-      plugin.settings.$closeBtn.removeClass(plugin.settings.isNone);
-      console.log(plugin.settings.$container.height());
-    },
-
-    close: function (e) {
-      e.preventDefault();
-      plugin.settings.$container.addClass(plugin.settings.isHidden);
-      plugin.settings.$openBtn.removeClass(plugin.settings.isNone);
-      plugin.settings.$closeBtn.addClass(plugin.settings.isNone);
-      plugin.settings.$container.height(plugin.getTextHeight + "2em");
-    },
-
-    getTextHeight: function () {
+    open: function () {
       var textHeight = 0;
+      this.settings.$container.children().each(function () {
+        textHeight += $(this).outerHeight(true); // true = include margins
+      });
 
-      textHeight = plugin.settings.$text.height();
-      console.log(textHeight);
-      return textHeight;
+      this.settings.$container.animate(
+        { height: textHeight },
+        500,
+        function () {
+          $(this).css("height", "auto");
+        }
+      );
+      this.settings.$container.removeClass(this.settings.isHidden);
+      this.settings.$toggleBtn.addClass(this.settings.isOpen);
+      this.settings.$toggleBtn.html(this.settings.closeText);
     },
+
+    close: function () {
+      this.settings.$container.animate(
+        { height: this.settings.initialHeight },
+        500
+      );
+      this.settings.$container.addClass(this.settings.isHidden);
+      this.settings.$toggleBtn.removeClass(this.settings.isOpen);
+      this.settings.$toggleBtn.html(this.settings.openText);
+    },
+
+    toggle: function (e) {
+      e.preventDefault;
+
+      if (this.settings.$toggleBtn.hasClass("is-open")) {
+        this.close();
+      } else {
+        this.open();
+      }
+    }
   });
 
   // A really lightweight plugin wrapper around the constructor,
@@ -493,8 +513,8 @@ $(function () {
       plugin.settings.$body.removeClass(plugin.settings.noScroll);
       plugin.settings.$el.addClass(plugin.settings.contactButton);
 
-      // Remove ESC event listener again
-      $(document).unbind("keyup");
+      //Remove Keyboard listener
+      $(window).unbind("keydown");
     },
 
     slideIn: function () {
@@ -505,12 +525,43 @@ $(function () {
         .addClass(plugin.settings.slideInAnimation)
         .removeClass(plugin.settings.slideOutAnimation);
 
-      // Add ESC event listener
-      $(document).keyup(function (e) {
-        if (e.key === "Escape") {
-          plugin.slideOut(e);
+      //Add Keyboard listener
+      $(window).on("keydown", plugin.keyboardInputManagement);
+    },
+
+    keyboardInputManagement: function (e) {
+      console.log("Listened");
+      e.preventDefault();
+      if (e.key == "Tab" && e.shiftKey) {
+        var tabbableEls = plugin.settings.$sbar.find(":tabbable");
+        if (tabbableEls.length > 0) {
+          var indexActiveEl = plugin.settings.$sbar
+            .find(":tabbable")
+            .index(document.activeElement);
+          if (indexActiveEl <= 0) {
+            tabbableEls.last().focus();
+          } else if (indexActiveEl > 0) {
+            tabbableEls[indexActiveEl - 1].focus();
+          }
         }
-      });
+      } else if (e.key == "Tab") {
+        var tabbableEls = plugin.settings.$sbar.find(":tabbable");
+        if (tabbableEls.length > 0) {
+          var indexActiveEl = plugin.settings.$sbar
+            .find(":tabbable")
+            .index(document.activeElement);
+          if (indexActiveEl == -1 || indexActiveEl >= tabbableEls.length - 1) {
+            tabbableEls.first().focus();
+          } else if (
+            indexActiveEl >= 0 &&
+            indexActiveEl < tabbableEls.length - 1
+          ) {
+            tabbableEls[indexActiveEl + 1].focus();
+          }
+        }
+      } else if (e.key == "Escape") {
+        plugin.slideOut();
+      }
     },
   });
 
@@ -900,6 +951,8 @@ $(function () {
       navMobileItemClass: ".nav-mobile__item-icon-wrapper",
       navMobileHomeItemsClass: ".nav-mobile__item--home",
       navMobileListClass: ".inner-nav-mob",
+      navMobileBottomClass: ".nav-mobile__bottom",
+      primaryNavClass: ".nav-mobile__primary",
       body: "body",
       //CSS classes to add and remove
       isOpen: "is-open",
@@ -910,6 +963,7 @@ $(function () {
       isActive: "is-active-list",
       backLink: "nav-mobile__back-link",
       iconClass: "icon",
+      isHidden: "is-hidden",
     };
 
   var plugin;
@@ -961,38 +1015,79 @@ $(function () {
         plugin.settings.navMobileHomeItemsClass
       );
 
-      plugin.settings.$lastNavListStorage = undefined;
+      plugin.settings.$mobNavBottom = plugin.settings.$mobNav.find(
+        plugin.settings.navMobileBottomClass
+      );
+
+      plugin.settings.$primaryNav = plugin.settings.$mobNav.find(
+        plugin.settings.primaryNavClass
+      );
 
       plugin.bindEvents();
     },
 
     // Bind all event listeners for this plugin
     bindEvents: function () {
-      plugin.settings.$hamburgerNavButtons.on("click", plugin.mobNavTriggered);
-      plugin.settings.$navMobItems.on("click", plugin.navigationItemTriggered);
+      plugin.settings.$hamburgerNavButtons.on("click", plugin.mobNavTriggered); //When Menu is opened
+      plugin.settings.$navMobItems.on("click", plugin.navigationItemTriggered); //When Menu Item is triggered
       $(window).on("resize", plugin.showWindowSize);
       plugin.settings.$homeItems.on("click", plugin.navigationItemTriggered);
+    },
+
+    adjustElementPositions: function () {
+      //Get CSS values
+      var activeListDiv = plugin.settings.$navLists.filter(
+        "." + plugin.settings.isActive
+      );
+      var activeListUl = activeListDiv.children().filter("ul").first();
+
+      //Set top value
+      plugin.settings.$mobNavBottom.css(
+        "top",
+        parseInt(activeListUl.css("height")) +
+          parseInt(activeListDiv.css("top"))
+      );
+
+      //Adjust Menu lists
+      var a = plugin.settings.$mobNav.css("padding-top");
+      var b = plugin.settings.$homeItems.first().css("height");
+      plugin.settings.$navLists.css("top", parseInt(a) + parseInt(b));
     },
 
     showWindowSize: function (e) {
       // e.preventDefault();
       var windowWidth = $(window).width();
 
-      if (windowWidth > 1024) {
+      if (windowWidth > 1280) {
         plugin.settings.$mobNav
           .removeClass(plugin.settings.isOpen)
           .addClass(plugin.settings.isClosed);
         plugin.settings.$iconOpen.removeClass(plugin.settings.isNone);
         plugin.settings.$iconClose.addClass(plugin.settings.isNone);
       }
+
+      plugin.adjustElementPositions();
     },
 
     showMobNavList: function (list) {
+      if (list.hasClass(plugin.settings.primaryNavClass.substring(1))) {
+        plugin.settings.$homeItems
+          .find("." + plugin.settings.iconClass)
+          .addClass(plugin.settings.isHidden);
+      } else {
+        plugin.settings.$homeItems
+          .find("." + plugin.settings.iconClass)
+          .removeClass(plugin.settings.isHidden);
+      }
+
       //Hide All
       plugin.settings.$navLists.removeClass(plugin.settings.isActive);
 
       //Show List
       list.addClass(plugin.settings.isActive);
+
+      //Position Nav Mobile Bottom Item
+      plugin.adjustElementPositions();
     },
 
     navigationItemTriggered: function (e) {
@@ -1009,13 +1104,34 @@ $(function () {
           .filter(plugin.settings.navMobileItemClass)
           .first();
       }
-      e.preventDefault();
+
       //Get All new list elements
       var navList = $(e.target)
         .nextAll()
         .filter(plugin.settings.navMobileListClass)
         .first();
 
+      //When item clicked is homeItem
+      if (
+        navList.length <= 0 &&
+        $(e.target)
+          .parent()
+          .hasClass(plugin.settings.navMobileHomeItemsClass.substring(1))
+      ) {
+        var activeListDiv = plugin.settings.$navLists.filter(
+          "." + plugin.settings.isActive
+        );
+        //check if the active element list is on primary lvl
+        if (
+          !activeListDiv.hasClass(plugin.settings.primaryNavClass.substring(1))
+        ) {
+          e.preventDefault();
+          plugin.showMobNavList(plugin.settings.$primaryNav);
+        }
+        return;
+      }
+
+      e.preventDefault();
       //When item clicked is back_link
       if (
         navList.length <= 0 &&
@@ -1030,27 +1146,11 @@ $(function () {
         }
       }
 
-      //When item clicked is homeItem
-      if (
-        navList.length <= 0 &&
-        $(e.target)
-          .parent()
-          .hasClass(plugin.settings.navMobileHomeItemsClass.substring(1))
-      ) {
-        var parentMenus = $(e.target)
-          .parents()
-          .filter(plugin.settings.navMobileListClass);
-        plugin.settings.$lastNavListStorage = $(parentMenus[0]);
-        plugin.showMobNavList($(parentMenus[parentMenus.length - 1]));
-        return;
-      }
-
       //When common navigation item is clicked
       if (navList.length > 0) plugin.showMobNavList(navList);
     },
 
     mobNavTriggered: function (e) {
-      //e.preventDefault();
       var isclosed = plugin.settings.$mobNav.hasClass(plugin.settings.isOpen);
       var windowWidth = $(window).width();
 
@@ -1070,6 +1170,7 @@ $(function () {
         plugin.settings.$iconClose.addClass(plugin.settings.isNone);
         plugin.settings.$body.removeClass(plugin.settings.noScroll);
       }
+      plugin.adjustElementPositions();
     },
   });
 
@@ -1148,20 +1249,23 @@ $(function () {
     },
 
     open: function (e) {
-      $(this)
-        .parent()
-        .next(plugin.settings.$mdl)
-        .addClass(plugin.settings.isActive);
+      // $(this)
+      //   .parent()
+      //   .next(plugin.settings.$mdl)
+      //   .addClass(plugin.settings.isActive);
 
-      $(this)
-        .parent()
-        .next()
+      var dataMdl = $(this).attr("data-modal");
+
+      $("#" + dataMdl).addClass(plugin.settings.isActive);
+
+      $("#" + dataMdl)
         .next(plugin.settings.$bgOverlay)
         .addClass(plugin.settings.isActive);
+
       plugin.settings.$body.addClass(plugin.settings.noScroll);
 
-      // Remove ESC event listener again
-      $(document).unbind("keyup");
+      //Add Keyboard listener
+      $(window).on("keydown", plugin.keyboardInputManagement);
     },
 
     close: function () {
@@ -1169,12 +1273,134 @@ $(function () {
       plugin.settings.$body.removeClass(plugin.settings.noScroll);
       plugin.settings.$mdl.removeClass(plugin.settings.isActive);
 
-      // Add ESC event listener
-      $(document).keyup(function (e) {
-        if (e.key === "Escape") {
-          plugin.slideOut(e);
+      //Remove keyboard listener
+      $(window).unbind("keydown");
+    },
+
+    keyboardInputManagement: function (e) {
+      e.preventDefault();
+      if (e.key == "Tab" && e.shiftKey) {
+        var tabbableEls = plugin.settings.$mdl.find(":tabbable");
+        var indexActiveEl = plugin.settings.$mdl
+          .find(":tabbable")
+          .index(document.activeElement);
+        if (indexActiveEl <= 0) {
+          tabbableEls.last().focus();
+        } else if (indexActiveEl > 0) {
+          tabbableEls[indexActiveEl - 1].focus();
         }
+      } else if (e.key == "Tab") {
+        var tabbableEls = plugin.settings.$mdl.find(":tabbable");
+        var indexActiveEl = plugin.settings.$mdl
+          .find(":tabbable")
+          .index(document.activeElement);
+        if (indexActiveEl == -1 || indexActiveEl >= tabbableEls.length - 1) {
+          tabbableEls.first().focus();
+        } else if (
+          indexActiveEl >= 0 &&
+          indexActiveEl < tabbableEls.length - 1
+        ) {
+          tabbableEls[indexActiveEl + 1].focus();
+        }
+      } else if (e.key == "Escape") {
+        plugin.close();
+      }
+    },
+  });
+
+  // A really lightweight plugin wrapper around the constructor,
+  // preventing against multiple instantiations
+  $.fn[pluginName] = function (options) {
+    return this.each(function () {
+      if (!$.data(this, "plugin_" + pluginName)) {
+        $.data(this, "plugin_" + pluginName, new Plugin(this, options));
+      }
+    });
+  };
+})(jQuery, window, document);
+
+/*!
+ *
+ * jQuery Plugin – slider
+ *
+ * Author: helllicht
+ *
+ * Last updated: 25.05.2020
+ *
+ */
+
+(function ($, window, document, undefined) {
+  var pluginName = "sliderPlugin",
+    defaults = {
+      sliderItemClass: ".slider-mod__item",
+      sliderNavClass: ".slider-mod__nav a",
+      //Classes to add and remove
+      activeClass: "is-active",
+    };
+
+  var plugin;
+
+  // The plugin constructor
+  function Plugin(element, options) {
+    this.element = element;
+    // Merge defaults with passed options
+    this.settings = $.extend({}, defaults, options);
+
+    this._defaults = defaults;
+    this._name = pluginName;
+
+    this.init();
+  }
+
+  $.extend(Plugin.prototype, {
+    init: function () {
+      plugin = this;
+
+      // Setup elements and global variables
+      plugin.settings.$el = $(this.element);
+      plugin.settings.$sliderItems = plugin.settings.$el.find(
+        plugin.settings.sliderItemClass
+      );
+
+      plugin.settings.$sliderNav = plugin.settings.$el.find(
+        plugin.settings.sliderNavClass
+      );
+
+      console.log(plugin.settings.$el);
+      console.log(plugin.settings.$sliderItems);
+      console.log(plugin.settings.$sliderNav);
+
+      plugin.adjustHeight();
+      plugin.bindEvents();
+    },
+
+    // Bind all event listeners for this plugin
+    bindEvents: function () {
+      plugin.settings.$sliderNav.on("click", plugin.showImage);
+      $(window).on("resize", plugin.adjustHeight);
+    },
+
+    adjustHeight: function () {
+      var height = plugin.settings.$el
+        .find("." + plugin.settings.activeClass)
+        .css("height");
+      plugin.settings.$el.css("height", height);
+    },
+
+    showImage: function (e) {
+      e.preventDefault();
+
+      plugin.settings.$sliderItems.each(function (index, element) {
+        $(element).removeClass(plugin.settings.activeClass);
       });
+      plugin.settings.$sliderNav.each(function (index, element) {
+        $(element).attr("aria-selected", "false");
+      });
+
+      $(e.target).parent().attr("aria-selected", "true");
+      var target_id = $(e.target).parent().attr("aria-controls");
+      $("#" + target_id).addClass(plugin.settings.activeClass);
+      plugin.adjustHeight();
     },
   });
 
@@ -4664,7 +4890,7 @@ $(function () {
   $(".accordion-controls").accordionPlugin();
 
   //Initalize collapsed Text
-  $(".collapsed-text__container").collapsedText();
+  $(".collapsed-text").collapsedText();
 
   //Initialize mobile Navbar
   $(".nav-mobile-hamburger").mobileNavbar();
@@ -4674,6 +4900,10 @@ $(function () {
 
   //Initialize responsive table
   $(".responsive-table").basictable();
+
+  $(".medium-breakpoint").basictable({
+    breakpoint: 712,
+  });
 
   //Initialize AJAX-API
   if($.fn.ajaxApi) {
@@ -4697,4 +4927,6 @@ $(function () {
     autoplay:true,
     autoplayHoverPause:true
   });
+
+  $(".slider-mod").sliderPlugin();
 });

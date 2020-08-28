@@ -6,11 +6,9 @@
 
     <section class="section content flex-basis-9 full-width-smalldesk no-narrow-padding">
         <f:render partial="ContentContainer/Content" arguments="{_all}"/>
-        <f:render partial="ContentContainer/CallToAction" arguments="{_all}"/>
-        <f:cObject typoscriptObjectPath="lib.txRkwTemplate.recommendation.relatedSimilar" />
     </section>
 
     <aside class="aside-info flex-basis-3 full-width-smalldesk aside-info--padding">
-        <f:render partial="ContentContainer/Aside" section="Full" arguments="{_all}"/>
+        <f:render partial="ContentContainer/Aside" section="Reduced" arguments="{_all}"/>
     </aside>
 </html>

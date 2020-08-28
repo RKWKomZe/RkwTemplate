@@ -32,181 +32,18 @@
                 <!-- content -->
                 <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.main" data="{data}" />
 
-            </div>
-        </main>
-
-
-
-        <f:comment>
-
-                        <h3 >Bleiben Sie auf dem Laufenden</h3>
-                        <p>Mit unseren RKW Alerts bleiben Sie immer auf dem Laufenden. Wir informieren Sie automatisch und kostenlos, sobald es etwas Neues zum Thema "Senior Entrepreneurship" auf unserer Website gibt.  Alles, was Sie dafür brauchen, ist eine E-Mail-Adresse und 10 Sekunden Zeit.</p>
-
-                        <div class="flex-container">
-                            <div class="flex-basis-8 full-width-medium">
-                                <form class="form flex space-between">
-                                    <div class="form__field width50 width100">
-                                        <label for="email">Ihre E-Mail-Adresse</label>
-                                        <input type="text" value="" id="email" aria-required="true"/>
-                                    </div>
-                                    <div class="form__approval">
-                                        <div class="form__field">
-                                            <input type="checkbox" name="checkboxes" id="ckbx6" class="checkbox" />
-                                            <label for="ckbx6" class="checkbox-label">  Ich akzeptiere die <a href="#">Nutzungsbedingungen</a></label>
-                                        </div>
-
-                                        <div class="form__field">
-                                            <input type="checkbox" name="checkboxes" id="ckbx7" class="checkbox" />
-                                            <label for="ckbx7" class="checkbox-label">   Ja, ich stimme zu, dass das RKW meine persönlichen Daten zum oben genannten Zweck, sowie zur Erzeugung eines kostenlosen Nutzerkontos verwendet. Ferner habe ich die erweiterten Hinweise in der <a href="#">Datenschutzerklärung</a> gelesen und bin damit einverstanden. Diese Einwilligung kann jederzeit widerrufen werden.</label>
-                                        </div>
-                                        <div class="form__field flex space-start full-width-narrow">
-                                            <button class="btn btn--primary full-width-narrow">
-                                                Auf dem Laufenden bleiben
-                                            </button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <h3 class="mt-2 content-padding">Mehr zum Thema</h3>
-                    <div class="content-padding my-1">
-                        <div class="tiles flex-container flex-container--margin">
-
-                            <?php
-                                        for ($i=1; $i<4; $i++): ?>
-                            <div class="flex-item flex-basis-4">
-                                <div class="tile">
-                                    <div class="tile__header has-img">
-                                        <div class="tile__img">
-                                            <img src="../assets/build/img/publications/tile-header.jpg" alt="Foto Veröffentlichung" />
-                                        </div>
-                                    </div>
-                                    <div class="tile__content">
-                                        <h3 class="tile__title icon">
-                                                            <span class="tile__title-icon tile__title-icon--margin">
-                                                                <svg class="icon icon--32"><use xlink:href="#ic-document" /></svg>
-                                                            </span>
-                                            <span class="tile__title-text">
-                                                                Junden und Mädchen für die Ausbildung gewinnen
-                                                            </span>
-                                        </h3>
-                                        <div class="tile__text">
-                                            <p>
-                                                In größeren Unternehmen ist betriebliche Suchtprävention ein fest etabliertes Modul des betrieblichen
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="tile__footer tile__contact">
-                                        <div class="tile__contact-text">
-                                            <svg class="icon icon--16"><use xlink:href="#ic-date" /></svg>27.08.18
-                                        </div>
-                                        <div class="tile__footer-author">von Stefanie Berchert</div>
-                                    </div>
-                                    <a class="tile__link-overlay" href="publications_detail.php">Tile Link</a>
-                                </div>
-                            </div>
-                            <?php endfor ?>
-                        </div>
-                    </div>
-                </section>
-
-                <aside class="aside-info flex-basis-3 full-width-smalldesk aside-info--padding">
-                    <div class="asideinner">
-                        <h4 class="asideinner__title content-padding">Ansprechpartner</h4>
-                        <div class="flex-item flex-basis-3 contact-tile content-padding">
-                            <div class="tile">
-                                <div class="tile__header">
-                                    <div class="tile__img">
-                                        <img src="../assets/build/img/contact/photo_contact-1.jpg" alt="Kontakt Dr. Mandy Pastohr" />
-                                    </div>
-                                </div>
-                                <div class="tile__content">
-                                    <h3 class="tile__title icon">
-                                        <span class="tile__title-icon">
-                                            <svg class="icon icon--32"><use xlink:href="#ic-contacts" /></svg>
-                                        </span>
-                                        <span>
-                                            <span class="tile__title-text">Dr. Mandy Pastohr</span>
-                                            Geschäftsführung / Fachbereichsleitung
-                                        </span>
-
-                                    </h3>
-
-                                    <div class="tile__contact my-1">
-                                        <div class="tile__contact-link">
-                                            <svg class="icon icon--16">
-                                                <use xlink:href="#ic-mail" />
-                                            </svg>
-                                            <a href="#">E-Mail senden</a>
-
-                                        </div>
-                                        <div class="tile__contact-text">
-                                            <svg class="icon icon--16">
-                                                <use xlink:href="#ic-phone" />
-                                            </svg>
-                                            0711 22998-0
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <a class="tile__link-overlay" href="#">Tile Link</a>
-                            </div>
-                        </div>
-
-                        <h4 class="mt-1 asideinner__title content-padding">Weitere Infos</h4>
-                        <div class="contentbox no-border-radius-mobile">
-                            <h5>Publikationen</h5>
-                            <ul class="iconlist">
-                                <?php for ($i=1; $i<2; $i++): ?>
-                                <li class="iconlist__item public"><a href="#">Mitarbeiterführung: „Eine Mischung aus Beobachtung und Bauchgefühl“</a></li>
-                                <?php endfor ?>
-
-                                <li class="iconlist__item public"><a href="#">Mit vielfaltsbewusster Strategie den Kundenkreis erweitern</a></li>
-                                <li class="iconlist__item public"><a href="#">Gestaltungswissen macht Prävention erst möglich</a></li>
-                                <li class="iconlist__item more"><a href="#">Alle anzeigen</a></li>
-                            </ul>
-
-                            <h5>Blog-Beiträge</h5>
-                            <ul class="iconlist">
-                                <li class="iconlist__item book"><a href="#">Nutzerperspektive als wichtiger Erfolgsfaktor</a></li>
-                                <li class="iconlist__item book"><a href="#">Unternehmerisches Handeln in Organisationen</a></li>
-                                <li class="iconlist__item book"><a href="#">Unternehmerisches Denken & Entrepreneurship live</a></li>
-                                <li class="iconlist__item more"><a href="#">Alle anzeigen</a></li>
-                            </ul>
-
-                            <h5>Leitfäden</h5>
-                            <ul class="iconlist">
-                                <li class="iconlist__item book"><a href="#">INQA-Check "Vielfaltsbewusster Betrieb"</a></li>
-                                <li class="iconlist__item book"><a href="#">Strategische Personalplanung mit Betriebsratsbeteiligung</a></li>
-                                <li class="iconlist__item book"><a href="#">Azubimarketing für Unternehmen der Bauwirtschaft</a></li>
-                                <li class="iconlist__item more"><a href="#">Alle anzeigen</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </aside>
-
-                <!-- content -->
-                <f:if condition="{content}">
-                    <div class="page-area-grid content-page__content">
-                    </div>
-                </f:if>
-
                 <!-- box party - but not for MeinRKW ! -->
                 <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.utility.pageLayoutType')} != 12">
-                    <div class="sections">
 
-                        <!-- alerts -->
-                        <f:render partial="AlertsBox" arguments="{_all}"/>
+                    <!-- alerts -->
+                    <f:comment><f:render partial="AlertsBox" arguments="{_all}"/></f:comment>
 
-                        <!-- boxes -->
-                        <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.boxesTopic" data="{data}" />
-                        <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.boxesTopicInherit" data="{data}" />
-                    </div>
+                    <!-- boxes -->
+                    <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.boxesTopic" data="{data}" />
+                    <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.boxesTopicInherit" data="{data}" />
                 </f:if>
-</f:comment>
+            </div>
+        </main>
 
     </f:section>
 

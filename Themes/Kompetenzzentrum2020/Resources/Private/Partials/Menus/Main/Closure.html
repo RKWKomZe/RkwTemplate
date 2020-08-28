@@ -2,25 +2,23 @@
 
     <f:section name="Default">
 
-        <span class="nav__item-buttons flex">
-            <li class="nav__item">
-                <a href="{f:uri.page(pageUid:'{contactPid}')}" class="btn btn--secondary btn--nav" >
-                    <f:translate key="{settings.themeLanguageFile}:partials.menus.main.buttons.contact" />
-                </a>
-            </li>
-            <li class="nav__item">
-                <a href="{f:uri.page(pageUid:'{loginPid}')}" class="btn btn--tertiary btn--nav" id="menu-mein-rkw">
-                    <f:translate key="{settings.themeLanguageFile}:partials.menus.main.buttons.login" />
-                </a>
-            </li>
-            <!--
-            <li class="nav__item nav__item--search">
-                <a href="search.php" tabindex="9" aria-haspopup="menu" class="nav__item-search">
-                    <svg class="icon icon--24"><use xlink:href="#ic-search" /></svg>
-                </a>
-            </li>
-            -->
-        </span>
+        <li class="nav__item">
+            <a href="{f:uri.page(pageUid:'{contactPid}')}" class="btn btn--secondary btn--nav" >
+                <f:translate key="{settings.themeLanguageFile}:partials.menus.main.buttons.contact" />
+            </a>
+        </li>
+        <li class="nav__item">
+            <a href="{f:uri.page(pageUid:'{loginPid}')}" class="btn btn--tertiary btn--nav" id="menu-mein-rkw">
+                <f:translate key="{settings.themeLanguageFile}:partials.menus.main.buttons.login" />
+            </a>
+        </li>
+        <!--
+        <li class="nav__item nav__item--search">
+            <a href="search.php" class="nav__item-search" aria-label="Suche">
+                <svg class="icon icon--24">
+                    <use xlink:href="#ic-search" /></svg>
+            </a>
+        </li>-->
 
     </f:section>
 
@@ -28,6 +26,7 @@
 
 
     <f:section name="Mobile">
+
         <div class="nav-mobile__bottom flex">
             <ul class="nav-mobile__bottom-btnlinks">
                 <li class="nav-mobile__item nav-mobile__item--bottom">
