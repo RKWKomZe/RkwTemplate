@@ -13,10 +13,10 @@
 
     <f:section name="Content">
 
-        <main class="main flex-container space-between no-narrow-padding">
-            <section class="section content flex-item flex-basis-9 full-width-smalldesk no-narrow-padding">
+        <main class="main flex-container space-between no-padding-narrow">
+            <section class="section content flex-item flex-basis-9 full-width-smalldesk no-padding-narrow">
 
-                <div class="siteheader siteheader-extended">
+                <div class="siteheader siteheader--extended siteheader--flexible">
 
                     <!-- header -->
                     <f:cObject typoscriptObjectPath="lib.txRkwTemplate.event.title" data="{data}" />
@@ -36,7 +36,7 @@
                 <!-- breadcrumb -->
                 <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.breadcrumb" data="{data}" />
 
-                <div class="contentbox contentbox--text contentbox--no-border-radius has-initial no-border-radius-mobile">
+                <div class="contentbox contentbox--text contentbox--no-border-radius has-initial no-border-radius-smalldesk">
 
                     <!-- content -->
                     <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.main" data="{data}" />

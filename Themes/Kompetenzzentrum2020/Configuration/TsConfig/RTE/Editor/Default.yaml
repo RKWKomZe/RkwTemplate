@@ -4,7 +4,8 @@
 
 # Load default processing options
 imports:
-  - { resource: 'EXT:rkw_template/Themes/_Core/Configuration/TsConfig/RTE/Editor/Default.yaml' }
+  - { resource: 'EXT:rkw_template/Themes/_Core/Configuration/TsConfig/RTE/Editor/Basics.yaml' }
+  - { resource: 'EXT:rkw_template/Themes/Kompetenzzentrum2020/Configuration/TsConfig/RTE/Editor/Imports/Styles.yaml' }
 
 # Add configuration for the editor
 # For complete documentation see http://docs.ckeditor.com/#!/api/CKEDITOR.config
@@ -14,10 +15,6 @@ editor:
   config:
 
     # the CSS file to be used inside the editor
-    contentsCss: "EXT:rkw_template/Themes/Kompetenzzentrum2020/Resources/Public/css/rte.css"
-
-    stylesSet:
-      # block level styles
-      - { name: 'Tabelle Events', element: 'table', attributes: { 'class': 'contenttable-events responsive' } }
-      # List styles
-      - { name: 'Download-Liste', element: 'ul', attributes: { 'class': 'links-list' } }
+    contentsCss:
+      - "EXT:rkw_template/Themes/Kompetenzzentrum2020/Resources/Public/css/editor.css"
+      - "https://use.typekit.net/frq0css.css"

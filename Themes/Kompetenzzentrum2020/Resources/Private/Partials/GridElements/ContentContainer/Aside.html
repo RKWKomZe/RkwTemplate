@@ -7,9 +7,6 @@
 
             <f:comment><!-- authors --></f:comment>
             <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.pageInfo.authorsBox')}">
-                <h4 class="asideinner__title content-padding">
-                    <f:translate key="{settings.themeLanguageFile}:partials.gridElements.contentContainer.aside.contact" />
-                </h4>
                 <f:cObject typoscriptObjectPath="lib.txRkwTemplate.pageInfo.authorsBox" />
             </f:if>
 
@@ -19,12 +16,12 @@
             </f:if>
 
             <f:if condition="{data.tx_gridelements_view_column_60} || {data.tx_gridelements_view_column_80}">
-                <h4 class="mt-1 asideinner__title content-padding">
+                <h4 class="mt-1 asideinner__title content-padding-smalldesk">
                     <f:translate key="{settings.themeLanguageFile}:partials.gridElements.contentContainer.aside.information" />
                 </h4>
 
                 <f:comment><!-- links by authors --></f:comment>
-                <div class="contentbox no-border-radius-mobile">
+                <div class="contentbox no-border-radius-smalldesk">
                     <f:if condition="{data.tx_gridelements_view_column_60}">
                         <ul class="iconlist">
                             <f:format.html parseFuncTSPath="">{data.tx_gridelements_view_column_60}</f:format.html>
@@ -56,7 +53,7 @@
 
             <f:comment><!-- authors --></f:comment>
             <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.pageInfo.authorsBox')}">
-                <h4 class="asideinner__title content-padding">
+                <h4 class="asideinner__title content-padding-smalldesk">
                     <f:translate key="{settings.themeLanguageFile}:partials.gridElements.contentContainer.aside.contact" />
                 </h4>
                 <f:cObject typoscriptObjectPath="lib.txRkwTemplate.pageInfo.authorsBox" />
@@ -68,12 +65,12 @@
             </f:if>
 
             <f:if condition="{data.tx_gridelements_view_column_60}">
-                <h4 class="mt-1 asideinner__title content-padding">
+                <h4 class="mt-1 asideinner__title content-padding-smalldesk">
                     <f:translate key="{settings.themeLanguageFile}:partials.gridElements.contentContainer.aside.information" />
                 </h4>
 
                 <f:comment><!-- links by authors --></f:comment>
-                <div class="contentbox no-border-radius-mobile">
+                <div class="contentbox no-border-radius-smalldesk">
                     <f:if condition="{data.tx_gridelements_view_column_60}">
                         <ul class="iconlist">
                             <f:format.html parseFuncTSPath="">{data.tx_gridelements_view_column_60}</f:format.html>

@@ -1,23 +1,35 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
     <f:section name="Article">
-        <p>
-            <strong>
-                <f:translate key="{settings.themeLanguageFile}:partials.infoBox.partials.date.labelDate"/>:
-            </strong>
-            <f:format.date format="d.m.Y">{data.lastUpdated}</f:format.date>
-        </p>
+
+        <f:if condition="{data.lastUpdated}">
+            <div class="table__item">
+                <div class="table__title">
+                    <f:translate key="{settings.themeLanguageFile}:partials.infoBox.partials.date.labelDate"/>:
+                </div>
+                <div class="table__content">
+                    <f:format.date format="d.m.Y">{data.lastUpdated}</f:format.date>
+                </div>
+            </div>
+        </f:if>
+
     </f:section>
 
     <f:comment><!-- ======================================================================== --></f:comment>
 
     <f:section name="Publication">
-        <p>
-            <strong>
-                <f:translate key="{settings.themeLanguageFile}:partials.infoBox.partials.date.labelPubYear"/>:
-            </strong>
-            <f:format.date format="Y"><f:cObject typoscriptObjectPath="lib.txRkwTemplate.publication.parentPubDate" data="{data}" /></f:format.date>
-        </p>
+
+        <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.publication.parentPubDate', data:'{data}')}">
+            <div class="table__item">
+                <div class="table__title">
+                    <f:translate key="{settings.themeLanguageFile}:partials.infoBox.partials.date.labelDate"/>:
+                </div>
+                <div class="table__content">
+                    <f:format.date format="Y"><f:cObject typoscriptObjectPath="lib.txRkwTemplate.publication.parentPubDate" data="{data}" /></f:format.date>
+                </div>
+            </div>
+        </f:if>
+
     </f:section>
 
 </html>

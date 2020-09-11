@@ -1,16 +1,22 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
-    <section class="home__video" aria-labelledby="section-headline-{data.uid}">
-        <h2 class="section-header" id="section-headline-{data.uid}">
-            {data.header}
-        </h2>
+    <f:layout name="Rkw" />
 
-        <f:for each="{gallery.rows}" as="row">
-            <f:for each="{row.columns}" as="column">
-                <f:if condition="{column.media}">
-                    <f:render partial="Multimedia/Type" arguments="{file: column.media, dimensions: column.dimensions, data: data, settings: settings}" />
-                </f:if>
+    <f:section name="Main">
+
+        <section class="home__video" aria-labelledby="section-headline-{data.uid}">
+            <h2 class="section-header" id="section-headline-{data.uid}">
+                {data.header}
+            </h2>
+
+            <f:for each="{gallery.rows}" as="row">
+                <f:for each="{row.columns}" as="column">
+                    <f:if condition="{column.media}">
+                        <f:render partial="Multimedia/Type" arguments="{file: column.media, dimensions: column.dimensions, data: data, settings: settings}" />
+                    </f:if>
+                </f:for>
             </f:for>
-        </f:for>
-    </section>
+        </section>
+
+    </f:section>
 </html>

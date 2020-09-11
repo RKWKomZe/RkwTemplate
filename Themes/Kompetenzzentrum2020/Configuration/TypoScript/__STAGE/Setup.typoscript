@@ -24,12 +24,7 @@ config {
 # Hausschrift
 #############################################################################
 page {
-
-    headerData {
-
-        30 = TEXT
-        30.value  = <script src="https://use.typekit.net/clc1sus.js"></script>
-    }
+    includeCSS.file500 = https://use.typekit.net/clc1sus.css
 }
 
 #############################################################################

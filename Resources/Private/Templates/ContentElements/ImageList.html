@@ -1,44 +1,48 @@
-{namespace rkwBasics=RKW\RkwBasics\ViewHelpers}
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:rkwBasics="http://typo3.org/ns/RKW/RkwBasics/ViewHelpers"
+    data-namespace-typo3-fluid="true">
 
-<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+    <f:layout name="Rkw" />
 
-    <f:if condition="{f:count(subject: images)} > 0">
+    <f:section name="Main">
 
-        <div class="picture-list">
-
-            <f:if condition="{data.header} && {data.header_layout} != 100">
-                <f:if condition="{data.header_layout}">
-                    <f:then>
-                        <h{data.header_layout} class="picture-list__header" id="c{data.uid}">{data.header}</h{data.header_layout}>
-                    </f:then>
-                    <f:else>
-                        <h2 class="picture-list__header" id="c{data.uid}">{data.header}</h2>
-                    </f:else>
-                </f:if>
-            </f:if>
-
-            <div class="picture-list__item">
-                <figure class="picture-list__image">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" srcset="{f:uri.image(image:images.0,width:'328c',height:'328c',cropVariant:'default')}" alt="{images.0.alt}" title="{images.0.title}"  />
-                </figure>
-
-                <div class="picture-list__content">
-                    <f:if condition="{data.rowDescription}">
+        <f:if condition="{f:count(subject: images)} > 0">
+            <div class="picture-list-section">
+                <f:if condition="{data.header} && {data.header_layout} != 100">
+                    <f:if condition="{data.header_layout}">
                         <f:then>
-                            <f:render partial="CollapsedText/Text" arguments="{_all}"/>
+                            <h{data.header_layout} id="c{data.uid}">{data.header}</h{data.header_layout}>
                         </f:then>
                         <f:else>
-                            <rkwBasics:format.removeEmptyParagraphs>
-                                <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data.bodytext}</f:format.html>
-                            </rkwBasics:format.removeEmptyParagraphs>
+                            <h2 id="c{data.uid}">{data.header}</h2>
                         </f:else>
                     </f:if>
+                </f:if>
+
+                <div class="picture-list flex full-width-narrow">
+                    <div class="flex-basis-2 picture-list__img full-width-narrow">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" srcset="{f:uri.image(image:images.0,width:'328c',height:'328c',cropVariant:'default')}" alt="{images.0.alt}" title="{images.0.title}"  />
+                    </div>
+
+                    <div class="flex-basis-10 picture-list__content full-width-narrow">
+                        <f:if condition="{data.rowDescription}">
+                            <f:then>
+                                <f:render partial="CollapsedText/Text" arguments="{_all}"/>
+                            </f:then>
+                            <f:else>
+                                <rkwBasics:format.removeEmptyParagraphs>
+                                    <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data.bodytext}</f:format.html>
+                                </rkwBasics:format.removeEmptyParagraphs>
+                            </f:else>
+                        </f:if>
+                    </div>
                 </div>
             </div>
-        </div>
-    </f:if>
-
+        </f:if>
+    </f:section>
 </html>
+
 
 
 

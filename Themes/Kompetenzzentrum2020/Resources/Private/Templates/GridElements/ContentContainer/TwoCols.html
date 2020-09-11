@@ -1,16 +1,30 @@
-{namespace rkwBasics=RKW\RkwBasics\ViewHelpers}
-
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
+    <!-- schema.org -->
     <f:render partial="ContentContainer/SchemaOrg" arguments="{_all}"/>
 
-    <section class="section content flex-basis-9 full-width-smalldesk no-narrow-padding">
-        <f:render partial="ContentContainer/Content" arguments="{_all}"/>
+    <section class="section content flex-basis-9 full-width-smalldesk no-padding-narrow">
+
+        <!-- content -->
+        <div class="contentbox contentbox--text typo3-fsc no-border-radius-smalldesk">
+            <f:render partial="ContentContainer/Content" arguments="{_all}"/>
+        </div>
+
+        <!-- call to action -->
         <f:render partial="ContentContainer/CallToAction" arguments="{_all}"/>
-        <f:cObject typoscriptObjectPath="lib.txRkwTemplate.recommendation.relatedSimilar" />
+
+        <!-- similar contents -->
+        <f:if condition="!{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.content.boxesTopic', data:'{data}')} && !{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.content.boxesTopicInherit', data:'{data}')}">
+            <f:then>
+                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.recommendation.relatedSimilar" />
+            </f:then>
+        </f:if>
+
     </section>
 
+    <!-- aside -->
     <aside class="aside-info flex-basis-3 full-width-smalldesk aside-info--padding">
         <f:render partial="ContentContainer/Aside" section="Full" arguments="{_all}"/>
     </aside>
+
 </html>

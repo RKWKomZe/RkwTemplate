@@ -749,9 +749,6 @@ $(function () {
     close: function (e) {
       e.preventDefault();
 
-      // Set slideUp to inactive
-      plugin.settings.$el.removeClass(plugin.settings.openClass);
-
       // Disable current tab link
       plugin.settings.$tabLinks.removeClass(plugin.settings.activeClass);
 
@@ -761,6 +758,8 @@ $(function () {
         plugin.settings.$content
           .children()
           .removeClass(plugin.settings.activeClass);
+        // Set slideUp to inactive
+        plugin.settings.$el.removeClass(plugin.settings.openClass);
       });
 
       // Unlock scroll of body
@@ -962,7 +961,7 @@ $(function () {
       window: "window",
       isActive: "is-active-list",
       backLink: "nav-mobile__back-link",
-      iconClass: "icon",
+      iconClass: "nav-mobile__item-icon-wrapper",
       isHidden: "is-hidden",
     };
 
@@ -1023,6 +1022,15 @@ $(function () {
         plugin.settings.primaryNavClass
       );
 
+      //Set up is-active classes
+      var activeListDiv = plugin.settings.$navLists
+        .filter("." + plugin.settings.isActive)
+        .last();
+      activeListDiv
+        .parents()
+        .filter(plugin.settings.navMobileListClass)
+        .addClass(plugin.settings.isActive);
+
       plugin.bindEvents();
     },
 
@@ -1034,24 +1042,38 @@ $(function () {
       plugin.settings.$homeItems.on("click", plugin.navigationItemTriggered);
     },
 
-    adjustElementPositions: function () {
+    adjustElements: function () {
       //Get CSS values
-      var activeListDiv = plugin.settings.$navLists.filter(
-        "." + plugin.settings.isActive
-      );
+      var activeListDiv = plugin.settings.$navLists
+        .filter("." + plugin.settings.isActive)
+        .last();
       var activeListUl = activeListDiv.children().filter("ul").first();
 
-      //Set top value
-      plugin.settings.$mobNavBottom.css(
-        "top",
-        parseInt(activeListUl.css("height")) +
-          parseInt(activeListDiv.css("top"))
-      );
+      //Set top value of bottom element
+      // plugin.settings.$mobNavBottom.css(
+      //   "top",
+      //   parseInt(activeListUl.css("height")) +
+      //     parseInt(plugin.settings.$primaryNav.css("top"))
+      // );
 
       //Adjust Menu lists
       var a = plugin.settings.$mobNav.css("padding-top");
       var b = plugin.settings.$homeItems.first().css("height");
-      plugin.settings.$navLists.css("top", parseInt(a) + parseInt(b));
+      plugin.settings.$navLists.css("top", "0");
+      plugin.settings.$primaryNav.css("top", parseInt(a) + parseInt(b));
+
+      //Show Home Icon in sublvls
+      if (
+        activeListDiv.hasClass(plugin.settings.primaryNavClass.substring(1))
+      ) {
+        plugin.settings.$homeItems
+          .find("." + plugin.settings.iconClass)
+          .addClass(plugin.settings.isHidden);
+      } else {
+        plugin.settings.$homeItems
+          .find("." + plugin.settings.iconClass)
+          .removeClass(plugin.settings.isHidden);
+      }
     },
 
     showWindowSize: function (e) {
@@ -1066,28 +1088,22 @@ $(function () {
         plugin.settings.$iconClose.addClass(plugin.settings.isNone);
       }
 
-      plugin.adjustElementPositions();
+      plugin.adjustElements();
     },
 
     showMobNavList: function (list) {
-      if (list.hasClass(plugin.settings.primaryNavClass.substring(1))) {
-        plugin.settings.$homeItems
-          .find("." + plugin.settings.iconClass)
-          .addClass(plugin.settings.isHidden);
-      } else {
-        plugin.settings.$homeItems
-          .find("." + plugin.settings.iconClass)
-          .removeClass(plugin.settings.isHidden);
-      }
-
       //Hide All
       plugin.settings.$navLists.removeClass(plugin.settings.isActive);
 
       //Show List
       list.addClass(plugin.settings.isActive);
+      list
+        .parents()
+        .filter(plugin.settings.navMobileListClass)
+        .addClass(plugin.settings.isActive);
 
       //Position Nav Mobile Bottom Item
-      plugin.adjustElementPositions();
+      plugin.adjustElements();
     },
 
     navigationItemTriggered: function (e) {
@@ -1118,12 +1134,15 @@ $(function () {
           .parent()
           .hasClass(plugin.settings.navMobileHomeItemsClass.substring(1))
       ) {
-        var activeListDiv = plugin.settings.$navLists.filter(
-          "." + plugin.settings.isActive
-        );
+        var activeListDiv = plugin.settings.$navLists
+          .filter("." + plugin.settings.isActive)
+          .last();
         //check if the active element list is on primary lvl
         if (
-          !activeListDiv.hasClass(plugin.settings.primaryNavClass.substring(1))
+          !activeListDiv.hasClass(
+            plugin.settings.primaryNavClass.substring(1)
+          ) &&
+          $(e.target).hasClass(plugin.settings.navMobileItemClass.substring(1))
         ) {
           e.preventDefault();
           plugin.showMobNavList(plugin.settings.$primaryNav);
@@ -1170,7 +1189,7 @@ $(function () {
         plugin.settings.$iconClose.addClass(plugin.settings.isNone);
         plugin.settings.$body.removeClass(plugin.settings.noScroll);
       }
-      plugin.adjustElementPositions();
+      plugin.adjustElements();
     },
   });
 
@@ -1333,9 +1352,9 @@ $(function () {
   var pluginName = "sliderPlugin",
     defaults = {
       sliderItemClass: ".slider-mod__item",
-      sliderNavClass: ".slider-mod__nav a",
+      sliderNavClass: ".slider-mod__nav button",
       //Classes to add and remove
-      activeClass: "is-active",
+      activeClass: "is-active"
     };
 
   var plugin;
@@ -1366,10 +1385,6 @@ $(function () {
         plugin.settings.sliderNavClass
       );
 
-      console.log(plugin.settings.$el);
-      console.log(plugin.settings.$sliderItems);
-      console.log(plugin.settings.$sliderNav);
-
       plugin.adjustHeight();
       plugin.bindEvents();
     },
@@ -1397,11 +1412,18 @@ $(function () {
         $(element).attr("aria-selected", "false");
       });
 
-      $(e.target).parent().attr("aria-selected", "true");
-      var target_id = $(e.target).parent().attr("aria-controls");
+      //Check if the image or the a element was clicked
+      var target_id;
+      if ($(e.target).get(0).nodeName === "IMG") {
+        $(e.target).parent().attr("aria-selected", "true");
+        target_id = $(e.target).parent().attr("aria-controls");
+      } else {
+        $(e.target).attr("aria-selected", "true");
+        target_id = $(e.target).attr("aria-controls");
+      }
       $("#" + target_id).addClass(plugin.settings.activeClass);
       plugin.adjustHeight();
-    },
+    }
   });
 
   // A really lightweight plugin wrapper around the constructor,

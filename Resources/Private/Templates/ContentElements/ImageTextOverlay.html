@@ -1,38 +1,38 @@
-{namespace rkwBasics=RKW\RkwBasics\ViewHelpers}
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:rkwBasics="http://typo3.org/ns/RKW/RkwBasics/ViewHelpers"
+    data-namespace-typo3-fluid="true">
 
-<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+    <f:layout name="Rkw" />
 
-    <f:if condition="{f:count(subject: images)} > 0">
+    <f:section name="Main">
 
-        <div class="picture-section" style="background-image: url('{f:uri.image(image:images.0,width:'1050',cropVariant:'default')}')">
+        <f:if condition="{f:count(subject: images)} > 0">
 
-            <f:comment>
-                <figure class="picture-section__mobile-image">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" srcset="{f:uri.image(image:images.0,width:'1050',cropVariant:'default')}" alt="{images.0.alt}" title="{images.0.title}"  />
-                </figure>
-            </f:comment>
+            <div class="picture-list-section">
+                <div class="picture-header flex" style="background-image: url('{f:uri.image(image:images.0,width:'1050',cropVariant:'default')}')">
 
-            <div class="picture-section__content">
+                    <div class="picture-header__content flex-basis-6">
 
-                <f:if condition="{data.header} && {data.header_layout} != 100">
-                    <f:if condition="{data.header_layout}">
-                        <f:then>
-                            <h{data.header_layout} class="picture-list__header" id="c{data.uid}">{data.header}</h{data.header_layout}>
-                        </f:then>
-                        <f:else>
-                            <h2 class="picture-list__header" id="c{data.uid}">{data.header}</h2>
-                        </f:else>
-                    </f:if>
-                </f:if>
+                        <f:if condition="{data.header} && {data.header_layout} != 100">
+                            <f:if condition="{data.header_layout}">
+                                <f:then>
+                                    <h{data.header_layout} class="picture-list__header" id="c{data.uid}">{data.header}</h{data.header_layout}>
+                                </f:then>
+                                <f:else>
+                                    <h2 class="picture-list__header" id="c{data.uid}">{data.header}</h2>
+                                </f:else>
+                            </f:if>
+                        </f:if>
 
-                <rkwBasics:format.removeEmptyParagraphs>
-                    <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data.bodytext}</f:format.html>
-                </rkwBasics:format.removeEmptyParagraphs>
+                        <rkwBasics:format.removeEmptyParagraphs>
+                            <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data.bodytext}</f:format.html>
+                        </rkwBasics:format.removeEmptyParagraphs>
+                    </div>
+                </div>
             </div>
-        </div>
-    </f:if>
+        </f:if>
 
+    </f:section>
 </html>
-
-
 

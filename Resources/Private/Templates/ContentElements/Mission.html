@@ -1,18 +1,25 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
-    <div class="flex-container center-main px-1">
-        <div class="flex-basis-7 introtext">
-            <f:if condition="{data.subheader}">
-                <f:then>
-                    <h3 class="headline headline--underlined">{data.header}</h3>
-                </f:then>
-                <f:else>
-                    <h3 class="headline">{data.header}</h3>
-                    <h4 class="headline headline--underlined">{data.subheader}</h4>
-                </f:else>
-            </f:if>
-            <p class="text-lead">
-                <f:format.nl2br><f:format.stripTags>{data.bodytext}</f:format.stripTags></f:format.nl2br>
-            </p>
+
+    <f:layout name="Rkw" />
+
+    <f:section name="Main">
+
+        <div class="flex-container center-main px-1 py-3">
+            <div class="flex-basis-7 introtext">
+                <f:if condition="{data.subheader}">
+                    <f:then>
+                        <h3 class="headline headline--underlined">{data.header}</h3>
+                    </f:then>
+                    <f:else>
+                        <h3 class="headline">{data.header}</h3>
+                        <h4 class="headline headline--underlined">{data.subheader}</h4>
+                    </f:else>
+                </f:if>
+                <p class="text-lead">
+                    <f:format.nl2br><f:format.stripTags>{data.bodytext}</f:format.stripTags></f:format.nl2br>
+                </p>
+            </div>
         </div>
-    </div>
+
+    </f:section>
 </html>

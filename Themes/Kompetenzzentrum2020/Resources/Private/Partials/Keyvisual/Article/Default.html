@@ -1,23 +1,23 @@
-{namespace rkwBasics=RKW\RkwBasics\ViewHelpers}
 
-<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:rkwBasics="http://typo3.org/ns/RKW/RkwBasics/ViewHelpers"
+    data-namespace-typo3-fluid="true">
 
-    <!-- title -->
-    <header class="content-box content article-header wysiwyg">
-        <h1 id="article-headline">
+    <!-- title & subtitle -->
+    <div class="siteheader__title siteheader__title--detail-site">
+        <h1 class="h1">
             <f:format.raw><f:format.crop maxCharacters="100" respectWordBoundaries="false">{data.title}</f:format.crop></f:format.raw>
         </h1>
-
         <f:if condition="{data.subtitle}">
-            <h2>
-                <f:format.crop maxCharacters="150" respectWordBoundaries="false"><f:format.raw>{data.subtitle}</f:format.raw></f:format.crop>
-            </h2>
+            <h2 class="siteheader__subtitle">Zusatzqualifikation für Auszubildende</h2>
         </f:if>
-    </header>
+    </div>
 
-    <!-- article image or video -->
+    <!-- image or video -->
     <f:if condition="<rkwBasics:isEmpty string='{f:cObject(typoscriptObjectPath: 'lib.txRkwTemplate.keyvisual.article', data:'{data}')}' /> == 0">
-        <f:cObject typoscriptObjectPath="lib.txRkwTemplate.keyvisual.article" data="{data}" />
+        <div class="siteheader__image">
+            <f:cObject typoscriptObjectPath="lib.txRkwTemplate.keyvisual.article" data="{data}" />
+        </div>
     </f:if>
 
 </html>

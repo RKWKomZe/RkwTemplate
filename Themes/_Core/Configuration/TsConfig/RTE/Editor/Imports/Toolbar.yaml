@@ -1,0 +1,52 @@
+# ****************************************************
+# Sets the options for all default configurations
+# ****************************************************
+
+editor:
+
+  # see: https://ckeditor.com/docs/ckeditor4/latest/api/CKEDITOR_config.html
+  config:
+
+    toolbarGroups:
+      - { name: clipboard, groups: [clipboard, undo] }
+      - { name: editing,   groups: [find, selection, spellchecker] }
+      - { name: links }
+      - { name: insert }
+      - { name: tools }
+      - { name: table }
+      - { name: tabletools }
+      - { name: document,  groups: [ mode, document, doctools ] }
+      - { name: others }
+      - "/"
+      - { name: basicstyles, groups: [ basicstyles, align, cleanup ] }
+      - { name: paragraph,   groups: [ list, blocks, align] }
+      - { name: specialcharacters,   groups: [ insertcharacters ] }
+      - "/"
+      - { name: styles }
+
+    extraPlugins:
+      - justify
+      - find
+      - selectall
+
+    removePlugins:
+      - image
+      - font
+      - bidi
+
+    # see https://ckeditor.com/latest/samples/toolbarconfigurator/index.html#advanced
+    removeButtons:
+      - Separator
+      - Strike
+      - BidiLtr
+      - BidiRtl
+      - Language
+      - HorizontalRule
+      - PageBreak
+      - Iframe
+      - TextColor
+      - BGColor
+      - ShowBlocks
+      - CreateDiv
+      - About
+      - Flash

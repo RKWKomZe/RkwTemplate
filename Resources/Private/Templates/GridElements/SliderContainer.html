@@ -1,17 +1,22 @@
-{namespace rkwBasics=RKW\RkwBasics\ViewHelpers}
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:rkwBasics="http://typo3.org/ns/RKW/RkwBasics/ViewHelpers"
+    data-namespace-typo3-fluid="true">
 
-<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+    <f:layout name="Rkw" />
 
-    <f:if condition="<rkwBasics:isEmpty string='{data.tx_gridelements_view_column_10}' /> == 0">
-        <div id="carouselSlider" class="carousel owl-carousel slide">
-            <div class="carousel-inner">
-                <div class="carousel-indicators">
-                    <f:for each="{tx_gridelements_view_children}" as="slides">
-                        <button type="button"></button>
-                    </f:for>
+    <f:section name="Main">
+        <f:if condition="<rkwBasics:isEmpty string='{data.tx_gridelements_view_column_10}' /> == 0">
+            <div id="carouselSlider" class="carousel owl-carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-indicators">
+                        <f:for each="{tx_gridelements_view_children}" as="slides">
+                            <button type="button"></button>
+                        </f:for>
+                    </div>
+                    <f:format.raw>{data.tx_gridelements_view_column_10}</f:format.raw>
                 </div>
-                <f:format.raw>{data.tx_gridelements_view_column_10}</f:format.raw>
             </div>
-        </div>
-    </f:if>
+        </f:if>
+    </f:section>
 </html>

@@ -108,9 +108,31 @@ RTE {
                 rel =
             }
 
+            downloadButton {
+                class = button
+                name = Button
+                type = file
+                titleText = Datei herunterladen
+                target =
+                image =
+                #params =
+                rel =
+            }
+
             mail {
                 class = mail
                 name = E-Mail
+                type = mail
+                titleText = E-Mail schreiben
+                target =
+                image =
+                #params =
+                rel =
+            }
+
+            mailButton {
+                class = button
+                name = Button
                 type = mail
                 titleText = E-Mail schreiben
                 target =

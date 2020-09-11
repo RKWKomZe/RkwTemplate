@@ -59,7 +59,7 @@ lib.txRkwTemplate {
                                 layout = Reduced
                                 pagePropertyFilter = project
                                 displayPublications = 2
-                                headline = Aktuelles aus dem Projekt
+                                headline = Aktuelle Artikel
                             }
                         }
                     }
@@ -79,7 +79,7 @@ lib.txRkwTemplate {
                         10 {
                             settings {
                                 displayPublications = 1
-                                headline = Publikationen
+                                headline = Aktuelle Publikationen
                             }
                         }
                     }
@@ -111,8 +111,20 @@ lib.txRkwTemplate {
             settings {
 
                 layout = Below
-                headline = Mehr zum Thema
+                headline = Auch interessant
                 hideMoreLink = 1
+            }
+        }
+
+
+        relatedSimilarReduced < .relatedSimilar
+        relatedSimilarReduced {
+
+            settings {
+                headline >
+                layout = Reduced
+                hideMoreLink = 0
+                itemLimitPerPageOverride = 15
             }
         }
     }

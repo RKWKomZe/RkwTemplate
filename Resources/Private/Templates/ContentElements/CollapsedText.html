@@ -1,16 +1,19 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
-    <f:if condition="{data.header} && {data.header_layout} != 100">
-        <f:if condition="{data.header_layout}">
-            <f:then>
-                <h{data.header_layout} id="c{data.uid}">{data.header}</h{data.header_layout}>
-            </f:then>
-            <f:else>
-                <h2 id="c{data.uid}">{data.header}</h2>
-            </f:else>
+    <f:layout name="Rkw" />
+
+    <f:section name="Main">
+        <f:if condition="{data.header} && {data.header_layout} != 100">
+            <f:if condition="{data.header_layout}">
+                <f:then>
+                    <h{data.header_layout} id="c{data.uid}">{data.header}</h{data.header_layout}>
+                </f:then>
+                <f:else>
+                    <h2 id="c{data.uid}">{data.header}</h2>
+                </f:else>
+            </f:if>
         </f:if>
-    </f:if>
 
-    <f:render partial="CollapsedText/Text" arguments="{_all}"/>
-
+        <f:render partial="CollapsedText/Text" arguments="{_all}"/>
+    </f:section>
 </html>

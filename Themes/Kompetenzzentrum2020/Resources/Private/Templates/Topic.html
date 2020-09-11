@@ -11,12 +11,11 @@
 
 
     <f:section name="Content">
-
-        <main class="main flex-container no-narrow-padding">
-            <div class="flex-container no-narrow-margin">
+        <main class="main flex-container no-padding-narrow" id="main">
+            <div class="flex-container no-margin-narrow">
 
                 <!-- breadcrumb-->
-                <section class="section content flex-basis-12 full-width-smalldesk no-narrow-padding pb-0">
+                <section class="section content flex-basis-12 full-width-smalldesk no-padding-narrow pb-0">
                     <div class="breadcrumbs flex-container nav breadcrumb-padding">
                         <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.breadcrumb" data="{data}" />
                     </div>
@@ -24,9 +23,7 @@
 
                 <!-- promotion -->
                 <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.content.promotion', data:'{data}')}">
-                    <section class="section content flex-basis-12 full-width-smalldesk no-narrow-padding promoters">
-                        <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.promotion" data="{data}" />
-                    </section>
+                    <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.promotion" data="{data}" />
                 </f:if>
 
                 <!-- content -->
@@ -39,8 +36,14 @@
                     <f:comment><f:render partial="AlertsBox" arguments="{_all}"/></f:comment>
 
                     <!-- boxes -->
-                    <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.boxesTopic" data="{data}" />
-                    <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.boxesTopicInherit" data="{data}" />
+                    <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.content.boxesTopic', data:'{data}')}">
+                        <f:then>
+                            <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.boxesTopic" data="{data}" />
+                        </f:then>
+                        <f:else>
+                            <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.boxesTopicInherit" data="{data}" />
+                        </f:else>
+                    </f:if>
                 </f:if>
             </div>
         </main>

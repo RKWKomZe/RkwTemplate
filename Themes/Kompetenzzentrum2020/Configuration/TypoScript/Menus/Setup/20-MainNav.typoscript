@@ -14,6 +14,7 @@ lib.txRkwTemplate {
             dataProcessing {
                 10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
                 10 {
+
                    special = directory
                    special.value = {$mainNavConfig.pid}
                    levels = 5
@@ -21,9 +22,8 @@ lib.txRkwTemplate {
                    expandAll = 1
                    includeSpacer = 0
                    maxItems = 10
-                   titleField = nav_title // title
+                   titleField = tx_rkwbasics_alternative_title // nav_title // title
                    excludeUidList = {$mainNavConfig.contactPid}, {$mainNavConfig.loginPid}
-
                    as = menuItems
 
                    dataProcessing {

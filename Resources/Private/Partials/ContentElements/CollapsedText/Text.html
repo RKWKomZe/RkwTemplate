@@ -1,17 +1,26 @@
-{namespace rkwBasics=RKW\RkwBasics\ViewHelpers}
-
-<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:rkwBasics="http://typo3.org/ns/RKW/RkwBasics/ViewHelpers"
+    data-namespace-typo3-fluid="true">
 
     <f:if condition="{data.rowDescription}">
         <p>{data.rowDescription}</p>
     </f:if>
 
     <f:if condition="{data.bodytext}">
-        <div class="collapsed-text" data-show="{f:translate(key:'LLL:EXT:rkw_template/Resources/Private/Language/locallang.xlf:contentElement.collapsed.showMore')}" data-hide="{f:translate(key:'LLL:EXT:rkw_template/Resources/Private/Language/locallang.xlf:contentElement.collapsed.showLess')}">
-            <rkwBasics:format.removeEmptyParagraphs>
-                <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data.bodytext}</f:format.html>
-            </rkwBasics:format.removeEmptyParagraphs>
+        <div class="collapsed-text">
+            <div class="collapsed-text__container is-hidden">
+                <rkwBasics:format.removeEmptyParagraphs>
+                    <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data.bodytext}</f:format.html>
+                </rkwBasics:format.removeEmptyParagraphs>
+            </div>
+            <button class="collapsed-text__btn"
+                data-opentext="{f:translate(key:'LLL:EXT:rkw_template/Resources/Private/Language/locallang.xlf:contentElement.collapsed.showMore')}"
+                data-closetext="{f:translate(key:'LLL:EXT:rkw_template/Resources/Private/Language/locallang.xlf:contentElement.collapsed.showLess')}">
+                {f:translate(key:'LLL:EXT:rkw_template/Resources/Private/Language/locallang.xlf:contentElement.collapsed.showMore')}
+            </button>
         </div>
     </f:if>
 
 </html>
+

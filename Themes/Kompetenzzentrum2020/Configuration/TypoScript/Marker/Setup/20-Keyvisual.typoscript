@@ -80,13 +80,12 @@ lib.txRkwTemplate {
             settings < lib.txRkwBasics.responsiveImage.settings
             settings {
 
-                additionalAttributes = class="article-picture"
                 breakpoint {
                     desktop >
                 }
 
                 maxWidth {
-                    tablet = 1024
+                    tablet = 1095
                 }
 
                 cropVariant {

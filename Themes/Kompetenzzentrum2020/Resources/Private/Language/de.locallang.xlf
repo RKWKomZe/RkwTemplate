@@ -7,6 +7,17 @@
             <!-- ================================================================= -->
             <!-- Partials -->
             <!-- ================================================================= -->
+            <trans-unit id="partials.basics.skipLink.labelNavigation">
+                <source>Jump to navigation</source>
+                <target>Zur Navigation springen</target>
+            </trans-unit>
+            <trans-unit id="partials.basics.skipLink.labelContent">
+                <source>Jump to contents</source>
+                <target>Zum Hauptinhalt springen</target>
+            </trans-unit>
+
+
+
 			<trans-unit id="partials.menus.main.buttons.contact">
 				<source>Contact</source>
 				<target>Kontakt</target>
@@ -21,10 +32,7 @@
             </trans-unit>
 
 
-            <trans-unit id="partials.gridElements.contentContainer.aside.contact">
-                <source>Contact</source>
-                <target>Kontakt</target>
-            </trans-unit>
+
             <trans-unit id="partials.gridElements.contentContainer.aside.information">
                 <source>Futher information</source>
                 <target>Weiterführende Links</target>
@@ -32,9 +40,61 @@
 
 
 
-          <!-- ================================================================== -->
-          <!-- TypoScript -->
-          <!-- ================================================================== -->
+            <trans-unit id="partials.infoBox.article.labelMeta">
+				<source>Information</source>
+				<target>Informationen</target>
+			</trans-unit>
+            <trans-unit id="partials.infoBox.article.labelAbstract">
+                <source>Abstract</source>
+                <target>Zusammenfassung</target>
+            </trans-unit>
+            <trans-unit id="partials.infoBox.partials.project.labelProject">
+                <source>Project</source>
+                <target>Projekt</target>
+            </trans-unit>
+			<trans-unit id="partials.infoBox.partials.date.labelDate">
+				<source>Published</source>
+				<target>Veröffentlicht</target>
+			</trans-unit>
+			<trans-unit id="partials.infoBox.partials.date.labelPubYear">
+				<source>Year of Publication</source>
+				<target>Jahr der Veröffentlichung</target>
+			</trans-unit>
+            <trans-unit id="partials.infoBox.partials.fileSize.labelFileSize">
+                <source>Filesize</source>
+                <target>Dateigröße</target>
+            </trans-unit>
+            <trans-unit id="partials.infoBox.partials.authors.labelAuthors">
+				<source>Authors</source>
+				<target>Autoren</target>
+			</trans-unit>
+            <trans-unit id="partials.infoBox.partials.parentPage.labelParentPage">
+                <source>Publication</source>
+                <target>Publikation</target>
+            </trans-unit>
+
+
+
+            <trans-unit id="partials.aside.similarContents">
+                <source>Similar contents</source>
+                <target>Auch interessant</target>
+            </trans-unit>
+
+
+            <!-- ================================================================= -->
+            <!-- Templates -->
+            <!-- ================================================================= -->
+
+
+
+            <!-- ================================================================= -->
+            <!-- Layouts -->
+            <!-- ================================================================= -->
+
+
+            <!-- ================================================================== -->
+            <!-- TypoScript -->
+            <!-- ================================================================== -->
             <trans-unit id="typoscript.relatedDefault">
                 <source>From the project</source>
                 <target>Aktuelles aus dem Projekt</target>
@@ -128,40 +188,12 @@
 			</trans-unit>
 
 
-            <trans-unit id="partials.infoBox.article.labelAbstract">
-				<source>Abstract</source>
-				<target>Zusammenfassung</target>
-			</trans-unit>
 
 
-            <trans-unit id="partials.infoBox.partials.project.labelProject">
-                <source>Project</source>
-                <target>Projekt</target>
-            </trans-unit>
-			<trans-unit id="partials.infoBox.partials.date.labelDate">
-				<source>Published</source>
-				<target>Veröffentlicht</target>
-			</trans-unit>
-			<trans-unit id="partials.infoBox.partials.date.labelPubYear">
-				<source>Year of Publication</source>
-				<target>Jahr der Veröffentlichung</target>
-			</trans-unit>
-            <trans-unit id="partials.infoBox.partials.fileSize.labelFileSize">
-                <source>Filesize</source>
-                <target>Dateigröße</target>
-            </trans-unit>
-            <trans-unit id="partials.infoBox.partials.authors.labelAuthors">
-				<source>Authors</source>
-				<target>Autoren</target>
-			</trans-unit>
             <trans-unit id="partials.infoBox.partials.tableOfContents.labelTableOfContents">
                 <source>Table of Contents</source>
                 <target>Inhaltsverzeichnis</target>
 			</trans-unit>
-            <trans-unit id="partials.infoBox.partials.parentPage.labelParentPage">
-                <source>Publication</source>
-                <target>Publikation</target>
-            </trans-unit>
 
 
             <trans-unit id="partials.keyVisual.publication.labelChapter">

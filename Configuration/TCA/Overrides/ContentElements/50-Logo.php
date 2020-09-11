@@ -51,12 +51,13 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_logo'] = [
             'config' => [
                 'minitems' => 1,
                 'maxitems' => 1,
+
                 'overrideChildTca' => [
                     'columns' => [
                         'crop' => [
                             'config' => [
 
-                                // original file dimensions: 160 x 320
+                                // original file dimensions: 320 x 160
                                 'cropVariants' => [
                                     'default' => [
                                         'title' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.logo.imageManipulation.default',
@@ -67,11 +68,16 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_logo'] = [
                                             ]
                                         ]
                                     ],
+
                                     'NaN' => [
                                         'title' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.logo.imageManipulation.free',
-                                        'value' => 0.0
-                                    ],
-
+                                        'allowedAspectRatios' => [
+                                            'NaN' => [
+                                                'title' => '-',
+                                                'value' => 0
+                                            ]
+                                        ]
+                                    ]
                                 ]
                             ]
                         ]

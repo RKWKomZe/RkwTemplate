@@ -225,7 +225,7 @@
             </trans-unit>
             <trans-unit id="contentElement.contentContainerTwoColsReduced.description">
                 <source>Add a Content-Container with two Cols (Reduced Design) </source>
-                <target>Fügt einen Inhalts-Container mit einem zweispaltigen Layout ein (Inhalts- und Randspalte). Keine weiteren Elemente werden ausgegeben.</target>
+                <target>Fügt einen Inhalts-Container mit einem zweispaltigen Layout ein (Inhalts- und Randspalte). Zusätzlich steht ein Call-To-Action zur Verfügung. Keine weiteren Elemente werden ausgegeben.</target>
             </trans-unit>
             <trans-unit id="contentElement.contentContainerTwoColsReduced.content">
                 <source>Content</source>

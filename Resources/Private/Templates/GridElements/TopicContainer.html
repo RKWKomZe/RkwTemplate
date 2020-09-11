@@ -1,18 +1,22 @@
-{namespace rkwBasics=RKW\RkwBasics\ViewHelpers}
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:rkwBasics="http://typo3.org/ns/RKW/RkwBasics/ViewHelpers"
+    data-namespace-typo3-fluid="true">
 
-<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+    <f:layout name="Rkw" />
 
-    <f:if condition="<rkwBasics:isEmpty string='{data.tx_gridelements_view_column_20}' /> == 0">
-        <div class="flex center-main introtext introtext-white">
-            <div class="flex-basis-7 introtext__wrapper">
-                <h{f:if(condition: data.header_layout, then: '{data.header_layout}', else: '2')} class="headline headline--underlined" id="c{data.uid}">
-                    {data.header}
-                </h{f:if(condition: data.header_layout, then: '{data.header_layout}', else: '2')}>
-                <div class="flex space-between mt-3">
-                    <f:format.raw>{data.tx_gridelements_view_column_20}</f:format.raw>
+    <f:section name="Main">
+        <f:if condition="<rkwBasics:isEmpty string='{data.tx_gridelements_view_column_20}' /> == 0">
+            <div class="flex center-main introtext introtext-white py-3">
+                <div class="flex-basis-7 introtext__wrapper">
+                    <h{f:if(condition: data.header_layout, then: '{data.header_layout}', else: '2')} class="headline headline--underlined" id="c{data.uid}">
+                        {data.header}
+                    </h{f:if(condition: data.header_layout, then: '{data.header_layout}', else: '2')}>
+                    <div class="flex space-between mt-3">
+                        <f:format.raw>{data.tx_gridelements_view_column_20}</f:format.raw>
+                    </div>
                 </div>
             </div>
-        </div>
-    </f:if>
-
+        </f:if>
+    </f:section>
 </html>

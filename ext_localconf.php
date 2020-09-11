@@ -84,6 +84,12 @@ call_user_func(
         if (empty($GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['rkwTemplateKompetenzzentrum2020'])) {
             $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['rkwTemplateKompetenzzentrum2020'] = 'EXT:rkw_template/Themes/Kompetenzzentrum2020/Configuration/TsConfig/RTE/Editor/Default.yaml';
         }
+        if (empty($GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['rkwTemplateKompetenzzentrum2020Stage'])) {
+            $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['rkwTemplateKompetenzzentrum2020Stage'] = 'EXT:rkw_template/Themes/Kompetenzzentrum2020/Configuration/TsConfig/RTE/Editor/Default.stage.yaml';
+        }
+        if (empty($GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['rkwTemplateKompetenzzentrum2020Dev'])) {
+            $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['rkwTemplateKompetenzzentrum2020Dev'] = 'EXT:rkw_template/Themes/Kompetenzzentrum2020/Configuration/TsConfig/RTE/Editor/Default.dev.yaml';
+        }
         if (empty($GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['rkwTemplateWePstra'])) {
             $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['rkwTemplateWePstra'] = 'EXT:rkw_template/Themes/WePstra/Configuration/TsConfig/RTE/Editor/Default.yaml';
         }

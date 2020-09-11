@@ -1,26 +1,62 @@
-{namespace rkwBasics=RKW\RkwBasics\ViewHelpers}
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
-<f:render partial="Basics/BrowserWarning" />
+<f:spaceless>
 
-<!-- Page header -->
-<f:render partial="Basics/Header" section="Microsite" arguments="{_all}"/>
+	<!-- skip links-->
+	<f:render partial="Basics/SkipLinks" />
 
-<div class="page-wrap">
+	<div class="pagewrap">
 
-	<!-- Main Part -->
-    <div class="page-content-wrapper"></div>
+		<f:comment><f:render partial="Basics/BrowserWarning" /></f:comment>
 
-	<div class="container" id="page-top">
-		<main id="main">
-            <f:render partial="Basics/Logo" section="Microsite"  />
-            <f:render section="content" />
-		</main>
+		<!-- header -->
+		<header class="header {f:if(condition: '{f:cObject(typoscriptObjectPath:\'lib.txRkwTemplate.navigation.sub\', data:\'{data}\')}', then: 'has-nav')}">
+			<f:render partial="Basics/Header" section="Default" arguments="{_all}"/>
+			<f:render section="Header" />
+		</header>
+
+		<!-- main section -->
+		<f:render section="Content" />
+
+		<!-- footer -->
+		<f:render partial="Basics/Footer" section="Default" arguments="{_all}"/>
+
 	</div>
 
-	<!-- Footer -->
-	<f:render partial="Basics/Footer" arguments="{_all}"/>
+	<!-- SVGs -->
+	<f:render partial="Basics/SVGs" />
 
-	<!-- Overlay -->
-	<f:cObject typoscriptObjectPath="lib.txRkwTemplate.various.overlayMeinRKW" data="{data}" />
+</f:spaceless>
 
-</div>
+</html>
+
+
+<f:comment>
+
+	{namespace rkwBasics=RKW\RkwBasics\ViewHelpers}
+
+	<f:render partial="Basics/BrowserWarning" />
+
+	<!-- Page header -->
+	<f:render partial="Basics/Header" section="Microsite" arguments="{_all}"/>
+
+	<div class="page-wrap">
+
+		<!-- Main Part -->
+		<div class="page-content-wrapper"></div>
+
+		<div class="container" id="page-top">
+			<main id="main">
+				<f:render partial="Basics/Logo" section="Microsite"  />
+				<f:render section="content" />
+			</main>
+		</div>
+
+		<!-- Footer -->
+		<f:render partial="Basics/Footer" arguments="{_all}"/>
+
+		<!-- Overlay -->
+		<f:cObject typoscriptObjectPath="lib.txRkwTemplate.various.overlayMeinRKW" data="{data}" />
+
+	</div>
+</f:comment>

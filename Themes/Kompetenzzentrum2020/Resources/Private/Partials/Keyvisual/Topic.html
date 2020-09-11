@@ -17,11 +17,16 @@
     <f:comment><!-- ======================================================================== --></f:comment>
 
     <f:section name="Sub">
+
         <div class="siteheader__title siteheader__title--primary text-white">
+
+            <!-- title -->
             <h1 class="h1 h1--white">
                 <f:format.raw><f:format.crop maxCharacters="100" respectWordBoundaries="false">{data.title}</f:format.crop></f:format.raw>
             </h1>
             <f:if condition="{data.abstract}">
+
+                <!-- abstract -->
                 <f:then>
                     <div class="siteheader__intro">
                         <p>
@@ -29,6 +34,8 @@
                         </p>
                     </div>
                 </f:then>
+
+                <!-- subtitle -->
                 <f:else>
                     <f:if condition="{data.subtitle}">
                         <div class="siteheader__intro">

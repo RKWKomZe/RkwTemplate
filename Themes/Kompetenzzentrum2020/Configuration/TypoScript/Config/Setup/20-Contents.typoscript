@@ -1,4 +1,3 @@
-
 lib.parseFunc_RTE {
     externalBlocks {
 
@@ -7,9 +6,25 @@ lib.parseFunc_RTE {
         //===============================================================
         table.stdWrap.HTMLparser = 1
         table.stdWrap.HTMLparser.tags.table.fixAttrib.class {
-            default = contenttable responsive
+            default = responsive-table
             always = 1
-            list = responsive,contenttable,contenttable-1,contenttable-events
+            list = responsive-table,responsive-table--background
+        }
+
+        ul {
+			callRecursive {
+				tagStdWrap.HTMLparser.tags.ul.fixAttrib.class {
+					default = list-primary
+				}
+			}
+		}
+
+		ol {
+			callRecursive {
+				tagStdWrap.HTMLparser.tags.ol.fixAttrib.class {
+					default = list-ordered
+				}
+			}
         }
     }
 }
