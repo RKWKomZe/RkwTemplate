@@ -20,7 +20,7 @@ plugin.tx_rkwtemplate_themeconfig {
         name = Bausachverständigentag
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=baseUrl (With / at the end for ClickEnlarge)
-        baseUrl = https://bst.events/
+        baseUrl = https://www.bst.events/
     }
 
     microsite {
