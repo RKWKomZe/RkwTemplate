@@ -25,6 +25,12 @@ lib.txRkwTemplate.themeSettings {
     micrositeMainWebsiteLogoFile = {$plugin.tx_rkwtemplate_themeconfig.microsite.mainWebsiteLogoFile}
 
     socialMedia = {$plugin.tx_rkwtemplate_themeconfig.socialMedia}
+    socialMediaLinks.facebook = {$plugin.tx_rkwtemplate_themeconfig.socialMediaLinks.facebook}
+    socialMediaLinks.twitter = {$plugin.tx_rkwtemplate_themeconfig.socialMediaLinks.twitter}
+    socialMediaLinks.youTube = {$plugin.tx_rkwtemplate_themeconfig.socialMediaLinks.youTube}
+    socialMediaLinks.xing = {$plugin.tx_rkwtemplate_themeconfig.socialMediaLinks.xing}
+    socialMediaLinks.linkedIn = {$plugin.tx_rkwtemplate_themeconfig.socialMediaLinks.linkedIn}
+
 }
 
 

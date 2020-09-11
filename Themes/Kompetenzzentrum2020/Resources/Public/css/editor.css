@@ -549,6 +549,22 @@ blockquote:before {
   line-height: 1.7em;
 }
 
+figcaption {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.2em;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  /*display: block;*
+  display: table-caption;
+   */
+}
+
+figcaption .copyright-hint:before {
+  content: ' ';
+  white-space: pre;
+}
+
 .text-left,
 .align-left {
   text-align: left !important;

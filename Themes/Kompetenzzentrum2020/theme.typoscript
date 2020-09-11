@@ -122,12 +122,30 @@ plugin.tx_rkwtemplate_themeconfig {
 
         # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Icon of main website (on microsites only)
         mainWebsiteLogoFile = {$plugin.tx_rkwtemplate_themeconfig.paths.microsite.mainWebsiteLogos}/logo-icon.png
-
     }
 
 
     # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Show social media icons
     socialMedia = 1
+
+    socialMediaLinks {
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to facebook page
+        facebook = https://de-de.facebook.com/RKWexperten/
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to twitter page
+        twitter = https://twitter.com/rkw_experten
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to xing page
+        xing = https://www.xing.com/companies/rkwkompetenzzentrum
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to linkedIn page
+        linkedIn =
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to YouTube page
+        youTube = https://www.youtube.com/user/RKWexperten
+
+    }
 
     # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Is this website a microsite?
     isMicrosite = 0

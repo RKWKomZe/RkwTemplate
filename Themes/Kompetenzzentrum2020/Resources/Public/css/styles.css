@@ -886,6 +886,22 @@ blockquote:before {
   }
 }
 
+figcaption {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.2em;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  /*display: block;*
+  display: table-caption;
+   */
+}
+
+figcaption .copyright-hint:before {
+  content: ' ';
+  white-space: pre;
+}
+
 /**! ==================================================
  * LAYOUT/Flexbox-Grid
  *
@@ -3794,9 +3810,9 @@ legend {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 40px 0 0 0;
 }
 
