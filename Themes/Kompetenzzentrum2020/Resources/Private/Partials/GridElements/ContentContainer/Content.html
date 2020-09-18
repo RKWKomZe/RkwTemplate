@@ -2,6 +2,17 @@
     xmlns:rkwBasics="http://typo3.org/ns/RKW/RkwBasics/ViewHelpers"
     data-namespace-typo3-fluid="true">
 
+    <!-- table of contents as menu -->
+    <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.publication.parentUid')} && {f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.publication.isSubPage')}">
+        <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.toc" data="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.publication.parentUid')}" />
+
+        <!-- headline of current chapter -->
+        <h2 class="h1">
+            <em><f:translate key="{settings.themeLanguageFile}:partials.gridElements.contentContainer.content.labelChapter"/>:</em>
+            <f:format.crop maxCharacters="90" respectWordBoundaries="false"><f:cObject typoscriptObjectPath="lib.txRkwTemplate.publication.currentTitle" /></f:format.crop>
+        </h2>
+    </f:if>
+
     <!-- content -->
     <rkwBasics:format.removeEmptyParagraphs>
         <f:format.html parseFuncTSPath="">
@@ -9,19 +20,20 @@
         </f:format.html>
     </rkwBasics:format.removeEmptyParagraphs>
 
-    <!-- read more nav -->
-    <f:if condition="{data.tx_gridelements_backend_layout} == 'contentContainerOneCol'">
-        <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.publication.isParentPage', data:'{data}')}">
+    <!-- read more nav and order form-->
+    <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.publication.parentUid')}">
+        <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.publication.isParentPage')}">
             <f:then>
                 <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.beginRead" />
+
+                <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.publication.isParentPage')}">
+                    <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.boxesPublication" data="{data}" />
+                </f:if>
             </f:then>
             <f:else>
-                <f:comment>
-                    <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.readMore" />
-                </f:comment>
+                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.readMore" />
             </f:else>
         </f:if>
-
     </f:if>
 
     <!-- image resources -->

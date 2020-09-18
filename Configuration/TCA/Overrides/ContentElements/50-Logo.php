@@ -54,26 +54,41 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_logo'] = [
 
                 'overrideChildTca' => [
                     'columns' => [
+                        'title' => [
+                            'config' => [
+                                'type' => 'passthrough'
+                            ]
+                        ],
+                        'link' => [
+                            'config' => [
+                                'type' => 'passthrough'
+                            ]
+                        ],
+                        'description' => [
+                            'config' => [
+                                'type' => 'passthrough'
+                            ]
+                        ],
+                        'alternative' => [
+                            'config' => [
+                                'type' => 'passthrough'
+                            ]
+                        ],
                         'crop' => [
                             'config' => [
 
                                 // original file dimensions: 320 x 160
                                 'cropVariants' => [
+
                                     'default' => [
                                         'title' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.logo.imageManipulation.default',
                                         'allowedAspectRatios' => [
                                             '320:160' => [
                                                 'title' => '320 x 160',
                                                 'value' => 320 / 160
-                                            ]
-                                        ]
-                                    ],
-
-                                    'NaN' => [
-                                        'title' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.logo.imageManipulation.free',
-                                        'allowedAspectRatios' => [
+                                            ],
                                             'NaN' => [
-                                                'title' => '-',
+                                                'title' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.logo.imageManipulation.free',
                                                 'value' => 0
                                             ]
                                         ]

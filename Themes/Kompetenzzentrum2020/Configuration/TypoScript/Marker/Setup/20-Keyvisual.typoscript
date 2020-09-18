@@ -147,7 +147,7 @@ lib.txRkwTemplate {
                 settings < lib.txRkwBasics.responsiveImage.settings
                 settings {
 
-                    additionalAttributes = class="publications-article__picture"
+                    additionalAttributes =
                     breakpoint {
                         desktop >
                     }
@@ -161,6 +161,14 @@ lib.txRkwTemplate {
                         mobile2 = publicationDesktop
                         mobile = publicationDesktop
                         fallback = publicationDesktop
+                    }
+                }
+
+                stdWrap.replacement {
+                    1 {
+                        search = #\s#
+                        replace =
+                        useRegExp = 1
                     }
                 }
             }

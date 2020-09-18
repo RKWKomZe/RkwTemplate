@@ -62,6 +62,11 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_imagelist'] = [
                 'maxitems' => 1,
                 'overrideChildTca' => [
                     'columns' => [
+                        'description' => [
+                            'config' => [
+                                'type' => 'passthrough'
+                            ]
+                        ],
                         'crop' => [
                             'config' => [
 

@@ -17,6 +17,21 @@
             </trans-unit>
 
 
+            <trans-unit id="partials.gridElements.contentContainer.aside.information">
+                <source>Futher information</source>
+                <target>Weiterführende Links</target>
+            </trans-unit>
+
+
+			<trans-unit id="partials.gridElements.contentContainer.content.imageResources">
+				<source>Image Resources</source>
+				<target>Bildnachweise</target>
+			</trans-unit>
+			<trans-unit id="partials.gridElements.contentContainer.content.labelChapter">
+				<source>Chapter</source>
+				<target>Kapitel</target>
+			</trans-unit>
+
 
 			<trans-unit id="partials.menus.main.buttons.contact">
 				<source>Contact</source>
@@ -32,12 +47,18 @@
             </trans-unit>
 
 
-
-            <trans-unit id="partials.gridElements.contentContainer.aside.information">
-                <source>Futher information</source>
-                <target>Weiterführende Links</target>
+            <trans-unit id="partials.menus.tableOfContents.labelHeader">
+                <source>Table of Contents</source>
+                <target>Inhaltsverzeichnis</target>
             </trans-unit>
-
+            <trans-unit id="partials.menus.tableOfContents.labelShowMore">
+                <source>Show More</source>
+                <target>Mehr anzeigen</target>
+            </trans-unit>
+            <trans-unit id="partials.menus.tableOfContents.labelShowLess">
+                <source>Show less</source>
+                <target>Weniger anzeigen</target>
+            </trans-unit>
 
 
             <trans-unit id="partials.infoBox.article.labelMeta">
@@ -48,6 +69,18 @@
                 <source>Abstract</source>
                 <target>Zusammenfassung</target>
             </trans-unit>
+
+
+            <trans-unit id="partials.infoBox.publication.labelMeta">
+                <source>Information</source>
+                <target>Informationen</target>
+            </trans-unit>
+            <trans-unit id="partials.infoBox.publication.labelOrder">
+                <source>Order now</source>
+                <target>Jetzt bestellen</target>
+            </trans-unit>
+
+
             <trans-unit id="partials.infoBox.partials.project.labelProject">
                 <source>Project</source>
                 <target>Projekt</target>
@@ -81,6 +114,12 @@
             </trans-unit>
 
 
+            <trans-unit id="partials.keyVisual.publication.sub.labelChapter">
+                <source>Chapter</source>
+                <target>Kapitel</target>
+            </trans-unit>
+
+
             <!-- ================================================================= -->
             <!-- Templates -->
             <!-- ================================================================= -->
@@ -103,27 +142,20 @@
                 <source>Publications</source>
                 <target>Publikationen</target>
             </trans-unit>
+            <trans-unit id="typoscript.navigation.readMore.previous">
+                <source>Back</source>
+                <target>Zurück</target>
+            </trans-unit>
+            <trans-unit id="typoscript.navigation.readMore.next">
+                <source>Next</source>
+                <target>Weiter</target>
+            </trans-unit>
+            <trans-unit id="typoscript.navigation.readMore.readNow">
+                <source>Read online now</source>
+                <target>Jetzt online lesen</target>
+            </trans-unit>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-			<trans-unit id="partials.contentElements.topic.readMore">
-				<source>read more</source>
-				<target>mehr lesen</target>
-			</trans-unit>
 
 
 
@@ -142,10 +174,8 @@
             <!-- ================================================================= -->
             <!-- Partials -->
             <!-- ================================================================= -->
-			<trans-unit id="partials.gridElements.contentContainer.content.imageResources">
-				<source>Image Resources</source>
-				<target>Bildnachweise</target>
-			</trans-unit>
+
+
 
 
             <trans-unit id="partials.alertsBox.headline">
@@ -196,10 +226,6 @@
 			</trans-unit>
 
 
-            <trans-unit id="partials.keyVisual.publication.labelChapter">
-                <source>Chapter</source>
-                <target>Kapitel</target>
-            </trans-unit>
 
 
 			<trans-unit id="partials.sharePrint.socialMedia.labelShare">
@@ -237,25 +263,7 @@
             </trans-unit>
 
 
-            <!-- ================================================================== -->
-            <!-- TypoScript -->
-            <!-- ================================================================== -->
-            <trans-unit id="typoscript.navigation.readMore.previous">
-                <source>Previous Page</source>
-                <target>Vorherige Seite</target>
-            </trans-unit>
-            <trans-unit id="typoscript.navigation.readMore.previousShort">
-                <source>Back</source>
-                <target>Zurück</target>
-            </trans-unit>
-            <trans-unit id="typoscript.navigation.readMore.next">
-                <source>Next Page</source>
-                <target>Nächste Seite</target>
-            </trans-unit>
-            <trans-unit id="typoscript.navigation.readMore.nextShort">
-                <source>Next</source>
-                <target>Vor</target>
-            </trans-unit>
+
 
 		</body>
 	</file>

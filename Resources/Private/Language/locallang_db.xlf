@@ -74,6 +74,9 @@
             <trans-unit id="contentElement.topic.description">
                <source>Displays a topic.</source>
             </trans-unit>
+            <trans-unit id="contentElement.topic.rowDescription">
+                <source>Label for Button</source>
+            </trans-unit>
             <trans-unit id="contentElement.topic.imageManipulation.default">
                <source>Default</source>
             </trans-unit>

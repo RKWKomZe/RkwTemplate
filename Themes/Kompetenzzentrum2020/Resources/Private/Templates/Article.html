@@ -15,11 +15,8 @@
         <main class="main flex-container space-between no-padding-narrow" id="main">
             <section class="section content flex-item flex-basis-9 full-width-smalldesk no-padding-narrow">
 
-                <!-- header -->
-                <div class="siteheader siteheader--extended siteheader--flexible">
-                    <f:render partial="Keyvisual/Article/Default" arguments="{_all}" />
-                    <f:render partial="InfoBox/Article" arguments="{_all}" />
-                </div>
+                <!-- header & infobox -->
+                <f:render partial="HeaderSection/Article" arguments="{_all}" />
 
                 <!-- breadcrumb-->
                 <div class="breadcrumbs flex-container nav breadcrumb-padding">
@@ -102,7 +99,7 @@
                 <article class="project-article" aria-labelledby="article-headline">
 
                     <!-- key-visual and slogan -->
-                    <f:render partial="Keyvisual/Article/Default" arguments="{_all}"/>
+                    <f:render partial="HeaderSection/Article/Default" arguments="{_all}"/>
 
                     <!-- infobox -->
                     <f:render partial="InfoBox/Article" arguments="{_all}"/>
@@ -146,7 +143,7 @@
                 <article class="project-article" aria-labelledby="article-headline">
 
                     <!-- key-visual and slogan -->
-                    <f:render partial="Keyvisual/Article/Tools" arguments="{_all}"/>
+                    <f:render partial="HeaderSection/Article/Tools" arguments="{_all}"/>
 
                     <!-- infobox -->
                     <f:render partial="InfoBox/Article" arguments="{_all}"/>
@@ -189,7 +186,7 @@
                 <article class="project-article" aria-labelledby="article-headline">
 
                     <!-- key-visual and slogan -->
-                    <f:render partial="Keyvisual/Article/Special" arguments="{_all}"/>
+                    <f:render partial="HeaderSection/Article/Special" arguments="{_all}"/>
 
                     <!-- main part -->
                     <div class="content-box content wysiwyg">

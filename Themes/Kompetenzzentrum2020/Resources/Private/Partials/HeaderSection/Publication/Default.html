@@ -1,0 +1,15 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+    <!-- title -->
+    <div class="siteheader__title siteheader__title--dark siteheader__title--long-title siteheader__title--detail-site">
+        <h1 class="h1">
+            <f:format.raw><f:format.crop maxCharacters="90" respectWordBoundaries="false">{data.title}</f:format.crop></f:format.raw>
+        </h1>
+        <f:if condition="{data.subtitle}">
+            <div class="siteheader__intro">
+                <f:format.crop maxCharacters="90" respectWordBoundaries="false"><f:format.raw>{data.subtitle}</f:format.raw></f:format.crop>
+            </div>
+        </f:if>
+    </div>
+
+</html>

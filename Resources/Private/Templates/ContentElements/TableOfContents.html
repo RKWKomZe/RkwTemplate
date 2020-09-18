@@ -6,15 +6,15 @@
         <f:if condition="{items-> f:count()} > 1">
             <nav class="anchor-nav">
                 <p class="anchor-nav__header">{data.header}</p>
-                <ul class="anchor-nav__list">
+                <ol class="anchor-nav__list">
                     <f:for each="{items}" as="item">
                         <li class="anchor-nav__item">
-                            <a href="#" data-target="#c{item.data.uid}">
+                            <a href="#c{item.data.uid}" data-target="#c{item.data.uid}">
                                 {item.data.header}
                             </a>
                         </li>
                     </f:for>
-                </ul>
+                </ol>
             </nav>
         </f:if>
     </f:section>

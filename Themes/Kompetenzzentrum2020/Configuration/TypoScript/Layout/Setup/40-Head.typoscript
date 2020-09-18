@@ -39,7 +39,7 @@ page {
                 10 = USER
                 10 {
                     userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
-                    extensionName = RKWPdf2content
+                    extensionName = RkwPdf2content
                     pluginName = Pi1
                     vendorName = RKW
                     controller = DisplayPages

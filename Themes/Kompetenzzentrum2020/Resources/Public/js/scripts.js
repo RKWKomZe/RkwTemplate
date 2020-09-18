@@ -128,7 +128,23 @@ $(function () {
   });
 });
 
-function addSmothScrolling() {
+function addMessageScrolling() {
+
+  // scroll to first TYPO3-message (if there is one)
+  if ($(".system-message--scroll").first().length > 0){
+    var messageDiv = $(".system-message--scroll").first();
+    var offset = messageDiv.offset().top;
+    $("html, body")
+      .animate({
+        'scrollTop': offset - 100
+      },
+      1000,
+      "easeOutQuart"
+    );
+  }
+}
+
+function addSmoothScrolling() {
   // Smooth scrolling when clicking an anchor link
   $('[data-target]').on("click", function (e) {
     e.preventDefault();
@@ -4921,10 +4937,8 @@ $(function () {
   $(".js-dropdown-item").dropdownNavbar();
 
   //Initialize responsive table
-  $(".responsive-table").basictable();
-
-  $(".medium-breakpoint").basictable({
-    breakpoint: 712,
+  $(".responsive-table").basictable({
+    breakpoint: 768,
   });
 
   //Initialize AJAX-API
@@ -4935,7 +4949,10 @@ $(function () {
   }
 
   //Smooth scrolling when clicking on an anchor link
-  addSmothScrolling();
+  addSmoothScrolling();
+
+  // scroll to first TYPO3-message (if there is one)
+  addMessageScrolling();
 
   //Owl Carousel for Slideshow
   $(".owl-carousel").owlCarousel({
@@ -4951,4 +4968,5 @@ $(function () {
   });
 
   $(".slider-mod").sliderPlugin();
+
 });
