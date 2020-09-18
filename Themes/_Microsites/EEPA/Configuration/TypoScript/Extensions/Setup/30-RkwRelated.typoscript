@@ -2,7 +2,7 @@ module.tx_rkwrelated {
 
     settings {
         # cat=plugin.tx_rkwrelated; type=string; label=List of PIDs whose cache is to delete, when contents are saved
-        clearCachePageList = {$plugin.tx_rkwtemplate_themeconfig.rootPid}
+        clearCachePageList = {$plugin.tx_rkwtemplate_themeconfig.website.rootPid}
 
     }
 }
@@ -12,7 +12,7 @@ plugin.tx_rkwrelated_similarcontent {
     settings {
 
         # cat=plugin.tx_rkwrelated_morecontent//f; type=integer; label=PID to start search from
-        startingPid = 1, {$plugin.tx_rkwtemplate_themeconfig.rootPid}
+        startingPid = 1, {$plugin.tx_rkwtemplate_themeconfig.website.rootPid}
 
         # cat=plugin.tx_rkwrelated_morecontent//f; type=boolean; label=Override opening of links in same window (empty to deactivate override)
         openLinksInSameWindowOverride = 1
@@ -24,7 +24,7 @@ plugin.tx_rkwrelated_morecontent {
     settings {
 
         # cat=plugin.tx_rkwrelated_morecontent//f; type=integer; label=PID to start search from
-        startingPid = 1, {$plugin.tx_rkwtemplate_themeconfig.rootPid}
+        startingPid = 1, {$plugin.tx_rkwtemplate_themeconfig.website.rootPid}
 
         detailPid {
 

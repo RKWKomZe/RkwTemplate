@@ -1,6 +1,25 @@
-<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:rkwEtracker="http://typo3.org/ns/RKW/RkwEtracker/ViewHelpers"
+    data-namespace-typo3-fluid="true">
 
     <f:if condition="{f:count(subject: images)} > 0">
+        <f:if condition="{data.header_link}">
+            <f:then>
+                <rkwEtracker:link.typolink parameter="{data.header_link}">
+                    <f:render section="Inner" arguments="{_all}"/>
+                </rkwEtracker:link.typolink>
+            </f:then>
+            <f:else>
+                <f:render section="Inner" arguments="{_all}"/>
+            </f:else>
+        </f:if>
+
+    </f:if>
+
+    <f:comment><!-- ======================================================================== --></f:comment>
+
+    <f:section name="Inner">
+
         <img class="illu_desk" src="{f:uri.image(image:images.0,width:'297',height:'240c',cropVariant:'default')}" alt="{data.header}" />
 
         <f:if condition="{images.1}">
@@ -11,6 +30,6 @@
                 <img class="illu_mobile" src="{f:uri.image(image:images.0,width:'63',height:'50c',cropVariant:'default')}" alt="{data.header}" />
             </f:else>
         </f:if>
+    </f:section>
 
-    </f:if>
 </html>

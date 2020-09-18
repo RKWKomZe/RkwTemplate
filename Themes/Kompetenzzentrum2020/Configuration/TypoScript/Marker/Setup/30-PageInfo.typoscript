@@ -76,7 +76,7 @@ lib.txRkwTemplate {
                         ext = png
 
                         // set maxW of fallback image
-                        maxW = 215c
+                        maxW = 190c
                     }
 
                     // set alt-Text and title
@@ -131,6 +131,21 @@ lib.txRkwTemplate {
         }
 
         //=================================================================
+
+        fileType = FILES
+        fileType {
+            references < lib.txRkwTemplate.pageInfo.fileThumbnail.references
+
+            renderObj = COA
+            renderObj {
+
+                5 = TEXT
+                5.data = file:current:extension
+
+            }
+        }
+
+        //=================================================================
         fileDownload = FILES
         fileDownload {
             references < lib.txRkwTemplate.pageInfo.fileThumbnail.references
@@ -141,44 +156,17 @@ lib.txRkwTemplate {
                 5 = LOAD_REGISTER
                 5.imageUrl.data = file:current:publicUrl
 
-                10 = COA
-                10 {
-                    // Change caption based on file extension
-                    10 = COA
-                    10 {
-                        10 = TEXT
-                        10.value = Word-Datei speichern
-                        10.if.value.data = file:current:extension
-                        10.if.equals = doc
+                10 = TEXT
+                10.value =  Herunterladen
+                10.stdWrap.typolink {
+                    parameter.data = file:current:publicUrl
+                    ATagBeforeWrap = 1
+                    ATagParams = class="btn btn--primary btn--small"
 
-                        11 < .10
-                        11.if.equals = docx
-
-                        12 < .10
-                        12.if.equals = docm
-
-                        20 < .10
-                        20.value = Excel-Datei speichern
-                        20.if.equals = xls
-
-                        21 < .20
-                        21.if.equals = xlsx
-
-                        // Fallback / Default
-                        stdWrap.ifEmpty.cObject = TEXT
-                        stdWrap.ifEmpty.cObject.value = Als PDF herunterladen
-                    }
-
-                    stdWrap.typolink {
-                        parameter.data = file:current:publicUrl
-                        ATagBeforeWrap = 1
-                        ATagParams = class="button"
-                        wrap = <span class="icon-file">|</span>
-
-                        // eTracker
-                        userFunc = RKW\RkwEtracker\UserFunctions\Typolink->getParsedLinkWithDataAttributes
-                    }
+                    // eTracker
+                    userFunc = RKW\RkwEtracker\UserFunctions\Typolink->getParsedLinkWithDataAttributes
                 }
+
             }
         }
 
@@ -235,47 +223,6 @@ lib.txRkwTemplate {
                 // Again: Controller-Name and Action
                 Authors {
                     1 = pageCommaList
-                }
-            }
-
-            view =< plugin.tx_rkwauthors.view
-            persistence =< plugin.tx_rkwauthors.persistence
-            settings =< plugin.tx_rkwauthors.settings
-        }
-
-
-        //=================================================================
-        firstAuthor = USER
-        firstAuthor {
-            userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
-            extensionName = RkwAuthors
-            pluginName = Rkwauthors
-            vendorName = RKW
-            controller = Authors
-            switchableControllerActions {
-                // Again: Controller-Name and Action
-                Authors {
-                    1 = pageBoxSmallFirst
-                }
-            }
-
-            view =< plugin.tx_rkwauthors.view
-            persistence =< plugin.tx_rkwauthors.persistence
-            settings =< plugin.tx_rkwauthors.settings
-        }
-
-        //=================================================================
-        otherAuthors = USER
-        otherAuthors {
-            userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
-            extensionName = RkwAuthors
-            pluginName = Rkwauthors
-            vendorName = RKW
-            controller = Authors
-            switchableControllerActions {
-                // Again: Controller-Name and Action
-                Authors {
-                    1 = pageBoxSmallRest
                 }
             }
 

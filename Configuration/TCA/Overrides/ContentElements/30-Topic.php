@@ -9,6 +9,7 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_topic'] = [
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
             --palette--;;general,
             --palette--;;headers,
+            rowDescription,
             bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,            
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.images,
             image,            
@@ -48,12 +49,39 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_topic'] = [
                 'enableRichtext' => false,
             ]
         ],
+        'rowDescription' => [
+            'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.topic.rowDescription',
+            'config' => [
+                'type' => 'input',
+                'eval' => 'trim',
+            ]
+        ],
         'image' => [
             'config' => [
                 'minitems' => 1,
                 'maxitems' => 2,
                 'overrideChildTca' => [
                     'columns' => [
+                        'title' => [
+                            'config' => [
+                                'type' => 'passthrough'
+                            ]
+                        ],
+                        'link' => [
+                            'config' => [
+                                'type' => 'passthrough'
+                            ]
+                        ],
+                        'description' => [
+                            'config' => [
+                                'type' => 'passthrough'
+                            ]
+                        ],
+                        'alternative' => [
+                            'config' => [
+                                'type' => 'passthrough'
+                            ]
+                        ],
                         'crop' => [
                             'config' => [
 

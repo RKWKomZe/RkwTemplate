@@ -86,6 +86,10 @@
                 <source>Displays a topic.</source>
                 <target>Eine Box für den Verweis auf zentrale Themen und/oder Inhalte einer Website zur Verwendung im Themen-Container.</target>
             </trans-unit>
+            <trans-unit id="contentElement.topic.rowDescription">
+                <source>Label for Button</source>
+                <target>Beschriftung für Button</target>
+            </trans-unit>
             <trans-unit id="contentElement.topic.imageManipulation.default">
                 <source>Default</source>
                 <target>Standard</target>

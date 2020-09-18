@@ -2,6 +2,14 @@ lib.txRkwTemplate {
 
     publication {
 
+        currentTitle = TEXT
+        currentTitle.data = page:title
+
+        //=================================================================
+        currentSubTitle = TEXT
+        currentSubTitle.data = page:subtitle
+
+        //=================================================================
         isParentPage = TEXT
         isParentPage.value = 1
         isParentPage.if.isTrue.data = page:tx_rkwpdf2content_is_import

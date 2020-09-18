@@ -171,8 +171,7 @@ lib.txRkwTemplate {
                         typolink {
 
                             parameter.cObject < lib.txRkwTemplate.navigation.pageNaviPrev
-                            ATagParams = class="previous button icon-circle-right"
-                            wrap = <span>|</span>
+                            ATagParams = class="btn btn--secondary"
                             ATagBeforeWrap = 1
                         }
 
@@ -208,8 +207,7 @@ lib.txRkwTemplate {
 
                         typolink {
                             parameter.cObject < lib.txRkwTemplate.navigation.pageNaviNext
-                            ATagParams = class="next button icon-circle-right"
-                            wrap = <span>|</span>
+                            ATagParams = class="btn btn--primary"
                             ATagBeforeWrap = 1
 
                         }
@@ -221,14 +219,7 @@ lib.txRkwTemplate {
                         returnLast = url
                     }
                 }
-
-                wrap = <div class="desktop-text">|</div>
             }
-
-            20 < .10
-            20.10.value = {LLL:EXT:rkw_template/Themes/Kompetenzzentrum2020/Resources/Private/Language/locallang.xlf:typoscript.navigation.readMore.previousShort}
-            20.20.value = {LLL:EXT:rkw_template/Themes/Kompetenzzentrum2020/Resources/Private/Language/locallang.xlf:typoscript.navigation.readMore.nextShort}
-            20.wrap = <div class="mobile-text">|</div>
 
 
             wrap = <div class="pagination">|</div>
@@ -240,23 +231,19 @@ lib.txRkwTemplate {
         beginRead < .readMore
         beginRead {
 
-            20 >
             10 {
                 10 >
                 20 {
 
-                    value = Jetzt lesen
+                    value = {LLL:EXT:rkw_template/Themes/Kompetenzzentrum2020/Resources/Private/Language/locallang.xlf:typoscript.navigation.readMore.readNow}
                     stdWrap {
                         typolink {
-                            ATagParams = class="more-button button icon-circle-right"
+                            ATagParams = class="btn btn--primary"
                         }
                     }
 
                     if.isTrue.typolink.parameter.cObject < lib.txRkwTemplate.navigation.pageNextSub
-
                 }
-
-                wrap >
             }
         }
     }

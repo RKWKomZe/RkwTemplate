@@ -156,11 +156,6 @@ h2,
   color: #808080;
 }
 
-h2--publications,
-.h2--publications {
-  color: #333333;
-}
-
 h2 .foo-bar,
 .h2 .foo-bar {
   margin-bottom: 0.5em;
@@ -336,12 +331,14 @@ ul li {
   margin-left: 5px;
 }
 
-p + ul.list-primary, p + ul, p + ul.list-ordered, p + ol,
-p + ol.list-primary,
-p + ol.list-ordered {
-  margin-top: 1em;
-}
-
+/*
+p + ul,
+p + ol {
+  &.list-primary,
+  &.list-ordered {
+    margin-top:1em;
+  }
+}*/
 ul,
 ol {
   padding-left: 1em;
@@ -371,6 +368,8 @@ ol.list-primary {
 ul.list-primary li, ul li,
 ol.list-primary li {
   margin: 0 0 0.5em 0;
+  text-indent: -28px;
+  padding-left: 30px;
 }
 
 ul.list-primary li:before, ul li:before,
@@ -378,7 +377,6 @@ ol.list-primary li:before {
   content: "\2022";
   color: #e64415;
   font-weight: 700;
-  display: inline-block;
   width: 10px;
   margin: 0 15px 0 0;
 }
@@ -394,16 +392,22 @@ ol.list-ordered {
   list-style-position: inside;
 }
 
+ul.list-ordered li, ol li,
+ol.list-ordered li {
+  text-indent: -30px;
+  padding-left: 30px;
+}
+
 ul.list-ordered li:before, ol li:before,
 ol.list-ordered li:before {
   counter-increment: section;
   content: counters(section, ". ") ".";
   color: #e64415;
   font-weight: 700;
-  display: inline-block;
   white-space: nowrap;
   margin: 0 15px 0 0;
   width: 10px;
+  letter-spacing: -0.04em;
 }
 
 ul.list-inline,

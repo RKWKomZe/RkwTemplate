@@ -171,7 +171,7 @@ mod {
                             2 {
                                 columns {
                                     1 {
-                                        name = Bestellformular / Boxen ohne Vererbung auf Unterseiten
+                                        name = Bestellformular
                                         colPos = 410
                                     }
                                 }
