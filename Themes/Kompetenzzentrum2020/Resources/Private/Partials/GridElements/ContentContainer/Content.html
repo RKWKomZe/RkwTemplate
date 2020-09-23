@@ -21,20 +21,17 @@
     </rkwBasics:format.removeEmptyParagraphs>
 
     <!-- read more nav and order form-->
-    <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.publication.parentUid')}">
-        <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.publication.isParentPage')}">
-            <f:then>
-                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.beginRead" />
+    <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.publication.isParentPage')}">
+        <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.beginRead" />
 
-                <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.publication.isParentPage')}">
-                    <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.boxesPublication" data="{data}" />
-                </f:if>
-            </f:then>
-            <f:else>
-                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.readMore" />
-            </f:else>
+        <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.publication.isParentPage')}">
+            <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.boxesPublication" data="{data}" />
         </f:if>
     </f:if>
+    <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.publication.isSubPage')}">
+        <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.readMore" />
+    </f:if>
+
 
     <!-- image resources -->
     <f:if condition="<rkwBasics:isEmpty string='{f:cObject(typoscriptObjectPath: \'lib.txRkwTemplate.pageInfo.imageResources\')}' /> == 0">

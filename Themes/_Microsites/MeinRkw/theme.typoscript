@@ -39,7 +39,7 @@ plugin.tx_rkwtemplate_themeconfig {
         logoTabletFile =
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Vertical text (on microsites only)
-        textVertical = Ein Angebot des RKW e. V.
+        textPoweredBy = Ein Angebot des RKW e. V.
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to main website (on microsites only)
         mainWebsiteUrl = http://www.rkw.de

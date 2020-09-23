@@ -1,0 +1,12 @@
+plugin.tx_rkwform {
+    view {
+        # cat=plugin.tx_rkwrelated_morecontent/file; type=string; label=Path to template root (FE)
+        templateRootPath = {$plugin.tx_rkwtemplate_themeconfig.paths.extensions.rootBase}/RkwForm/Templates/
+
+        # cat=plugin.tx_rkwrelated_morecontent/file; type=string; label=Path to template partials (FE)
+        partialRootPath = {$plugin.tx_rkwtemplate_themeconfig.paths.extensions.rootBase}/RkwForm/Partials/
+
+        # cat=plugin.tx_rkwrelated_morecontent/file; type=string; label=Path to template layouts (FE)
+        layoutRootPath = {$plugin.tx_rkwtemplate_themeconfig.paths.extensions.rootBase}/RkwForm/Layouts/
+    }
+}

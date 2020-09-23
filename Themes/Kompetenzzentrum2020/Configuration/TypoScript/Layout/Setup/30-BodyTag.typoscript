@@ -137,7 +137,7 @@ page {
 
         60 = TEXT
         60 {
-            value = microsite
+            value = is-microsite
             stdWrap.noTrimWrap = | ||
             if.isTrue = {$plugin.tx_rkwtemplate_themeconfig.isMicrosite}
         }

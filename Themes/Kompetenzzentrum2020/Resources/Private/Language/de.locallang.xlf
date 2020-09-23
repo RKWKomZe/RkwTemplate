@@ -108,12 +108,6 @@
 
 
 
-            <trans-unit id="partials.aside.similarContents">
-                <source>Similar contents</source>
-                <target>Auch interessant</target>
-            </trans-unit>
-
-
             <trans-unit id="partials.keyVisual.publication.sub.labelChapter">
                 <source>Chapter</source>
                 <target>Kapitel</target>

@@ -1,62 +1,38 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
-<f:spaceless>
+	<f:spaceless>
 
-	<!-- skip links-->
-	<f:render partial="Basics/SkipLinks" />
+		<!-- skip links-->
+		<f:render partial="Basics/SkipLinks" />
 
-	<div class="pagewrap">
+		<div class="pagewrap">
 
-		<f:comment><f:render partial="Basics/BrowserWarning" /></f:comment>
+			<f:comment><f:render partial="Basics/BrowserWarning" /></f:comment>
 
-		<!-- header -->
-		<header class="header {f:if(condition: '{f:cObject(typoscriptObjectPath:\'lib.txRkwTemplate.navigation.sub\', data:\'{data}\')}', then: 'has-nav')}">
-			<f:render partial="Basics/Header" section="Default" arguments="{_all}"/>
-			<f:render section="Header" />
-		</header>
+			<!-- microsite bar -->
+			<f:render partial="Basics/Header" section="Microsite" arguments="{_all}"/>
 
-		<!-- main section -->
-		<f:render section="Content" />
+			<!-- header -->
+			<header class="header {f:if(condition: '{f:cObject(typoscriptObjectPath:\'lib.txRkwTemplate.navigation.sub\', data:\'{data}\')}', then: 'has-nav')}">
+				<f:render partial="Basics/Header" section="Default" arguments="{_all}"/>
+				<f:render section="Header" />
+			</header>
 
-		<!-- footer -->
-		<f:render partial="Basics/Footer" section="Default" arguments="{_all}"/>
+			<!-- main section -->
+			<f:render section="Content" />
 
-	</div>
+			<!-- footer -->
+			<f:render partial="Basics/Footer" section="Default" arguments="{_all}"/>
 
-	<!-- SVGs -->
-	<f:render partial="Basics/SVGs" />
-
-</f:spaceless>
-
-</html>
-
-
-<f:comment>
-
-	{namespace rkwBasics=RKW\RkwBasics\ViewHelpers}
-
-	<f:render partial="Basics/BrowserWarning" />
-
-	<!-- Page header -->
-	<f:render partial="Basics/Header" section="Microsite" arguments="{_all}"/>
-
-	<div class="page-wrap">
-
-		<!-- Main Part -->
-		<div class="page-content-wrapper"></div>
-
-		<div class="container" id="page-top">
-			<main id="main">
-				<f:render partial="Basics/Logo" section="Microsite"  />
-				<f:render section="content" />
-			</main>
 		</div>
 
-		<!-- Footer -->
-		<f:render partial="Basics/Footer" arguments="{_all}"/>
+		<!-- SVGs -->
+		<f:render partial="Basics/SVGs" />
 
 		<!-- Overlay -->
 		<f:cObject typoscriptObjectPath="lib.txRkwTemplate.various.overlayMeinRKW" data="{data}" />
 
-	</div>
-</f:comment>
+
+	</f:spaceless>
+
+</html>

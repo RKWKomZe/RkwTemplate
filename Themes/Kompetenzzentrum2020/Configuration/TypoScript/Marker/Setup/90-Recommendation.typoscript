@@ -2,6 +2,11 @@ lib.txRkwTemplate {
 
     recommendation {
 
+
+        relatedSimilarLabel = TEXT
+        relatedSimilarLabel.value = {$lib.txRkwTemplate.recommendation.relatedSimilar.label}
+
+        //=================================================================
         relatedDefault = COA
         relatedDefault {
 
@@ -59,7 +64,7 @@ lib.txRkwTemplate {
                                 layout = Reduced
                                 pagePropertyFilter = project
                                 displayPublications = 2
-                                headline = Aktuelle Artikel
+                                headline = {$lib.txRkwTemplate.recommendation.relatedDefault.label}
                             }
                         }
                     }
@@ -70,7 +75,7 @@ lib.txRkwTemplate {
             90 = RESTORE_REGISTER
         }
 
-
+        //=================================================================
         relatedPublication < .relatedDefault
         relatedPublication{
             20 {
@@ -79,7 +84,7 @@ lib.txRkwTemplate {
                         10 {
                             settings {
                                 displayPublications = 1
-                                headline = Aktuelle Publikationen
+                                headline = {$lib.txRkwTemplate.recommendation.relatedPublication.label}
                             }
                         }
                     }
@@ -88,7 +93,7 @@ lib.txRkwTemplate {
 
         }
 
-
+        //=================================================================
         relatedSimilar = USER
         relatedSimilar {
 
@@ -111,12 +116,12 @@ lib.txRkwTemplate {
             settings {
 
                 layout = Below
-                headline = Auch interessant
+                headline = {$lib.txRkwTemplate.recommendation.relatedSimilar.label}
                 hideMoreLink = 1
             }
         }
 
-
+        //=================================================================
         relatedSimilarReduced < .relatedSimilar
         relatedSimilarReduced {
 

@@ -48,10 +48,15 @@ plugin.tx_rkwevents {
 		archivePid = 2984
 
 		// cat=plugin.tx_rkwevents; type=integer; label=Number of items in list view (default 10)
-        itemsPerPage = 10
+itemsPerPage = 6
 
 		// cat=plugin.tx_rkwevents; type=integer; label=PageNum for AJAX-requests
 		ajaxTypeNum = 1472648979
+
+        list {
+            # cat=plugin.tx_rkwevents; type=integer; label=Group list result by month or not
+noGrouping = 1
+        }
 
 		mandatoryFields {
 

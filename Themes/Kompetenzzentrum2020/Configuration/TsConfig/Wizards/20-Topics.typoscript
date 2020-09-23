@@ -42,7 +42,7 @@
 
     // remove everything - except for some items
     // Important: this also has to include gridelements_pi1 for the gridContainer if needed!
-    TCEFORM.tt_content.CType.keepItems = list
+    TCEFORM.tt_content.CType.keepItems = list, gridelements_pi1
 
     // remove everything - except for some items
     mod.wizards.newContentElement.wizardItems.plugins.show = *
@@ -57,7 +57,7 @@
 
     // remove everything - except for some items
     // Important: this also has to include gridelements_pi1 for the gridContainer if needed!
-    TCEFORM.tt_content.CType.keepItems = list
+    TCEFORM.tt_content.CType.keepItems = list, gridelements_pi1
 
     // remove everything - except for some items
     mod.wizards.newContentElement.wizardItems.plugins.show = *

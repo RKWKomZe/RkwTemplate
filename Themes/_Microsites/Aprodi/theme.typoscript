@@ -28,7 +28,7 @@ plugin.tx_rkwtemplate_themeconfig {
     microsite {
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Vertical text (on microsites only)
-        textVertical = Ein Projekt des RKW Kompetenzzentrums
+        textPoweredBy = Ein Projekt des RKW Kompetenzzentrums
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to main website (on microsites only)
         mainWebsiteUrl = #

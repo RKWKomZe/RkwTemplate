@@ -13,49 +13,53 @@
 
     <f:section name="Content">
 
-        <main class="main flex-container space-between no-padding-narrow">
+        <main class="main flex-container space-between no-padding-narrow" id="main">
             <section class="section content flex-item flex-basis-9 full-width-smalldesk no-padding-narrow">
 
-                <div class="siteheader siteheader--extended siteheader--flexible">
+                <div class="siteheader siteheader--extended siteheader--flexible no-border-radius-smalldesk">
 
                     <!-- header -->
                     <f:cObject typoscriptObjectPath="lib.txRkwTemplate.event.title" data="{data}" />
 
-                    <div class="siteheader__bg">
-
-                        <!-- GoogleMaps -->
+                    <!-- GoogleMaps -->
+                    <div class="siteheader__image">
                         <f:format.raw><f:cObject typoscriptObjectPath="lib.txRkwTemplate.event.maps" data="{data}" /></f:format.raw>
+                    </div>
 
-                        <!-- overview -->
+                    <!-- overview -->
+                    <div class="siteheader__meta flex-container space-between">
                         <f:cObject typoscriptObjectPath="lib.txRkwTemplate.event.info" data="{data}" />
-
                     </div>
 
                 </div>
 
                 <!-- breadcrumb -->
-                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.breadcrumb" data="{data}" />
+                <div class="breadcrumbs flex-container nav breadcrumb-padding">
+                    <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.breadcrumb" data="{data}" />
+                </div>
 
-                <div class="contentbox contentbox--text contentbox--no-border-radius has-initial no-border-radius-smalldesk">
-
-                    <!-- content -->
+                <!-- content -->
+                <div class="contentbox contentbox--text contentbox--no-border-radius no-border-radius-smalldesk typo3-fsc">
                     <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.main" data="{data}" />
-
                 </div>
 
             </section>
+
+            <!-- similar contents -->
+            <aside class="aside-info flex-item flex-basis-3 aside-info--padding full-width-smalldesk">
+                <div class="asideinner">
+                    <h4 class="asideinner__title content-padding-smalldesk">
+                        <f:cObject typoscriptObjectPath="lib.txRkwTemplate.recommendation.relatedSimilarLabel" />
+                    </h4>
+                    <div class="contentbox no-border-radius-smalldesk">
+                        <f:cObject typoscriptObjectPath="lib.txRkwTemplate.recommendation.relatedSimilarReduced" />
+                    </div>
+                </div>
+            </aside>
+
         </main>
 
 
-        <f:comment>
-            <aside class="aside-info flex-item flex-basis-3 aside-info--padding">
-                <div class="asideinner">
-
-                    <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.related" data="{data}" />
-
-                </div>
-            </aside>
-        </f:comment>
 
 
     </f:section>

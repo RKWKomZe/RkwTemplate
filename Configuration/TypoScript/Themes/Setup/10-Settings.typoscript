@@ -19,7 +19,7 @@ lib.txRkwTemplate.themeSettings {
     // @depecated end
 
     micrositeLogoTabletFile = {$plugin.tx_rkwtemplate_themeconfig.microsite.logoTabletFile}
-    micrositeTextVertical = {$plugin.tx_rkwtemplate_themeconfig.microsite.textVertical}
+    micrositeTextPoweredBy = {$plugin.tx_rkwtemplate_themeconfig.microsite.textPoweredBy}
     micrositeMainWebsiteUrl = {$plugin.tx_rkwtemplate_themeconfig.microsite.mainWebsiteUrl}
     micrositeMainWebsiteName  = {$plugin.tx_rkwtemplate_themeconfig.microsite.mainWebsiteName}
     micrositeMainWebsiteLogoFile = {$plugin.tx_rkwtemplate_themeconfig.microsite.mainWebsiteLogoFile}

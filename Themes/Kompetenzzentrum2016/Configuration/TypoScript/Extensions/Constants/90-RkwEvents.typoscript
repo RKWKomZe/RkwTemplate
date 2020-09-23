@@ -1,6 +1,17 @@
 
 plugin.tx_rkwevents {
 
+    view {
+        # cat=plugin.tx_rkwrelated_morecontent/file; type=string; label=Path to template root (FE)
+        templateRootPath = {$plugin.tx_rkwtemplate_themeconfig.paths.extensions.rootBase}/RkwEvents/Templates/
+
+        # cat=plugin.tx_rkwrelated_morecontent/file; type=string; label=Path to template partials (FE)
+        partialRootPath = {$plugin.tx_rkwtemplate_themeconfig.paths.extensions.rootBase}/RkwEvents/Partials/
+
+        # cat=plugin.tx_rkwrelated_morecontent/file; type=string; label=Path to template layouts (FE)
+        layoutRootPath = {$plugin.tx_rkwtemplate_themeconfig.paths.extensions.rootBase}/RkwEvents/Layouts/
+    }
+
 	persistence {
 		// cat=plugin.tx_rkwevents; type=integer; label=Default storage PID
 		storagePid = 2986,3234,3469,3621,3652,4789,4244
@@ -68,8 +79,6 @@ plugin.tx_rkwevents {
 		}
 	}
 }
-
-
 
 
 

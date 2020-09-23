@@ -53,7 +53,7 @@ plugin.tx_rkwtemplate_themeconfig {
             mainWebsiteImages = EXT:rkw_template/Themes/{$plugin.tx_rkwtemplate_themeconfig.themeName}/Resources/Public/img
 
             # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Path to logos
-            mainWebsiteLogos = EXT:rkw_template/Themes/{$plugin.tx_rkwtemplate_themeconfig.themeName}/Resources/Public/img/logos
+            mainWebsiteLogos = EXT:rkw_template/Themes/{$plugin.tx_rkwtemplate_themeconfig.themeName}/Resources/Public/img/global/logos
         }
     }
 
@@ -115,7 +115,7 @@ plugin.tx_rkwtemplate_themeconfig {
         logoTabletFile = {$plugin.tx_rkwtemplate_themeconfig.paths.default.logos}/logo-tablet.png
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Vertical text (on microsites only)
-        textVertical = Ein Angebot des RKW Kompetenzzentrums
+        textPoweredBy = Ein Angebot des RKW<span class="hide-mobile"> Kompetenzzentrums</span>
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to main website (on microsites only)
         mainWebsiteUrl = https://www.rkw-kompezenzzentrum.de
