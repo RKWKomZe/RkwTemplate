@@ -1,4 +1,5 @@
 mainNavConfig {
-
-    pid = 6391
+    pid = {$plugin.tx_rkwtemplate_themeconfig.rootPid}
+    contactPid = 6058
+    loginPid =
 }

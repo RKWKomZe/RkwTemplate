@@ -1,7 +1,7 @@
 plugin.tx_rkwtemplate_themeconfig {
 
     # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Name of main-theme
-    themeName = Kompetenzzentrum2016
+    themeName = Kompetenzzentrum2020
 
     # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Name of the sub-theme
     subThemeName = _Microsites/RkwGeschichte
@@ -21,6 +21,9 @@ plugin.tx_rkwtemplate_themeconfig {
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=baseUrl (With / at the end for ClickEnlarge)
         baseUrl = https://geschichte.rkw.de/
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=integer; label=ID of Rootpage
+        rootPid = 6214
     }
 
     microsite {

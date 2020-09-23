@@ -6,7 +6,6 @@ module.tx_rkwrelated {
     }
 }
 
-
 plugin.tx_rkwrelated_similarcontent {
 
 
