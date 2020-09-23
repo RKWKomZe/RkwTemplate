@@ -2986,12 +2986,6 @@ form .break-after {
   margin: 0 0 1em 0;
 }
 
-.tiles-wrapper .flex-item {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
-
 @media only screen and (max-width: 48em) {
   .tiles-wrapper {
     margin: 20px 0 20px 0;
@@ -4569,9 +4563,6 @@ legend {
   height: auto;
   margin: 0px auto;
   padding: 2em 1em;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -ms-flex-line-pack: start;
       align-content: flex-start;
 }
@@ -4611,6 +4602,7 @@ legend {
 
 .site-logo {
   z-index: 20;
+  padding-top: 1em;
 }
 
 @media only screen and (max-width: 80em) {
@@ -6215,7 +6207,7 @@ div.breadcrumb-py {
  * reusable navbar
  * ================================================== */
 .nav {
-  padding: 1em 0;
+  padding: 1em 0 0 0;
 }
 
 @media only screen and (max-width: 64em) {
@@ -6278,7 +6270,7 @@ div.breadcrumb-py {
 .nav--secondary ul li.nav__item,
 .nav--tertiary ul li.nav__item {
   margin: 0;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 18px;
   font-size: 1.125rem;
 }
@@ -6393,7 +6385,6 @@ div.breadcrumb-py {
 .nav--primary ul li.nav__item a:hover,
 .nav--secondary ul li.nav__item a:hover,
 .nav--tertiary ul li.nav__item a:hover {
-  font-weight: 700;
   text-decoration: none;
   color: #333333;
 }
@@ -6507,6 +6498,10 @@ div.breadcrumb-py {
   letter-spacing: 1px;
 }
 
+.nav--primary ul li.nav__item {
+  font-weight: 700;
+}
+
 @media only screen and (max-width: 80em) {
   nav.nav--primary.flex-basis-9 {
     -ms-flex-preferred-size: 80%;
@@ -6616,7 +6611,7 @@ nav.nav--primary ul .nav__item-buttons .nav__item {
 }
 
 .nav--secondary {
-  padding-top: 1em;
+  padding-top: 0.5em;
 }
 
 @media only screen and (max-width: 80em) {
@@ -6986,22 +6981,22 @@ nav.nav--primary ul .nav__item-buttons .nav__item {
   margin: 0 auto 0 auto;
 }
 
-@media only screen and (max-width: 64em) {
-  .nav-flyout ul.nav-flyout__dropdown {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-
 .nav-flyout ul.nav-flyout__dropdown .nav-flyout__item {
-  width: 20%;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 12%;
+      flex-basis: 12%;
+  max-width: 20%;
   min-height: 200px;
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 1.5em 3em 1.5em;
+  margin: 0 1em 2em 1em;
   z-index: 20;
   padding: 0;
   background-color: #e6e6e6;
@@ -7015,12 +7010,6 @@ nav.nav--primary ul .nav__item-buttons .nav__item {
   -webkit-transition: 250ms ease-out;
   transition: 250ms ease-out;
   background: #e64415;
-}
-
-@media only screen and (max-width: 90em) {
-  .nav-flyout ul.nav-flyout__dropdown .nav-flyout__item {
-    width: 21%;
-  }
 }
 
 @media only screen and (max-width: 64em) {
@@ -7838,6 +7827,8 @@ div.slide-out-animation {
   height: 32px;
   z-index: 999;
   background-color: #ffffff;
+  -webkit-box-shadow: 0 0 5px 0 #acacac;
+          box-shadow: 0 0 5px 0 #acacac;
 }
 
 .microsite-bar__container {
@@ -14123,7 +14114,20 @@ _:-ms-fullscreen .careercheck__questions .form__field--career input[type="radio"
 .typo3-fsc .frame:first-child > .h3:first-child:not(.no-hide),
 .typo3-fsc .frame:first-child > .h4:first-child:not(.no-hide),
 .typo3-fsc .frame:first-child > .h5:first-child:not(.no-hide),
-.typo3-fsc .frame:first-child > .h6:first-child:not(.no-hide) {
+.typo3-fsc .frame:first-child > .h6:first-child:not(.no-hide),
+.typo3-fsc .frame .ce-bodytext:first-child header:first-child:not(.no-hide),
+.typo3-fsc .frame .ce-bodytext:first-child > h1:first-child:not(.no-hide),
+.typo3-fsc .frame .ce-bodytext:first-child > h2:first-child:not(.no-hide),
+.typo3-fsc .frame .ce-bodytext:first-child > h3:first-child:not(.no-hide),
+.typo3-fsc .frame .ce-bodytext:first-child > h4:first-child:not(.no-hide),
+.typo3-fsc .frame .ce-bodytext:first-child > h5:first-child:not(.no-hide),
+.typo3-fsc .frame .ce-bodytext:first-child > h6:first-child:not(.no-hide),
+.typo3-fsc .frame .ce-bodytext:first-child > .h1:first-child:not(.no-hide),
+.typo3-fsc .frame .ce-bodytext:first-child > .h2:first-child:not(.no-hide),
+.typo3-fsc .frame .ce-bodytext:first-child > .h3:first-child:not(.no-hide),
+.typo3-fsc .frame .ce-bodytext:first-child > .h4:first-child:not(.no-hide),
+.typo3-fsc .frame .ce-bodytext:first-child > .h5:first-child:not(.no-hide),
+.typo3-fsc .frame .ce-bodytext:first-child > .h6:first-child:not(.no-hide) {
   display: none;
 }
 

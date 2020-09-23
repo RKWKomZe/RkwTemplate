@@ -1,0 +1,49 @@
+lib.txRkwTemplate {
+
+    recommendation {
+
+        relatedDefault {
+            20 {
+                conf.pages {
+                    conf.tx_rkwprojects_domain_model_projects {
+                        10 {
+                            settings {
+                                ignoreVisibility = 1
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+        //=================================================================
+        relatedPublication{
+            20 {
+                conf.pages {
+                    conf.tx_rkwprojects_domain_model_projects {
+                        10 {
+                            settings {
+                                ignoreVisibility = 1
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        //=================================================================
+        relatedSimilar {
+            settings {
+               ignoreVisibility = 1
+            }
+        }
+
+        //=================================================================
+        relatedSimilarReduced {
+            settings {
+                ignoreVisibility = 1
+            }
+        }
+    }
+}

@@ -12,7 +12,7 @@ lib.txRkwTemplate {
                 10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
                 10 {
                    special = directory
-                   special.value = {$metaNavConfig.pid}
+                   special.value = {$plugin.tx_rkwtemplate_themeconfig.settings.metaNav.pid}
                    levels = 1
                    entryLevel = 0
                    expandAll = 1
@@ -23,6 +23,10 @@ lib.txRkwTemplate {
 
                    as = menuItems
                 }
+            }
+
+            settings {
+                linkTarget = {$plugin.tx_rkwtemplate_themeconfig.settings.metaNav.linkTarget}
             }
         }
     }

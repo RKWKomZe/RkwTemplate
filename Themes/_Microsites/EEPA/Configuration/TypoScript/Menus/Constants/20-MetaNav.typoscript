@@ -1,4 +1,10 @@
-metaNavConfig {
-    pid = 5993
-    ATagParams = target="_blank"
+plugin.tx_rkwtemplate_themeconfig {
+
+    settings {
+
+        metaNav {
+            pid = 5993
+            linkTarget = _blank
+        }
+    }
 }

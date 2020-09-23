@@ -23,7 +23,7 @@ lib.txRkwTemplate {
                    includeSpacer = 0
                    maxItems = 10
                    titleField = tx_rkwbasics_alternative_title // nav_title // title
-                   excludeUidList = {$mainNavConfig.contactPid}, {$mainNavConfig.loginPid}
+                   excludeUidList = {$plugin.tx_rkwtemplate_themeconfig.settings.mainNav.contactPid}, {$plugin.tx_rkwtemplate_themeconfig.settings.mainNav.loginPid}
                    as = menuItems
 
                    dataProcessing {
@@ -44,10 +44,10 @@ lib.txRkwTemplate {
             variables {
 
                 contactPid = TEXT
-                contactPid.value = {$mainNavConfig.contactPid}
+                contactPid.value = {$plugin.tx_rkwtemplate_themeconfig.settings.mainNav.contactPid}
 
                 loginPid = TEXT
-                loginPid.value = {$mainNavConfig.loginPid}
+                loginPid.value = {$plugin.tx_rkwtemplate_themeconfig.settings.mainNav.loginPid}
             }
 
             settings < page.10.settings
