@@ -24,42 +24,41 @@ page {
 
             // default template file
             default = TEXT
-            default.value = page-area page-grid--4
+            default.value = tpl-topic body
 
             10 = TEXT
             10 {
-                value = page-area page-grid--4
+                value = tpl-topic body
             }
 
             11 = TEXT
             11 {
-                # value = page-grid--4
-                value = page-area page-grid--4
+                value = tpl-topic body
             }
 
             12 = TEXT
             12 {
-                value = page-area first-letter-normal page-grid--4
+                value = tpl-topic body
             }
 
             20 = TEXT
             20 {
-                value = project page-grid--4
+                value = tpl-article body
             }
 
             21 = TEXT
             21 {
-                value = project project--full page-grid--4
+                value = tpl-article body
             }
 
             22 = TEXT
             22 {
-                value = project first-letter-normal page-grid--4
+                value = tpl-article body
             }
 
             30 = TEXT
             30 {
-                value = publication page-grid--4
+                value = tpl-publications body
             }
 
             40 = TEXT
@@ -73,14 +72,9 @@ page {
             }
 
 
-            6 = TEXT
-            6 {
-                value = page-grid--4
-            }
-
             9000 = TEXT
             9000 {
-                value = page-broken-link page-grid--4
+                value = tpl-broken-link body
             }
 
             10000 = COA_INT
@@ -102,7 +96,7 @@ page {
                 }
 
                 20 = TEXT
-                20.value = expert
+                20.value = tpl-contact-detail body
                 20.noTrimWrap = | ||
             }
 
@@ -127,7 +121,7 @@ page {
                 }
 
                 20 = TEXT
-                20.value = project
+                20.value = tpl-events body
                 20.noTrimWrap = | ||
             }
 

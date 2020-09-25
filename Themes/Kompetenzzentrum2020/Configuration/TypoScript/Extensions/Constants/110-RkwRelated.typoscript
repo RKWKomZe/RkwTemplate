@@ -21,6 +21,15 @@ plugin.tx_rkwrelated_similarcontent {
 
         # cat=plugin.tx_rkwrelated_morecontent//f; type=boolean; label=Override opening of links in same window (empty to deactivate override)
         openLinksInSameWindowOverride = 1
+
+        detailPid {
+
+            # cat=plugin.tx_rkwrelated_morecontent//f; type=string; label=Detail pid (default)
+            default = 1370
+
+            # cat=plugin.tx_rkwrelated_morecontent//f; type=string; label=Detail pid for publications
+            publication = 1370
+        }
     }
 }
 

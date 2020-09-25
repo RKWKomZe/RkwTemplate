@@ -19,7 +19,9 @@
 
             <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.main" data="{data}" />
             <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.sub" data="{data}" />
-            <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.sub2" data="{data}" />
+            <f:if condition="{settings.reducedMenuLevels} == 0">
+                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.sub2" data="{data}" />
+            </f:if>
             <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.rootline" data="{data}" />
 
         </div>

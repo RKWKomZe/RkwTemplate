@@ -4,7 +4,7 @@
 		<header/>
 		<body>
 
-		    <!-- Cropping for pages media-field -->
+		    <!-- Cropping -->
             <trans-unit id="pages.keyvisual.imageManipulation.topicDesktop">
                <source>Topic (Desktop)</source>
                <target>Themen (Desktop)</target>
@@ -21,6 +21,15 @@
                <source>Teaser</source>
                <target>Teaser</target>
             </trans-unit>
+            <trans-unit id="tx_rkwauthors_domain_model_authors.image_box.imageManipulation.teaser">
+               <source>Small box</source>
+               <target>Boxansicht</target>
+            </trans-unit>
+            <trans-unit id="tx_rkwauthors_domain_model_authors.image_box.imageManipulation.big">
+               <source>Detail view</source>
+               <target>Detailansicht</target>
+            </trans-unit>
+
 
 
             <!-- Slider -->
