@@ -109,6 +109,9 @@ plugin.tx_rkwtemplate_themeconfig {
     }
 
 
+    # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Is this website a microsite?
+    isMicrosite = 0
+
     microsite {
 
         # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Logo of website (tablet-version, on microsites only)
@@ -147,10 +150,9 @@ plugin.tx_rkwtemplate_themeconfig {
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to YouTube page
         youTube = https://www.youtube.com/user/RKWexperten
-
     }
 
-    # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Is this website a microsite?
-    isMicrosite = 0
+    # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Show a reduced amount of menus
+    reducedMenuLevels = 0
 
 }

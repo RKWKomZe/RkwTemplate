@@ -27,3 +27,32 @@ lib.txRkwTemplate {
         }
     }
 }
+
+[globalVar = LIT:1 = {$plugin.tx_rkwtemplate_themeconfig.isMicrosite}] || [globalVar = LIT:1 = {$plugin.tx_rkwtemplate_themeconfig.reducedMenuLevels}]
+    lib.txRkwTemplate {
+        navigation {
+            rootline {
+                dataProcessing {
+                    10 {
+                       entryLevel = 2
+                    }
+                }
+            }
+        }
+    }
+[global]
+
+[globalVar = LIT:1 = {$plugin.tx_rkwtemplate_themeconfig.isMicrosite}] && [globalVar = LIT:1 = {$plugin.tx_rkwtemplate_themeconfig.reducedMenuLevels}]
+
+    lib.txRkwTemplate {
+        navigation {
+            rootline {
+                dataProcessing {
+                    10 {
+                       entryLevel = 1
+                    }
+                }
+            }
+        }
+    }
+[global]

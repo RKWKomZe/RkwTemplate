@@ -26,3 +26,18 @@ lib.txRkwTemplate {
         }
     }
 }
+
+[globalVar = LIT:1 = {$plugin.tx_rkwtemplate_themeconfig.isMicrosite}]
+    lib.txRkwTemplate {
+        navigation {
+            sub {
+                dataProcessing {
+                    10 {
+                       entryLevel = 0
+                    }
+                }
+            }
+        }
+    }
+[global]
+

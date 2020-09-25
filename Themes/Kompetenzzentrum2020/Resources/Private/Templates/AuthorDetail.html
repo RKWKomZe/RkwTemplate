@@ -2,8 +2,23 @@
 
 	<f:layout name="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.utility.pageLayoutSwitch')}" />
 
-	<f:section name="content">
+	<f:section name="Header">
+		<f:render partial="HeaderSection/AuthorDetail" arguments="{_all}"/>
+	</f:section>
 
+
+	<!-- ======================================================================== -->
+
+
+	<f:section name="Content">
+
+
+		<f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.mainExpert" data="{data}" />
+
+
+
+
+				<f:comment>
 		<header class="page-headings page-headings--no-image">
 			<f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.headlineExpert" data="{data}" />
 		</header>
@@ -11,13 +26,14 @@
 		<!-- details -->
 		<div class="expert-grid">
 
-			<f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.mainExpert" data="{data}" />
 
 			<!-- further boxes -->
 			<div class="sections">
 				<f:cObject typoscriptObjectPath="lib.txRkwTemplate.expert.work" data="{data}" />
 			</div>
 		</div>
+
+		</f:comment>
 
 	</f:section>
 </html>
