@@ -1040,22 +1040,23 @@ figcaption .copyright-hint:before {
           justify-content: center;
 }
 
-.btn-list--desktop .foo-bar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.btn-list--desktop .foo-bar {
+.btn-list .foo-bar {
   display: unset;
 }
 
-.btn-list--desktop .foo-bar .btn, .btn-list--desktop .foo-bar .button {
+.btn-list .foo-bar .btn, .btn-list .foo-bar .button {
   width: 100%;
 }
 
 .btn-list .btn:not(.search-field__submit), .btn-list .button:not(.search-field__submit) {
   margin: 0 1em 1em 0;
+}
+
+.btn-list .btn:not(.search-field__submit) .foo-bar, .btn-list .button:not(.search-field__submit) .foo-bar {
+  margin: 0.5em 1em 0.5em 0;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .btn-list .btn:not(.search-field__submit) .foo-bar, .btn-list .button:not(.search-field__submit) .foo-bar {
@@ -1068,7 +1069,7 @@ figcaption .copyright-hint:before {
 }
 
 .btn-list .select-field .foo-bar {
-  margin: 0.5em;
+  margin: 0.5em 1em 0.5em 0;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -1081,10 +1082,6 @@ figcaption .copyright-hint:before {
 
 .btn-list .select-field:last-child {
   margin-right: 0;
-}
-
-.btn-list .select-field--document {
-  width: 185px;
 }
 
 .btn-list .select-field--longer {
@@ -1112,31 +1109,12 @@ figcaption .copyright-hint:before {
   outline: none;
 }
 
-.btn-list .select-field--mobile {
-  display: none;
-}
-
-.btn-list .select-field--mobile .foo-bar {
-  display: block;
-  margin-left: 0;
-}
-
 .btn-list .select-field--search {
   display: none;
 }
 
 .btn-list .select-field--search .foo-bar {
   display: block;
-}
-
-.btn-list-mobile .foo-bar {
-  display: block;
-  width: 87%;
-  margin: 0 auto;
-}
-
-.btn-list-mobile .foo-bar {
-  width: 100%;
 }
 
 .show-more-tile .foo-bar {
@@ -1347,7 +1325,7 @@ table tbody th {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 .responsive-table tfoot td .foo-bar, table tfoot td .foo-bar,
@@ -1358,6 +1336,12 @@ table tbody td .foo-bar,
 .responsive-table tbody th .foo-bar,
 table tbody th .foo-bar {
   padding: 0.5em;
+}
+
+
+.responsive-table tbody th,
+table tbody th {
+  font-weight: 700;
 }
 
 .responsive-table tfoot tr, table tfoot tr {

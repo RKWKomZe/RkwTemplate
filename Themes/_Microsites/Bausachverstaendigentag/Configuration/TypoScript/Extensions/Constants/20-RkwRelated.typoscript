@@ -20,6 +20,21 @@ plugin.tx_rkwrelated_similarcontent {
         # cat=plugin.tx_rkwrelated_similarcontent//f; type=boolean; label=Hide authors label
         hideAuthors = 1
 
+        itemLimitPerPage {
+
+            # cat=plugin.tx_rkwrelated_similarcontent//a; type=integer; label=Items per page for default layout
+            default = 1000
+
+            # cat=plugin.tx_rkwrelated_similarcontent//a; type=integer; label=Items per page for home layout
+            home = 7
+
+            # cat=plugin.tx_rkwrelated_similarcontent//a; type=integer; label=Items per page for reduced layout
+            reduced = 3
+
+            # cat=plugin.tx_rkwrelated_similarcontent//a; type=integer; label=Items per page for below layout
+            below = 3
+        }
+
 	}
 }
 
@@ -43,6 +58,21 @@ plugin.tx_rkwrelated_morecontent {
 
             # cat=plugin.tx_rkwrelated_morecontent//f; type=string; label=Detail pid for publications
             publication =
+        }
+
+        itemLimitPerPage {
+
+            # cat=plugin.tx_rkwrelated_similarcontent//a; type=integer; label=Items per page for default layout
+            default = 1000
+
+            # cat=plugin.tx_rkwrelated_similarcontent//a; type=integer; label=Items per page for home layout
+            home = 7
+
+            # cat=plugin.tx_rkwrelated_similarcontent//a; type=integer; label=Items per page for reduced layout
+            reduced = 3
+
+            # cat=plugin.tx_rkwrelated_similarcontent//a; type=integer; label=Items per page for below layout
+            below = 3
         }
 	}
 }

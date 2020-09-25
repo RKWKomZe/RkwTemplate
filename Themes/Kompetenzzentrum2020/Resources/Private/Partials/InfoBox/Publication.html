@@ -27,17 +27,19 @@
         <!-- buttons -->
         <div class="flex-item flex-basis-3 siteheader__overlay-publications-btn full-width-narrow">
             <div class="btn-list">
-                <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.publication.isSubPage')}">
-                    <f:then>
-                        <f:link.page pageUid="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.publication.parentUid')}" section="rkw-shop" class="btn btn--primary btn--small">
-                            <f:translate key="{settings.themeLanguageFile}:partials.infoBox.publication.labelOrder"/>
-                        </f:link.page>
-                    </f:then>
-                    <f:else>
-                        <a href="#rkw-shop" data-target="#rkw-shop" class="btn btn--primary btn--small">
-                            <f:translate key="{settings.themeLanguageFile}:partials.infoBox.publication.labelOrder"/>
-                        </a>
-                    </f:else>
+                <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.content.boxesPublication', data:'{data}')}">
+                    <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.publication.isSubPage')}">
+                        <f:then>
+                            <f:link.page pageUid="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.publication.parentUid')}" section="tx-rkw-shop" class="btn btn--primary btn--small">
+                                <f:translate key="{settings.themeLanguageFile}:partials.infoBox.publication.labelOrder"/>
+                            </f:link.page>
+                        </f:then>
+                        <f:else>
+                            <a href="#tx-rkw-shop" data-target="#rkw-shop" class="btn btn--primary btn--small">
+                                <f:translate key="{settings.themeLanguageFile}:partials.infoBox.publication.labelOrder"/>
+                            </a>
+                        </f:else>
+                    </f:if>
                 </f:if>
                 <f:cObject typoscriptObjectPath="lib.txRkwTemplate.pageInfo.fileDownload" data="{data}" />
             </div>

@@ -128,7 +128,7 @@ lib.txRkwTemplate {
             settings {
                 headline >
                 layout = Reduced
-                hideMoreLink = 0
+                hideMoreLink = 1
                 itemLimitPerPageOverride = 15
             }
         }
