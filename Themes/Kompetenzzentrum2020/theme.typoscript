@@ -118,7 +118,7 @@ plugin.tx_rkwtemplate_themeconfig {
         logoTabletFile = {$plugin.tx_rkwtemplate_themeconfig.paths.default.logos}/logo-tablet.png
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Vertical text (on microsites only)
-        textPoweredBy = Ein Angebot des RKW<span class="hide-mobile"> Kompetenzzentrums</span>
+        textPoweredBy = Ein Angebot des RKW<span class="hide-mobile"> Kompetenzzentrums &ndash; hier mehr erfahren</span>
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to main website (on microsites only)
         mainWebsiteUrl = https://www.rkw-kompezenzzentrum.de

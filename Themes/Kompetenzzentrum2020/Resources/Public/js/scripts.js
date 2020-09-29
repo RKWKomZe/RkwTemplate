@@ -4937,7 +4937,7 @@ $(function () {
   $(".js-dropdown-item").dropdownNavbar();
 
   //Initialize responsive table
-  $(".responsive-table").basictable({
+  $(".responsive-table").has('th').basictable({
     breakpoint: 768,
   });
 

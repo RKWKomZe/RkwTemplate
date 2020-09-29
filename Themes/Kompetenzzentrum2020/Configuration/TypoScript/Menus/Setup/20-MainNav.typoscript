@@ -48,6 +48,9 @@ lib.txRkwTemplate {
 
                 loginPid = TEXT
                 loginPid.value = {$plugin.tx_rkwtemplate_themeconfig.settings.mainNav.loginPid}
+
+                currentPid = TEXT
+                currentPid.data =  GP:id
             }
 
             settings < page.10.settings
