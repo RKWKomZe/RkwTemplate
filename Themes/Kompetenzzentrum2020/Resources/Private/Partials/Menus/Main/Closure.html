@@ -1,9 +1,10 @@
-<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:rkwTemplate="http://typo3.org/ns/RKW/RkwTemplate/ViewHelpers"
+    data-namespace-typo3-fluid="true">
 
     <f:section name="Default">
-
         <f:if condition="{contactPid}'">
-            <li class="nav__item">
+            <li class="nav__item {f:if(condition:'{rkwTemplate:IsPageInCurrentRootline(pageUid:\'{contactPid}\')}', then:' is-active')}">
                 <a href="{f:uri.page(pageUid:'{contactPid}')}" class="btn btn--secondary btn--nav" >
                     <f:translate key="{settings.themeLanguageFile}:partials.menus.main.buttons.contact" />
                 </a>
@@ -33,7 +34,7 @@
 
         <div class="nav-mobile__bottom flex">
             <ul class="nav-mobile__bottom-btnlinks">
-                <li class="nav-mobile__item nav-mobile__item--bottom">
+                <li class="nav-mobile__item nav-mobile__item--bottom {f:if(condition:'{rkwTemplate:IsPageInCurrentRootline(pageUid:\'{contactPid}\')}', then:' is-active')}">
                     <a href="{f:uri.page(pageUid:'{contactPid}')}" >
                         <f:translate key="{settings.themeLanguageFile}:partials.menus.main.buttons.contact" />
                     </a>

@@ -42,7 +42,7 @@ module.tx_rkwmailer {
 	settings {
 
 		# URL for hard-links in templates
-		baseUrl = http://example.rkw.local/
+		baseUrl = http://bawue.rkw.local/
 	}
 }
 plugin.tx_rkwmailer < module.tx_rkwmailer

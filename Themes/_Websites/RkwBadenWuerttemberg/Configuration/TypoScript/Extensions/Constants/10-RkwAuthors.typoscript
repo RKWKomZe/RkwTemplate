@@ -12,6 +12,9 @@ plugin.tx_rkwauthors {
 		// cat=plugin.tx_rkwauthors//a; type=boolean; label=show pid
 		showPid = 5077
 
+        # cat=plugin.tx_rkwauthors//a; type=boolean; label=Show department instead of full function of author
+        showDepartmentAsFunction = 0
+
         # cat=plugin.tx_rkwauthors//a; type=integer; label=Phone extension length
         phoneExtensionLength = 2
 
@@ -24,7 +27,7 @@ plugin.tx_rkwauthors {
             allowSendCopyToUser = 1
 
             # cat=plugin.tx_rkwauthors//a; type=integer; label=pid of terms
-            termsPid = 5949
+            termsPid =
 
             # cat=plugin.tx_rkwauthors//a; type=integer; label=pid of privacy
             privacyPid = 5079
@@ -36,3 +39,25 @@ plugin.tx_rkwauthors {
     }
 }
 
+[PIDinRootline = 5865]
+
+    plugin.tx_rkwauthors {
+
+        settings {
+            contactForm {
+                mail {
+
+                    # override the authors mail address and mail name
+                    override {
+
+                        # cat=plugin.tx_rkwauthors//a; type=string; label=global mail to address (overrides authors mail address!)
+                        address = beratung@rkw-bw.de
+
+                        # cat=plugin.tx_rkwauthors//a; type=string; label=global mail to name (overrides authors name!)
+                        name = Beratung
+                    }
+                }
+            }
+        }
+    }
+[GLOBAL]

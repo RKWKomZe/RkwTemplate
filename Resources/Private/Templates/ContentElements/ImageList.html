@@ -1,6 +1,7 @@
 <html
     xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
     xmlns:rkwBasics="http://typo3.org/ns/RKW/RkwBasics/ViewHelpers"
+    xmlns:rkwEtracker="http://typo3.org/ns/RKW/RkwEtracker/ViewHelpers"
     data-namespace-typo3-fluid="true">
 
     <f:layout name="Rkw" />
@@ -22,7 +23,16 @@
 
                 <div class="picture-list flex full-width-narrow">
                     <div class="flex-basis-2 picture-list__img full-width-narrow">
-                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" srcset="{f:uri.image(image:images.0,width:'328c',height:'328c',cropVariant:'default')}" alt="{images.0.alt}" title="{images.0.title}"  />
+                        <f:if condition="{images.0.link}">
+                            <f:then>
+                                <rkwEtracker:link.typolink parameter="{images.0.link}">
+                                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" srcset="{f:uri.image(image:images.0,width:'328c',height:'328c',cropVariant:'default')}" alt="{images.0.alt}" title="{images.0.title}"  />
+                                </rkwEtracker:link.typolink>
+                            </f:then>
+                            <f:else>
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" srcset="{f:uri.image(image:images.0,width:'328c',height:'328c',cropVariant:'default')}" alt="{images.0.alt}" title="{images.0.title}"  />
+                            </f:else>
+                        </f:if>
                     </div>
 
                     <div class="flex-basis-10 picture-list__content full-width-narrow">
