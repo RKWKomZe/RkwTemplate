@@ -14,6 +14,15 @@
             <trans-unit id="pages.keyvisual.imageManipulation.teaser">
                <source>Teaser</source>
             </trans-unit>
+            <trans-unit id="pages.keyvisual.imageManipulation.menuFlyoutLevel2">
+               <source>Menu-Flyout (2nd level)</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwauthors_domain_model_authors.image_box.imageManipulation.teaser">
+               <source>Small box</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwauthors_domain_model_authors.image_box.imageManipulation.big">
+               <source>Detail view</source>
+            </trans-unit>
 
 
             <!-- Slider -->

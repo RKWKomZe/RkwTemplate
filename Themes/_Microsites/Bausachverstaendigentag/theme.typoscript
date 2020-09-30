@@ -26,6 +26,10 @@ plugin.tx_rkwtemplate_themeconfig {
         rootPid = 6391
     }
 
+
+    # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Is this website a microsite?
+    isMicrosite = 1
+
     microsite {
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Vertical text (on microsites only)
@@ -45,8 +49,7 @@ plugin.tx_rkwtemplate_themeconfig {
     # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Show social media icons
     socialMedia = 0
 
-    # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Is this website a microsite?
-    isMicrosite = 1
-
+    # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Show a reduced amount of menus
+    reducedMenuLevels = 1
 }
 

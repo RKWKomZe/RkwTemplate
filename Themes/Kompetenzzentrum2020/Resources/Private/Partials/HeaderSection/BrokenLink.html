@@ -1,0 +1,56 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+
+    <f:if condition="1 == 2">
+        <f:then>
+            <div class="siteheader flex siteheader--half" style="background-image: url('{settings.websiteLogoBrokenLinkFile}')">
+                <div class="siteheader__title siteheader__title--primary text-white">
+                    <f:render section="Sub" arguments="{_all}"/>
+                </div>
+            </div>
+        </f:then>
+        <f:else>
+            <div class="siteheader flex siteheader--no-image siteheader--no-border-radius">
+                <div class="siteheader__title siteheader__title--primary text-white siteheader__title--no-border-radius">
+                    <f:render section="Sub" arguments="{_all}"/>
+                </div>
+            </div>
+        </f:else>
+    </f:if>
+
+    <f:comment><!-- ======================================================================== --></f:comment>
+
+    <f:section name="Sub">
+
+        <!-- title -->
+        <h1 class="h1 h1--white">
+            <f:format.raw><f:format.crop maxCharacters="100" respectWordBoundaries="false">{data.title}</f:format.crop></f:format.raw>
+        </h1>
+        <f:if condition="{data.abstract}">
+
+            <!-- abstract -->
+            <f:then>
+                <div class="siteheader__intro">
+                    <p>
+                        <f:format.crop maxCharacters="300" respectWordBoundaries="true"><f:format.html>{data.abstract}</f:format.html></f:format.crop>
+                    </p>
+                </div>
+            </f:then>
+
+            <!-- subtitle -->
+            <f:else>
+                <f:if condition="{data.subtitle}">
+                    <div class="siteheader__intro">
+                        <p>
+                            <f:format.crop maxCharacters="150" respectWordBoundaries="false"><f:format.raw>{data.subtitle}</f:format.raw></f:format.crop>
+                        </p>
+                    </div>
+
+                </f:if>
+            </f:else>
+        </f:if>
+    </f:section>
+</html>
+
+
+

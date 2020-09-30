@@ -44,6 +44,10 @@ plugin.tx_rkwauthors {
     plugin.tx_rkwauthors {
 
         settings {
+
+            # cat=plugin.tx_rkwauthors//a; type=boolean; label=Show department instead of full function of author
+            showDepartmentAsFunction = 1
+
             contactForm {
                 mail {
 

@@ -75,6 +75,13 @@
 										<f:render partial="Wraps/Topic/Aside" section="Footer" arguments="{_all}" />
 									</f:case>
 
+									<!-- Rendering for Recommendation-Override -->
+									<f:case value="90">
+										<f:render partial="Wraps/Topic/Recommendation" section="Header" arguments="{_all}" />
+										<f:render section="Main"/>
+										<f:render partial="Wraps/Topic/Recommendation" section="Footer" arguments="{_all}" />
+									</f:case>
+
 									<!-- everything else-->
 									<f:defaultCase>
 										<div id="c{data.uid}" class="frame show-first-headline frame-{data.frame_class} frame-type-{data.CType} frame-layout-{data.layout}{f:if(condition: data.space_before_class, then: ' frame-space-before-{data.space_before_class}')}{f:if(condition: data.space_after_class, then: ' frame-space-after-{data.space_after_class}')}">

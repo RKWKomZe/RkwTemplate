@@ -1,4 +1,6 @@
-<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:rkwBasics="http://typo3.org/ns/RKW/RkwBasics/ViewHelpers"
+    data-namespace-typo3-fluid="true">
 
     <f:section name="Default">
 
@@ -19,10 +21,17 @@
 
             <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.main" data="{data}" />
             <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.sub" data="{data}" />
-            <f:if condition="{settings.reducedMenuLevels} == 0">
-                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.sub2" data="{data}" />
+            <f:if condition="{settings.reducedMenuLevels}">
+                <f:then>
+                    <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.rootline" data="{data}" />
+                </f:then>
+                <f:else>
+                    <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.sub2" data="{data}" />
+                    <f:if condition="! <rkwBasics:isEmpty string='{f:cObject(typoscriptObjectPath: 'lib.txRkwTemplate.navigation.sub2', data:'{data}')}' />">
+                        <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.rootline" data="{data}" />
+                    </f:if>
+                </f:else>
             </f:if>
-            <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.rootline" data="{data}" />
 
         </div>
 

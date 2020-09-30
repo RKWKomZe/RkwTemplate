@@ -69,6 +69,15 @@ $GLOBALS['TCA']['pages']['columns']['media']['config']['overrideChildTca']['colu
                 'value' => 1024 / 550
             ]
         ]
+    ],
+    'menuFlyoutLevel2' => [
+        'title' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:pages.keyvisual.imageManipulation.menuFlyoutLevel2',
+        'allowedAspectRatios' => [
+            '2000:320' => [
+                'title' => '320 x 200',
+                'value' => 320 / 200
+            ]
+        ]
     ]
 ];
 
