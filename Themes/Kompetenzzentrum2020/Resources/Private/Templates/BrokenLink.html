@@ -2,36 +2,35 @@
 
 	<f:layout name="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.utility.pageLayoutSwitch')}" />
 
-	<f:section name="content">
+	<f:section name="Header">
+		<f:render partial="HeaderSection/BrokenLink" arguments="{_all}"/>
+	</f:section>
 
-		<header class="page-headings broken-link">
-			<f:image src="{settings.websiteLogoBrokenLinkFile}" alt="{settings.websiteName}" width="201c" />
-			<div>
-				<h1 id="topic-headline">{data.title}</h1>
-				<f:if condition="{data.subtitle}">
-					<h2>{data.subtitle}</h2>
-				</f:if>
-			</div>
-		</header>
 
-		<div class="article" style="margin-bottom:32px; width:100%">
-			<article aria-labelledby="article-headline">
+	<!-- ======================================================================== -->
 
-				<!-- Content -->
-				<f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.main" data="{data}" />
+	<f:section name="Content">
+		<main class="main flex-container no-padding-narrow" id="main">
+			<section class="section content content-padding-layoutmax">
 
-			</article>
+				<!-- breadcrumb-->
+				<section class="section content flex-basis-12 full-width-smalldesk no-padding-narrow pb-0">
+					<div class="breadcrumbs flex-container nav breadcrumb-padding">
+						<f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.breadcrumb" data="{data}" />
+					</div>
+				</section>
 
-			<!-- comments and further boxes here -->
-			<div class="sections">
+				<!-- content -->
+				<section class="section content flex-basis-12 full-width-smalldesk no-padding-narrow">
+					<f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.main" data="{data}" />
+				</section>
 
-				<!-- further boxes -->
-				<f:format.html parseFuncTSPath="">{boxContent}</f:format.html>
-			</div>
-		</div>
+				<!-- boxes -->
+				<f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.boxesArticle" data="{data}" />
 
+			</section>
+		</main>
 
 	</f:section>
 
 </html>
-

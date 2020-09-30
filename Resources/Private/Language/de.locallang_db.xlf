@@ -21,6 +21,10 @@
                <source>Teaser</source>
                <target>Teaser</target>
             </trans-unit>
+            <trans-unit id="pages.keyvisual.imageManipulation.menuFlyoutLevel2">
+               <source>Menu-Flyout (2nd level)</source>
+               <target>Menü-Flyout (2. Ebene, nicht fix!)</target>
+            </trans-unit>
             <trans-unit id="tx_rkwauthors_domain_model_authors.image_box.imageManipulation.teaser">
                <source>Small box</source>
                <target>Boxansicht</target>
@@ -229,6 +233,11 @@
                 <source>Call To Action</source>
                 <target>Call To Action</target>
             </trans-unit>
+            <trans-unit id="contentElement.contentContainerTwoCols.overrideRecommendation">
+                <source>Override for Recommendation</source>
+                <target>Empfehlungen (Überschreibt Standard-Empfehlungen; derzeit nur mit Veranstaltungen möglich)</target>
+            </trans-unit>
+
 
 
             <!-- ContentContainerTwoColsReduced -->

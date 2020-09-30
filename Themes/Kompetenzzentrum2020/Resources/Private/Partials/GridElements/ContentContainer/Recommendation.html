@@ -1,0 +1,36 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:rkwBasics="http://typo3.org/ns/RKW/RkwBasics/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+    <f:section name="Default">
+        <!-- similar contents or custom recommendations -->
+        <f:if condition="{rkwBasics:isEmpty(string='{data.tx_gridelements_view_column_90}')} == 0'">
+            <f:then>
+                <f:format.html parseFuncTSPath="">
+                    {data.tx_gridelements_view_column_90}
+                </f:format.html>
+            </f:then>
+            <f:else>
+                <f:if condition="!{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.content.boxesTopic', data:'{data}')} && !{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.content.boxesTopicInherit', data:'{data}')}">
+                    <div class="content-padding-layoutmax mt-3">
+                        <h3 class="h3">
+                            <f:cObject typoscriptObjectPath="lib.txRkwTemplate.recommendation.relatedSimilarLabel" />
+                        </h3>
+                        <f:cObject typoscriptObjectPath="lib.txRkwTemplate.recommendation.relatedSimilar" />
+                    </div>
+                </f:if>
+            </f:else>
+        </f:if>
+
+    </f:section>
+
+    <f:section name="Reduced">
+        <!-- similar contents or custom recommendations -->
+        <f:if condition="{rkwBasics:isEmpty(string='{data.tx_gridelements_view_column_90}')} == 0'">
+            <f:format.html parseFuncTSPath="">
+                {data.tx_gridelements_view_column_90}
+            </f:format.html>
+        </f:if>
+
+    </f:section>
+</html>

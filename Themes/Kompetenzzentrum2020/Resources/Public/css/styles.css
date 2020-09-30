@@ -3992,6 +3992,9 @@ table.bt tbody td.table__score::before {
 img,
 iframe {
   max-width: 100%;
+}
+
+img {
   height: auto;
 }
 
@@ -4552,10 +4555,17 @@ legend {
   margin-bottom: 0;
 }
 
+.no-results {
+  padding: 1em 1em 0em 1em;
+  border: 2px solid #505050;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
 .no-results__headline {
   font-weight: bold;
-  font-size: 24px;
-  font-size: 1.5rem;
+  font-size: 18px;
+  font-size: 1.125rem;
   text-align: center;
 }
 
@@ -4716,7 +4726,7 @@ legend {
 }
 
 .siteheader__intro p {
-  margin: 10px 0 0 0;
+  margin: 10px 0 0.5em 0;
 }
 
 .siteheader--half {
@@ -4890,6 +4900,11 @@ legend {
   .siteheader--no-image .siteheader__title {
     border-radius: 0;
   }
+}
+
+.siteheader .siteheader__title--no-border-radius, .siteheader--no-border-radius {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .siteheader .siteheader__meta {
@@ -14106,6 +14121,35 @@ _:-ms-fullscreen .careercheck__questions .form__field--career input[type="radio"
 /**! ==================================================
  * adjustments for Fluid-Styled-Contents
  * ================================================== */
+body:not(.show-first-headline) .typo3-fsc .frame:not(.show-first-headline):first-child header:first-child:not(.no-hide),
+body:not(.show-first-headline) .typo3-fsc .frame:not(.show-first-headline):first-child > h1:first-child:not(.no-hide),
+body:not(.show-first-headline) .typo3-fsc .frame:not(.show-first-headline):first-child > h2:first-child:not(.no-hide),
+body:not(.show-first-headline) .typo3-fsc .frame:not(.show-first-headline):first-child > h3:first-child:not(.no-hide),
+body:not(.show-first-headline) .typo3-fsc .frame:not(.show-first-headline):first-child > h4:first-child:not(.no-hide),
+body:not(.show-first-headline) .typo3-fsc .frame:not(.show-first-headline):first-child > h5:first-child:not(.no-hide),
+body:not(.show-first-headline) .typo3-fsc .frame:not(.show-first-headline):first-child > h6:first-child:not(.no-hide),
+body:not(.show-first-headline) .typo3-fsc .frame:not(.show-first-headline):first-child > .h1:first-child:not(.no-hide),
+body:not(.show-first-headline) .typo3-fsc .frame:not(.show-first-headline):first-child > .h2:first-child:not(.no-hide),
+body:not(.show-first-headline) .typo3-fsc .frame:not(.show-first-headline):first-child > .h3:first-child:not(.no-hide),
+body:not(.show-first-headline) .typo3-fsc .frame:not(.show-first-headline):first-child > .h4:first-child:not(.no-hide),
+body:not(.show-first-headline) .typo3-fsc .frame:not(.show-first-headline):first-child > .h5:first-child:not(.no-hide),
+body:not(.show-first-headline) .typo3-fsc .frame:not(.show-first-headline):first-child > .h6:first-child:not(.no-hide),
+body:not(.show-first-headline) .typo3-fsc .frame:not(.show-first-headline) .ce-bodytext:first-child header:first-child:not(.no-hide),
+body:not(.show-first-headline) .typo3-fsc .frame:not(.show-first-headline) .ce-bodytext:first-child > h1:first-child:not(.no-hide),
+body:not(.show-first-headline) .typo3-fsc .frame:not(.show-first-headline) .ce-bodytext:first-child > h2:first-child:not(.no-hide),
+body:not(.show-first-headline) .typo3-fsc .frame:not(.show-first-headline) .ce-bodytext:first-child > h3:first-child:not(.no-hide),
+body:not(.show-first-headline) .typo3-fsc .frame:not(.show-first-headline) .ce-bodytext:first-child > h4:first-child:not(.no-hide),
+body:not(.show-first-headline) .typo3-fsc .frame:not(.show-first-headline) .ce-bodytext:first-child > h5:first-child:not(.no-hide),
+body:not(.show-first-headline) .typo3-fsc .frame:not(.show-first-headline) .ce-bodytext:first-child > h6:first-child:not(.no-hide),
+body:not(.show-first-headline) .typo3-fsc .frame:not(.show-first-headline) .ce-bodytext:first-child > .h1:first-child:not(.no-hide),
+body:not(.show-first-headline) .typo3-fsc .frame:not(.show-first-headline) .ce-bodytext:first-child > .h2:first-child:not(.no-hide),
+body:not(.show-first-headline) .typo3-fsc .frame:not(.show-first-headline) .ce-bodytext:first-child > .h3:first-child:not(.no-hide),
+body:not(.show-first-headline) .typo3-fsc .frame:not(.show-first-headline) .ce-bodytext:first-child > .h4:first-child:not(.no-hide),
+body:not(.show-first-headline) .typo3-fsc .frame:not(.show-first-headline) .ce-bodytext:first-child > .h5:first-child:not(.no-hide),
+body:not(.show-first-headline) .typo3-fsc .frame:not(.show-first-headline) .ce-bodytext:first-child > .h6:first-child:not(.no-hide) {
+  display: none;
+}
+
 .typo3-fsc {
   /*.ce-textpic {
     margin-top:16px;
@@ -14131,35 +14175,6 @@ _:-ms-fullscreen .careercheck__questions .form__field--career input[type="radio"
 .typo3-fsc .frame .ce-bodytext ol:first-child,
 .typo3-fsc .frame .ce-bodytext blockquote:first-child {
   margin-top: 0;
-}
-
-.typo3-fsc .frame:not(.show-first-headline):first-child header:first-child:not(.no-hide),
-.typo3-fsc .frame:not(.show-first-headline):first-child > h1:first-child:not(.no-hide),
-.typo3-fsc .frame:not(.show-first-headline):first-child > h2:first-child:not(.no-hide),
-.typo3-fsc .frame:not(.show-first-headline):first-child > h3:first-child:not(.no-hide),
-.typo3-fsc .frame:not(.show-first-headline):first-child > h4:first-child:not(.no-hide),
-.typo3-fsc .frame:not(.show-first-headline):first-child > h5:first-child:not(.no-hide),
-.typo3-fsc .frame:not(.show-first-headline):first-child > h6:first-child:not(.no-hide),
-.typo3-fsc .frame:not(.show-first-headline):first-child > .h1:first-child:not(.no-hide),
-.typo3-fsc .frame:not(.show-first-headline):first-child > .h2:first-child:not(.no-hide),
-.typo3-fsc .frame:not(.show-first-headline):first-child > .h3:first-child:not(.no-hide),
-.typo3-fsc .frame:not(.show-first-headline):first-child > .h4:first-child:not(.no-hide),
-.typo3-fsc .frame:not(.show-first-headline):first-child > .h5:first-child:not(.no-hide),
-.typo3-fsc .frame:not(.show-first-headline):first-child > .h6:first-child:not(.no-hide),
-.typo3-fsc .frame:not(.show-first-headline) .ce-bodytext:first-child header:first-child:not(.no-hide),
-.typo3-fsc .frame:not(.show-first-headline) .ce-bodytext:first-child > h1:first-child:not(.no-hide),
-.typo3-fsc .frame:not(.show-first-headline) .ce-bodytext:first-child > h2:first-child:not(.no-hide),
-.typo3-fsc .frame:not(.show-first-headline) .ce-bodytext:first-child > h3:first-child:not(.no-hide),
-.typo3-fsc .frame:not(.show-first-headline) .ce-bodytext:first-child > h4:first-child:not(.no-hide),
-.typo3-fsc .frame:not(.show-first-headline) .ce-bodytext:first-child > h5:first-child:not(.no-hide),
-.typo3-fsc .frame:not(.show-first-headline) .ce-bodytext:first-child > h6:first-child:not(.no-hide),
-.typo3-fsc .frame:not(.show-first-headline) .ce-bodytext:first-child > .h1:first-child:not(.no-hide),
-.typo3-fsc .frame:not(.show-first-headline) .ce-bodytext:first-child > .h2:first-child:not(.no-hide),
-.typo3-fsc .frame:not(.show-first-headline) .ce-bodytext:first-child > .h3:first-child:not(.no-hide),
-.typo3-fsc .frame:not(.show-first-headline) .ce-bodytext:first-child > .h4:first-child:not(.no-hide),
-.typo3-fsc .frame:not(.show-first-headline) .ce-bodytext:first-child > .h5:first-child:not(.no-hide),
-.typo3-fsc .frame:not(.show-first-headline) .ce-bodytext:first-child > .h6:first-child:not(.no-hide) {
-  display: none;
 }
 
 .typo3-fsc .frame:last-child p:blank:last-of-type {

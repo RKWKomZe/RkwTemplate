@@ -21,7 +21,6 @@ plugin.tx_rkwtemplate_themeconfig {
             # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Root path for extension layouts, templates and partials
             root = EXT:rkw_template/Themes/{$plugin.tx_rkwtemplate_themeconfig.subThemeName}/Resources/Private/Extensions
         }
-
     }
 
 
@@ -39,21 +38,13 @@ plugin.tx_rkwtemplate_themeconfig {
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Publisher of website
         publisher = RKW Baden-Württemberg
 
-        # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Logo of website (desktop-version)
-        logoFile = {$plugin.tx_rkwtemplate_themeconfig.paths.default.logos}/logo.svg
-
-        # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Logo of website (mobile-version)
-        logoMobileFile = {$plugin.tx_rkwtemplate_themeconfig.paths.default.logos}/logo-mobile.svg
-
     }
-
-
-    # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Show social media icons
-    socialMedia = 1
 
     # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Is this website a microsite?
     isMicrosite = 0
 
+    # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Show social media icons
+    socialMedia = 1
 
     socialMediaLinks {
 
@@ -73,6 +64,9 @@ plugin.tx_rkwtemplate_themeconfig {
         youTube =
 
     }
+
+    # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Show a reduced amount of menus
+    reducedMenuLevels = 0
 
 }
 

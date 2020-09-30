@@ -114,9 +114,7 @@ lib.txRkwTemplate {
             settings =< plugin.tx_rkwrelated_similarcontent.settings
 
             settings {
-
                 layout = Below
-                headline = {$lib.txRkwTemplate.recommendation.relatedSimilar.label}
                 hideMoreLink = 1
             }
         }
@@ -126,7 +124,6 @@ lib.txRkwTemplate {
         relatedSimilarReduced {
 
             settings {
-                headline >
                 layout = Reduced
                 hideMoreLink = 1
                 itemLimitPerPageOverride = 15

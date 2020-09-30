@@ -4,7 +4,7 @@
 
         <f:if condition="{item.image.0}">
             <f:then>
-                <li class="nav-flyout__item" style="background-image: url('{f:uri.image(image:'{item.image.0}', treatIdAsReference: '1', width:'300c', height:'300c')}');">
+                <li class="nav-flyout__item" style="background-image: url('{f:uri.image(image:'{item.image.0}', treatIdAsReference: '1', cropVariant: 'menuFlyoutLevel2', maxWidth:'300', maxHeight:'200')}');">
             </f:then>
             <f:else>
                 <li class="nav-flyout__item" >

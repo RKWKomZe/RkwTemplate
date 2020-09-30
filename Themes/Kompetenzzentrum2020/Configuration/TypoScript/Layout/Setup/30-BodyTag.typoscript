@@ -74,7 +74,7 @@ page {
 
             9000 = TEXT
             9000 {
-                value = tpl-broken-link body
+                value = tpl-broken-link show-first-headline body
             }
 
             10000 = COA_INT

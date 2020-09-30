@@ -27,47 +27,6 @@
 
             </section>
         </main>
-
-
-        <f:comment>
-            <!-- top-menu -->
-            f:render partial="SubNav" section="Default" arguments="{_all}"/
-
-            <div class="page-area-grid content-page__content">
-                <div class="article">
-                    <article class="publications-article {f:if(condition: '{f:cObject(typoscriptObjectPath:\'lib.txRkwTemplate.publication.isSubPage\', data:\'{data}\')} == \'1\'', then: 'publications-article--chapter')}" aria-labelledby="article-headline">
-
-                        <!-- key-visual-->
-                        <f:render partial="HeaderSection/Publication" arguments="{_all}"/>
-
-                        <!-- info box -->
-                        <f:render partial="InfoBox/Publication" arguments="{_all}"/>
-
-                        <!-- content -->
-                        <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.main" data="{data}" />
-
-                        <!-- share, print and save -->
-                        <footer class="article-footer">
-                            <f:render partial="SharePrint/Print" arguments="{_all}"/>
-                            <f:render partial="SharePrint/SocialMedia" arguments="{_all}"/>
-                        </footer>
-                    </article>
-
-                    <div class="sections narrow">
-
-                        <!-- boxes -->
-                        <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.boxesPublicationInherit" data="{data}" />
-
-                    </div>
-                </div>
-
-                <!-- related -->
-                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.related" data="{data}" />
-
-            </div>
-        </f:comment>
-
-
     </f:section>
 
 </html>

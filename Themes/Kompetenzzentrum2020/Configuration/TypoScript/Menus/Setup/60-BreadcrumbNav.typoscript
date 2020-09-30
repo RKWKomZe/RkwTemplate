@@ -17,6 +17,7 @@ lib.txRkwTemplate {
                    expandAll = 1
                    includeSpacer = 0
                    maxItems = 10
+                   includeNotInMenu = 1
                    titleField = tx_rkwbasics_alternative_title // nav_title // title
                    excludeUidList >
 
