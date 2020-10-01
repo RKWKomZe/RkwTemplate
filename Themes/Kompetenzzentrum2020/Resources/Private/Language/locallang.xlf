@@ -4,47 +4,74 @@
 		<header/>
 		<body>
 
+
             <!-- ================================================================= -->
             <!-- Partials -->
             <!-- ================================================================= -->
+            <trans-unit id="partials.basics.skipLink.labelNavigation">
+                <source>Jump to navigation</source>
+            </trans-unit>
+            <trans-unit id="partials.basics.skipLink.labelContent">
+                <source>Jump to contents</source>
+            </trans-unit>
+
+
+            <trans-unit id="partials.gridElements.contentContainer.aside.information">
+                <source>Futher information</source>
+            </trans-unit>
+
+
 			<trans-unit id="partials.gridElements.contentContainer.content.imageResources">
 				<source>Image Resources</source>
 			</trans-unit>
-
-
-            <trans-unit id="partials.alertsBox.headline">
-                <source>Stay tuned</source>
-            </trans-unit>
-
-
-            <trans-unit id="partials.basics.header.labelHeader">
-                <source>Home-Link and main menu</source>
-            </trans-unit>
-            <trans-unit id="partials.basics.header.labelHeaderMainWebsite">
-                <source>Open main website</source>
-            </trans-unit>
-            <trans-unit id="partials.basics.header.labelMobileMenuOpenButton">
-                <source>Open main menu</source>
-            </trans-unit>
-            <trans-unit id="partials.basics.header.labelMobileMenuCloseButton">
-                <source>Close main menu</source>
-            </trans-unit>
-            <trans-unit id="partials.basics.header.labelMenuCloseButton">
-                <source>Close main menu</source>
-            </trans-unit>
-            <trans-unit id="partials.basics.logo.homeLink">
-                <source>Home</source>
-            </trans-unit>
-			<trans-unit id="partials.basics.browserWarning.warning">
-				<source><![CDATA[
-					Unfortunately our browser is outdated and not supported any more. Please use a modern browser instead, e.g. Chrome, Firefox, Safari or Internet Explorer (>= Version 11)
-				]]></source>
+			<trans-unit id="partials.gridElements.contentContainer.content.labelChapter">
+				<source>Chapter</source>
 			</trans-unit>
 
 
+			<trans-unit id="partials.menus.main.list.home">
+				<source>Home</source>
+			</trans-unit>
+
+
+			<trans-unit id="partials.menus.main.closure.contact">
+				<source>Contact</source>
+			</trans-unit>
+			<trans-unit id="partials.menus.main.closure.login">
+				<source>Login</source>
+			</trans-unit>
+
+
+            <trans-unit id="partials.menus.breadcrumb.list.label">
+                <source>You are here:</source>
+            </trans-unit>
+
+
+            <trans-unit id="partials.menus.tableOfContents.labelHeader">
+                <source>Table of Contents</source>
+            </trans-unit>
+            <trans-unit id="partials.menus.tableOfContents.labelShowMore">
+                <source>Show More</source>
+            </trans-unit>
+            <trans-unit id="partials.menus.tableOfContents.labelShowLess">
+                <source>Show less</source>
+            </trans-unit>
+
+
+            <trans-unit id="partials.infoBox.article.labelMeta">
+				<source>Information</source>
+			</trans-unit>
             <trans-unit id="partials.infoBox.article.labelAbstract">
-				<source>Abstract</source>
-			</trans-unit>
+                <source>Abstract</source>
+            </trans-unit>
+
+
+            <trans-unit id="partials.infoBox.publication.labelMeta">
+                <source>Information</source>
+            </trans-unit>
+            <trans-unit id="partials.infoBox.publication.labelOrder">
+                <source>Order now</source>
+            </trans-unit>
 
 
             <trans-unit id="partials.infoBox.partials.project.labelProject">
@@ -62,62 +89,51 @@
             <trans-unit id="partials.infoBox.partials.authors.labelAuthors">
 				<source>Authors</source>
 			</trans-unit>
-            <trans-unit id="partials.infoBox.partials.tableOfContents.labelTableOfContents">
-                <source>Table of Contents</source>
-			</trans-unit>
             <trans-unit id="partials.infoBox.partials.parentPage.labelParentPage">
                 <source>Publication</source>
             </trans-unit>
 
 
-            <trans-unit id="partials.keyVisual.publication.labelChapter">
+            <trans-unit id="partials.keyVisual.publication.sub.labelChapter">
                 <source>Chapter</source>
             </trans-unit>
 
 
-			<trans-unit id="partials.sharePrint.socialMedia.labelShare">
-				<source>Share</source>
-			</trans-unit>
-			<trans-unit id="partials.sharePrint.socialMedia.labelShareFacebook">
-				<source>Share on Facebook</source>
-			</trans-unit>
-			<trans-unit id="partials.sharePrint.socialMedia.labelShareTwitter">
-				<source>Share on Twitter</source>
-			</trans-unit>
-			<trans-unit id="partials.sharePrint.socialMedia.labelShareXing">
-				<source>Share on XING</source>
-			</trans-unit>
-			<trans-unit id="partials.sharePrint.socialMedia.labelShareRss">
-				<source>RSS-Feed</source>
-			</trans-unit>
-            <trans-unit id="partials.sharePrint.print.ariaLabelPrintToolbar">
-                <source>Print article or save for later</source>
+            <trans-unit id="partials.basics.logo.homeLink">
+                <source>Home</source>
             </trans-unit>
 
 
             <!-- ================================================================= -->
-			<!-- Templates -->
+            <!-- Templates -->
             <!-- ================================================================= -->
-            <trans-unit id="templates.gridElements.contentContainer.twoCols.asideHeadline">
-				<source>More Information</source>
-            </trans-unit>
+
+
+
+            <!-- ================================================================= -->
+            <!-- Layouts -->
+            <!-- ================================================================= -->
 
 
             <!-- ================================================================== -->
             <!-- TypoScript -->
             <!-- ================================================================== -->
-            <trans-unit id="typoscript.navigation.readMore.previous">
-                <source>Previous Page</source>
+            <trans-unit id="typoscript.relatedDefault">
+                <source>From the project</source>
             </trans-unit>
-            <trans-unit id="typoscript.navigation.readMore.previousShort">
+            <trans-unit id="typoscript.relatedPublication">
+                <source>Publications</source>
+            </trans-unit>
+            <trans-unit id="typoscript.navigation.readMore.previous">
                 <source>Back</source>
             </trans-unit>
             <trans-unit id="typoscript.navigation.readMore.next">
-                <source>Next Page</source>
-            </trans-unit>
-            <trans-unit id="typoscript.navigation.readMore.nextShort">
                 <source>Next</source>
             </trans-unit>
+            <trans-unit id="typoscript.navigation.readMore.readNow">
+                <source>Read online now</source>
+            </trans-unit>
+
 
 		</body>
 	</file>

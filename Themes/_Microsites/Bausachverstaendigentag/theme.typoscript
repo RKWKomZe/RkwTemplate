@@ -50,6 +50,6 @@ plugin.tx_rkwtemplate_themeconfig {
     socialMedia = 0
 
     # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Show a reduced amount of menus
-    reducedMenuLevels = 1
+    reducedMenuLevels = 0
 }
 

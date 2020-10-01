@@ -33,14 +33,22 @@
 			</trans-unit>
 
 
-			<trans-unit id="partials.menus.main.buttons.contact">
+			<trans-unit id="partials.menus.main.list.home">
+				<source>Home</source>
+				<target>Startseite</target>
+			</trans-unit>
+
+
+			<trans-unit id="partials.menus.main.closure.contact">
 				<source>Contact</source>
 				<target>Kontakt</target>
 			</trans-unit>
-			<trans-unit id="partials.menus.main.buttons.login">
+			<trans-unit id="partials.menus.main.closure.login">
 				<source>Login</source>
 				<target>Login</target>
 			</trans-unit>
+
+
             <trans-unit id="partials.menus.breadcrumb.list.label">
                 <source>You are here:</source>
                 <target>Sie sind hier:</target>
@@ -107,10 +115,15 @@
             </trans-unit>
 
 
-
             <trans-unit id="partials.keyVisual.publication.sub.labelChapter">
                 <source>Chapter</source>
                 <target>Kapitel</target>
+            </trans-unit>
+
+
+            <trans-unit id="partials.basics.logo.homeLink">
+                <source>Home</source>
+                <target>Zur Startseite</target>
             </trans-unit>
 
 
@@ -168,39 +181,9 @@
             <!-- ================================================================= -->
             <!-- Partials -->
             <!-- ================================================================= -->
-
-
-
-
             <trans-unit id="partials.alertsBox.headline">
                 <source>Stay tuned</source>
                 <target>Bleiben Sie auf dem Laufenden</target>
-            </trans-unit>
-
-
-            <trans-unit id="partials.basics.header.labelHeader">
-                <source>Home-Link and main menu</source>
-                <target>Link zur Startseite und Hauptmenü</target>
-            </trans-unit>
-            <trans-unit id="partials.basics.header.labelHeaderMainWebsite">
-                <source>Open main website</source>
-                <target>Hauptseite öffnen</target>
-            </trans-unit>
-            <trans-unit id="partials.basics.header.labelMobileMenuOpenButton">
-                <source>Open main menu</source>
-                <target>Hauptmenü öffnen</target>
-            </trans-unit>
-            <trans-unit id="partials.basics.header.labelMobileMenuCloseButton">
-                <source>Close main menu</source>
-                <target>Hauptmenü schließen</target>
-            </trans-unit>
-            <trans-unit id="partials.basics.header.labelMenuCloseButton">
-                <source>Close main menu</source>
-                <target>Hauptmenü schließen</target>
-            </trans-unit>
-            <trans-unit id="partials.basics.logo.homeLink">
-                <source>Home</source>
-                <target>Zur Startseite</target>
             </trans-unit>
 			<trans-unit id="partials.basics.browserWarning.warning">
 				<source><![CDATA[
@@ -210,52 +193,6 @@
 					Ihr Browser wird leider nicht mehr unterstützt. Bitte verwenden Sie einen aktuellen Browser, z.B. Chrome, Firefox, Safari oder den Internet Explorer ab Version 11.
 				]]></target>
 			</trans-unit>
-
-
-
-
-            <trans-unit id="partials.infoBox.partials.tableOfContents.labelTableOfContents">
-                <source>Table of Contents</source>
-                <target>Inhaltsverzeichnis</target>
-			</trans-unit>
-
-
-
-
-			<trans-unit id="partials.sharePrint.socialMedia.labelShare">
-				<source>Share</source>
-				<target>Teilen</target>
-			</trans-unit>
-			<trans-unit id="partials.sharePrint.socialMedia.labelShareFacebook">
-				<source>Share on Facebook</source>
-				<target>Auf Facebook teilen</target>
-			</trans-unit>
-			<trans-unit id="partials.sharePrint.socialMedia.labelShareTwitter">
-				<source>Share on Twitter</source>
-				<target>Auf Twitter teilen</target>
-			</trans-unit>
-			<trans-unit id="partials.sharePrint.socialMedia.labelShareXing">
-				<source>Share on XING</source>
-				<target>Auf XING teilen</target>
-			</trans-unit>
-			<trans-unit id="partials.sharePrint.socialMedia.labelShareRss">
-				<source>RSS-Feed</source>
-				<target>RSS-Feed</target>
-			</trans-unit>
-            <trans-unit id="partials.sharePrint.print.ariaLabelPrintToolbar">
-                <source>Print article or save for later</source>
-                <target>Artikel drucken oder für später speichern</target>
-            </trans-unit>
-
-
-            <!-- ================================================================= -->
-			<!-- Templates -->
-            <!-- ================================================================= -->
-            <trans-unit id="templates.gridElements.contentContainer.twoCols.asideHeadline">
-				<source>More Information</source>
-				<target>Weitere Informationen</target>
-            </trans-unit>
-
 
 
 

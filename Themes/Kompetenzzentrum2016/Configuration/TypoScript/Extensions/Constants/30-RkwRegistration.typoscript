@@ -1,4 +1,16 @@
 plugin.tx_rkwregistration {
+
+	view {
+		# cat=plugin.tx_rkwrelated_morecontent/file; type=string; label=Path to template root (FE)
+		templateRootPath = {$plugin.tx_rkwtemplate_themeconfig.paths.extensions.rootBase}/RkwRegistration/Templates/
+
+		# cat=plugin.tx_rkwrelated_morecontent/file; type=string; label=Path to template partials (FE)
+		partialRootPath = {$plugin.tx_rkwtemplate_themeconfig.paths.extensions.rootBase}/RkwRegistration/Partials/
+
+		# cat=plugin.tx_rkwrelated_morecontent/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = {$plugin.tx_rkwtemplate_themeconfig.paths.extensions.rootBase}/RkwRegistration/Layouts/
+	}
+
     persistence {
         // cat=plugin.tx_abounitreservation//a; type=string; label=Default storage PID
         storagePid = 618
@@ -7,7 +19,7 @@ plugin.tx_rkwregistration {
     settings {
 
         # cat=plugin.tx_rkwregistration//a; type=string; label=Comma-separated list of allowd domains for redirect after login
-        redirectDomains = www.rkw-kompetenzzentrum.de, www.rkw-sachsenanhalt.de, www.rkw-thueringen.de, www.rkw-bremen.de, mein.rkw.de, www.karriereseiten-check.de
+        redirectDomains = www.rkw-kompetenzzentrum.de, www.rkw-sachsenanhalt.de, www.rkw-thueringen.de, www.rkw-bremen.de, www.rkw-bw.de, mein.rkw.de, www.karriereseiten-check.de
 
         users {
             // cat=plugin.tx_rkwregistration//a; type=integer; label=Storage Pid

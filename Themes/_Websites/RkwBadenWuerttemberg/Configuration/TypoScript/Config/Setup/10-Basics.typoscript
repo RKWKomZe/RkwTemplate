@@ -5,7 +5,7 @@ config {
 
   	// CDN
     tx_rkwbasics_cdn {
-        enable = 0
+        enable = 1
         enablePostProc = 0
     }
 }

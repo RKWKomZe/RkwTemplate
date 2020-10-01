@@ -1,77 +1,73 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
     <f:section name="Default">
-        <f:if condition="{iterator.isFirst}">
-            <f:else>
-                <li class="nav__item {f:if(condition:item.children, then:' js-dropdown-item')} {f:if(condition:item.active, then:' is-active')}">
-                    <a class="{f:if(condition:item.children, then:'nav__item-link')}" href="{item.link}" target="{item.target}" tabindex="{iterator.index}" {f:if(condition:item.children, then:' aria-haspopup="true" aria-controls="flyout-{item.uid}"')} >
-                        {item.title}
-                    </a>
 
-                    <f:if condition="{item.children}">
-                        <div class="nav-flyout js-toggle-dropdown" role="menu" id="flyout-{item.uid}">
-                            <div class="hover-background">
-                                <ul class="nav-flyout__dropdown">
-                                    <f:for each="{item.children}" as="item" iteration="iterator">
-                                        <f:render partial="ItemLevel2" section="Default" arguments="{item: item, counter: iterator.cycle}"/>
-                                    </f:for>
-                                </ul>
-                            </div>
-                        </div>
-                    </f:if>
-                </li>
-            </f:else>
-        </f:if>
+        <li class="nav__item {f:if(condition:item.children, then:' js-dropdown-item')} {f:if(condition:item.active, then:' is-active')}">
+            <a class="{f:if(condition:item.children, then:'nav__item-link')}" href="{item.link}" target="{item.target}" tabindex="{iterator.index}" {f:if(condition:item.children, then:' aria-haspopup="true" aria-controls="flyout-{item.uid}"')} >
+                {item.title}
+            </a>
+
+            <f:if condition="{item.children}">
+                <div class="nav-flyout js-toggle-dropdown" role="menu" id="flyout-{item.uid}">
+                    <div class="hover-background">
+                        <ul class="nav-flyout__dropdown">
+                            <f:for each="{item.children}" as="item" iteration="iterator">
+                                <f:render partial="ItemLevel2" section="Default" arguments="{item: item, counter: iterator.cycle}"/>
+                            </f:for>
+                        </ul>
+                    </div>
+                </div>
+            </f:if>
+        </li>
+
     </f:section>
 
     <f:comment><!-- ======================================================================== --></f:comment>
 
 
     <f:section name="Mobile">
-        <f:if condition="{iterator.isFirst}">
-            <f:else>
-                <li class="nav-mobile__item">
-                    <a href="{item.link}" target="{item.target}" {f:if(condition:item.children, then:' aria-haspopup="true"')}>
-                        {item.title}
-                    </a>
+
+        <li class="nav-mobile__item">
+            <a href="{item.link}" target="{item.target}" {f:if(condition:item.children, then:' aria-haspopup="true"')}>
+                {item.title}
+            </a>
 
 
-                    <f:if condition="{item.children}">
-                        <span class="nav-mobile__item-icon-wrapper">
-                            <button class="nav-mobile__item-icon">
-                                <svg class="icon icon--12">
-                                    <use xlink:href="#ic-arrow-primary" />
-                                </svg>
-                            </button>
-                        </span>
+            <f:if condition="{item.children}">
+                <span class="nav-mobile__item-icon-wrapper">
+                    <button class="nav-mobile__item-icon">
+                        <svg class="icon icon--12">
+                            <use xlink:href="#ic-arrow-primary" />
+                        </svg>
+                    </button>
+                </span>
 
-                        <div class="flex-basis-12 inner-nav-mob">
-                            <ul>
+                <div class="flex-basis-12 inner-nav-mob">
+                    <ul>
 
-                                <!-- Backlink -->
-                                <li class="nav-mobile__item nav-mobile__back-link">
-                                    <span class="nav-mobile__item-icon-wrapper">
-                                        <button class="nav-mobile__item-icon" aria-haspopup="true">
-                                            <svg class="icon icon--12">
-                                                <use xlink:href="#ic-arrow-primary" />
-                                            </svg>
-                                        </button>
-                                    </span>
-                                    <strong>
-                                        {item.title}
-                                    </strong>
-                                </li>
+                        <!-- Backlink -->
+                        <li class="nav-mobile__item nav-mobile__back-link">
+                            <span class="nav-mobile__item-icon-wrapper">
+                                <button class="nav-mobile__item-icon" aria-haspopup="true">
+                                    <svg class="icon icon--12">
+                                        <use xlink:href="#ic-arrow-primary" />
+                                    </svg>
+                                </button>
+                            </span>
+                            <strong>
+                                {item.title}
+                            </strong>
+                        </li>
 
-                                <!-- Sub-Items -->
-                                <f:for each="{item.children}" as="item" iteration="iterator">
-                                    <f:render partial="ItemLevel2" section="Mobile" arguments="{item: item, counter: iterator.cycle}"/>
-                                </f:for>
-                            </ul>
-                        </div>
+                        <!-- Sub-Items -->
+                        <f:for each="{item.children}" as="item" iteration="iterator">
+                            <f:render partial="ItemLevel2" section="Mobile" arguments="{item: item, counter: iterator.cycle}"/>
+                        </f:for>
+                    </ul>
+                </div>
 
-                    </f:if>
-                </li>
-            </f:else>
-        </f:if>
+            </f:if>
+        </li>
+
     </f:section>
 </html>
