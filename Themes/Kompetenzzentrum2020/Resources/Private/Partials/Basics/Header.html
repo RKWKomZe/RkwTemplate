@@ -27,7 +27,7 @@
                 </f:then>
                 <f:else>
                     <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.sub2" data="{data}" />
-                    <f:if condition="! <rkwBasics:isEmpty string='{f:cObject(typoscriptObjectPath: 'lib.txRkwTemplate.navigation.sub2', data:'{data}')}' />">
+                    <f:if condition="! {rkwBasics:isEmpty(string:'{f:cObject(typoscriptObjectPath: \'lib.txRkwTemplate.navigation.sub2\', data:\'{data}\')}')}">
                         <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.rootline" data="{data}" />
                     </f:if>
                 </f:else>

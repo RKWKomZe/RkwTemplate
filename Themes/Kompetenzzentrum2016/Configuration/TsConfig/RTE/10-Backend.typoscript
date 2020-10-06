@@ -167,13 +167,13 @@ RTE {
                 properties.class.allowedClasses = external-link,icon-planet,internal-link,icon-article,icon-book,download,icon-file,mail,button
 
                 // allow additional params
-                queryParametersSelector.enabled = true
+                queryParametersSelector.enabled = 1
 
                 // allow related-attribute
-                relAttribute.enabled = true
+                relAttribute.enabled = 0
 
                 // disallow target selector
-                targetSelector.disabled = true
+                targetSelector.disabled = 0
             }
         }
     }

@@ -1,13 +1,35 @@
-<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:rkwBasics="http://typo3.org/ns/RKW/RkwBasics/ViewHelpers"
+    data-namespace-typo3-fluid="true">
 
-    <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.pageInfo.authorsList', data:'{data}')}">
-        <div class="table__item">
-            <div class="table__title">
-                <f:translate key="{settings.themeLanguageFile}:partials.infoBox.partials.authors.labelAuthors"/>:
+    <f:section name="Default">
+        <f:if condition="! {rkwBasics:isEmpty(string:'{f:cObject(typoscriptObjectPath: \'lib.txRkwTemplate.pageInfo.authorsList\', data:\'{data}\')}')}">
+            <div class="table__item">
+                <div class="table__title">
+                    <f:translate key="{settings.themeLanguageFile}:partials.infoBox.partials.authors.labelAuthors"/>:
+                </div>
+                <div class="table__content">
+                    <f:cObject typoscriptObjectPath="lib.txRkwTemplate.pageInfo.authorsList" data="{data}" />
+                </div>
             </div>
-            <div class="table__content">
-                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.pageInfo.authorsList" data="{data}" />
+        </f:if>
+    </f:section>
+
+
+    <f:section name="NonRecursive">
+        <f:if condition="! {rkwBasics:isEmpty(string:'{f:cObject(typoscriptObjectPath: \'lib.txRkwTemplate.pageInfo.authorsListNonRecursive\', data:\'{data}\')}')}">
+            <div class="table__item">
+                <div class="table__title">
+                    <f:translate key="{settings.themeLanguageFile}:partials.infoBox.partials.authors.labelAuthors"/>:
+                </div>
+                <div class="table__content">
+                    <f:cObject typoscriptObjectPath="lib.txRkwTemplate.pageInfo.authorsListNonRecursive" data="{data}" />
+                </div>
             </div>
-        </div>
-    </f:if>
+        </f:if>
+    </f:section>
 </html>
+
+
+
+
