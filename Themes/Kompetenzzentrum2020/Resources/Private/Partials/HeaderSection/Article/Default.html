@@ -14,7 +14,7 @@
     </div>
 
     <!-- image or video -->
-    <f:if condition="<rkwBasics:isEmpty string='{f:cObject(typoscriptObjectPath: 'lib.txRkwTemplate.keyvisual.article', data:'{data}')}' /> == 0">
+    <f:if condition="! {rkwBasics:isEmpty(string:'{f:cObject(typoscriptObjectPath: \'lib.txRkwTemplate.keyvisual.article\', data:\'{data}\')}')}">
         <div class="siteheader__image">
             <f:cObject typoscriptObjectPath="lib.txRkwTemplate.keyvisual.article" data="{data}" />
         </div>

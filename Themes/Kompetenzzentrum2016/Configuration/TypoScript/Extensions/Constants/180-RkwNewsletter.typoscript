@@ -1,5 +1,15 @@
 plugin.tx_rkwnewsletter {
 
+	view {
+		# cat=plugin.tx_rkwrelated_morecontent/file; type=string; label=Path to template root (FE)
+		templateRootPath = {$plugin.tx_rkwtemplate_themeconfig.paths.extensions.rootBase}/RkwNewsletter/Templates/
+
+		# cat=plugin.tx_rkwrelated_morecontent/file; type=string; label=Path to template partials (FE)
+		partialRootPath = {$plugin.tx_rkwtemplate_themeconfig.paths.extensions.rootBase}/RkwNewsletter/Partials/
+
+		# cat=plugin.tx_rkwrelated_morecontent/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = {$plugin.tx_rkwtemplate_themeconfig.paths.extensions.rootBase}/RkwNewsletter/Layouts/
+	}
 
     persistence {
         # cat=plugin.tx_rkwnewsletter//a; type=string; label=Default storage PID

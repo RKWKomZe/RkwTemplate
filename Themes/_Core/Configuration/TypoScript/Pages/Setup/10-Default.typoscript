@@ -111,7 +111,7 @@ page {
 
 			40 = TEXT
 			40 {
-				value = Example Company
+				value = {$plugin.tx_rkwtemplate_themeconfig.website.name}
 				wrap = <meta property="og:site_name" content="|" />
 				stdWrap.htmlSpecialChars = 1
 			}
@@ -193,14 +193,15 @@ page {
 
 				}
 
-				wrap = <meta property="og:image" content="{$plugin.tx_rkwtemplate_themeconfig.website.baseUrl}|">
+				stdWrap.wrap = <meta property="og:image" content="{$plugin.tx_rkwtemplate_themeconfig.website.baseUrl}|">
+				stdWrap.required = 1
 			}
 
-			70 = TEXT
-			70 {
-				value = https://www.facebook.com/EXAMPLE
-				wrap = <meta property="article:publisher" content="|" />
-			}
+			# 70 = TEXT
+			# 70 {
+			#	value = https://www.facebook.com/EXAMPLE
+			#	wrap = <meta property="article:publisher" content="|" />
+			# }
 		}
 
 		//===============================================================

@@ -14,9 +14,6 @@ page {
         // No RSS-Feed
         999 >
 
-		// No OpenGraph
-		5000 >
-
 		// No Facebook Instant Articles
 		5500 >
 

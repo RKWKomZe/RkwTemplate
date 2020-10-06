@@ -4,7 +4,7 @@
 
     <f:section name="Default">
         <!-- similar contents or custom recommendations -->
-        <f:if condition="{rkwBasics:isEmpty(string='{data.tx_gridelements_view_column_90}')} == 0'">
+        <f:if condition="! {rkwBasics:isEmpty(string='{data.tx_gridelements_view_column_90}')}">
             <f:then>
                 <f:format.html parseFuncTSPath="">
                     {data.tx_gridelements_view_column_90}
@@ -26,7 +26,7 @@
 
     <f:section name="Reduced">
         <!-- similar contents or custom recommendations -->
-        <f:if condition="{rkwBasics:isEmpty(string='{data.tx_gridelements_view_column_90}')} == 0'">
+        <f:if condition="! {rkwBasics:isEmpty(string='{data.tx_gridelements_view_column_90}')}">
             <f:format.html parseFuncTSPath="">
                 {data.tx_gridelements_view_column_90}
             </f:format.html>

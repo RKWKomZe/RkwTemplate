@@ -230,5 +230,29 @@ lib.txRkwTemplate {
             persistence =< plugin.tx_rkwauthors.persistence
             settings =< plugin.tx_rkwauthors.settings
         }
+
+        //=================================================================
+        authorsListNonRecursive = USER
+        authorsListNonRecursive {
+            userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+            extensionName = RkwAuthors
+            pluginName = Rkwauthors
+            vendorName = RKW
+            controller = Authors
+            switchableControllerActions {
+              // Again: Controller-Name and Action
+              Authors {
+                  1 = pageCommaList
+              }
+            }
+
+            view =< plugin.tx_rkwauthors.view
+            persistence =< plugin.tx_rkwauthors.persistence
+            settings =< plugin.tx_rkwauthors.settings
+            settings {
+                recursiveAuthorList = 0
+            }
+        }
+
     }
 }

@@ -39,7 +39,7 @@ plugin.tx_rkwtemplate_themeconfig {
         # mainWebsiteName =
 
         # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Icon of main website (on microsites only)
-        # mainWebsiteLogoFile =
+        mainWebsiteLogoFile =
 
     }
 

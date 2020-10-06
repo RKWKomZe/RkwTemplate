@@ -205,12 +205,6 @@ page {
 			<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1">
         )
 
-        // Pagename for OpenGraph
-        5000.40.value = RKW Kompetenzzentrum
-
-        // Publisher for OpenGraph
-        5000.70.value = https://www.facebook.com/RKWexperten
-
         // Facebook Instant Articles
         5500 = TEXT
         5500.value = <meta property="fb:pages" content="436969943109294" />
