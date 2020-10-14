@@ -10,11 +10,11 @@
 			<f:comment><f:render partial="Basics/BrowserWarning" /></f:comment>
 
 			<!-- microsite bar -->
-			<f:render partial="Basics/Header" section="Microsite" arguments="{_all}"/>
+			<f:render partial="Basics/Header" section="MicrositeBar" arguments="{_all}"/>
 
 			<!-- header -->
 			<header class="header {f:if(condition: '{f:cObject(typoscriptObjectPath:\'lib.txRkwTemplate.navigation.sub\', data:\'{data}\')}', then: 'has-nav')}">
-				<f:render partial="Basics/Header" section="Default" arguments="{_all}"/>
+				<f:render partial="Basics/Header" arguments="{_all}"/>
 				<f:render section="Header" />
 			</header>
 
@@ -30,7 +30,7 @@
 		<f:render partial="Basics/SVGs" />
 
 		<!-- Overlay -->
-		<f:cObject typoscriptObjectPath="lib.txRkwTemplate.various.overlayMeinRKW" data="{data}" />
+		<f:cObject typoscriptObjectPath="lib.txRkwTemplate.various.loginOverride" data="{data}" />
 
 
 	</f:spaceless>

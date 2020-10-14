@@ -11,8 +11,8 @@
             </li>
         </f:if>
         <f:if condition="{loginPid}'">
-            <li class="nav__item">
-                <a href="{f:uri.page(pageUid:'{loginPid}')}" class="btn btn--tertiary btn--nav" id="menu-mein-rkw">
+            <li class="nav__item tx-rkwregistration-login-class">
+                <a href="{f:uri.page(pageUid:'{loginPid}')}" class="btn btn--tertiary btn--nav tx-rkwregistration-login-text">
                     <f:translate key="{settings.themeLanguageFile}:partials.menus.main.closure.login" />
                 </a>
             </li>
@@ -61,7 +61,7 @@
                 <ul class="nav-mobile__bottom-footer">
                     <f:for each="{menuItemsMeta}" as="item" iteration="iterator">
                         <li class="nav-mobile__item">
-                            <a href="{item.link}" target="{item.target}">
+                            <a href="{item.link}" target="{f:if(condition: item.target, then: item.target, else:'_self')}">
                                 {item.title}
                             </a>
                         </li>

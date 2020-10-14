@@ -6,7 +6,7 @@
             <li class="nav__item nav__item--white-background {f:if(condition:'{f:count(subject: menuItems)} > 1', then:'has-dropdown is-dropdown')}">
 
                 <!-- Do not insert line-breaks here because this will cause errors with the arrow (.::after) -->
-                <a href="{itemPrimary.link}" target="{itemPrimary.target}"><span class="nav__item-text"><f:format.crop maxCharacters="50" respectWordBoundaries="true">{itemPrimary.title}</f:format.crop></span></a>
+                <a href="{itemPrimary.link}" target="{f:if(condition: itemPrimary.target, then: itemPrimary.target, else:'_self')}"><span class="nav__item-text"><f:format.crop maxCharacters="50" respectWordBoundaries="true">{itemPrimary.title}</f:format.crop></span></a>
 
                 <!-- add all inactive elements of the same level -->
                 <f:if condition="{f:count(subject: menuItems)} > 1">
@@ -14,7 +14,7 @@
                         <f:for each="{menuItems}" as="itemSecondary" iteration="iterator">
                             <f:if condition="! {itemSecondary.active}">
                                 <li class="nav-item__dropdown">
-                                    <a href="{itemSecondary.link}" target="{itemSecondary.target}">
+                                    <a href="{itemSecondary.link}" target="{f:if(condition: itemSecondary.target, then: itemSecondary.target, else:'_self')}">
                                         <span class="nav__item-text"><f:format.crop maxCharacters="50" respectWordBoundaries="true">{itemSecondary.title}</f:format.crop></span>
                                     </a>
                                 </li>

@@ -7,11 +7,13 @@ lib.txRkwTemplate.themeSettings {
     imagesPath = /{$plugin.tx_rkwtemplate_themeconfig.paths.default.images}
 
     websiteName = {$plugin.tx_rkwtemplate_themeconfig.website.name}
+    websiteBaseUrl = {$plugin.tx_rkwtemplate_themeconfig.website.baseUrl}
 
     websiteLogoFile = {$plugin.tx_rkwtemplate_themeconfig.website.logoFile}
     websiteLogoMobileFile = {$plugin.tx_rkwtemplate_themeconfig.website.logoMobileFile}
     websiteLogoBrokenLinkFile = {$plugin.tx_rkwtemplate_themeconfig.website.logoBrokenLinkFile}
     websiteLogoUrl = {$plugin.tx_rkwtemplate_themeconfig.website.logoUrl}
+    websiteLogoReplacementText = {$plugin.tx_rkwtemplate_themeconfig.website.logoReplacementText}
 
     // @deprecated start
     websiteLogoOffcanvasFile = {$plugin.tx_rkwtemplate_themeconfig.website.logoOffcanvasFile}

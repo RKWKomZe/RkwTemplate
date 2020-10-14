@@ -29,5 +29,26 @@ lib.txRkwTemplate {
             settings =< plugin.tx_rkwalerts.settings
         }
 
+
+        //=================================================================
+        loginOverride = USER
+        loginOverride {
+            userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+            extensionName = RkwRegistration
+            pluginName = RkwregistrationInfo
+            vendorName = RKW
+            controller = Info
+            switchableControllerActions {
+                // Again: Controller-Name and Action
+                Info {
+                    1 = loginInfo
+                }
+            }
+
+            view =< plugin.tx_rkwregistration.view
+            persistence =< plugin.tx_rkwregistration.persistence
+            settings =< plugin.tx_rkwregistration.settings
+        }
+
     }
 }

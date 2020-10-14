@@ -25,27 +25,4 @@
         </nav>
     </f:if>
 
-
-    <f:security.ifAuthenticated>
-        <f:then>
-            <script type="text/javascript">
-                document.addEventListener("DOMContentLoaded", function(event) {
-                    $('#menu-mein-rkw')
-                        .parent()
-                        .addClass('nav__item--logged-in');
-                    $('#menu-mein-rkw').html('Mein RKW');
-                });
-            </script>
-        </f:then>
-        <f:else>
-            <script type="text/javascript">
-                document.addEventListener("DOMContentLoaded", function(event) {
-                    $('#menu-mein-rkw')
-                        .parent()
-                        .addClass('nav__item--logged-out');
-                });
-            </script>
-        </f:else>
-    </f:security.ifAuthenticated>
-
 </html>

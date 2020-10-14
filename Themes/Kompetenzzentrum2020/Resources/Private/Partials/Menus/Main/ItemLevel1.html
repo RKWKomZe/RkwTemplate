@@ -3,12 +3,12 @@
     <f:section name="Default">
 
         <li class="nav__item {f:if(condition:item.children, then:' js-dropdown-item')} {f:if(condition:item.active, then:' is-active')}">
-            <a class="{f:if(condition:item.children, then:'nav__item-link')}" href="{item.link}" target="{item.target}" tabindex="{iterator.index}" {f:if(condition:item.children, then:' aria-haspopup="true" aria-controls="flyout-{item.uid}"')} >
+            <a class="{f:if(condition:item.children, then:'nav__item-link')}" href="{item.link}" target="{f:if(condition: item.target, then: item.target, else:'_self')}" tabindex="{iterator.index}" {f:if(condition:item.children, then:' aria-haspopup="true" aria-controls="flyout-{item.data.uid}"')} >
                 {item.title}
             </a>
 
             <f:if condition="{item.children}">
-                <div class="nav-flyout js-toggle-dropdown" role="menu" id="flyout-{item.uid}">
+                <div class="nav-flyout js-toggle-dropdown" role="menu" id="flyout-{item.data.uid}">
                     <div class="hover-background">
                         <ul class="nav-flyout__dropdown">
                             <f:for each="{item.children}" as="item" iteration="iterator">
@@ -28,7 +28,7 @@
     <f:section name="Mobile">
 
         <li class="nav-mobile__item {f:if(condition:item.active, then:' is-active')}">
-            <a href="{item.link}" target="{item.target}" {f:if(condition:item.children, then:' aria-haspopup="true"')}>
+            <a href="{item.link}" target="{f:if(condition: item.target, then: item.target, else:'_self')}" {f:if(condition:item.children, then:' aria-haspopup="true"')}>
                 {item.title}
             </a>
 

@@ -10,7 +10,7 @@
                 <li class="nav-flyout__item" >
             </f:else>
         </f:if>
-            <a href="{item.link}" target="{item.target}">
+            <a href="{item.link}" target="{f:if(condition: item.target, then: item.target, else:'_self')}">
                 <div class="nav-flyout__text">
                     <p class="nav-flyout__headline">{item.title}</p>
                     <f:if condition="{item.abstract}">
@@ -32,7 +32,7 @@
     <f:section name="Mobile">
 
         <li class="nav-mobile__item {f:if(condition:item.active, then:' is-active')}">
-            <a href="{item.link}" target="{item.target}" {f:if(condition:item.children, then:' aria-haspopup="true"')}>
+            <a href="{item.link}" target="{f:if(condition: item.target, then: item.target, else:'_self')}" {f:if(condition:item.children, then:' aria-haspopup="true"')}>
                 {item.title}
             </a>
 

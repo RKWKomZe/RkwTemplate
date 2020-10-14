@@ -152,7 +152,7 @@ h2,
   line-height: 1.22222em;
   font-size: 36px;
   font-size: 2.25rem;
-  color: #808080;
+  color: #707070;
 }
 
 h2 .foo-bar,
@@ -606,6 +606,201 @@ figcaption .copyright-hint:before {
   margin-left: 2em;
 }
 
+h1 + table,
+h1 + ul,
+h1 + ol,
+h1 + blockquote,
+h1 + h1,
+h1 + .h1,
+h1 + h2,
+h1 + .h2,
+h1 + h3,
+h1 + .h3,
+h1 + h4,
+h1 + .h4,
+h1 + h5,
+h1 + .h5,
+h1 + h6,
+h1 + .h6,
+.h1 + table,
+.h1 + ul,
+.h1 + ol,
+.h1 + blockquote,
+.h1 + h1,
+.h1 + .h1,
+.h1 + h2,
+.h1 + .h2,
+.h1 + h3,
+.h1 + .h3,
+.h1 + h4,
+.h1 + .h4,
+.h1 + h5,
+.h1 + .h5,
+.h1 + h6,
+.h1 + .h6,
+h2 + table,
+h2 + ul,
+h2 + ol,
+h2 + blockquote,
+h2 + h1,
+h2 + .h1,
+h2 + h2,
+h2 + .h2,
+h2 + h3,
+h2 + .h3,
+h2 + h4,
+h2 + .h4,
+h2 + h5,
+h2 + .h5,
+h2 + h6,
+h2 + .h6,
+.h2 + table,
+.h2 + ul,
+.h2 + ol,
+.h2 + blockquote,
+.h2 + h1,
+.h2 + .h1,
+.h2 + h2,
+.h2 + .h2,
+.h2 + h3,
+.h2 + .h3,
+.h2 + h4,
+.h2 + .h4,
+.h2 + h5,
+.h2 + .h5,
+.h2 + h6,
+.h2 + .h6,
+h3 + table,
+h3 + ul,
+h3 + ol,
+h3 + blockquote,
+h3 + h1,
+h3 + .h1,
+h3 + h2,
+h3 + .h2,
+h3 + h3,
+h3 + .h3,
+h3 + h4,
+h3 + .h4,
+h3 + h5,
+h3 + .h5,
+h3 + h6,
+h3 + .h6,
+.h3 + table,
+.h3 + ul,
+.h3 + ol,
+.h3 + blockquote,
+.h3 + h1,
+.h3 + .h1,
+.h3 + h2,
+.h3 + .h2,
+.h3 + h3,
+.h3 + .h3,
+.h3 + h4,
+.h3 + .h4,
+.h3 + h5,
+.h3 + .h5,
+.h3 + h6,
+.h3 + .h6,
+h4 + table,
+h4 + ul,
+h4 + ol,
+h4 + blockquote,
+h4 + h1,
+h4 + .h1,
+h4 + h2,
+h4 + .h2,
+h4 + h3,
+h4 + .h3,
+h4 + h4,
+h4 + .h4,
+h4 + h5,
+h4 + .h5,
+h4 + h6,
+h4 + .h6,
+.h4 + table,
+.h4 + ul,
+.h4 + ol,
+.h4 + blockquote,
+.h4 + h1,
+.h4 + .h1,
+.h4 + h2,
+.h4 + .h2,
+.h4 + h3,
+.h4 + .h3,
+.h4 + h4,
+.h4 + .h4,
+.h4 + h5,
+.h4 + .h5,
+.h4 + h6,
+.h4 + .h6,
+h5 + table,
+h5 + ul,
+h5 + ol,
+h5 + blockquote,
+h5 + h1,
+h5 + .h1,
+h5 + h2,
+h5 + .h2,
+h5 + h3,
+h5 + .h3,
+h5 + h4,
+h5 + .h4,
+h5 + h5,
+h5 + .h5,
+h5 + h6,
+h5 + .h6,
+.h5 + table,
+.h5 + ul,
+.h5 + ol,
+.h5 + blockquote,
+.h5 + h1,
+.h5 + .h1,
+.h5 + h2,
+.h5 + .h2,
+.h5 + h3,
+.h5 + .h3,
+.h5 + h4,
+.h5 + .h4,
+.h5 + h5,
+.h5 + .h5,
+.h5 + h6,
+.h5 + .h6,
+h6 + table,
+h6 + ul,
+h6 + ol,
+h6 + blockquote,
+h6 + h1,
+h6 + .h1,
+h6 + h2,
+h6 + .h2,
+h6 + h3,
+h6 + .h3,
+h6 + h4,
+h6 + .h4,
+h6 + h5,
+h6 + .h5,
+h6 + h6,
+h6 + .h6,
+.h6 + table,
+.h6 + ul,
+.h6 + ol,
+.h6 + blockquote,
+.h6 + h1,
+.h6 + .h1,
+.h6 + h2,
+.h6 + .h2,
+.h6 + h3,
+.h6 + .h3,
+.h6 + h4,
+.h6 + .h4,
+.h6 + h5,
+.h6 + .h5,
+.h6 + h6,
+.h6 + .h6 {
+  margin-top: 0;
+}
+
 /**! ==================================================
  * Buttons
  * ================================================== */
@@ -626,6 +821,7 @@ figcaption .copyright-hint:before {
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   line-height: 1.2;
+  text-align: center;
 }
 
 .btn .icon, .button .icon {
@@ -689,7 +885,7 @@ figcaption .copyright-hint:before {
 .btn--toggle {
   background-color: #ffffff;
   border-color: #ffffff;
-  color: #808080;
+  color: #707070;
 }
 
 .btn--centered {
@@ -697,9 +893,9 @@ figcaption .copyright-hint:before {
 }
 
 .btn--outline {
-  color: #808080;
+  color: #707070;
   background-color: transparent;
-  border-color: #808080;
+  border-color: #707070;
 }
 
 .btn--contains-icon {
@@ -770,7 +966,7 @@ figcaption .copyright-hint:before {
   display: flex;
   text-align: left;
   background-color: #ffffff;
-  color: #808080;
+  color: #707070;
   text-transform: none;
   padding: 0;
   margin: 0;
@@ -1032,6 +1228,10 @@ figcaption .copyright-hint:before {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .btn-list--center {
@@ -1048,6 +1248,10 @@ figcaption .copyright-hint:before {
   width: 100%;
 }
 
+.btn-list form {
+  width: auto;
+}
+
 .btn-list .btn:not(.search-field__submit), .btn-list .button:not(.search-field__submit) {
   margin: 0 1em 1em 0;
 }
@@ -1061,6 +1265,48 @@ figcaption .copyright-hint:before {
 
 .btn-list .btn:not(.search-field__submit) .foo-bar, .btn-list .button:not(.search-field__submit) .foo-bar {
   margin: 0 0 1em 0;
+}
+
+.btn-list--footer {
+  margin-top: 1em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.btn-list--footer .foo-bar {
+  margin-top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.btn-list--footer .btn:not(.search-field__submit), .btn-list--footer .button:not(.search-field__submit) {
+  margin-bottom: 0;
+}
+
+.btn-list--footer .btn:not(.search-field__submit) .foo-bar, .btn-list--footer .button:not(.search-field__submit) .foo-bar {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+}
+
+.btn-list--footer .btn:not(.search-field__submit) .foo-bar, .btn-list--footer .button:not(.search-field__submit) .foo-bar {
+  margin-top: 1em;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.btn-list form:last-child .btn, .btn-list form:last-child .button,
+.btn-list .btn:last-child,
+.btn-list .button:last-child {
+  margin-right: 0;
 }
 
 .btn-list .select-field {
@@ -1221,7 +1467,7 @@ figcaption .copyright-hint:before {
 }
 
 .sociallist .sociallist__item svg {
-  color: #808080;
+  color: #707070;
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
 }
@@ -1249,7 +1495,7 @@ a[class^="icon-"]::before {
   position: absolute;
   left: 0;
   top: 0.2em;
-  background: url("../img/global/ic_world_active.svg") no-repeat 4px center #808080;
+  background: url("../img/global/ic_world_active.svg") no-repeat 4px center #707070;
 }
 
 a[class^="icon-"]:hover::before, a[class^="icon-"]:focus::before {
@@ -1257,7 +1503,7 @@ a[class^="icon-"]:hover::before, a[class^="icon-"]:focus::before {
 }
 
 a[class^="icon-"].icon-book::before {
-  background: url("../img/global/ic_book_active.svg") no-repeat 19px center #808080;
+  background: url("../img/global/ic_book_active.svg") no-repeat 4px center #707070;
 }
 
 a[class^="icon-"].icon-book:hover:before, a[class^="icon-"].icon-book:focus:before {

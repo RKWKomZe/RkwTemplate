@@ -222,7 +222,7 @@ lib.txRkwTemplate {
             }
 
 
-            wrap = <div class="pagination">|</div>
+            wrap = <div class="btn-list btn-list--footer">|</div>
 
         }
 
