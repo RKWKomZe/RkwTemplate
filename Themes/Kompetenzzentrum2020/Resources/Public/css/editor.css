@@ -1232,6 +1232,7 @@ h6 + .h6,
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin-bottom: 1em;
 }
 
 .btn-list--center {
@@ -1273,6 +1274,7 @@ h6 + .h6,
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
+  margin-bottom: 0;
 }
 
 .btn-list--footer .foo-bar {
@@ -1519,6 +1521,14 @@ a[class^="icon-"].icon-book:hover:before, a[class^="icon-"].icon-book:focus:befo
   font-family: "ff-tisa-web-pro", serif;
   background-color: #cccccc;
   margin: 2em 0;
+}
+
+.responsive-table thead p:last-child, table thead p:last-child,
+.responsive-table tfoot p:last-child,
+table tfoot p:last-child,
+.responsive-table tbody p:last-child,
+table tbody p:last-child {
+  margin-bottom: 0;
 }
 
 .responsive-table thead th, table thead th {
