@@ -38,6 +38,9 @@ plugin.tx_rkwtemplate_themeconfig {
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Publisher of website
         publisher = RKW Baden-Württemberg
 
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Use this text instead of a logo
+        logoReplacementText =
+
     }
 
     # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Is this website a microsite?

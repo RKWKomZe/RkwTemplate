@@ -2,47 +2,47 @@
     xmlns:rkwBasics="http://typo3.org/ns/RKW/RkwBasics/ViewHelpers"
     data-namespace-typo3-fluid="true">
 
-    <f:section name="Default">
 
-        <div class="meta flex-basis-12 flex-container space-between">
-            <div class="site-logo flex-basis-3">
-                <a href="{settings.websiteLogoUrl}" title="<f:translate key='{settings.themeLanguageFile}:partials.basics.logo.homeLink' />" class="site-logo__link">
-                    <img class="site-logo__desktop" src="{settings.websiteLogoFile}" alt="{settings.websiteName}" />
-                    <f:if condition="{settings.websiteLogoMobileFile}">
-                        <f:then>
-                            <img class="site-logo__mobile" src="{settings.websiteLogoMobileFile}" alt="{settings.websiteName}" />
-                        </f:then>
-                        <f:else>
-                            <img class="site-logo__mobile" src="{settings.websiteLogoFile}" alt="{settings.websiteName}" />
-                        </f:else>
-                    </f:if>
-                </a>
-            </div>
-
-            <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.main" data="{data}" />
-            <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.sub" data="{data}" />
-            <f:if condition="{settings.reducedMenuLevels}">
-                <f:then>
-                    <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.rootline" data="{data}" />
-                </f:then>
-                <f:else>
-                    <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.sub2" data="{data}" />
-                    <f:if condition="! {rkwBasics:isEmpty(string:'{f:cObject(typoscriptObjectPath: \'lib.txRkwTemplate.navigation.sub2\', data:\'{data}\')}')}">
-                        <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.rootline" data="{data}" />
-                    </f:if>
-                </f:else>
-            </f:if>
-
+    <div class="meta flex-basis-12 flex-container space-between">
+        <div class="site-logo flex-basis-3">
+            <a href="{settings.websiteLogoUrl}" title="<f:translate key='{settings.themeLanguageFile}:partials.basics.logo.homeLink' />" class="site-logo__link">
+                <f:if condition="{settings.websiteLogoReplacementText}">
+                    <f:then>
+                        <span class="site_logo__text">{settings.websiteLogoReplacementText}</span>
+                    </f:then>
+                    <f:else>
+                        <img class="site-logo__desktop" src="{settings.websiteLogoFile}" alt="{settings.websiteName}" />
+                        <f:if condition="{settings.websiteLogoMobileFile}">
+                            <f:then>
+                                <img class="site-logo__mobile" src="{settings.websiteLogoMobileFile}" alt="{settings.websiteName}" />
+                            </f:then>
+                            <f:else>
+                                <img class="site-logo__mobile" src="{settings.websiteLogoFile}" alt="{settings.websiteName}" />
+                            </f:else>
+                        </f:if>
+                    </f:else>
+                </f:if>
+            </a>
         </div>
 
-    </f:section>
+        <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.main" data="{data}" />
+        <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.sub" data="{data}" />
+        <f:if condition="{settings.reducedMenuLevels}">
+            <f:then>
+                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.rootline" data="{data}" />
+            </f:then>
+            <f:else>
+                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.sub2" data="{data}" />
+                <f:if condition="! {rkwBasics:isEmpty(string:'{f:cObject(typoscriptObjectPath: \'lib.txRkwTemplate.navigation.sub2\', data:\'{data}\')}')}">
+                    <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.rootline" data="{data}" />
+                </f:if>
+            </f:else>
+        </f:if>
+    </div>
 
+    <!-- =================================================================  -->
 
-    <!-- ======================================================================== -->
-
-
-    <f:section name="Microsite">
-
+    <f:section name="MicrositeBar">
         <div class="microsite-bar">
             <div class="microsite-bar__container">
                 <f:if condition="{settings.micrositeMainWebsiteLogoFile}">
