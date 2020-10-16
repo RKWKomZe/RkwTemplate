@@ -2,8 +2,8 @@
 
     <f:if condition="{logos} > 0">
         <f:for each="{logos}" as="logo" key="key">
-            <div class="flex-item flex-basis-3 logo-tile content-padding-smalldesk">
-                <div class="tile has-logo">
+            <div class="flex-item flex-basis-3 content-padding-smalldesk">
+                <div class="tile logo-tile has-logo">
                     <div class="tile__header">
                         <div class="tile__img">
                             <f:image image="{logo}" treatIdAsReference="1"  width="350" cropVariant="default" alt="{f:if(condition: '{logo.title}', then: '{logo.title}', else: '{logo.alternative}')}" />

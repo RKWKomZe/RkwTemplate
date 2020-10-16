@@ -2,25 +2,25 @@
     xmlns:rkwBasics="http://typo3.org/ns/RKW/RkwBasics/ViewHelpers"
     data-namespace-typo3-fluid="true">
 
-    <!-- schema.org -->
+    <f:comment><!-- schema.org --></f:comment>
     <f:render partial="ContentContainer/SchemaOrg" arguments="{_all}"/>
 
     <section class="section content flex-basis-9 full-width-smalldesk no-padding-narrow">
 
-        <!-- content -->
-        <div class="contentbox contentbox--text typo3-fsc no-border-radius-smalldesk">
+        <f:comment><!-- content --></f:comment>
+        <div class="contentbox contentbox--text {f:if(condition:'{data.tx_gridelements_view_column_70}', then: 'contentbox--no-border-radius-bottom')} no-border-radius-smalldesk typo3-fsc">
             <f:render partial="ContentContainer/Content" arguments="{_all}"/>
         </div>
 
-        <!-- call to action -->
+        <f:comment><!-- call to action --></f:comment>
         <f:render partial="ContentContainer/CallToAction" arguments="{_all}"/>
 
-        <!-- recommendations -->
+        <f:comment><!-- recommendations --></f:comment>
         <f:render partial="ContentContainer/Recommendation" section="Default" arguments="{_all}"/>
 
     </section>
 
-    <!-- aside -->
+    <f:comment><!-- aside --></f:comment>
     <aside class="aside-info flex-basis-3 full-width-smalldesk aside-info--padding">
         <f:render partial="ContentContainer/Aside" section="Full" arguments="{_all}"/>
     </aside>

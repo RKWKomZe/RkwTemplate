@@ -4,7 +4,7 @@ tx_gridelements.setup.contentContainerTwoColsReduced {
     description = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.contentContainerTwoColsReduced.description
     config {
         colCount = 2
-        rowCount = 2
+        rowCount = 3
         rows {
             1 {
                 columns {
@@ -28,6 +28,21 @@ tx_gridelements.setup.contentContainerTwoColsReduced {
             }
 
             2 {
+
+                columns {
+                    1 {
+                        name = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.contentContainerTwoCols.callToAction
+                        colPos = 70
+                        allowed {
+                            CType = list
+                            list_type = rkwauthors_rkwauthorscontactbox
+                        }
+                    }
+                }
+            }
+
+
+            3 {
 
                 columns {
                     1 {

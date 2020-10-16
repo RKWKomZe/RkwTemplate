@@ -7,7 +7,7 @@
     </f:section>
 
 
-    <!-- ======================================================================== -->
+    <f:comment><!-- ======================================================================== --></f:comment>
 
 
     <f:section name="Content">
@@ -15,22 +15,22 @@
         <main class="main flex-container space-between no-padding-narrow" id="main">
             <section class="section content flex-item flex-basis-9 full-width-smalldesk no-padding-narrow">
 
-                <!-- header & infobox -->
+                <f:comment><!-- header & infobox --></f:comment>
                 <f:render partial="HeaderSection/Article" arguments="{_all}" />
 
-                <!-- breadcrumb-->
+                <f:comment><!-- breadcrumb--></f:comment>
                 <div class="breadcrumbs flex-container nav breadcrumb-padding">
                     <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.breadcrumb" data="{data}" />
                 </div>
 
-                <!-- content -->
+                <f:comment><!-- content --></f:comment>
                 <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.main" data="{data}" />
             </section>
 
-            <!-- similar contents -->
+            <f:comment><!-- similar contents --></f:comment>
             <f:render partial="Aside" arguments="{_all}" />
 
-            <!-- boxes -->
+            <f:comment><!-- boxes --></f:comment>
             <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.boxesArticle" data="{data}" />
 
         </main>
@@ -64,7 +64,7 @@
 
     <f:section name="Default">
 
-        <!-- top-menu -->
+        <f:comment><!-- top-menu --></f:comment>
         <f:render partial="SubNav" section="Default" arguments="{_all}"/>
 
         <div class="page-area-grid">
@@ -72,16 +72,16 @@
 
                 <article class="project-article" aria-labelledby="article-headline">
 
-                    <!-- key-visual and slogan -->
+                    <f:comment><!-- key-visual and slogan --></f:comment>
                     <f:render partial="HeaderSection/Article/Default" arguments="{_all}"/>
 
-                    <!-- infobox -->
+                    <f:comment><!-- infobox --></f:comment>
                     <f:render partial="InfoBox/Article" arguments="{_all}"/>
 
-                    <!-- content -->
+                    <f:comment><!-- content --></f:comment>
                     <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.main" data="{data}" />
 
-                    <!-- footer -->
+                    <f:comment><!-- footer --></f:comment>
                     <f:comment>
                     <footer class="article-footer">
                         <f:render partial="SharePrint/Print" arguments="{_all}"/>
@@ -91,16 +91,16 @@
 
                 <div class="sections narrow">
 
-                    <!-- alerts -->
+                    <f:comment><!-- alerts --></f:comment>
                     <f:render partial="AlertsBox" arguments="{_all}"/>
 
-                    <!-- boxes -->
+                    <f:comment><!-- boxes --></f:comment>
                     <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.boxesArticle" data="{data}" />
 
                 </div>
             </div>
 
-            <!-- related -->
+            <f:comment><!-- related --></f:comment>
             <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.related" data="{data}" />
         </div>
     </f:section>
@@ -109,7 +109,7 @@
 
     <f:section name="Tools">
 
-        <!-- top-menu -->
+        <f:comment><!-- top-menu --></f:comment>
         <f:render partial="SubNav" section="Default" arguments="{_all}"/>
 
         <div class="page-area-grid">
@@ -117,16 +117,16 @@
 
                 <article class="project-article" aria-labelledby="article-headline">
 
-                    <!-- key-visual and slogan -->
+                    <f:comment><!-- key-visual and slogan --></f:comment>
                     <f:render partial="HeaderSection/Article/Tools" arguments="{_all}"/>
 
-                    <!-- infobox -->
+                    <f:comment><!-- infobox --></f:comment>
                     <f:render partial="InfoBox/Article" arguments="{_all}"/>
 
-                    <!-- content -->
+                    <f:comment><!-- content --></f:comment>
                     <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.main" data="{data}" />
 
-                    <!-- footer -->
+                    <f:comment><!-- footer --></f:comment>
                     <f:comment><footer class="article-footer">
                         <f:render partial="SharePrint/Print" arguments="{_all}"/>
                         <f:render partial="SharePrint/SocialMedia" arguments="{_all}"/>
@@ -135,16 +135,16 @@
 
                 <div class="sections narrow">
 
-                    <!-- alerts -->
+                    <f:comment><!-- alerts --></f:comment>
                     <f:render partial="AlertsBox" arguments="{_all}"/>
 
-                    <!-- boxes -->
+                    <f:comment><!-- boxes --></f:comment>
                     <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.boxesArticle" data="{data}" />
 
                 </div>
             </div>
 
-            <!-- related -->
+            <f:comment><!-- related --></f:comment>
             <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.related" data="{data}" />
         </div>
 
@@ -160,10 +160,10 @@
 
                 <article class="project-article" aria-labelledby="article-headline">
 
-                    <!-- key-visual and slogan -->
+                    <f:comment><!-- key-visual and slogan --></f:comment>
                     <f:render partial="HeaderSection/Article/Special" arguments="{_all}"/>
 
-                    <!-- main part -->
+                    <f:comment><!-- main part --></f:comment>
                     <div class="content-box content wysiwyg">
                         <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.main" data="{data}" />
                     </div>
@@ -172,7 +172,7 @@
 
                 <div class="sections narrow">
 
-                    <!-- boxes -->
+                    <f:comment><!-- boxes --></f:comment>
                     <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.boxesArticle" data="{data}" />
 
                 </div>

@@ -2,31 +2,31 @@
 
 	<f:spaceless>
 
-		<!-- skip links-->
+		<f:comment><!-- skip links--></f:comment>
 		<f:render partial="Basics/SkipLinks" />
 
 		<div class="pagewrap">
 
 			<f:comment><f:render partial="Basics/BrowserWarning" /></f:comment>
 
-			<!-- header -->
+			<f:comment><!-- header --></f:comment>
 			<header class="header {f:if(condition: '{f:cObject(typoscriptObjectPath:\'lib.txRkwTemplate.navigation.sub\', data:\'{data}\')}', then: 'has-nav')}">
 				<f:render partial="Basics/Header" arguments="{_all}"/>
 				<f:render section="Header" />
 			</header>
 
-			<!-- main section -->
+			<f:comment><!-- main section --></f:comment>
 			<f:render section="Content" />
 
-			<!-- footer -->
+			<f:comment><!-- footer --></f:comment>
 			<f:render partial="Basics/Footer" section="Default" arguments="{_all}"/>
 
 		</div>
 
-		<!-- SVGs -->
+		<f:comment><!-- SVGs --></f:comment>
 		<f:render partial="Basics/SVGs" />
 
-		<!-- Overlay -->
+		<f:comment><!-- Overlay --></f:comment>
 		<f:cObject typoscriptObjectPath="lib.txRkwTemplate.various.loginOverride" data="{data}" />
 
 	</f:spaceless>

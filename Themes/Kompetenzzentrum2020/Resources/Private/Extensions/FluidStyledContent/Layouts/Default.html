@@ -1,33 +1,33 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 	<f:spaceless>
 		<f:if condition="({data.CType} == 'list')">
-			<!-- =============================================================
+			<f:comment><!-- =============================================================
 				rendering for plugins
-			============================================================= -->
+			============================================================= --></f:comment>
 			<f:then>
 
 				<f:if condition="{data.colPos} > 0">
-					<!-- =============================================================
+					<f:comment><!-- =============================================================
 						rendering for plugins that are greater than colPos 0
-					============================================================= -->
+					============================================================= --></f:comment>
 					<f:then>
 
 						<f:switch expression="{data.colPos}">
-							<!-- Home: Main -->
+							<f:comment><!-- Home: Main --></f:comment>
 							<f:case value="100">
 								<f:render partial="Wraps/Home/Main" section="Header" arguments="{_all}" />
 								<f:render section="Main"/>
 								<f:render partial="Wraps/Home/Main" section="Footer" arguments="{_all}" />
 							</f:case>
 
-							<!-- Home: Related contents
+							<f:comment><!-- Home: Related contents
 							<f:case value="110">
 								<f:render partial="Wraps/Home/Aside" section="Header" arguments="{_all}" />
 								<f:render section="Main"/>
 								<f:render partial="Wraps/Home/Aside" section="Footer" arguments="{_all}" />
-							</f:case>-->
+							</f:case>--></f:comment>
 
-							<!-- Plugin only -->
+							<f:comment><!-- Plugin only --></f:comment>
 							<f:case value="500">
 								<f:render partial="Wraps/PluginOnly/Main" section="Header" arguments="{_all}" />
 								<f:render section="Main"/>
@@ -57,32 +57,32 @@
 					<f:else>
 
 						<f:if condition="{data.colPos} < 0">
-							<!-- =============================================================
+							<f:comment><!-- =============================================================
 								rendering for plugins that are lower than colPos 0 (gridelements)
-							============================================================= -->
+							============================================================= --></f:comment>
 							<f:then>
 								<f:switch expression="{data.tx_gridelements_columns}">
 
-									<!-- Rendering for Call2Action -->
+									<f:comment><!-- Rendering for Call2Action --></f:comment>
 									<f:case value="70">
-										<!-- To be defined -->
+										<f:render section="Main"/>
 									</f:case>
 
-									<!-- Rendering for Aside -->
+									<f:comment><!-- Rendering for Aside --></f:comment>
 									<f:case value="80">
 										<f:render partial="Wraps/Topic/Aside" section="Header" arguments="{_all}" />
 										<f:render section="Main"/>
 										<f:render partial="Wraps/Topic/Aside" section="Footer" arguments="{_all}" />
 									</f:case>
 
-									<!-- Rendering for Recommendation-Override -->
+									<f:comment><!-- Rendering for Recommendation-Override --></f:comment>
 									<f:case value="90">
 										<f:render partial="Wraps/Topic/Recommendation" section="Header" arguments="{_all}" />
 										<f:render section="Main"/>
 										<f:render partial="Wraps/Topic/Recommendation" section="Footer" arguments="{_all}" />
 									</f:case>
 
-									<!-- everything else-->
+									<f:comment><!-- everything else--></f:comment>
 									<f:defaultCase>
 										<div id="c{data.uid}" class="frame show-first-headline frame-{data.frame_class} frame-type-{data.CType} frame-layout-{data.layout}{f:if(condition: data.space_before_class, then: ' frame-space-before-{data.space_before_class}')}{f:if(condition: data.space_after_class, then: ' frame-space-after-{data.space_after_class}')}">
 											<f:render section="Header" optional="true">
@@ -97,9 +97,9 @@
 								</f:switch>
 							</f:then>
 
-							<!-- =============================================================
+							<f:comment><!-- =============================================================
 								rendering for plugins are equal colPos 0 (normal content)
-							============================================================= -->
+							============================================================= --></f:comment>
 							<f:else>
 								<div id="c{data.uid}" class="frame show-first-headline frame-{data.frame_class} frame-type-{data.CType} frame-layout-{data.layout}{f:if(condition: data.space_before_class, then: ' frame-space-before-{data.space_before_class}')}{f:if(condition: data.space_after_class, then: ' frame-space-after-{data.space_after_class}')}">
 									<f:render section="Header" optional="true">
@@ -120,12 +120,12 @@
 			</f:then>
 			<f:else>
 
-				<!-- =============================================================
+				<f:comment><!-- =============================================================
 					rendering for everything else that is NOT a plugin
-				============================================================= -->
+				============================================================= --></f:comment>
 				<f:switch expression="{data.colPos}">
 
-					<!-- Default -->
+					<f:comment><!-- Default --></f:comment>
 					<f:defaultCase>
 						<div id="c{data.uid}" class="frame frame-{data.frame_class} frame-type-{data.CType} frame-layout-{data.layout}{f:if(condition: data.space_before_class, then: ' frame-space-before-{data.space_before_class}')}{f:if(condition: data.space_after_class, then: ' frame-space-after-{data.space_after_class}')}">
 							<f:if condition="{data._LOCALIZED_UID}">

@@ -45,7 +45,7 @@
                 <div class="flex-basis-12 inner-nav-mob {f:if(condition:item.active, then:' is-active-list')}">
                     <ul>
 
-                        <!-- Backlink -->
+                        <f:comment><!-- Backlink --></f:comment>
                         <li class="nav-mobile__item nav-mobile__back-link">
                             <span class="nav-mobile__item-icon-wrapper">
                                 <button class="nav-mobile__item-icon" aria-haspopup="true">
@@ -59,7 +59,7 @@
                             </strong>
                         </li>
 
-                        <!-- Sub-Items -->
+                        <f:comment><!-- Sub-Items --></f:comment>
                         <f:for each="{item.children}" as="item" iteration="iterator">
                             <f:render partial="ItemLevel2" section="Mobile" arguments="{item: item, counter: iterator.cycle}"/>
                         </f:for>

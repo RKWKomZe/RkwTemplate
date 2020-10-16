@@ -7,25 +7,25 @@
 	</f:section>
 
 
-	<!-- ======================================================================== -->
+	<f:comment><!-- ======================================================================== --></f:comment>
 
 	<f:section name="Content">
 		<main class="main flex-container no-padding-narrow" id="main">
 			<section class="section content content-padding-layoutmax">
 
-				<!-- breadcrumb-->
+				<f:comment><!-- breadcrumb-->
 				<section class="section content flex-basis-12 full-width-smalldesk no-padding-narrow pb-0">
 					<div class="breadcrumbs flex-container nav breadcrumb-padding">
 						<f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.breadcrumb" data="{data}" />
 					</div>
 				</section>
 
-				<!-- content -->
+				<f:comment><!-- content -->
 				<section class="section content flex-basis-12 full-width-smalldesk no-padding-narrow">
 					<f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.main" data="{data}" />
 				</section>
 
-				<!-- boxes -->
+				<f:comment><!-- boxes -->
 				<f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.boxesArticle" data="{data}" />
 
 			</section>

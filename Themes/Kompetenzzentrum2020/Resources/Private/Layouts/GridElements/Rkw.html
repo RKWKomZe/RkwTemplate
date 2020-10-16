@@ -3,28 +3,28 @@
 
 	<f:switch expression="{data.colPos}">
 
-		<!-- Topic: Promoters -->
+		<f:comment><!-- Topic: Promoters --></f:comment>
 		<f:case value="210">
 			<f:render partial="Wraps/Topic/Promoters" section="Header" arguments="{_all}" />
 			<f:render section="Main" optional="true" />
 			<f:render partial="Wraps/Topic/Promoters" section="Footer" arguments="{_all}" />
 		</f:case>
 
-		<!-- Topic: Boxes -->
+		<f:comment><!-- Topic: Boxes --></f:comment>
 		<f:case value="220">
 			<f:render partial="Wraps/Topic/Main" section="Header" arguments="{_all}" />
 			<f:render section="Main" optional="true" />
 			<f:render partial="Wraps/Topic/Main" section="Footer" arguments="{_all}" />
 		</f:case>
 
-		<!-- Topic: Boxes Inherit -->
+		<f:comment><!-- Topic: Boxes Inherit --></f:comment>
 		<f:case value="230">
 			<f:render partial="Wraps/Topic/Main" section="Header" arguments="{_all}" />
 			<f:render section="Main" optional="true" />
 			<f:render partial="Wraps/Topic/Main" section="Footer" arguments="{_all}" />
 		</f:case>
 
-		<!-- Default -->
+		<f:comment><!-- Default --></f:comment>
 		<f:defaultCase>
 			<f:render section="Main"/>
 		</f:defaultCase>

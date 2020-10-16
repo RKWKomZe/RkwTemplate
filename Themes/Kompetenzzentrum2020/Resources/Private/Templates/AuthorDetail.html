@@ -7,7 +7,7 @@
 	</f:section>
 
 
-	<!-- ======================================================================== -->
+	<f:comment><!-- ======================================================================== --></f:comment>
 
 
 	<f:section name="Content">
@@ -15,23 +15,20 @@
 
 		<f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.mainExpert" data="{data}" />
 
+		<f:comment>
+			<header class="page-headings page-headings--no-image">
+				<f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.headlineExpert" data="{data}" />
+			</header>
+
+			<f:comment><!-- details --></f:comment>
+			<div class="expert-grid">
 
 
-
-				<f:comment>
-		<header class="page-headings page-headings--no-image">
-			<f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.headlineExpert" data="{data}" />
-		</header>
-
-		<!-- details -->
-		<div class="expert-grid">
-
-
-			<!-- further boxes -->
-			<div class="sections">
-				<f:cObject typoscriptObjectPath="lib.txRkwTemplate.expert.work" data="{data}" />
+				<f:comment><!-- further boxes --></f:comment>
+				<div class="sections">
+					<f:cObject typoscriptObjectPath="lib.txRkwTemplate.expert.work" data="{data}" />
+				</div>
 			</div>
-		</div>
 
 		</f:comment>
 

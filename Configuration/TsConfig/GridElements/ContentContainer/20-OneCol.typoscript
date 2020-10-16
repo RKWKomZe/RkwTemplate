@@ -25,6 +25,7 @@ tx_gridelements.setup.contentContainerOneCol {
                         colPos = 70
                         allowed {
                             CType = list
+                            list_type = rkwauthors_rkwauthorscontactbox
                         }
                     }
                 }

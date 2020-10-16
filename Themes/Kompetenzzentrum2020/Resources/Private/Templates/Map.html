@@ -4,23 +4,23 @@
 
 <f:section name="content">
 
-    <!-- top-menu -->
+    <f:comment><!-- top-menu --></f:comment>
     <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.utility.pageLayoutSwitch')} == 'Microsite'">
         <f:render partial="SubNav" section="Default" arguments="{_all}"/>
     </f:if>
 
     <div class="content-page__content">
 
-        <!--  welcome section -->
+        <f:comment><!--  welcome section --></f:comment>
         <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.mapHeader" data="{data}" />
 
-        <!-- boxes -->
+        <f:comment><!-- boxes --></f:comment>
         <div class="page-area-grid">
             <div class="boxes">
 
                 <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.mapOverview" data="{data}" />
 
-                <!-- map for mobile-->
+                <f:comment><!-- map for mobile--></f:comment>
                 <div class="box regions-mobile">
                     <header>
                         <p>
@@ -181,7 +181,7 @@
                 </div>
             </div>
 
-            <!-- regular  map -->
+            <f:comment><!-- regular  map --></f:comment>
             <div class="map__container">
                 <div class="map__wrapper">
                     <svg class="map" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 691 987" style="enable-background:new 0 0 690.9 986.9;" xml:space="preserve">
