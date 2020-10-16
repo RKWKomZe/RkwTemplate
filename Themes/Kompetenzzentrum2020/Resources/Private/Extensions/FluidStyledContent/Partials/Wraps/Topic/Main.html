@@ -3,21 +3,19 @@
     <f:section name="Header">
         <f:if condition="{data.tx_gridelements_backend_layout} == 'logoContainer'">
             <f:then>
-                <section class="section content mt-2 no-padding-narrow">
+                <section class="section content mt-3 no-padding-narrow">
             </f:then>
             <f:else>
-                <section class="section content mt-2 content-padding-layoutmax">
+                <section class="section content mt-3 content-padding-layoutmax">
                     <f:if condition="{data.header}">
                         <f:then>
-                            <h3>
+                            <h3 class="h3 section__headline">
                                 {data.header}
                             </h3>
                         </f:then>
                     </f:if>
             </f:else>
         </f:if>
-
-
     </f:section>
 
 

@@ -3,7 +3,7 @@
     data-namespace-typo3-fluid="true">
 
     <f:section name="Default">
-        <!-- similar contents or custom recommendations -->
+        <f:comment><!-- similar contents or custom recommendations --></f:comment>
         <f:if condition="! {rkwBasics:isEmpty(string='{data.tx_gridelements_view_column_90}')}">
             <f:then>
                 <f:format.html parseFuncTSPath="">
@@ -25,7 +25,7 @@
     </f:section>
 
     <f:section name="Reduced">
-        <!-- similar contents or custom recommendations -->
+        <f:comment><!-- similar contents or custom recommendations --></f:comment>
         <f:if condition="! {rkwBasics:isEmpty(string='{data.tx_gridelements_view_column_90}')}">
             <f:format.html parseFuncTSPath="">
                 {data.tx_gridelements_view_column_90}
