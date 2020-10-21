@@ -5,3 +5,43 @@ module.tx_rkwrelated {
         clearCachePageList = 4763
     }
 }
+
+
+plugin.tx_rkwrelated_similarcontent {
+
+    settings {
+
+        # cat=plugin.tx_rkwrelated_morecontent//f; type=integer; label=PID to start search from
+        startingPid = {$plugin.tx_rkwtemplate_themeconfig.website.rootPid}
+
+        # cat=plugin.tx_rkwrelated_morecontent//f; type=boolean; label=Override opening of links in same window (empty to deactivate override)
+        openLinksInSameWindowOverride = 1
+
+        # cat=plugin.tx_rkwrelated_similarcontent//f; type=boolean; label=Hide authors label
+        hideAuthors = 0
+    }
+}
+
+plugin.tx_rkwrelated_morecontent {
+
+    settings {
+
+        # cat=plugin.tx_rkwrelated_morecontent//f; type=integer; label=PID to start search from
+        startingPid = {$plugin.tx_rkwtemplate_themeconfig.website.rootPid}
+
+        # cat=plugin.tx_rkwrelated_morecontent//f; type=boolean; label=Override opening of links in same window (empty to deactivate override)
+        openLinksInSameWindowOverride = 1
+
+        # cat=plugin.tx_rkwrelated_similarcontent//f; type=boolean; label=Hide authors label
+        hideAuthors = 0
+
+        detailPid {
+
+            # cat=plugin.tx_rkwrelated_morecontent//f; type=string; label=Detail pid (default)
+            default =
+
+            # cat=plugin.tx_rkwrelated_morecontent//f; type=string; label=Detail pid for publications
+            publication =
+        }
+    }
+}
