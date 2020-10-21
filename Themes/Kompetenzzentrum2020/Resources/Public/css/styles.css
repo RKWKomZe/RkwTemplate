@@ -8565,19 +8565,6 @@ div.slide-out-animation {
   text-align: center;
   font-size: 18px;
   font-size: 1.125rem;
-  /*
-
-    .mt-2 {
-      @include media("smalldesk") {
-        margin: 1em;
-      }
-    }
-
-    .mt-3 {
-      @include media("smalldesk") {
-        margin: 0;
-      }
-    }*/
 }
 
 .tpl-home .introtext .headline {
@@ -8606,24 +8593,31 @@ div.slide-out-animation {
 @media only screen and (max-width: 64em) {
   .tpl-home .introtext__wrapper .flex-basis-4 {
     height: auto;
-    margin: 2em 0;
+    margin: 4em 0 2em 0;
   }
 }
 
-@media only screen and (max-width: 37.5em) {
-  .tpl-home .introtext__wrapper .flex-basis-4 {
-    margin: 3em 0;
+@media only screen and (max-width: 64em) {
+  .tpl-home .introtext__wrapper .flex-basis-4:first-child {
+    margin-top: 0;
   }
 }
 
 .tpl-home .introtext__wrapper p {
-  height: 50px;
+  margin: 0;
 }
 
-@media only screen and (max-width: 64em) {
-  .tpl-home .introtext__wrapper p {
-    min-height: 70px;
-  }
+.tpl-home .introtext__item {
+  position: relative;
+  padding-bottom: 4em;
+}
+
+.tpl-home .introtext__button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
 }
 
 .tpl-home .introtext .illu_mobile {
