@@ -1,0 +1,35 @@
+tx_gridelements.setup.contentContainerOneColPagination {
+
+    title = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.contentContainerOneColPagination.title
+    description = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.contentContainerOneColPagination.description
+    config {
+        colCount = 1
+        rowCount = 2
+        rows {
+            1 {
+                columns {
+                    1 {
+                        name = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.contentContainerOneColPagination.content
+                        colPos = 50
+                        allowed {
+                            CType = header, text, textpic, image, textmedia, rkwtemplate_toc, rkwtemplate_imagetextoverlay, rkwtemplate_imagelist, rkwtemplate_collapsed, list, html
+                        }
+                    }
+                }
+            }
+
+            2 {
+                columns {
+                    1 {
+                        name = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.contentContainerOneColPagination.callToAction
+                        colPos = 70
+                        allowed {
+                            CType = list
+                            list_type = rkwauthors_rkwauthorscontactbox
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

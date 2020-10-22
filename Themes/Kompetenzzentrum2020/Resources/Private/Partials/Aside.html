@@ -1,14 +1,15 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
-	<aside class="aside-info flex-item flex-basis-3 aside-info--padding full-width-smalldesk">
-		<div class="asideinner">
-			<h4 class="asideinner__title content-padding-smalldesk">
-				<f:cObject typoscriptObjectPath="lib.txRkwTemplate.recommendation.relatedSimilarLabel" />
-			</h4>
-			<div class="contentbox no-border-radius-smalldesk">
-				<f:cObject typoscriptObjectPath="lib.txRkwTemplate.recommendation.relatedSimilarReduced" />
+	<f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.recommendation.relatedSimilarReduced')}">
+		<aside class="aside-info flex-item flex-basis-3 aside-info--padding full-width-smalldesk">
+			<div class="asideinner">
+				<h4 class="asideinner__title content-padding-smalldesk">
+					<f:cObject typoscriptObjectPath="lib.txRkwTemplate.recommendation.relatedSimilarLabel" />
+				</h4>
+				<div class="contentbox no-border-radius-smalldesk">
+					<f:cObject typoscriptObjectPath="lib.txRkwTemplate.recommendation.relatedSimilarReduced" />
+				</div>
 			</div>
-		</div>
-	</aside>
-
+		</aside>
+	</f:if>
 </html>

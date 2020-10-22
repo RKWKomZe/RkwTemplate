@@ -237,8 +237,8 @@
                 <source>Override for Recommendation</source>
                 <target>Empfehlungen (Überschreibt Standard-Empfehlungen; derzeit nur mit Veranstaltungen möglich)</target>
             </trans-unit>
-
-
+            
+                    
 
             <!-- ContentContainerTwoColsReduced -->
             <trans-unit id="contentElement.contentContainerTwoColsReduced.title">
@@ -258,8 +258,7 @@
                 <target>Marginalspalte</target>
             </trans-unit>
 
-            
-            
+
             <!-- ContentContainerOneCol -->
             <trans-unit id="contentElement.contentContainerOneCol.title">
                 <source>Content-Container with one Col</source>
@@ -274,6 +273,26 @@
                 <target>Inhalt</target>
             </trans-unit>
             <trans-unit id="contentElement.contentContainerOneCol.callToAction">
+                <source>Call To Action</source>
+                <target>Call To Action</target>
+            </trans-unit>
+
+
+
+            <!-- ContentContainerOneColPagination -->
+            <trans-unit id="contentElement.contentContainerOneColPagination.title">
+                <source>Content-Container with one Col, pagination</source>
+                <target>Inhalts-Container mit einer Spalte, Blätterfunktion</target>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerOneColPagination.description">
+                <source>Add a Content-Container with one Col and pagination.</source>
+                <target>Fügt einen Inhalts-Container mit einer Spalte ein (nur Inhaltsspalte) und einer Blätterfunktion durch angrenzende Seiten.</target>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerOneColPagination.content">
+                <source>Content</source>
+                <target>Inhalt</target>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerOneColPagination.callToAction">
                 <source>Call To Action</source>
                 <target>Call To Action</target>
             </trans-unit>

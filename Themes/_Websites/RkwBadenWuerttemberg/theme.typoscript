@@ -38,8 +38,8 @@ plugin.tx_rkwtemplate_themeconfig {
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Publisher of website
         publisher = RKW Baden-Württemberg
 
-        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Use this text instead of a logo
-        logoReplacementText =
+        # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Open Graph overlay logo
+        logoOpenGraphOverlayFile = {$plugin.tx_rkwtemplate_themeconfig.paths.default.logos}/logo.png
 
     }
 

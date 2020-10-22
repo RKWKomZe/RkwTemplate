@@ -124,7 +124,6 @@
 
 			</f:then>
 			<f:else>
-
 				<f:comment><!-- =============================================================
 					rendering for everything else that is NOT a plugin
 				============================================================= --></f:comment>
@@ -132,7 +131,7 @@
 
 					<f:comment><!-- Default --></f:comment>
 					<f:defaultCase>
-						<div id="c{data.uid}" class="frame frame-{data.frame_class} frame-type-{data.CType} frame-layout-{data.layout}{f:if(condition: data.space_before_class, then: ' frame-space-before-{data.space_before_class}')}{f:if(condition: data.space_after_class, then: ' frame-space-after-{data.space_after_class}')}">
+						<div id="c{data.uid}" class="frame frame-{data.frame_class} {f:if(condition:'{data.tstamp} >= 1603670400', then: ' show-first-headline')} frame-type-{data.CType} frame-layout-{data.layout}{f:if(condition: data.space_before_class, then: ' frame-space-before-{data.space_before_class}')}{f:if(condition: data.space_after_class, then: ' frame-space-after-{data.space_after_class}')}">
 							<f:if condition="{data._LOCALIZED_UID}">
 								<a id="c{data._LOCALIZED_UID}"></a>
 							</f:if>

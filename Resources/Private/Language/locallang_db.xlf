@@ -220,6 +220,21 @@
             </trans-unit>
 
 
+            <!-- ContentContainerOneColPagination -->
+            <trans-unit id="contentElement.contentContainerOneColPagination.title">
+                <source>Content-Container with one Col, pagination</source>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerOneColPagination.description">
+                <source>Add a Content-Container with one Col and pagination.</source>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerOneColPagination.content">
+                <source>Content</source>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerOneColPagination.callToAction">
+                <source>Call To Action</source>
+            </trans-unit>
+
+
             <!-- Shortlink -->
             <trans-unit id="contentElement.shortlink.title">
                 <source>Shortlink</source>

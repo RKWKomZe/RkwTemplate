@@ -20,7 +20,7 @@ plugin.tx_rkwtemplate_themeconfig {
         name = Europäischer Unternehmensförderpreis
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=baseUrl (With / at the end for ClickEnlarge)
-        baseUrl = https://eepa.rkw-kompetenzzentrum.de/
+        baseUrl = https://www.eepa-deutschland.de/
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=integer; label=ID of Rootpage
         rootPid = 5992

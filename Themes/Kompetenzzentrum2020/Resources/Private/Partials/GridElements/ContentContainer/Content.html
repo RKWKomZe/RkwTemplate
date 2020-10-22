@@ -29,9 +29,15 @@
         </f:if>
     </f:if>
     <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.publication.isSubPage')}">
-        <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.readMore" />
+        <f:then>
+            <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.readMore" />
+        </f:then>
+        <f:else>
+            <f:if condition="{data.tx_gridelements_backend_layout} == 'contentContainerOneColPagination'">
+                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.readMoreOneLevel" />
+            </f:if>
+        </f:else>
     </f:if>
-
 
     <!-- image resources -->
     <f:if condition="! {rkwBasics:isEmpty(string:'{f:cObject(typoscriptObjectPath: \'lib.txRkwTemplate.pageInfo.imageResources\')}')}">

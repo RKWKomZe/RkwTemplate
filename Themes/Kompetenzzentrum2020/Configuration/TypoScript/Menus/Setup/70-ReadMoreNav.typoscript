@@ -106,8 +106,8 @@ lib.txRkwTemplate {
         // ============================================
         // get the navigation for next
         //============================================
-        pageNaviNext = TEXT
-        pageNaviNext {
+        pageNextRecursive = TEXT
+        pageNextRecursive {
 
             // try to go down to a lower level
             cObject < lib.txRkwTemplate.navigation.pageNextSub
@@ -130,8 +130,8 @@ lib.txRkwTemplate {
         // ============================================
         // get the navigation for previous
         // ============================================
-        pageNaviPrev = TEXT
-        pageNaviPrev {
+        pagePrevRecursive = TEXT
+        pagePrevRecursive {
 
         	// try to get the last sub page of the previous page
         	cObject < lib.txRkwTemplate.navigation.pagePrevSub
@@ -170,7 +170,7 @@ lib.txRkwTemplate {
 
                         typolink {
 
-                            parameter.cObject < lib.txRkwTemplate.navigation.pageNaviPrev
+                            parameter.cObject < lib.txRkwTemplate.navigation.pagePrevRecursive
                             ATagParams = class="btn btn--secondary"
                             ATagBeforeWrap = 1
                         }
@@ -179,7 +179,7 @@ lib.txRkwTemplate {
 
                     // if it is set
                     if.isTrue.typolink {
-                        parameter.cObject < lib.txRkwTemplate.navigation.pageNaviPrev
+                        parameter.cObject < lib.txRkwTemplate.navigation.pagePrevRecursive
                         returnLast = url
                     }
 
@@ -187,7 +187,7 @@ lib.txRkwTemplate {
                     if.isTrue.if {
 
                         value.typolink {
-                           parameter.cObject < lib.txRkwTemplate.navigation.pageNaviPrev
+                           parameter.cObject < lib.txRkwTemplate.navigation.pagePrevRecursive
                             returnLast = url
                         }
                         equals.typolink {
@@ -206,16 +206,15 @@ lib.txRkwTemplate {
                     stdWrap {
 
                         typolink {
-                            parameter.cObject < lib.txRkwTemplate.navigation.pageNaviNext
+                            parameter.cObject < lib.txRkwTemplate.navigation.pageNextRecursive
                             ATagParams = class="btn btn--primary"
                             ATagBeforeWrap = 1
-
                         }
 
                     }
 
                     if.isTrue.typolink {
-                        parameter.cObject < lib.txRkwTemplate.navigation.pageNaviNext
+                        parameter.cObject < lib.txRkwTemplate.navigation.pageNextRecursive
                         returnLast = url
                     }
                 }
@@ -223,6 +222,51 @@ lib.txRkwTemplate {
 
 
             wrap = <div class="btn-list btn-list--footer">|</div>
+        }
+
+        // =================================================================
+
+        readMoreOneLevel < .readMore
+        readMoreOneLevel {
+
+            10 {
+                10 {
+                    stdWrap {
+
+                        typolink {
+                            parameter.cObject < lib.txRkwTemplate.navigation.pagePrev
+                        }
+                    }
+
+                    // if it is set
+                    if.isTrue.typolink {
+                        parameter.cObject < lib.txRkwTemplate.navigation.pagePrev
+                    }
+
+                    // if it not equals the current page!!
+                    if.isTrue.if {
+                        value.typolink {
+                           parameter.cObject < lib.txRkwTemplate.navigation.pagePrev
+                        }
+                    }
+                }
+
+
+                20 {
+                    stdWrap {
+
+                        typolink {
+                            parameter.cObject < lib.txRkwTemplate.navigation.pageNext
+                        }
+                    }
+
+                    if.isTrue.typolink {
+                        parameter.cObject < lib.txRkwTemplate.navigation.pageNext
+                    }
+                }
+            }
+
+            wrap = <div class="btn-list btn-list--footer space-around">|</div>
 
         }
 

@@ -181,7 +181,7 @@ page {
                                     // add watermark
                                     20 = IMAGE
                                     20 {
-                                        file = {$plugin.tx_rkwtemplate_themeconfig.paths.default.icons}/favicon-96x96.png
+                                        file = {$plugin.tx_rkwtemplate_themeconfig.website.logoOpenGraphOverlayFile}
                                         # offset = 1104,534
                                         offset = 0,0
                                     }
