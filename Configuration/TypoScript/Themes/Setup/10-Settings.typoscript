@@ -34,6 +34,8 @@ lib.txRkwTemplate.themeSettings {
     socialMediaLinks.linkedIn = {$plugin.tx_rkwtemplate_themeconfig.socialMediaLinks.linkedIn}
 
     reducedMenuLevels = {$plugin.tx_rkwtemplate_themeconfig.reducedMenuLevels}
+    shortMainMenu = {$plugin.tx_rkwtemplate_themeconfig.shortMainMenu}
+
 
 }
 
