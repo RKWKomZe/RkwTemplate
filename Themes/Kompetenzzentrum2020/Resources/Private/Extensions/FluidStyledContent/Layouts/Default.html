@@ -63,6 +63,11 @@
 							<f:then>
 								<f:switch expression="{data.tx_gridelements_columns}">
 
+									<f:comment><!-- Rendering for Promoters --></f:comment>
+									<f:case value="40">
+										<f:render section="Main"/>
+									</f:case>
+
 									<f:comment><!-- Rendering for Call2Action --></f:comment>
 									<f:case value="70">
 										<f:render section="Main"/>

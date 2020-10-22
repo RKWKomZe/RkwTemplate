@@ -7,17 +7,16 @@
 
     <f:section name="Main">
         <f:if condition="<rkwBasics:isEmpty string='{data.tx_gridelements_view_column_40}' /> == 0">
-            <div role="contentinfo" class="promoters no-border-radius-layoutmax">
-                <div>
-                    <span class="promoters__headline" id="section-header-{data.uid}">
-                        {data.header}
-                    </span>
+            <div class="promoters__container">
+                <span class="promoters__headline" id="section-header-{data.uid}">
+                    {data.header}
+                </span>
 
-                    <div class="promoters__item-list">
-                        <f:format.raw>{data.tx_gridelements_view_column_40}</f:format.raw>
-                    </div>
+                <div class="promoters__item-list">
+                    <f:format.raw>{data.tx_gridelements_view_column_40}</f:format.raw>
                 </div>
             </div>
+
         </f:if>
     </f:section>
 </html>

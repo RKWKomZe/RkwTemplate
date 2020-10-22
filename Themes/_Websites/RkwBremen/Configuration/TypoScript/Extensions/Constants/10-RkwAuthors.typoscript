@@ -13,7 +13,7 @@ plugin.tx_rkwauthors {
 		showPid = 4778
 
         # cat=plugin.tx_rkwauthors//a; type=boolean; label=Show department instead of full function of author
-        showDepartmentAsFunction = 0
+        showDepartmentAsFunction = 2
 
         # cat=plugin.tx_rkwauthors//a; type=integer; label=Phone extension length
         phoneExtensionLength = 2

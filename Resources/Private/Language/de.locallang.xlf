@@ -37,6 +37,13 @@
                 <source>show less</source>
                 <target>weniger anzeigen</target>
             </trans-unit>
+
+
+            <!-- Topic -->
+            <trans-unit id="contentElement.topic.showMore">
+                <source>show more</source>
+                <target>mehr lesen</target>
+            </trans-unit>
 		</body>
 	</file>
 </xliff>

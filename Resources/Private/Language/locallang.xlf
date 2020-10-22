@@ -29,6 +29,11 @@
             <trans-unit id="contentElement.collapsed.showLess">
                 <source>show less</source>
             </trans-unit>
+
+            <!-- Topic -->
+            <trans-unit id="contentElement.topic.showMore">
+                <source>show more</source>
+            </trans-unit>
 		</body>
 	</file>
 </xliff>

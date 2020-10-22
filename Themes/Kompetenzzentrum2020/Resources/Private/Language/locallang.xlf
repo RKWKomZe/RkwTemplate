@@ -135,6 +135,41 @@
             </trans-unit>
 
 
+            <!-- ================================================================== -->
+            <!-- Content Elements -->
+            <!-- ================================================================== -->
+            <!-- Shortlink -->
+            <trans-unit id="contentElement.shortlink.type.I.0">
+                <source>Article</source>
+            </trans-unit>
+            <trans-unit id="contentElement.shortlink.type.I.4">
+                <source>Link</source>
+            </trans-unit>
+            <trans-unit id="contentElement.shortlink.type.I.5">
+                <source>Download</source>
+            </trans-unit>
+            <trans-unit id="contentElement.shortlink.type.I.6">
+                <source>Publication</source>
+            </trans-unit>
+            <trans-unit id="contentElement.shortlink.type.I.7">
+                <source>Project</source>
+            </trans-unit>
+
+
+            <!-- CollapsedText -->
+            <trans-unit id="contentElement.collapsed.showMore">
+                <source>show more</source>
+            </trans-unit>
+            <trans-unit id="contentElement.collapsed.showLess">
+                <source>show less</source>
+            </trans-unit>
+
+
+            <!-- Topic -->
+            <trans-unit id="contentElement.topic.showMore">
+                <source>show more</source>
+            </trans-unit>
+
 		</body>
 	</file>
 </xliff>

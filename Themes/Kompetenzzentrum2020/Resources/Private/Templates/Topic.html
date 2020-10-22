@@ -23,7 +23,11 @@
 
                 <f:comment><!-- promotion --></f:comment>
                 <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.content.promotion', data:'{data}')}">
-                    <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.promotion" data="{data}" />
+                    <section class="section content flex-basis-12 full-width-smalldesk no-padding-narrow">
+                        <div role="contentinfo" class="promoters no-border-radius-layoutmax">
+                            <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.promotion" data="{data}" />
+                        </div>
+                    </section>
                 </f:if>
 
                 <f:comment><!-- content --></f:comment>

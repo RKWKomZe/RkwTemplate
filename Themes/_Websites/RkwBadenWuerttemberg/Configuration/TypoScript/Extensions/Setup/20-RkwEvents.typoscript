@@ -1,0 +1,12 @@
+
+plugin.tx_rkwevents {
+
+    _LOCAL_LANG.de {
+        tx_rkwevents_fluid.partials_event_registration.externalLink = Weiter zur Anmeldung
+    }
+}
+
+
+
+
+

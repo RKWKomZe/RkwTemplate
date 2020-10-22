@@ -36,7 +36,7 @@ plugin.tx_rkwevents {
             filter {
 
                 # cat=plugin.tx_rkwevents; type=integer; label=Show filter option "department"
-                showDepartment = 1
+                showDepartment = 0
 
                 # cat=plugin.tx_rkwevents; type=integer; label=Show filter option "documentType"
                 showDocumentType = 1

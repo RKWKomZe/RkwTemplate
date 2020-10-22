@@ -163,6 +163,49 @@
             </trans-unit>
 
 
+            <!-- ================================================================== -->
+            <!-- Content Elements -->
+            <!-- ================================================================== -->
+            <!-- Shortlink -->
+            <trans-unit id="contentElement.shortlink.type.I.0">
+                <source>Article</source>
+                <target>Artikel</target>
+            </trans-unit>
+            <trans-unit id="contentElement.shortlink.type.I.4">
+                <source>Link</source>
+                <target>Link</target>
+            </trans-unit>
+            <trans-unit id="contentElement.shortlink.type.I.5">
+                <source>Download</source>
+                <target>Download</target>
+            </trans-unit>
+            <trans-unit id="contentElement.shortlink.type.I.6">
+                <source>Publication</source>
+                <target>Publikation</target>
+            </trans-unit>
+            <trans-unit id="contentElement.shortlink.type.I.7">
+                <source>Project</source>
+                <target>Projekt</target>
+            </trans-unit>
+
+
+            <!-- CollapsedText -->
+            <trans-unit id="contentElement.collapsed.showMore">
+                <source>show more</source>
+                <target>mehr anzeigen</target>
+            </trans-unit>
+            <trans-unit id="contentElement.collapsed.showLess">
+                <source>show less</source>
+                <target>weniger anzeigen</target>
+            </trans-unit>
+
+
+            <!-- Topic -->
+            <trans-unit id="contentElement.topic.showMore">
+                <source>show more</source>
+                <target>mehr lesen</target>
+            </trans-unit>
+
 
 
 
