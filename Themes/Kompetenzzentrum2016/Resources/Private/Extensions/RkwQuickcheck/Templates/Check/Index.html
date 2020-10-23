@@ -1,0 +1,48 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+This Template is responsible for displaying a single view for a domain object
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+Resources:
+Private:
+Templates:
+Show.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="main">
+
+    <f:render partial="FlashMessages" arguments="{_all}" />
+
+	<h2 class="h1">{check.name}</h2>
+    <f:format.html>{check.description}</f:format.html>
+
+    <p>&nbsp;</p>
+
+    <f:form action="show" id="checkExec" name="checkExec" object="{checkExec}" class="form-fields">
+        <div class="v320-1-of-2">
+            <f:if condition="{settings.termsPidFlexform}">
+                <f:then>
+                    <f:render section="checkbox" />
+                </f:then>
+                <f:else>
+                    <f:if condition="{settings.termsPid}">
+                        <f:render section="checkbox" />
+                    </f:if>
+                </f:else>
+            </f:if>
+            <div class="v320-1">
+                <f:form.submit class="button" value="<f:translate key='templates_check_index.submit' />" />
+            </div>
+        </div>
+    </f:form>
+
+</f:section>
+
+<f:section name="checkbox">
+
+    <f:form.hidden property="terms" value="1" />
+</f:section>
+</html>

@@ -1,0 +1,68 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+	<f:layout name="Default" />
+
+	<f:section name="main">
+
+        <f:render partial="FlashMessages" arguments="{_all}" />
+
+        <!-- questions -->
+        <f:form action="result" name="checkExec" object="{checkExec}">
+            <f:form.hidden id="terms" property="terms" value="{checkExec.terms}" />
+
+            <div class="tx-rkwquickcheck-slide-container">
+
+                <f:for each="{check.topic}" as="topic" iteration="topicIter">
+                    <div class="tx-rkwquickcheck-slide">
+
+                        <!-- topic number -->
+                        <div class="careercheck__task">
+                            <span>
+                                <f:translate key='templates_check_show.topic' />
+                                {topicIter.cycle} / {topicIter.total}
+                            </span>
+                        </div>
+
+                        <!-- topic info -->
+                        <h2 class="h1">{topic.name}</h2>
+                        <f:format.html parseFuncTSPath="">{topic.description}</f:format.html>
+
+                        <!-- questions -->
+                        <f:for each="{topic.question}" as="question" iteration="questionIter">
+                            <div class="careercheck__form">
+
+                                <div class="question">
+                                    <h2><i>{questionIter.cycle}. <f:translate key='templates_check_show.question' /></i>: {question.question}</h2>
+                                </div>
+
+                                <div class="answer-container radio-group tx-rkwquickcheck-radiogroup">
+                                    <div class="radio answer answer--good answer--center" ><f:translate key='templates_check_show.yes' /><span class="check-indicator careercheck-icon-ok-circled"><span style="display:none"><f:form.radio id="question-{topicIter.cycle}-{questionIter.cycle}-yes" class="no-jcf" property="topic{topicIter.cycle}-quest{questionIter.cycle}" value="1" /></span></span></div>
+                                    <div class="radio answer answer--bad answer--center" ><f:translate key='templates_check_show.no' /><span class="check-indicator careercheck-icon-ok-circled"><span style="display:none"><f:form.radio id="question-{topicIter.cycle}-{questionIter.cycle}-no" class="no-jcf" property="topic{topicIter.cycle}-quest{questionIter.cycle}" value="99" /></span></span></div>
+                                </div>
+
+                                <br>
+
+                                <!-- pagination -->
+                                <f:if condition="{questionIter.isLast}">
+                                    <div class="careercheck-footer careercheck-footer--pagination">
+                                        <div>
+                                            <a class="button button--back tx-rkwquickcheck-prev"><f:translate key='templates_check_show.button_prev' /></a>
+                                        </div>
+                                        <div class="pagination">
+                                            <span><f:translate key='templates_check_show.topic' /> <span class="active">{topicIter.cycle}</span>/<span class="pages">{topicIter.total}</span> </span>
+                                        </div>
+                                        <div>
+                                            <a class="button button--submit tx-rkwquickcheck-next"><f:translate key='templates_check_show.button_next' /></a>
+                                        </div>
+                                    </div>
+                                </f:if>
+                            </div>
+                        </f:for>
+                    </div>
+                </f:for>
+            </div>
+        </f:form>
+
+        <!-- hidden hint -->
+        <div class="tx-rkwquickcheck-hint" style="display: none;"><f:translate key='templates_check_show.next_hint' /></div>
+	</f:section>
+</html>
