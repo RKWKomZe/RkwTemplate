@@ -183,7 +183,7 @@ page {
                                     20 {
                                         file = {$plugin.tx_rkwtemplate_themeconfig.website.logoOpenGraphOverlayFile}
                                         # offset = 1104,534
-                                        offset = 0,0
+                                        offset = 10,10
                                     }
                                 }
                             }

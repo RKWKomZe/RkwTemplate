@@ -22,9 +22,7 @@ config {
   	// CDN
   	tx_rkwbasics_cdn {
 
-        // disable it here!
-  		enable = 0
-        enablePostProc = 0
+  		enable = 1
 	}
 
 	//===============================================================
