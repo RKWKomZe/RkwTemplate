@@ -34,6 +34,6 @@
     mod.wizards.newContentElement.wizardItems.common.show =
 
     // remove grid elements by their ID (aka name)
-    tx_gridelements.excludeLayoutIds = sliderContainer,topicContainer, logoContainer, promoterContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerOneCol
+    tx_gridelements.excludeLayoutIds = sliderContainer,topicContainer, logoContainer, promoterContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerOneCol, contentContainerOneColPagination
 
 [end]
