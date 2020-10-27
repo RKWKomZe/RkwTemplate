@@ -36,9 +36,6 @@ config {
     //===============================================================
     // Exceptions for FE-Rendering
     //===============================================================
-    // Default exception handler (default = 1 in production context)
-    config.contentObjectExceptionHandler = 1
-
     // Custom class
     contentObjectExceptionHandler = RKW\RkwBasics\Error\ContentObjectProductionExceptionHandler
 

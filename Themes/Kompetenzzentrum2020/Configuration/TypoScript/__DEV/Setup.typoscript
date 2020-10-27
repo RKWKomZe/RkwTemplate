@@ -21,6 +21,10 @@ config {
 	concatenateCss = 0
 	compressCss = 0
 
+	# No error handler
+    contentObjectExceptionHandler = 0
+
+
 }
 
 #############################################################################
