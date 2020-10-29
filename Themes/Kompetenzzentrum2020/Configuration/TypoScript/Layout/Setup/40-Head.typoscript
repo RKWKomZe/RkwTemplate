@@ -194,15 +194,13 @@ page {
 
             // specialchars for title
             stdWrap.htmlSpecialChars = 1
-
         }
 
 
-
         // Viewport
-        500 = TEXT
-        500.value (
-			<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1">
+        200 = TEXT
+        200.value (
+			<meta name="viewport" content="initial-scale=1, maximum-scale=5, minimum-scale=1">
         )
 
         // Facebook Instant Articles

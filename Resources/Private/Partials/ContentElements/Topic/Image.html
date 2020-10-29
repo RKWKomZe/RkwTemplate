@@ -20,14 +20,14 @@
 
     <f:section name="Inner">
 
-        <img class="illu_desk" src="{f:uri.image(image:images.0,width:'297',height:'240c',cropVariant:'default')}" alt="{data.header}" />
+        <img class="illu_desk" loading="lazy" src="{f:uri.image(image:images.0,width:'297',height:'240c',cropVariant:'default')}" alt="{data.header}" />
 
         <f:if condition="{images.1}">
             <f:then>
-                <img class="illu_mobile" src="{f:uri.image(image:images.1,width:'63',height:'50c',cropVariant:'default')}" alt="{data.header}" />
+                <img class="illu_mobile" loading="lazy" src="{f:uri.image(image:images.1,width:'63',height:'50c',cropVariant:'default')}" alt="{data.header}" />
             </f:then>
             <f:else>
-                <img class="illu_mobile" src="{f:uri.image(image:images.0,width:'63',height:'50c',cropVariant:'default')}" alt="{data.header}" />
+                <img class="illu_mobile" loading="lazy" src="{f:uri.image(image:images.0,width:'63',height:'50c',cropVariant:'default')}" alt="{data.header}" />
             </f:else>
         </f:if>
     </f:section>

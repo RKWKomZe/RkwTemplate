@@ -4,6 +4,12 @@
 		<header/>
 		<body>
 
+            <!-- SliderContainer -->
+            <trans-unit id="gridElement.sliderContainer.showSlide">
+                <source>Show Slide %s</source>
+            </trans-unit>
+
+
             <!-- Shortlink -->
 			<trans-unit id="contentElement.shortlink.type.I.0">
 				<source>Default (Article)</source>
@@ -29,6 +35,7 @@
             <trans-unit id="contentElement.collapsed.showLess">
                 <source>show less</source>
             </trans-unit>
+
 
             <!-- Topic -->
             <trans-unit id="contentElement.topic.showMore">

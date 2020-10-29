@@ -80,6 +80,8 @@ lib.txRkwTemplate {
             settings < lib.txRkwBasics.responsiveImage.settings
             settings {
 
+                lazyLoading = 0
+
                 breakpoint {
                     desktop >
                 }
@@ -147,7 +149,9 @@ lib.txRkwTemplate {
                 settings < lib.txRkwBasics.responsiveImage.settings
                 settings {
 
+                    lazyLoading = 0
                     additionalAttributes =
+
                     breakpoint {
                         desktop >
                     }

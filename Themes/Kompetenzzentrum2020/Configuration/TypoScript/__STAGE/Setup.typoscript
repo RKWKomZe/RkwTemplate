@@ -24,8 +24,12 @@ config {
 # Hausschrift
 #############################################################################
 page {
-    includeCSS.file500 = https://use.typekit.net/clc1sus.css
+
+    includeCSS {
+        file500 = https://use.typekit.net/clc1sus.css
+    }
 }
+
 
 #############################################################################
 # STANDARD- MARKER
