@@ -4,6 +4,12 @@
 		<header/>
 		<body>
 
+		    <!-- SliderContainer -->
+            <trans-unit id="gridElement.sliderContainer.showSlide">
+                <source>Show Slide %s</source>
+                <target>Zeige Slide %s</target>
+            </trans-unit>
+
 
             <!-- Shortlink -->
 			<trans-unit id="contentElement.shortlink.type.I.0">

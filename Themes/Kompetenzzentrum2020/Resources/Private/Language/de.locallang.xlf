@@ -33,6 +33,17 @@
 			</trans-unit>
 
 
+
+			<trans-unit id="partials.menus.main.item.back">
+				<source>Go one level back</source>
+				<target>Eine Ebene nach oben</target>
+			</trans-unit>
+            <trans-unit id="partials.menus.main.item.next">
+                <source>Show Submenu</source>
+                <target>Untermenü anzeigen</target>
+            </trans-unit>
+
+
 			<trans-unit id="partials.menus.main.list.home">
 				<source>Home</source>
 				<target>Startseite</target>
@@ -130,7 +141,14 @@
             <!-- ================================================================= -->
             <!-- Templates -->
             <!-- ================================================================= -->
-
+            <trans-unit id="templates.menus.main.open">
+                <source>Open Mainmenu</source>
+                <target>Hauptmenü öffnen</target>
+            </trans-unit>
+            <trans-unit id="templates.menus.main.close">
+                <source>Close Mainmenu</source>
+                <target>Hauptmenü schließen</target>
+            </trans-unit>
 
 
             <!-- ================================================================= -->

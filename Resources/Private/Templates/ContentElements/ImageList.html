@@ -26,11 +26,11 @@
                         <f:if condition="{images.0.link}">
                             <f:then>
                                 <rkwEtracker:link.typolink parameter="{images.0.link}">
-                                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" srcset="{f:uri.image(image:images.0,width:'328c',height:'328c',cropVariant:'default')}" alt="{images.0.alt}" title="{images.0.title}"  />
+                                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" loading="lazy" srcset="{f:uri.image(image:images.0,width:'328c',height:'328c',cropVariant:'default')}" alt="{images.0.alt}" title="{images.0.title}"  />
                                 </rkwEtracker:link.typolink>
                             </f:then>
                             <f:else>
-                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" srcset="{f:uri.image(image:images.0,width:'328c',height:'328c',cropVariant:'default')}" alt="{images.0.alt}" title="{images.0.title}"  />
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" loading="lazy" srcset="{f:uri.image(image:images.0,width:'328c',height:'328c',cropVariant:'default')}" alt="{images.0.alt}" title="{images.0.title}"  />
                             </f:else>
                         </f:if>
                     </div>

@@ -10,8 +10,8 @@
             <div id="carouselSlider" class="carousel owl-carousel slide">
                 <div class="carousel-inner">
                     <div class="carousel-indicators">
-                        <f:for each="{tx_gridelements_view_children}" as="slides">
-                            <button type="button"></button>
+                        <f:for each="{data.tx_gridelements_view_children}" as="slides" iteration="iterator">
+                            <button type="button" aria-label="{f:translate(key:'LLL:EXT:rkw_template/Resources/Private/Language/locallang.xlf:gridElement.sliderContainer.showSlide', arguments: '{1 : iterator.cycle}')}"></button>
                         </f:for>
                     </div>
                     <f:format.raw>{data.tx_gridelements_view_column_10}</f:format.raw>
