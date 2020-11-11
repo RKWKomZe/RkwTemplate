@@ -22,8 +22,9 @@ TCEFORM.tt_content {
 
     header_layout {
         types.rkwtemplate_promoter {
-            removeItems = 1,2,100
-
+            removeItems = 2,3,4,5,100
+            altLabels.0 = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.promoter.type.I.default
+            altLabels.1 = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.promoter.type.I.subtitle
         }
     }
 

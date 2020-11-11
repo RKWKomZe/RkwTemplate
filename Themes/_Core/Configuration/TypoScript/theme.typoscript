@@ -96,8 +96,14 @@ plugin.tx_rkwtemplate_themeconfig {
         # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Broken link logo of website
         logoBrokenLinkFile = {$plugin.tx_rkwtemplate_themeconfig.paths.default.logos}/broken-link.png
 
+        # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Open Graph overlay logo
+        logoOpenGraphOverlayFile = {$plugin.tx_rkwtemplate_themeconfig.paths.default.icons}/favicon-96x96.png
+
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link on logo
         logoUrl = /
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Use this text instead of a logo
+        logoReplacementText =
     }
 
 

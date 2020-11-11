@@ -55,9 +55,9 @@ $GLOBALS['TCA']['pages']['columns']['media']['config']['overrideChildTca']['colu
     'articleDesktop' => [
         'title' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:pages.keyvisual.imageManipulation.articleDesktop',
         'allowedAspectRatios' => [
-            '2000:550' => [
-                'title' => '1024 x 550',
-                'value' => 1024 / 550
+            '1095:590' => [
+                'title' => '1095 x 590',
+                'value' => 1095 / 590
             ]
         ]
     ],

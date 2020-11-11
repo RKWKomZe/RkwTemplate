@@ -12,6 +12,7 @@ namespace RKW\RkwTemplate\Condition\Backend;
 
 use \TYPO3\CMS\Backend\Utility\BackendUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
+use TYPO3\CMS\Extbase\Utility\DebuggerUtility;
 
 class BackendLayoutCondition extends \TYPO3\CMS\Core\Configuration\TypoScript\ConditionMatching\AbstractCondition
 {
@@ -25,7 +26,6 @@ class BackendLayoutCondition extends \TYPO3\CMS\Core\Configuration\TypoScript\Co
      */
     public function matchCondition (array $conditionParameters)
     {
-#
         $condition = $conditionParameters[0];
         $backendLayout = $conditionParameters[1];
         $pid = intval($conditionParameters[2]);
@@ -34,23 +34,9 @@ class BackendLayoutCondition extends \TYPO3\CMS\Core\Configuration\TypoScript\Co
         // get pid from params or from element
         if (!$pid) {
 
-            $pid = intval(GeneralUtility::_GP('id'));
-            if ($editArray = GeneralUtility::_GP('edit')) {
-                if (
-                    ($table = array_key_first($editArray))
-                    && ($table != 'pages')
-                ){
-
-                    if ($uid = array_key_first($editArray[$table])) {
-                        $pid = BackendUtility::getRecord($table, $uid, 'pid')['pid'];
-
-                        if ($table == 'tt_content') {
-                            $colPos = BackendUtility::getRecord($table, $uid, 'colPos')['colPos'];
-                        }
-                    }
-                }
-            }
+            $pid = $this->getPid();
         }
+
 
         // do not use this on gridElements
         // those have colPos = -1
@@ -120,6 +106,43 @@ class BackendLayoutCondition extends \TYPO3\CMS\Core\Configuration\TypoScript\Co
 
 
         return false;
+    }
+
+
+
+    /**
+     * Returns current PID
+     *
+     * @return int
+     */
+    public function getPid ()
+    {
+        $pid = intval(GeneralUtility::_GP('id'));
+        if ($editArray = GeneralUtility::_GP('edit')) {
+            if (
+                ($table = array_key_first($editArray))
+                && ($table == 'tt_content')
+            ){
+
+                if (
+                    ($uid = array_key_first($editArray[$table]))
+                    && ($action = $editArray[$table][$uid])
+                ) {
+                    if ($action != 'new') {
+
+                        if ($record = BackendUtility::getRecord($table, $uid, 'pid')) {
+                            $pid = $record['pid'];
+                        }
+
+                        /*if ($table == 'tt_content') {
+                            $colPos = BackendUtility::getRecord($table, $uid, 'colPos')['colPos'];
+                        }*/
+                    }
+                }
+            }
+        }
+
+        return $pid;
     }
 
 }

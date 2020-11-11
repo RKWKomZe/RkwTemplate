@@ -22,8 +22,7 @@ TCEFORM.tt_content {
 
     header_layout {
         types.rkwtemplate_logo {
-            removeItems = 1,2,100
-
+            removeItems = 0,1,2,3,4,5,100
         }
     }
 

@@ -19,11 +19,6 @@ config {
 	// RealUrl
 	tx_realurl_enable = 1
 
-  	// CDN
-  	tx_rkwbasics_cdn {
-  		enable = 1
-        enablePostProc = 1
-	}
 
 	//===============================================================
 	// Indexed search

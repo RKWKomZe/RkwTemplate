@@ -1,7 +1,5 @@
 config {
 
-  	# Deactivate CDN
-  	tx_rkwbasics_cdn.enable = 0
 
 	# Cache deaktivieren (nur für Entwicklung)
 	no_cache = 1

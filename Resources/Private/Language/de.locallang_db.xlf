@@ -195,6 +195,14 @@
                 <source>Adds a Promoter-Element.</source>
                 <target>Ein Logo eines Förderer für die Einblendung eines offiziellen Förderhinweises zur Verwendung im Förderer-Container.</target>
             </trans-unit>
+            <trans-unit id="contentElement.promoter.type.I.default">
+                <source>Default</source>
+                <target>Standard</target>
+            </trans-unit>
+            <trans-unit id="contentElement.promoter.type.I.subtitle">
+                <source>With Subtitle</source>
+                <target>Mit Untertitel (z. B. "aufgrund eines Beschlusses des Deutschen Bundestages")</target>
+            </trans-unit>
 
 
             <!-- PromoterContainer -->

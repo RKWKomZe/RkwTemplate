@@ -27,11 +27,6 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_logo'] = [
                 'type' => 'passthrough'
             ]
         ],
-        'header_layout' => [
-            'config' => [
-                'type' => 'passthrough'
-            ]
-        ],
         'subheader' => [
             'config' => [
                 'type' => 'passthrough'

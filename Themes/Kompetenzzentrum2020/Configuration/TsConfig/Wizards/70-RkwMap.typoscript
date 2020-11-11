@@ -3,7 +3,7 @@
 // add specific elements to wizards - by colPos and backend_layout
 // ############################################################################
 
-[RKW\RkwTemplate\Condition\Backend\BackendLayoutCondition = "pagets__rkwMapsss"]
+[RKW\RkwTemplate\Condition\Backend\BackendLayoutCondition = "pagets__rkwMaps"]
 
     // remove everything - except for some items
     // Important: this also has to include gridelements_pi1 for the gridContainer if needed!
@@ -22,7 +22,7 @@
 
 [end]
 
-[RKW\RkwTemplate\Condition\Backend\BackendLayoutCondition = "pagets__rkwMapsss"] && [RKW\RkwTemplate\Condition\Backend\ColPosCondition = "820"]
+[RKW\RkwTemplate\Condition\Backend\BackendLayoutCondition = "pagets__rkwMaps"] && [RKW\RkwTemplate\Condition\Backend\ColPosCondition = "820"]
 
     // remove everything - except for some items
     // Important: this also has to include gridelements_pi1 for the gridContainer if needed!
