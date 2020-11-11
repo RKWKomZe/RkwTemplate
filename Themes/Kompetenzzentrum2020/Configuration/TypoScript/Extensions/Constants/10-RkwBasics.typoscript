@@ -6,6 +6,18 @@ plugin.tx_rkwbasics {
 
     settings {
 
+        cdn {
+
+            # cat=plugin.tx_rkwbasics//a; type=boolean; label=Activate CDN
+            enable = 1
+        }
+
+        htmlMinify {
+
+            # cat=plugin.tx_rkwbasics//a; type=boolean; label=Activate HTML Minifier
+            enable = 1
+        }
+
         responsiveImages {
             breakpoints {
 

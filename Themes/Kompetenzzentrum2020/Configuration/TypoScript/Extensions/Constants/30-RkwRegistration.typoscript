@@ -7,7 +7,7 @@ plugin.tx_rkwregistration {
     settings {
 
         # cat=plugin.tx_rkwregistration//a; type=string; label=Comma-separated list of allowd domains for redirect after login
-        redirectDomains = www.rkw-kompetenzzentrum.de, www.rkw-sachsenanhalt.de, www.rkw-thueringen.de, www.rkw-bremen.de, www.rkw-bw.de, mein.rkw.de, www.karriereseiten-check.de
+        redirectDomains = www.rkw-kompetenzzentrum.de, www.rkw-sachsenanhalt.de, www.rkw-thueringen.de, www.rkw-bremen.de, www.rkw-bw.de, mein.rkw.de, www.karriereseiten-check.de, www.baudigi.de
 
         users {
             // cat=plugin.tx_rkwregistration//a; type=integer; label=Storage Pid

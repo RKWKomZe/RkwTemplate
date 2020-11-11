@@ -12,7 +12,7 @@ call_user_func(
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Themes/Kompetenzzentrum2016/Configuration/TypoScript', 'RKW Template - Theme: Kompetenzzentrum2016');
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Themes/Kompetenzzentrum2020/Configuration/TypoScript', 'RKW Template - Theme: Kompetenzzentrum2020');
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Themes/_Microsites/Aprodi/Configuration/TypoScript', 'RKW Template - Theme: Aprodi');
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Themes/_Microsites/BauMitBim/Configuration/TypoScript', 'RKW Template - Theme: BauMitBim');
+        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Themes/_Microsites/BauDigi/Configuration/TypoScript', 'RKW Template - Theme: BauDigi');
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Themes/_Microsites/Bausachverstaendigentag/Configuration/TypoScript', 'RKW Template - Theme: Bausachverständigentag');
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Themes/_Microsites/DigiScouts/Configuration/TypoScript', 'RKW Template - Theme: DigiScouts');
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Themes/_Microsites/EcoStep/Configuration/TypoScript', 'RKW Template - Theme: EcoStep');
@@ -36,7 +36,7 @@ call_user_func(
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Themes/Kompetenzzentrum2016/Configuration/TsConfig/TsConfig.typoscript', 'RKW Template - Theme: Kompetenzzentrum2016');
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Themes/Kompetenzzentrum2020/Configuration/TsConfig/TsConfig.typoscript', 'RKW Template - Theme: Kompetenzzentrum2020');
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Themes/_Microsites/Aprodi/Configuration/TsConfig/TsConfig.typoscript', 'RKW Template - Theme: Aprodi');
-        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Themes/_Microsites/BauMitBim/Configuration/TsConfig/TsConfig.typoscript', 'RKW Template - Theme: BauMitBim');
+        \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Themes/_Microsites/BauDigi/Configuration/TsConfig/TsConfig.typoscript', 'RKW Template - Theme: BauDigi');
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Themes/_Microsites/Bausachverstaendigentag/Configuration/TsConfig/TsConfig.typoscript', 'RKW Template - Theme: Bausachverständigentag');
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Themes/_Microsites/DigiScouts/Configuration/TsConfig/TsConfig.typoscript', 'RKW Template - Theme: DigiScouts');
         \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Themes/_Microsites/EcoStep/Configuration/TsConfig/TsConfig.typoscript', 'RKW Template - Theme: EcoStep');

@@ -3,6 +3,7 @@
 // add specific elements to wizards - by colPos and backend_layout
 // ############################################################################
 
+// Basic settings that are at least valid for all columns. The more specific settings only further limit permissions of the basic settings further
 [RKW\RkwTemplate\Condition\Backend\BackendLayoutCondition = "pagets__expertPagesDetail"]
 
     // remove everything - except for some items

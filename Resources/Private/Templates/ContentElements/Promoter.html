@@ -8,7 +8,7 @@
     <f:section name="Main">
 
         <f:if condition="{f:count(subject: images)} > 0">
-            <div class="promoters__item">
+            <div class="promoters__item {f:if(condition:'{data.header_layout} == 1', then: 'promoters__item--big', else: '')}">
                 <f:if condition="<rkwEtracker:link.typolink parameter='{data.header_link}' />">
                     <f:then>
                         <rkwEtracker:link.typolink parameter="{data.header_link}" additionalAttributes="{rel:'no_follow'}">

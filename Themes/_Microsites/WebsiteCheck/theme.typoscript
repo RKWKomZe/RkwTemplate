@@ -56,7 +56,7 @@ plugin.tx_rkwtemplate_themeconfig {
     # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Show social media icons
     socialMedia = 1
 
-        # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Show a reduced amount of menus
+    # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Show a reduced amount of menus
     reducedMenuLevels = 0
 
 }

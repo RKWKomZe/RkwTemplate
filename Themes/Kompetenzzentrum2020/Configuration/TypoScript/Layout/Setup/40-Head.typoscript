@@ -23,7 +23,6 @@ page {
     //===============================================================
     headerData {
 
-
         //===============================================================
         // title-Tag
         //===============================================================
@@ -64,11 +63,16 @@ page {
             }
 
             // title
+            /*
             10 = TEXT
             10 {
-
                 field = title
             }
+            */
+
+            10 = COA
+            10 =< lib.yoastSEO.pageTitle
+
 
             // additional title for events
             11 = COA
@@ -82,21 +86,6 @@ page {
                 }
 
                 stdWrap.noTrimWrap = |: | - Veranstaltung |
-                stdWrap.required = 1
-            }
-
-            // additional title for consultation
-            12 = COA
-            12 {
-
-                10 = TEXT
-                10 {
-                    dataWrap = DB:tx_rkwconsultant_domain_model_consultant:{gp:tx_rkwconsultant_rkwconsultant|consultant}:company
-                    wrap3 = {|}
-                    insertData=1
-                }
-
-                stdWrap.noTrimWrap = |: | - Beratung |
                 stdWrap.required = 1
             }
 
@@ -125,7 +114,7 @@ page {
                     insertData=1
                 }
 
-                stdWrap.noTrimWrap = | | - Ansprechpartner |
+                stdWrap.noTrimWrap = | | - Kontakt |
                 stdWrap.required = 1
             }
 
@@ -137,7 +126,6 @@ page {
 
                 value = Publikation
                 stdWrap.noTrimWrap = | - ||
-
                 if {
                     value = 1
                     equals {
@@ -146,48 +134,6 @@ page {
                     }
                 }
             }
-
-
-            // add department
-            25 = COA
-            25 {
-                10 = RECORDS
-                10 {
-                    source.data = levelfield: -1 , tx_rkwbasics_department, slide
-                    tables = tx_rkwbasics_domain_model_department
-                    conf.tx_rkwbasics_domain_model_department = COA
-                    conf.tx_rkwbasics_domain_model_department {
-
-                        // not on common pages (department uid = 6)
-                        10 = TEXT
-                        10 {
-                            field = name
-                            required = 1
-
-                            if {
-                                value = 6
-                                equals.field = uid
-                                negate = 1
-                            }
-
-                        }
-
-                        // for common pages we add the name of the company
-                        20 = TEXT
-                        20 {
-                            value = RKW Kompetenzzentrum
-
-                            if {
-                                value = 6
-                                equals.field = uid
-                            }
-                        }
-
-                        stdWrap.noTrimWrap = | - ||
-                    }
-                }
-            }
-
 
             // global wrapper
             stdWrap.wrap = <title>|</title>

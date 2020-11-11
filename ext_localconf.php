@@ -96,12 +96,6 @@ call_user_func(
 
 
         //=================================================================
-        // register hooks for CDN!
-        //=================================================================
-        $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['tslib/class.tslib_fe.php']['pageIndexing'][] = 'RKW\\RkwTemplate\\Hooks\\ReplaceExtensionPathHook';
-        $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['tslib/class.tslib_fe.php']['contentPostProc-output'][] = 'RKW\\RkwTemplate\\Hooks\\ReplaceExtensionPathHook->hook_contentPostProc';
-
-        //=================================================================
         // register update wizard
         //=================================================================
         $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['ext/install']['update'][\RKW\RkwTemplate\Updates\UpdateCore8Wizard::class] = \RKW\RkwTemplate\Updates\UpdateCore8Wizard::class;

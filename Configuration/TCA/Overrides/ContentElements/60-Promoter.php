@@ -6,8 +6,6 @@
 
 $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_promoter'] = $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_logo'];
 
-
-
 //===============================================================
 // Adds the element to the "Type" dropdown
 //===============================================================

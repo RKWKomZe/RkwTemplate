@@ -20,11 +20,6 @@ config {
 	// RealUrl
 	tx_realurl_enable = 1
 
-	// CDN
-    tx_rkwbasics_cdn {
-        enable = 0
-        enablePostProc = 0
-    }
 
 	//===============================================================
 	// Suche
