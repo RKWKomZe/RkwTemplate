@@ -154,3 +154,13 @@ page {
         5500.value = <meta property="fb:pages" content="436969943109294" />
     }
 }
+
+[globalVar = GP:tx_rkwevents_pi1|event > 0]
+    page.meta.description >
+
+    page.meta.description {
+        dataWrap = DB:tx_rkwevents_domain_model_event:{gp:tx_rkwevents_pi1|event}:description
+        wrap3 = {|}
+        insertData = 1
+    }
+[end]
