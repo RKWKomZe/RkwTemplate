@@ -8,8 +8,8 @@
 
         <!-- headline of current chapter -->
         <h2 class="h1">
-            <em><f:translate key="{settings.themeLanguageFile}:partials.gridElements.contentContainer.content.labelChapter"/>:</em>
-            <f:format.crop maxCharacters="90" respectWordBoundaries="false"><f:cObject typoscriptObjectPath="lib.txRkwTemplate.publication.currentTitle" /></f:format.crop>
+            <f:comment><em><f:translate key="{settings.themeLanguageFile}:partials.gridElements.contentContainer.content.labelChapter"/>:</em></f:comment>
+            <f:cObject typoscriptObjectPath="lib.txRkwTemplate.publication.currentTitle" />
         </h2>
     </f:if>
 

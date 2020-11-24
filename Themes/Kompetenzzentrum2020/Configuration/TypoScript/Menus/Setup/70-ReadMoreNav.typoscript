@@ -169,8 +169,8 @@ lib.txRkwTemplate {
                     stdWrap {
 
                         typolink {
-
                             parameter.cObject < lib.txRkwTemplate.navigation.pagePrevRecursive
+                            section = content
                             ATagParams = class="btn btn--secondary"
                             ATagBeforeWrap = 1
                         }
@@ -180,6 +180,7 @@ lib.txRkwTemplate {
                     // if it is set
                     if.isTrue.typolink {
                         parameter.cObject < lib.txRkwTemplate.navigation.pagePrevRecursive
+                        section = content
                         returnLast = url
                     }
 
@@ -187,11 +188,13 @@ lib.txRkwTemplate {
                     if.isTrue.if {
 
                         value.typolink {
-                           parameter.cObject < lib.txRkwTemplate.navigation.pagePrevRecursive
+                            parameter.cObject < lib.txRkwTemplate.navigation.pagePrevRecursive
+                            section = content
                             returnLast = url
                         }
                         equals.typolink {
                             parameter.data = TSFE:id
+                            section = content
                             returnLast = url
                         }
                         negate = 1
@@ -207,6 +210,7 @@ lib.txRkwTemplate {
 
                         typolink {
                             parameter.cObject < lib.txRkwTemplate.navigation.pageNextRecursive
+                            section = content
                             ATagParams = class="btn btn--primary"
                             ATagBeforeWrap = 1
                         }
@@ -215,6 +219,7 @@ lib.txRkwTemplate {
 
                     if.isTrue.typolink {
                         parameter.cObject < lib.txRkwTemplate.navigation.pageNextRecursive
+                        section = content
                         returnLast = url
                     }
                 }
@@ -235,18 +240,21 @@ lib.txRkwTemplate {
 
                         typolink {
                             parameter.cObject < lib.txRkwTemplate.navigation.pagePrev
+                            section >
                         }
                     }
 
                     // if it is set
                     if.isTrue.typolink {
                         parameter.cObject < lib.txRkwTemplate.navigation.pagePrev
+                        section >
                     }
 
                     // if it not equals the current page!!
                     if.isTrue.if {
                         value.typolink {
                            parameter.cObject < lib.txRkwTemplate.navigation.pagePrev
+                           section >
                         }
                     }
                 }
@@ -257,11 +265,13 @@ lib.txRkwTemplate {
 
                         typolink {
                             parameter.cObject < lib.txRkwTemplate.navigation.pageNext
+                            section >
                         }
                     }
 
                     if.isTrue.typolink {
                         parameter.cObject < lib.txRkwTemplate.navigation.pageNext
+                        section >
                     }
                 }
             }
