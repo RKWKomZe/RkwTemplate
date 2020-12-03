@@ -39,55 +39,27 @@ page {
 	// Favicon
 	shortcutIcon = {$plugin.tx_rkwtemplate_themeconfig.paths.default.icons}/favicon.ico
 
+    //===============================================================
+    // Meta-Tags
+    //===============================================================
+    meta >
+
 	//===============================================================
 	// Header
 	//===============================================================
     headerData {
 
+        // Meta-Tags
+        50 < lib.txRkwBasics.metaTags
 
-		//===============================================================
 		// Title-Tag
-		//===============================================================
-		100 = COA
-		100 {
+		100 < lib.txRkwBasics.titleTag
 
-			// Titel
-			10 = TEXT
-			10.field = title
-
-			// Untertitel hinzufügen, wenn gesetzt
-			20 = TEXT
-			20 {
-				field = subtitle
-				noTrimWrap = | - ||
-				required = 1
-			}
-
-			// Website Name einfügen
-			30 = TEXT
-			30 {
-				value = example.com
-				noTrimWrap = | - ||
-			}
-
-			// Wrapper außen rum
-			stdWrap.wrap = <title>|</title>
-
-			// Sonderzeichen valide umwandeln, auch für den Titel (machen wir auch meistens in den Menüs)
-			stdWrap.htmlSpecialChars = 1
-
-		}
-
-		//===============================================================
 		// Canonical-Tag
-		//===============================================================
 		4000 = TEXT
 		4000 < plugin.tx_rkwbasics.libs.canonical
 
-
-		//===============================================================
 		// OpenGraph
-		//===============================================================
 		5000 = COA
 		5000 {
 

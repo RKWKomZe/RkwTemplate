@@ -3,27 +3,40 @@
 #############################################################################
 page {
 
-	#===============================================================
-	# Meta-Tags
-	#===============================================================
-	meta {
-		keywords.data = levelfield:-1, keywords, slide
-		keywords >
-		description.data = levelfield:-1, tx_rkwbasics_teaser_text, slide
-		robots = index,nofollow,noodp,noydir
-		google = notranslate
-
-	}
 
 	#===============================================================
 	# Other
 	#===============================================================
 	headerData {
 
+        100 >
+        100 = COA
+        100 {
 
-		# Title-Tag
-		100 {
-			30.value = app.strategische-personalarbeit.de
+			// Titel
+			10 = TEXT
+			10.field = title
+
+			// Untertitel hinzufügen, wenn gesetzt
+			20 = TEXT
+			20 {
+				field = subtitle
+				noTrimWrap = | - ||
+				required = 1
+			}
+
+			// Website Name einfügen
+			30 = TEXT
+			30 {
+				value = app.strategische-personalarbeit.de
+				noTrimWrap = | - ||
+			}
+
+			// Wrapper außen rum
+			stdWrap.wrap = <title>|</title>
+
+			// Sonderzeichen valide umwandeln, auch für den Titel (machen wir auch meistens in den Menüs)
+			stdWrap.htmlSpecialChars = 1
 		}
 
 
