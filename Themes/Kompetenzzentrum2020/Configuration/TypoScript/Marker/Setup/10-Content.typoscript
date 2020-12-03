@@ -33,9 +33,10 @@ lib.txRkwTemplate {
         boxesArticle < styles.content.get
         boxesArticle.select.where = {#colPos} = 310
 
-        boxesPublication = CONTENT
-        boxesPublication < styles.content.get
-        boxesPublication.select.where = {#colPos} = 410
+        boxesPublicationOrder = CONTENT
+        boxesPublicationOrder < styles.content.get
+        boxesPublicationOrder.select.where = {#colPos} = 410
+        boxesPublicationOrder.slide = -1
 
         boxesPublicationInherit = CONTENT
         boxesPublicationInherit < styles.content.get
