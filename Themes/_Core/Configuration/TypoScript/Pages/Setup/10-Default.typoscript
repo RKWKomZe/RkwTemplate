@@ -90,7 +90,7 @@ page {
 
 			50 = TEXT
 			50 {
-                description.data = levelfield:-1, tx_rkwbasics_teaser_text, slide
+                description.data = levelfield:-1, abstract, slide
                 description.override {
                     field = description
                     if.isTrue.field = description
