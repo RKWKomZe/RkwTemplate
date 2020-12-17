@@ -19,7 +19,7 @@ plugin.tx_rkwrss {
             contentColumn = txGridelementsColumns_50
 
             # cat=plugin.tx_rkwrss; type=string; label=maximum number of signs of bodytext that are shown
-            cropTextBody = 1000
+            cropTextBody = 960
         }
 
         rss {
