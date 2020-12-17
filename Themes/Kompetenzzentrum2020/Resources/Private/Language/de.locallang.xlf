@@ -116,6 +116,10 @@
                 <source>Filesize</source>
                 <target>Dateigröße</target>
             </trans-unit>
+            <trans-unit id="partials.infoBox.partials.documentType.labelDocumentType">
+                <source>Type</source>
+                <target>Art</target>
+            </trans-unit>
             <trans-unit id="partials.infoBox.partials.authors.labelAuthors">
 				<source>Authors</source>
 				<target>Autoren</target>

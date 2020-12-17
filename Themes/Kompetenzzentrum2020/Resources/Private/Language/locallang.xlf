@@ -86,6 +86,9 @@
             <trans-unit id="partials.infoBox.partials.fileSize.labelFileSize">
                 <source>Filesize</source>
             </trans-unit>
+            <trans-unit id="partials.infoBox.partials.documentType.labelDocumentType">
+                <source>Type</source>
+            </trans-unit>
             <trans-unit id="partials.infoBox.partials.authors.labelAuthors">
 				<source>Authors</source>
 			</trans-unit>

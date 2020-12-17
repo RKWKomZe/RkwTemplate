@@ -42,6 +42,22 @@ lib.txRkwTemplate {
         }
 
         //=================================================================
+        documentType = COA
+        documentType {
+
+            10 = RECORDS
+            10 {
+                source.data = levelfield: -1 , tx_rkwbasics_document_type, slide
+                tables = tx_rkwbasics_domain_model_documenttype
+                conf.tx_rkwbasics_domain_model_documenttype = TEXT
+                conf.tx_rkwbasics_domain_model_documenttype {
+                    field = name
+                   // override.field = short_name
+                }
+            }
+        }
+
+        //=================================================================
         fileSize = FILES
         fileSize {
             references {

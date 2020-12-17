@@ -13,12 +13,13 @@
             <!-- details -->
             <div class="siteheader__overlay-text">
                 <div class="table">
-                    <f:render partial="InfoBox/Partials/Project" arguments="{_all}"/>
+                    <f:render partial="InfoBox/Partials/DocumentType" arguments="{_all}"/>
                     <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.publication.isSubPage')}">
                         <f:render partial="InfoBox/Partials/ParentPage" arguments="{_all}"/>
                     </f:if>
                     <f:render partial="InfoBox/Partials/Date" section="Publication" arguments="{_all}"/>
                     <f:render partial="InfoBox/Partials/FileSize" arguments="{_all}"/>
+                    <f:render partial="InfoBox/Partials/Project" arguments="{_all}"/>
                     <f:render partial="InfoBox/Partials/Author" section="Default" arguments="{_all}"/>
                 </div>
             </div>
