@@ -12,7 +12,7 @@ page {
         100 {
 
             20 = COA
-            20 =< lib.yoastSEO.pageTitle
+            20 =< lib.yoastSEO.pageTitleComplete
         }
 
 
