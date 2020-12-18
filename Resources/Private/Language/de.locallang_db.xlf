@@ -306,6 +306,29 @@
             </trans-unit>
 
 
+            <!-- ContentContainerOrderForm -->
+            <trans-unit id="contentElement.contentContainerOneColOrderForm.title">
+                <source>Content-Container with one Col and two Rows (For publications)</source>
+                <target>Inhalts-Container mit einer Spalte und zwei Zeilen (für Publikationen).</target>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerOneColOrderForm.description">
+                <source>Add a Content-Container with one Col and two Rows.</source>
+                <target>Fügt einen Inhalts-Container mit einer Spalte und zwei Zeilen ein (nur Inhaltsspalte).</target>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerOneColOrderForm.content">
+                <source>Content above order form</source>
+                <target>Inhalt oberhalb des Bestellformulars</target>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerOneColOrderForm.content2">
+                <source>Content below the order form</source>
+                <target>Inhalt unterhalb des Bestellformulars</target>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerOneColOrderForm.callToAction">
+                <source>Call To Action</source>
+                <target>Call To Action</target>
+            </trans-unit>
+
+
             <!-- Shortlink -->
             <trans-unit id="contentElement.shortlink.title">
                 <source>Shortlink</source>
