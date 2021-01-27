@@ -6,6 +6,7 @@ lib.txRkwTemplate {
         home < styles.content.get
         home.select.where = {#colPos} = 100
 
+        // deprecated???
         related = CONTENT
         related < styles.content.get
         related.select.where = {#colPos} = 110
