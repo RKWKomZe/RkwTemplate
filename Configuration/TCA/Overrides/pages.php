@@ -1,5 +1,34 @@
 <?php
 
+$extKey = 'rkw_template';
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Configuration/TsConfig/TsConfig.typoscript', 'RKW Template');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Themes/Kompetenzzentrum2016/Configuration/TsConfig/TsConfig.typoscript', 'RKW Template - Theme: Kompetenzzentrum2016');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Themes/Kompetenzzentrum2020/Configuration/TsConfig/TsConfig.typoscript', 'RKW Template - Theme: Kompetenzzentrum2020');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Themes/_Microsites/Aprodi/Configuration/TsConfig/TsConfig.typoscript', 'RKW Template - Theme: Aprodi');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Themes/_Microsites/BauDigi/Configuration/TsConfig/TsConfig.typoscript', 'RKW Template - Theme: BauDigi');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Themes/_Microsites/Bausachverstaendigentag/Configuration/TsConfig/TsConfig.typoscript', 'RKW Template - Theme: Bausachverständigentag');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Themes/_Microsites/DigiScouts/Configuration/TsConfig/TsConfig.typoscript', 'RKW Template - Theme: DigiScouts');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Themes/_Microsites/EcoStep/Configuration/TsConfig/TsConfig.typoscript', 'RKW Template - Theme: EcoStep');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Themes/_Microsites/EEPA/Configuration/TsConfig/TsConfig.typoscript', 'RKW Template - Theme: EEPA');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Themes/_Microsites/FrauenAmBau/Configuration/TsConfig/TsConfig.typoscript', 'RKW Template - Theme: FrauenAmBau');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Themes/_Microsites/GEM/Configuration/TsConfig/TsConfig.typoscript', 'RKW Template - Theme: GEM');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Themes/_Microsites/MeinRkw/Configuration/TsConfig/TsConfig.typoscript', 'RKW Template - Theme: MeinRkw');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Themes/_Microsites/RessinnoBau/Configuration/TsConfig/TsConfig.typoscript', 'RKW Template - Theme: RessinnoBau');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Themes/_Microsites/RkwGeschichte/Configuration/TsConfig/TsConfig.typoscript', 'RKW Template - Theme: RKW Geschichte');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Themes/_Microsites/WebsiteCheck/Configuration/TsConfig/TsConfig.typoscript', 'RKW Template - Theme: WebsiteCheck');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Themes/_Websites/EANPC/Configuration/TsConfig/TsConfig.typoscript', 'RKW Template - Theme: EANPC');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Themes/_Websites/RkwBadenWuerttemberg/Configuration/TsConfig/TsConfig.typoscript', 'RKW Template - Theme: RkwBadenWürttemberg');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Themes/_Websites/RkwBremen/Configuration/TsConfig/TsConfig.typoscript', 'RKW Template - Theme: RkwBremen');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Themes/_Websites/RkwBundesverein/Configuration/TsConfig/TsConfig.typoscript', 'RKW Template - Theme: RkwBundesverein');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Themes/_Websites/RkwNord/Configuration/TsConfig/TsConfig.typoscript', 'RKW Template - Theme: RkwNord');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Themes/_Websites/RkwSachsen/Configuration/TsConfig/TsConfig.typoscript', 'RKW Template - Theme: RkwSachsen');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Themes/_Websites/RkwSachsenAnhalt/Configuration/TsConfig/TsConfig.typoscript', 'RKW Template - Theme: RkwSachsenAnhalt');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Themes/_Websites/RkwThueringen/Configuration/TsConfig/TsConfig.typoscript', 'RKW Template - Theme: RkwThüringen');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Themes/WePstra/Configuration/TsConfig/TsConfig.typoscript', 'RKW Template - Theme: WePstra');
+
+
+
 # START - override for SEO YOAST-Extension
 $GLOBALS['TCA']['pages']['palettes']['metatags']['showitem'] =
     preg_replace('/keywords(.*,|.*$)/', '', $GLOBALS['TCA']['pages']['palettes']['metatags']['showitem']);
