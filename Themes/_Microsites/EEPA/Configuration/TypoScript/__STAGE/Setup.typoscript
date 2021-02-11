@@ -39,7 +39,7 @@ module.tx_rkwmailer {
 	settings {
 
 		# URL for hard-links in templates
-		baseUrl = http://eepa.rkw.codes/
+		baseUrl = http://eepa-deutschland.rkw.codes/
 	}
 }
 plugin.tx_rkwmailer < module.tx_rkwmailer
