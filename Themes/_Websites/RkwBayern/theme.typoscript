@@ -1,0 +1,81 @@
+plugin.tx_rkwtemplate_themeconfig {
+
+    # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Name of main-theme
+    themeName = Kompetenzzentrum2020
+
+    # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Name of the sub-theme
+    subThemeName = _Websites/RkwBayern
+
+    paths {
+        default {
+
+            # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Path to logos
+            logos = EXT:rkw_template/Themes/{$plugin.tx_rkwtemplate_themeconfig.subThemeName}/Resources/Public/images/logos
+
+            # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Path to icons
+            # icons = EXT:rkw_template/Themes/Kompetenzzentrum2020/Resources/Public/images/icons/grey
+        }
+
+        extensions {
+
+            # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Root path for extension layouts, templates and partials
+            root = EXT:rkw_template/Themes/{$plugin.tx_rkwtemplate_themeconfig.subThemeName}/Resources/Private/Extensions
+        }
+    }
+
+
+    website {
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Name of website
+        name = RKW Bayern
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=baseUrl (With / at the end for ClickEnlarge)
+        baseUrl = https://rkwbayern.rkw-kompetenzzentrum.de
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=integer; label=ID of Rootpage
+        rootPid = 7344
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Publisher of website
+        publisher = RKW Bayern
+
+        # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Open Graph overlay logo
+        logoOpenGraphOverlayFile = {$plugin.tx_rkwtemplate_themeconfig.paths.default.logos}/logo.png
+
+        # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Logo of website (mobile-version)
+        logoMobileFile =
+
+    }
+
+    # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Is this website a microsite?
+    isMicrosite = 0
+
+    # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Show social media icons
+    socialMedia = 1
+
+    socialMediaLinks {
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to facebook page
+        facebook = http://www.facebook.com/pages/RKW-Bayern-eV/155636844488734
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to twitter page
+        twitter =
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to xing page
+        xing = http://www.xing.com/companies/rkwbayerne.v.
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to linkedIn page
+        linkedIn =
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to YouTube page
+        youTube =
+
+    }
+
+    # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Show a reduced amount of menus
+    reducedMenuLevels = 0
+
+    # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Main menu has less items than normal so breakpoint for hamburger menu can be 1024 instead of 1200
+    shortMainMenu = 0
+
+}
+

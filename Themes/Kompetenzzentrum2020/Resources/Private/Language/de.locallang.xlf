@@ -58,6 +58,10 @@
 				<source>Login</source>
 				<target>Login</target>
 			</trans-unit>
+			<trans-unit id="partials.menus.main.closure.funding">
+				<source>Funding Request</source>
+				<target>Förderanfrage</target>
+			</trans-unit>
 
 
             <trans-unit id="partials.menus.breadcrumb.list.label">

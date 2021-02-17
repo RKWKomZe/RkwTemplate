@@ -3,14 +3,31 @@
     data-namespace-typo3-fluid="true">
 
     <f:section name="Default">
-        <f:if condition="{contactPid}'">
-            <li class="nav__item {f:if(condition:'{rkwTemplate:IsPageInCurrentRootline(pageUid:\'{contactPid}\')}', then:' is-active')}">
-                <a href="{f:uri.page(pageUid:'{contactPid}')}" class="btn btn--secondary btn--nav" >
-                    <f:translate key="{settings.themeLanguageFile}:partials.menus.main.closure.contact" />
-                </a>
-            </li>
+        <f:if condition="{contactPid} && {fundingPid}">
+            <f:then>
+                <li class="nav__item {f:if(condition:'{rkwTemplate:IsPageInCurrentRootline(pageUid:\'{fundingPid}\')}', then:' is-active')}">
+                    <a href="{f:uri.page(pageUid:'{fundingPid}')}" class="btn btn--secondary btn--nav" >
+                        <f:translate key="{settings.themeLanguageFile}:partials.menus.main.closure.funding" />
+                    </a>
+                </li>
+                <li class="nav__item {f:if(condition:'{rkwTemplate:IsPageInCurrentRootline(pageUid:\'{contactPid}\')}', then:' is-active')}">
+                    <a href="{f:uri.page(pageUid:'{contactPid}')}" class="btn btn--secondary btn--nav" >
+                        <f:translate key="{settings.themeLanguageFile}:partials.menus.main.closure.contact" />
+                    </a>
+                </li>
+            </f:then>
+            <f:else>
+                <f:if condition="{contactPid}">
+                    <li class="nav__item {f:if(condition:'{rkwTemplate:IsPageInCurrentRootline(pageUid:\'{contactPid}\')}', then:' is-active')}">
+                        <a href="{f:uri.page(pageUid:'{contactPid}')}" class="btn btn--secondary btn--nav" >
+                            <f:translate key="{settings.themeLanguageFile}:partials.menus.main.closure.contact" />
+                        </a>
+                    </li>
+                </f:if>
+            </f:else>
         </f:if>
-        <f:if condition="{loginPid}'">
+
+        <f:if condition="{loginPid}">
             <li class="nav__item tx-rkwregistration-login-class">
                 <a href="{f:uri.page(pageUid:'{loginPid}')}" class="btn btn--tertiary btn--nav tx-rkwregistration-login-text">
                     <f:translate key="{settings.themeLanguageFile}:partials.menus.main.closure.login" />

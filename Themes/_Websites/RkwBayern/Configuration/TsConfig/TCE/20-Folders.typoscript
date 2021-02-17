@@ -1,0 +1,13 @@
+TCEFORM.pages.tx_rkwauthors_authorship.PAGE_TSCONFIG_IDLIST = 7367
+TCEFORM.pages.tx_rkwprojects_project_uid.PAGE_TSCONFIG_IDLIST = 7368
+TCEFORM.tx_rkwevents_domain_model_event.internal_contact.PAGE_TSCONFIG_IDLIST = 7367
+TCEFORM.tx_rkwevents_domain_model_event.external_contact.PAGE_TSCONFIG_IDLIST = 7369
+TCEFORM.tx_rkwevents_domain_model_event.place.PAGE_TSCONFIG_IDLIST = 7369
+TCEFORM.tx_rkwevents_domain_model_event.project.PAGE_TSCONFIG_IDLIST = 7368
+// TCEFORM.tx_rkwevents_domain_model_event.survey_before.PAGE_TSCONFIG_IDLIST =
+// TCEFORM.tx_rkwevents_domain_model_event.survey_after.PAGE_TSCONFIG_IDLIST =
+// TCEFORM.tx_rkwtools_domain_model_tool.sys_category_parent.PAGE_TSCONFIG_IDLIST =
+// TCEFORM.tx_rkwtools_domain_model_tool.sys_category.PAGE_TSCONFIG_IDLIST =
+// TCEFORM.tx_rkwshop_domain_model_product.product_bundle.PAGE_TSCONFIG_IDLIST =
+// TCEFORM.tx_rkwshop_domain_model_orderitem.product.PAGE_TSCONFIG_IDLIST =
+// TCEFORM.tx_rkwshop_domain_model_product.author.PAGE_TSCONFIG_IDLIST =

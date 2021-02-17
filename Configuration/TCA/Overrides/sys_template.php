@@ -23,6 +23,7 @@ $extKey = 'rkw_template';
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Themes/_Microsites/WebsiteCheck/Configuration/TypoScript', 'RKW Template - Theme: WebsiteCheck');
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Themes/_Websites/EANPC/Configuration/TypoScript', 'RKW Template - Theme: EANPC');
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Themes/_Websites/RkwBadenWuerttemberg/Configuration/TypoScript', 'RKW Template - Theme: RkwBadenWürttemberg');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Themes/_Websites/RkwBayern/Configuration/TypoScript', 'RKW Template - Theme: RkwBayern');
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Themes/_Websites/RkwBremen/Configuration/TypoScript', 'RKW Template - Theme: RkwBremen');
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Themes/_Websites/RkwBundesverein/Configuration/TypoScript', 'RKW Template - Theme: RkwBundesverein');
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Themes/_Websites/RkwNord/Configuration/TypoScript', 'RKW Template - Theme: RkwNord');

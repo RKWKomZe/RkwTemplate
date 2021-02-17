@@ -94,6 +94,12 @@ call_user_func(
             $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['rkwTemplateWePstra'] = 'EXT:rkw_template/Themes/WePstra/Configuration/TsConfig/RTE/Editor/Default.yaml';
         }
 
+        //=================================================================
+        // override language files for other extensions
+        //=================================================================
+        $GLOBALS['TYPO3_CONF_VARS']['SYS']['locallangXMLOverride']['EXT:rkw_projects/Resources/Private/Language/locallang_db.xlf'][] = 'EXT:rkw_template/Themes/Kompetenzzentrum2020/Resources/Private/Language/Overrides/RkwProjects/locallang_db.xlf';
+        $GLOBALS['TYPO3_CONF_VARS']['SYS']['locallangXMLOverride']['de']['EXT:rkw_projects/Resources/Private/Language/de.locallang_db.xlf'][] = 'EXT:rkw_template/Themes/Kompetenzzentrum2020/Resources/Private/Language/Overrides/RkwProjects/de.locallang_db.xlf';
+
 
         //=================================================================
         // register update wizard
