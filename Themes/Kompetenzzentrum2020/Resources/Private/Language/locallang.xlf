@@ -40,6 +40,9 @@
 			<trans-unit id="partials.menus.main.closure.login">
 				<source>Login</source>
 			</trans-unit>
+			<trans-unit id="partials.menus.main.closure.funding">
+				<source>Funding Request</source>
+			</trans-unit>
 
 
             <trans-unit id="partials.menus.breadcrumb.list.label">

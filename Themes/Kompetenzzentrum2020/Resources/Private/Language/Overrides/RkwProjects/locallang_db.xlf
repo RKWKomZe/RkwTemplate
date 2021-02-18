@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-05-06T17:45:17Z" product-name="rkw_projects">
+		<header/>
+		<body>
+            <trans-unit id="tx_rkwprojects_domain_model_projects.pid.I.133" approved="yes">
+                <source>RKW KomZe</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwprojects_domain_model_projects.pid.I.3468" approved="yes">
+                <source>RKW Sachsen-Anhalt</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwprojects_domain_model_projects.pid.I.3651" approved="yes">
+                <source>RKW Thüringen</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwprojects_domain_model_projects.pid.I.4788" approved="yes">
+                <source>RKW Bremen</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwprojects_domain_model_projects.pid.I.3906" approved="yes">
+                <source>EANPC</source>
+            </trans-unit>
+        </body>
+	</file>
+</xliff>

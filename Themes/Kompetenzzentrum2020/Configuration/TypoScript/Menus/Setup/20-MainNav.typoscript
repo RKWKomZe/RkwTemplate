@@ -49,6 +49,9 @@ lib.txRkwTemplate {
                 loginPid = TEXT
                 loginPid.value = {$plugin.tx_rkwtemplate_themeconfig.settings.mainNav.loginPid}
 
+                fundingPid = TEXT
+                fundingPid.value = {$plugin.tx_rkwtemplate_themeconfig.settings.mainNav.fundingPid}
+
                 currentPid = TEXT
                 currentPid.data =  GP:id
             }

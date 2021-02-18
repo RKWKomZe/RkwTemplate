@@ -1,4 +1,10 @@
-metaNavConfig {
-    pid = 3603
+plugin.tx_rkwtemplate_themeconfig {
 
+    settings {
+
+        metaNav {
+            pid = 5070
+            linkTarget =
+        }
+    }
 }
