@@ -91,7 +91,7 @@ SET @layout_frontend_current = '11';
 SET @layout_frontend_children = '11';
 SET @perms_user = '31';
 SET @perms_group = '19';
-SET @perms_everybody = '11';
+SET @perms_everybody = '19';
 INSERT INTO `pages` (`pid`, `tstamp`, `sorting`, `cruser_id`, `perms_userid`, `perms_groupid`, `perms_user`, `perms_group`, `perms_everybody`, `crdate`, `title`, `doktype`, `is_siteroot`, `shortcut`, `shortcut_mode`, `no_cache`, `subtitle`, `nav_hide`, `mount_pid`, `mount_pid_ol`, `backend_layout`, `backend_layout_next_level`, `layout`, `tx_rkwbasics_fe_layout_next_level`, `tx_rkwbasics_department`, `tx_rkwbasics_document_type`, `tx_realurl_exclude`, `tx_rkwbasics_proxy_caching`, `tsconfig_includes`)
 VALUES(@pid_website, @tstamp, 1024, 1, @perms_userid, @perms_groupid, @perms_user, @perms_group, @perms_everybody, @tstamp, 'Veranstaltungen', 1, 0, 0, 0, 0, '', 0, 0, 0, @layout_backend_current, @layout_backend_children, @layout_frontend_current, @layout_frontend_children, 6, 10, 0, 0, NULL);
 SET @pid_events = last_insert_id();
@@ -110,7 +110,7 @@ VALUES(@pid_website, @tstamp, 640, 1, @perms_userid, @perms_groupid, @perms_user
 
 SET @perms_user = '31';
 SET @perms_group = '27';
-SET @perms_everybody = '11';
+SET @perms_everybody = '27';
 INSERT INTO `pages` (`pid`, `tstamp`, `sorting`, `cruser_id`, `perms_userid`, `perms_groupid`, `perms_user`, `perms_group`, `perms_everybody`, `crdate`, `title`, `doktype`, `is_siteroot`, `shortcut`, `shortcut_mode`, `no_cache`, `subtitle`, `nav_hide`, `mount_pid`, `mount_pid_ol`, `backend_layout`, `backend_layout_next_level`, `layout`, `tx_rkwbasics_fe_layout_next_level`, `tx_rkwbasics_department`, `tx_rkwbasics_document_type`, `tx_realurl_exclude`, `tx_rkwbasics_proxy_caching`, `tsconfig_includes`)
 VALUES(@pid_website, @tstamp, 1280, 1, @perms_userid, @perms_groupid, @perms_user, @perms_group, @perms_everybody, @tstamp, 'Kontakt', 4, 0, 0, 1, 0, '', 0, 0, 0, @layout_backend_current, @layout_backend_children, @layout_frontend_current, @layout_frontend_children, 0, 0, 0, 0, NULL);
 SET @pid_contact = last_insert_id();
@@ -121,9 +121,9 @@ SET @perms_everybody = @perms_everybody_default;
 
 SET @perms_user = '31';
 SET @perms_group = '19';
-SET @perms_everybody = '3';
+SET @perms_everybody = '1';
 INSERT INTO `pages` (`pid`, `tstamp`, `sorting`, `cruser_id`, `perms_userid`, `perms_groupid`, `perms_user`, `perms_group`, `perms_everybody`, `crdate`, `title`, `doktype`, `is_siteroot`, `shortcut`, `shortcut_mode`, `no_cache`, `subtitle`, `nav_hide`, `mount_pid`, `mount_pid_ol`, `backend_layout`, `backend_layout_next_level`, `layout`, `tx_rkwbasics_fe_layout_next_level`, `tx_rkwbasics_department`, `tx_rkwbasics_document_type`, `tx_realurl_exclude`, `tx_rkwbasics_proxy_caching`, `tsconfig_includes`)
-VALUES(@pid_website, @tstamp, 1536, 1, @perms_userid, @perms_groupid, @perms_user, @perms_group, @perms_everybody, @tstamp, 'Mein RKW', 1, 0, 609, 0, 0, 'Mit uns finden Sie immer die passende Lösung', 0, 0, 1, @layout_backend_current, @layout_backend_children, @layout_frontend_current, @layout_frontend_children, 6, 0, 0, 2, NULL);
+VALUES(@pid_website, @tstamp, 1536, 1, @perms_userid, @perms_groupid, @perms_user, @perms_group, @perms_everybody, @tstamp, 'Login', 1, 0, 609, 0, 0, 'Mit uns finden Sie immer die passende Lösung', 0, 0, 1, @layout_backend_current, @layout_backend_children, @layout_frontend_current, @layout_frontend_children, 6, 0, 0, 2, NULL);
 SET @perms_user = @perms_user_default;
 SET @perms_group = @perms_group_default;
 SET @perms_everybody = @perms_everybody_default;
@@ -134,8 +134,8 @@ SET @layout_backend_children = 'pagets__topicPages';
 SET @layout_frontend_current = '10';
 SET @layout_frontend_children = '10';
 SET @perms_user = '31';
-SET @perms_group = '11';
-SET @perms_everybody = '11';
+SET @perms_group = '27';
+SET @perms_everybody = '27';
 INSERT INTO `pages` (`pid`, `tstamp`, `sorting`, `cruser_id`, `perms_userid`, `perms_groupid`, `perms_user`, `perms_group`, `perms_everybody`, `crdate`, `title`, `doktype`, `is_siteroot`, `shortcut`, `shortcut_mode`, `no_cache`, `subtitle`, `nav_hide`, `mount_pid`, `mount_pid_ol`, `backend_layout`, `backend_layout_next_level`, `layout`, `tx_rkwbasics_fe_layout_next_level`, `tx_rkwbasics_department`, `tx_rkwbasics_document_type`, `tx_realurl_exclude`, `tx_rkwbasics_proxy_caching`, `tsconfig_includes`)
 VALUES(@pid_website, @tstamp, 1792, 1, @perms_userid, @perms_groupid, @perms_user, @perms_group, @perms_everybody, @tstamp, 'Rechtliches', 254, 0, 0, 0, 0, '', 0, 0, 0, @layout_backend_current, @layout_backend_children, @layout_frontend_current, @layout_frontend_children, 0, 0, 1, 0, NULL);
 SET @pid_law = last_insert_id();
@@ -198,7 +198,7 @@ SET @layout_frontend_current = '11';
 SET @layout_frontend_children = '0';
 SET @perms_user = '31';
 SET @perms_group = '19';
-SET @perms_everybody = '1';
+SET @perms_everybody = '19';
 INSERT INTO `pages` (`pid`, `tstamp`, `sorting`, `cruser_id`, `perms_userid`, `perms_groupid`, `perms_user`, `perms_group`, `perms_everybody`, `crdate`, `title`, `doktype`, `is_siteroot`, `shortcut`, `shortcut_mode`, `no_cache`, `subtitle`, `nav_hide`, `mount_pid`, `mount_pid_ol`, `backend_layout`, `backend_layout_next_level`, `layout`, `tx_rkwbasics_fe_layout_next_level`, `tx_rkwbasics_department`, `tx_rkwbasics_document_type`, `tx_realurl_exclude`, `tx_rkwbasics_proxy_caching`, `tsconfig_includes`)
 VALUES(@pid_contact, @tstamp, 446, 1, @perms_userid, @perms_groupid, @perms_user, @perms_group, @perms_everybody, @tstamp, 'Unsere Expertinnen und Experten', 1, 0, 0, 0, 0, '', 0, 0, 0, @layout_backend_current, @layout_backend_children, @layout_frontend_current, @layout_frontend_children, 6, 10, 0, 0, NULL);
 SET @pid_contact_list = last_insert_id();
@@ -206,12 +206,18 @@ SET @layout_backend_current = @layout_backend_current_default;
 SET @layout_backend_children = @layout_backend_children_default;
 SET @layout_frontend_current = @layout_frontend_current_default;
 SET @layout_frontend_children = @layout_frontend_children_default;
+SET @perms_user = @perms_user_default;
+SET @perms_group = @perms_group_default;
+SET @perms_everybody = @perms_everybody_default;
 
 
 SET @layout_backend_current = 'pagets__expertPagesDetail';
 SET @layout_backend_children = '';
 SET @layout_frontend_current = '10000';
 SET @layout_frontend_children = '0';
+SET @perms_user = '31';
+SET @perms_group = '19';
+SET @perms_everybody = '1';
 INSERT INTO `pages` (`pid`, `tstamp`, `sorting`, `cruser_id`, `perms_userid`, `perms_groupid`, `perms_user`, `perms_group`, `perms_everybody`, `crdate`, `title`, `doktype`, `is_siteroot`, `shortcut`, `shortcut_mode`, `no_cache`, `subtitle`, `nav_hide`, `mount_pid`, `mount_pid_ol`, `backend_layout`, `backend_layout_next_level`, `layout`, `tx_rkwbasics_fe_layout_next_level`, `tx_rkwbasics_department`, `tx_rkwbasics_document_type`, `tx_realurl_exclude`, `tx_rkwbasics_proxy_caching`, `tsconfig_includes`)
 VALUES(@pid_contact_list, @tstamp, 256, 1, @perms_userid, @perms_groupid, @perms_user, @perms_group, @perms_everybody, @tstamp, 'Details', 1, 0, 0, 0, 0, '', 1, 0, 0, @layout_backend_current, @layout_backend_children, @layout_frontend_current, @layout_frontend_children, 6, 10, 0, 0, NULL);
 SET @pid_contact_details = last_insert_id();
@@ -396,6 +402,10 @@ INSERT INTO `be_groups` (`pid`, `tstamp`, `title`,  `db_mountpoints`, `crdate`, 
 INSERT INTO `be_groups` (`pid`, `tstamp`, `title`,  `db_mountpoints`, `crdate`, `cruser_id`, `groupMods`, `file_mountpoints`, `description`, `file_permissions`) VALUES
 (0, @tstamp, @backend_group_title, @website_folder, @tstamp, 1, '', @file_mount, 'Freigaben für alle Gruppen\r\nGesetzt werden hier NUR:\r\n- Datenbankfreigaben\r\n- Verzeichnisfreigaben', 'readFolder,writeFolder,addFolder,renameFolder,moveFolder,deleteFolder,recursivedeleteFolder,readFile,writeFile,addFile,renameFile,replaceFile,moveFile,copyFile,deleteFile');
 
+-- =================================================
+-- No index,No Follow
+-- =================================================
+UPDATE `pages` SET `tx_rkwbasics_no_follow` = 1, `tx_rkwbasics_no_index` = 1 WHERE `uid` = @pid_website;
 
 COMMIT;
 

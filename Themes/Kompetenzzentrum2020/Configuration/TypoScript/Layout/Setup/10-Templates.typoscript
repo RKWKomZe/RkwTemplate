@@ -65,6 +65,11 @@ page {
                 value = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/BrokenLink.html
             }
 
+            9100 = TEXT
+            9100 {
+                value = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/Special.html
+            }
+
             10000 = TEXT
             10000 {
                 value = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/AuthorDetail.html

@@ -77,6 +77,11 @@ page {
                 value = tpl-broken-link show-first-headline body
             }
 
+            9100 = TEXT
+            9100 {
+                value = tpl-broken-link show-first-headline body
+            }
+
             10000 = COA_INT
             10000 {
                 10 = TEXT

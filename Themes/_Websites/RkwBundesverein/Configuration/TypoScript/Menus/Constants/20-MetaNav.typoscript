@@ -1,3 +1,5 @@
 metaNavConfig {
-    ATagParams = target="_blank"
+    pid = 7448
+    ATagParams =
 }
+

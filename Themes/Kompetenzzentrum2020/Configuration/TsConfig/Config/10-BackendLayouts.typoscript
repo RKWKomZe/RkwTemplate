@@ -92,7 +92,7 @@ mod {
             // Plugin only
             //======================================
             pluginOnlyPages {
-                title = Thema: Nur Plugin
+                title = Thema: Nur Plugin / Sonderseite
                 config {
                     backend_layout {
                         colCount = 1
@@ -115,7 +115,7 @@ mod {
             // Content Pages
             //======================================
             contentPages {
-                title = Artikel
+                title = Artikel / Broken Link
                 config {
                     backend_layout {
                         colCount = 1

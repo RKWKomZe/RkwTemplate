@@ -3,7 +3,7 @@
 	<f:layout name="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.utility.pageLayoutSwitch')}" />
 
 	<f:section name="Header">
-		<f:render partial="HeaderSection/BrokenLink" arguments="{_all}"/>
+		<f:render partial="HeaderSection/Special" arguments="{_all}"/>
 	</f:section>
 
 
@@ -13,20 +13,12 @@
 		<main class="main flex-container no-padding-narrow" id="main">
 			<section class="section content">
 
-				<f:comment><!-- breadcrumb--></f:comment>
-				<section class="section content flex-basis-12 full-width-smalldesk no-padding-narrow pb-0">
-					<div class="breadcrumbs flex-container nav breadcrumb-padding">
-						<f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.breadcrumb" data="{data}" />
-					</div>
-				</section>
-
 				<f:comment><!-- content --></f:comment>
 				<section class="section content flex-basis-12 full-width-smalldesk no-padding-narrow">
-					<f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.main" data="{data}" />
+					<div id="content" class="contentbox contentbox--text contentbox--no-border-radius no-border-radius-smalldesk typo3-fsc">
+						<f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.pluginOnly" data="{data}" />
+					</div>
 				</section>
-
-				<f:comment><!-- boxes --></f:comment>
-				<f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.boxesArticle" data="{data}" />
 
 			</section>
 		</main>

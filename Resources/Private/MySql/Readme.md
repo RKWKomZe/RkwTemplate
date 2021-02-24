@@ -18,3 +18,46 @@ After that you can copy the single lines into the actual MySQL script. To make t
 
 * Search: "#'"
 * Replace: ""
+
+# Permissions for pages
+## Overview of permissions available
+| Show Page | Edit Content | Edit Page | Delete Page | New Pages | Value | Comment                                                            |
+|-----------|--------------|-----------|-------------|-----------|-------|--------------------------------------------------------------------|
+| y         | y            | y         | y           | y         | 31    |                                                                    |
+| y         | y            | y         | n           | y         | 27    |                                                                    |
+| y         | y            | y         | n           | n         | 19    |                                                                    |
+| y         | n            | y         | n           | y         | 11    | Not recommended, because no images can be added to page-properties |
+| y         | n            | y         | n           | n         | 3     | Not recommended, because no images can be added to page-properties |
+| y         | n            | n         | n           | n         | 1     |                                                                    |
+
+## Permissions for normal websites (except RKW KomZe)
+| What?                   | User | Group | All |
+|-------------------------|------|-------|-----|
+| Main folder             | 31   | 1     | 1   |
+| Rootpage                | 31   | 27    | 27  |
+| Events List             | 31   | 19    | 19  |
+| Events Details etc.     | 31   | 19    | 1   |
+| Contact                 | 31   | 27    | 27  |
+| Contact List            | 31   | 19    | 19  |
+| Login                   | 31   | 19    | 1   |
+| Folder for law-stuff    | 31   | 27    | 27  |
+| In folder for law-stuff | 31   | 19    | 19  |
+| Folder for other stuff  | 31   | 27    | 27  |
+| 404-page                | 31   | 19    | 19  |
+| Forward-page            | 31   | 1     | 1   |
+
+
+## Permissions for internal microsites websites 
+| What?                   | User | Group | All |
+|-------------------------|------|-------|-----|
+| Main folder             | 31   | 1     | 1   |
+| Rootpage                | 31   | 27    | 27  |
+| Events List             | 31   | 19    | 1   |
+| Events Details etc.     | 31   | 19    | 1   |
+| Contact List            | 31   | 19    | 1   |
+| Login                   | 31   | 19    | 1   |
+| Folder for law-stuff    | 31   | 27    | 1   |
+| In folder for law-stuff | 31   | 19    | 1   |
+| Folder for other stuff  | 31   | 27    | 27  |
+| 404-page                | 31   | 19    | 1   |
+| Forward-page            | 31   | 1     | 1   |

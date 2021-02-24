@@ -26,6 +26,7 @@ TCEFORM.pages {
 
         // add more items
         addItems.9000 = Broken Link
+        addItems.9100 = Sonderseite
         addItems.10000 = Detailseite: Experten
         addItems.20000 = Detailseite: Veranstaltungen
     }
@@ -52,6 +53,7 @@ TCEFORM.pages {
 
         // add more items
         addItems.9000 = Broken Link
+        addItems.9100 = Sonderseite
         addItems.10000 = Detailseite: Experten
         addItems.20000 = Detailseite: Veranstaltungen
     }

@@ -55,6 +55,11 @@ plugin.tx_rkwevents {
             }
         }
 	}
+
+    _LOCAL_LANG.de {
+        tx_rkwevents_fluid.partials_event_registration.externalLink = Weiter zur Anmeldung
+        tx_rkwevents_fluid.partials_event_info_costs.costsFree = Preis noch nicht festgelegt
+    }
 }
 
 
