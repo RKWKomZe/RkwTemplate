@@ -23,6 +23,9 @@
             <trans-unit id="tx_rkwauthors_domain_model_authors.image_box.imageManipulation.big">
                <source>Detail view</source>
             </trans-unit>
+            <trans-unit id="tx_rkwtools_domain_model_tool.keyvisual.imageManipulation.teaser">
+               <source>Teaser</source>
+            </trans-unit>
 
 
             <!-- Slider -->
