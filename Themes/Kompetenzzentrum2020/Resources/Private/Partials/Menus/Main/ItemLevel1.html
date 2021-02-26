@@ -27,8 +27,8 @@
 
     <f:section name="Mobile">
 
-        <li class="nav-mobile__item {f:if(condition:item.active, then:' is-active')}">
-            <a href="{item.link}" target="{f:if(condition: item.target, then: item.target, else:'_self')}" {f:if(condition:item.children, then:' aria-haspopup="true"')}>
+        <li class="nav-mobile__item {f:if(condition:item.active, then:' is-active')} {f:if(condition: '{item.data.uid} == {loginPid}', then: 'tx-rkwregistration-login-class')}">
+            <a href="{item.link}" class="{f:if(condition: '{item.data.uid} == {loginPid}', then: 'tx-rkwregistration-login-text')}" target="{f:if(condition: item.target, then: item.target, else:'_self')}" {f:if(condition:item.children, then:' aria-haspopup="true"')}>
                 {item.title}
             </a>
 
