@@ -33,6 +33,10 @@
                <source>Detail view</source>
                <target>Detailansicht</target>
             </trans-unit>
+            <trans-unit id="tx_rkwtools_domain_model_tool.keyvisual.imageManipulation.teaser">
+               <source>Teaser</source>
+               <target>Teaser</target>
+            </trans-unit>
 
 
 
