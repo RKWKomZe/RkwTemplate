@@ -1,7 +1,7 @@
 plugin.tx_rkwtemplate_themeconfig {
 
     # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Name of main-theme
-    themeName = Kompetenzzentrum2016
+    themeName = Kompetenzzentrum2020
 
     # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Name of the sub-theme
     subThemeName = _Microsites/_Example
@@ -21,7 +21,17 @@ plugin.tx_rkwtemplate_themeconfig {
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=baseUrl (With / at the end for ClickEnlarge)
         baseUrl = https://www.example.de/
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=integer; label=ID of Rootpage
+        rootPid = 6391
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Use this text instead of a logo
+        logoReplacementText =
     }
+
+
+    # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Is this website a microsite?
+    isMicrosite = 1
 
     microsite {
 
@@ -41,9 +51,6 @@ plugin.tx_rkwtemplate_themeconfig {
 
     # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Show social media icons
     socialMedia = 0
-
-    # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Is this website a microsite?
-    isMicrosite = 1
 
 }
 

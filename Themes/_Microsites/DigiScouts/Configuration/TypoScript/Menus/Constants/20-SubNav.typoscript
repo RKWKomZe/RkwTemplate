@@ -1,3 +1,0 @@
-subNavConfig {
-    entryLevel = 0
-}
