@@ -236,23 +236,27 @@ SET @perms_user = '31';
 SET @perms_group = '19';
 SET @perms_everybody = '19';
 INSERT INTO `pages` (`pid`, `tstamp`, `sorting`, `cruser_id`, `perms_userid`, `perms_groupid`, `perms_user`, `perms_group`, `perms_everybody`, `crdate`, `title`, `doktype`, `is_siteroot`, `shortcut`, `shortcut_mode`, `no_cache`, `subtitle`, `nav_hide`, `mount_pid`, `mount_pid_ol`, `backend_layout`, `backend_layout_next_level`, `layout`, `tx_rkwbasics_fe_layout_next_level`, `tx_rkwbasics_department`, `tx_rkwbasics_document_type`, `tx_realurl_exclude`, `tx_rkwbasics_proxy_caching`, `tsconfig_includes`)
-VALUES(@pid_law, @tstamp, 256, 1, @perms_userid, @perms_groupid, @perms_user, @perms_group, @perms_everybody, @tstamp, 'Impressum', 1, 0, 0, 0, 0, '', 0, 0, 0, @layout_backend_current, @layout_backend_children, @layout_frontend_current, @layout_frontend_children, 6, 10, 0, 0, NULL);
+VALUES(@pid_law, @tstamp, 2560, 1, @perms_userid, @perms_groupid, @perms_user, @perms_group, @perms_everybody, @tstamp, 'Impressum', 1, 0, 0, 0, 0, '', 0, 0, 0, @layout_backend_current, @layout_backend_children, @layout_frontend_current, @layout_frontend_children, 6, 10, 0, 0, NULL);
 
 
 INSERT INTO `pages` (`pid`, `tstamp`, `sorting`, `cruser_id`, `perms_userid`, `perms_groupid`, `perms_user`, `perms_group`, `perms_everybody`, `crdate`, `title`, `doktype`, `is_siteroot`, `shortcut`, `shortcut_mode`, `no_cache`, `subtitle`, `nav_hide`, `mount_pid`, `mount_pid_ol`, `backend_layout`, `backend_layout_next_level`, `layout`, `tx_rkwbasics_fe_layout_next_level`, `tx_rkwbasics_department`, `tx_rkwbasics_document_type`, `tx_realurl_exclude`, `tx_rkwbasics_proxy_caching`, `tsconfig_includes`)
-VALUES(@pid_law, @tstamp, 512, 1, @perms_userid, @perms_groupid, @perms_user, @perms_group, @perms_everybody, @tstamp, 'Datenschutz', 1, 0, 0, 0, 0, '', 0, 0, 0, @layout_backend_current, @layout_backend_children, @layout_frontend_current, @layout_frontend_children, 6, 10, 0, 0, NULL);
+VALUES(@pid_law, @tstamp, 2816, 1, @perms_userid, @perms_groupid, @perms_user, @perms_group, @perms_everybody, @tstamp, 'Allgemeine Nutzungsbedingungen', 7, 0, 0, 0, 0, '', 0, 1381, 1, @layout_backend_current, @layout_backend_children, @layout_frontend_current, @layout_frontend_children, 0, 0, 0, 0, NULL);
 
 
 INSERT INTO `pages` (`pid`, `tstamp`, `sorting`, `cruser_id`, `perms_userid`, `perms_groupid`, `perms_user`, `perms_group`, `perms_everybody`, `crdate`, `title`, `doktype`, `is_siteroot`, `shortcut`, `shortcut_mode`, `no_cache`, `subtitle`, `nav_hide`, `mount_pid`, `mount_pid_ol`, `backend_layout`, `backend_layout_next_level`, `layout`, `tx_rkwbasics_fe_layout_next_level`, `tx_rkwbasics_department`, `tx_rkwbasics_document_type`, `tx_realurl_exclude`, `tx_rkwbasics_proxy_caching`, `tsconfig_includes`)
-VALUES(@pid_law, @tstamp, 448, 1, @perms_userid, @perms_groupid, @perms_user, @perms_group, @perms_everybody, @tstamp, 'Allgemeine Geschäftsbedingungen', 1, 0, 0, 0, 0, '', 0, 0, 0, @layout_backend_current, @layout_backend_children, @layout_frontend_current, @layout_frontend_children, 6, 10, 0, 0, NULL);
+VALUES(@pid_law, @tstamp, 2944, 1, @perms_userid, @perms_groupid, @perms_user, @perms_group, @perms_everybody, @tstamp, 'Allgemeine Geschäftsbedingungen', 1, 0, 0, 0, 0, '', 0, 0, 0, @layout_backend_current, @layout_backend_children, @layout_frontend_current, @layout_frontend_children, 6, 10, 0, 0, NULL);
 
 
 INSERT INTO `pages` (`pid`, `tstamp`, `sorting`, `cruser_id`, `perms_userid`, `perms_groupid`, `perms_user`, `perms_group`, `perms_everybody`, `crdate`, `title`, `doktype`, `is_siteroot`, `shortcut`, `shortcut_mode`, `no_cache`, `subtitle`, `nav_hide`, `mount_pid`, `mount_pid_ol`, `backend_layout`, `backend_layout_next_level`, `layout`, `tx_rkwbasics_fe_layout_next_level`, `tx_rkwbasics_department`, `tx_rkwbasics_document_type`, `tx_realurl_exclude`, `tx_rkwbasics_proxy_caching`, `tsconfig_includes`)
-VALUES(@pid_law, @tstamp, 352, 1, @perms_userid, @perms_groupid, @perms_user, @perms_group, @perms_everybody, @tstamp, 'Allgemeine Nutzungsbedingungen', 7, 0, 0, 0, 0, '', 0, 1381, 1, @layout_backend_current, @layout_backend_children, @layout_frontend_current, @layout_frontend_children, 0, 0, 0, 0, NULL);
+VALUES(@pid_law, @tstamp, 3008, 1, @perms_userid, @perms_groupid, @perms_user, @perms_group, @perms_everybody, @tstamp, 'Bildnachweise', 1, 0, 0, 0, 0, '', 0, 0, 0, @layout_backend_current, @layout_backend_children, @layout_frontend_current, @layout_frontend_children, 6, 10, 0, 0, NULL);
 
 
 INSERT INTO `pages` (`pid`, `tstamp`, `sorting`, `cruser_id`, `perms_userid`, `perms_groupid`, `perms_user`, `perms_group`, `perms_everybody`, `crdate`, `title`, `doktype`, `is_siteroot`, `shortcut`, `shortcut_mode`, `no_cache`, `subtitle`, `nav_hide`, `mount_pid`, `mount_pid_ol`, `backend_layout`, `backend_layout_next_level`, `layout`, `tx_rkwbasics_fe_layout_next_level`, `tx_rkwbasics_department`, `tx_rkwbasics_document_type`, `tx_realurl_exclude`, `tx_rkwbasics_proxy_caching`, `tsconfig_includes`)
-VALUES(@pid_law, @tstamp, 768, 1, @perms_userid, @perms_groupid, @perms_user, @perms_group, @perms_everybody, @tstamp, 'Disclaimer', 1, 0, 0, 0, 0, '', 0, 0, 0, @layout_backend_current, @layout_backend_children, @layout_frontend_current, @layout_frontend_children, 6, 10, 0, 0, NULL);
+VALUES(@pid_law, @tstamp, 3072, 1, @perms_userid, @perms_groupid, @perms_user, @perms_group, @perms_everybody, @tstamp, 'Datenschutz', 1, 0, 0, 0, 0, '', 0, 0, 0, @layout_backend_current, @layout_backend_children, @layout_frontend_current, @layout_frontend_children, 6, 10, 0, 0, NULL);
+
+
+INSERT INTO `pages` (`pid`, `tstamp`, `sorting`, `cruser_id`, `perms_userid`, `perms_groupid`, `perms_user`, `perms_group`, `perms_everybody`, `crdate`, `title`, `doktype`, `is_siteroot`, `shortcut`, `shortcut_mode`, `no_cache`, `subtitle`, `nav_hide`, `mount_pid`, `mount_pid_ol`, `backend_layout`, `backend_layout_next_level`, `layout`, `tx_rkwbasics_fe_layout_next_level`, `tx_rkwbasics_department`, `tx_rkwbasics_document_type`, `tx_realurl_exclude`, `tx_rkwbasics_proxy_caching`, `tsconfig_includes`)
+VALUES(@pid_law, @tstamp, 3328, 1, @perms_userid, @perms_groupid, @perms_user, @perms_group, @perms_everybody, @tstamp, 'Disclaimer', 1, 0, 0, 0, 0, '', 0, 0, 0, @layout_backend_current, @layout_backend_children, @layout_frontend_current, @layout_frontend_children, 6, 10, 0, 0, NULL);
 SET @perms_user = @perms_user_default;
 SET @perms_group = @perms_group_default;
 SET @perms_everybody = @perms_everybody_default;
