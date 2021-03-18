@@ -43,14 +43,14 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_slider'] = [
                         'crop' => [
                             'config' => [
 
-                                // original file dimensions: 2250x800; motive centered
+                                // original file dimensions: 2250x680; motive centered
                                 'cropVariants' => [
                                     'desktop' => [
                                         'title' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.slider.imageManipulation.desktop',
                                         'allowedAspectRatios' => [
-                                            '1500:800' => [
-                                                'title' => '1500 x 800',
-                                                'value' => 1500 / 800
+                                            '1460:680' => [
+                                                'title' => '1460 x 680',
+                                                'value' => 1460 / 680
                                             ]
                                         ],
                                         'coverAreas' => [
@@ -65,18 +65,18 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_slider'] = [
                                     'tablet' => [
                                         'title' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.slider.imageManipulation.tablet',
                                         'allowedAspectRatios' => [
-                                            '1100:800' => [
-                                                'title' => '1100 x 800',
-                                                'value' => 1100 / 800
+                                            '1024:680' => [
+                                                'title' => '1024 x 680',
+                                                'value' => 1024 / 680
                                             ]
                                         ]
                                     ],
                                     'mobile' => [
                                         'title' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.slider.imageManipulation.mobile',
                                         'allowedAspectRatios' => [
-                                            '550:440' => [
-                                                'title' => '550 x 440',
-                                                'value' => 550 / 440
+                                            '480:540' => [
+                                                'title' => '480 x 540',
+                                                'value' => 480 / 540
                                             ]
                                         ]
                                     ]
