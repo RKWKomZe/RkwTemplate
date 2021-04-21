@@ -124,9 +124,51 @@ page {
                             // we need to use register here because inside GIFBUILDER "file" is not available
                             10 = LOAD_REGISTER
                             10 {
-                               param = TEXT
-                               param.data = file:current:uid
+                               OgImageFileUid = TEXT
+                               OgImageFileUid.data = file:current:uid
                             }
+
+
+                            // load publisher into register
+                            11 = LOAD_REGISTER
+                            11 {
+                                OgImagePublisher = TEXT
+                                OgImagePublisher {
+                                    data = file:current:tx_rkwbasics_publisher
+                                    noTrimWrap = || - |
+                                    noTrimWrap.if.isTrue.data = file:current:tx_rkwbasics_publisher
+                                }
+                            }
+
+
+                            # load name of source, combine it with publisher and load it into register
+                            12 = RECORDS
+                            12 {
+                                source.data = file:current:tx_rkwbasics_source
+                                dontCheckPid = 1
+                                tables = tx_rkwbasics_domain_model_mediasources
+
+                                # load name of source but only if it is set and not an internal source
+                                conf.tx_rkwbasics_domain_model_mediasources = COA
+                                conf.tx_rkwbasics_domain_model_mediasources {
+                                    10 = LOAD_REGISTER
+                                    10 {
+                                        OgImageMediaSource = TEXT
+                                        OgImageMediaSource {
+                                            data = field:name
+
+                                            stdWrap.noTrimWrap = |© {register:OgImagePublisher} ||
+                                            stdWrap.insertData = 1
+
+                                            # only if there is a name and the publisher is not internal
+                                            if.isTrue.data = field:name
+                                            if.isTrue.if.isFalse.data = field:internal
+                                        }
+
+                                    }
+                                }
+                            }
+
 
                             20 = IMG_RESOURCE
                             20 {
@@ -143,7 +185,7 @@ page {
                                     10 = IMAGE
                                     10 {
                                         file {
-                                            import.data = register:param
+                                            import.data = register:OgImageFileUid
                                             width = 1200c
                                             height = 630c
                                             treatIdAsReference = 1
@@ -154,8 +196,23 @@ page {
                                     20 = IMAGE
                                     20 {
                                         file = {$plugin.tx_rkwtemplate_themeconfig.website.logoOpenGraphOverlayFile}
-                                        # offset = 1104,534
-                                        offset = 10,10
+                                        offset = 20,20
+                                        height = 40
+                                    }
+
+                                    // add copyright information
+                                    30 = TEXT
+                                    30 {
+                                        text.data = register:OgImageMediaSource
+                                        fontColor = #ffffff
+                                        fontSize = 24
+                                        offset = [10.w]-[30.w]+5,[10.h]-15
+                                        angle = 90
+                                        niceText = 1
+
+                                        shadow.offset = 2,2
+                                        shadow.blur = 20
+                                        shadow.opacity = 100
                                     }
                                 }
                             }
