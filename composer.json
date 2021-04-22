@@ -21,7 +21,7 @@
         "typo3/cms-core": "~7.6.0 || ~8.7.0",
         "gridelementsteam/gridelements" : "~8.6.3",
         "rkw/rkw-authors": "~8.7.0",
-        "rkw/rkw-basics": "~8.7.58",
+        "rkw/rkw-basics": "~8.7.69",
         "rkw/rkw-etracker": "~8.7.16",
         "rkw/rkw-events": "~8.7.0",
         "rkw/rkw-pdf2content": "~8.7.0",
