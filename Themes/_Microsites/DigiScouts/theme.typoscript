@@ -17,7 +17,7 @@ plugin.tx_rkwtemplate_themeconfig {
     website {
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Name of website
-        name = DigiScouts
+        name = Digiscouts
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=baseUrl (With / at the end for ClickEnlarge)
         baseUrl = https://www.digiscouts.de/
