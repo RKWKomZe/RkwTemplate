@@ -57,7 +57,7 @@ page {
 
 		// Canonical-Tag
 		4000 = TEXT
-		4000 < plugin.tx_rkwbasics.libs.canonical
+		4000 < lib.txRkwBasics.canonical
 
 		// OpenGraph
 		5000 = COA
@@ -103,67 +103,24 @@ page {
 			60 {
 
 				10 = COA
+				10 < lib.txRkwBasics.openGraphImage
 				10 {
 
-					// teaser image with fallbacks
-					10 = FILES
-					10 {
-
-						references {
-							table = pages
-                            data = levelmedia : -1, slide
-							override.data =  levelfield : -1, tx_rkwbasics_teaser_image, slide
-							override.required = 1
-						}
-
-						maxItems = 1
-
-						renderObj = COA
-						renderObj {
-
-                            // we need to use register here because inside GIFBUILDER "file" is not available
-                            10 = LOAD_REGISTER
-                            10 {
-                               param = TEXT
-                               param.data = file:current:uid
-                            }
-
-                            20 = IMG_RESOURCE
+				    10 {
+                        renderObj {
                             20 {
-
-                                file = GIFBUILDER
                                 file {
-
-                                    // define format and size
-                                    // see: https://developers.facebook.com/docs/sharing/best-practices#images
-                                    XY = 1200,630
-                                    format = jpg
-
-                                    // add image
-                                    10 = IMAGE
-                                    10 {
-                                        file {
-                                            import.data = register:param
-                                            width = 1200c
-                                            height = 630c
-                                            treatIdAsReference = 1
-                                        }
-                                    }
-
                                     // add watermark
-                                    20 = IMAGE
-                                    20 {
+                                    30 = IMAGE
+                                    30 {
                                         file = {$plugin.tx_rkwtemplate_themeconfig.website.logoOpenGraphOverlayFile}
-                                        # offset = 1104,534
-                                        offset = 10,10
+                                        offset = 20,20
+                                        height = 40
                                     }
                                 }
                             }
-
-                            90 = RESTORE_REGISTER
-						}
-					}
-
+                        }
+                    }
 				}
 
 				stdWrap.wrap = <meta property="og:image" content="{$plugin.tx_rkwtemplate_themeconfig.website.baseUrl}|">

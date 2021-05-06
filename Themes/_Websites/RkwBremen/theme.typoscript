@@ -45,7 +45,7 @@ plugin.tx_rkwtemplate_themeconfig {
     isMicrosite = 0
 
     # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Show social media icons
-    socialMedia = 0
+    socialMedia = 1
 
     socialMediaLinks {
 
@@ -59,7 +59,7 @@ plugin.tx_rkwtemplate_themeconfig {
         xing =
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to linkedIn page
-        linkedIn =
+        linkedIn = https://www.linkedin.com/company/rkw-bremen-gmbh/
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to YouTube page
         youTube =

@@ -65,7 +65,7 @@ plugin.tx_rkwregistration {
             lifetimeAnonymous = 7776000
 
             # cat=plugin.tx_rkwregistration//a; type=string; label=Login text
-            loginText = Mein RKW
+            loginText = Logout
 
             passwordSettings {
                 # cat=plugin.tx_rkwregistration//a; type=integer; label=Minimum password length (default = 8)
