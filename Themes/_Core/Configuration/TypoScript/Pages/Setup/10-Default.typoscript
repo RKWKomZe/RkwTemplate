@@ -167,6 +167,10 @@ page {
 		5 = TEXT
 		5.value = <body
 		5.noTrimWrap = || |
+
+        6 = TEXT
+        6.value = top
+        6.wrap = id="|"
 		
 		10 = COA
 		10 {
