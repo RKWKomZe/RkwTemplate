@@ -280,24 +280,16 @@ mod {
             }
 
             //======================================
-            // LandingPage
+            // Landingpage
             //======================================
-            landingPagesDetail {
-                title = LandingPage - Detail
+            landingpage {
+                title = Landingpage
                 config {
                     backend_layout {
                         colCount = 2
-                        rowCount = 2
+                        rowCount = 1
                         rows {
                             1 {
-                                columns {
-                                    1 {
-                                        name = Slider
-                                        colPos = 120
-                                    }
-                                }
-                            }
-                            2 {
                                 columns {
                                     1 {
                                         name = Inhalte

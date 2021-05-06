@@ -82,7 +82,7 @@ page {
 
             30000 = TEXT
             30000 {
-                value = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/LandingPage.html
+                value = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/Landingpage.html
             }
         }
 

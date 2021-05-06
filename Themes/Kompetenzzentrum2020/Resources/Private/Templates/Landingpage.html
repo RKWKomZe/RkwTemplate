@@ -128,33 +128,19 @@
             <f:comment>
                 <!-- @todo: using contentbox instead of content -->
             </f:comment>
+
+
             <f:comment><!-- CTE text --></f:comment>
             <section class="section contentbox text-mod flex-item full-width-smalldesk no-padding-narrow" id="intro">
                 <f:comment><!-- content --></f:comment>
                 <div class="flex-container">
                     <div class="flex-basis-7">
-                        <h3>Von Konkurrenz über Kooperation zur Kollaboration</h3>
-                        <p>Wer die Märkte der Zukunft erobern will, muss sich anpassen. Startups und Mittelständler haben ihre
-                            Stärken, um im Wettbewerb zu bestehen.</p>
-
-                        <h4>Was verbindet Mittelstand und Startups?</h4>
-                        <p>Mittelstand und Startups treibt ihr Unternehmergeist voran. Aber ihre Arbeitskulturen unterscheiden sich –
-                            bislang. Nun fordert die Digitalisierung Veränderung etablierter Denkmuster auf beiden Seiten. Startups
-                            haben flache Hierarchien, weniger Pfadabhängigkeiten und nutzen agile Methoden zur Innovationsvalidierung
-                            , Mittelständler verfügen über mehr Markterfahrungen und Netzwerke. Was macht eine gute Zusammenarbeit von
-                            Mittelstand und Startups aus? Zur Lagebestimmung begegnen sich Entscheider aus Mittelstand und Startups,
-                            Politik, Verbänden und Wirtschaftsförderungen.</p>
-
-                        <p>Das RKW Kompetenzzentrum lädt ein:<br/>
-                            29. Mai 2018 von 11.00 – 14.30 Uhr im historischen Stadtbad Oderberger, Berlin</p>
+                        <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.home" data="{data}" />
+                        <a href="#program"
+                            data-target="#program"
+                            class="btn btn--specials specials-bgcolor-primary specials-text-white">Mehr erfahren</a>
                     </div>
                 </div>
-
-                <f:comment><!-- Farbe und Stile für die Buttons anhand des gewählten Specials --></f:comment>
-                <a href="#program" data-target="#program"
-                    class="btn btn--specials specials-bgcolor-primary specials-text-white">Mehr erfahren</a>
-
-                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.main" data="{data}" />
             </section>
 
             <f:comment><!-- teaser --></f:comment>

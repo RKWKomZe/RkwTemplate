@@ -30,7 +30,7 @@ TCEFORM.pages {
         addItems.10000 = Detailseite: Experten
         addItems.20000 = Detailseite: Veranstaltungen
 
-        addItems.30000 = LandingPage
+        addItems.30000 = Landingpage
     }
 
     //===============================================================
@@ -59,7 +59,7 @@ TCEFORM.pages {
         addItems.10000 = Detailseite: Experten
         addItems.20000 = Detailseite: Veranstaltungen
 
-        addItems.30000 = LandingPage
+        addItems.30000 = Landingpage
 
     }
 
