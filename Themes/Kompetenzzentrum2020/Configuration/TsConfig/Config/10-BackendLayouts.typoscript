@@ -87,7 +87,6 @@ mod {
                 }
             }
 
-
             //======================================
             // Plugin only
             //======================================
@@ -279,6 +278,38 @@ mod {
                     }
                 }
             }
+
+            //======================================
+            // LandingPage
+            //======================================
+            landingPagesDetail {
+                title = LandingPage - Detail
+                config {
+                    backend_layout {
+                        colCount = 2
+                        rowCount = 2
+                        rows {
+                            1 {
+                                columns {
+                                    1 {
+                                        name = Slider
+                                        colPos = 120
+                                    }
+                                }
+                            }
+                            2 {
+                                columns {
+                                    1 {
+                                        name = Inhalte
+                                        colPos = 100
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
         }
     }
 }
