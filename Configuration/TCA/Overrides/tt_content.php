@@ -5,6 +5,23 @@
  */
 
 //===============================================================
+// Extending tt_content fields
+//===============================================================
+$temporaryColumn = [
+    'tx_rkwtemplate_styles' => [
+        'exclude' => 0,
+        'label' => 'LLL:EXT:examples/Resources/Private/Language/locallang_db.xlf:tt_content.tx_rkwtemplate_styles',
+        'config' => [
+            'type' => 'input',
+            'size' => 50,
+            'max' => 255,
+        ],
+    ],
+];
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', $temporaryColumn);
+
+//===============================================================
 // Defaults for grid elements
 //===============================================================
 
@@ -30,6 +47,13 @@ $GLOBALS['TCA']['tt_content']['types']['gridelements_pi1']['columnsOverrides'] =
         ]
     ]
 ];
+
+//===============================================================
+// Include Custom Content Containers
+//===============================================================
+foreach (glob(__DIR__ . "/GridElements/ContentContainer/*.php") as $filename) {
+    include_once $filename;
+}
 
 //===============================================================
 // Include Custom Content Elements

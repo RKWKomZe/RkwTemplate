@@ -68,5 +68,9 @@ lib.txRkwTemplate {
         mapOverview < styles.content.get
         mapOverview.select.where = {#colPos} = 820
 
+        landingpage = CONTENT
+        landingpage < styles.content.get
+        landingpage.select.where = {#colPos} = 100
+
     }
 }

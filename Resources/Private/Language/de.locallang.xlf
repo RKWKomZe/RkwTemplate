@@ -33,6 +33,19 @@
                 <target>Projekt</target>
             </trans-unit>
 
+            <!-- Button -->
+			<trans-unit id="contentElement.button.type.I.0">
+				<source>internal link</source>
+				<target>interner Link</target>
+			</trans-unit>
+            <trans-unit id="contentElement.button.type.I.1">
+                <source>external link</source>
+                <target>externer Link</target>
+            </trans-unit>
+            <trans-unit id="contentElement.button.type.I.2">
+                <source>anchor link</source>
+                <target>Sprungmarke</target>
+            </trans-unit>
 
             <!-- CollapsedText -->
             <trans-unit id="contentElement.collapsed.showMore">
@@ -43,7 +56,6 @@
                 <source>show less</source>
                 <target>weniger anzeigen</target>
             </trans-unit>
-
 
             <!-- Topic -->
             <trans-unit id="contentElement.topic.showMore">

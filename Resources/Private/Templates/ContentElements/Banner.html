@@ -1,0 +1,29 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:rkwBasics="http://typo3.org/ns/RKW/RkwBasics/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+    <f:layout name="Rkw" />
+
+    <f:section name="Main">
+
+        <div class="footer-content">
+            <div class="footer-thumb">
+                <img src="{f:uri.image(image:images.0,width:'1050',cropVariant:'default')}" alt="">
+            </div>
+            <div class="btn-list flex-container center-main">
+                <rkwBasics:format.removeEmptyParagraphs>
+                    <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data.bodytext}</f:format.html>
+                </rkwBasics:format.removeEmptyParagraphs>
+            </div>
+            <div class="footer-totop">
+                <a href="#top" data-target="#top" class="footer-totop__link">
+                    <svg class="icon"><use xlink:href="#ic-arrow-footer" /></svg>
+                    Nach oben, aber zackig
+                </a>
+            </div>
+        </div>
+
+    </f:section>
+</html>
+

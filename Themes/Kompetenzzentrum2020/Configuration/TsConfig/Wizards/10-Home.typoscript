@@ -18,7 +18,7 @@
     mod.wizards.newContentElement.wizardItems.menu.show =
 
     // remove grid elements by their ID (aka name)
-    tx_gridelements.excludeLayoutIds = promoterContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerOneCol, contentContainerOneColPagination, contentContainerOneColOrderForm
+    tx_gridelements.excludeLayoutIds = promoterContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerOneCol, contentContainerOneColPagination, contentContainerOneColOrderForm, contentContainerLandingpageOneCol
 
 [end]
 
@@ -26,7 +26,7 @@
 [RKW\RkwTemplate\Condition\Backend\BackendLayoutCondition = "pagets__homePages"] && [RKW\RkwTemplate\Condition\Backend\ColPosCondition = "100"]
 
     // remove grid elements by their ID (aka name)
-    tx_gridelements.excludeLayoutIds = sliderContainer, promoterContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerOneCol, contentContainerOneColPagination, contentContainerOneColOrderForm
+    tx_gridelements.excludeLayoutIds = sliderContainer, promoterContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerOneCol, contentContainerOneColPagination, contentContainerOneColOrderForm, contentContainerLandingpageOneCol
 
 [end]
 
@@ -38,7 +38,7 @@
     TCEFORM.tt_content.CType.keepItems = list
 
     // remove grid elements by their ID (aka name)
-    tx_gridelements.excludeLayoutIds = sliderContainer, promoterContainer, logoContainer, topicContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerOneCol, contentContainerOneColPagination, contentContainerOneColOrderForm
+    tx_gridelements.excludeLayoutIds = sliderContainer, promoterContainer, logoContainer, topicContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerOneCol, contentContainerOneColPagination, contentContainerOneColOrderForm, contentContainerLandingpageOneCol
 
 [end]
 
@@ -50,6 +50,6 @@
     TCEFORM.tt_content.CType.keepItems = gridelements_pi1
 
     // remove grid elements by their ID (aka name)
-    tx_gridelements.excludeLayoutIds = promoterContainer, logoContainer, topicContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerOneCol, contentContainerOneColPagination, contentContainerOneColOrderForm
+    tx_gridelements.excludeLayoutIds = promoterContainer, logoContainer, topicContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerOneCol, contentContainerOneColPagination, contentContainerOneColOrderForm, contentContainerLandingpageOneCol
 
 [end]

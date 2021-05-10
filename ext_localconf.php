@@ -16,9 +16,24 @@ call_user_func(
             ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/Slider.svg']
         );
         $iconRegistry->registerIcon(
+            'rkw-template-banner', // Icon-Identifier, e.g. tx-myext-action-preview
+            \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+            ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/Banner.svg']
+        );
+        $iconRegistry->registerIcon(
+            'rkw-template-button', // Icon-Identifier, e.g. tx-myext-action-preview
+            \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+            ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/Button.svg']
+        );
+        $iconRegistry->registerIcon(
             'rkw-template-collapsed', // Icon-Identifier, e.g. tx-myext-action-preview
             \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
             ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/Collapsed.svg']
+        );
+        $iconRegistry->registerIcon(
+            'rkw-template-gallery', // Icon-Identifier, e.g. tx-myext-action-preview
+            \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+            ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/Gallery.svg']
         );
         $iconRegistry->registerIcon(
             'rkw-template-imagelist', // Icon-Identifier, e.g. tx-myext-action-preview
@@ -34,6 +49,16 @@ call_user_func(
             'rkw-template-mission', // Icon-Identifier, e.g. tx-myext-action-preview
             \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
             ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/Mission.svg']
+        );
+        $iconRegistry->registerIcon(
+            'rkw-template-textimagebackground', // Icon-Identifier, e.g. tx-myext-action-preview
+            \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+            ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/TextImageBackground.svg']
+        );
+        $iconRegistry->registerIcon(
+            'rkw-template-tilelist', // Icon-Identifier, e.g. tx-myext-action-preview
+            \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+            ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/TileList.svg']
         );
         $iconRegistry->registerIcon(
             'rkw-template-topic', // Icon-Identifier, e.g. tx-myext-action-preview

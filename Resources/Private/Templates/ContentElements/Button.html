@@ -1,0 +1,30 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:rkwEtracker="http://typo3.org/ns/RKW/RkwEtracker/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+<f:layout name="Rkw" />
+
+<f:section name="Main">
+
+    <!-- @todo: Einbindung des data-target -->
+    <f:link.typolink parameter="{data.header_link}"
+        class="btn btn--specials specials-bgcolor-primary specials-textcolor-white"
+        title="some title"
+        additionalAttributes="{data-target:'#program'}"
+    >
+        <!-- @todo: set ids on other sections, possibly another custom content element to be displayed at the top of the section -->
+        <!-- @todo: parse data.header_link to identify the hashed part -->
+        <!-- @todo: add classes as string like in contao -->
+        <!-- @todo: render with etracker in mind -->
+        <!-- @todo: render these buttons and their targets in landing page template only -->
+        {data.header}
+    </f:link.typolink>
+
+    <!--
+    <rkwEtracker:link.typolink parameter="{data.header_link}">
+        {data.header}
+    </rkwEtracker:link.typolink>
+    -->
+
+</f:section>
+</html>

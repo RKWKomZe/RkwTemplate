@@ -256,6 +256,20 @@
             </trans-unit>
 
 
+            <!-- ContentContainerLandingpageOneCol -->
+            <trans-unit id="contentElement.contentContainerLandingpageOneCol.title">
+                <source>Content-Container with one col (Landingpage)</source>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerLandingpageOneCol.description">
+                <source>Add a Content-Container with one Col.</source>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerLandingpageOneCol.content">
+                <source>Content</source>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerLandingpageOneCol.callToAction">
+                <source>Call To Action</source>
+            </trans-unit>
+
             <!-- Shortlink -->
             <trans-unit id="contentElement.shortlink.title">
                 <source>Shortlink</source>
@@ -279,6 +293,22 @@
                 <source>Project</source>
             </trans-unit>
 
+            <!-- Button -->
+            <trans-unit id="contentElement.button.title">
+                <source>Button</source>
+            </trans-unit>
+            <trans-unit id="contentElement.button.description">
+                <source>Adds a button.</source>
+            </trans-unit>
+			<trans-unit id="contentElement.button.type.I.0">
+				<source>internal link</source>
+			</trans-unit>
+            <trans-unit id="contentElement.button.type.I.1">
+                <source>external link</source>
+            </trans-unit>
+            <trans-unit id="contentElement.button.type.I.2">
+                <source>anchor link</source>
+            </trans-unit>
 
             <!-- Overview -->
             <trans-unit id="contentElement.overview.title">
@@ -329,6 +359,63 @@
             <trans-unit id="contentElement.imageTextOverlay.imageManipulation.default">
                 <source>Default</source>
             </trans-unit>
+
+            <!-- TextImageBackground -->
+            <trans-unit id="contentElement.textImageBackground.title">
+                <source>Text with image as background</source>
+            </trans-unit>
+            <trans-unit id="contentElement.textImageBackground.description">
+                <source>Adds an text-image-background-element.</source>
+            </trans-unit>
+            <trans-unit id="contentElement.textImageBackground.rowDescription">
+                <source>Short Version</source>
+            </trans-unit>
+            <trans-unit id="contentElement.textImageBackground.imageManipulation.default">
+                <source>Default</source>
+            </trans-unit>
+
+            <!-- TileList -->
+            <trans-unit id="contentElement.tileList.title">
+                <source>Tile List</source>
+            </trans-unit>
+            <trans-unit id="contentElement.tileList.description">
+                <source>Adds an tile list-element.</source>
+            </trans-unit>
+            <trans-unit id="contentElement.tileList.rowDescription">
+                <source>Short Version</source>
+            </trans-unit>
+            <trans-unit id="contentElement.tileList.imageManipulation.default">
+                <source>Default</source>
+            </trans-unit>
+
+            <!-- Banner -->
+            <trans-unit id="contentElement.banner.title">
+                <source>Banner with Call-To-Action functions</source>
+            </trans-unit>
+            <trans-unit id="contentElement.banner.description">
+                <source>Adds a banner element.</source>
+            </trans-unit>
+            <trans-unit id="contentElement.banner.rowDescription">
+                <source>Short Version</source>
+            </trans-unit>
+            <trans-unit id="contentElement.banner.imageManipulation.default">
+                <source>Default</source>
+            </trans-unit>
+
+            <!-- Gallery -->
+            <trans-unit id="contentElement.gallery.title">
+                <source>Gallery with thumbnails and fading background image</source>
+            </trans-unit>
+            <trans-unit id="contentElement.gallery.description">
+                <source>Adds a gallery element.</source>
+            </trans-unit>
+            <trans-unit id="contentElement.gallery.rowDescription">
+                <source>Short Version</source>
+            </trans-unit>
+            <trans-unit id="contentElement.gallery.imageManipulation.default">
+                <source>Default</source>
+            </trans-unit>
+
 		</body>
 	</file>
 </xliff>

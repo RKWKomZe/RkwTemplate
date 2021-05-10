@@ -289,8 +289,6 @@
                 <target>Call To Action</target>
             </trans-unit>
 
-
-
             <!-- ContentContainerOneColPagination -->
             <trans-unit id="contentElement.contentContainerOneColPagination.title">
                 <source>Content-Container with one Col, pagination</source>
@@ -332,6 +330,23 @@
                 <target>Call To Action</target>
             </trans-unit>
 
+            <!-- ContentContainerLandingpageOneCol -->
+            <trans-unit id="contentElement.contentContainerLandingpageOneCol.title">
+                <source>Content-Container with one Col (Landingpage)</source>
+                <target>Inhalts-Container mit einer Spalte (Landingpage)</target>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerLandingpageOneCol.description">
+                <source>Add a Content-Container with one col.</source>
+                <target>Fügt einen Inhalts-Container mit einer Spalte ein (nur Inhaltsspalte).</target>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerLandingpageOneCol.content">
+                <source>Content</source>
+                <target>Inhalt</target>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerLandingpageOneCol.callToAction">
+                <source>Call To Action</source>
+                <target>Call To Action</target>
+            </trans-unit>
 
             <!-- Shortlink -->
             <trans-unit id="contentElement.shortlink.title">
@@ -363,6 +378,27 @@
                 <target>Projekt</target>
             </trans-unit>
 
+            <!-- Button -->
+            <trans-unit id="contentElement.button.title">
+                <source>Button</source>
+                <target>Button</target>
+            </trans-unit>
+            <trans-unit id="contentElement.button.description">
+                <source>Adds a button.</source>
+                <target>Fügt einen Button mit Verlinkung hinzu.</target>
+            </trans-unit>
+			<trans-unit id="contentElement.button.type.I.0">
+				<source>internal link</source>
+				<target>interner Link</target>
+			</trans-unit>
+            <trans-unit id="contentElement.button.type.I.1">
+                <source>external link</source>
+                <target>externer Link</target>
+            </trans-unit>
+            <trans-unit id="contentElement.button.type.I.2">
+                <source>anchor link</source>
+                <target>Sprungmarke</target>
+            </trans-unit>
 
             <!-- Overview -->
             <trans-unit id="contentElement.overview.title">
@@ -437,6 +473,78 @@
                 <source>Default</source>
                 <target>Standard</target>
             </trans-unit>            
+
+            <!-- TextImageBackground -->
+            <trans-unit id="contentElement.textImageBackground.title">
+                <source>Text with image as background</source>
+                <target>Text mit Bild als Hintergrund</target>
+            </trans-unit>
+            <trans-unit id="contentElement.textImageBackground.description">
+                <source>Adds an text-image-background-element.</source>
+                <target>Text, dessen Hintergrund vollständig von einem Bild ausgefüllt wird.</target>
+            </trans-unit>
+            <trans-unit id="contentElement.textImageBackground.rowDescription">
+                <source>Short Version</source>
+                <target>Kurzfassung</target>
+            </trans-unit>
+            <trans-unit id="contentElement.textImageBackground.imageManipulation.default">
+                <source>Default</source>
+                <target>Standard</target>
+            </trans-unit>
+
+            <!-- TileList -->
+            <trans-unit id="contentElement.tileList.title">
+                <source>Tile List</source>
+                <target>Liste aus Kacheln</target>
+            </trans-unit>
+            <trans-unit id="contentElement.tileList.description">
+                <source>Adds an tile list-element.</source>
+                <target>Eine Kachel mit Bild und zugehörigem Modal bei Klick auf jeweils enthaltenen Link, um weitere Informationen zu hinterlegen.</target>
+            </trans-unit>
+            <trans-unit id="contentElement.tileList.rowDescription">
+                <source>Short Version</source>
+                <target>Kurzfassung</target>
+            </trans-unit>
+            <trans-unit id="contentElement.tileList.imageManipulation.default">
+                <source>Default</source>
+                <target>Standard</target>
+            </trans-unit>
+
+            <!-- Banner -->
+            <trans-unit id="contentElement.banner.title">
+                <source>Banner with Call-To-Action functions</source>
+                <target>Banner mit Call-To-Action-Funktionen</target>
+            </trans-unit>
+            <trans-unit id="contentElement.banner.description">
+                <source>Adds a banner element.</source>
+                <target>Banner mit Call-to-Action-Buttons und Thumbnail.</target>
+            </trans-unit>
+            <trans-unit id="contentElement.banner.rowDescription">
+                <source>Short Version</source>
+                <target>Kurzfassung</target>
+            </trans-unit>
+            <trans-unit id="contentElement.banner.imageManipulation.default">
+                <source>Default</source>
+                <target>Standard</target>
+            </trans-unit>
+
+            <!-- Gallery -->
+            <trans-unit id="contentElement.gallery.title">
+                <source>Gallery with thumbnails and fading background image</source>
+                <target>Galerie mit Thumbnails und großem Hintergrundbild</target>
+            </trans-unit>
+            <trans-unit id="contentElement.gallery.description">
+                <source>Adds a gallery element.</source>
+                <target>Fügt ein Galerie-Element hinzu.</target>
+            </trans-unit>
+            <trans-unit id="contentElement.gallery.rowDescription">
+                <source>Short Version</source>
+                <target>Kurzfassung</target>
+            </trans-unit>
+            <trans-unit id="contentElement.gallery.imageManipulation.default">
+                <source>Default</source>
+                <target>Standard</target>
+            </trans-unit>
 
 		</body>
 	</file>

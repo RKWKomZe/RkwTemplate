@@ -1,0 +1,13 @@
+tt_content {
+    rkwtemplate_tilelist =< lib.contentElement
+    rkwtemplate_tilelist {
+        templateName = TileList
+
+        // loading images as references
+        dataProcessing {
+            10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+            10.references.fieldName = image
+            10.as = images
+        }
+    }
+}

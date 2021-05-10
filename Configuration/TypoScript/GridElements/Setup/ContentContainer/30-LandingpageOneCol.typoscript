@@ -1,0 +1,21 @@
+#############################################################################
+// STANDARD- SEITENOBJEKT
+#############################################################################
+tt_content.gridelements_pi1.20.10.setup {
+
+    # id of grid element
+    contentContainerLandingpageOneCol < lib.gridelements.defaultGridSetup
+    contentContainerLandingpageOneCol {
+
+        cObject = FLUIDTEMPLATE
+        cObject {
+
+            layoutRootPaths < lib.gridelements.defaultGridSetup.layoutRootPaths
+            templateRootPaths < lib.gridelements.defaultGridSetup.templateRootPaths
+            partialRootPaths < lib.gridelements.defaultGridSetup.partialRootPaths
+
+            templateName = ContentContainer/LandingpageOneCol.html
+        }
+        outerWrap = |
+    }
+}

@@ -1,0 +1,41 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:rkwBasics="http://typo3.org/ns/RKW/RkwBasics/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+    <f:layout name="Rkw" />
+
+    <f:section name="Main">
+
+        <div class="parallax-container">
+            <div class="parallax">
+                <f:comment>
+                    <!-- @todo: Wie kann ich hier das Bild richtig aufrufen, dass diesem Inhaltselement zugeordnet ist? -->
+                    <img src="{f:uri.image(image:images.0,width:'1050',cropVariant:'default')}" alt="">
+                </f:comment>
+                <img src="fileadmin/_processed_/5/e/csm_image-placeholder_5146ed8dba.jpg" alt="">
+            </div>
+        </div>
+        <div class="flex-container download-mod__content">
+            <div class="flex-basis-7">
+                <div class="flex-basis-7">
+                    <f:if condition="{data.header} && {data.header_layout} != 100">
+                        <f:if condition="{data.header_layout}">
+                            <f:then>
+                                <h{data.header_layout} class="picture-list__header" id="c{data.uid}">{data.header}</h{data.header_layout}>
+                            </f:then>
+                            <f:else>
+                                <h3 class="headline headline--underlined" id="c{data.uid}">{data.header}</h3>
+                            </f:else>
+                        </f:if>
+                    </f:if>
+                    <rkwBasics:format.removeEmptyParagraphs>
+                        <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data.bodytext}</f:format.html>
+                    </rkwBasics:format.removeEmptyParagraphs>
+                </div>
+            </div>
+        </div>
+
+    </f:section>
+</html>
+
