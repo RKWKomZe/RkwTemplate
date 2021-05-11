@@ -43,7 +43,7 @@ includeJSFooter.rkwAlertsScript  >
         file5 = {$plugin.tx_rkwtemplate_themeconfig.paths.default.js}/vendor.js
         file5.forceOnTop = 1
 
-        // file15 = {$plugin.tx_rkwtemplate_themeconfig.paths.default.js}/ajax-api.js
+        file15 = {$plugin.tx_rkwtemplate_themeconfig.paths.default.js}/browserversion.js
     }
 }
 
