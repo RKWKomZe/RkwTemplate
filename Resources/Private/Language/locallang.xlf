@@ -9,6 +9,13 @@
                 <source>Show Slide %s</source>
             </trans-unit>
 
+            <!-- LandingpageOneCol -->
+			<trans-unit id="contentElement.landingpageOneCol.tx_rkwtemplate_styles">
+				<source>CSS classes</source>
+			</trans-unit>
+            <trans-unit id="contentElement.landingpageOneCol.tx_rkwtemplate_anchor_id">
+                <source>Element ID as anchor</source>
+            </trans-unit>
 
             <!-- Shortlink -->
 			<trans-unit id="contentElement.shortlink.type.I.0">
