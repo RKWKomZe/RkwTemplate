@@ -29,12 +29,7 @@
                 <div class="flex-container">
                     <h3 class="headline headline--underlined headline--underlined-primary">{data.header}</h3>
                 </div>
-                <f:comment>
-                    <!-- @todo: Wie kann ich hier das Bild richtig aufrufen, dass diesem Inhaltselement zugeordnet ist? -->
-                    <!-- @todo: Fehlermeldung:  You must either specify a string src or a File object -->
-                    <div class="speaker-header" style="background-image:url('{f:uri.image(image:images.0,width:'1050',cropVariant:'default')}')">
-                </f:comment>
-                <div class="speaker-header" style="background-image:url('fileadmin/_processed_/5/e/csm_image-placeholder_5146ed8dba.jpg')">
+                <div class="speaker-header" style="background-image:url('{f:uri.image(image:images.0, width:'1050',cropVariant:'default')}')">
                     <blockquote class="blockquote-specials">
                         {data.subheader}
                     </blockquote>

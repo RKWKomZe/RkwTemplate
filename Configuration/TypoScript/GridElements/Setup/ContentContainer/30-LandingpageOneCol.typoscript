@@ -15,6 +15,13 @@ tt_content.gridelements_pi1.20.10.setup {
             partialRootPaths < lib.gridelements.defaultGridSetup.partialRootPaths
 
             templateName = ContentContainer/LandingpageOneCol.html
+
+            // loading images as references
+            dataProcessing {
+                10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+                10.references.fieldName = image
+                10.as = images
+            }
         }
         outerWrap = |
     }

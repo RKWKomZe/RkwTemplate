@@ -14,8 +14,9 @@
             <ul>
                 <f:for each="{images}" as="image" iteration="iterator">
                     <li>
-                        <button aria-selected="{f:if(condition: '{iterator.index} == 0', then: 'true', else: 'false')}" aria-controls="slider-mod__item-{iterator.index}"><img
-                            src="{f:uri.image(image:image,width:'1050',cropVariant:'default')}" alt="Slider Foto 1"/></button>
+                        <button aria-selected="{f:if(condition: '{iterator.index} == 0', then: 'true', else: 'false')}" aria-controls="slider-mod__item-{iterator.index}">
+                            <img src="{f:uri.image(image:image,width:'1050',cropVariant:'default')}" alt="Slider Foto 1"/>
+                        </button>
                     </li>
                 </f:for>
             </ul>
