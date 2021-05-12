@@ -22,6 +22,7 @@ $extKey = 'rkw_template';
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Themes/_Websites/RkwBayern/Configuration/TsConfig/TsConfig.typoscript', 'RKW Template - Theme: RkwBayern');
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Themes/_Websites/RkwBremen/Configuration/TsConfig/TsConfig.typoscript', 'RKW Template - Theme: RkwBremen');
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Themes/_Websites/RkwBundesverein/Configuration/TsConfig/TsConfig.typoscript', 'RKW Template - Theme: RkwBundesverein');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Themes/_Websites/RkwHessen/Configuration/TsConfig/TsConfig.typoscript', 'RKW Template - Theme: RkwHessen');
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Themes/_Websites/RkwNord/Configuration/TsConfig/TsConfig.typoscript', 'RKW Template - Theme: RkwNord');
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Themes/_Websites/RkwSachsen/Configuration/TsConfig/TsConfig.typoscript', 'RKW Template - Theme: RkwSachsen');
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Themes/_Websites/RkwSachsenAnhalt/Configuration/TsConfig/TsConfig.typoscript', 'RKW Template - Theme: RkwSachsenAnhalt');

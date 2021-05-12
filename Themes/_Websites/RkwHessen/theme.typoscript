@@ -4,6 +4,6 @@ plugin.tx_rkwtemplate_themeconfig {
     themeName = Kompetenzzentrum2020
 
     # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Name of the sub-theme
-    subThemeName = _Websites/RkwSachsen
+    subThemeName = _Websites/RkwHessen
 }
 
