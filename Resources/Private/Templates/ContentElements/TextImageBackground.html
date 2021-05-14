@@ -14,21 +14,19 @@
         </div>
         <div class="flex-container download-mod__content">
             <div class="flex-basis-7">
-                <div class="flex-basis-7">
-                    <f:if condition="{data.header} && {data.header_layout} != 100">
-                        <f:if condition="{data.header_layout}">
-                            <f:then>
-                                <h{data.header_layout} class="picture-list__header" id="c{data.uid}">{data.header}</h{data.header_layout}>
-                            </f:then>
-                            <f:else>
-                                <h3 class="headline headline--underlined" id="c{data.uid}">{data.header}</h3>
-                            </f:else>
-                        </f:if>
+                <f:if condition="{data.header} && {data.header_layout} != 100">
+                    <f:if condition="{data.header_layout}">
+                        <f:then>
+                            <h{data.header_layout} class="picture-list__header" id="c{data.uid}">{data.header}</h{data.header_layout}>
+                        </f:then>
+                        <f:else>
+                            <h3 class="headline headline--underlined" id="c{data.uid}">{data.header}</h3>
+                        </f:else>
                     </f:if>
-                    <rkwBasics:format.removeEmptyParagraphs>
-                        <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data.bodytext}</f:format.html>
-                    </rkwBasics:format.removeEmptyParagraphs>
-                </div>
+                </f:if>
+                <rkwBasics:format.removeEmptyParagraphs>
+                    <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data.bodytext}</f:format.html>
+                </rkwBasics:format.removeEmptyParagraphs>
             </div>
         </div>
 
