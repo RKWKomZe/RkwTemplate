@@ -1,2 +1,2 @@
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:rkw_template/Themes/Kompetenzzentrum2016/Configuration/TsConfig/TsConfig.typoscript">
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:rkw_template/Themes/_Websites/RkwSachsen/Configuration/TsConfig/TCE" extensions="typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:rkw_template/Themes/Kompetenzzentrum2020/Configuration/TsConfig/TsConfig.typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:rkw_template/Themes/_Websites/RkwHessen/Configuration/TsConfig/TCE" extensions="typoscript">
