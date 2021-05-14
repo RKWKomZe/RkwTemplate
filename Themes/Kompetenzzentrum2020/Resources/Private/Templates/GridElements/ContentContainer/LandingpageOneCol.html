@@ -7,7 +7,11 @@
                 <f:render partial="ContentContainer/Content" arguments="{_all}"/>
             </f:case>
             <f:case value="Programm">
-                <f:render partial="ContentContainer/Content" arguments="{_all}"/>
+                <div class="events">
+                    <h3 class="headline">{data.header}</h3>
+                    <hr class="lined specials-bgcolor-secondary"/>
+                    <f:render partial="ContentContainer/Content" arguments="{_all}"/>
+                </div>
             </f:case>
             <f:case value="Galerie">
                 <f:render partial="ContentContainer/Content" arguments="{_all}"/>

@@ -410,6 +410,20 @@
                 <source>Default</source>
             </trans-unit>
 
+            <!-- EventProgramList -->
+            <trans-unit id="contentElement.eventProgramList.title">
+                <source>List of event program items</source>
+            </trans-unit>
+            <trans-unit id="contentElement.eventProgramList.description">
+                <source>Adds a program item list-element.</source>
+            </trans-unit>
+            <trans-unit id="contentElement.eventProgramList.rowDescription">
+                <source>Short Version</source>
+            </trans-unit>
+            <trans-unit id="contentElement.eventProgramList.imageManipulation.default">
+                <source>Default</source>
+            </trans-unit>
+
             <!-- StickyFooter -->
             <trans-unit id="contentElement.stickyfooter.title">
                 <source>Banner with Call-To-Action functions</source>

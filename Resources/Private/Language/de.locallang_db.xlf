@@ -537,6 +537,24 @@
                 <target>Standard</target>
             </trans-unit>
 
+            <!-- EventProgramList -->
+            <trans-unit id="contentElement.eventProgramList.title">
+                <source>List of event program items</source>
+                <target>Liste von Programmpunkten</target>
+            </trans-unit>
+            <trans-unit id="contentElement.eventProgramList.description">
+                <source>Adds a program item list-element.</source>
+                <target>Ein Programmpunkt einer Veranstaltung.</target>
+            </trans-unit>
+            <trans-unit id="contentElement.eventProgramList.rowDescription">
+                <source>Short Version</source>
+                <target>Kurzfassung</target>
+            </trans-unit>
+            <trans-unit id="contentElement.eventProgramList.imageManipulation.default">
+                <source>Default</source>
+                <target>Standard</target>
+            </trans-unit>
+
             <!-- StickyFooter -->
             <trans-unit id="contentElement.stickyfooter.title">
                 <source>Banner with Call-To-Action functions</source>
