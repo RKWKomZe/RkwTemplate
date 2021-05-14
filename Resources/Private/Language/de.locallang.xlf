@@ -15,10 +15,6 @@
 				<source>CSS classes</source>
 				<target>CSS-Klassen</target>
 			</trans-unit>
-            <trans-unit id="contentElement.landingpageOneCol.tx_rkwtemplate_anchor_id">
-                <source>Element ID as anchor</source>
-                <target>Element ID als Sprungmarke</target>
-            </trans-unit>
 
             <!-- Shortlink -->
 			<trans-unit id="contentElement.shortlink.type.I.0">

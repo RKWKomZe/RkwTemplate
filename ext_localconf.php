@@ -21,6 +21,11 @@ call_user_func(
             ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/ImageList.svg']
         );
         $iconRegistry->registerIcon(
+            'rkw-template-button', // Icon-Identifier, e.g. tx-myext-action-preview
+            \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+            ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/Button.svg']
+        );
+        $iconRegistry->registerIcon(
             'rkw-template-collage', // Icon-Identifier, e.g. tx-myext-action-preview
             \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
             ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/Collage.svg']

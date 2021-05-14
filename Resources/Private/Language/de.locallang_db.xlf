@@ -97,10 +97,6 @@
 				<source>CSS classes</source>
 				<target>CSS-Klassen</target>
 			</trans-unit>
-            <trans-unit id="contentElement.landingpageOneCol.tx_rkwtemplate_anchor_id">
-                <source>Element ID as anchor</source>
-                <target>Element ID als Sprungmarke</target>
-            </trans-unit>
 
             <!-- Mission Statement -->
             <trans-unit id="contentElement.mission.title">

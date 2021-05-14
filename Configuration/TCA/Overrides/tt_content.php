@@ -17,16 +17,6 @@ $temporaryColumn['tx_rkwtemplate_styles'] = [
     ],
 ];
 
-$temporaryColumn['tx_rkwtemplate_anchor_id'] = [
-    'exclude' => 0,
-    'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.landingpageOneCol.tx_rkwtemplate_anchor_id',
-    'config' => [
-        'type' => 'input',
-        'size' => 50,
-        'max' => 60,
-    ],
-];
-
 $temporaryColumn['tx_rkwtemplate_longitude'] = [
     'exclude' => 1,
     'label' => 'LLL:EXT:rkw_events/Resources/Private/Language/locallang_db.xlf:contentElement.latitude',

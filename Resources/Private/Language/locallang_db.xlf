@@ -81,9 +81,6 @@
 			<trans-unit id="contentElement.landingpageOneCol.tx_rkwtemplate_styles">
 				<source>CSS classes</source>
 			</trans-unit>
-            <trans-unit id="contentElement.landingpageOneCol.tx_rkwtemplate_anchor_id">
-                <source>Element ID as anchor</source>
-            </trans-unit>
 
             <!-- Mission Statement -->
             <trans-unit id="contentElement.mission.title">
