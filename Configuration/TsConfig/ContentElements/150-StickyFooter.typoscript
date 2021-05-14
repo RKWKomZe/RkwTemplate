@@ -1,0 +1,16 @@
+//=========================================================
+// Add contentElement to Wizard
+//=========================================================
+mod.wizards.newContentElement.wizardItems.common {
+    elements {
+        rkwtemplate_stickyfooter {
+            iconIdentifier = rkw-template-stickyfooter
+            title = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.stickyfooter.title
+            description = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.stickyfooter.description
+            tt_content_defValues {
+                CType = rkwtemplate_stickyfooter
+            }
+        }
+    }
+    show := addToList(rkwtemplate_stickyfooter)
+}

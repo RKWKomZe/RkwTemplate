@@ -16,14 +16,14 @@ call_user_func(
             ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/Slider.svg']
         );
         $iconRegistry->registerIcon(
-            'rkw-template-banner', // Icon-Identifier, e.g. tx-myext-action-preview
+            'rkw-template-stickyfooter', // Icon-Identifier, e.g. tx-myext-action-preview
             \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-            ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/Banner.svg']
+            ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/StickyFooter.svg']
         );
         $iconRegistry->registerIcon(
-            'rkw-template-button', // Icon-Identifier, e.g. tx-myext-action-preview
+            'rkw-template-stickyfooter', // Icon-Identifier, e.g. tx-myext-action-preview
             \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-            ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/Button.svg']
+            ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/StickyFooter.svg']
         );
         $iconRegistry->registerIcon(
             'rkw-template-collapsed', // Icon-Identifier, e.g. tx-myext-action-preview

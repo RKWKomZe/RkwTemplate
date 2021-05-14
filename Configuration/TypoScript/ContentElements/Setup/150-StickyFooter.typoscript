@@ -1,7 +1,7 @@
 tt_content {
-    rkwtemplate_banner =< lib.contentElement
-    rkwtemplate_banner {
-        templateName = Banner
+    rkwtemplate_stickyfooter =< lib.contentElement
+    rkwtemplate_stickyfooter {
+        templateName = StickyFooter
 
         // loading images as references
         dataProcessing {

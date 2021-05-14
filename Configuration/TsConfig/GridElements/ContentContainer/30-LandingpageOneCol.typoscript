@@ -12,7 +12,7 @@ tx_gridelements.setup.contentContainerLandingpageOneCol {
                         name = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.contentContainerLandingpageOneCol.content
                         colPos = 50
                         allowed {
-                            CType = header, text, textpic, image, textmedia, rkwtemplate_toc, rkwtemplate_imagetextoverlay, rkwtemplate_textimagebackground, rkwtemplate_imagelist, rkwtemplate_tilelist, rkwtemplate_banner, rkwtemplate_gallery, rkwtemplate_map, rkwtemplate_collapsed, list, html, form_formframework
+                            CType = header, text, textpic, image, textmedia, rkwtemplate_toc, rkwtemplate_imagetextoverlay, rkwtemplate_textimagebackground, rkwtemplate_imagelist, rkwtemplate_tilelist, rkwtemplate_stickyfooter, rkwtemplate_gallery, rkwtemplate_map, rkwtemplate_collapsed, list, html, form_formframework
                         }
                     }
                 }

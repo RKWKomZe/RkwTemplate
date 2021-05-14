@@ -4,7 +4,7 @@
 // Define element fields
 //===============================================================
 
-$GLOBALS['TCA']['tt_content']['types']['rkwtemplate_banner'] = [
+$GLOBALS['TCA']['tt_content']['types']['rkwtemplate_stickyfooter'] = [
     'showitem' => '
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
             --palette--;;general,
@@ -45,7 +45,7 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_banner'] = [
             ]
         ],
         'rowDescription' => [
-            'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.banner.rowDescription',
+            'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.stickyfooter.rowDescription',
             'config' => [
                 'eval' => 'trim',
             ]
@@ -122,9 +122,9 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_banner'] = [
     'tt_content',
     'CType',
     [
-        'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.banner.title',
-        'rkwtemplate_banner',
-        'rkw-template-banner',
+        'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.stickyfooter.title',
+        'rkwtemplate_stickyfooter',
+        'rkw-template-stickyfooter',
     ],
     'textmedia',
     'after'

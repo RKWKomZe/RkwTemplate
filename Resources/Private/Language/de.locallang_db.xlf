@@ -537,20 +537,20 @@
                 <target>Standard</target>
             </trans-unit>
 
-            <!-- Banner -->
-            <trans-unit id="contentElement.banner.title">
+            <!-- StickyFooter -->
+            <trans-unit id="contentElement.stickyfooter.title">
                 <source>Banner with Call-To-Action functions</source>
                 <target>Banner mit Call-To-Action-Funktionen</target>
             </trans-unit>
-            <trans-unit id="contentElement.banner.description">
+            <trans-unit id="contentElement.stickyfooter.description">
                 <source>Adds a banner element.</source>
                 <target>Banner mit Call-to-Action-Buttons und Thumbnail.</target>
             </trans-unit>
-            <trans-unit id="contentElement.banner.rowDescription">
+            <trans-unit id="contentElement.stickyfooter.rowDescription">
                 <source>Short Version</source>
                 <target>Kurzfassung</target>
             </trans-unit>
-            <trans-unit id="contentElement.banner.imageManipulation.default">
+            <trans-unit id="contentElement.stickyfooter.imageManipulation.default">
                 <source>Default</source>
                 <target>Standard</target>
             </trans-unit>

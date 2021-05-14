@@ -410,17 +410,17 @@
                 <source>Default</source>
             </trans-unit>
 
-            <!-- Banner -->
-            <trans-unit id="contentElement.banner.title">
+            <!-- StickyFooter -->
+            <trans-unit id="contentElement.stickyfooter.title">
                 <source>Banner with Call-To-Action functions</source>
             </trans-unit>
-            <trans-unit id="contentElement.banner.description">
+            <trans-unit id="contentElement.stickyfooter.description">
                 <source>Adds a banner element.</source>
             </trans-unit>
-            <trans-unit id="contentElement.banner.rowDescription">
+            <trans-unit id="contentElement.stickyfooter.rowDescription">
                 <source>Short Version</source>
             </trans-unit>
-            <trans-unit id="contentElement.banner.imageManipulation.default">
+            <trans-unit id="contentElement.stickyfooter.imageManipulation.default">
                 <source>Default</source>
             </trans-unit>
 
