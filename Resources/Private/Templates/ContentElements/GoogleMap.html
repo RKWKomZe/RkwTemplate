@@ -7,8 +7,12 @@
 
     <f:section name="Main">
 
-        <f:if condition="{data.tx_rkwtemplate_longitude} && {data.tx_rkwtemplate_latitude}">
+        <iframe title="Google Maps Karte"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d310846.4201711345!2d13.144552220538234!3d52.50651326721061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e373f035901%3A0x42120465b5e3b70!2sBerlin!5e0!3m2!1sde!2sde!4v1592920328550!5m2!1sde!2sde"
+            height="718" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+        </iframe>
 
+        <f:if condition="{data.tx_rkwtemplate_longitude} && {data.tx_rkwtemplate_latitude}">
             <f:then>
                 <rkwGeo:maps
                     longitude='{data.tx_rkwtemplate_longitude}'

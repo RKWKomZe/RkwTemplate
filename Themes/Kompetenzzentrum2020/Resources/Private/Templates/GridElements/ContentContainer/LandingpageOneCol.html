@@ -1,35 +1,31 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
-    <f:comment><!-- @todo: Hier brauche ich bessere Schalter? --></f:comment>
-    <div class="section contentbox content-padding-layoutmax {data.tx_rkwtemplate_styles}">
-        <f:switch expression="{data.header}">
-            <f:case value="Download">
+    <div id="c{data.uid}" class="section contentbox content-padding-layoutmax {data.tx_rkwtemplate_styles}">
+        <f:comment><!-- @todo: Styles besser nicht in die Hände der Redakteure kommen lassen. --></f:comment>
+        <f:switch expression="{data.tx_gridelements_view_children.0.CType}">
+            <f:case value="rkwtemplate_textimagebackground">
                 <f:render partial="ContentContainer/Content" arguments="{_all}"/>
             </f:case>
-            <f:case value="Programm">
+            <f:case value="rkwtemplate_gallery">
+                <f:render partial="ContentContainer/Content" arguments="{_all}"/>
+            </f:case>
+            <f:case value="rkwtemplate_collage">
+                <f:render partial="ContentContainer/Content" arguments="{_all}"/>
+            </f:case>
+            <f:case value="rkwtemplate_stickyfooter">
+                <f:render partial="ContentContainer/Content" arguments="{_all}"/>
+            </f:case>
+            <f:case value="rkwtemplate_googlemap">
+                <f:render partial="ContentContainer/Content" arguments="{_all}"/>
+            </f:case>
+            <f:case value="rkwtemplate_eventprogramlist">
                 <div class="events">
                     <h3 class="headline">{data.header}</h3>
                     <hr class="lined specials-bgcolor-secondary"/>
                     <f:render partial="ContentContainer/Content" arguments="{_all}"/>
                 </div>
             </f:case>
-            <f:case value="Galerie">
-                <f:render partial="ContentContainer/Content" arguments="{_all}"/>
-            </f:case>
-            <f:case value="Collage">
-                <f:render partial="ContentContainer/Content" arguments="{_all}"/>
-            </f:case>
-            <f:case value="Feedback">
-                <div class="flex-container">
-                    <f:render partial="ContentContainer/Content" arguments="{_all}"/>
-                </div>
-            </f:case>
-            <f:case value="Imagefilm">
-                <div class="flex-container">
-                    <f:render partial="ContentContainer/Content" arguments="{_all}"/>
-                </div>
-            </f:case>
-            <f:case value="Speaker">
+            <f:case value="rkwtemplate_tilelist">
                 <div class="flex-container">
                     <h3 class="headline headline--underlined headline--underlined-primary">{data.header}</h3>
                 </div>
@@ -42,15 +38,14 @@
                     <f:render partial="ContentContainer/Content" arguments="{_all}"/>
                 </div>
             </f:case>
-            <f:case value="GoogleMap">
-                <f:render partial="ContentContainer/Content" arguments="{_all}"/>
-            </f:case>
-            <f:case value="StickyFooter">
-                <f:render partial="ContentContainer/Content" arguments="{_all}"/>
+            <f:case value="html">
+                <div class="flex-container">
+                    <f:render partial="ContentContainer/Content" arguments="{_all}"/>
+                </div>
             </f:case>
             <f:defaultCase>
                 <div class="flex-container">
-                    <div class="flex-basis-7">
+                    <div class="flex-basis-7"><f:comment><!-- @todo: Check, ob das immer passt!? --></f:comment>
                         <f:render partial="ContentContainer/Content" arguments="{_all}"/>
                     </div>
                 </div>

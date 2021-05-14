@@ -9,7 +9,7 @@ tt_content {
             10 {
                 table = tt_content
                 pidInList = this
-                where = colPos = -1 AND CType != 'rkwtemplate_toc' AND CType != 'rkwtemplate_landingpagetoc' AND CType != 'rkwtemplate_button' AND header != "" AND tx_gridelements_columns = 50
+                where = CType = 'gridelements_pi1' AND CType != 'rkwtemplate_landingpagetoc' AND tx_gridelements_backend_layout = 'contentContainerLandingpageOneCol' AND header != ''
                 orderBy = sorting
                 as = items
             }
