@@ -601,6 +601,24 @@
                 <target>Standard</target>
             </trans-unit>
 
+            <!-- Collage -->
+            <trans-unit id="contentElement.collage.title">
+                <source>Collage</source>
+                <target>Collage</target>
+            </trans-unit>
+            <trans-unit id="contentElement.collage.description">
+                <source>Adds a collage element.</source>
+                <target>Fügt ein Collage-Element hinzu.</target>
+            </trans-unit>
+            <trans-unit id="contentElement.collage.rowDescription">
+                <source>Short Version</source>
+                <target>Kurzfassung</target>
+            </trans-unit>
+            <trans-unit id="contentElement.collage.imageManipulation.default">
+                <source>Default</source>
+                <target>Standard</target>
+            </trans-unit>
+
 		</body>
 	</file>
 </xliff>

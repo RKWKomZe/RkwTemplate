@@ -16,14 +16,14 @@ call_user_func(
             ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/Slider.svg']
         );
         $iconRegistry->registerIcon(
-            'rkw-template-stickyfooter', // Icon-Identifier, e.g. tx-myext-action-preview
+            'rkw-template-imagelist', // Icon-Identifier, e.g. tx-myext-action-preview
             \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-            ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/StickyFooter.svg']
+            ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/ImageList.svg']
         );
         $iconRegistry->registerIcon(
-            'rkw-template-stickyfooter', // Icon-Identifier, e.g. tx-myext-action-preview
+            'rkw-template-collage', // Icon-Identifier, e.g. tx-myext-action-preview
             \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-            ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/StickyFooter.svg']
+            ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/Collage.svg']
         );
         $iconRegistry->registerIcon(
             'rkw-template-collapsed', // Icon-Identifier, e.g. tx-myext-action-preview
@@ -59,6 +59,11 @@ call_user_func(
             'rkw-template-mission', // Icon-Identifier, e.g. tx-myext-action-preview
             \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
             ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/Mission.svg']
+        );
+        $iconRegistry->registerIcon(
+            'rkw-template-stickyfooter', // Icon-Identifier, e.g. tx-myext-action-preview
+            \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+            ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/StickyFooter.svg']
         );
         $iconRegistry->registerIcon(
             'rkw-template-textimagebackground', // Icon-Identifier, e.g. tx-myext-action-preview

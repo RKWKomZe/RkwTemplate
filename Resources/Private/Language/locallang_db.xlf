@@ -460,6 +460,20 @@
                 <source>Default</source>
             </trans-unit>
 
+            <!-- Collage -->
+            <trans-unit id="contentElement.collage.title">
+                <source>Collage</source>
+            </trans-unit>
+            <trans-unit id="contentElement.collage.description">
+                <source>Adds a collage element.</source>
+            </trans-unit>
+            <trans-unit id="contentElement.collage.rowDescription">
+                <source>Short Version</source>
+            </trans-unit>
+            <trans-unit id="contentElement.collage.imageManipulation.default">
+                <source>Default</source>
+            </trans-unit>
+
 		</body>
 	</file>
 </xliff>
