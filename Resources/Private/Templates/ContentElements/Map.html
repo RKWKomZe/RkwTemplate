@@ -1,0 +1,27 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:rkwGeo="http://typo3.org/ns/RKW/RkwGeolocation/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+    <f:layout name="Rkw" />
+
+    <f:section name="Main">
+
+        <f:if condition="{data.tx_rkwtemplate_longitude} && {data.tx_rkwtemplate_latitude}">
+
+            <f:then>
+                <rkwGeo:maps
+                    longitude='{data.tx_rkwtemplate_longitude}'
+                    latitude="{data.tx_rkwtemplate_latitude}"
+                    height="718px"
+                />
+            </f:then>
+            <f:else>
+                <rkwGeo:maps zoom="5" noMarker="true" height="718px"/>
+            </f:else>
+        </f:if>
+
+    </f:section>
+
+</html>
+

@@ -483,6 +483,24 @@
                 <target>Standard</target>
             </trans-unit>            
 
+            <!-- Map -->
+            <trans-unit id="contentElement.map.title">
+                <source>Google Map</source>
+                <target>Google Map</target>
+            </trans-unit>
+            <trans-unit id="contentElement.map.description">
+                <source>Adds a google map element.</source>
+                <target>Fügt eine Google Map hinzu.</target>
+            </trans-unit>
+            <trans-unit id="contentElement.map.rowDescription">
+                <source>Short Version</source>
+                <target>Kurzfassung</target>
+            </trans-unit>
+            <trans-unit id="contentElement.map.imageManipulation.default">
+                <source>Default</source>
+                <target>Standard</target>
+            </trans-unit>
+
             <!-- TextImageBackground -->
             <trans-unit id="contentElement.textImageBackground.title">
                 <source>Text with image as background</source>

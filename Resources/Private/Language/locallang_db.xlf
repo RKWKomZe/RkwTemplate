@@ -367,6 +367,21 @@
                 <source>Default</source>
             </trans-unit>
 
+            <!-- Map -->
+            <trans-unit id="contentElement.map.title">
+                <source>Google Map</source>
+            </trans-unit>
+            <trans-unit id="contentElement.map.description">
+                <source>Adds a google map element.</source>
+            </trans-unit>
+            <trans-unit id="contentElement.map.rowDescription">
+                <source>Short Version</source>
+            </trans-unit>
+            <trans-unit id="contentElement.map.imageManipulation.default">
+                <source>Default</source>
+            </trans-unit>
+
+
             <!-- TextImageBackground -->
             <trans-unit id="contentElement.textImageBackground.title">
                 <source>Text with image as background</source>
