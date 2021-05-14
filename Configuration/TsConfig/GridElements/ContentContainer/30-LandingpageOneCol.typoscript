@@ -4,7 +4,7 @@ tx_gridelements.setup.contentContainerLandingpageOneCol {
     description = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.contentContainerLandingpageOneCol.description
     config {
         colCount = 1
-        rowCount = 2
+        rowCount = 1
         rows {
             1 {
                 columns {
@@ -13,19 +13,6 @@ tx_gridelements.setup.contentContainerLandingpageOneCol {
                         colPos = 50
                         allowed {
                             CType = header, text, textpic, image, textmedia, rkwtemplate_toc, rkwtemplate_imagetextoverlay, rkwtemplate_textimagebackground, rkwtemplate_imagelist, rkwtemplate_eventprogramlist, rkwtemplate_tilelist, rkwtemplate_stickyfooter, rkwtemplate_gallery, rkwtemplate_collage, rkwtemplate_button, rkwtemplate_googlemap, rkwtemplate_collapsed, list, html, form_formframework
-                        }
-                    }
-                }
-            }
-
-            2 {
-                columns {
-                    1 {
-                        name = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.contentContainerLandingpageOneCol.callToAction
-                        colPos = 70
-                        allowed {
-                            CType = list
-                            list_type = rkwauthors_rkwauthorscontactbox
                         }
                     }
                 }

@@ -234,6 +234,15 @@
                 <target>Fügt einen Container für Förderer ein. Üblicherweise wird dieses Element an prominenter Stelle auf Themen-Seiten eingesetzt.</target>
             </trans-unit>
 
+            <!-- LandingpageTableOfContentsContainer -->
+            <trans-unit id="contentElement.landingpageTableOfContentsContainer.title">
+                <source>TableOfContents-Container (Landingpage)</source>
+                <target>Inhaltsverzeichnis-Container (Landingpage)</target>
+            </trans-unit>
+            <trans-unit id="contentElement.landingpageTableOfContentsContainer.description">
+                <source>Adds a TableOfContents-Container.</source>
+                <target>Fügt einen Container für das Inhaltsverzeichnis der Landingpage hinzu.</target>
+            </trans-unit>
 
             <!-- ContentContainerTwoCols -->
             <trans-unit id="contentElement.contentContainerTwoCols.title">
@@ -436,6 +445,15 @@
                 <target>Fügt ein Inhaltsverzeichnis ein. Berücksichtigt werden darin die Überschriften (Feld: Überschrift) aller Inhaltselemente der aktuellen Seite.</target>
             </trans-unit>
 
+            <!-- LandingpageTableOfContents -->
+            <trans-unit id="contentElement.landingpagetoc.title">
+                <source>Table Of Contents</source>
+                <target>Inhaltsverzeichnis</target>
+            </trans-unit>
+            <trans-unit id="contentElement.landingpagetoc.description">
+                <source>Adds a table of contents.</source>
+                <target>Fügt ein Inhaltsverzeichnis ein. Berücksichtigt werden darin die Überschriften (Feld: Überschrift) aller Inhaltselemente der aktuellen Seite.</target>
+            </trans-unit>
 
             <!-- CollapsedText -->
             <trans-unit id="contentElement.collapsed.title">

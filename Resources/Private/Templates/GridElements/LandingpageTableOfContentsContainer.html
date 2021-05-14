@@ -1,0 +1,48 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:rkwBasics="http://typo3.org/ns/RKW/RkwBasics/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+    <f:layout name="Rkw" />
+
+    <f:section name="Main">
+
+        <aside>
+            <div class="contentbox">
+                <div class="labels">
+                        <span class="label--outlined">
+                          Veranstaltung
+                        </span>
+                    <span class="label--outlined">
+                          Vortrag
+                        </span>
+                    <span class="label--outlined">
+                          Studie
+                        </span>
+                </div>
+                <p><strong>29. Mai 2018<br>
+                    11.00 – 14.30 Uhr</strong></p>
+                Stadtbad Oderberger, Berlin
+            </div>
+            <f:if condition="<rkwBasics:isEmpty string='{data.tx_gridelements_view_column_60}' /> == 0">
+                <f:format.raw>{data.tx_gridelements_view_column_60}</f:format.raw>
+            </f:if>
+            <div class="contentbox text-small">
+                <h5>Bei Fragen:</h5>
+                <p><span class="is-medium">RKW Kompetenzzentrum</span><br>
+                    Düsseldorfer Straße 40 A<br>
+                    65760 Eschborn</p>
+                <br>
+                <p><span class="is-medium">Christof Starke</span><br>
+                    06196 495 3240<br>
+                    <a href="mailto:rkw@ring-of-fire.de" class="specials-textcolor-primary">starke@rkw.de</a><br>
+                    <a href="#" class="specials-textcolor-primary">www.rkw-kompetenzzentrum.de</a></p>
+
+                <p>Eventmanagement:<br>
+                    089 4161 58 696<br>
+                    <a href="mailto:rkw@ring-of-fire.de" class="specials-textcolor-primary">rkw@ring-of-fire.de</a></p>
+            </div>
+        </aside>
+
+    </f:section>
+</html>

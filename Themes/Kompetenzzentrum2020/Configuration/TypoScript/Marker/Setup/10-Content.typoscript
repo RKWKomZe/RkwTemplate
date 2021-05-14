@@ -72,5 +72,8 @@ lib.txRkwTemplate {
         landingpage < styles.content.get
         landingpage.select.where = {#colPos} = 100
 
+        landingpagetoc = CONTENT
+        landingpagetoc < styles.content.get
+        landingpagetoc.select.where = {#colPos} = 210
     }
 }

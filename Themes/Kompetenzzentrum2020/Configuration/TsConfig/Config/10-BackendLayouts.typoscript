@@ -286,10 +286,19 @@ mod {
                 title = Landingpage
                 config {
                     backend_layout {
-                        colCount = 2
-                        rowCount = 1
+                        colCount = 1
+                        rowCount = 2
                         rows {
                             1 {
+                                columns {
+                                    1 {
+                                        name = Inhaltsverzeichnis
+                                        colPos = 210
+                                    }
+
+                                }
+                            }
+                            2 {
                                 columns {
                                     1 {
                                         name = Inhalte

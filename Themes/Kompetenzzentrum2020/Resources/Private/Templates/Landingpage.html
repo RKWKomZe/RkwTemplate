@@ -73,54 +73,10 @@
 
         <main class="main space-between no-padding-narrow" id="main">
 
-            <aside>
-                <div class="contentbox">
-                    <div class="labels">
-                        <span class="label--outlined">
-                          Veranstaltung
-                        </span>
-                        <span class="label--outlined">
-                          Vortrag
-                        </span>
-                        <span class="label--outlined">
-                          Studie
-                        </span>
-                    </div>
-                    <p><strong>29. Mai 2018<br>
-                        11.00 – 14.30 Uhr</strong></p>
-                    Stadtbad Oderberger, Berlin
-                </div>
-                <div class="list">
-                    <h5>Inhalt</h5>
-                    <ul class="specials-textcolor-primary">
-                        <li><a href="#intro" data-target="#intro">Einleitung</a></li>
-                        <li><a href="#download" data-target="#download">Download Studie</a></li>
-                        <li><a href="#program" data-target="#program">Programm</a></li>
-                        <li><a href="#gallery" data-target="#gallery">Eindrücke von der Veranstaltung</a></li>
-                        <li><a href="#feedback" data-target="#feedback">Feedback senden</a></li>
-                        <li><a href="#imagemov" data-target="#imagemov">RKW Imagefilm</a></li>
-                        <li><a href="#speaker" data-target="#speaker">Speaker</a></li>
-                        <li><a href="#eventloc" data-target="#eventloc">Veranstaltungs­ort</a></li>
-                        <li><a href="#eventloc" data-target="#eventloc">Kontakt</a></li>
-                        <li><a href="#more" data-target="#more">Weitere Inhalte</a></li>
-                    </ul>
-                </div>
-                <div class="contentbox text-small">
-                    <h5>Bei Fragen:</h5>
-                    <p><span class="is-medium">RKW Kompetenzzentrum</span><br>
-                        Düsseldorfer Straße 40 A<br>
-                        65760 Eschborn</p>
-                    <br>
-                    <p><span class="is-medium">Christof Starke</span><br>
-                        06196 495 3240<br>
-                        <a href="mailto:rkw@ring-of-fire.de" class="specials-textcolor-primary">starke@rkw.de</a><br>
-                        <a href="#" class="specials-textcolor-primary">www.rkw-kompetenzzentrum.de</a></p>
-
-                    <p>Eventmanagement:<br>
-                        089 4161 58 696<br>
-                        <a href="mailto:rkw@ring-of-fire.de" class="specials-textcolor-primary">rkw@ring-of-fire.de</a></p>
-                </div>
-            </aside>
+            <f:comment><!-- landingpage toc --></f:comment>
+            <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.content.landingpagetoc', data:'{data}')}">
+                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.landingpagetoc" data="{data}" />
+            </f:if>
 
             <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.landingpage" data="{data}" />
 

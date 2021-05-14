@@ -1,0 +1,22 @@
+tx_gridelements.setup.landingpageTableOfContentsContainer {
+
+    title = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.landingpageTableOfContentsContainer.title
+    description = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.landingpageTableOfContentsContainer.description
+    config {
+        colCount = 1
+        rowCount = 1
+        rows {
+            1 {
+                columns {
+                    1 {
+                        name = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.landingpageTableOfContentsContainer.title
+                        colPos = 60
+                        allowed {
+                            CType = rkwtemplate_landingpagetoc
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
