@@ -1,0 +1,6 @@
+tt_content {
+    rkwtemplate_googlemap =< lib.contentElement
+    rkwtemplate_googlemap {
+        templateName = GoogleMap
+    }
+}

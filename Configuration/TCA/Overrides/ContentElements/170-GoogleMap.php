@@ -4,7 +4,7 @@
 // Define element fields
 //===============================================================
 
-$GLOBALS['TCA']['tt_content']['types']['rkwtemplate_map'] = [
+$GLOBALS['TCA']['tt_content']['types']['rkwtemplate_googlemap'] = [
     'showitem' => '
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
             --palette--;;general,
@@ -54,9 +54,9 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_map'] = [
     'tt_content',
     'CType',
     [
-        'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.map.title',
-        'rkwtemplate_map',
-        'rkw-template-map',
+        'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.googlemap.title',
+        'rkwtemplate_googlemap',
+        'rkw-template-googlemap',
     ],
     'textmedia',
     'after'

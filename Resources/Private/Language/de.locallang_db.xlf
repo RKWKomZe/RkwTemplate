@@ -483,20 +483,20 @@
                 <target>Standard</target>
             </trans-unit>            
 
-            <!-- Map -->
-            <trans-unit id="contentElement.map.title">
+            <!-- Google Map -->
+            <trans-unit id="contentElement.googlemap.title">
                 <source>Google Map</source>
                 <target>Google Map</target>
             </trans-unit>
-            <trans-unit id="contentElement.map.description">
+            <trans-unit id="contentElement.googlemap.description">
                 <source>Adds a google map element.</source>
                 <target>Fügt eine Google Map hinzu.</target>
             </trans-unit>
-            <trans-unit id="contentElement.map.rowDescription">
+            <trans-unit id="contentElement.googlemap.rowDescription">
                 <source>Short Version</source>
                 <target>Kurzfassung</target>
             </trans-unit>
-            <trans-unit id="contentElement.map.imageManipulation.default">
+            <trans-unit id="contentElement.googlemap.imageManipulation.default">
                 <source>Default</source>
                 <target>Standard</target>
             </trans-unit>

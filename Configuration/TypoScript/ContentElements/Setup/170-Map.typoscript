@@ -1,6 +1,0 @@
-tt_content {
-    rkwtemplate_map =< lib.contentElement
-    rkwtemplate_map {
-        templateName = Map
-    }
-}

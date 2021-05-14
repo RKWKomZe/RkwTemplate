@@ -367,17 +367,17 @@
                 <source>Default</source>
             </trans-unit>
 
-            <!-- Map -->
-            <trans-unit id="contentElement.map.title">
+            <!-- Google Map -->
+            <trans-unit id="contentElement.googlemap.title">
                 <source>Google Map</source>
             </trans-unit>
-            <trans-unit id="contentElement.map.description">
+            <trans-unit id="contentElement.googlemap.description">
                 <source>Adds a google map element.</source>
             </trans-unit>
-            <trans-unit id="contentElement.map.rowDescription">
+            <trans-unit id="contentElement.googlemap.rowDescription">
                 <source>Short Version</source>
             </trans-unit>
-            <trans-unit id="contentElement.map.imageManipulation.default">
+            <trans-unit id="contentElement.googlemap.imageManipulation.default">
                 <source>Default</source>
             </trans-unit>
 
