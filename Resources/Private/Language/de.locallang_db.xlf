@@ -4,6 +4,16 @@
 		<header/>
 		<body>
 
+            <!-- Primary and secondary color for landingpages -->
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_primarycolor">
+                <source>Primary color</source>
+                <target>Primärer Farbwert</target>
+            </trans-unit>
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_secondarycolor">
+                <source>Secondary color</source>
+                <target>Sekundärer Farbwert</target>
+            </trans-unit>
+
 		    <!-- Cropping -->
             <trans-unit id="pages.keyvisual.imageManipulation.topicDesktop">
                <source>Topic (Desktop)</source>

@@ -1,5 +1,40 @@
 <?php
 
+/*  @todo: Nur bei Landingpages einbinden!!! Über DisplayCond? */
+$tmpColsPages = [
+
+    'tx_rkwtemplate_landingpage_primarycolor' => [
+        'displayCond' => 'FIELD:layout:=:30000',
+        'exclude' => 0,
+        'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:pages.tx_rkwtemplate_landingpage_primarycolor',
+        'config' => [
+            'type' => 'input',
+            'renderType' => 'colorpicker',
+            'size' => 10,
+        ],
+    ],
+    'tx_rkwtemplate_landingpage_secondarycolor' => [
+        'displayCond' => 'FIELD:layout:=:30000',
+        'exclude' => 0,
+        'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:pages.tx_rkwtemplate_landingpage_secondarycolor',
+        'config' => [
+            'type' => 'input',
+            'renderType' => 'colorpicker',
+            'size' => 10,
+        ],
+    ],
+
+];
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns(
+    'pages', $tmpColsPages
+);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette(
+    'pages',
+    'layout',
+    '--linebreak--, tx_rkwtemplate_landingpage_primarycolor, tx_rkwtemplate_landingpage_secondarycolor'
+);
+
 $extKey = 'rkw_template';
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Configuration/TsConfig/TsConfig.typoscript', 'RKW Template');

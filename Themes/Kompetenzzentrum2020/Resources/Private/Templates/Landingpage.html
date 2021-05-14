@@ -5,7 +5,16 @@
     <f:section name="Header">
 
         <f:comment><!-- @todo: über Variablen oder gesonderte body-classes einbinden --></f:comment>
+        {data.tx_rkwtemplate_landingpage_primarycolor}
         <style type="text/css">
+            /*
+            .primaryColor {
+                color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primarycolor}</f:format.raw>;
+            }
+            .secondaryColor {
+                color: <f:format.raw><f:format.raw>{data.tx_rkwtemplate_landingpage_secondarycolor}</f:format.raw></f:format.raw>;
+            }
+            */
 
             .specials-textcolor-white {
                 color: #fff !important;
@@ -16,32 +25,32 @@
             }
 
             .specials-textcolor-primary {
-                color: #009fee !important;
+                color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primarycolor}</f:format.raw> !important;
             }
 
             .specials-bgcolor-primary {
-                background-color: #009fee !important;
-                border-color: #009fee !important;
+                background-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primarycolor}</f:format.raw> !important;
+                border-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primarycolor}</f:format.raw> !important;
             }
 
             .specials-textcolor-secondary {
-                color: #fec700 !important;
+                color: <f:format.raw>{data.tx_rkwtemplate_landingpage_secondarycolor}</f:format.raw> !important;
             }
 
             .specials-bgcolor-secondary {
-                background-color: #fec700 !important;
-                border-color: #fec700 !important;
+                background-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_secondarycolor}</f:format.raw> !important;
+                border-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_secondarycolor}</f:format.raw> !important;
             }
 
             .btn--specials:hover {
-                background-color: #fec700 !important;
-                border-color: #fec700 !important;
+                background-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_secondarycolor}</f:format.raw> !important;
+                border-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_secondarycolor}</f:format.raw> !important;
                 color:#fff !important;
             }
 
             .btn--white:hover {
-                background-color: #009fee !important;
-                border-color: #009fee !important;
+                background-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primarycolor}</f:format.raw> !important;
+                border-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primarycolor}</f:format.raw> !important;
                 color:#fff!important;
             }
 
