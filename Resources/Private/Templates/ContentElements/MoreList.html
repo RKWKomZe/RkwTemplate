@@ -10,9 +10,11 @@
         <div class="flex-basis-4">
             <div class="list-header">
                 <h5>
-                    <svg class="icon icon--16">
-                        <use xlink:href="#ic-download"/>
-                    </svg>
+                    <f:if condition="{data.tx_rkwtemplate_icon}">
+                        <svg class="icon icon--16">
+                            <use xlink:href="#{data.tx_rkwtemplate_icon}"/>
+                        </svg>
+                    </f:if>
                     {data.header}
                 </h5>
             </div>

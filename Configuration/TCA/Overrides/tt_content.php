@@ -19,7 +19,7 @@ $temporaryColumn['tx_rkwtemplate_styles'] = [
 
 $temporaryColumn['tx_rkwtemplate_longitude'] = [
     'exclude' => 1,
-    'label' => 'LLL:EXT:rkw_events/Resources/Private/Language/locallang_db.xlf:contentElement.latitude',
+    'label' => 'LLL:EXT:rkw_events/Resources/Private/Language/locallang_db.xlf:contentElement.googleMap.latitude',
     'config' => [
         'type' => 'input',
         'size' => 30,
@@ -29,11 +29,56 @@ $temporaryColumn['tx_rkwtemplate_longitude'] = [
 
 $temporaryColumn['tx_rkwtemplate_latitude'] = [
     'exclude' => 0,
-    'label' => 'LLL:EXT:rkw_events/Resources/Private/Language/locallang_db.xlf:contentElement.longitude',
+    'label' => 'LLL:EXT:rkw_events/Resources/Private/Language/locallang_db.xlf:contentElement.googleMap.longitude',
     'config' => [
         'type' => 'input',
         'size' => 30,
         'eval' => 'trim',
+    ],
+];
+
+$temporaryColumn['tx_rkwtemplate_icon'] = [
+    'exclude' => 0,
+    'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.moreList.tx_rkwtemplate_icon',
+    'config' => [
+        'type' => 'input',
+        'size' => 45,
+        'eval' => 'trim',
+        'valuePicker' => [
+            'items' => [
+                ['ic-youtube', 'ic-youtube'],
+                ['ic-youtube-2', 'ic-youtube-2'],
+                ['ic-facebook', 'ic-facebook'],
+                ['ic-instagram', 'ic-instagram'],
+                ['ic-circle-arrow', 'ic-circle-arrow'],
+                ['ic-twitter', 'ic-twitter'],
+                ['ic-xing', 'ic-xing'],
+                ['ic-linkedin"', 'ic-linkedin"'],
+                ['ic-document', 'ic-document'],
+                ['ic-date', 'ic-date'],
+                ['ic-trash', 'ic-trash'],
+                ['ic-date-alarm', 'ic-date-alarm'],
+                ['ic-location', 'ic-location'],
+                ['ic-download', 'ic-download'],
+                ['ic-views', 'ic-views'],
+                ['ic-search', 'ic-search'],
+                ['ic-circle-close', 'ic-circle-close'],
+                ['ic-arrow-primary', 'ic-arrow-primary'],
+                ['ic-arrow-footer', 'ic-arrow-footer'],
+                ['ic-plus-colored', 'ic-plus-colored'],
+                ['ic-ticket', 'ic-ticket'],
+                ['ic-speech', 'ic-speech'],
+                ['ic-mail', 'ic-mail'],
+                ['ic-phone', 'ic-phone'],
+                ['ic-globe', 'ic-globe'],
+                ['ic-clipboard', 'ic-clipboard'],
+                ['ic-contacts', 'ic-contacts'],
+                ['ic-people', 'ic-people'],
+                ['ic-events', 'ic-events'],
+                ['ic-mobile-menu', 'ic-mobile-menu'],
+                ['ic-mobile-menu-close', 'ic-mobile-menu-close'],
+            ],
+        ],
     ],
 ];
 

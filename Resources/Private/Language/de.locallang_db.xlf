@@ -573,6 +573,10 @@
                 <source>Default</source>
                 <target>Standard</target>
             </trans-unit>
+            <trans-unit id="contentElement.moreList.tx_rkwtemplate_icon">
+                <source>Icon</source>
+                <target>Icon</target>
+            </trans-unit>
 
             <!-- EventProgramList -->
             <trans-unit id="contentElement.eventProgramList.title">
