@@ -312,23 +312,6 @@
                 <source>Project</source>
             </trans-unit>
 
-            <!-- Button -->
-            <trans-unit id="contentElement.button.title">
-                <source>Button</source>
-            </trans-unit>
-            <trans-unit id="contentElement.button.description">
-                <source>Adds a button.</source>
-            </trans-unit>
-			<trans-unit id="contentElement.button.type.I.0">
-				<source>internal link</source>
-			</trans-unit>
-            <trans-unit id="contentElement.button.type.I.1">
-                <source>external link</source>
-            </trans-unit>
-            <trans-unit id="contentElement.button.type.I.2">
-                <source>anchor link</source>
-            </trans-unit>
-
             <!-- Overview -->
             <trans-unit id="contentElement.overview.title">
                 <source>Overview</source>
@@ -405,6 +388,20 @@
                 <source>Short Version</source>
             </trans-unit>
             <trans-unit id="contentElement.textImageBackground.imageManipulation.default">
+                <source>Default</source>
+            </trans-unit>
+
+            <!-- TextWithButton -->
+            <trans-unit id="contentElement.textWithButton.title">
+                <source>Text with button as call-to-action element</source>
+            </trans-unit>
+            <trans-unit id="contentElement.textWithButton.description">
+                <source>Adds an text-with-button-element.</source>
+            </trans-unit>
+            <trans-unit id="contentElement.textWithButton.rowDescription">
+                <source>Short Version</source>
+            </trans-unit>
+            <trans-unit id="contentElement.textWithButton.imageManipulation.default">
                 <source>Default</source>
             </trans-unit>
 

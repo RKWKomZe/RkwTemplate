@@ -27,6 +27,16 @@
                 <rkwBasics:format.removeEmptyParagraphs>
                     <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data.bodytext}</f:format.html>
                 </rkwBasics:format.removeEmptyParagraphs>
+                <f:if condition="{data.header_link}">
+                    <f:link.typolink
+                        parameter="{data.header_link}"
+                        class="btn btn--specials specials-bgcolor-primary specials-textcolor-white"
+                        title="{data.header}"
+                        additionalAttributes="{data-target:'{data.header_link}'}"
+                    >
+                        {data.header}
+                    </f:link.typolink>
+                </f:if>
             </div>
         </div>
 

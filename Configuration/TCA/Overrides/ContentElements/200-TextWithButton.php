@@ -4,11 +4,12 @@
 // Define element fields
 //===============================================================
 
-$GLOBALS['TCA']['tt_content']['types']['rkwtemplate_button'] = [
+$GLOBALS['TCA']['tt_content']['types']['rkwtemplate_textwithbutton'] = [
     'showitem' => '
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
             --palette--;;general,
             --palette--;;headers,
+        bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,
             --palette--;;language,
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
@@ -25,7 +26,7 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_button'] = [
                 'type' => 'passthrough'
             ]
         ],
-        'subheader' => [
+        'header_layout' => [
             'config' => [
                 'type' => 'passthrough'
             ]
@@ -37,7 +38,13 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_button'] = [
         ],
         'header_link' => [
             'config' => [
+                'eval' => 'trim',
+            ]
+        ],
+        'bodytext' => [
+            'config' => [
                 'eval' => 'trim,required',
+                'enableRichtext' => true,
             ]
         ],
     ]
@@ -52,9 +59,9 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_button'] = [
     'tt_content',
     'CType',
     [
-        'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.button.title',
-        'rkwtemplate_button',
-        'rkw-template-button',
+        'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.textWithButton.title',
+        'rkwtemplate_textwithbutton',
+        'rkw-template-textwithbutton',
     ],
     'textmedia',
     'after'

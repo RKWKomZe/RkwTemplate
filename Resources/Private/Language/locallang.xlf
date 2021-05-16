@@ -31,17 +31,6 @@
                 <source>Project</source>
             </trans-unit>
 
-            <!-- Button -->
-			<trans-unit id="contentElement.button.type.I.0">
-				<source>internal link</source>
-			</trans-unit>
-            <trans-unit id="contentElement.button.type.I.1">
-                <source>external link</source>
-            </trans-unit>
-            <trans-unit id="contentElement.button.type.I.2">
-                <source>anchor link</source>
-            </trans-unit>
-
             <!-- CollapsedText -->
             <trans-unit id="contentElement.collapsed.showMore">
                 <source>show more</source>

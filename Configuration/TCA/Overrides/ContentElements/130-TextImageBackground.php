@@ -36,7 +36,7 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_textimagebackground'] = [
         ],
         'header_link' => [
             'config' => [
-                'type' => 'passthrough'
+                'eval' => 'trim',
             ]
         ],
         'header' => [

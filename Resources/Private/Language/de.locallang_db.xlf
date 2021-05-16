@@ -402,28 +402,6 @@
                 <target>Projekt</target>
             </trans-unit>
 
-            <!-- Button -->
-            <trans-unit id="contentElement.button.title">
-                <source>Button</source>
-                <target>Button</target>
-            </trans-unit>
-            <trans-unit id="contentElement.button.description">
-                <source>Adds a button.</source>
-                <target>Fügt einen Button mit Verlinkung hinzu.</target>
-            </trans-unit>
-			<trans-unit id="contentElement.button.type.I.0">
-				<source>internal link</source>
-				<target>interner Link</target>
-			</trans-unit>
-            <trans-unit id="contentElement.button.type.I.1">
-                <source>external link</source>
-                <target>externer Link</target>
-            </trans-unit>
-            <trans-unit id="contentElement.button.type.I.2">
-                <source>anchor link</source>
-                <target>Sprungmarke</target>
-            </trans-unit>
-
             <!-- Overview -->
             <trans-unit id="contentElement.overview.title">
                 <source>Overview</source>
@@ -433,7 +411,6 @@
                 <source>Adds an overview text.</source>
                 <target>Ein kurzer Text mit prominenter Verlinkung zur Darstellung zentraler inhaltlicher Einstiegspunkte. Üblicherweise wird dieses Element auf der Startseite der rkw.de eingesetzt.</target>
             </trans-unit>
-
 
             <!-- TableOfContents -->
             <trans-unit id="contentElement.toc.title">
@@ -539,6 +516,24 @@
                 <target>Kurzfassung</target>
             </trans-unit>
             <trans-unit id="contentElement.textImageBackground.imageManipulation.default">
+                <source>Default</source>
+                <target>Standard</target>
+            </trans-unit>
+
+            <!-- TextWithButton -->
+            <trans-unit id="contentElement.textWithButton.title">
+                <source>Text with button as call-to-action element</source>
+                <target>Text mit einem Button als Call-to-Action-Element</target>
+            </trans-unit>
+            <trans-unit id="contentElement.textWithButton.description">
+                <source>Adds an text-with-button-element.</source>
+                <target>Text mit einem Button als Call-to-Action-Element</target>
+            </trans-unit>
+            <trans-unit id="contentElement.textWithButton.rowDescription">
+                <source>Short Version</source>
+                <target>Kurzfassung</target>
+            </trans-unit>
+            <trans-unit id="contentElement.textWithButton.imageManipulation.default">
                 <source>Default</source>
                 <target>Standard</target>
             </trans-unit>
