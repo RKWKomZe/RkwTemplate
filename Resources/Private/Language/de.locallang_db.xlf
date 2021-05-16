@@ -556,6 +556,24 @@
                 <target>Standard</target>
             </trans-unit>
 
+            <!-- MoreList -->
+            <trans-unit id="contentElement.moreList.title">
+                <source>More List</source>
+                <target>Liste mit weiteren Inhalten</target>
+            </trans-unit>
+            <trans-unit id="contentElement.moreList.description">
+                <source>Adds an more list-element.</source>
+                <target>Eine Liste mit weiteren Inhalten.</target>
+            </trans-unit>
+            <trans-unit id="contentElement.moreList.rowDescription">
+                <source>Short Version</source>
+                <target>Kurzfassung</target>
+            </trans-unit>
+            <trans-unit id="contentElement.moreList.imageManipulation.default">
+                <source>Default</source>
+                <target>Standard</target>
+            </trans-unit>
+
             <!-- EventProgramList -->
             <trans-unit id="contentElement.eventProgramList.title">
                 <source>List of event program items</source>

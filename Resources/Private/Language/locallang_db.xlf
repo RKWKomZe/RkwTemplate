@@ -419,6 +419,20 @@
                 <source>Default</source>
             </trans-unit>
 
+            <!-- MoreList -->
+            <trans-unit id="contentElement.moreList.title">
+                <source>More List</source>
+            </trans-unit>
+            <trans-unit id="contentElement.moreList.description">
+                <source>Adds an more list-element.</source>
+            </trans-unit>
+            <trans-unit id="contentElement.moreList.rowDescription">
+                <source>Short Version</source>
+            </trans-unit>
+            <trans-unit id="contentElement.moreList.imageManipulation.default">
+                <source>Default</source>
+            </trans-unit>
+
             <!-- EventProgramList -->
             <trans-unit id="contentElement.eventProgramList.title">
                 <source>List of event program items</source>

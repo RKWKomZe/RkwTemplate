@@ -43,6 +43,16 @@
                     <f:render partial="ContentContainer/Content" arguments="{_all}"/>
                 </div>
             </f:case>
+            <f:case value="rkwtemplate_morelist">
+                <div class="flex-container">
+                    <div class="flex-basis-12">
+                        <h3 class="headline headline--underlined headline--underlined-primary">{data.header}</h3>
+                        <div class="flex-container">
+                            <f:render partial="ContentContainer/Content" arguments="{_all}"/>
+                        </div>
+                    </div>
+                </div>
+            </f:case>
             <f:defaultCase>
                 <div class="flex-container">
                     <div class="flex-basis-7"><f:comment><!-- @todo: Check, ob das immer passt!? --></f:comment>

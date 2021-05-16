@@ -1,0 +1,29 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:rkwBasics="http://typo3.org/ns/RKW/RkwBasics/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+    <f:layout name="Rkw" />
+
+    <f:section name="Main">
+
+        <div class="flex-basis-4">
+            <div class="list-header">
+                <h5>
+                    <svg class="icon icon--16">
+                        <use xlink:href="#ic-download"/>
+                    </svg>
+                    {data.header}
+                </h5>
+            </div>
+            <rkwBasics:format.removeEmptyParagraphs>
+                <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data.bodytext}</f:format.html>
+            </rkwBasics:format.removeEmptyParagraphs>
+        </div>
+
+    </f:section>
+</html>
+
+
+
+
