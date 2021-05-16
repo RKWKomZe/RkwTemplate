@@ -1,4 +1,6 @@
-<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:rkwBasics="http://typo3.org/ns/RKW/RkwBasics/ViewHelpers"
+    data-namespace-typo3-fluid="true">
 
     <f:layout name="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.utility.pageLayoutSwitch')}" />
 
@@ -47,17 +49,18 @@
 
         </style>
 
-        <f:comment><!-- .js-header-class muss eigentlich zum Header --></f:comment>
         <div class="siteheader siteheader--big siteheader--detailimg flex valign-center js-hero-class js-header-class">
             <div class="parallax-container">
                 <div class="parallax">
-                    <img src="fileadmin/_processed_/5/e/csm_image-placeholder_5146ed8dba.jpg" alt="" style="transform: translate3d(-50%, 0px, 0px); opacity: 1;">
+                    <f:comment><!-- @todo: Use this keyvisual correctly. --></f:comment>
+                    <f:cObject typoscriptObjectPath="lib.txRkwTemplate.keyvisual.article" data="{data}" />
                 </div>
             </div>
+            <f:comment><!-- @todo: Das sollte variabel gemacht werden! --></f:comment>
             <div class="flex-container flex-basis-12 siteheader__specials-title ">
                 <div class="flex-basis-12 siteheader__specials-img">
-                    <f:comment><!-- Header-Grafik (Artikelbild, modifiziert) --></f:comment>
-                    <f:comment><!-- Im Mockup ist das Schrift als Grafik, nicht so geil und auch nicht variabel --></f:comment>
+                    <f:comment><!-- @todo: Header-Grafik (Artikelbild, modifiziert) --></f:comment>
+                    <f:comment><!-- @todo: Im Mockup ist das Schrift als Grafik, nicht so geil und auch nicht variabel --></f:comment>
                     <img src="fileadmin/_processed_/5/e/csm_image-placeholder_5146ed8dba.jpg" alt="Mittelstand">
                 </div>
                 <a class="btn btn--specials specials-bgcolor-primary specials-text-white">Anmelden</a>
