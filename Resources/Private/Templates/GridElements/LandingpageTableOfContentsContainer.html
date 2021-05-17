@@ -20,28 +20,18 @@
                           Studie
                         </span>
                 </div>
-                <p><strong>29. Mai 2018<br>
-                    11.00 – 14.30 Uhr</strong></p>
-                Stadtbad Oderberger, Berlin
+                <f:if condition="<rkwBasics:isEmpty string='{data.tx_gridelements_view_column_10}' /> == 0">
+                    <f:format.raw>{data.tx_gridelements_view_column_10}</f:format.raw>
+                </f:if>
             </div>
-            <f:if condition="<rkwBasics:isEmpty string='{data.tx_gridelements_view_column_60}' /> == 0">
-                <f:format.raw>{data.tx_gridelements_view_column_60}</f:format.raw>
+            <f:if condition="<rkwBasics:isEmpty string='{data.tx_gridelements_view_column_20}' /> == 0">
+                <f:format.raw>{data.tx_gridelements_view_column_20}</f:format.raw>
             </f:if>
-            <div class="contentbox text-small">
-                <h5>Bei Fragen:</h5>
-                <p><span class="is-medium">RKW Kompetenzzentrum</span><br>
-                    Düsseldorfer Straße 40 A<br>
-                    65760 Eschborn</p>
-                <br>
-                <p><span class="is-medium">Christof Starke</span><br>
-                    06196 495 3240<br>
-                    <a href="mailto:rkw@ring-of-fire.de" class="specials-textcolor-primary">starke@rkw.de</a><br>
-                    <a href="#" class="specials-textcolor-primary">www.rkw-kompetenzzentrum.de</a></p>
-
-                <p>Eventmanagement:<br>
-                    089 4161 58 696<br>
-                    <a href="mailto:rkw@ring-of-fire.de" class="specials-textcolor-primary">rkw@ring-of-fire.de</a></p>
-            </div>
+            <f:if condition="<rkwBasics:isEmpty string='{data.tx_gridelements_view_column_30}' /> == 0">
+                <div class="contentbox contentbox__lastrow text-small">
+                    <f:format.raw>{data.tx_gridelements_view_column_30}</f:format.raw>
+                </div>
+            </f:if>
         </aside>
 
     </f:section>
