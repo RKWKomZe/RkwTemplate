@@ -50,7 +50,7 @@
     </f:if>
 
     <f:comment><!-- image resources --></f:comment>
-    <f:if condition="! {rkwBasics:isEmpty(string:'{f:cObject(typoscriptObjectPath: \'lib.txRkwTemplate.pageInfo.imageResources\')}')}">
+    <f:if condition="! {rkwBasics:isEmpty(string:'{f:cObject(typoscriptObjectPath: \'lib.txRkwTemplate.pageInfo.imageResources\')}')} && {data.tx_gridelements_backend_layout} != 'contentContainerLandingpageOneCol'">
         <p class="media-sources {f:if(condition: '! {rkwBasics:isEmpty(string:\'{data.tx_gridelements_view_column_70}\')}', then: 'media-sources--space')}" role="contentinfo">
             <strong><f:translate key="{settings.themeLanguageFile}:partials.gridElements.contentContainer.content.imageResources" />: </strong>
             <f:cObject typoscriptObjectPath="lib.txRkwTemplate.pageInfo.imageResources" />
