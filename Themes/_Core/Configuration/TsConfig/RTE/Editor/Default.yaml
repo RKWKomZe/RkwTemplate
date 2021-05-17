@@ -22,7 +22,7 @@ editor:
     contentsCss: "EXT:rkw_template/Themes/_Core/Resources/Public/css/rte.css"
 
     # block-formats available
-    format_tags: 'p;h1;h2;h3;h4'
+    format_tags: 'p;h1;h2;h3;h4;h5'
 
     stylesSet:
       # block level styles
