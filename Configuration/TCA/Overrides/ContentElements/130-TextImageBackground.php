@@ -10,7 +10,8 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_textimagebackground'] = [
             --palette--;;general,
             --palette--;;headers,
         rowDescription,
-        bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,            
+        bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,
+        tx_rkwtemplate_linktext,
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.images,
             image,            
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,
@@ -54,6 +55,11 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_textimagebackground'] = [
             'config' => [
                 'eval' => 'trim,required',
                 'enableRichtext' => true,
+            ]
+        ],
+        'tx_rkwtemplate_linktext' => [
+            'config' => [
+                'eval' => 'trim',
             ]
         ],
         'image' => [

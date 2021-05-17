@@ -11,6 +11,7 @@ CREATE TABLE pages (
 #
 CREATE TABLE tt_content (
     tx_rkwtemplate_styles VARCHAR(255) DEFAULT '',
+    tx_rkwtemplate_linktext VARCHAR(255) DEFAULT '',
 	tx_rkwtemplate_longitude varchar(255) DEFAULT '' NOT NULL,
 	tx_rkwtemplate_latitude varchar(255) DEFAULT '' NOT NULL,
 	tx_rkwtemplate_icon varchar(45) DEFAULT '' NOT NULL,

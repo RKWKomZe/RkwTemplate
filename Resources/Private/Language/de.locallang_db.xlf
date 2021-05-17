@@ -48,7 +48,11 @@
                <target>Teaser</target>
             </trans-unit>
 
-
+            <!-- General -->
+            <trans-unit id="contentElement.tx_rkwtemplate_linktext">
+                <source>Link text</source>
+                <target>Linkbeschriftung</target>
+            </trans-unit>
 
             <!-- Slider -->
 			<trans-unit id="contentElement.slider.title">

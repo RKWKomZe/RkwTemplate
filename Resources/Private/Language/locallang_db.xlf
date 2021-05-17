@@ -35,6 +35,10 @@
                <source>Teaser</source>
             </trans-unit>
 
+            <!-- General -->
+            <trans-unit id="contentElement.tx_rkwtemplate_linktext">
+                <source>Link text</source>
+            </trans-unit>
 
             <!-- Slider -->
 			<trans-unit id="contentElement.slider.title">

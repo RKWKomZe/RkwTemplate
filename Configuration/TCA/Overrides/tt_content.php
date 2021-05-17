@@ -7,6 +7,16 @@
 //===============================================================
 // Extending tt_content fields
 //===============================================================
+$temporaryColumn['tx_rkwtemplate_linktext'] = [
+    'exclude' => 0,
+    'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.tx_rkwtemplate_linktext',
+    'config' => [
+        'type' => 'input',
+        'size' => 50,
+        'max' => 255,
+    ],
+];
+
 $temporaryColumn['tx_rkwtemplate_styles'] = [
     'exclude' => 0,
     'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.landingpageOneCol.tx_rkwtemplate_styles',
