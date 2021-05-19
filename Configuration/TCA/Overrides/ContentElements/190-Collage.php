@@ -85,24 +85,16 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_collage'] = [
                         'crop' => [
                             'config' => [
 
-                                // original file dimensions: 1050 x 500
+                                // original file dimensions: 425 x 550
                                 'cropVariants' => [
                                     'default' => [
                                         'title' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.imageList.imageManipulation.default',
                                         'allowedAspectRatios' => [
-                                            '1050:500' => [
-                                                'title' => '1050 x 500',
-                                                'value' => 1050 / 500
+                                            '425:550' => [
+                                                'title' => '425 x 550',
+                                                'value' => 425 / 550
                                             ]
                                         ],
-                                        'coverAreas' => [
-                                            [
-                                                'x' => 0.6,
-                                                'y' => 0,
-                                                'width' => 0.4,
-                                                'height' => 1,
-                                            ],
-                                        ]
                                     ]
                                 ]
                             ]
