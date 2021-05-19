@@ -479,7 +479,10 @@
                 <source>Short Version</source>
             </trans-unit>
             <trans-unit id="contentElement.gallery.imageManipulation.default">
-                <source>Default</source>
+                <source>Large image</source>
+            </trans-unit>
+            <trans-unit id="contentElement.gallery.imageManipulation.thumbnail">
+                <source>Thumbnail</source>
             </trans-unit>
 
             <!-- Collage -->

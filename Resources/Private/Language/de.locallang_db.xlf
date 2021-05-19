@@ -632,8 +632,12 @@
                 <target>Kurzfassung</target>
             </trans-unit>
             <trans-unit id="contentElement.gallery.imageManipulation.default">
-                <source>Default</source>
-                <target>Standard</target>
+                <source>Large image</source>
+                <target>Vergrößerte Darstellung des Bildes</target>
+            </trans-unit>
+            <trans-unit id="contentElement.gallery.imageManipulation.thumbnail">
+                <source>Thumbnail</source>
+                <target>Thumbnail</target>
             </trans-unit>
 
             <!-- Collage -->

@@ -52,8 +52,7 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_gallery'] = [
         ],
         'bodytext' => [
             'config' => [
-                'eval' => 'trim,required',
-                'enableRichtext' => true,
+                'type' => 'passthrough'
             ]
         ],
         'image' => [
@@ -88,21 +87,22 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_gallery'] = [
                                 // original file dimensions: 1050 x 500
                                 'cropVariants' => [
                                     'default' => [
-                                        'title' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.imageList.imageManipulation.default',
+                                        'title' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.gallery.imageManipulation.default',
                                         'allowedAspectRatios' => [
                                             '1050:500' => [
                                                 'title' => '1050 x 500',
                                                 'value' => 1050 / 500
                                             ]
                                         ],
-                                        'coverAreas' => [
-                                            [
-                                                'x' => 0.6,
-                                                'y' => 0,
-                                                'width' => 0.4,
-                                                'height' => 1,
-                                            ],
-                                        ]
+                                    ],
+                                    'thumbnail' => [
+                                        'title' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.gallery.imageManipulation.thumbnail',
+                                        'allowedAspectRatios' => [
+                                            '125:125' => [
+                                                'title' => '125 x 125',
+                                                'value' => 125 / 125
+                                            ]
+                                        ],
                                     ]
                                 ]
                             ]
