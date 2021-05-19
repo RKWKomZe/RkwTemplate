@@ -73,6 +73,13 @@
                 <source>show more</source>
                 <target>mehr lesen</target>
             </trans-unit>
+
+            <!-- TileList -->
+            <trans-unit id="contentElement.tileList.labelShowMore">
+                <source>Show more</source>
+                <target>Mehr lesen</target>
+            </trans-unit>
+
 		</body>
 	</file>
 </xliff>

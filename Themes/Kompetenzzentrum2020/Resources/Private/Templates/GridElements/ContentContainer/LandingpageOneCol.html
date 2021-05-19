@@ -1,7 +1,6 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
     <div id="c{data.uid}" class="contentbox content-padding-layoutmax {f:if(condition: '{data.tx_gridelements_view_children.0.CType} == \'rkwtemplate_textimagebackground\'', then: 'has-bg', else: '')} {data.tx_rkwtemplate_styles}">
-        <f:comment><!-- @todo: Styles besser nicht in die Hände der Redakteure kommen lassen. --></f:comment>
         <f:switch expression="{data.tx_gridelements_view_children.0.CType}">
             <f:case value="rkwtemplate_textimagebackground">
                 <f:render partial="ContentContainer/Content" arguments="{_all}"/>
@@ -29,7 +28,7 @@
                 <div class="flex-container">
                     <h3 class="headline headline--underlined headline--underlined-primary">{data.header}</h3>
                 </div>
-                <div class="speaker-header" style="background-image:url('{f:uri.image(image:images.0, width:'1050',cropVariant:'default')}')">
+                <div class="speaker-header" style="background-image:url('{f:uri.image(image:images.0,cropVariant:'default')}')">
                     <blockquote class="blockquote-specials">
                         {data.subheader}
                     </blockquote>

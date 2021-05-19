@@ -9,7 +9,6 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_tilelist'] = [
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
             --palette--;;general,
             --palette--;;headers,
-        rowDescription,
         bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,            
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.images,
             image,            
@@ -31,7 +30,7 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_tilelist'] = [
         ],
         'subheader' => [
             'config' => [
-                'type' => 'passthrough'
+                'eval' => 'trim',
             ]
         ],
         'header_link' => [
@@ -44,15 +43,9 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_tilelist'] = [
                 'eval' => 'trim',
             ]
         ],
-        'rowDescription' => [
-            'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.tileList.rowDescription',
-            'config' => [
-                'eval' => 'trim',
-            ]
-        ],
         'bodytext' => [
             'config' => [
-                'eval' => 'trim,required',
+                'eval' => 'trim',
                 'enableRichtext' => true,
             ]
         ],
@@ -69,18 +62,16 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_tilelist'] = [
                         ],
                         'crop' => [
                             'config' => [
-
-                                // original file dimensions: 328 x 328
                                 'cropVariants' => [
                                     'default' => [
-                                        'title' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.tileList.imageManipulation.default',
+                                        'title' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.imageList.imageManipulation.default',
                                         'allowedAspectRatios' => [
-                                            '328:328' => [
-                                                'title' => '328 x 328',
-                                                'value' => 328 / 328
+                                            '125:125' => [
+                                                'title' => '125 x 125',
+                                                'value' => 125 / 125
                                             ]
-                                        ]
-                                    ],
+                                        ],
+                                    ]
                                 ]
                             ]
                         ]

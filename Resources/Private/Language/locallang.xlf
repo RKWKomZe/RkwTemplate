@@ -44,6 +44,12 @@
             <trans-unit id="contentElement.topic.showMore">
                 <source>show more</source>
             </trans-unit>
+
+            <!-- TileList -->
+            <trans-unit id="contentElement.tileList.labelShowMore">
+                <source>Show more</source>
+            </trans-unit>
+
 		</body>
 	</file>
 </xliff>

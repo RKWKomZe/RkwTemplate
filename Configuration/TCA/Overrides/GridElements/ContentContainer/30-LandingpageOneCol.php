@@ -67,7 +67,7 @@ $GLOBALS['TCA']['tt_content']['types']['gridelements_pi1'] = [
                                         ],
                                         'coverAreas' => [
                                             [
-                                                'x' => 0.6,
+                                                'x' => 0,
                                                 'y' => 0,
                                                 'width' => 0.4,
                                                 'height' => 1,

@@ -416,12 +416,6 @@
             <trans-unit id="contentElement.tileList.description">
                 <source>Adds an tile list-element.</source>
             </trans-unit>
-            <trans-unit id="contentElement.tileList.rowDescription">
-                <source>Short Version</source>
-            </trans-unit>
-            <trans-unit id="contentElement.tileList.imageManipulation.default">
-                <source>Default</source>
-            </trans-unit>
 
             <!-- MoreList -->
             <trans-unit id="contentElement.moreList.title">

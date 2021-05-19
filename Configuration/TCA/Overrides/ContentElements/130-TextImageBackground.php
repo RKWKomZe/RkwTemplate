@@ -90,7 +90,6 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_textimagebackground'] = [
                         ],
                         'crop' => [
                             'config' => [
-
                                 // original file dimensions: 1050 x 500
                                 'cropVariants' => [
                                     'default' => [
@@ -103,9 +102,9 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_textimagebackground'] = [
                                         ],
                                         'coverAreas' => [
                                             [
-                                                'x' => 0.6,
+                                                'x' => 0.1,
                                                 'y' => 0,
-                                                'width' => 0.4,
+                                                'width' => 0.5,
                                                 'height' => 1,
                                             ],
                                         ]
