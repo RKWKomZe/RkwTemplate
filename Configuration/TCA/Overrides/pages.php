@@ -1,6 +1,5 @@
 <?php
 
-/*  @todo: Nur bei Landingpages einbinden!!! Über DisplayCond? */
 $tmpColsPages = [
 
     'tx_rkwtemplate_landingpage_primarycolor' => [

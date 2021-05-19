@@ -49,7 +49,7 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_textwithbutton'] = [
             ]
         ],
         'tx_rkwtemplate_linktext' => [
-            'displayCond' => 'header_link',
+            'displayCond' => 'FIELD:header_link:REQ:true',
             'config' => [
                 'eval' => 'trim',
             ]
