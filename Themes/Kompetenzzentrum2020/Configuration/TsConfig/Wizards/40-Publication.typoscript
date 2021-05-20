@@ -14,7 +14,7 @@
     mod.wizards.newContentElement.wizardItems.menu.show =
 
     // remove grid elements by their ID (aka name)
-    tx_gridelements.excludeLayoutIds = sliderContainer, topicContainer, logoContainer, promoterContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerLandingpageOneCol
+    tx_gridelements.excludeLayoutIds = sliderContainer, topicContainer, logoContainer, promoterContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerLandingpageOneCol, landingpageTableOfContentsContainer
 
 [end]
 
@@ -25,7 +25,7 @@
     TCEFORM.tt_content.CType.keepItems = gridelements_pi1
 
     // remove grid elements by their ID (aka name)
-    tx_gridelements.excludeLayoutIds = sliderContainer, topicContainer, logoContainer, promoterContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerLandingpageOneCol
+    tx_gridelements.excludeLayoutIds = sliderContainer, topicContainer, logoContainer, promoterContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerLandingpageOneCol, landingpageTableOfContentsContainer
 
 [end]
 
@@ -36,7 +36,7 @@
     TCEFORM.tt_content.CType.keepItems = list
 
     // remove grid elements by their ID (aka name)
-    tx_gridelements.excludeLayoutIds = sliderContainer, topicContainer, logoContainer, promoterContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerOneCol, contentContainerOneColPagination, contentContainerLandingpageOneCol
+    tx_gridelements.excludeLayoutIds = sliderContainer, topicContainer, logoContainer, promoterContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerOneCol, contentContainerOneColPagination, contentContainerLandingpageOneCol, landingpageTableOfContentsContainer
 
 [end]
 
@@ -47,6 +47,6 @@
     TCEFORM.tt_content.CType.keepItems = list
 
     // remove grid elements by their ID (aka name)
-    tx_gridelements.excludeLayoutIds = sliderContainer, topicContainer, logoContainer, promoterContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerOneCol, contentContainerOneColPagination, contentContainerLandingpageOneCol
+    tx_gridelements.excludeLayoutIds = sliderContainer, topicContainer, logoContainer, promoterContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerOneCol, contentContainerOneColPagination, contentContainerLandingpageOneCol, landingpageTableOfContentsContainer
 
 [end]

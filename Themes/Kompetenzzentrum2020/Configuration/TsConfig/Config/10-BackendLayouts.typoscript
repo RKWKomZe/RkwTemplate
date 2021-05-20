@@ -282,7 +282,7 @@ mod {
             //======================================
             // Landingpage
             //======================================
-            landingpage {
+            landingPages {
                 title = Landingpage
                 config {
                     backend_layout {
@@ -293,16 +293,16 @@ mod {
                                 columns {
                                     1 {
                                         name = Inhaltsverzeichnis
-                                        colPos = 210
+                                        colPos = 910
+                                        maxitems = 1
                                     }
-
                                 }
                             }
                             2 {
                                 columns {
                                     1 {
                                         name = Inhalte
-                                        colPos = 100
+                                        colPos = 900
                                     }
                                 }
                             }
