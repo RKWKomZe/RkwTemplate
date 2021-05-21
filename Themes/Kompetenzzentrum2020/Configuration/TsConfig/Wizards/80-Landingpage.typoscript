@@ -38,6 +38,6 @@
     TCEFORM.tt_content.CType.keepItems = gridelements_pi1
 
     // remove grid elements by their ID (aka name)
-    tx_gridelements.excludeLayoutIds = sliderContainer, promoterContainer, logoContainer, topicContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerOneCol, contentContainerOneColPagination, contentContainerOneColOrderForm, contentContainerLandingpageOneCol
+    tx_gridelements.excludeLayoutIds = sliderContainer, promoterContainer, logoContainer, topicContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerOneCol, contentContainerOneColPagination, contentContainerOneColOrderForm, contentContainerLandingpageOneCol, contentContainerLandingpageTwoCols
 
 [end]

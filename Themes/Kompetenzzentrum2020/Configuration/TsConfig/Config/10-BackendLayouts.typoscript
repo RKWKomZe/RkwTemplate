@@ -287,18 +287,9 @@ mod {
                 config {
                     backend_layout {
                         colCount = 1
-                        rowCount = 2
+                        rowCount = 1
                         rows {
                             1 {
-                                columns {
-                                    1 {
-                                        name = Inhaltsverzeichnis
-                                        colPos = 910
-                                        maxitems = 1
-                                    }
-                                }
-                            }
-                            2 {
                                 columns {
                                     1 {
                                         name = Inhalte
