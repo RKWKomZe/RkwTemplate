@@ -90,9 +90,9 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_topic'] = [
                                     'default' => [
                                         'title' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.topic.imageManipulation.default',
                                         'allowedAspectRatios' => [
-                                            '570:320' => [
-                                                'title' => '570 x 320',
-                                                'value' => 570 / 320
+                                            '300:240' => [
+                                                'title' => '300 x 240',
+                                                'value' => 300 / 240
                                             ]
                                         ]
                                     ],
