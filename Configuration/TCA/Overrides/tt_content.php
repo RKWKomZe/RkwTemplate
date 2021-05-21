@@ -18,6 +18,12 @@ $temporaryColumn['tx_rkwtemplate_linktext'] = [
 ];
 
 $temporaryColumn['tx_rkwtemplate_styles'] = [
+    'displayCond' => [
+        'OR' => [
+            'FIELD:tx_gridelements_backend_layout:=:contentContainerLandingpageOneCol',
+            'FIELD:tx_gridelements_backend_layout:=:contentContainerLandingpageTwoCols',
+        ],
+    ],
     'exclude' => 0,
     'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.landingpageOneCol.tx_rkwtemplate_styles',
     'config' => [
