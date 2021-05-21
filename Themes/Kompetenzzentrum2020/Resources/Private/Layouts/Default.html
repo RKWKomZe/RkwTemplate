@@ -16,14 +16,14 @@
 		<f:comment><!-- main section --></f:comment>
 		<f:render section="Content" />
 
-        <f:if condition="{data.backend_layout} != 'pagets__landingpage'">
+        <f:if condition="{data.backend_layout} != 'pagets__landingPages'">
             <f:comment><!-- footer --></f:comment>
             <f:render partial="Basics/Footer" section="Default" arguments="{_all}"/>
         </f:if>
 
 	</div>
 
-    <f:if condition="{data.backend_layout} == 'pagets__landingpage'">
+    <f:if condition="{data.backend_layout} == 'pagets__landingPages'">
         <f:comment><!-- footer --></f:comment>
         <f:render partial="Basics/Footer" section="Default" arguments="{_all}"/>
     </f:if>

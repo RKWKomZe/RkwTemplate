@@ -79,11 +79,6 @@
 
         <main class="main space-between no-padding-narrow" id="main">
 
-            <f:comment><!-- landingpage toc --></f:comment>
-            <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.content.landingpagetoc', data:'{data}')}">
-                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.landingpagetoc" data="{data}" />
-            </f:if>
-
             <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.landingpage" data="{data}" />
 
         </main>
