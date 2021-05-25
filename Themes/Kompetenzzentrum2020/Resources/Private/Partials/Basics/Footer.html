@@ -3,15 +3,6 @@
     <f:section name="Default">
         <footer class="footer flex-container">
 
-            <f:if condition="! {rkwBasics:isEmpty(string:'{f:cObject(typoscriptObjectPath: \'lib.txRkwTemplate.pageInfo.imageResources\')}')} && {data.backend_layout} == 'pagets__landingPages'">
-                <div class="footerlinks flex-basis-12">
-                    <p class="media-sources {f:if(condition: '! {rkwBasics:isEmpty(string:\'{data.tx_gridelements_view_column_70}\')}', then: 'media-sources--space')}" role="contentinfo">
-                        <strong><f:translate key="{settings.themeLanguageFile}:partials.gridElements.contentContainer.content.imageResources" />: </strong>
-                        <f:cObject typoscriptObjectPath="lib.txRkwTemplate.pageInfo.imageResources" />
-                    </p>
-                </div>
-            </f:if>
-
             <div class="nav footerlinks flex-basis-12">
                 <span class="footerlinks__desc float-left">
                     <f:cObject typoscriptObjectPath="lib.txRkwTemplate.utility.copyright" data="{data}" />

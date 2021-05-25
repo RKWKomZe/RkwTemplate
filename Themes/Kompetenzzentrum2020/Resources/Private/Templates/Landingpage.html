@@ -72,6 +72,19 @@
                 <f:render partial="FooterSection/Landingpage" arguments="{_all}" />
             </f:if>
 
+            <f:if condition="! {rkwBasics:isEmpty(string:'{f:cObject(typoscriptObjectPath: \'lib.txRkwTemplate.pageInfo.imageResources\')}')} && {data.backend_layout} == 'pagets__landingPages'">
+                <div id="c22240" class="contentbox content-padding-layoutmax  ">
+                    <div class="flex-container">
+                        <div class="flex-basis-12">
+                            <p class="media-sources {f:if(condition: '! {rkwBasics:isEmpty(string:\'{data.tx_gridelements_view_column_70}\')}', then: 'media-sources--space')}" role="contentinfo">
+                                <strong><f:translate key="{settings.themeLanguageFile}:partials.gridElements.contentContainer.content.imageResources" />: </strong>
+                                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.pageInfo.imageResources" />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </f:if>
+
         </main>
 
     </f:section>
