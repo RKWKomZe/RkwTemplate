@@ -302,7 +302,7 @@ mod {
                                     1 {
                                         name = Call to action
                                         colPos = 910
-#                                        maxitems = 1
+                                        maxitems = 1
                                     }
                                 }
                             }

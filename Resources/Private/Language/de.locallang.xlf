@@ -80,6 +80,12 @@
                 <target>Mehr lesen</target>
             </trans-unit>
 
+           <!-- StickyFooter -->
+            <trans-unit id="contentElement.stickyFooter.labelScrollToTop">
+                <source>Scroll to top</source>
+                <target>Nach oben</target>
+            </trans-unit>
+
 		</body>
 	</file>
 </xliff>
