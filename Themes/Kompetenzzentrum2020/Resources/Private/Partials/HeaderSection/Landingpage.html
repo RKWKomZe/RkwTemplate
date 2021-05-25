@@ -1,0 +1,33 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+    <div class="siteheader siteheader--big siteheader--detailimg flex valign-center js-hero-class js-header-class">
+        <div class="parallax-container">
+            <div class="parallax">
+                <f:comment><!-- @todo: Use this keyvisual correctly. --></f:comment>
+                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.keyvisual.article" data="{data}" />
+            </div>
+        </div>
+        <f:comment><!-- @todo: Das sollte variabel gemacht werden! --></f:comment>
+        <div class="flex-container flex-basis-12 siteheader__specials-title ">
+            <div class="flex-basis-12 siteheader__specials-img">
+                <f:comment><!-- @todo: Header-Grafik (Artikelbild, modifiziert) --></f:comment>
+                <f:comment><!-- @todo: Im Mockup ist das Schrift als Grafik, nicht so geil und auch nicht variabel --></f:comment>
+                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.keyvisual.article" data="{data}" />
+            </div>
+            <f:if condition="{data.tx_rkwtemplate_landingpage_cta_link}">
+                <f:link.typolink
+                    parameter="{data.tx_rkwtemplate_landingpage_cta_link}"
+                    class="btn btn--specials specials-bgcolor-primary specials-text-white"
+                    title="{data.tx_rkwtemplate_landingpage_cta_linktext}"
+                    additionalAttributes="{data-target:'{data.tx_rkwtemplate_landingpage_cta_link}'}"
+                >
+                    {data.tx_rkwtemplate_landingpage_cta_linktext}
+                </f:link.typolink>
+            </f:if>
+        </div>
+    </div>
+
+</html>
+
+
+

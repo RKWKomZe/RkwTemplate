@@ -14,6 +14,16 @@
                 <target>Sekundärer Farbwert</target>
             </trans-unit>
 
+            <!-- Link and link text for landingpage headers -->
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_cta_link">
+                <source>Link</source>
+                <target>Link</target>
+            </trans-unit>
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_cta_linktext">
+                <source>Link text</source>
+                <target>Linkbeschriftung</target>
+            </trans-unit>
+
 		    <!-- Cropping -->
             <trans-unit id="pages.keyvisual.imageManipulation.topicDesktop">
                <source>Topic (Desktop)</source>
