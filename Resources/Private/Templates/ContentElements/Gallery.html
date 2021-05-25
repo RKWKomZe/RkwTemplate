@@ -14,7 +14,7 @@
                 <f:for each="{images}" as="image" iteration="iterator">
                     <li>
                         <button aria-selected="{f:if(condition: '{iterator.index} == 0', then: 'true', else: 'false')}" aria-controls="slider-mod__item-{iterator.index}">
-                            <img src="{f:uri.image(image:image,cropVariant:'thumbnail')}" loading="lazy" alt="{image.title}"/>
+                            <img src="{f:uri.image(image:image,cropVariant:'thumbnail',width:'117')}" loading="lazy" alt="{image.title}"/>
                         </button>
                     </li>
                 </f:for>
