@@ -360,7 +360,7 @@
 
             <!-- ContentContainerLandingpageOneCol -->
             <trans-unit id="contentElement.contentContainerLandingpageOneCol.title">
-                <source>Content-Container with one Col (Landingpage)</source>
+                <source>Content-Container with one column (Landingpage)</source>
                 <target>Inhalts-Container mit einer Spalte (Landingpage)</target>
             </trans-unit>
             <trans-unit id="contentElement.contentContainerLandingpageOneCol.description">
@@ -374,6 +374,24 @@
             <trans-unit id="contentElement.contentContainerLandingpageOneCol.callToAction">
                 <source>Call To Action</source>
                 <target>Call To Action</target>
+            </trans-unit>
+
+            <!-- ContentContainerLandingpageTwoCols -->
+            <trans-unit id="contentElement.contentContainerLandingpageOneCol.title">
+                <source>Content-Container with two columns (Landingpage)</source>
+                <target>Inhalts-Container mit zwei Spalten (Landingpage)</target>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerLandingpageOneCol.description">
+                <source>Add a Content-Container with two columns.</source>
+                <target>Fügt einen Inhalts-Container mit einem zweispaltigen Layout ein (Inhalts- und Marginalspalte).</target>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerLandingpageTwoCols.content">
+                <source>Content</source>
+                <target>Inhalt</target>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerLandingpageTwoCols.aside">
+                <source>Aside</source>
+                <target>Marginalspalte</target>
             </trans-unit>
 
             <!-- Shortlink -->

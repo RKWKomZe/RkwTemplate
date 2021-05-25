@@ -293,6 +293,20 @@
                 <source>Call To Action</source>
             </trans-unit>
 
+            <!-- ContentContainerLandingpageTwoCols -->
+            <trans-unit id="contentElement.contentContainerLandingpageOneCol.title">
+                <source>Content-Container with one Col (Landingpage)</source>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerLandingpageOneCol.description">
+                <source>Add a Content-Container with two columns.</source>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerLandingpageTwoCols.content">
+                <source>Content</source>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerLandingpageTwoCols.aside">
+                <source>Aside</source>
+            </trans-unit>
+
             <!-- Shortlink -->
             <trans-unit id="contentElement.shortlink.title">
                 <source>Shortlink</source>
