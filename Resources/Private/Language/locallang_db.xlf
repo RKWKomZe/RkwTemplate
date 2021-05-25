@@ -195,14 +195,6 @@
                 <source>Adds a Promoter-Container.</source>
             </trans-unit>
 
-            <!-- LandingpageTableOfContentsContainer -->
-            <trans-unit id="contentElement.landingpageTableOfContentsContainer.title">
-                <source>TableOfContents-Container (Landingpage)</source>
-            </trans-unit>
-            <trans-unit id="contentElement.landingpageTableOfContentsContainer.description">
-                <source>Adds a TableOfContents-Container.</source>
-            </trans-unit>
-
             <!-- ContentContainerTwoCols -->
             <trans-unit id="contentElement.contentContainerTwoCols.title">
                 <source>Content-Container with two Cols</source>

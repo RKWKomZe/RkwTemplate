@@ -248,16 +248,6 @@
                 <target>Fügt einen Container für Förderer ein. Üblicherweise wird dieses Element an prominenter Stelle auf Themen-Seiten eingesetzt.</target>
             </trans-unit>
 
-            <!-- LandingpageTableOfContentsContainer -->
-            <trans-unit id="contentElement.landingpageTableOfContentsContainer.title">
-                <source>TableOfContents-Container (Landingpage)</source>
-                <target>Inhaltsverzeichnis-Container (Landingpage)</target>
-            </trans-unit>
-            <trans-unit id="contentElement.landingpageTableOfContentsContainer.description">
-                <source>Adds a TableOfContents-Container.</source>
-                <target>Fügt einen Container für das Inhaltsverzeichnis der Landingpage hinzu.</target>
-            </trans-unit>
-
             <!-- ContentContainerTwoCols -->
             <trans-unit id="contentElement.contentContainerTwoCols.title">
                 <source>Content-Container with two Cols</source>

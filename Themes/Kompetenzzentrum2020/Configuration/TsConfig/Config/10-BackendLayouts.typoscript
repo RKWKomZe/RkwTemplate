@@ -287,13 +287,22 @@ mod {
                 config {
                     backend_layout {
                         colCount = 1
-                        rowCount = 1
+                        rowCount = 2
                         rows {
                             1 {
                                 columns {
                                     1 {
                                         name = Inhalte
                                         colPos = 900
+                                    }
+                                }
+                            }
+                            2 {
+                                columns {
+                                    1 {
+                                        name = Call to action
+                                        colPos = 910
+#                                        maxitems = 1
                                     }
                                 }
                             }
