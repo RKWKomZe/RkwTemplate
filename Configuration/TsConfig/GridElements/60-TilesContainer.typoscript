@@ -1,0 +1,22 @@
+tx_gridelements.setup.tilesContainer {
+
+    title = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.tilesContainer.title
+    description = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.tilesContainer.description
+    config {
+        colCount = 1
+        rowCount = 1
+        rows {
+            1 {
+                columns {
+                    1 {
+                        name = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.tile.title
+                        colPos = 60
+                        allowed {
+                            CType = rkwtemplate_tile
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

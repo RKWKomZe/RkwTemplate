@@ -11,8 +11,9 @@ tx_gridelements.setup.contentContainerLandingpageTwoCols {
                     1 {
                         name = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.contentContainerLandingpageTwoCols.content
                         colPos = 50
+                        maxItems = 1
                         allowed {
-                            CType = header, text, textpic, image, textmedia, rkwtemplate_toc, rkwtemplate_imagetextoverlay, rkwtemplate_textimagebackground, rkwtemplate_imagelist, rkwtemplate_eventprogramlist, rkwtemplate_morelist, rkwtemplate_tilelist, rkwtemplate_gallery, rkwtemplate_collage, rkwtemplate_textwithbutton, rkwtemplate_googlemap, rkwtemplate_collapsed, list, html, form_formframework
+                            CType = header, text, textpic, image, textmedia, rkwtemplate_textimagebackground, rkwtemplate_eventprogramlist, rkwtemplate_textwithbutton, rkwtemplate_googlemap, list, html, form_formframework
                         }
                     }
                     2 {

@@ -423,11 +423,11 @@
                 <source>Default</source>
             </trans-unit>
 
-            <!-- TileList -->
-            <trans-unit id="contentElement.tileList.title">
-                <source>Tile List</source>
+            <!-- Tile -->
+            <trans-unit id="contentElement.tile.title">
+                <source>Tile</source>
             </trans-unit>
-            <trans-unit id="contentElement.tileList.description">
+            <trans-unit id="contentElement.tile.description">
                 <source>Adds an tile list-element.</source>
             </trans-unit>
 

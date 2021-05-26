@@ -86,9 +86,9 @@ call_user_func(
             ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/TextWithButton.svg']
         );
         $iconRegistry->registerIcon(
-            'rkw-template-tilelist', // Icon-Identifier, e.g. tx-myext-action-preview
+            'rkw-template-tile', // Icon-Identifier, e.g. tx-myext-action-preview
             \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-            ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/TileList.svg']
+            ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/Tile.svg']
         );
         $iconRegistry->registerIcon(
             'rkw-template-topic', // Icon-Identifier, e.g. tx-myext-action-preview

@@ -232,8 +232,8 @@
                 <target>mehr lesen</target>
             </trans-unit>
 
-            <!-- TileList -->
-            <trans-unit id="contentElement.tileList.labelShowMore">
+            <!-- Tile -->
+            <trans-unit id="contentElement.tile.labelShowMore">
                 <source>Show More</source>
                 <target>Mehr lesen</target>
             </trans-unit>

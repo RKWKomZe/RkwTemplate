@@ -45,8 +45,8 @@
                 <source>show more</source>
             </trans-unit>
 
-            <!-- TileList -->
-            <trans-unit id="contentElement.tileList.labelShowMore">
+            <!-- Tile -->
+            <trans-unit id="contentElement.tile.labelShowMore">
                 <source>Show more</source>
             </trans-unit>
 

@@ -1,7 +1,7 @@
 tt_content {
-    rkwtemplate_tilelist =< lib.contentElement
-    rkwtemplate_tilelist {
-        templateName = TileList
+    rkwtemplate_tile =< lib.contentElement
+    rkwtemplate_tile {
+        templateName = Tile
 
         // loading images as references
         dataProcessing {
