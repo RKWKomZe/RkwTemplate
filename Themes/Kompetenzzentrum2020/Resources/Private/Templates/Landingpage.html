@@ -16,6 +16,11 @@
                 background-color: #fff !important;
             }
 
+            .tpl-specials-detail .contentbox.primary-mod {
+                background-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primarycolor}</f:format.raw>;
+                color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primarycolor}</f:format.raw>;
+            }
+
             .specials-textcolor-primary {
                 color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primarycolor}</f:format.raw> !important;
             }
@@ -43,11 +48,21 @@
             .btn--white:hover {
                 background-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primarycolor}</f:format.raw> !important;
                 border-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primarycolor}</f:format.raw> !important;
-                color:#fff!important;
+                color: #fff!important;
             }
 
             aside .contentbox a {
                 color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primarycolor}</f:format.raw> !important;
+            }
+
+            .tpl-specials-detail .contentbox.text-mod header h2::after {
+                content: " ";
+                display: block;
+                height: 4px;
+                width: 60px;
+                background-color: #d63f11;
+                border-radius: 4px;
+                margin-top: 15px;
             }
 
         </style>

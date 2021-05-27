@@ -3,35 +3,51 @@
     xmlns:rkw="http://typo3.org/ns/RKW/RkwEvents/ViewHelpers"
     data-namespace-typo3-fluid="true">
 
-    <div id="c{data.uid}" class="contentbox content-padding-layoutmax {f:if(condition: '{data.tx_gridelements_view_children.0.CType} == \'rkwtemplate_textimagebackground\'', then: 'has-bg', else: '')} {data.tx_rkwtemplate_styles}">
-        <f:switch expression="{data.tx_gridelements_view_children.0.CType}">
-            <f:case value="rkwtemplate_textimagebackground">
+    <f:switch expression="{data.tx_gridelements_view_children.0.CType}">
+        <f:case value="rkwtemplate_textimagebackground">
+            <div id="c{data.uid}" class="contentbox content-padding-layoutmax has-bg download-mod">
                 <f:render partial="ContentContainer/Content" arguments="{_all}"/>
-            </f:case>
-            <f:case value="rkwtemplate_gallery">
+            </div>
+        </f:case>
+        <f:case value="rkwtemplate_gallery">
+            <div id="c{data.uid}" class="contentbox content-padding-layoutmax slider-mod">
                 <f:render partial="ContentContainer/Content" arguments="{_all}"/>
-            </f:case>
-            <f:case value="rkwtemplate_collage">
+            </div>
+        </f:case>
+        <f:case value="rkwtemplate_collage">
+            <div id="c{data.uid}" class="contentbox content-padding-layoutmax image-mod">
                 <f:render partial="ContentContainer/Content" arguments="{_all}"/>
-            </f:case>
-            <f:case value="rkwtemplate_googlemap">
-                <f:if condition="<rkw:extensionIsLoaded extensionName='rkw_geolocation' />">
+            </div>
+        </f:case>
+        <f:case value="rkwtemplate_googlemap">
+            <f:if condition="<rkw:extensionIsLoaded extensionName='rkw_geolocation' />">
+                <div id="c{data.uid}" class="contentbox content-padding-layoutmax location-mod">
                     <f:render partial="ContentContainer/Content" arguments="{_all}"/>
-                </f:if>
-            </f:case>
-            <f:case value="rkwtemplate_eventprogramlist">
+                </div>
+            </f:if>
+        </f:case>
+        <f:case value="rkwtemplate_eventprogramlist">
+            <div id="c{data.uid}" class="contentbox content-padding-layoutmax {data.tx_rkwtemplate_styles}">
                 <div class="events">
                     <h3 class="headline">{data.header}</h3>
                     <hr class="lined specials-bgcolor-secondary"/>
                     <f:render partial="ContentContainer/Content" arguments="{_all}"/>
                 </div>
-            </f:case>
-            <f:case value="html">
+            </div>
+        </f:case>
+        <f:comment>
+        <!--
+        <f:case value="html">
+            <div id="c{data.uid}" class="contentbox content-padding-layoutmax {data.tx_rkwtemplate_styles}">
                 <div class="flex-container">
                     <f:render partial="ContentContainer/Content" arguments="{_all}"/>
                 </div>
-            </f:case>
-            <f:case value="rkwtemplate_morelist">
+            </div>
+        </f:case>
+        -->
+        </f:comment>
+        <f:case value="rkwtemplate_morelist">
+            <div id="c{data.uid}" class="contentbox content-padding-layoutmax more-mod">
                 <div class="flex-container">
                     <div class="flex-basis-12">
                         <h3 class="headline headline--underlined headline--underlined-primary">{data.header}</h3>
@@ -40,15 +56,17 @@
                         </div>
                     </div>
                 </div>
-            </f:case>
-            <f:defaultCase>
+            </div>
+        </f:case>
+        <f:defaultCase>
+            <div id="c{data.uid}" class="contentbox content-padding-layoutmax text-mod">
                 <div class="flex-container">
                     <div class="flex-basis-12">
                         <f:render partial="ContentContainer/Content" arguments="{_all}"/>
                     </div>
                 </div>
-            </f:defaultCase>
-        </f:switch>
-    </div>
+            </div>
+        </f:defaultCase>
+    </f:switch>
 
 </html>
