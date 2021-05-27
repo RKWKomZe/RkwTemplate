@@ -190,7 +190,7 @@
                 <source>Chapter</source>
             </trans-unit>
             <trans-unit id="partials.gridElements.contentContainer.sharing.label">
-                <source>You like what you read? Share it!</source>
+                <source>You like what you read? Share it:</source>
             </trans-unit>
 
 

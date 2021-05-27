@@ -5,33 +5,34 @@
         <div class="sharing nav flex-basis-12">
             <p class="sharing__label"><f:translate key="{settings.themeLanguageFile}:partials.gridElements.contentContainer.sharing.label" /></p>
             <ul class="sociallist">
-                <f:if condition="{settings.socialMediaLinks.facebook}">
-                    <li class="sociallist__item">
-                        <a href="https://www.facebook.com/sharer/sharer.php?u={f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.socialMedia.shareUrl')}" target="_blank" title="Facebook">
-                            <svg class="icon icon--24">
-                                <use xlink:href="#ic-facebook" />
-                            </svg>
-                        </a>
-                    </li>
-                </f:if>
-                <f:if condition="{settings.socialMediaLinks.twitter}">
-                    <li class="sociallist__item">
-                        <a href="https://twitter.com/intent/tweet?url={f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.socialMedia.shareUrl')}" target="_blank" title="Twitter">
-                            <svg class="icon icon--24">
-                                <use xlink:href="#ic-twitter" />
-                            </svg>
-                        </a>
-                    </li>
-                </f:if>
-                <f:if condition="{settings.socialMediaLinks.linkedIn}">
-                    <li class="sociallist__item">
-                        <a href="https://www.linkedin.com/shareArticle?mini=true&url={f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.socialMedia.shareUrl')}" target="_blank" title="XING">
-                            <svg class="icon icon--24">
-                                <use xlink:href="#ic-linkedin" />
-                            </svg>
-                        </a>
-                    </li>
-                </f:if>
+                <li class="sociallist__item">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u={f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.socialMedia.shareUrl')}" target="_blank" title="Facebook">
+                        <svg class="icon icon--24">
+                            <use xlink:href="#ic-facebook" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="sociallist__item">
+                    <a href="https://twitter.com/intent/tweet?url={f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.socialMedia.shareUrl')}" target="_blank" title="Twitter">
+                        <svg class="icon icon--24">
+                            <use xlink:href="#ic-twitter" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="sociallist__item">
+                    <a href="https://www.xing.com/app/user?op=share;url={f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.socialMedia.shareUrl')}" target="_blank" title="XING">
+                        <svg class="icon icon--24">
+                            <use xlink:href="#ic-xing" />
+                        </svg>
+                    </a>
+                </li>
+                <li class="sociallist__item">
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url={f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.socialMedia.shareUrl')}" target="_blank" title="XING">
+                        <svg class="icon icon--24">
+                            <use xlink:href="#ic-linkedin" />
+                        </svg>
+                    </a>
+                </li>
             </ul>
         </div>
     </f:if>
