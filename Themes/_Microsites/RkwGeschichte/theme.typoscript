@@ -20,7 +20,7 @@ plugin.tx_rkwtemplate_themeconfig {
         name = RKW Geschichte
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=baseUrl (With / at the end for ClickEnlarge)
-        baseUrl = https://100-jahre-rkw.de/
+        baseUrl = https://www.100-jahre-rkw.de/
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=integer; label=ID of Rootpage
         rootPid = 6214
