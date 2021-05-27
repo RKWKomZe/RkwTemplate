@@ -31,8 +31,11 @@ plugin.tx_rkwrelated_morecontent {
         # cat=plugin.tx_rkwrelated_morecontent//f; type=boolean; label=Override opening of links in same window (empty to deactivate override)
         openLinksInSameWindowOverride = 1
 
-        # cat=plugin.tx_rkwrelated_similarcontent//f; type=boolean; label=Hide authors label
+        # cat=plugin.tx_rkwrelated_morecontent//f; type=boolean; label=Hide authors label
         hideAuthors = 1
+
+        # cat=plugin.tx_rkwrelated_morecontent//a; type=string; label=Path to powered-by image
+        poweredByImage =
 
         detailPid {
 
