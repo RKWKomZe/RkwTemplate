@@ -22,7 +22,6 @@ TCEFORM.pages {
         addItems.22 = Artikel: Spezial
         addItems.30 = Publikationen
         addItems.40 = Home
-        addItems.50 = RKW Karte
 
         // add more items
         addItems.9000 = Broken Link
@@ -49,7 +48,6 @@ TCEFORM.pages {
         addItems.22 = Artikel: Spezial
         addItems.30 = Publikationen
         addItems.40 = Home
-        addItems.50 = RKW Karte
 
         // add more items
         addItems.9000 = Broken Link

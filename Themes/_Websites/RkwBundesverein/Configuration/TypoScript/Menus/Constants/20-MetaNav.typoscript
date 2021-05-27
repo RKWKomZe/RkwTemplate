@@ -1,5 +1,10 @@
-metaNavConfig {
-    pid = 7448
-    ATagParams =
-}
+plugin.tx_rkwtemplate_themeconfig {
 
+    settings {
+
+        metaNav {
+            pid = 7448
+            linkTarget =
+        }
+    }
+}

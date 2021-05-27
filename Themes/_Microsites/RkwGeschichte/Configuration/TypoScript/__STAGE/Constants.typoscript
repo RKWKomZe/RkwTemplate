@@ -5,7 +5,7 @@
 plugin.tx_rkwtemplate_themeconfig {
 
 	# IMPORTANT: With / at the end for ClickEnlarge
-	website.baseUrl = http://geschichte.rkw.codes/
+	website.baseUrl = http://100-jahre-rkw.rkw.codes/
 
 }
 

@@ -16,17 +16,12 @@
             </trans-unit>
 
 
-            <trans-unit id="partials.gridElements.contentContainer.aside.information">
-                <source>Futher information</source>
+			<trans-unit id="partials.menus.main.item.back">
+				<source>Go one level back</source>
+			</trans-unit>
+            <trans-unit id="partials.menus.main.item.next">
+                <source>Show Submenu</source>
             </trans-unit>
-
-
-			<trans-unit id="partials.gridElements.contentContainer.content.imageResources">
-				<source>Image Resources</source>
-			</trans-unit>
-			<trans-unit id="partials.gridElements.contentContainer.content.labelChapter">
-				<source>Chapter</source>
-			</trans-unit>
 
 
 			<trans-unit id="partials.menus.main.list.home">
@@ -113,7 +108,12 @@
             <!-- ================================================================= -->
             <!-- Templates -->
             <!-- ================================================================= -->
-
+            <trans-unit id="templates.menus.main.open">
+                <source>Open Mainmenu</source>
+            </trans-unit>
+            <trans-unit id="templates.menus.main.close">
+                <source>Close Mainmenu</source>
+            </trans-unit>
 
 
             <!-- ================================================================= -->
@@ -175,6 +175,24 @@
             <trans-unit id="contentElement.topic.showMore">
                 <source>show more</source>
             </trans-unit>
+
+
+            <!-- ================================================================== -->
+            <!-- Grid Elements -->
+            <!-- ================================================================== -->
+            <trans-unit id="partials.gridElements.contentContainer.aside.information">
+                <source>Further information</source>
+            </trans-unit>
+            <trans-unit id="partials.gridElements.contentContainer.content.imageResources">
+                <source>Image Resources</source>
+            </trans-unit>
+            <trans-unit id="partials.gridElements.contentContainer.content.labelChapter">
+                <source>Chapter</source>
+            </trans-unit>
+            <trans-unit id="partials.gridElements.contentContainer.sharing.label">
+                <source>You like what you read? Share it!</source>
+            </trans-unit>
+
 
 		</body>
 	</file>

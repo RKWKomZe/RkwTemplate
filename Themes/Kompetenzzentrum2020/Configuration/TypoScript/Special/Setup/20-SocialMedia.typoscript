@@ -1,0 +1,14 @@
+#############################################################################
+# schema.org
+#############################################################################
+
+lib.txRkwTemplate {
+
+    socialMedia {
+
+        shareUrl = TEXT
+        shareUrl < plugin.tx_rkwbasics.libs.canonical.10
+        shareUrl.stdWrap.rawUrlEncode = 1
+
+    }
+}

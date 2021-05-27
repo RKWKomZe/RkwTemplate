@@ -20,7 +20,7 @@ page {
             25 = TEXT
             25 {
 
-                value = geschichte.rkw.de
+                value = 100-jahre-rkw.de
                 stdWrap.noTrimWrap = | - ||
             }
 

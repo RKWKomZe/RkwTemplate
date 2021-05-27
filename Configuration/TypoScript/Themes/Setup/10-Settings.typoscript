@@ -36,7 +36,6 @@ lib.txRkwTemplate.themeSettings {
     reducedMenuLevels = {$plugin.tx_rkwtemplate_themeconfig.reducedMenuLevels}
     shortMainMenu = {$plugin.tx_rkwtemplate_themeconfig.shortMainMenu}
 
-
 }
 
 
@@ -45,7 +44,10 @@ tt_content.gridelements_pi1.20.10.setup {
     contentContainerTwoCols.cObject.settings < lib.txRkwTemplate.themeSettings
     contentContainerTwoColsReduced.cObject.settings < lib.txRkwTemplate.themeSettings
     contentContainerOneCol.cObject.settings < lib.txRkwTemplate.themeSettings
+    contentContainerOneColPagination.cObject.settings < lib.txRkwTemplate.themeSettings
+    contentContainerOneColOrderForm.cObject.settings < lib.txRkwTemplate.themeSettings
 }
+
 
 // add settings to relevant custom elements
 tt_content {

@@ -17,23 +17,6 @@
             </trans-unit>
 
 
-            <trans-unit id="partials.gridElements.contentContainer.aside.information">
-                <source>Futher information</source>
-                <target>Weiterführende Links</target>
-            </trans-unit>
-
-
-			<trans-unit id="partials.gridElements.contentContainer.content.imageResources">
-				<source>Image Resources</source>
-				<target>Bildnachweise</target>
-			</trans-unit>
-			<trans-unit id="partials.gridElements.contentContainer.content.labelChapter">
-				<source>Chapter</source>
-				<target>Kapitel</target>
-			</trans-unit>
-
-
-
 			<trans-unit id="partials.menus.main.item.back">
 				<source>Go one level back</source>
 				<target>Eine Ebene nach oben</target>
@@ -233,7 +216,25 @@
             </trans-unit>
 
 
-
+            <!-- ================================================================== -->
+            <!-- Grid Elements -->
+            <!-- ================================================================== -->
+            <trans-unit id="partials.gridElements.contentContainer.aside.information">
+                <source>Futher information</source>
+                <target>Weiterführende Links</target>
+            </trans-unit>
+			<trans-unit id="partials.gridElements.contentContainer.content.imageResources">
+				<source>Image Resources</source>
+				<target>Bildnachweise</target>
+			</trans-unit>
+			<trans-unit id="partials.gridElements.contentContainer.content.labelChapter">
+				<source>Chapter</source>
+				<target>Kapitel</target>
+			</trans-unit>
+            <trans-unit id="partials.gridElements.contentContainer.sharing.label">
+                <source>You like what you read? Share it!</source>
+                <target>Ihnen gefällt dieser Beitrag? Teilen Sie ihn mit anderen!</target>
+            </trans-unit>
 
 
 

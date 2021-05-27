@@ -246,39 +246,6 @@ mod {
                     }
                 }
             }
-
-
-            //======================================
-            // Map page
-            //======================================
-            rkwMaps {
-                title = RKW Karte
-                config {
-                    backend_layout {
-                        colCount = 1
-                        rowCount = 2
-                        rows {
-                            1 {
-                                columns {
-                                    1 {
-                                        name = Aufgabe
-                                        colPos = 810
-                                    }
-                                }
-                            }
-
-                            2 {
-                                columns {
-                                    1 {
-                                        name = Boxen
-                                        colPos = 820
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
         }
     }
 }

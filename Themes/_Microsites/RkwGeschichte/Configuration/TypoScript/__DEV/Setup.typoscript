@@ -39,7 +39,7 @@ module.tx_rkwmailer {
 	settings {
 
 		# URL for hard-links in templates
-		baseUrl = http://geschichte.rkw.local/
+		baseUrl = http://100-jahre-rkw.rkw.local/
 	}
 }
 plugin.tx_rkwmailer < module.tx_rkwmailer

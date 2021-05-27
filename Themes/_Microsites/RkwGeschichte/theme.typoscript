@@ -20,13 +20,13 @@ plugin.tx_rkwtemplate_themeconfig {
         name = RKW Geschichte
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=baseUrl (With / at the end for ClickEnlarge)
-        baseUrl = https://geschichte.rkw.de/
+        baseUrl = https://100-jahre-rkw.de/
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=integer; label=ID of Rootpage
         rootPid = 6214
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Use this text instead of a logo
-        logoReplacementText = geschichte.rkw.de
+        logoReplacementText = 100-jahre-rkw.de
     }
 
     # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Is this website a microsite?
