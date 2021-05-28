@@ -142,6 +142,24 @@
                 <target>Überschrift (wird für ein mögliches Inhaltsverzeichnis benötigt)</target>
             </trans-unit>
 
+            <!-- CollageContainer -->
+            <trans-unit id="contentElement.collageContainer.title">
+                <source>Collage-Container</source>
+                <target>Collage-Container</target>
+            </trans-unit>
+            <trans-unit id="contentElement.collageContainer.description">
+                <source>Adds a collage-container.</source>
+                <target>Fügt einen Container für eine Collage ein. Üblicherweise wird dieses Element auf einer Landingpage eingesetzt.</target>
+            </trans-unit>
+            <trans-unit id="contentElement.collageContainer.content">
+                <source>Content</source>
+                <target>Inhalt</target>
+            </trans-unit>
+            <trans-unit id="contentElement.collageContainer.header">
+                <source>Header</source>
+                <target>Überschrift (wird für ein mögliches Inhaltsverzeichnis benötigt)</target>
+            </trans-unit>
+
             <!-- LandingpageOneCol -->
 			<trans-unit id="contentElement.landingpageOneCol.tx_rkwtemplate_styles">
 				<source>CSS classes</source>

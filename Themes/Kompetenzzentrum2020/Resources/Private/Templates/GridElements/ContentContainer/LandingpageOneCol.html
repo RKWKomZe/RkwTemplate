@@ -9,11 +9,6 @@
                 <f:render partial="ContentContainer/Content" arguments="{_all}"/>
             </div>
         </f:case>
-        <f:case value="rkwtemplate_collage">
-            <div id="c{data.uid}" class="contentbox content-padding-layoutmax image-mod">
-                <f:render partial="ContentContainer/Content" arguments="{_all}"/>
-            </div>
-        </f:case>
         <f:case value="rkwtemplate_googlemap">
             <f:if condition="<rkw:extensionIsLoaded extensionName='rkw_geolocation' />">
                 <div id="c{data.uid}" class="contentbox content-padding-layoutmax location-mod">
