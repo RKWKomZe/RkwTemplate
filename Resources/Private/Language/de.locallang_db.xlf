@@ -124,6 +124,24 @@
                 <target>Überschrift (wird für ein mögliches Inhaltsverzeichnis benötigt)</target>
             </trans-unit>
 
+            <!-- GalleryContainer -->
+            <trans-unit id="contentElement.galleryContainer.title">
+                <source>Gallery-Container</source>
+                <target>Galerie-Container</target>
+            </trans-unit>
+            <trans-unit id="contentElement.galleryContainer.description">
+                <source>Adds a gallery-container.</source>
+                <target>Fügt einen Container für eine Galerie ein. Üblicherweise wird dieses Element auf einer Landingpage eingesetzt.</target>
+            </trans-unit>
+            <trans-unit id="contentElement.galleryContainer.content">
+                <source>Content</source>
+                <target>Inhalt</target>
+            </trans-unit>
+            <trans-unit id="contentElement.galleryContainer.header">
+                <source>Header</source>
+                <target>Überschrift (wird für ein mögliches Inhaltsverzeichnis benötigt)</target>
+            </trans-unit>
+
             <!-- LandingpageOneCol -->
 			<trans-unit id="contentElement.landingpageOneCol.tx_rkwtemplate_styles">
 				<source>CSS classes</source>
