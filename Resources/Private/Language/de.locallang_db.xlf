@@ -160,6 +160,24 @@
                 <target>Überschrift (wird für ein mögliches Inhaltsverzeichnis benötigt)</target>
             </trans-unit>
 
+            <!-- MoreListContainer -->
+            <trans-unit id="contentElement.moreListContainer.title">
+                <source>MoreList-Container</source>
+                <target>"Mehr Infos"-Container</target>
+            </trans-unit>
+            <trans-unit id="contentElement.moreListContainer.description">
+                <source>Adds a container with more infos.</source>
+                <target>Fügt einen Container für mit Spalten für weitere Infos ein. Üblicherweise wird dieses Element auf einer Landingpage eingesetzt.</target>
+            </trans-unit>
+            <trans-unit id="contentElement.moreListContainer.content">
+                <source>Content</source>
+                <target>Inhalt</target>
+            </trans-unit>
+            <trans-unit id="contentElement.moreListContainer.header">
+                <source>Header</source>
+                <target>Überschrift (wird für ein mögliches Inhaltsverzeichnis benötigt)</target>
+            </trans-unit>
+
             <!-- LandingpageOneCol -->
 			<trans-unit id="contentElement.landingpageOneCol.tx_rkwtemplate_styles">
 				<source>CSS classes</source>
