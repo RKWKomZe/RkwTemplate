@@ -1,0 +1,22 @@
+tx_gridelements.setup.listContainer {
+
+    title = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.listContainer.title
+    description = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.listContainer.description
+    config {
+        colCount = 1
+        rowCount = 1
+        rows {
+            1 {
+                columns {
+                    1 {
+                        name = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.listContainer.content
+                        colPos = 100
+                        allowed {
+                            CType = rkwtemplate_eventprogramlist
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

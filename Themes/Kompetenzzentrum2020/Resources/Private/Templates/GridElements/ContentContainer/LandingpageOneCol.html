@@ -4,15 +4,6 @@
     data-namespace-typo3-fluid="true">
 
     <f:switch expression="{data.tx_gridelements_view_children.0.CType}">
-        <f:case value="rkwtemplate_eventprogramlist">
-            <div id="c{data.uid}" class="contentbox content-padding-layoutmax {data.tx_rkwtemplate_styles}">
-                <div class="events">
-                    <h3 class="headline">{data.header}</h3>
-                    <hr class="lined specials-bgcolor-secondary"/>
-                    <f:render partial="ContentContainer/Content" arguments="{_all}"/>
-                </div>
-            </div>
-        </f:case>
         <f:defaultCase>
             <div id="c{data.uid}" class="contentbox content-padding-layoutmax text-mod">
                 <div class="flex-container">

@@ -10,12 +10,6 @@
                 <target>Zeige Slide %s</target>
             </trans-unit>
 
-            <!-- LandingpageOneCol -->
-			<trans-unit id="contentElement.landingpageOneCol.tx_rkwtemplate_styles">
-				<source>CSS classes</source>
-				<target>CSS-Klassen</target>
-			</trans-unit>
-
             <!-- Shortlink -->
 			<trans-unit id="contentElement.shortlink.type.I.0">
 				<source>Article</source>

@@ -15,7 +15,7 @@
     </f:if>
 
     <f:if condition="<rkwBasics:isEmpty string='{data.tx_gridelements_view_column_50}' /> == 0">
-        <div id="c{data.uid}" class="contentbox content-padding-layoutmax {f:if(condition: '{data.tx_gridelements_view_children.0.CType} == \'rkwtemplate_textimagebackground\'', then: 'has-bg', else: '')} {data.tx_rkwtemplate_styles}">
+        <div id="c{data.uid}" class="contentbox content-padding-layoutmax {f:if(condition: '{data.tx_gridelements_view_children.0.CType} == \'rkwtemplate_textimagebackground\'', then: 'has-bg', else: '')}">
             <f:switch expression="{data.tx_gridelements_view_children.0.CType}">
                 <f:case value="rkwtemplate_textimagebackground">
                     <f:render partial="ContentContainer/Content" arguments="{_all}"/>

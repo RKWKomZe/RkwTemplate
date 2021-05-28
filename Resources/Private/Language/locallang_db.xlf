@@ -76,11 +76,6 @@
 				<source>Adds a slide-container.</source>
 			</trans-unit>
 
-            <!-- LandingpageOneCol -->
-			<trans-unit id="contentElement.landingpageOneCol.tx_rkwtemplate_styles">
-				<source>CSS classes</source>
-			</trans-unit>
-
             <!-- Mission Statement -->
             <trans-unit id="contentElement.mission.title">
                 <source>Mission Statement</source>
@@ -88,7 +83,6 @@
             <trans-unit id="contentElement.mission.description">
                 <source>Adds a Mission Statement.</source>
             </trans-unit>
-
 
             <!-- Topic -->
             <trans-unit id="contentElement.topic.title">

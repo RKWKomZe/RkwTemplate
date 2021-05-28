@@ -208,11 +208,23 @@
                 <target>Überschrift (wird für ein mögliches Inhaltsverzeichnis benötigt)</target>
             </trans-unit>
 
-            <!-- LandingpageOneCol -->
-			<trans-unit id="contentElement.landingpageOneCol.tx_rkwtemplate_styles">
-				<source>CSS classes</source>
-				<target>CSS-Klassen</target>
-			</trans-unit>
+            <!-- ListContainer -->
+            <trans-unit id="contentElement.listContainer.title">
+                <source>List-Container</source>
+                <target>Listen-Container</target>
+            </trans-unit>
+            <trans-unit id="contentElement.listContainer.description">
+                <source>Adds a container to display a formatted list.</source>
+                <target>Fügt einen Container hinzu, der eine formatierte Liste beinhaltet. Üblicherweise wird dieses Element auf einer Landingpage eingesetzt.</target>
+            </trans-unit>
+            <trans-unit id="contentElement.listContainer.content">
+                <source>Content</source>
+                <target>Inhalt</target>
+            </trans-unit>
+            <trans-unit id="contentElement.listContainer.header">
+                <source>Header</source>
+                <target>Überschrift (wird für ein mögliches Inhaltsverzeichnis benötigt)</target>
+            </trans-unit>
 
             <!-- Mission Statement -->
             <trans-unit id="contentElement.mission.title">

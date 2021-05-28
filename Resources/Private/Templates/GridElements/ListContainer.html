@@ -1,0 +1,20 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:rkwBasics="http://typo3.org/ns/RKW/RkwBasics/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+    <f:layout name="Rkw" />
+
+    <f:section name="Main">
+        <f:if condition="<rkwBasics:isEmpty string='{data.tx_gridelements_view_column_100}' /> == 0">
+            <div id="c{data.uid}" class="contentbox content-padding-layoutmax primary-mod">
+                <div class="events">
+                    <h3 class="headline">{data.header}</h3>
+                    <hr class="lined specials-bgcolor-secondary"/>
+                    <f:format.raw>{data.tx_gridelements_view_column_100}</f:format.raw>
+                </div>
+            </div>
+        </f:if>
+    </f:section>
+
+</html>

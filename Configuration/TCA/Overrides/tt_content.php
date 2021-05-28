@@ -7,22 +7,6 @@
 //===============================================================
 // Extending tt_content fields
 //===============================================================
-$temporaryColumn['tx_rkwtemplate_styles'] = [
-    'displayCond' => [
-        'OR' => [
-            'FIELD:tx_gridelements_backend_layout:=:contentContainerLandingpageOneCol',
-            'FIELD:tx_gridelements_backend_layout:=:contentContainerLandingpageTwoCols',
-        ],
-    ],
-    'exclude' => 0,
-    'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.landingpageOneCol.tx_rkwtemplate_styles',
-    'config' => [
-        'type' => 'input',
-        'size' => 50,
-        'max' => 255,
-    ],
-];
-
 $temporaryColumn['tx_rkwtemplate_longitude'] = [
     'exclude' => 1,
     'label' => 'LLL:EXT:rkw_events/Resources/Private/Language/locallang_db.xlf:contentElement.googleMap.latitude',
