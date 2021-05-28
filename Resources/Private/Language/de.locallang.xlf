@@ -10,12 +10,6 @@
                 <target>Zeige Slide %s</target>
             </trans-unit>
 
-            <!-- General -->
-            <trans-unit id="contentElement.tx_rkwtemplate_linktext">
-                <source>Link text</source>
-                <target>Linkbeschriftung</target>
-            </trans-unit>
-
             <!-- LandingpageOneCol -->
 			<trans-unit id="contentElement.landingpageOneCol.tx_rkwtemplate_styles">
 				<source>CSS classes</source>

@@ -9,7 +9,6 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_collage'] = [
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
             --palette--;;general,
             --palette--;;headers,
-        rowDescription,
         bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,            
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.images,
             image,            
@@ -40,12 +39,6 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_collage'] = [
             ]
         ],
         'header' => [
-            'config' => [
-                'eval' => 'trim',
-            ]
-        ],
-        'rowDescription' => [
-            'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.collage.rowDescription',
             'config' => [
                 'eval' => 'trim',
             ]

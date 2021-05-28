@@ -9,7 +9,6 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_googlemap'] = [
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
             --palette--;;general,
             --palette--;;headers,
-        rowDescription,
         tx_rkwtemplate_longitude,
         tx_rkwtemplate_latitude,
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,

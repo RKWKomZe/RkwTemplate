@@ -9,8 +9,8 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_textwithbutton'] = [
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
             --palette--;;general,
             --palette--;;headers,
+        rowDescription,    
         bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,
-        tx_rkwtemplate_linktext,
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,
             --palette--;;language,
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
@@ -48,11 +48,13 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_textwithbutton'] = [
                 'enableRichtext' => true,
             ]
         ],
-        'tx_rkwtemplate_linktext' => [
+        'rowDescription' => [
+            'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.textWithButton.rowDescription',
             'displayCond' => 'FIELD:header_link:REQ:true',
             'config' => [
+                'type' => 'input',
                 'eval' => 'trim',
-            ]
+            ],
         ]
     ]
 ];

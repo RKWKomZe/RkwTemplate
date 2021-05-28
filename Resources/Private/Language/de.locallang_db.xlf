@@ -48,12 +48,6 @@
                <target>Teaser</target>
             </trans-unit>
 
-            <!-- General -->
-            <trans-unit id="contentElement.tx_rkwtemplate_linktext">
-                <source>Link text</source>
-                <target>Linkbeschriftung</target>
-            </trans-unit>
-
             <!-- Slider -->
 			<trans-unit id="contentElement.slider.title">
 				<source>Slider-Element</source>
@@ -642,8 +636,8 @@
                 <target>Text, dessen Hintergrund vollständig von einem Bild ausgefüllt wird.</target>
             </trans-unit>
             <trans-unit id="contentElement.textImageBackground.rowDescription">
-                <source>Short Version</source>
-                <target>Kurzfassung</target>
+                <source>Linktext</source>
+                <target>Linkbeschriftung</target>
             </trans-unit>
             <trans-unit id="contentElement.textImageBackground.imageManipulation.default">
                 <source>Default</source>
@@ -660,8 +654,8 @@
                 <target>Text mit einem Button als Call-to-Action-Element</target>
             </trans-unit>
             <trans-unit id="contentElement.textWithButton.rowDescription">
-                <source>Short Version</source>
-                <target>Kurzfassung</target>
+                <source>Link text</source>
+                <target>Linkbeschriftung</target>
             </trans-unit>
             <trans-unit id="contentElement.textWithButton.imageManipulation.default">
                 <source>Default</source>

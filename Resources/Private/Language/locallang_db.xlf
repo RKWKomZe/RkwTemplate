@@ -35,11 +35,6 @@
                <source>Teaser</source>
             </trans-unit>
 
-            <!-- General -->
-            <trans-unit id="contentElement.tx_rkwtemplate_linktext">
-                <source>Link text</source>
-            </trans-unit>
-
             <!-- Slider -->
 			<trans-unit id="contentElement.slider.title">
 				<source>Slider</source>
@@ -395,7 +390,7 @@
                 <source>Adds an text-image-background-element.</source>
             </trans-unit>
             <trans-unit id="contentElement.textImageBackground.rowDescription">
-                <source>Short Version</source>
+                <source>Link text</source>
             </trans-unit>
             <trans-unit id="contentElement.textImageBackground.imageManipulation.default">
                 <source>Default</source>
