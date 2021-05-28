@@ -287,9 +287,17 @@ mod {
                 config {
                     backend_layout {
                         colCount = 1
-                        rowCount = 2
+                        rowCount = 3
                         rows {
                             1 {
+                                columns {
+                                    1 {
+                                        name = Header
+                                        colPos = 920
+                                    }
+                                }
+                            }
+                            2 {
                                 columns {
                                     1 {
                                         name = Inhalte
@@ -297,7 +305,7 @@ mod {
                                     }
                                 }
                             }
-                            2 {
+                            3 {
                                 columns {
                                     1 {
                                         name = Call to action

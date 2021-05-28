@@ -75,5 +75,9 @@ lib.txRkwTemplate {
         landingpageStickyFooter = CONTENT
         landingpageStickyFooter < styles.content.get
         landingpageStickyFooter.select.where = {#colPos} = 910
+
+        landingpageSiteHeader = CONTENT
+        landingpageSiteHeader < styles.content.get
+        landingpageSiteHeader.select.where = {#colPos} = 920
     }
 }

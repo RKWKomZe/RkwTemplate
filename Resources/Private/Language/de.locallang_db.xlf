@@ -14,16 +14,6 @@
                 <target>Sekundärer Farbwert</target>
             </trans-unit>
 
-            <!-- Link and link text for landingpage headers -->
-            <trans-unit id="pages.tx_rkwtemplate_landingpage_cta_link">
-                <source>Link</source>
-                <target>Link</target>
-            </trans-unit>
-            <trans-unit id="pages.tx_rkwtemplate_landingpage_cta_linktext">
-                <source>Link text</source>
-                <target>Linkbeschriftung</target>
-            </trans-unit>
-
 		    <!-- Cropping -->
             <trans-unit id="pages.keyvisual.imageManipulation.topicDesktop">
                <source>Topic (Desktop)</source>
@@ -634,6 +624,24 @@
                 <target>Kurzfassung</target>
             </trans-unit>
             <trans-unit id="contentElement.stickyfooter.imageManipulation.default">
+                <source>Default</source>
+                <target>Standard</target>
+            </trans-unit>
+
+            <!-- SiteHeader -->
+            <trans-unit id="contentElement.siteHeader.title">
+                <source>Header-Image with Call-to-Action-Button</source>
+                <target>Headerbild mit Call-To-Action-Button</target>
+            </trans-unit>
+            <trans-unit id="contentElement.siteHeader.description">
+                <source>Adds a header image element.</source>
+                <target>Headerbild mit Call-to-Action-Button.</target>
+            </trans-unit>
+            <trans-unit id="contentElement.siteHeader.rowDescription">
+                <source>Link caption (only on landing page header)</source>
+                <target>Beschriftung für Link (nur Landingpage-Header)</target>
+            </trans-unit>
+            <trans-unit id="contentElement.siteHeader.imageManipulation.default">
                 <source>Default</source>
                 <target>Standard</target>
             </trans-unit>

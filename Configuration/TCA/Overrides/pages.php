@@ -22,37 +22,6 @@ $tmpColsPages = [
             'size' => 10,
         ],
     ],
-    'tx_rkwtemplate_landingpage_cta_link' => [
-        'displayCond' => 'FIELD:layout:=:30000',
-        'exclude' => 0,
-        'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:pages.tx_rkwtemplate_landingpage_cta_link',
-        'config' => [
-            'type' => 'input',
-            'renderType' => 'inputLink',
-            'size' => 50,
-            'max' => 1024,
-            'eval' => 'trim',
-            'fieldControl' => [
-                'linkPopup' => [
-                    'options' => [
-                        'title' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_link_formlabel',
-                    ],
-                ],
-            ],
-            'softref' => 'typolink'
-        ]
-    ],
-    'tx_rkwtemplate_landingpage_cta_linktext' => [
-        'displayCond' => 'FIELD:layout:=:30000',
-        'exclude' => 0,
-        'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:pages.tx_rkwtemplate_landingpage_cta_linktext',
-        'config' => [
-            'type' => 'input',
-            'size' => 50,
-            'max' => 255,
-        ],
-    ],
-
 ];
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns(
@@ -62,12 +31,6 @@ $tmpColsPages = [
     'pages',
     'layout',
     '--linebreak--, tx_rkwtemplate_landingpage_primarycolor, tx_rkwtemplate_landingpage_secondarycolor'
-);
-
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette(
-    'pages',
-    'title',
-    '--linebreak--, tx_rkwtemplate_landingpage_cta_link, tx_rkwtemplate_landingpage_cta_linktext'
 );
 
 $extKey = 'rkw_template';

@@ -76,6 +76,11 @@ call_user_func(
             ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/StickyFooter.svg']
         );
         $iconRegistry->registerIcon(
+            'rkw-template-siteheader', // Icon-Identifier, e.g. tx-myext-action-preview
+            \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+            ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/SiteHeader.svg']
+        );
+        $iconRegistry->registerIcon(
             'rkw-template-textimagebackground', // Icon-Identifier, e.g. tx-myext-action-preview
             \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
             ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/TextImageBackground.svg']

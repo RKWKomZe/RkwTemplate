@@ -68,7 +68,9 @@
         </style>
 
         <f:comment><!-- header --></f:comment>
-        <f:render partial="HeaderSection/Landingpage" arguments="{_all}" />
+        <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.content.landingpageSiteHeader', data:'{data}')}">
+            <f:render partial="HeaderSection/Landingpage" arguments="{_all}" />
+        </f:if>
 
     </f:section>
 
