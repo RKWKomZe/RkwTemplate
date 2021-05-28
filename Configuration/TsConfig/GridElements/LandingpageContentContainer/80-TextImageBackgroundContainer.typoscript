@@ -1,0 +1,22 @@
+tx_gridelements.setup.textImageBackgroundContainer {
+
+    title = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.textImageBackgroundContainer.title
+    description = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.textImageBackgroundContainer.description
+    config {
+        colCount = 1
+        rowCount = 1
+        rows {
+            1 {
+                columns {
+                    1 {
+                        name = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.textImageBackgroundContainer.content
+                        colPos = 80
+                        allowed {
+                            CType = rkwtemplate_textimagebackground
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
