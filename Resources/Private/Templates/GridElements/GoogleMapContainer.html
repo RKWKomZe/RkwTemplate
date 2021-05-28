@@ -1,0 +1,16 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:rkwBasics="http://typo3.org/ns/RKW/RkwBasics/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+    <f:layout name="Rkw" />
+
+    <f:section name="Main">
+        <f:if condition="<rkwBasics:isEmpty string='{data.tx_gridelements_view_column_90}' /> == 0">
+            <div id="c{data.uid}" class="contentbox content-padding-layoutmax location-mod">
+                <f:format.raw>{data.tx_gridelements_view_column_90}</f:format.raw>
+            </div>
+        </f:if>
+    </f:section>
+
+</html>

@@ -196,6 +196,24 @@
                 <target>Überschrift (wird für ein mögliches Inhaltsverzeichnis benötigt)</target>
             </trans-unit>
 
+            <!-- GoogleMapContainer -->
+            <trans-unit id="contentElement.googleMapContainer.title">
+                <source>Container for Google map</source>
+                <target>GoogleMap-Container</target>
+            </trans-unit>
+            <trans-unit id="contentElement.googleMapContainer.description">
+                <source>Adds a container to display a Google map.</source>
+                <target>Fügt einen GoogleMap-Container. Üblicherweise wird dieses Element auf einer Landingpage eingesetzt.</target>
+            </trans-unit>
+            <trans-unit id="contentElement.googleMapContainer.content">
+                <source>Content</source>
+                <target>Inhalt</target>
+            </trans-unit>
+            <trans-unit id="contentElement.googleMapContainer.header">
+                <source>Header</source>
+                <target>Überschrift (wird für ein mögliches Inhaltsverzeichnis benötigt)</target>
+            </trans-unit>
+
             <!-- LandingpageOneCol -->
 			<trans-unit id="contentElement.landingpageOneCol.tx_rkwtemplate_styles">
 				<source>CSS classes</source>
