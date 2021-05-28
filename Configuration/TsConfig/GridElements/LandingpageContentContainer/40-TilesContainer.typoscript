@@ -10,7 +10,7 @@ tx_gridelements.setup.tilesContainer {
                 columns {
                     1 {
                         name = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.tile.title
-                        colPos = 60
+                        colPos = 40
                         allowed {
                             CType = rkwtemplate_tile
                         }

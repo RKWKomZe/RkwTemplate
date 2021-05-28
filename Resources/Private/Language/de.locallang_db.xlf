@@ -106,6 +106,24 @@
                 <target>Fügt einen Container für Kacheln ein. Üblicherweise wird dieses Element auf einer Landingpage eingesetzt.</target>
             </trans-unit>
 
+            <!-- TextContainer -->
+            <trans-unit id="contentElement.textContainer.title">
+                <source>Text-Container</source>
+                <target>Text-Container</target>
+            </trans-unit>
+            <trans-unit id="contentElement.textContainer.description">
+                <source>Adds a text-container.</source>
+                <target>Fügt einen Container für Text ein. Üblicherweise wird dieses Element auf einer Landingpage eingesetzt.</target>
+            </trans-unit>
+            <trans-unit id="contentElement.textContainer.content">
+                <source>Content</source>
+                <target>Inhalt</target>
+            </trans-unit>
+            <trans-unit id="contentElement.textContainer.header">
+                <source>Header</source>
+                <target>Überschrift (wird für ein mögliches Inhaltsverzeichnis benötigt)</target>
+            </trans-unit>
+
             <!-- LandingpageOneCol -->
 			<trans-unit id="contentElement.landingpageOneCol.tx_rkwtemplate_styles">
 				<source>CSS classes</source>
