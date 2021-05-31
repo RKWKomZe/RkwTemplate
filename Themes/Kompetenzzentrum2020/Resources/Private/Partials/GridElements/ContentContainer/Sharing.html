@@ -1,6 +1,6 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
-    <f:if condition="{settings.socialMedia} == 1">
+    <f:if condition="{settings.socialMediaShare} == 1">
 
         <div class="sharing nav flex-basis-12">
             <p class="sharing__label"><f:translate key="{settings.themeLanguageFile}:partials.gridElements.contentContainer.sharing.label" /></p>
@@ -27,7 +27,7 @@
                     </a>
                 </li>
                 <li class="sociallist__item">
-                    <a href="https://www.linkedin.com/shareArticle?mini=true&url={f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.socialMedia.shareUrl')}" target="_blank" title="XING">
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url={f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.socialMedia.shareUrl')}" target="_blank" title="LinkedIn">
                         <svg class="icon icon--24">
                             <use xlink:href="#ic-linkedin" />
                         </svg>

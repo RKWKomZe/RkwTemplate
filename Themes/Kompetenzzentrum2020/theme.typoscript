@@ -133,6 +133,8 @@ plugin.tx_rkwtemplate_themeconfig {
         mainWebsiteLogoFile = {$plugin.tx_rkwtemplate_themeconfig.paths.microsite.mainWebsiteLogos}/logo-icon.png
     }
 
+    # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Show social media share icons
+    socialMediaShare = 1
 
     # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Show social media icons
     socialMedia = 1

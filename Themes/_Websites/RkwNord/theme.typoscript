@@ -32,6 +32,8 @@ plugin.tx_rkwtemplate_themeconfig {
         baseUrl = https://nord.rkw-kompetenzzentrum.de/
     }
 
+    # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Show social media share icons
+    socialMediaShare = 0
 
     # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Show social media icons
     socialMedia = 0

@@ -26,6 +26,7 @@ lib.txRkwTemplate.themeSettings {
     micrositeMainWebsiteName  = {$plugin.tx_rkwtemplate_themeconfig.microsite.mainWebsiteName}
     micrositeMainWebsiteLogoFile = {$plugin.tx_rkwtemplate_themeconfig.microsite.mainWebsiteLogoFile}
 
+    socialMediaShare = {$plugin.tx_rkwtemplate_themeconfig.socialMediaShare}
     socialMedia = {$plugin.tx_rkwtemplate_themeconfig.socialMedia}
     socialMediaLinks.facebook = {$plugin.tx_rkwtemplate_themeconfig.socialMediaLinks.facebook}
     socialMediaLinks.twitter = {$plugin.tx_rkwtemplate_themeconfig.socialMediaLinks.twitter}
