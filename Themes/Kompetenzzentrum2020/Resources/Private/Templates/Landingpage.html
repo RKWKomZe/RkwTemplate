@@ -21,6 +21,11 @@
                 color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primarycolor}</f:format.raw>;
             }
 
+            .tpl-specials-detail .contentbox.secondary-mod {
+                background-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_secondarycolor}</f:format.raw>;
+                color: <f:format.raw>{data.tx_rkwtemplate_landingpage_secondarycolor}</f:format.raw>;
+            }
+
             .specials-textcolor-primary {
                 color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primarycolor}</f:format.raw> !important;
             }
@@ -63,6 +68,28 @@
                 background-color: #d63f11;
                 border-radius: 4px;
                 margin-top: 15px;
+            }
+
+            .tpl-specials-detail .contentbox.primary-mod header h2::after,
+            .tpl-specials-detail .contentbox.secondary-mod header h2::after {
+                margin-top: 20px;
+                margin-bottom: 50px;
+            }
+
+            .tpl-specials-detail .contentbox.primary-mod header h2::after {
+                background-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_secondarycolor}</f:format.raw> !important;
+            }
+
+            .tpl-specials-detail .contentbox.secondary-mod header h2::after {
+                background-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primarycolor}</f:format.raw> !important;
+            }
+
+            .tpl-specials-detail .contentbox .headline--underlined-primary::after {
+                background-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primarycolor}</f:format.raw> !important;
+            }
+
+            .tpl-specials-detail .contentbox .headline--underlined-secondary::after {
+                background-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_secondarycolor}</f:format.raw> !important;
             }
 
         </style>

@@ -21,3 +21,20 @@ tx_gridelements.setup.textContainer {
         }
     }
 }
+
+//=========================================================
+// Change some fields
+//=========================================================
+TCEFORM.tt_content {
+
+    header_layout {
+        types.gridelements_pi1 {
+            removeItems = 3,4,5,100
+            altLabels.0 = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.textContainer.type.I.default
+            altLabels.1 = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.textContainer.type.I.1
+            altLabels.2 = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.textContainer.type.I.2
+        }
+    }
+
+}
+

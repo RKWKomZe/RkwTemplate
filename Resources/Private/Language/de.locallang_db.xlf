@@ -117,6 +117,18 @@
                 <source>Header</source>
                 <target>Überschrift (wird für ein mögliches Inhaltsverzeichnis benötigt)</target>
             </trans-unit>
+			<trans-unit id="contentElement.textContainer.type.I.default">
+				<source>default</source>
+				<target>Standardelement</target>
+			</trans-unit>
+			<trans-unit id="contentElement.textContainer.type.I.1">
+				<source>primary</source>
+				<target>Primäres Element</target>
+			</trans-unit>
+			<trans-unit id="contentElement.textContainer.type.I.2">
+				<source>secondary</source>
+				<target>Sekundäres Element</target>
+			</trans-unit>
 
             <!-- GalleryContainer -->
             <trans-unit id="contentElement.galleryContainer.title">

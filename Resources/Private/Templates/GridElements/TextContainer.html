@@ -7,7 +7,7 @@
 
     <f:section name="Main">
         <f:if condition="<rkwBasics:isEmpty string='{data.tx_gridelements_view_column_30}' /> == 0">
-            <div id="c{data.uid}" class="contentbox content-padding-layoutmax text-mod">
+            <div id="c{data.uid}" class="contentbox content-padding-layoutmax text-mod {f:if(condition: '{data.header_layout} == 1', then: 'primary-mod')}{f:if(condition: '{data.header_layout} == 2', then: 'secondary-mod')}">
                 <div class="flex-container">
                     <f:format.raw>{data.tx_gridelements_view_column_30}</f:format.raw>
                 </div>
