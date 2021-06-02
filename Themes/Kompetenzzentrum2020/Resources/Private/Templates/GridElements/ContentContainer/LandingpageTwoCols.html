@@ -26,11 +26,6 @@
                 <f:case value="rkwtemplate_collage">
                     <f:render partial="ContentContainer/Content" arguments="{_all}"/>
                 </f:case>
-                <f:case value="rkwtemplate_googlemap">
-                    <f:if condition="<rkw:extensionIsLoaded extensionName='rkw_geolocation' />">
-                        <f:render partial="ContentContainer/Content" arguments="{_all}"/>
-                    </f:if>
-                </f:case>
                 <f:case value="rkwtemplate_eventprogramlist">
                     <div class="events">
                         <h3 class="headline">{data.header}</h3>

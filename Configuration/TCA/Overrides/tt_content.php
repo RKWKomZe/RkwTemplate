@@ -5,31 +5,6 @@
  */
 
 //===============================================================
-// Extending tt_content fields
-//===============================================================
-$temporaryColumn['tx_rkwtemplate_longitude'] = [
-    'exclude' => 1,
-    'label' => 'LLL:EXT:rkw_events/Resources/Private/Language/locallang_db.xlf:contentElement.googleMap.latitude',
-    'config' => [
-        'type' => 'input',
-        'size' => 30,
-        'eval' => 'trim',
-    ],
-];
-
-$temporaryColumn['tx_rkwtemplate_latitude'] = [
-    'exclude' => 0,
-    'label' => 'LLL:EXT:rkw_events/Resources/Private/Language/locallang_db.xlf:contentElement.googleMap.longitude',
-    'config' => [
-        'type' => 'input',
-        'size' => 30,
-        'eval' => 'trim',
-    ],
-];
-
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', $temporaryColumn);
-
-//===============================================================
 // Defaults for grid elements
 //===============================================================
 
