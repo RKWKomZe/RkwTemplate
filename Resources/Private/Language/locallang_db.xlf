@@ -411,97 +411,73 @@
                 <source>Default</source>
             </trans-unit>
             <trans-unit id="contentElement.moreList.header_layout.icon.youtube">
-                <source>youtube</source>
-            </trans-unit>
-            <trans-unit id="contentElement.moreList.header_layout.icon.youtube-2">
-                <source>youtube-2</source>
+                <source>Youtube</source>
             </trans-unit>
             <trans-unit id="contentElement.moreList.header_layout.icon.facebook">
-                <source>facebook</source>
+                <source>Facebook</source>
             </trans-unit>
             <trans-unit id="contentElement.moreList.header_layout.icon.instagram">
-                <source>instagram</source>
-            </trans-unit>
-            <trans-unit id="contentElement.moreList.header_layout.icon.circle-arrow">
-                <source>circle-arrow</source>
+                <source>Instagram</source>
             </trans-unit>
             <trans-unit id="contentElement.moreList.header_layout.icon.twitter">
-                <source>twitter</source>
+                <source>Twitter</source>
             </trans-unit>
             <trans-unit id="contentElement.moreList.header_layout.icon.xing">
-                <source>xing</source>
+                <source>Xing</source>
             </trans-unit>
             <trans-unit id="contentElement.moreList.header_layout.icon.linkedin">
-                <source>linkedin</source>
+                <source>LinkedIn</source>
             </trans-unit>
             <trans-unit id="contentElement.moreList.header_layout.icon.document">
-                <source>document</source>
+                <source>Document</source>
             </trans-unit>
             <trans-unit id="contentElement.moreList.header_layout.icon.date">
-                <source>date</source>
+                <source>Calendar</source>
             </trans-unit>
             <trans-unit id="contentElement.moreList.header_layout.icon.trash">
-                <source>trash</source>
+                <source>Trash</source>
             </trans-unit>
             <trans-unit id="contentElement.moreList.header_layout.icon.date-alarm">
-                <source>date-alarm</source>
+                <source>Alarm</source>
             </trans-unit>
             <trans-unit id="contentElement.moreList.header_layout.icon.location">
-                <source>location</source>
+                <source>Location</source>
             </trans-unit>
             <trans-unit id="contentElement.moreList.header_layout.icon.download">
-                <source>download</source>
+                <source>Download</source>
             </trans-unit>
             <trans-unit id="contentElement.moreList.header_layout.icon.views">
-                <source>views</source>
+                <source>Eye</source>
             </trans-unit>
             <trans-unit id="contentElement.moreList.header_layout.icon.search">
-                <source>search</source>
-            </trans-unit>
-            <trans-unit id="contentElement.moreList.header_layout.icon.circle-close">
-                <source>circle-close</source>
-            </trans-unit>
-            <trans-unit id="contentElement.moreList.header_layout.icon.arrow-primary">
-                <source>arrow-primary</source>
-            </trans-unit>
-            <trans-unit id="contentElement.moreList.header_layout.icon.arrow-footer">
-                <source>arrow-footer</source>
-            </trans-unit>
-            <trans-unit id="contentElement.moreList.header_layout.icon.plus-colored">
-                <source>plus-colored</source>
+                <source>Magnifying glass</source>
             </trans-unit>
             <trans-unit id="contentElement.moreList.header_layout.icon.ticket">
-                <source>ticket</source>
+                <source>Ticket</source>
             </trans-unit>
             <trans-unit id="contentElement.moreList.header_layout.icon.speech">
-                <source>speech</source>
+                <source>Speak</source>
             </trans-unit>
             <trans-unit id="contentElement.moreList.header_layout.icon.mail">
-                <source>mail</source>
+                <source>Envelope</source>
             </trans-unit>
             <trans-unit id="contentElement.moreList.header_layout.icon.phone">
-                <source>phone</source>
+                <source>Phone</source>
             </trans-unit>
             <trans-unit id="contentElement.moreList.header_layout.icon.globe">
-                <source>globe</source>
+                <source>Globe</source>
             </trans-unit>
             <trans-unit id="contentElement.moreList.header_layout.icon.clipboard">
-                <source>clipboard</source>
+                <source>Clipboard</source>
             </trans-unit>
             <trans-unit id="contentElement.moreList.header_layout.icon.contacts">
-                <source>contacts</source>
+                <source>Contacts</source>
             </trans-unit>
             <trans-unit id="contentElement.moreList.header_layout.icon.people">
-                <source>people</source>
+                <source>People</source>
             </trans-unit>
             <trans-unit id="contentElement.moreList.header_layout.icon.events">
-                <source>events</source>
-            </trans-unit>
-            <trans-unit id="contentElement.moreList.header_layout.icon.mobile-menu">
-                <source>mobile-menu</source>
-            </trans-unit>
-            <trans-unit id="contentElement.moreList.header_layout.icon.mobile-menu-close">
-                <source>mobile-menu-close</source>
+                <source>Events</source>
             </trans-unit>
 
             <!-- EventProgramList -->

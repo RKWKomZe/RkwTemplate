@@ -678,128 +678,96 @@
                 <target>Standard</target>
             </trans-unit>
             <trans-unit id="contentElement.moreList.header_layout.icon.youtube">
-                <source>youtube</source>
-                <target>youtube</target>
-            </trans-unit>
-            <trans-unit id="contentElement.moreList.header_layout.icon.youtube-2">
-                <source>youtube-2</source>
-                <target>youtube-2</target>
+                <source>Youtube</source>
+                <target>Youtube</target>
             </trans-unit>
             <trans-unit id="contentElement.moreList.header_layout.icon.facebook">
-                <source>facebook</source>
-                <target>facebook</target>
+                <source>Facebook</source>
+                <target>Facebook</target>
             </trans-unit>
             <trans-unit id="contentElement.moreList.header_layout.icon.instagram">
-                <source>instagram</source>
-                <target>instagram</target>
-            </trans-unit>
-            <trans-unit id="contentElement.moreList.header_layout.icon.circle-arrow">
-                <source>circle-arrow</source>
-                <target>circle-arrow</target>
+                <source>Instagram</source>
+                <target>Instagram</target>
             </trans-unit>
             <trans-unit id="contentElement.moreList.header_layout.icon.twitter">
-                <source>twitter</source>
-                <target>twitter</target>
+                <source>Twitter</source>
+                <target>Twitter</target>
             </trans-unit>
             <trans-unit id="contentElement.moreList.header_layout.icon.xing">
-                <source>xing</source>
-                <target>xing</target>
+                <source>Xing</source>
+                <target>Xing</target>
             </trans-unit>
             <trans-unit id="contentElement.moreList.header_layout.icon.linkedin">
-                <source>linkedin</source>
-                <target>linkedin</target>
+                <source>LinkedIn</source>
+                <target>LinkedIn</target>
             </trans-unit>
             <trans-unit id="contentElement.moreList.header_layout.icon.document">
-                <source>document</source>
-                <target>document</target>
+                <source>Document</source>
+                <target>Dokument</target>
             </trans-unit>
             <trans-unit id="contentElement.moreList.header_layout.icon.date">
-                <source>date</source>
-                <target>date</target>
+                <source>Calendar</source>
+                <target>Kalender</target>
             </trans-unit>
             <trans-unit id="contentElement.moreList.header_layout.icon.trash">
-                <source>trash</source>
-                <target>trash</target>
+                <source>Trash</source>
+                <target>Mülleimer</target>
             </trans-unit>
             <trans-unit id="contentElement.moreList.header_layout.icon.date-alarm">
-                <source>date-alarm</source>
-                <target>date-alarm</target>
+                <source>Alarm</source>
+                <target>Alarm</target>
             </trans-unit>
             <trans-unit id="contentElement.moreList.header_layout.icon.location">
-                <source>location</source>
-                <target>location</target>
+                <source>Location</source>
+                <target>Ort</target>
             </trans-unit>
             <trans-unit id="contentElement.moreList.header_layout.icon.download">
-                <source>download</source>
-                <target>download</target>
+                <source>Download</source>
+                <target>Download</target>
             </trans-unit>
             <trans-unit id="contentElement.moreList.header_layout.icon.views">
-                <source>views</source>
-                <target>views</target>
+                <source>Eye</source>
+                <target>Auge</target>
             </trans-unit>
             <trans-unit id="contentElement.moreList.header_layout.icon.search">
-                <source>search</source>
-                <target>search</target>
-            </trans-unit>
-            <trans-unit id="contentElement.moreList.header_layout.icon.circle-close">
-                <source>circle-close</source>
-                <target>circle-close</target>
-            </trans-unit>
-            <trans-unit id="contentElement.moreList.header_layout.icon.arrow-primary">
-                <source>arrow-primary</source>
-                <target>arrow-primary</target>
-            </trans-unit>
-            <trans-unit id="contentElement.moreList.header_layout.icon.arrow-footer">
-                <source>arrow-footer</source>
-                <target>arrow-footer</target>
-            </trans-unit>
-            <trans-unit id="contentElement.moreList.header_layout.icon.plus-colored">
-                <source>plus-colored</source>
-                <target>plus-colored</target>
+                <source>Magnifying glass</source>
+                <target>Lupe</target>
             </trans-unit>
             <trans-unit id="contentElement.moreList.header_layout.icon.ticket">
-                <source>ticket</source>
-                <target>ticket</target>
+                <source>Ticket</source>
+                <target>Ticket</target>
             </trans-unit>
             <trans-unit id="contentElement.moreList.header_layout.icon.speech">
-                <source>speech</source>
-                <target>speech</target>
+                <source>Speak</source>
+                <target>Sprechblase</target>
             </trans-unit>
             <trans-unit id="contentElement.moreList.header_layout.icon.mail">
-                <source>mail</source>
-                <target>mail</target>
+                <source>Envelope</source>
+                <target>Briefumschlag</target>
             </trans-unit>
             <trans-unit id="contentElement.moreList.header_layout.icon.phone">
-                <source>phone</source>
-                <target>phone</target>
+                <source>Phone</source>
+                <target>Telefon</target>
             </trans-unit>
             <trans-unit id="contentElement.moreList.header_layout.icon.globe">
-                <source>globe</source>
-                <target>globe</target>
+                <source>Globe</source>
+                <target>Globus</target>
             </trans-unit>
             <trans-unit id="contentElement.moreList.header_layout.icon.clipboard">
-                <source>clipboard</source>
-                <target>clipboard</target>
+                <source>Clipboard</source>
+                <target>Zwischenablage</target>
             </trans-unit>
             <trans-unit id="contentElement.moreList.header_layout.icon.contacts">
-                <source>contacts</source>
-                <target>contacts</target>
+                <source>Contacts</source>
+                <target>Kontakte</target>
             </trans-unit>
             <trans-unit id="contentElement.moreList.header_layout.icon.people">
-                <source>people</source>
-                <target>people</target>
+                <source>People</source>
+                <target>Leute</target>
             </trans-unit>
             <trans-unit id="contentElement.moreList.header_layout.icon.events">
-                <source>events</source>
-                <target>events</target>
-            </trans-unit>
-            <trans-unit id="contentElement.moreList.header_layout.icon.mobile-menu">
-                <source>mobile-menu</source>
-                <target>mobile-menu</target>
-            </trans-unit>
-            <trans-unit id="contentElement.moreList.header_layout.icon.mobile-menu-close">
-                <source>mobile-menu-close</source>
-                <target>mobile-menu-close</target>
+                <source>Events</source>
+                <target>Veranstaltungen</target>
             </trans-unit>
 
             <!-- EventProgramList -->
