@@ -67,10 +67,9 @@
 
         </style>
 
-        <f:comment><!-- header --></f:comment>
-        <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.content.landingpageSiteHeader', data:'{data}')}">
-            <f:render partial="HeaderSection/Landingpage" arguments="{_all}" />
-        </f:if>
+        <div class="siteheader siteheader--big siteheader--detailimg flex valign-center js-hero-class js-header-class">
+            <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.landingpageSiteHeader" data="{data}" />
+        </div>
 
     </f:section>
 

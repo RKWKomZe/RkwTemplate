@@ -837,12 +837,20 @@
             </trans-unit>
             <trans-unit id="contentElement.siteHeader.rowDescription">
                 <source>Link caption (only on landing page header)</source>
-                <target>Beschriftung für Link (nur Landingpage-Header)</target>
+                <target>Beschriftung für Button (nur Landingpage-Header)</target>
             </trans-unit>
             <trans-unit id="contentElement.siteHeader.imageManipulation.default">
                 <source>Default</source>
                 <target>Standard</target>
             </trans-unit>
+			<trans-unit id="contentElement.siteHeader.type.I.default">
+				<source>Black font</source>
+				<target>Schwarze Schrift</target>
+			</trans-unit>
+			<trans-unit id="contentElement.siteHeader.type.I.2">
+				<source>White font</source>
+				<target>Weiße Schrift</target>
+			</trans-unit>
 
             <!-- Gallery -->
             <trans-unit id="contentElement.gallery.title">

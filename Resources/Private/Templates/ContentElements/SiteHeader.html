@@ -12,17 +12,15 @@
                 <img src="{f:uri.image(image:images.0,cropVariant:'default')}" alt="{image.title}" loading="lazy">
             </div>
         </div>
-        <div class="flex-container flex-basis-12 siteheader__specials-title ">
-            <h1>{data.header}</h1>
+        <div class="flex-container flex-basis-12 siteheader__specials-title">
+            <h1 class="{f:if(condition: '{data.header_layout} >= 2', then: 'siteheader__specials-title--inverted')}">{data.header}</h1>
             <f:if condition="{data.header_link}">
                 <f:link.typolink
                     parameter="{data.header_link}"
                     class="btn btn--specials specials-bgcolor-primary specials-text-white"
                     title="{data.header_linktext}"
                     additionalAttributes="{data-target:'{data.header_link}'}"
-                >
-                    {data.rowDescription}
-                </f:link.typolink>
+                >{data.rowDescription}</f:link.typolink>
             </f:if>
         </div>
 
