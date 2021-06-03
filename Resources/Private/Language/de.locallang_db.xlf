@@ -90,6 +90,20 @@
                 <target>Fügt einen Container für Slider ein. Üblicherweise wird dieses Element auf der Startseite eingesetzt.</target>
             </trans-unit>
 
+            <!-- LandingpageGridElements -->
+			<trans-unit id="contentElement.gridelements_pi1.landingpage.type.I.default">
+				<source>default</source>
+				<target>Standardelement</target>
+			</trans-unit>
+			<trans-unit id="contentElement.gridelements_pi1.landingpage.type.I.1">
+				<source>primary</source>
+				<target>Primäres Element</target>
+			</trans-unit>
+			<trans-unit id="contentElement.gridelements_pi1.landingpage.type.I.2">
+				<source>secondary</source>
+				<target>Sekundäres Element</target>
+			</trans-unit>
+
             <!-- TilesContainer -->
             <trans-unit id="contentElement.tilesContainer.title">
                 <source>Tiles-Container</source>
@@ -117,18 +131,6 @@
                 <source>Header</source>
                 <target>Überschrift (wird für ein mögliches Inhaltsverzeichnis benötigt)</target>
             </trans-unit>
-			<trans-unit id="contentElement.textContainer.type.I.default">
-				<source>default</source>
-				<target>Standardelement</target>
-			</trans-unit>
-			<trans-unit id="contentElement.textContainer.type.I.1">
-				<source>primary</source>
-				<target>Primäres Element</target>
-			</trans-unit>
-			<trans-unit id="contentElement.textContainer.type.I.2">
-				<source>secondary</source>
-				<target>Sekundäres Element</target>
-			</trans-unit>
 
             <!-- GalleryContainer -->
             <trans-unit id="contentElement.galleryContainer.title">
