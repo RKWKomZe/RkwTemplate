@@ -65,9 +65,29 @@
                 display: block;
                 height: 4px;
                 width: 60px;
-                background-color: #d63f11;
+                background-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primarycolor}</f:format.raw>;
                 border-radius: 4px;
                 margin-top: 15px;
+            }
+
+            .tpl-specials-detail .contentbox.more-mod .list-header .icon {
+                color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primarycolor}</f:format.raw>;
+            }
+
+            .tpl-specials-detail .contentbox a,
+            .tpl-specials-detail .contentbox p a {
+                color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primarycolor}</f:format.raw>;
+            }
+
+            .tpl-specials-detail .contentbox p a:hover,
+            .tpl-specials-detail .contentbox ul li a:hover {
+                border-bottom-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primarycolor}</f:format.raw>;
+            }
+
+            .tpl-specials-detail .typo3-fsc ul:not([class]) li:before,
+            .tpl-specials-detail ol.list-primary li:before,
+            .tpl-specials-detail ul.list-primary li:before {
+                color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primarycolor}</f:format.raw>;
             }
 
             .tpl-specials-detail .contentbox.primary-mod header h2::after,
@@ -76,12 +96,17 @@
                 margin-bottom: 50px;
             }
 
+
             .tpl-specials-detail .contentbox.primary-mod header h2::after {
                 background-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_secondarycolor}</f:format.raw> !important;
             }
 
             .tpl-specials-detail .contentbox.secondary-mod header h2::after {
                 background-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primarycolor}</f:format.raw> !important;
+            }
+
+            .tpl-specials-detail .contentbox.secondary-mod p {
+                color: #333;
             }
 
             .tpl-specials-detail .contentbox .headline--underlined-primary::after {
