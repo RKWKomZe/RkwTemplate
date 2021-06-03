@@ -389,6 +389,20 @@
                 <source>Default</source>
             </trans-unit>
 
+            <!-- Button -->
+            <trans-unit id="contentElement.button.title">
+                <source>Button as call-to-action element</source>
+            </trans-unit>
+            <trans-unit id="contentElement.button.description">
+                <source>Adds an button-element.</source>
+            </trans-unit>
+            <trans-unit id="contentElement.button.rowDescription">
+                <source>Link text</source>
+            </trans-unit>
+            <trans-unit id="contentElement.button.imageManipulation.default">
+                <source>Default</source>
+            </trans-unit>
+
             <!-- Tile -->
             <trans-unit id="contentElement.tile.title">
                 <source>Tile</source>

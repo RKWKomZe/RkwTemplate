@@ -652,6 +652,24 @@
                 <target>Standard</target>
             </trans-unit>
 
+            <!-- Button -->
+            <trans-unit id="contentElement.button.title">
+                <source>Button as call-to-action element</source>
+                <target>Button als Call-to-Action-Element</target>
+            </trans-unit>
+            <trans-unit id="contentElement.button.description">
+                <source>Adds an button-element.</source>
+                <target>Button als Call-to-Action-Element</target>
+            </trans-unit>
+            <trans-unit id="contentElement.button.rowDescription">
+                <source>Link text</source>
+                <target>Linkbeschriftung</target>
+            </trans-unit>
+            <trans-unit id="contentElement.button.imageManipulation.default">
+                <source>Default</source>
+                <target>Standard</target>
+            </trans-unit>
+
             <!-- Tile -->
             <trans-unit id="contentElement.tile.title">
                 <source>Tile</source>
