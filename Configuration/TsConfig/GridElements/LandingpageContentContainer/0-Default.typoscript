@@ -3,12 +3,6 @@
 //=========================================================
 TCEFORM.tt_content {
 
-    header_position {
-        types.gridelements_pi1 {
-            removeItems = center, right, left
-        }
-    }
-
     header_layout {
         types.gridelements_pi1 {
             removeItems = 3,4,5,100

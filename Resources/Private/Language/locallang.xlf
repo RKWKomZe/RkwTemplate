@@ -34,7 +34,6 @@
                 <source>show less</source>
             </trans-unit>
 
-
             <!-- Topic -->
             <trans-unit id="contentElement.topic.showMore">
                 <source>show more</source>
@@ -45,8 +44,8 @@
                 <source>Show more</source>
             </trans-unit>
 
-            <!-- StickyFooter -->
-            <trans-unit id="contentElement.stickyFooter.labelScrollToTop">
+            <!-- StickyFooterContainer -->
+            <trans-unit id="contentElement.stickyFooterContainer.labelScrollToTop">
                 <source>Scroll to top</source>
             </trans-unit>
 

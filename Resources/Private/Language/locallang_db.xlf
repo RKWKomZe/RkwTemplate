@@ -508,20 +508,6 @@
                 <source>Default</source>
             </trans-unit>
 
-            <!-- StickyFooter -->
-            <trans-unit id="contentElement.stickyfooter.title">
-                <source>Banner with Call-To-Action functions</source>
-            </trans-unit>
-            <trans-unit id="contentElement.stickyfooter.description">
-                <source>Adds a banner element.</source>
-            </trans-unit>
-            <trans-unit id="contentElement.stickyfooter.rowDescription">
-                <source>Short Version</source>
-            </trans-unit>
-            <trans-unit id="contentElement.stickyfooter.imageManipulation.default">
-                <source>Default</source>
-            </trans-unit>
-
             <!-- SiteHeader -->
             <trans-unit id="contentElement.siteHeader.title">
                 <source>Header-Image with Call-to-Action-Button</source>

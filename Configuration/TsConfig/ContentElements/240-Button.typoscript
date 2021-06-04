@@ -15,3 +15,18 @@ mod.wizards.newContentElement.wizardItems.common {
     show := addToList(rkwtemplate_button)
 }
 
+//=========================================================
+// Change some fields
+//=========================================================
+TCEFORM.tt_content {
+
+    header_layout {
+        types.rkwtemplate_button {
+            removeItems = 0,3,4,5,100
+            altLabels.1 = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.button.type.I.1
+            altLabels.2 = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.button.type.I.2
+        }
+    }
+
+}
+

@@ -27,14 +27,14 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_button'] = [
                 'type' => 'passthrough'
             ]
         ],
-        'header_layout' => [
+        'header' => [
             'config' => [
                 'type' => 'passthrough'
             ]
         ],
-        'header' => [
+        'subheader' => [
             'config' => [
-                'eval' => 'required',
+                'type' => 'passthrough'
             ]
         ],
         'header_link' => [
@@ -44,18 +44,16 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_button'] = [
         ],
         'bodytext' => [
             'config' => [
-                'eval' => 'trim,required',
-                'enableRichtext' => true,
+                'type' => 'passthrough'
             ]
         ],
         'rowDescription' => [
             'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.button.rowDescription',
-            'displayCond' => 'FIELD:header_link:REQ:true',
             'config' => [
                 'type' => 'input',
                 'eval' => 'trim',
-            ],
-        ]
+            ]
+        ],
     ]
 ];
 

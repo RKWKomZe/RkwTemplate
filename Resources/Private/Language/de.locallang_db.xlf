@@ -222,6 +222,24 @@
                 <target>Überschrift (wird für ein mögliches Inhaltsverzeichnis benötigt)</target>
             </trans-unit>
 
+            <!-- StickyFooterContainer -->
+            <trans-unit id="contentElement.stickyFooterContainer.title">
+                <source>StickyFooter-Container</source>
+                <target>StickyFooter-Container</target>
+            </trans-unit>
+            <trans-unit id="contentElement.stickyFooterContainer.description">
+                <source>Adds a container to display a sticky footer.</source>
+                <target>Fügt einen Container hinzu, der einen StickyFooter mit Buttons beinhaltet. Üblicherweise wird dieses Element auf einer Landingpage eingesetzt.</target>
+            </trans-unit>
+            <trans-unit id="contentElement.stickyFooterContainer.content">
+                <source>Content</source>
+                <target>Inhalt</target>
+            </trans-unit>
+            <trans-unit id="contentElement.stickyFooterContainer.header">
+                <source>Header</source>
+                <target>Überschrift (wird für ein mögliches Inhaltsverzeichnis benötigt)</target>
+            </trans-unit>
+
             <!-- Mission Statement -->
             <trans-unit id="contentElement.mission.title">
                 <source>Mission Statement</source>
@@ -669,6 +687,14 @@
                 <source>Default</source>
                 <target>Standard</target>
             </trans-unit>
+			<trans-unit id="contentElement.button.type.I.1">
+				<source>primary</source>
+				<target>Primärer Button</target>
+			</trans-unit>
+			<trans-unit id="contentElement.button.type.I.2">
+				<source>secondary</source>
+				<target>Sekundärer Button</target>
+			</trans-unit>
 
             <!-- Tile -->
             <trans-unit id="contentElement.tile.title">
@@ -804,24 +830,6 @@
                 <target>Kurzfassung</target>
             </trans-unit>
             <trans-unit id="contentElement.eventProgramList.imageManipulation.default">
-                <source>Default</source>
-                <target>Standard</target>
-            </trans-unit>
-
-            <!-- StickyFooter -->
-            <trans-unit id="contentElement.stickyfooter.title">
-                <source>Banner with Call-To-Action functions</source>
-                <target>Banner mit Call-To-Action-Funktionen</target>
-            </trans-unit>
-            <trans-unit id="contentElement.stickyfooter.description">
-                <source>Adds a banner element.</source>
-                <target>Banner mit Call-to-Action-Buttons und Thumbnail.</target>
-            </trans-unit>
-            <trans-unit id="contentElement.stickyfooter.rowDescription">
-                <source>Short Version</source>
-                <target>Kurzfassung</target>
-            </trans-unit>
-            <trans-unit id="contentElement.stickyfooter.imageManipulation.default">
                 <source>Default</source>
                 <target>Standard</target>
             </trans-unit>

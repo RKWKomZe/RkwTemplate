@@ -54,7 +54,6 @@ $GLOBALS['TCA']['tt_content']['types']['gridelements_pi1']['columnsOverrides'] =
     ],
     'image' => [
         'config' => [
-            'minitems' => 0,
             'maxitems' => 1,
         ]
     ]

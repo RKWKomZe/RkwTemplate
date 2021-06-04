@@ -10,9 +10,8 @@
     <f:if condition="{data.header_link}">
         <f:link.typolink
             parameter="{data.header_link}"
-            class="btn btn--specials specials-bgcolor-primary specials-textcolor-white"
+            class="btn {f:if(condition: '{data.header_layout} == 1', then: 'btn--white specials-textcolor-primary')}{f:if(condition: '{data.header_layout} == 2', then: 'btn--outline')}"
             title="{data.header}"
-            additionalAttributes="{data-target:'{data.header_link}'}"
         >
             {data.rowDescription}
         </f:link.typolink>
