@@ -91,6 +91,10 @@
             </trans-unit>
 
             <!-- LandingpageGridElements -->
+			<trans-unit id="contentElement.gridelements_pi1.landingpage.type.label">
+				<source>Typ</source>
+				<target>Hervorheben als ...</target>
+			</trans-unit>
 			<trans-unit id="contentElement.gridelements_pi1.landingpage.type.I.default">
 				<source>default</source>
 				<target>Standardelement</target>
