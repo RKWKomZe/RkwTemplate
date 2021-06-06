@@ -12,14 +12,23 @@
     </rkwBasics:format.removeEmptyParagraphs>
 
     <f:if condition="{data.header_link}">
-        <f:link.typolink
-            parameter="{data.header_link}"
-            class="btn btn--specials specials-bgcolor-primary specials-textcolor-white"
-            title="{data.header}"
-            additionalAttributes="{data-target:'{data.header_link}'}"
-        >
-            {data.rowDescription}
-        </f:link.typolink>
+        <f:if condition="<rkwBasics:string.contains needle='#' haystack='{data.header_link}' /> == 1">
+            <f:then>
+                <f:link.typolink
+                    parameter="{data.header_link}"
+                    class="btn btn--specials specials-bgcolor-primary specials-textcolor-white"
+                    title="{data.rowDescription}"
+                    additionalAttributes="{data-target:'{data.header_link}'}"
+                >{data.rowDescription}</f:link.typolink>
+            </f:then>
+            <f:else>
+                <f:link.typolink
+                    parameter="{data.header_link}"
+                    class="btn btn--specials specials-bgcolor-primary specials-textcolor-white"
+                    title="{data.rowDescription}"
+                >{data.rowDescription}</f:link.typolink>
+            </f:else>
+        </f:if>
     </f:if>
 
 </f:section>
