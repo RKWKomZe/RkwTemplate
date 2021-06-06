@@ -11,6 +11,7 @@ tx_gridelements.setup.textImageBackgroundContainer {
                     1 {
                         name = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.textImageBackgroundContainer.content
                         colPos = 80
+                        maxitems = 1
                         allowed {
                             CType = rkwtemplate_textimagebackground
                         }

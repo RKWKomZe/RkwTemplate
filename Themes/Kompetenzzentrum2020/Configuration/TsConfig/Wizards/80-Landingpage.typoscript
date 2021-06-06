@@ -8,25 +8,27 @@
 
     // remove everything - except for some items
     // Important: this also has to include gridelements_pi1 for the gridContainer if needed!
-    TCEFORM.tt_content.CType.keepItems = gridelements_pi1
-
-    // remove everything - except for some items
-    //  mod.wizards.newContentElement.wizardItems.common.show := removeFromList(rkwtemplate_shortlink, rkwtemplate_overview)
-    mod.wizards.newContentElement.wizardItems.common.show =
-    mod.wizards.newContentElement.wizardItems.special.show =
-    mod.wizards.newContentElement.wizardItems.forms.show =
-    mod.wizards.newContentElement.wizardItems.plugins.show =
-    mod.wizards.newContentElement.wizardItems.menu.show =
+    TCEFORM.tt_content.CType.keepItems = gridelements_pi1, header, text, textpic, image, textmedia, list, html, rkwtemplate_textimagebackground, rkwtemplate_imagelist, rkwtemplate_eventprogramlist, rkwtemplate_morelist, rkwtemplate_gallery, rkwtemplate_collage, rkwtemplate_textwithbutton, rkwtemplate_collapsed, rkwtemplate_siteheader, rkwtemplate_button
 
     // remove grid elements by their ID (aka name)
-    tx_gridelements.excludeLayoutIds = sliderContainer, promoterContainer, logoContainer, topicContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerOneCol, contentContainerOneColPagination, contentContainerOneColOrderForm
+    tx_gridelements.excludeLayoutIds = sliderContainer, topicContainer, logoContainer, promoterContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerOneCol, contentContainerOneColPagination, contentContainerOneColOrderForm
 
 [end]
 
+
 [RKW\RkwTemplate\Condition\Backend\BackendLayoutCondition = "pagets__landingPages"] && [RKW\RkwTemplate\Condition\Backend\ColPosCondition = "900"]
 
+    TCEFORM.tt_content.CType.removeItems = rkwtemplate_siteheader
+
+    // remove everything - except for some items
+    mod.wizards.newContentElement.wizardItems.common.show =
+    mod.wizards.newContentElement.wizardItems.special.show =
+    mod.wizards.newContentElement.wizardItems.forms.show =
+    mod.wizards.newContentElement.wizardItems.menu.show =
+    mod.wizards.newContentElement.wizardItems.plugins.show =
+
     // remove grid elements by their ID (aka name)
-    tx_gridelements.excludeLayoutIds = sliderContainer, promoterContainer, logoContainer, topicContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerOneCol, contentContainerOneColPagination, contentContainerOneColOrderForm
+    tx_gridelements.excludeLayoutIds = sliderContainer, topicContainer, logoContainer, promoterContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerOneCol, contentContainerOneColPagination, contentContainerOneColOrderForm, stickyFooterContainer
 
 [end]
 
@@ -36,16 +38,8 @@
     // Important: this also has to include gridelements_pi1 for the gridContainer if needed!
     TCEFORM.tt_content.CType.keepItems = gridelements_pi1
 
-    // remove everything - except for some items
-    mod.wizards.newContentElement.wizardItems.common.show =
-    mod.wizards.newContentElement.wizardItems.special.show =
-    mod.wizards.newContentElement.wizardItems.forms.show =
-    mod.wizards.newContentElement.wizardItems.menu.show =
-    mod.wizards.newContentElement.wizardItems.plugins.show =
-    mod.wizards.newContentElement.wizardItems.common.show =
-
     // remove grid elements by their ID (aka name)
-    tx_gridelements.excludeLayoutIds = sliderContainer, logoContainer, topicContainer, promoterContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerOneCol, contentContainerOneColPagination, contentContainerOneColOrderForm, contentContainerLandingpageOneCol, contentContainerLandingpageTwoCols, listContainer, textContainer, tilesContainer, galleryContainer, moreListContainer, collageContainer, textImageBackgroundContainer
+    tx_gridelements.excludeLayoutIds = sliderContainer, logoContainer, topicContainer, promoterContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerOneCol, contentContainerOneColPagination, contentContainerOneColOrderForm, contentContainerLandingpageOneCol, contentContainerLandingpageTwoCols, textContainer, tilesContainer, galleryContainer, collageContainer, listContainer, moreListContainer, textImageBackgroundContainer
 
 [end]
 
@@ -55,15 +49,7 @@
     // Important: this also has to include gridelements_pi1 for the gridContainer if needed!
     TCEFORM.tt_content.CType.keepItems = rkwtemplate_siteheader
 
-    // remove everything - except for some items
-    mod.wizards.newContentElement.wizardItems.common.show =
-    mod.wizards.newContentElement.wizardItems.special.show =
-    mod.wizards.newContentElement.wizardItems.forms.show =
-    mod.wizards.newContentElement.wizardItems.menu.show =
-    mod.wizards.newContentElement.wizardItems.plugins.show =
-    mod.wizards.newContentElement.wizardItems.common.show = rkwtemplate_siteheader
-
     // remove grid elements by their ID (aka name)
-    tx_gridelements.excludeLayoutIds = sliderContainer, logoContainer, topicContainer, promoterContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerOneCol, contentContainerOneColPagination, contentContainerOneColOrderForm, contentContainerLandingpageOneCol, contentContainerLandingpageTwoCols
+    tx_gridelements.excludeLayoutIds = sliderContainer, logoContainer, topicContainer, promoterContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerOneCol, contentContainerOneColPagination, contentContainerOneColOrderForm, contentContainerLandingpageOneCol, contentContainerLandingpageTwoCols, stickyFooterContainer, textContainer, tilesContainer, galleryContainer, collageContainer, listContainer, moreListContainer, textImageBackgroundContainer
 
 [end]
