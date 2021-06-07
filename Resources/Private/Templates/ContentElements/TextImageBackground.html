@@ -12,17 +12,10 @@
                 <img src="{f:uri.image(image:images.0,cropVariant:'default')}" alt="{image.title}" loading="lazy">
             </div>
         </div>
-        <div class="flex-container download-mod__content">
+        <div class="flex-container download-mod__content {f:if(condition: '{data.header_layout} >= 2', then: 'download-mod__content--inverted')}">
             <div class="flex-basis-7">
-                <f:if condition="{data.header} && {data.header_layout} != 100">
-                    <f:if condition="{data.header_layout}">
-                        <f:then>
-                            <h{data.header_layout} class="picture-list__header" id="c{data.uid}">{data.header}</h{data.header_layout}>
-                        </f:then>
-                        <f:else>
-                            <h3 class="headline headline--underlined" id="c{data.uid}">{data.header}</h3>
-                        </f:else>
-                    </f:if>
+                <f:if condition="{data.header}">
+                    <h3 class="headline headline--underlined">{data.header}</h3>
                 </f:if>
                 <rkwBasics:format.removeEmptyParagraphs>
                     <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data.bodytext}</f:format.html>

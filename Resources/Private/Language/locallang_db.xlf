@@ -374,6 +374,21 @@
             <trans-unit id="contentElement.textImageBackground.imageManipulation.default">
                 <source>Default</source>
             </trans-unit>
+			<trans-unit id="contentElement.textImageBackground.type.label">
+				<source>Font color</source>
+			</trans-unit>
+			<trans-unit id="contentElement.textImageBackground.type.I.default">
+				<source>Black font, no gradient</source>
+			</trans-unit>
+			<trans-unit id="contentElement.textImageBackground.type.I.1">
+				<source>Black font, white gradient</source>
+			</trans-unit>
+			<trans-unit id="contentElement.textImageBackground.type.I.2">
+				<source>White font, no gradient</source>
+			</trans-unit>
+			<trans-unit id="contentElement.textImageBackground.type.I.3">
+				<source>White font, black gradient</source>
+			</trans-unit>
 
             <!-- TextWithButton -->
             <trans-unit id="contentElement.textWithButton.title">
@@ -521,6 +536,9 @@
             <trans-unit id="contentElement.siteHeader.imageManipulation.default">
                 <source>Default</source>
             </trans-unit>
+			<trans-unit id="contentElement.siteHeader.type.label">
+				<source>Font color</source>
+			</trans-unit>
 			<trans-unit id="contentElement.siteHeader.type.I.default">
 				<source>Black font, no gradient</source>
 			</trans-unit>

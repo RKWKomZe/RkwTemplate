@@ -655,6 +655,18 @@
                 <source>Default</source>
                 <target>Standard</target>
             </trans-unit>
+			<trans-unit id="contentElement.textImageBackground.type.label">
+				<source>Font color</source>
+				<target>Schriftfarbe</target>
+			</trans-unit>
+			<trans-unit id="contentElement.textImageBackground.type.I.default">
+				<source>Black font</source>
+				<target>Schwarze Schrift</target>
+			</trans-unit>
+			<trans-unit id="contentElement.textImageBackground.type.I.2">
+				<source>White font</source>
+				<target>Weiße Schrift</target>
+			</trans-unit>
 
             <!-- TextWithButton -->
             <trans-unit id="contentElement.textWithButton.title">
@@ -855,6 +867,10 @@
                 <source>Default</source>
                 <target>Standard</target>
             </trans-unit>
+			<trans-unit id="contentElement.siteHeader.type.label">
+				<source>Font color</source>
+				<target>Schriftfarbe</target>
+			</trans-unit>
 			<trans-unit id="contentElement.siteHeader.type.I.default">
 				<source>Black font</source>
 				<target>Schwarze Schrift</target>
