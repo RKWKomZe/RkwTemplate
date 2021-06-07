@@ -261,6 +261,7 @@ mod {
                                     1 {
                                         name = Header
                                         colPos = 920
+                                        maxitems = 1
                                     }
                                 }
                             }
