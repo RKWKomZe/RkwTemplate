@@ -10,6 +10,7 @@ $tmpColsPages = [
             'type' => 'input',
             'renderType' => 'colorpicker',
             'size' => 10,
+            'eval' => 'required',
         ],
     ],
     'tx_rkwtemplate_landingpage_secondarycolor' => [
@@ -20,6 +21,7 @@ $tmpColsPages = [
             'type' => 'input',
             'renderType' => 'colorpicker',
             'size' => 10,
+            'eval' => 'required',
         ],
     ],
 ];
