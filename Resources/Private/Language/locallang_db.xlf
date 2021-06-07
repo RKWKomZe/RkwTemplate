@@ -439,6 +439,9 @@
             <trans-unit id="contentElement.moreList.imageManipulation.default">
                 <source>Default</source>
             </trans-unit>
+            <trans-unit id="contentElement.moreList.header_layout.label">
+                <source>Icons</source>
+            </trans-unit>
             <trans-unit id="contentElement.moreList.header_layout.icon.youtube">
                 <source>Youtube</source>
             </trans-unit>

@@ -739,6 +739,10 @@
                 <source>Default</source>
                 <target>Standard</target>
             </trans-unit>
+            <trans-unit id="contentElement.moreList.header_layout.label">
+                <source>Icons</source>
+                <target>Icons</target>
+            </trans-unit>
             <trans-unit id="contentElement.moreList.header_layout.icon.youtube">
                 <source>Youtube</source>
                 <target>Youtube</target>
