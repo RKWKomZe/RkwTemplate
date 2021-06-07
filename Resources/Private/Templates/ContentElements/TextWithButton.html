@@ -7,6 +7,10 @@
 
 <f:section name="Main">
 
+    <f:if condition="{data.header}">
+        <h3 class="headline headline--underlined">{data.header}</h3>
+    </f:if>
+
     <rkwBasics:format.removeEmptyParagraphs>
         <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data.bodytext}</f:format.html>
     </rkwBasics:format.removeEmptyParagraphs>
