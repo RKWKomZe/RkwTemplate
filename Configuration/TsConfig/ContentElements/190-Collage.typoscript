@@ -3,7 +3,7 @@
 //=========================================================
 mod.wizards.newContentElement.wizardItems.common {
     elements {
-        rkwtemplate_gallery {
+        rkwtemplate_collage {
             iconIdentifier = rkw-template-collage
             title = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.collage.title
             description = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.collage.description
