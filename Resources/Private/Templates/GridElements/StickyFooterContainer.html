@@ -7,9 +7,11 @@
 
     <f:section name="Main">
         <div class="footer-content">
-            <div class="footer-thumb">
-                <img src="{f:uri.image(image:images.0,width:'1050',cropVariant:'default')}" alt="">
-            </div>
+            <f:if condition="{f:count(subject: images)} > 0">
+                <div class="footer-thumb">
+                    <img src="{f:uri.image(image:images.0,width:'1050',cropVariant:'default')}" alt="">
+                </div>
+            </f:if>
             <div class="btn-list flex-container center-main">
                 <f:format.raw>{data.tx_gridelements_view_column_110}</f:format.raw>
             </div>

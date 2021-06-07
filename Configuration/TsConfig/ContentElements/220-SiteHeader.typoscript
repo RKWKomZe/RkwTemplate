@@ -22,6 +22,7 @@ TCEFORM.tt_content {
 
     header_layout {
         types.rkwtemplate_siteheader {
+            label = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.siteHeader.type.label
             removeItems = 1,3,4,5,100
             altLabels.0 = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.siteHeader.type.I.default
             altLabels.2 = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.siteHeader.type.I.2

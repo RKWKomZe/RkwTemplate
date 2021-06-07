@@ -14,3 +14,16 @@ mod.wizards.newContentElement.wizardItems.common {
     }
     show := addToList(rkwtemplate_morelist)
 }
+
+//=========================================================
+// Change some fields
+//=========================================================
+TCEFORM.tt_content {
+
+    header_layout {
+        types.rkwtemplate_morelist {
+            label = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.moreList.header_layout.label
+        }
+    }
+
+}
