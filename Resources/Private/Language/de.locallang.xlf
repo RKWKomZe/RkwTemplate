@@ -10,7 +10,6 @@
                 <target>Zeige Slide %s</target>
             </trans-unit>
 
-
             <!-- Shortlink -->
 			<trans-unit id="contentElement.shortlink.type.I.0">
 				<source>Article</source>
@@ -33,6 +32,19 @@
                 <target>Projekt</target>
             </trans-unit>
 
+            <!-- Button -->
+			<trans-unit id="contentElement.button.type.I.0">
+				<source>internal link</source>
+				<target>interner Link</target>
+			</trans-unit>
+            <trans-unit id="contentElement.button.type.I.1">
+                <source>external link</source>
+                <target>externer Link</target>
+            </trans-unit>
+            <trans-unit id="contentElement.button.type.I.2">
+                <source>anchor link</source>
+                <target>Sprungmarke</target>
+            </trans-unit>
 
             <!-- CollapsedText -->
             <trans-unit id="contentElement.collapsed.showMore">
@@ -44,12 +56,24 @@
                 <target>weniger anzeigen</target>
             </trans-unit>
 
-
             <!-- Topic -->
             <trans-unit id="contentElement.topic.showMore">
                 <source>show more</source>
                 <target>mehr lesen</target>
             </trans-unit>
+
+            <!-- Tile -->
+            <trans-unit id="contentElement.tile.labelShowMore">
+                <source>Show more</source>
+                <target>Mehr lesen</target>
+            </trans-unit>
+
+            <!-- StickyFooterContainer -->
+            <trans-unit id="contentElement.stickyFooterContainer.labelScrollToTop">
+                <source>Scroll to top</source>
+                <target>Nach oben</target>
+            </trans-unit>
+
 		</body>
 	</file>
 </xliff>

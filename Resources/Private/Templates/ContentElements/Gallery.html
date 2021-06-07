@@ -1,0 +1,26 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:rkwBasics="http://typo3.org/ns/RKW/RkwBasics/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+    <f:layout name="Rkw" />
+
+    <f:section name="Main">
+        <f:for each="{images}" as="image" iteration="iterator">
+            <img class="slider-mod__item {f:if(condition: '{iterator.index} == 0', then: 'is-active')}" id="slider-mod__item-{iterator.index}" src="{f:uri.image(image:image,cropVariant:'default')}" alt="{image.title}"/>
+        </f:for>
+        <div class="slider-mod__nav">
+            <ul>
+                <f:for each="{images}" as="image" iteration="iterator">
+                    <li>
+                        <button aria-selected="{f:if(condition: '{iterator.index} == 0', then: 'true', else: 'false')}" aria-controls="slider-mod__item-{iterator.index}">
+                            <img src="{f:uri.image(image:image,cropVariant:'thumbnail',width:'117')}" loading="lazy" alt="{image.title}"/>
+                        </button>
+                    </li>
+                </f:for>
+            </ul>
+        </div>
+    </f:section>
+
+</html>
+

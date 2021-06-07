@@ -1,0 +1,23 @@
+tx_gridelements.setup.stickyFooterContainer {
+
+    title = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.stickyFooterContainer.title
+    description = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.stickyFooterContainer.description
+    config {
+        colCount = 1
+        rowCount = 1
+        rows {
+            1 {
+                columns {
+                    1 {
+                        name = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.stickyFooterContainer.content
+                        colPos = 110
+                        maxitems = 2
+                        allowed {
+                            CType = rkwtemplate_button
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

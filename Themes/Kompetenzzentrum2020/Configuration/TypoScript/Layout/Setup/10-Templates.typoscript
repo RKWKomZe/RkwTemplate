@@ -74,6 +74,11 @@ page {
             20000 {
                 value = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/EventDetail.html
             }
+
+            30000 = TEXT
+            30000 {
+                value = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/Landingpage.html
+            }
         }
 
         partialRootPaths {

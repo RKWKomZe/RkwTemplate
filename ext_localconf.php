@@ -16,9 +16,29 @@ call_user_func(
             ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/Slider.svg']
         );
         $iconRegistry->registerIcon(
+            'rkw-template-imagelist', // Icon-Identifier, e.g. tx-myext-action-preview
+            \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+            ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/ImageList.svg']
+        );
+        $iconRegistry->registerIcon(
+            'rkw-template-collage', // Icon-Identifier, e.g. tx-myext-action-preview
+            \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+            ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/Collage.svg']
+        );
+        $iconRegistry->registerIcon(
             'rkw-template-collapsed', // Icon-Identifier, e.g. tx-myext-action-preview
             \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
             ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/Collapsed.svg']
+        );
+        $iconRegistry->registerIcon(
+            'rkw-template-listelement', // Icon-Identifier, e.g. tx-myext-action-preview
+            \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+            ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/ListElement.svg']
+        );
+        $iconRegistry->registerIcon(
+            'rkw-template-gallery', // Icon-Identifier, e.g. tx-myext-action-preview
+            \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+            ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/Gallery.svg']
         );
         $iconRegistry->registerIcon(
             'rkw-template-imagelist', // Icon-Identifier, e.g. tx-myext-action-preview
@@ -31,9 +51,49 @@ call_user_func(
             ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/ImageTextOverlay.svg']
         );
         $iconRegistry->registerIcon(
+            'rkw-template-landingpagetoc', // Icon-Identifier, e.g. tx-myext-action-preview
+            \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+            ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/LandingpageTableOfContents.svg']
+        );
+        $iconRegistry->registerIcon(
             'rkw-template-mission', // Icon-Identifier, e.g. tx-myext-action-preview
             \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
             ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/Mission.svg']
+        );
+        $iconRegistry->registerIcon(
+            'rkw-template-morelist', // Icon-Identifier, e.g. tx-myext-action-preview
+            \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+            ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/MoreList.svg']
+        );
+        $iconRegistry->registerIcon(
+            'rkw-template-stickyfooter', // Icon-Identifier, e.g. tx-myext-action-preview
+            \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+            ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/StickyFooter.svg']
+        );
+        $iconRegistry->registerIcon(
+            'rkw-template-siteheader', // Icon-Identifier, e.g. tx-myext-action-preview
+            \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+            ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/SiteHeader.svg']
+        );
+        $iconRegistry->registerIcon(
+            'rkw-template-textimagebackground', // Icon-Identifier, e.g. tx-myext-action-preview
+            \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+            ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/TextImageBackground.svg']
+        );
+        $iconRegistry->registerIcon(
+            'rkw-template-button', // Icon-Identifier, e.g. tx-myext-action-preview
+            \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+            ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/Button.svg']
+        );
+        $iconRegistry->registerIcon(
+            'rkw-template-textwithbutton', // Icon-Identifier, e.g. tx-myext-action-preview
+            \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+            ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/TextWithButton.svg']
+        );
+        $iconRegistry->registerIcon(
+            'rkw-template-tile', // Icon-Identifier, e.g. tx-myext-action-preview
+            \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+            ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/Tile.svg']
         );
         $iconRegistry->registerIcon(
             'rkw-template-topic', // Icon-Identifier, e.g. tx-myext-action-preview

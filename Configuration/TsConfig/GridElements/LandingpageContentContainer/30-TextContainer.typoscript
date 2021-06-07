@@ -1,0 +1,23 @@
+tx_gridelements.setup.textContainer {
+
+    title = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.textContainer.title
+    description = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.textContainer.description
+    config {
+        colCount = 1
+        rowCount = 1
+        rows {
+            1 {
+                columns {
+                    1 {
+                        name = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.textContainer.content
+                        colPos = 30
+                        maxitems = 1
+                        allowed {
+                            CType = text, textmedia, html, rkwtemplate_textwithbutton
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

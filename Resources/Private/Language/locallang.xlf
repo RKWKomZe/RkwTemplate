@@ -9,7 +9,6 @@
                 <source>Show Slide %s</source>
             </trans-unit>
 
-
             <!-- Shortlink -->
 			<trans-unit id="contentElement.shortlink.type.I.0">
 				<source>Default (Article)</source>
@@ -27,7 +26,6 @@
                 <source>Project</source>
             </trans-unit>
 
-
             <!-- CollapsedText -->
             <trans-unit id="contentElement.collapsed.showMore">
                 <source>show more</source>
@@ -36,11 +34,21 @@
                 <source>show less</source>
             </trans-unit>
 
-
             <!-- Topic -->
             <trans-unit id="contentElement.topic.showMore">
                 <source>show more</source>
             </trans-unit>
+
+            <!-- Tile -->
+            <trans-unit id="contentElement.tile.labelShowMore">
+                <source>Show more</source>
+            </trans-unit>
+
+            <!-- StickyFooterContainer -->
+            <trans-unit id="contentElement.stickyFooterContainer.labelScrollToTop">
+                <source>Scroll to top</source>
+            </trans-unit>
+
 		</body>
 	</file>
 </xliff>

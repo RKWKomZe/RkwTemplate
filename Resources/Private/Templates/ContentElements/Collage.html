@@ -1,0 +1,18 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+    <f:layout name="Rkw" />
+
+    <f:section name="Main">
+
+        <div class="flex-container center-main">
+            <f:for each="{images}" as="image" iteration="iterator">
+                <img class="image-mod__img{iterator.index + 1}" loading="lazy" src="{f:uri.image(image:image)}" alt="{image.title}"/>
+            </f:for>
+        </div>
+
+    </f:section>
+
+</html>
+

@@ -4,8 +4,9 @@
 TCEFORM.tt_content {
 
     header_position {
-        types.gridelements_pi1{
+        types.gridelements_pi1 {
             removeItems = center, right, left
         }
     }
+
 }

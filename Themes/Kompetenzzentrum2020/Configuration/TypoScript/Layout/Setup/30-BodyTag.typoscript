@@ -130,6 +130,11 @@ page {
                 20.noTrimWrap = | ||
             }
 
+            30000 = TEXT
+            30000 {
+                value = tpl-specials-detail body
+            }
+
             stdWrap.noTrimWrap = | ||
         }
 

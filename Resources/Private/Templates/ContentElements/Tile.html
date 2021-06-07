@@ -1,0 +1,52 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:rkwBasics="http://typo3.org/ns/RKW/RkwBasics/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+    <f:layout name="Rkw" />
+
+    <f:section name="Main">
+
+        <div class="speaker-list__item">
+            <f:if condition="{f:count(subject: images)} > 0">
+                <div class="speaker-img">
+                    <img src="{f:uri.image(image:images.0,cropVariant:'default')}" alt="{image.title}" loading="lazy">
+                </div>
+            </f:if>
+            <div class="speaker-title">
+                <strong>{data.header}</strong>
+                {data.subheader}
+            </div>
+            <f:if condition="{data.bodytext}">
+                <button class="speaker-link js-open-mdl" data-modal="mdl-c{data.uid}">
+                    <f:translate key="LLL:EXT:rkw_template/Resources/Private/Language/locallang.xlf:contentElement.tile.labelShowMore" />
+                </button>
+            </f:if>
+        </div>
+        <f:if condition="{data.bodytext}">
+            <div id="mdl-c{data.uid}" class="mdl">
+                <div class="mdl__inner">
+                    <header class="mdl__header">
+                        <span class="h4 mdl__headline">{data.header}</span>
+                    </header>
+                    <div class="mdl__content">
+                        <rkwBasics:format.removeEmptyParagraphs>
+                            <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data.bodytext}</f:format.html>
+                        </rkwBasics:format.removeEmptyParagraphs>
+                    </div>
+                </div>
+                <button class="mdl-close js-close-mdl">
+                    <svg class="icon icon--48">
+                        <use xlink:href="#ic-mobile-menu-close"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="mdl-layer js-mdl-layer"></div>
+        </f:if>
+
+    </f:section>
+</html>
+
+
+
+

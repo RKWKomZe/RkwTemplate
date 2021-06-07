@@ -1,0 +1,22 @@
+tx_gridelements.setup.contentContainerLandingpageOneCol {
+
+    title = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.contentContainerLandingpageOneCol.title
+    description = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.contentContainerLandingpageOneCol.description
+    config {
+        colCount = 1
+        rowCount = 1
+        rows {
+            1 {
+                columns {
+                    1 {
+                        name = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.contentContainerLandingpageOneCol.content
+                        colPos = 50
+                        allowed {
+                            CType = header, text, textpic, image, textmedia, rkwtemplate_toc, rkwtemplate_imagetextoverlay, rkwtemplate_textimagebackground, rkwtemplate_imagelist, rkwtemplate_listelement, rkwtemplate_morelist, rkwtemplate_gallery, rkwtemplate_collage, rkwtemplate_textwithbutton, rkwtemplate_collapsed, list, html, form_formframework
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

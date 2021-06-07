@@ -1,0 +1,6 @@
+tt_content {
+    rkwtemplate_textwithbutton =< lib.contentElement
+    rkwtemplate_textwithbutton {
+        templateName = TextWithButton
+    }
+}

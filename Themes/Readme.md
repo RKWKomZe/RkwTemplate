@@ -177,6 +177,6 @@ lib.txRkwTemplate {  <-- Namespace
 └── theme.typoscript
       > Contains the basic configuation of the theme
 ```
-# _Core, _Mircosites & _Landingpages
+# _Core, _Microsites & _Landingpages
 * ```_Core``` is the basic configuration on which all themes are based. It is therefore inherited by all themes.
 * ```_Microsites``` and ```_Landingpages``` contain sub-themes that make use of another main-theme and overwrite single configurations or templates of it. Strictly speaking, these are no independent themes. They are more a kind of an Add-On.

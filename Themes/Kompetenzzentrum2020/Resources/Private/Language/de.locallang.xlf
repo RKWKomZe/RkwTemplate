@@ -215,6 +215,17 @@
                 <target>mehr lesen</target>
             </trans-unit>
 
+            <!-- Tile -->
+            <trans-unit id="contentElement.tile.labelShowMore">
+                <source>Show More</source>
+                <target>Mehr lesen</target>
+            </trans-unit>
+
+           <!-- StickyFooter -->
+            <trans-unit id="contentElement.stickyFooter.labelScrollToTop">
+                <source>Scroll to top</source>
+                <target>Nach oben</target>
+            </trans-unit>
 
             <!-- ================================================================== -->
             <!-- Grid Elements -->
@@ -235,18 +246,6 @@
                 <source>You like what you read? Share it:</source>
                 <target>Ihnen gefällt dieser Beitrag? Teilen Sie ihn mit anderen:</target>
             </trans-unit>
-
-
-
-
-
-
-
-
-
-
-
-
 
             <!-- ================================================================= -->
             <!-- Partials -->

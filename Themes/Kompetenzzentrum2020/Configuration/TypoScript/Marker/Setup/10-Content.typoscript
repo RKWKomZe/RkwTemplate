@@ -68,5 +68,16 @@ lib.txRkwTemplate {
         mapOverview < styles.content.get
         mapOverview.select.where = {#colPos} = 820
 
+        landingpage = CONTENT
+        landingpage < styles.content.get
+        landingpage.select.where = {#colPos} = 900
+
+        landingpageStickyFooter = CONTENT
+        landingpageStickyFooter < styles.content.get
+        landingpageStickyFooter.select.where = {#colPos} = 910
+
+        landingpageSiteHeader = CONTENT
+        landingpageSiteHeader < styles.content.get
+        landingpageSiteHeader.select.where = {#colPos} = 920
     }
 }

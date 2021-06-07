@@ -176,6 +176,15 @@
                 <source>show more</source>
             </trans-unit>
 
+            <!-- Tile -->
+            <trans-unit id="contentElement.tile.labelShowMore">
+                <source>Show More</source>
+            </trans-unit>
+
+           <!-- StickyFooter -->
+            <trans-unit id="contentElement.stickyFooter.labelScrollToTop">
+                <source>Scroll to top</source>
+            </trans-unit>
 
             <!-- ================================================================== -->
             <!-- Grid Elements -->
@@ -192,7 +201,6 @@
             <trans-unit id="partials.gridElements.contentContainer.sharing.label">
                 <source>You like what you read? Share it:</source>
             </trans-unit>
-
 
 		</body>
 	</file>
