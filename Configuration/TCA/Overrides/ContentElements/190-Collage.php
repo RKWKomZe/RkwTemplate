@@ -45,8 +45,7 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_collage'] = [
         ],
         'bodytext' => [
             'config' => [
-                'eval' => 'trim,required',
-                'enableRichtext' => true,
+                'type' => 'passthrough'
             ]
         ],
         'image' => [
