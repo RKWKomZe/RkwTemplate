@@ -8,7 +8,7 @@
 
         <div class="flex-container center-main">
             <f:for each="{images}" as="image" iteration="iterator">
-                <img class="image-mod__img{iterator.index + 1}" loading="lazy" src="{f:uri.image(image:image)}" alt="{image.title}"/>
+                <img class="image-mod__img{iterator.index + 1}" src="{f:uri.image(image:image,cropVariant:'default', width:425)}" alt="{image.title}" loading="lazy"/>
             </f:for>
         </div>
 
