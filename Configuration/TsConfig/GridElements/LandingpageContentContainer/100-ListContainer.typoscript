@@ -12,7 +12,7 @@ tx_gridelements.setup.listContainer {
                         name = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.listContainer.content
                         colPos = 100
                         allowed {
-                            CType = rkwtemplate_eventprogramlist
+                            CType = rkwtemplate_listelement
                         }
                     }
                 }

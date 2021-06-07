@@ -4,7 +4,7 @@
 // Define element fields
 //===============================================================
 
-$GLOBALS['TCA']['tt_content']['types']['rkwtemplate_eventprogramlist'] = [
+$GLOBALS['TCA']['tt_content']['types']['rkwtemplate_listelement'] = [
     'showitem' => '
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
             --palette--;;general,
@@ -43,9 +43,8 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_eventprogramlist'] = [
             ]
         ],
         'rowDescription' => [
-            'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.eventProgramList.rowDescription',
             'config' => [
-                'eval' => 'trim',
+                'type' => 'passthrough'
             ]
         ],
         'bodytext' => [
@@ -65,9 +64,9 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_eventprogramlist'] = [
     'tt_content',
     'CType',
     [
-        'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.eventProgramList.title',
-        'rkwtemplate_eventprogramlist',
-        'rkw-template-eventprogramlist',
+        'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.listElement.title',
+        'rkwtemplate_listelement',
+        'rkw-template-listelement',
     ],
     'textmedia',
     'after'

@@ -820,20 +820,20 @@
                 <target>Veranstaltungen</target>
             </trans-unit>
 
-            <!-- EventProgramList -->
-            <trans-unit id="contentElement.eventProgramList.title">
-                <source>List of event program items</source>
-                <target>Liste von Programmpunkten</target>
+            <!-- ListElement -->
+            <trans-unit id="contentElement.listElement.title">
+                <source>Structured list element (headline, text)</source>
+                <target>Strukturiertes Listenelement (Überschrift, Text)</target>
             </trans-unit>
-            <trans-unit id="contentElement.eventProgramList.description">
-                <source>Adds a program item list-element.</source>
-                <target>Ein Programmpunkt einer Veranstaltung.</target>
+            <trans-unit id="contentElement.listElement.description">
+                <source>Adds a structured list element.</source>
+                <target>Fügt ein strukturiertes Listenelement hinzu.</target>
             </trans-unit>
-            <trans-unit id="contentElement.eventProgramList.rowDescription">
+            <trans-unit id="contentElement.listElement.rowDescription">
                 <source>Short Version</source>
                 <target>Kurzfassung</target>
             </trans-unit>
-            <trans-unit id="contentElement.eventProgramList.imageManipulation.default">
+            <trans-unit id="contentElement.listElement.imageManipulation.default">
                 <source>Default</source>
                 <target>Standard</target>
             </trans-unit>

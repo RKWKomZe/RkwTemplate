@@ -494,17 +494,17 @@
                 <source>Events</source>
             </trans-unit>
 
-            <!-- EventProgramList -->
-            <trans-unit id="contentElement.eventProgramList.title">
-                <source>List of event program items</source>
+            <!-- ListElement -->
+            <trans-unit id="contentElement.listElement.title">
+                <source>Structured list element (headline, text)</source>
             </trans-unit>
-            <trans-unit id="contentElement.eventProgramList.description">
-                <source>Adds a program item list-element.</source>
+            <trans-unit id="contentElement.listElement.description">
+                <source>Adds a structured list element.</source>
             </trans-unit>
-            <trans-unit id="contentElement.eventProgramList.rowDescription">
+            <trans-unit id="contentElement.listElement.rowDescription">
                 <source>Short Version</source>
             </trans-unit>
-            <trans-unit id="contentElement.eventProgramList.imageManipulation.default">
+            <trans-unit id="contentElement.listElement.imageManipulation.default">
                 <source>Default</source>
             </trans-unit>
 

@@ -1,6 +1,0 @@
-tt_content {
-    rkwtemplate_eventprogramlist =< lib.contentElement
-    rkwtemplate_eventprogramlist {
-        templateName = EventProgramList
-    }
-}

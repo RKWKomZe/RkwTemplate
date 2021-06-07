@@ -31,9 +31,9 @@ call_user_func(
             ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/Collapsed.svg']
         );
         $iconRegistry->registerIcon(
-            'rkw-template-eventprogramlist', // Icon-Identifier, e.g. tx-myext-action-preview
+            'rkw-template-listelement', // Icon-Identifier, e.g. tx-myext-action-preview
             \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-            ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/EventProgramList.svg']
+            ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/ListElement.svg']
         );
         $iconRegistry->registerIcon(
             'rkw-template-gallery', // Icon-Identifier, e.g. tx-myext-action-preview
