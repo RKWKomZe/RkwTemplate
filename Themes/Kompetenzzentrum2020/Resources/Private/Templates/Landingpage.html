@@ -50,10 +50,22 @@
                 color:#fff !important;
             }
 
+            .tpl-specials-detail .footer--specials .btn:hover,
+            .tpl-specials-detail .footer--specials .typo3-fsc .button:hover,
+            .typo3-fsc .tpl-specials-detail .footer--specials .button:hover {
+                background-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primarycolor}</f:format.raw> !important;
+                border-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primarycolor}</f:format.raw> !important;
+            }
+
             .btn--white:hover {
                 background-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primarycolor}</f:format.raw> !important;
                 border-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primarycolor}</f:format.raw> !important;
                 color: #fff!important;
+            }
+
+            .tpl-specials-detail .contentbox.slider-mod .slider-mod__nav ul li button[aria-selected=true],
+            .tpl-specials-detail .contentbox.slider-mod .slider-mod__nav ul li button:hover {
+                border-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primarycolor}</f:format.raw> !important;
             }
 
             aside .contentbox a {
@@ -109,12 +121,18 @@
                 color: #333;
             }
 
+            .tpl-specials-detail .contentbox .headline--underlined::after,
             .tpl-specials-detail .contentbox .headline--underlined-primary::after {
                 background-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primarycolor}</f:format.raw> !important;
             }
 
             .tpl-specials-detail .contentbox .headline--underlined-secondary::after {
                 background-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_secondarycolor}</f:format.raw> !important;
+            }
+
+            .tpl-specials-detail .contentbox.speaker-mod .speaker-list-wrapper .speaker-list__item .speaker-link:hover {
+                color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primarycolor}</f:format.raw> !important;
+                border-bottom-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primarycolor}</f:format.raw> !important;
             }
 
         </style>
