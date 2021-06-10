@@ -576,12 +576,12 @@
                 <target>Fügt ein Inhaltsverzeichnis ein. Berücksichtigt werden darin die Überschriften (Feld: Überschrift) aller Inhaltselemente der aktuellen Seite.</target>
             </trans-unit>
 
-            <!-- LandingpageTableOfContents -->
-            <trans-unit id="contentElement.landingpagetoc.title">
+            <!-- TableOfContentsLandingpage -->
+            <trans-unit id="contentElement.toclandingpage.title">
                 <source>Table Of Contents</source>
                 <target>Inhaltsverzeichnis</target>
             </trans-unit>
-            <trans-unit id="contentElement.landingpagetoc.description">
+            <trans-unit id="contentElement.toclandingpage.description">
                 <source>Adds a table of contents.</source>
                 <target>Fügt ein Inhaltsverzeichnis ein. Berücksichtigt werden darin die Überschriften (Feld: Überschrift) aller Inhaltselemente der aktuellen Seite.</target>
             </trans-unit>
