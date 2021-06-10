@@ -1,7 +1,7 @@
 tt_content {
-    rkwtemplate_landingpagetoc =< lib.contentElement
-    rkwtemplate_landingpagetoc {
-        templateName = LandingpageTableOfContents
+    rkwtemplate_toclandingpage =< lib.contentElement
+    rkwtemplate_toclandingpage {
+        templateName = TableOfContentsLandingpage
 
         dataProcessing {
 
@@ -9,7 +9,7 @@ tt_content {
             10 {
                 table = tt_content
                 pidInList = this
-                where = CType = 'gridelements_pi1' AND CType != 'rkwtemplate_landingpagetoc' AND colPos = 900 AND header != ''
+                where = CType = 'gridelements_pi1' AND CType != 'rkwtemplate_toclandingpage' AND colPos = 900 AND header != ''
                 orderBy = sorting
                 as = items
             }
