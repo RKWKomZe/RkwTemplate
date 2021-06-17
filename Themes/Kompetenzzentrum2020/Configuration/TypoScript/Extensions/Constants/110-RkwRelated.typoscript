@@ -10,10 +10,10 @@ plugin.tx_rkwrelated_similarcontent {
 
     settings {
 
-        # cat=plugin.tx_rkwrelated_morecontent//f; type=integer; label=PID to start search from
+        # cat=plugin.tx_rkwrelated_similarcontent//f; type=integer; label=PID to start search from
         startingPid =
 
-        # cat=plugin.tx_rkwrelated_morecontent//f; type=string; label=PIDs to include in list (comma separated)
+        # cat=plugin.tx_rkwrelated_similarcontent//f; type=string; label=PIDs to include in list (comma separated)
         startingPidList = 1, 3561, 158, 378, 3795, 3595, 3471, 3757, 4763, 5062
 
         # cat=plugin.tx_rkwrelated_similarcontent//a; type=boolean; label=ID of parent sys_category for similar search
