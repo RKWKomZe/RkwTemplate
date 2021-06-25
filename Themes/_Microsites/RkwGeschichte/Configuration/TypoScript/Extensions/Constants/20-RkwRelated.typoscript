@@ -11,9 +11,6 @@ plugin.tx_rkwrelated_similarcontent {
 
 	settings {
 
-        # cat=plugin.tx_rkwrelated_similarcontent//f; type=integer; label=PID to start search from
-        startingPid =
-
         # cat=plugin.tx_rkwrelated_similarcontent//f; type=string; label=PIDs to include in list (comma separated)
         startingPidList = 6266,6269
 
@@ -25,9 +22,6 @@ plugin.tx_rkwrelated_similarcontent {
 plugin.tx_rkwrelated_morecontent {
 
 	settings {
-
-        # cat=plugin.tx_rkwrelated_morecontent//f; type=integer; label=PID to start search from
-        startingPid =
 
         # cat=plugin.tx_rkwrelated_morecontent//f; type=string; label=PIDs to include in list (comma separated)
         startingPidList = 6266,6269
