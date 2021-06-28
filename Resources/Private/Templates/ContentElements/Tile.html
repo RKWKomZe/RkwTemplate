@@ -24,24 +24,7 @@
             </f:if>
         </div>
         <f:if condition="{data.bodytext}">
-            <div id="mdl-c{data.uid}" class="mdl">
-                <div class="mdl__inner">
-                    <header class="mdl__header">
-                        <span class="h4 mdl__headline">{data.header}</span>
-                    </header>
-                    <div class="mdl__content">
-                        <rkwBasics:format.removeEmptyParagraphs>
-                            <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data.bodytext}</f:format.html>
-                        </rkwBasics:format.removeEmptyParagraphs>
-                    </div>
-                </div>
-                <button class="mdl-close js-close-mdl">
-                    <svg class="icon icon--48">
-                        <use xlink:href="#ic-mobile-menu-close"/>
-                    </svg>
-                </button>
-            </div>
-            <div class="mdl-layer js-mdl-layer"></div>
+            <f:render partial="Modal/Inner" arguments="{_all}"/>
         </f:if>
 
     </f:section>
