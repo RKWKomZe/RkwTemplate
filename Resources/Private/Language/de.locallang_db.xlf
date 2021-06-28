@@ -490,24 +490,6 @@
                 <target>Call To Action</target>
             </trans-unit>
 
-            <!-- ContentContainerLandingpageOneCol -->
-            <trans-unit id="contentElement.contentContainerLandingpageOneCol.title">
-                <source>Content-Container with one column (Landingpage)</source>
-                <target>Inhalts-Container mit einer Spalte (Landingpage)</target>
-            </trans-unit>
-            <trans-unit id="contentElement.contentContainerLandingpageOneCol.description">
-                <source>Add a Content-Container with one col.</source>
-                <target>Fügt einen Inhalts-Container mit einer Spalte ein (nur Inhaltsspalte).</target>
-            </trans-unit>
-            <trans-unit id="contentElement.contentContainerLandingpageOneCol.content">
-                <source>Content</source>
-                <target>Inhalt</target>
-            </trans-unit>
-            <trans-unit id="contentElement.contentContainerLandingpageOneCol.callToAction">
-                <source>Call To Action</source>
-                <target>Call To Action</target>
-            </trans-unit>
-
             <!-- ContentContainerLandingpageTwoCols -->
             <trans-unit id="contentElement.contentContainerLandingpageTwoCols.title">
                 <source>Content-Container with two columns (Landingpage)</source>

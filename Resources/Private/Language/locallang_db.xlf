@@ -259,26 +259,11 @@
                 <source>Call To Action</source>
             </trans-unit>
 
-
-            <!-- ContentContainerLandingpageOneCol -->
-            <trans-unit id="contentElement.contentContainerLandingpageOneCol.title">
-                <source>Content-Container with one col (Landingpage)</source>
-            </trans-unit>
-            <trans-unit id="contentElement.contentContainerLandingpageOneCol.description">
-                <source>Add a Content-Container with one Col.</source>
-            </trans-unit>
-            <trans-unit id="contentElement.contentContainerLandingpageOneCol.content">
-                <source>Content</source>
-            </trans-unit>
-            <trans-unit id="contentElement.contentContainerLandingpageOneCol.callToAction">
-                <source>Call To Action</source>
-            </trans-unit>
-
             <!-- ContentContainerLandingpageTwoCols -->
-            <trans-unit id="contentElement.contentContainerLandingpageOneCol.title">
-                <source>Content-Container with one Col (Landingpage)</source>
+            <trans-unit id="contentElement.contentContainerLandingpageTwoCols.title">
+                <source>Content-Container with two columns (Landingpage)</source>
             </trans-unit>
-            <trans-unit id="contentElement.contentContainerLandingpageOneCol.description">
+            <trans-unit id="contentElement.contentContainerLandingpageTwoCols.description">
                 <source>Add a Content-Container with two columns.</source>
             </trans-unit>
             <trans-unit id="contentElement.contentContainerLandingpageTwoCols.content">
