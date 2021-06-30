@@ -16,11 +16,6 @@ call_user_func(
             ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/Slider.svg']
         );
         $iconRegistry->registerIcon(
-            'rkw-template-imagelist', // Icon-Identifier, e.g. tx-myext-action-preview
-            \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-            ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/ImageList.svg']
-        );
-        $iconRegistry->registerIcon(
             'rkw-template-collage', // Icon-Identifier, e.g. tx-myext-action-preview
             \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
             ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/Collage.svg']
@@ -49,11 +44,6 @@ call_user_func(
             'rkw-template-imagetextoverlay', // Icon-Identifier, e.g. tx-myext-action-preview
             \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
             ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/ImageTextOverlay.svg']
-        );
-        $iconRegistry->registerIcon(
-            'rkw-template-landingpagetoc', // Icon-Identifier, e.g. tx-myext-action-preview
-            \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-            ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/LandingpageTableOfContents.svg']
         );
         $iconRegistry->registerIcon(
             'rkw-template-mission', // Icon-Identifier, e.g. tx-myext-action-preview
@@ -126,6 +116,11 @@ call_user_func(
             ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/TableOfContents.svg']
         );
         $iconRegistry->registerIcon(
+            'rkw-template-toclandingpage', // Icon-Identifier, e.g. tx-myext-action-preview
+            \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+            ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/TableOfContentsLandingpage.svg']
+        );        
+        $iconRegistry->registerIcon(
             'rkw-template-overview', // Icon-Identifier, e.g. tx-myext-action-preview
             \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
             ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/Overview.svg']
@@ -165,6 +160,7 @@ call_user_func(
         // register update wizard
         //=================================================================
         $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['ext/install']['update'][\RKW\RkwTemplate\Updates\UpdateCore8Wizard::class] = \RKW\RkwTemplate\Updates\UpdateCore8Wizard::class;
+        $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['ext/install']['update'][\RKW\RkwTemplate\Updates\UpdateFolderRestructureWizard::class] = \RKW\RkwTemplate\Updates\UpdateFolderRestructureWizard::class;
     },
     $_EXTKEY
 );

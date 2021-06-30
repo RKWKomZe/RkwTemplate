@@ -4,7 +4,7 @@
 // Define element fields
 //===============================================================
 
-$GLOBALS['TCA']['tt_content']['types']['rkwtemplate_landingpagetoc'] = [
+$GLOBALS['TCA']['tt_content']['types']['rkwtemplate_toclandingpage'] = [
     'showitem' => '
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
             --palette--;;general,
@@ -54,9 +54,9 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_landingpagetoc'] = [
     'tt_content',
     'CType',
     [
-        'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.landingpagetoc.title',
-        'rkwtemplate_landingpagetoc',
-        'rkw-template-landingpagetoc',
+        'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.toclandingpage.title',
+        'rkwtemplate_toclandingpage',
+        'rkw-template-toclandingpage',
     ],
     'textmedia',
     'after'
