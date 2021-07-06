@@ -15,7 +15,7 @@ $extKey = 'rkw_template';
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Themes/_Microsites/DigiScouts/Configuration/TypoScript', 'RKW Template - Theme: DigiScouts');
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Themes/_Microsites/EcoStep/Configuration/TypoScript', 'RKW Template - Theme: EcoStep');
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Themes/_Microsites/EEPA/Configuration/TypoScript', 'RKW Template - Theme: EEPA');
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Themes/_Microsites/FrauenAmBau/Configuration/TypoScript', 'RKW Template KomZe - Theme: FrauenAmBau');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Themes/_Microsites/FrauenAmBau/Configuration/TypoScript', 'RKW Template - Theme: FrauenAmBau');
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Themes/_Microsites/GEM/Configuration/TypoScript', 'RKW Template - Theme: GEM');
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Themes/_Microsites/MeinRkw/Configuration/TypoScript', 'RKW Template - Theme: MeinRkw');
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Themes/_Microsites/RessinnoBau/Configuration/TypoScript', 'RKW Template - Theme: RessinnoBau');

@@ -8,6 +8,15 @@ plugin.tx_rkwtemplate_themeconfig {
 	website.baseUrl = http://rkw-bw.rkw.local/
 
 }
+plugin.tx_rkwrelated_similarcontent {
+
+    settings {
+
+        # cat=plugin.tx_rkwrelated_similarcontent//a; type=integer; label=ID of parent sys_category for similar search
+        sysCategoryParentUid = 120
+    }
+}
+
 
 plugin.tx_rkwbasics {
     settings {
