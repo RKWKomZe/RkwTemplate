@@ -7,11 +7,5 @@ plugin.tx_rkwbasics {
             # cat=plugin.tx_rkwbasics//a; type=boolean; label=Activate CDN
             enable = 0
         }
-
-        htmlMinify {
-
-            # cat=plugin.tx_rkwbasics//a; type=boolean; label=Activate HTML Minifier
-            enable = 0
-        }
     }
 }

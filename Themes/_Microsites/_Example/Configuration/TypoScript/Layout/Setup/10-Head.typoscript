@@ -22,7 +22,6 @@ page {
                 value = example.de
                 stdWrap.noTrimWrap = | - ||
             }
-
         }
 
         // No RSS-Feed

@@ -109,7 +109,7 @@
             </trans-unit>
             <trans-unit id="partials.infoBox.partials.authors.labelAuthors">
 				<source>Authors</source>
-				<target>Autoren</target>
+				<target>Verfasst von</target>
 			</trans-unit>
             <trans-unit id="partials.infoBox.partials.parentPage.labelParentPage">
                 <source>Publication</source>
