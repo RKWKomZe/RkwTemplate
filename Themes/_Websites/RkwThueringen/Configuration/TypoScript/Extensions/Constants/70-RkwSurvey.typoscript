@@ -1,0 +1,8 @@
+plugin.tx_rkwsurvey {
+
+    settings {
+
+        # cat=plugin.tx_rkwsurvey//a; type=boolean; label=Include CSS?
+        includeCss = 1
+    }
+}
