@@ -8,6 +8,10 @@ page {
 	//===============================================================
 	headerData {
 
+        // TypeKit
+        30 = TEXT
+        30.value  = <script src="https://use.typekit.net/ezo7rjd.js"></script>
+
 		// Title-Tag
 		100 {
 
@@ -18,6 +22,7 @@ page {
                 value = mein.rkw.de
                 stdWrap.noTrimWrap = | - ||
             }
+
         }
 
         // No RSS-Feed

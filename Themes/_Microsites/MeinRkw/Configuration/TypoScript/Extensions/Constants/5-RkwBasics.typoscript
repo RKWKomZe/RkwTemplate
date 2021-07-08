@@ -8,10 +8,5 @@ plugin.tx_rkwbasics {
             enable = 0
         }
 
-        htmlMinify {
-
-            # cat=plugin.tx_rkwbasics//a; type=boolean; label=Activate HTML Minifier
-            enable = 0
-        }
     }
 }
