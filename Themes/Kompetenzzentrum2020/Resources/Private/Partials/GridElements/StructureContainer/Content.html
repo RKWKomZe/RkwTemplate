@@ -51,9 +51,6 @@
             </f:else>
         </f:if>
 
-        <f:comment><!-- sharing --></f:comment>
-        <f:render partial="StructureContainer/Sharing" arguments="{_all}" />
-
         <f:comment><!-- image resources --></f:comment>
         <f:if condition="! {rkwBasics:isEmpty(string:'{f:cObject(typoscriptObjectPath: \'lib.txRkwTemplate.pageInfo.imageResources\')}')}">
             <p class="media-sources {f:if(condition: '! {rkwBasics:isEmpty(string:\'{data.tx_gridelements_view_column_70}\')}', then: 'media-sources--space')}" role="contentinfo">
