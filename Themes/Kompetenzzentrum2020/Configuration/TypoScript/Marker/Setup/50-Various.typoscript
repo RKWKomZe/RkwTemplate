@@ -9,18 +9,13 @@ lib.txRkwTemplate {
             extensionName = RkwAlerts
             pluginName = Rkwalerts
             vendorName = RKW
-            controller = Alerts
+            controller = Alert
             switchableControllerActions {
                 // Again: Controller-Name and Action
-                Alerts {
-                    1 = newInit
-                    2 = newAjax
-                    3 = new
-                    4 = create
-                    5 = optIn
-                    6 = list
-                    7 = deleteconfirm
-                    8 = delete
+                Alert {
+                    1 = new
+                    2 = create
+                    3 = optIn
                 }
             }
 

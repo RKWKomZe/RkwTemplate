@@ -1,4 +1,6 @@
-<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:rkwBasics="http://typo3.org/ns/RKW/RkwBasics/ViewHelpers"
+    data-namespace-typo3-fluid="true">
 
     <f:comment><!-- schema.org --></f:comment>
     <f:render partial="StructureContainer/SchemaOrg" arguments="{_all}"/>
@@ -12,6 +14,13 @@
 
         <f:comment><!-- call to action --></f:comment>
         <f:render partial="StructureContainer/CallToAction" arguments="{_all}"/>
+
+        <f:comment><!-- alerts --></f:comment>
+        <f:if condition="! {rkwBasics:isEmpty(string:'{f:cObject(typoscriptObjectPath: \'lib.txRkwTemplate.various.alerts\')}')}">
+            <div class="contentbox contentbox--text contentbox--margin-top no-border-radius-smalldesk">
+                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.various.alerts" data="{data}" />
+            </div>
+        </f:if>
 
         <f:comment><!-- recommendations --></f:comment>
         <f:render partial="StructureContainer/Recommendation" section="Reduced" arguments="{_all}"/>

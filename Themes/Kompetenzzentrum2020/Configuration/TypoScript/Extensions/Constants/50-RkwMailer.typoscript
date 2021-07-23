@@ -6,13 +6,16 @@ module.tx_rkwmailer {
 
     settings {
 
-        // Page for redirect plugin
+       # cat=module.tx_rkwmailer; type=integer; label=Pid of privacy information
+        privacyPid = 1921
+
+        # cat=module.tx_rkwmailer; type=integer; label=Pid of redirect plugin
         redirectPid = 905
 
-        // Delay for redirect
+        # cat=module.tx_rkwmailer; type=integer; label= Delay for redirect (in sec)
         redirectDelay = 0
 
-        // Link plugin for pixel counter (HTML-mails only)
+        # cat=module.tx_rkwmailer; type=integer; label=Pid of plugin for pixel counter (HTML-mails only)
         counterPixelPid = 905
     }
 }

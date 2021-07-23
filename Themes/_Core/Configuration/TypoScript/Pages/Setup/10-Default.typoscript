@@ -123,6 +123,14 @@ page {
                     }
 				}
 
+                # We add a timestamp here - maybe this prevents linkedIn from caching old images
+				20 = TEXT
+                20  {
+                  	data = date:U
+                	strftime = %s
+                 	noTrimWrap = |?t=||
+                }
+
 				stdWrap.wrap = <meta property="og:image" content="{$plugin.tx_rkwtemplate_themeconfig.website.baseUrl}|">
 				stdWrap.required = 1
 			}

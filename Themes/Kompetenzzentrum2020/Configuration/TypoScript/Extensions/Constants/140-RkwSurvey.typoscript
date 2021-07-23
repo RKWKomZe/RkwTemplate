@@ -1,7 +1,7 @@
-plugin.tx_rkwsurvey_survey {
+plugin.tx_rkwsurvey {
 
     persistence {
-        # cat=plugin.tx_rkwsurvey_survey//a; type=string; label=Default storage PID
+        # cat=plugin.tx_rkwsurvey//a; type=string; label=Default storage PID
         storagePid = 4598,4601,4747
     }
 }
