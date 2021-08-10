@@ -14,8 +14,9 @@ lib.txRkwTemplate {
                 // Again: Controller-Name and Action
                 Alert {
                     1 = new
-                    2 = create
-                    3 = optIn
+                    2 = newNonCached
+                    3 = create
+                    4 = optIn
                 }
             }
 
