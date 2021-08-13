@@ -15,6 +15,12 @@ plugin.tx_rkwtemplate_themeconfig {
             # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Path to logos
             logos = EXT:rkw_template/Themes/{$plugin.tx_rkwtemplate_themeconfig.subThemeName}/Resources/Public/images/logos
         }
+
+        extensions {
+
+            # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Root path for extension layouts, templates and partials
+            root = EXT:rkw_template/Themes/{$plugin.tx_rkwtemplate_themeconfig.subThemeName}/Resources/Private/Extensions
+        }
     }
 
     website {
