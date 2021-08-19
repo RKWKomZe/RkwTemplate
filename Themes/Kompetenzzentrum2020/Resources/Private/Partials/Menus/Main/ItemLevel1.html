@@ -28,13 +28,13 @@
     <f:section name="Mobile">
 
         <li class="nav-mobile__item {f:if(condition:item.active, then:' is-active')} {f:if(condition: '{item.data.uid} == {loginPid}', then: 'tx-rkwregistration-login-class')}">
-            <a href="{item.link}" class="{f:if(condition: '{item.data.uid} == {loginPid}', then: 'tx-rkwregistration-login-text')}" target="{f:if(condition: item.target, then: item.target, else:'_self')}" {f:if(condition:item.children, then:' aria-haspopup="true"')}>
+            <a href="{item.link}" class="{f:if(condition: '{item.data.uid} == {loginPid}', then: 'tx-rkwregistration-login-text')} {f:if(condition: item.children, then: 'nav-mobile__item--toggle')}" target="{f:if(condition: item.target, then: item.target, else:'_self')}" {f:if(condition:item.children, then:' aria-haspopup="true"')}>
                 {item.title}
             </a>
 
 
             <f:if condition="{item.children}">
-                <span class="nav-mobile__item-icon-wrapper">
+                <span class="nav-mobile__item-icon-wrapper nav-mobile__item--toggle">
                     <button class="nav-mobile__item-icon" aria-label="{f:translate(key:'{settings.themeLanguageFile}:partials.menus.main.item.more')}">
                         <svg class="icon icon--12">
                             <use xlink:href="#ic-arrow-primary" />
@@ -47,7 +47,7 @@
 
                         <f:comment><!-- Backlink --></f:comment>
                         <li class="nav-mobile__item nav-mobile__back-link">
-                            <span class="nav-mobile__item-icon-wrapper">
+                            <span class="nav-mobile__item-icon-wrapper nav-mobile__item--toggle">
                                 <button class="nav-mobile__item-icon" aria-haspopup="true" aria-label="{f:translate(key:'{settings.themeLanguageFile}:partials.menus.main.item.back')}">
                                     <svg class="icon icon--12">
                                         <use xlink:href="#ic-arrow-primary" />

@@ -1,0 +1,24 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:rkwBasics="http://typo3.org/ns/RKW/RkwBasics/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+    <f:layout name="Rkw" />
+
+    <f:section name="Main">
+        <f:if condition="<rkwBasics:isEmpty string='{data.tx_gridelements_view_column_100}' /> == 0">
+            <div class="tabs js-tabs">
+                <ul class="tabs__nav">
+                    <f:for each="{data.tx_gridelements_view_children}" as="tabItem" iteration="iterator">
+                        <li class="tabs__nav-item">
+                            <a class="tabs__nav-link" data-target="#tab-{tabItem.uid}" href="#tab-{tabItem.uid}">
+                                {tabItem.header}
+                            </a>
+                        </li>
+                    </f:for>
+                </ul>
+                <f:format.raw>{data.tx_gridelements_view_column_100}</f:format.raw>
+            </div>
+        </f:if>
+    </f:section>
+</html>

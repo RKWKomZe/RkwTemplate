@@ -3,7 +3,7 @@
 
     <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.txRkwTemplate.keyvisual.topic')}">
         <f:then>
-            <div class="siteheader flex siteheader--half" style="background-image: url('{f:cObject(typoscriptObjectPath: 'lib.txRkwTemplate.keyvisual.topic')}')">
+            <div class="siteheader flex siteheader--half {f:if(condition:'{settings.noTopicHeaderImageOnMobile}', then: 'siteheader--no-image-mobile', else: '')}" style="background-image: url('{f:cObject(typoscriptObjectPath: 'lib.txRkwTemplate.keyvisual.topic')}')">
                 <f:render section="Sub" arguments="{_all}"/>
             </div>
         </f:then>

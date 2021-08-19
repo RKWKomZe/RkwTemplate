@@ -11,7 +11,7 @@
     TCEFORM.tt_content.CType.keepItems = gridelements_pi1, header, text, textpic, image, textmedia, list, html, rkwtemplate_textimagebackground, rkwtemplate_imagelist, rkwtemplate_listelement, rkwtemplate_morelist, rkwtemplate_gallery, rkwtemplate_collage, rkwtemplate_textwithbutton, rkwtemplate_collapsed, rkwtemplate_siteheader, rkwtemplate_button, rkwtemplate_tile
 
     // remove grid elements by their ID (aka name)
-    tx_gridelements.excludeLayoutIds = sliderContainer, topicContainer, logoContainer, promoterContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerOneCol, contentContainerOneColPagination, contentContainerOneColOrderForm
+    tx_gridelements.excludeLayoutIds = sliderContainer, topicContainer, logoContainer, promoterContainer, tabContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerOneCol, contentContainerOneColPagination, contentContainerOneColOrderForm
 
 [end]
 
@@ -28,7 +28,7 @@
     mod.wizards.newContentElement.wizardItems.plugins.show =
 
     // remove grid elements by their ID (aka name)
-    tx_gridelements.excludeLayoutIds = sliderContainer, topicContainer, logoContainer, promoterContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerOneCol, contentContainerOneColPagination, contentContainerOneColOrderForm, stickyFooterContainer
+    tx_gridelements.excludeLayoutIds = sliderContainer, topicContainer, logoContainer, promoterContainer, tabContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerOneCol, contentContainerOneColPagination, contentContainerOneColOrderForm, stickyFooterContainer
 
     TCEFORM.tt_content {
 
@@ -41,7 +41,6 @@
                 altLabels.2 = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.gridelements_pi1.landingpage.type.I.2
             }
         }
-
     }
 
 [end]
@@ -53,7 +52,7 @@
     TCEFORM.tt_content.CType.keepItems = gridelements_pi1
 
     // remove grid elements by their ID (aka name)
-    tx_gridelements.excludeLayoutIds = sliderContainer, logoContainer, topicContainer, promoterContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerOneCol, contentContainerOneColPagination, contentContainerOneColOrderForm, contentContainerLandingpageTwoCols, textContainer, tilesContainer, galleryContainer, collageContainer, listContainer, moreListContainer, textImageBackgroundContainer
+    tx_gridelements.excludeLayoutIds = sliderContainer, logoContainer, topicContainer, promoterContainer, tabContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerOneCol, contentContainerOneColPagination, contentContainerOneColOrderForm, contentContainerLandingpageTwoCols, textContainer, tilesContainer, galleryContainer, collageContainer, listContainer, moreListContainer, textImageBackgroundContainer
 
 [end]
 
@@ -64,6 +63,6 @@
     TCEFORM.tt_content.CType.keepItems = rkwtemplate_siteheader
 
     // remove grid elements by their ID (aka name)
-    tx_gridelements.excludeLayoutIds = sliderContainer, logoContainer, topicContainer, promoterContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerOneCol, contentContainerOneColPagination, contentContainerOneColOrderForm, contentContainerLandingpageTwoCols, stickyFooterContainer, textContainer, tilesContainer, galleryContainer, collageContainer, listContainer, moreListContainer, textImageBackgroundContainer
+    tx_gridelements.excludeLayoutIds = sliderContainer, logoContainer, topicContainer, promoterContainer, tabContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerOneCol, contentContainerOneColPagination, contentContainerOneColOrderForm, contentContainerLandingpageTwoCols, stickyFooterContainer, textContainer, tilesContainer, galleryContainer, collageContainer, listContainer, moreListContainer, textImageBackgroundContainer
 
 [end]

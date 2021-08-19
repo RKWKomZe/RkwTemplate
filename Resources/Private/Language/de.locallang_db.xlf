@@ -380,6 +380,7 @@
                 <target>Fügt einen Container für Förderer ein. Üblicherweise wird dieses Element an prominenter Stelle auf Themen-Seiten eingesetzt.</target>
             </trans-unit>
 
+
             <!-- ContentContainerTwoCols -->
             <trans-unit id="contentElement.contentContainerTwoCols.title">
                 <source>Content-Container with two Cols</source>
@@ -581,8 +582,7 @@
                 <source>Short Version</source>
                 <target>Kurzfassung</target>
             </trans-unit>
-
-
+       
             <!-- ImageList -->
             <trans-unit id="contentElement.imageList.title">
                 <source>Image List</source>
@@ -843,7 +843,7 @@
             </trans-unit>
             <trans-unit id="contentElement.siteHeader.description">
                 <source>Adds a header image element.</source>
-                <target>Headerbild mit Call-to-Action-Button.</target>
+                <target>Fügt ein Headerbild mit Call-to-Action-Button.</target>
             </trans-unit>
             <trans-unit id="contentElement.siteHeader.rowDescription">
                 <source>Link caption (only on landing page header)</source>
@@ -904,6 +904,28 @@
             <trans-unit id="contentElement.collage.imageManipulation.default">
                 <source>Default</source>
                 <target>Standard</target>
+            </trans-unit>
+            
+            
+            <!-- TabContainer -->
+            <trans-unit id="contentElement.tabContainer.title">
+                <source>Tab-Container</source>
+                <target>Tab-Container</target>
+            </trans-unit>
+            <trans-unit id="contentElement.tabContainer.description">
+                <source>Adds a Tab-Container.</source>
+                <target>Fügt einen Container für Tab-Elemente ein.</target>
+            </trans-unit>
+
+
+            <!-- Tab -->
+            <trans-unit id="contentElement.tab.title">
+                <source>Tab</source>
+                <target>Tab</target>
+            </trans-unit>
+            <trans-unit id="contentElement.tab.description">
+                <source>Add a tap-text element.</source>
+                <target>Ein Textelement, das mit Anker-Links in Tab-Optik verwendet werden kann.</target>
             </trans-unit>
 
 		</body>

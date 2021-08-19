@@ -1,0 +1,17 @@
+//=========================================================
+// Add contentElement to Wizard
+//=========================================================
+mod.wizards.newContentElement.wizardItems.common {
+    elements {
+        rkwtemplate_tab {
+            iconIdentifier = rkw-template-tab
+            title = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.tab.title
+            description = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.tab.description
+            tt_content_defValues {
+                CType = rkwtemplate_tab
+            }
+        }
+    }
+    show := addToList(rkwtemplate_tab)
+}
+

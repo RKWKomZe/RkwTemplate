@@ -1,0 +1,22 @@
+tx_gridelements.setup.tabContainer {
+
+    title = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.tabContainer.title
+    description = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.tabContainer.description
+    config {
+        colCount = 1
+        rowCount = 1
+        rows {
+            1 {
+                columns {
+                    1 {
+                        name = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.tabContainer.title
+                        colPos = 100
+                        allowed {
+                            CType = rkwtemplate_tab
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

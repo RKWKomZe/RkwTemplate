@@ -570,6 +570,23 @@
             <trans-unit id="contentElement.collage.imageManipulation.default">
                 <source>Default</source>
             </trans-unit>
+            
+             <!-- TabContainer -->
+            <trans-unit id="contentElement.tabContainer.title">
+                <source>Tab-Container</source>
+            </trans-unit>
+            <trans-unit id="contentElement.tabContainer.description">
+                <source>Adds a Tab-Container.</source>
+            </trans-unit>
+
+
+            <!-- Tab -->
+            <trans-unit id="contentElement.tab.title">
+                <source>Tab</source>
+            </trans-unit>
+            <trans-unit id="contentElement.tab.description">
+                <source>Add a tap-text element.</source>
+            </trans-unit>
 
 		</body>
 	</file>

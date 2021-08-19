@@ -125,6 +125,11 @@ call_user_func(
             \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
             ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/Overview.svg']
         );
+        $iconRegistry->registerIcon(
+            'rkw-template-tab', // Icon-Identifier, e.g. tx-myext-action-preview
+            \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+            ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/Tab.svg']
+        );
         unset($iconRegistry);
 
         //=================================================================
