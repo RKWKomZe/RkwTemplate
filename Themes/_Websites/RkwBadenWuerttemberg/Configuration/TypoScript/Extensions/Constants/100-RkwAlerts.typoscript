@@ -1,0 +1,8 @@
+plugin.tx_rkwalerts {
+
+    settings {
+
+        // cat=plugin.tx_rkwalerts//a; type=integer; label=Pid of terms & conditions
+        termsPid = 5949
+    }
+}
