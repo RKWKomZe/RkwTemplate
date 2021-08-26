@@ -21,7 +21,7 @@ lib.txRkwTemplate {
                    entryLevel = 0
                    expandAll = 1
                    includeSpacer = 0
-                   maxItems = 10
+                   // maxItems = 10
                    titleField = tx_rkwbasics_alternative_title // nav_title // title
                    // excludeUidList = {$plugin.tx_rkwtemplate_themeconfig.settings.mainNav.loginPid}
                    as = menuItems

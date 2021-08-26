@@ -2,7 +2,7 @@
 <xliff version="1.0">
 	<file source-language="en" datatype="plaintext" original="messages" date="2014-04-03T15:56:40Z" product-name="rkw_projects">
 		<header/>
-		<body
+		<body>
             <trans-unit id="tx_rkwprojects_domain_model_projects.pid.I.5087" approved="yes">
                 <source>RKW BaWü</source>
                 <target>RKW BaWü</target>
@@ -15,9 +15,9 @@
                 <source>RKW Bremen</source>
                 <target>RKW Bremen</target>
             </trans-unit>            
-            <trans-unit id="tx_rkwprojects_domain_model_projects.pid.I.3906" approved="yes">
-                <source>EANPC</source>
-                <target>EANPC</target>
+            <trans-unit id="tx_rkwprojects_domain_model_projects.pid.I.133" approved="yes">
+                <source>RKW KomZe</source>
+                <target>RKW KomZe</target>
             </trans-unit>            
             <trans-unit id="tx_rkwprojects_domain_model_projects.pid.I.3468" approved="yes">
                 <source>RKW Sachsen-Anhalt</source>
