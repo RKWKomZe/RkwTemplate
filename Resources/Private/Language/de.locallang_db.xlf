@@ -13,6 +13,16 @@
                 <source>Secondary color</source>
                 <target>Sekundärer Farbwert</target>
             </trans-unit>
+            
+            <!-- Menu-stuff -->
+            <trans-unit id="pages.tx_rkwtemplate_disable_flyout_menu">
+                <source>Fly-Out Menu (only second menu-level)</source>
+                <target>Fly-Out-Menü (nur zweite Menü-Ebene)</target>
+            </trans-unit>
+            <trans-unit id="pages.tx_rkwtemplate_disable_flyout_menu.I.enabled">
+                <source>Do not show flyout-menu for this menu-item</source>
+                <target>Für diesen Menüpunkt kein Fly-Out-Menü anzeigen</target>
+            </trans-unit>
 
 		    <!-- Cropping -->
             <trans-unit id="pages.keyvisual.imageManipulation.topicDesktop">

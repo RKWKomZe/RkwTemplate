@@ -24,6 +24,19 @@ $tmpColsPages = [
             'eval' => 'required',
         ],
     ],
+    'tx_rkwtemplate_disable_flyout_menu' => [
+        'exclude' => 1,
+        'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:pages.tx_rkwtemplate_disable_flyout_menu',
+        'config' => [
+            'type' => 'check',
+            'default' => 0,
+            'items' => [
+                '1' => [
+                    '0' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:pages.tx_rkwtemplate_disable_flyout_menu.I.enabled'
+                ],
+            ],
+        ],
+    ],
 ];
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns(
@@ -32,7 +45,7 @@ $tmpColsPages = [
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette(
     'pages',
     'layout',
-    '--linebreak--, tx_rkwtemplate_landingpage_primarycolor, tx_rkwtemplate_landingpage_secondarycolor'
+    '--linebreak--, tx_rkwtemplate_landingpage_primarycolor, tx_rkwtemplate_landingpage_secondarycolor, tx_rkwtemplate_disable_flyout_menu'
 );
 
 $extKey = 'rkw_template';
