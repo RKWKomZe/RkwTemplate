@@ -1,0 +1,46 @@
+lib.txRkwTemplate {
+
+    infographic {
+
+        //=================================================================
+        title = USER
+        title {
+            userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+            extensionName = RkwInfographics
+            pluginName = Infographictitle
+            vendorName = RKW
+            controller = Infographics
+            switchableControllerActions {
+                // Again: Controller-Name and Action
+                Infographics {
+                    1 = title
+                }
+            }
+
+            view =< plugin.tx_rkwinfographics.view
+            persistence =< plugin.tx_rkwinfographics.persistence
+            settings =< plugin.tx_rkwinfographics.settings
+        }
+
+        cover = USER
+        cover {
+            userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+            extensionName = RkwInfographics
+            pluginName = Infographiccover
+            vendorName = RKW
+            controller = Infographics
+            switchableControllerActions {
+                // Again: Controller-Name and Action
+                Infographics {
+                    1 = cover
+                }
+            }
+
+            view =< plugin.tx_rkwinfographics.view
+            persistence =< plugin.tx_rkwinfographics.persistence
+            settings =< plugin.tx_rkwinfographics.settings
+        }
+
+    }
+
+}
