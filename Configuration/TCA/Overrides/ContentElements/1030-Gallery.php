@@ -23,6 +23,11 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_gallery'] = [
                 'type' => 'passthrough'
             ]
         ],
+        'header' => [
+            'config' => [
+                'type' => 'passthrough',
+            ]
+        ],
         'header_position' => [
             'config' => [
                 'type' => 'passthrough'
@@ -33,14 +38,14 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_gallery'] = [
                 'type' => 'passthrough'
             ]
         ],
-        'header_link' => [
+        'header_layout' => [
             'config' => [
                 'type' => 'passthrough'
             ]
         ],
-        'header' => [
+        'header_link' => [
             'config' => [
-                'eval' => 'trim',
+                'type' => 'passthrough'
             ]
         ],
         'bodytext' => [
