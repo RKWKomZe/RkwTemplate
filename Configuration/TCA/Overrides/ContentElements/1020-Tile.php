@@ -23,6 +23,11 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_tile'] = [
                 'type' => 'passthrough'
             ]
         ],
+        'header_layout' => [
+            'config' => [
+                'type' => 'passthrough'
+            ]
+        ],
         'header_position' => [
             'config' => [
                 'type' => 'passthrough'

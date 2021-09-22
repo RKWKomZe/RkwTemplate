@@ -37,6 +37,11 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_textwithbutton'] = [
                 'eval' => 'required',
             ]
         ],
+        'subheader' => [
+            'config' => [
+                'type' => 'passthrough'
+            ]
+        ],
         'header_link' => [
             'config' => [
                 'eval' => 'trim',
