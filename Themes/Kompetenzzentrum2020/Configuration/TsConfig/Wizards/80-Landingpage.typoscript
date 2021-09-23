@@ -61,7 +61,7 @@
     TCEFORM.tt_content.CType.keepItems = gridelements_pi1
 
     // remove grid elements by their ID (aka name)
-    tx_gridelements.excludeLayoutIds = sliderContainer, logoContainer, topicContainer, promoterContainer, tabContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerOneCol, contentContainerOneColPagination, contentContainerOneColOrderForm, contentContainerLandingpageTwoCols, textContainer, tilesContainer, galleryContainer, collageContainer, listContainer, moreListContainer, textImageBackgroundContainer
+    tx_gridelements.excludeLayoutIds = sliderContainer, logoContainer, topicContainer, promoterContainer, tabContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerOneCol, contentContainerOneColPagination, contentContainerOneColOrderForm, contentContainerLandingpageTwoCols, textContainer, tilesContainer, galleryContainer, collageContainer, listContainer, moreListContainer, textImageBackgroundContainer, htmlContainer
 
 [end]
 
@@ -72,6 +72,6 @@
     TCEFORM.tt_content.CType.keepItems = rkwtemplate_siteheader
 
     // remove grid elements by their ID (aka name)
-    tx_gridelements.excludeLayoutIds = sliderContainer, logoContainer, topicContainer, promoterContainer, tabContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerOneCol, contentContainerOneColPagination, contentContainerOneColOrderForm, contentContainerLandingpageTwoCols, stickyFooterContainer, textContainer, tilesContainer, galleryContainer, collageContainer, listContainer, moreListContainer, textImageBackgroundContainer
+    tx_gridelements.excludeLayoutIds = sliderContainer, logoContainer, topicContainer, promoterContainer, tabContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerOneCol, contentContainerOneColPagination, contentContainerOneColOrderForm, contentContainerLandingpageTwoCols, stickyFooterContainer, textContainer, tilesContainer, galleryContainer, collageContainer, listContainer, moreListContainer, textImageBackgroundContainer, htmlContainer
 
 [end]

@@ -146,6 +146,20 @@
                 <target>Überschrift (wird für ein mögliches Inhaltsverzeichnis benötigt)</target>
             </trans-unit>
 
+            <!-- HtmlContainer -->
+            <trans-unit id="contentElement.htmlContainer.title">
+                <source>HTML container</source>
+                <target>HTML-Container</target>
+            </trans-unit>
+            <trans-unit id="contentElement.htmlContainer.description">
+                <source>Adds a html-container.</source>
+                <target>Fügt einen Container für HTML ein, der über die ganze Seitenbreite gefüllt werden kann.</target>
+            </trans-unit>
+            <trans-unit id="contentElement.htmlContainer.content">
+                <source>Content</source>
+                <target>Inhalt</target>
+            </trans-unit>
+
             <!-- GalleryContainer -->
             <trans-unit id="contentElement.galleryContainer.title">
                 <source>Gallery-Container</source>
