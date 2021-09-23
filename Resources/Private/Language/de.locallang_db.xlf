@@ -713,6 +713,18 @@
                 <source>Adds an tile list-element.</source>
                 <target>Eine Kachel mit Bild und zugehörigem Modal bei Klick auf jeweils enthaltenen Link, um weitere Informationen zu hinterlegen.</target>
             </trans-unit>
+            <trans-unit id="contentElement.tile.layout.label">
+                <source>Image style (TilesContainer only)</source>
+                <target>Bilddarstellung (nur bei Kachelcontainer)</target>
+            </trans-unit>
+            <trans-unit id="contentElement.tile.layout.default">
+                <source>Default image</source>
+                <target>Rechteckiges Bild</target>
+            </trans-unit>
+            <trans-unit id="contentElement.tile.layout.rounded">
+                <source>Rounded image</source>
+                <target>Rundes Bild</target>
+            </trans-unit>
 
             <!-- MoreList -->
             <trans-unit id="contentElement.moreList.title">

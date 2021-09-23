@@ -418,6 +418,15 @@
             <trans-unit id="contentElement.tile.description">
                 <source>Adds an tile list-element.</source>
             </trans-unit>
+            <trans-unit id="contentElement.tile.layout.label">
+                <source>Image style (TilesContainer only)</source>
+            </trans-unit>
+            <trans-unit id="contentElement.tile.layout.default">
+                <source>Default</source>
+            </trans-unit>
+            <trans-unit id="contentElement.tile.layout.rounded">
+                <source>Rounded image</source>
+            </trans-unit>
 
             <!-- MoreList -->
             <trans-unit id="contentElement.moreList.title">

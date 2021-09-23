@@ -1,6 +1,6 @@
 <html
     xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
-    xmlns:rkwBasics="http://typo3.org/ns/RKW/RkwBasics/ViewHelpers"
+    xmlns:rkwEtracker="http://typo3.org/ns/RKW/RkwEtracker/ViewHelpers"
     data-namespace-typo3-fluid="true">
 
     <f:layout name="Rkw" />
@@ -9,21 +9,30 @@
 
         <div class="speaker-list__item">
             <f:if condition="{f:count(subject: images)} > 0">
-                <div class="speaker-img">
-                    <img src="{f:uri.image(image:images.0,cropVariant:'default')}" alt="{image.title}" loading="lazy">
+                <div class="speaker-list__item__header">
+                    <div class="speaker-img">
+                        <img src="{f:uri.image(image:images.0,cropVariant:'default')}" alt="{image.title}" loading="lazy">
+                    </div>
                 </div>
             </f:if>
-            <div class="speaker-title">
-                <strong>{data.header}</strong>
-                {data.subheader}
+            <div class="speaker-list__item__content">
+                <div class="speaker-title">
+                    <strong>{data.header}</strong>
+                    {data.subheader}
+                </div>
+                <f:if condition="{data.bodytext} && !{data.header_link}">
+                    <button class="speaker-link js-open-mdl" data-modal="mdl-c{data.uid}">
+                        <f:translate key="LLL:EXT:rkw_template/Resources/Private/Language/locallang.xlf:contentElement.tile.labelShowMore" />
+                    </button>
+                </f:if>
+                <f:if condition="!{data.bodytext} && {data.header_link}">
+                    <rkwEtracker:link.typolink parameter="{data.header_link}" class="speaker-link">
+                        <f:translate key="LLL:EXT:rkw_template/Resources/Private/Language/locallang.xlf:contentElement.tile.labelShowMore" />
+                    </rkwEtracker:link.typolink>
+                </f:if>
             </div>
-            <f:if condition="{data.bodytext}">
-                <button class="speaker-link js-open-mdl" data-modal="mdl-c{data.uid}">
-                    <f:translate key="LLL:EXT:rkw_template/Resources/Private/Language/locallang.xlf:contentElement.tile.labelShowMore" />
-                </button>
-            </f:if>
         </div>
-        <f:if condition="{data.bodytext}">
+        <f:if condition="{data.bodytext} && !{data.header_link}">
             <f:render partial="Modal/Inner" arguments="{_all}"/>
         </f:if>
 

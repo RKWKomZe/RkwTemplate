@@ -41,6 +41,15 @@
                 altLabels.2 = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.gridelements_pi1.landingpage.type.I.2
             }
         }
+
+        layout {
+            types.gridelements_pi1 {
+                label = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.tile.layout.label
+                altLabels.0 = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.tile.layout.default
+                addItems.10 = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.tile.layout.rounded
+            }
+        }
+
     }
 
 [end]

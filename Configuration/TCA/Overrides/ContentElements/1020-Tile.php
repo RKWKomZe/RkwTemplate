@@ -11,7 +11,7 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_tile'] = [
             --palette--;;headers,
         bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,            
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.images,
-            image,            
+            image,
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,
             --palette--;;language,
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
@@ -36,11 +36,6 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_tile'] = [
         'subheader' => [
             'config' => [
                 'eval' => 'trim',
-            ]
-        ],
-        'header_link' => [
-            'config' => [
-                'type' => 'passthrough'
             ]
         ],
         'header' => [
