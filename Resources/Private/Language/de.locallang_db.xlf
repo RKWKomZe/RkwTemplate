@@ -674,13 +674,23 @@
 				<target>Weiße Schrift</target>
 			</trans-unit>
 
+            <!-- Text -->
+            <trans-unit id="contentElement.text.title">
+                <source>Text</source>
+                <target>Text</target>
+            </trans-unit>
+            <trans-unit id="contentElement.text.description">
+                <source>Adds a text-element.</source>
+                <target>Text zum Einsatz auf einer Landingpage</target>
+            </trans-unit>
+
             <!-- TextWithButton -->
             <trans-unit id="contentElement.textWithButton.title">
                 <source>Text with button as call-to-action element</source>
                 <target>Text mit einem Button als Call-to-Action-Element</target>
             </trans-unit>
             <trans-unit id="contentElement.textWithButton.description">
-                <source>Adds an text-with-button-element.</source>
+                <source>Adds a text-with-button-element.</source>
                 <target>Text mit einem Button als Call-to-Action-Element</target>
             </trans-unit>
             <trans-unit id="contentElement.textWithButton.rowDescription">

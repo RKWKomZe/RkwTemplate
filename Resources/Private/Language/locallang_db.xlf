@@ -383,6 +383,14 @@
 				<source>White font, black gradient</source>
 			</trans-unit>
 
+            <!-- Text -->
+            <trans-unit id="contentElement.text.title">
+                <source>Text</source>
+            </trans-unit>
+            <trans-unit id="contentElement.text.description">
+                <source>Adds a text-element.</source>
+            </trans-unit>
+
             <!-- TextWithButton -->
             <trans-unit id="contentElement.textWithButton.title">
                 <source>Text with button as call-to-action element</source>
