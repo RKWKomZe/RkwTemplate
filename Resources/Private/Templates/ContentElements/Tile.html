@@ -7,7 +7,12 @@
 
     <f:section name="Main">
 
-        <div class="speaker-list__item">
+        <f:if condition="{data.bodytext} && !{data.header_link}">
+            <a href="#" class="speaker-list__item js-open-mdl" data-modal="mdl-c{data.uid}">
+        </f:if>
+        <f:if condition="{data.header_link}">
+            <a href="{data.header_link}" class="speaker-list__item" target="_blank" rel="nofollow">
+        </f:if>
             <f:if condition="{f:count(subject: images)} > 0">
                 <div class="speaker-list__item__header">
                     <div class="speaker-img">
@@ -20,20 +25,18 @@
                     <strong>{data.header}</strong>
                     {data.subheader}
                 </div>
-                <f:if condition="{data.bodytext} && !{data.header_link}">
-                    <button class="speaker-link js-open-mdl" data-modal="mdl-c{data.uid}">
+                <f:if condition="{data.bodytext} || {data.header_link}">
+                    <span class="speaker-link">
                         <f:translate key="LLL:EXT:rkw_template/Resources/Private/Language/locallang.xlf:contentElement.tile.labelShowMore" />
-                    </button>
-                </f:if>
-                <f:if condition="!{data.bodytext} && {data.header_link}">
-                    <rkwEtracker:link.typolink parameter="{data.header_link}" class="speaker-link">
-                        <f:translate key="LLL:EXT:rkw_template/Resources/Private/Language/locallang.xlf:contentElement.tile.labelShowMore" />
-                    </rkwEtracker:link.typolink>
+                    </span>
                 </f:if>
             </div>
-        </div>
         <f:if condition="{data.bodytext} && !{data.header_link}">
+            </a>
             <f:render partial="Modal/Inner" arguments="{_all}"/>
+        </f:if>
+        <f:if condition="{data.header_link}">
+            </a>
         </f:if>
 
     </f:section>
