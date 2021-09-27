@@ -674,6 +674,16 @@
 				<target>Weiße Schrift</target>
 			</trans-unit>
 
+            <!-- Text & Bilder -->
+            <trans-unit id="contentElement.textpic.title">
+                <source>Text &amp; Images</source>
+                <target>Text &amp; Bilder</target>
+            </trans-unit>
+            <trans-unit id="contentElement.textpic.description">
+                <source>Adds a combinded text-images-element.</source>
+                <target>Text &amp; Bilder zum Einsatz auf einer Landingpage</target>
+            </trans-unit>
+
             <!-- Text -->
             <trans-unit id="contentElement.text.title">
                 <source>Text</source>

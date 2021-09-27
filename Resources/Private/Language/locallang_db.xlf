@@ -391,6 +391,14 @@
                 <source>Adds a text-element.</source>
             </trans-unit>
 
+            <!-- Text & Bilder -->
+            <trans-unit id="contentElement.textpic.title">
+                <source>Text &amp; Images</source>
+            </trans-unit>
+            <trans-unit id="contentElement.textpic.description">
+                <source>Adds a combinded text-images-element.</source>
+            </trans-unit>
+
             <!-- TextWithButton -->
             <trans-unit id="contentElement.textWithButton.title">
                 <source>Text with button as call-to-action element</source>
