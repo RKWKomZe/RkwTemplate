@@ -7,11 +7,14 @@
 
     <f:section name="Main">
 
+        <f:if condition="{data.header_link}">
+            <a href="{data.header_link}" class="speaker-list__item" target="_blank" rel="nofollow">
+        </f:if>
         <f:if condition="{data.bodytext} && !{data.header_link}">
             <a href="#" class="speaker-list__item js-open-mdl" data-modal="mdl-c{data.uid}">
         </f:if>
-        <f:if condition="{data.header_link}">
-            <a href="{data.header_link}" class="speaker-list__item" target="_blank" rel="nofollow">
+        <f:if condition="!{data.bodytext} && !{data.header_link}">
+            <div class="speaker-list__item">
         </f:if>
             <f:if condition="{f:count(subject: images)} > 0">
                 <div class="speaker-list__item__header">
@@ -31,6 +34,9 @@
                     </span>
                 </f:if>
             </div>
+        <f:if condition="!{data.bodytext} && !{data.header_link}">
+            </div>
+        </f:if>
         <f:if condition="{data.bodytext} && !{data.header_link}">
             </a>
             <f:render partial="Modal/Inner" arguments="{_all}"/>
