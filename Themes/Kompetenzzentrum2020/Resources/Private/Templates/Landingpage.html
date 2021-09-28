@@ -125,11 +125,15 @@
                 background-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primarycolor}</f:format.raw> !important;
             }
 
+            .tpl-specials-detail .contentbox.primary-mod .headline--underlined::after {
+                background-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_secondarycolor}</f:format.raw> !important;
+            }
+
             .tpl-specials-detail .contentbox .headline--underlined-secondary::after {
                 background-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_secondarycolor}</f:format.raw> !important;
             }
 
-            .tpl-specials-detail .contentbox.speaker-mod .speaker-list-wrapper .speaker-list__item .speaker-link:hover {
+            .tpl-specials-detail .contentbox.speaker-mod .speaker-list-wrapper .speaker-list__item:hover .speaker-link {
                 color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primarycolor}</f:format.raw> !important;
                 border-bottom-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primarycolor}</f:format.raw> !important;
             }
@@ -153,7 +157,7 @@
             <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.landingpage" data="{data}" />
 
             <f:if condition="! {rkwBasics:isEmpty(string:'{f:cObject(typoscriptObjectPath: \'lib.txRkwTemplate.pageInfo.imageResources\')}')} && {data.backend_layout} == 'pagets__landingPages'">
-                <div id="c22240" class="contentbox content-padding-layoutmax  ">
+                <div class="contentbox content-padding-layoutmax">
                     <div class="flex-container">
                         <div class="flex-basis-12">
                             <p class="media-sources {f:if(condition: '! {rkwBasics:isEmpty(string:\'{data.tx_gridelements_view_column_70}\')}', then: 'media-sources--space')}" role="contentinfo">

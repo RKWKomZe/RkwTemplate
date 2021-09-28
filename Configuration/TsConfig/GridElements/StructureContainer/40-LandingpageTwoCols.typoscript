@@ -13,14 +13,14 @@ tx_gridelements.setup.contentContainerLandingpageTwoCols {
                         colPos = 50
                         maxitems = 1
                         allowed {
-                            CType = header, text, rkwtemplate_textwithbutton
+                            CType = rkwtemplate_text, rkwtemplate_textwithbutton
                         }
                     }
                     2 {
                         name = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.contentContainerLandingpageTwoCols.aside
                         colPos = 60
                         allowed {
-                            CType = header, text, rkwtemplate_toclandingpage
+                            CType = rkwtemplate_text, rkwtemplate_toclandingpage
                         }
                     }
                 }

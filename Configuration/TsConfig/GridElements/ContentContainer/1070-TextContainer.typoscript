@@ -13,7 +13,7 @@ tx_gridelements.setup.textContainer {
                         colPos = 30
                         maxitems = 1
                         allowed {
-                            CType = text, textmedia, html, rkwtemplate_textwithbutton
+                            CType = rkwtemplate_text, rkwtemplate_textpic, html, rkwtemplate_textwithbutton
                         }
                     }
                 }

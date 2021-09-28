@@ -4,14 +4,12 @@
 // Define element fields
 //===============================================================
 
-$GLOBALS['TCA']['tt_content']['types']['rkwtemplate_tile'] = [
+$GLOBALS['TCA']['tt_content']['types']['rkwtemplate_text'] = [
     'showitem' => '
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
             --palette--;;general,
             --palette--;;headers,
         bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,            
-        --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.images,
-            image,
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,
             --palette--;;language,
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
@@ -28,6 +26,11 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_tile'] = [
                 'type' => 'passthrough'
             ]
         ],
+        'header_link' => [
+            'config' => [
+                'type' => 'passthrough'
+            ]
+        ],
         'header_position' => [
             'config' => [
                 'type' => 'passthrough'
@@ -35,7 +38,7 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_tile'] = [
         ],
         'subheader' => [
             'config' => [
-                'eval' => 'trim',
+                'type' => 'passthrough'
             ]
         ],
         'header' => [
@@ -49,36 +52,6 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_tile'] = [
                 'enableRichtext' => true,
             ]
         ],
-        'image' => [
-            'config' => [
-                'minitems' => 1,
-                'maxitems' => 1,
-                'overrideChildTca' => [
-                    'columns' => [
-                        'description' => [
-                            'config' => [
-                                'type' => 'passthrough'
-                            ]
-                        ],
-                        'crop' => [
-                            'config' => [
-                                'cropVariants' => [
-                                    'default' => [
-                                        'title' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.imageList.imageManipulation.default',
-                                        'allowedAspectRatios' => [
-                                            '125:125' => [
-                                                'title' => '125 x 125',
-                                                'value' => 125 / 125
-                                            ]
-                                        ],
-                                    ]
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
     ]
 ];
 
@@ -90,10 +63,10 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_tile'] = [
     'tt_content',
     'CType',
     [
-        'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.tile.title',
-        'rkwtemplate_tile',
-        'rkw-template-tile',
+        'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.text.title',
+        'rkwtemplate_text',
+        'rkw-template-text',
     ],
-    'textmedia',
+    'text',
     'after'
 );
