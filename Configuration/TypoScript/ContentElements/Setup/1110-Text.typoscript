@@ -1,6 +1,6 @@
 tt_content {
     rkwtemplate_text =< lib.contentElement
     rkwtemplate_text {
-        templateName = Text
+        templateName = TextLandingpage
     }
 }
