@@ -33,7 +33,8 @@ $EM_CONF[$_EXTKEY] = [
             'rkw_etracker'  => '8.7.16-8.7.99',
             'rkw_events'  => '8.7.0-8.7.99',
             'rkw_pdf2content'  => '8.7.0-8.7.99',
-            'rkw_projects' => '8.7.0-8.7.99'
+            'rkw_projects' => '8.7.0-8.7.99',
+            'rkw_registration' => '8.7.36-8.7.99'
         ],
         'conflicts' => [],
         'suggests' => [],
