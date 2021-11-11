@@ -30,6 +30,8 @@ TCEFORM.pages {
         addItems.20000 = Detailseite: Veranstaltungen
 
         addItems.30000 = Landingpage
+
+        addItems.40000 = Detailseite: Infografiken
     }
 
     //===============================================================
@@ -58,6 +60,8 @@ TCEFORM.pages {
         addItems.20000 = Detailseite: Veranstaltungen
 
         addItems.30000 = Landingpage
+
+        addItems.40000 = Detailseite: Infografiken
 
     }
 

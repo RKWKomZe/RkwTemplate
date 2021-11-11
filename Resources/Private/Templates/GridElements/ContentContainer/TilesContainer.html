@@ -18,8 +18,10 @@
                         </blockquote>
                     </f:if>
                 </div>
-                <div class="speaker-list-wrapper">
-                    <f:format.raw>{data.tx_gridelements_view_column_40}</f:format.raw>
+                <div class="tiles-wrapper speaker-list-wrapper {f:if(condition: '{data.layout} == 0', then: 'speaker-img--default')}{f:if(condition: '{data.layout} == 10', then: 'speaker-img--rounded')}">
+                    <div class="tiles flex-container">
+                        <f:format.raw>{data.tx_gridelements_view_column_40}</f:format.raw>
+                    </div>
                 </div>
             </div>
         </f:if>

@@ -4,7 +4,7 @@
 // ############################################################################
 
 // Basic settings that are at least valid for all columns. The more specific settings only further limit permissions of the basic settings further
-[RKW\RkwTemplate\Condition\Backend\BackendLayoutCondition = "pagets__eventsDetail"]
+[RKW\RkwTemplate\Condition\Backend\BackendLayoutCondition = "pagets__infographicsDetail"]
 
     // remove everything - except for some items
     // Important: this also has to include gridelements_pi1 for the gridContainer if needed!

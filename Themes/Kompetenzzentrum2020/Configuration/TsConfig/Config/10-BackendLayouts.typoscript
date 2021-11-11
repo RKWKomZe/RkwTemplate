@@ -247,6 +247,29 @@ mod {
             }
 
             //======================================
+            // Infographics Pages Details
+            //======================================
+            infographicDetail {
+                title = Detailseite: Infografiken
+                config {
+                    backend_layout {
+                        colCount = 1
+                        rowCount = 1
+                        rows {
+                            1 {
+                                columns {
+                                    1 {
+                                        name = Inhalt
+                                        colPos = 0
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            //======================================
             // Landingpage
             //======================================
             landingPages {

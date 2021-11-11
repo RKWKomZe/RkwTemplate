@@ -383,6 +383,22 @@
 				<source>White font, black gradient</source>
 			</trans-unit>
 
+            <!-- Text -->
+            <trans-unit id="contentElement.text.title">
+                <source>Text</source>
+            </trans-unit>
+            <trans-unit id="contentElement.text.description">
+                <source>Adds a text-element.</source>
+            </trans-unit>
+
+            <!-- Text & Bilder -->
+            <trans-unit id="contentElement.textpic.title">
+                <source>Text &amp; Images</source>
+            </trans-unit>
+            <trans-unit id="contentElement.textpic.description">
+                <source>Adds a combinded text-images-element.</source>
+            </trans-unit>
+
             <!-- TextWithButton -->
             <trans-unit id="contentElement.textWithButton.title">
                 <source>Text with button as call-to-action element</source>
@@ -417,6 +433,15 @@
             </trans-unit>
             <trans-unit id="contentElement.tile.description">
                 <source>Adds an tile list-element.</source>
+            </trans-unit>
+            <trans-unit id="contentElement.tile.layout.label">
+                <source>Image style (TilesContainer only)</source>
+            </trans-unit>
+            <trans-unit id="contentElement.tile.layout.default">
+                <source>Default</source>
+            </trans-unit>
+            <trans-unit id="contentElement.tile.layout.rounded">
+                <source>Rounded image</source>
             </trans-unit>
 
             <!-- MoreList -->

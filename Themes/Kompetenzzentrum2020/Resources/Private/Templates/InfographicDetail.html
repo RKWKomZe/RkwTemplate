@@ -1,0 +1,78 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+    <f:layout name="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.utility.pageLayoutSwitch')}" />
+
+
+    <f:section name="Header">
+
+    </f:section>
+
+
+    <f:comment><!-- ======================================================================== --></f:comment>
+
+
+    <f:section name="Content">
+
+        <main class="main flex-container space-between no-padding-narrow" id="main">
+            <section class="section content no-padding-narrow">
+
+                <!--<div class="siteheader__title siteheader__title--dark siteheader__title--long-title siteheader__title--detail-site">-->
+
+                <div class="siteheader siteheader--extended siteheader--flexible no-border-radius-smalldesk">
+                    <f:cObject typoscriptObjectPath="lib.txRkwTemplate.infographic.title" data="{data}" />
+
+                    <!-- infobox -->
+                    <div class="flex-container siteheader__meta siteheader__overlay-dark">
+                        <div class="flex-item flex-basis-2 siteheader__overlay-img">
+                            <div class="siteheader__overlay-magazine">
+                                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.infographic.cover" data="{data}" />
+                            </div>
+                        </div>
+
+                        <div class="flex-item flex-basis-7 siteheader__overlay-publications-info full-width-narrow">
+                            <div class="siteheader__overlay-title">
+                                <f:translate key="{settings.themeLanguageFile}:partials.infoBox.publication.labelMeta"/>
+                            </div>
+                            <!-- project -->
+                            <!-- date -->
+
+                            <!-- file size -->
+                            <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwInfographics.resources.fileSize', data:'{data}')} > 0">
+                                <div class="table__item">
+                                    <div class="table__title">
+                                        <f:translate key="{settings.themeLanguageFile}:partials.infoBox.partials.fileSize.labelFileSize"/>:
+                                    </div>
+                                    <div class="table__content">
+                                        <f:format.bytes units="B,KB,MB,GB"><f:cObject typoscriptObjectPath="lib.txRkwInfographics.resources.fileSize" data="{data}" /></f:format.bytes> (<f:format.case mode="upper"><f:cObject typoscriptObjectPath="lib.txRkwInfographics.resources.fileType" data="{data}" /></f:format.case>)
+                                    </div>
+                                </div>
+                            </f:if>
+
+                            <!-- authors -->
+                        </div>
+
+                        <div class="flex-item flex-basis-3 siteheader__overlay-publications-btn full-width-narrow">
+                            <div class="btn-list">
+                                <f:cObject typoscriptObjectPath="lib.txRkwInfographics.resources.fileDownloadFromDetailPage" data="{uid: \'{infographic.uid}\'}"/>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <f:comment><!-- breadcrumb --></f:comment>
+                <div class="breadcrumbs flex-container nav breadcrumb-padding">
+                    <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.breadcrumb" data="{data}" />
+                </div>
+
+                <f:comment><!-- content --></f:comment>
+                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.main" data="{data}" />
+
+            </section>
+
+        </main>
+
+    </f:section>
+
+</html>

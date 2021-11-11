@@ -4,13 +4,17 @@
 // Define element fields
 //===============================================================
 
-$GLOBALS['TCA']['tt_content']['types']['rkwtemplate_listelement'] = [
+$GLOBALS['TCA']['tt_content']['types']['rkwtemplate_textpic'] = [
     'showitem' => '
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
             --palette--;;general,
             --palette--;;headers,
-        rowDescription,
-        bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,            
+        bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,   
+        --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.images,
+            image,
+            --palette--;LLL:EXT:frontend/Resources/Private/Language/Database.xlf:tt_content.palette.mediaAdjustments;mediaAdjustments,
+            --palette--;LLL:EXT:frontend/Resources/Private/Language/Database.xlf:tt_content.palette.gallerySettings;gallerySettings,
+            --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.imagelinks;imagelinks,
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,
             --palette--;;language,
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
@@ -18,16 +22,6 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_listelement'] = [
     ',
     'columnsOverrides' => [
         'date' => [
-            'config' => [
-                'type' => 'passthrough'
-            ]
-        ],
-        'header_position' => [
-            'config' => [
-                'type' => 'passthrough'
-            ]
-        ],
-        'subheader' => [
             'config' => [
                 'type' => 'passthrough'
             ]
@@ -42,19 +36,24 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_listelement'] = [
                 'type' => 'passthrough'
             ]
         ],
+        'header_position' => [
+            'config' => [
+                'type' => 'passthrough'
+            ]
+        ],
+        'subheader' => [
+            'config' => [
+                'type' => 'passthrough'
+            ]
+        ],
         'header' => [
             'config' => [
                 'eval' => 'trim',
             ]
         ],
-        'rowDescription' => [
-            'config' => [
-                'type' => 'passthrough'
-            ]
-        ],
         'bodytext' => [
             'config' => [
-                'eval' => 'trim,required',
+                'eval' => 'trim',
                 'enableRichtext' => true,
             ]
         ],
@@ -69,10 +68,10 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_listelement'] = [
     'tt_content',
     'CType',
     [
-        'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.listElement.title',
-        'rkwtemplate_listelement',
-        'rkw-template-listelement',
+        'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.textpic.title',
+        'rkwtemplate_textpic',
+        'rkw-template-textpic',
     ],
-    'textmedia',
+    'text',
     'after'
 );
