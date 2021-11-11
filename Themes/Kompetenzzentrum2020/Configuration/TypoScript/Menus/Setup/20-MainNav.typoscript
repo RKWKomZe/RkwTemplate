@@ -58,5 +58,10 @@ lib.txRkwTemplate {
 
             settings < page.10.settings
         }
+        
+        //=================================================================
+        // mobile version for AJAX
+        mainMobile < .main 
+        mainMobile.file = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/Menus/MainMobile.html 
     }
 }

@@ -32,7 +32,7 @@
     <f:section name="Mobile">
 
         <li class="nav-mobile__item {f:if(condition:item.active, then:' is-active')}">
-            <a class="{f:if(condition: item.children, then: 'nav-mobile__item--toggle')}" href="{item.link}" target="{f:if(condition: item.target, then: item.target, else:'_self')}" {f:if(condition:item.children, then:' aria-haspopup="true"')}>
+            <a class="{f:if(condition: '{item.children} && {item.data.doktype} == 4 && {item.data.shortcut_mode} == 1', then: 'nav-mobile__item--toggle')}" href="{item.link}" target="{f:if(condition: item.target, then: item.target, else:'_self')}" {f:if(condition:item.children, then:' aria-haspopup="true"')}>
                 {item.title}
             </a>
 

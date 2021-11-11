@@ -24,11 +24,10 @@
 
     <f:comment><!-- ======================================================================== --></f:comment>
 
-
     <f:section name="Mobile">
 
         <li class="nav-mobile__item {f:if(condition:item.active, then:' is-active')} {f:if(condition: '{item.data.uid} == {loginPid}', then: 'tx-rkwregistration-login-class')}">
-            <a href="{item.link}" class="{f:if(condition: '{item.data.uid} == {loginPid}', then: 'tx-rkwregistration-login-text')} {f:if(condition: item.children, then: 'nav-mobile__item--toggle')}" target="{f:if(condition: item.target, then: item.target, else:'_self')}" {f:if(condition:item.children, then:' aria-haspopup="true"')}>
+            <a href="{item.link}" class="{f:if(condition: '{item.data.uid} == {loginPid}', then: 'tx-rkwregistration-login-text')} {f:if(condition: '{item.children} && {item.data.doktype} == 4 && {item.data.shortcut_mode} == 1', then: 'nav-mobile__item--toggle')}" target="{f:if(condition: item.target, then: item.target, else:'_self')}" {f:if(condition:item.children, then:' aria-haspopup="true"')}>
                 {item.title}
             </a>
 

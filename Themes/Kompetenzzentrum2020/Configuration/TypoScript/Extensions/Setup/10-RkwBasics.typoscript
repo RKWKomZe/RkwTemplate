@@ -1,0 +1,37 @@
+plugin.tx_rkwbasics {
+
+    settings {
+        criticalCss {
+        
+            # cat=plugin.tx_rkwbasics//a; type=boolean; label=Activate Rendering for Critical-CSS
+            enable = 0
+
+            filesForLayout {
+
+                // Topic-Layout
+                0 {
+                    5 = https://use.typekit.net/frq0css.css                
+                    10 = {$plugin.tx_rkwtemplate_themeconfig.paths.default.css}/critical/topic.css   
+                } 
+                10 < .0
+                12 < .0
+                           
+                // Article-Layout
+                20 {
+                    5 = https://use.typekit.net/frq0css.css
+                    10 = {$plugin.tx_rkwtemplate_themeconfig.paths.default.css}/critical/article_detail.css   
+                }
+                21 < .20
+                22 < .20  
+            }
+            
+            filesToRemoveWhenActive {
+                // live
+                10 = https://use.typekit.net/frq0css.css 
+                
+                // dev
+                20 = https://use.typekit.net/clc1sus.css 
+            }
+        }
+	}
+}

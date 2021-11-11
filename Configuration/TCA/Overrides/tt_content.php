@@ -1,5 +1,14 @@
 <?php
 
+//=================================================================
+// Register Plugin
+//=================================================================
+\TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
+    'RKW.RkwTemplate',
+    'Rkwtemplate',
+    'RKW Template'
+);
+
 /**
  * @see: vendor/typo3/cms/typo3/sysext/frontend/Configuration/TCA/tt_content.php
  */

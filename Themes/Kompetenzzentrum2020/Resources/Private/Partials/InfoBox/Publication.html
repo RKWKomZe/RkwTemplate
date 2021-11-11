@@ -28,6 +28,8 @@
         <!-- buttons -->
         <div class="flex-item flex-basis-3 siteheader__overlay-publications-btn full-width-narrow">
             <div class="btn-list">
+                
+                <!-- order -->
                 <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.content.boxesPublicationOrder', data:'{data}')}">
                     <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.publication.isSubPage')}">
                         <f:then>
@@ -42,7 +44,20 @@
                         </f:else>
                     </f:if>
                 </f:if>
+
+                <!-- download -->
                 <f:cObject typoscriptObjectPath="lib.txRkwTemplate.pageInfo.fileDownload" data="{data}" />
+
+                <!-- ePaper -->
+                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.pageInfo.externalLink" data="{data}" />
+                
+                <!-- read -->
+                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.pageInfo.startReading" data="{data}"/>
+
+                <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.publication.isParentPage')}">
+                </f:if>
+
+
             </div>
         </div>
     </div>

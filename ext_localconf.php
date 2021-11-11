@@ -5,6 +5,21 @@ call_user_func(
     function($extKey) {
 
         //=================================================================
+        // Configure Plugin
+        //=================================================================
+        \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+            'RKW.' . $extKey,
+            'Rkwtemplate',
+            array(
+                'Ajax' => 'mobileMenuAction',
+            ),
+            // non-cacheable actions
+            array(
+                'Ajax' => 'mobileMenuAction',
+            )
+        );
+        
+        //=================================================================
         // register icons
         //=================================================================
         $iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(

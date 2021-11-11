@@ -24,7 +24,7 @@
 
         <f:comment> <!-- read more nav and order form--></f:comment>
         <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.publication.isParentPage')}">
-            <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.beginRead" />
+            <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.startReading" />
 
             <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.publication.isParentPage')}">
                 <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.boxesPublicationOrder" data="{data}" />
@@ -40,6 +40,7 @@
             </rkwBasics:format.removeEmptyParagraphs>
         </f:if>
 
+        <f:comment><!-- read more --></f:comment>
         <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.publication.isSubPage')}">
             <f:then>
                 <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.readMore" />
@@ -84,7 +85,7 @@
 
         <f:comment> <!-- read more nav and order form--></f:comment>
         <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.publication.isParentPage')}">
-            <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.beginRead" />
+            <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.startReading" />
 
             <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.publication.isParentPage')}">
                 <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.boxesPublicationOrder" data="{data}" />

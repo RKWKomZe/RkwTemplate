@@ -1,0 +1,32 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+
+<f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.publication.isParentPage')}">
+    <f:then>
+        <f:if condition="{nextPageLink} && {externalLink}">
+            <f:then>
+                <select class="select-field select-field--url" aria-label="Online lesen">
+                    <option value=""><f:translate key="{settings.themeLanguageFile}:partials.infoBox.partials.readMore.labelReadOnline"/></option>
+                    <option value="{nextPageLink}"><f:translate key="{settings.themeLanguageFile}:partials.infoBox.partials.readMore.labelReadOnline.select.website"/></option>
+                    <option value="{externalLink}" data-external="1"><f:translate key="{settings.themeLanguageFile}:partials.infoBox.partials.readMore.labelReadOnline.select.ePaper"/></option>
+                </select>
+            </f:then>
+            <f:else>
+                <f:if condition="{nextPageLink}">
+                    <a href="{nextPageLink}"
+                        class="btn btn--primary btn--small">
+                        <f:translate key="{settings.themeLanguageFile}:partials.infoBox.partials.readMore.labelReadOnline"/>
+                    </a>
+                </f:if>
+                <f:if condition="{externalLink}">
+                    <a href="{externalLink}"
+                        class="btn btn--primary btn--small">
+                        <f:translate key="{settings.themeLanguageFile}:partials.infoBox.partials.readMore.labelReadOnline.ePaper"/>
+                    </a>
+                </f:if>
+            </f:else>
+        </f:if>
+    </f:then>
+</f:if>
+
+</html>

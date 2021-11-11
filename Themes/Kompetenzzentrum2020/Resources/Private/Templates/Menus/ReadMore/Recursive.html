@@ -1,0 +1,19 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+    <div class="btn-list btn-list--footer">
+        <f:if condition="{prevPageLink}">
+            <a href="{prevPageLink}"
+                class="btn btn--secondary">
+                <f:translate key="{settings.themeLanguageFile}:templates.menus.readMore.previous"/>
+            </a>
+        </f:if>
+
+        <f:if condition="{nextPageLink}">
+            <a href="{nextPageLink}"
+                class="btn btn--primary">
+                <f:translate key="{settings.themeLanguageFile}:templates.menus.readMore.next"/>
+            </a>
+        </f:if>
+    </div>
+
+</html>

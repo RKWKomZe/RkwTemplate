@@ -1,7 +1,26 @@
 lib.txRkwTemplate {
 
     various {
+    
+        mobileMenu = USER
+        mobileMenu {
+            userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+            extensionName = RkwTemplate
+            pluginName = Rkwtemplate
+            vendorName = RKW
+            controller = Ajax
+            switchableControllerActions {
+                // Again: Controller-Name and Action
+                Ajax {
+                    1 = mobileMenu
+                }
+            }
 
+            view =< plugin.tx_rkwtemplate.view
+            persistence =< plugin.tx_rkwtemplate.persistence
+            settings =< plugin.tx_rkwtemplate.settings
+        }
+    
         //=================================================================
         alerts = USER
         alerts {
@@ -27,8 +46,8 @@ lib.txRkwTemplate {
 
 
         //=================================================================
-        loginOverride = USER
-        loginOverride {
+        loginInfo = USER
+        loginInfo {
             userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
             extensionName = RkwRegistration
             pluginName = RkwregistrationInfo

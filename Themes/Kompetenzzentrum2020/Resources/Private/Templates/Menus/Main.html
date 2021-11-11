@@ -21,7 +21,27 @@
         </div>
 
         <nav class="nav-mobile flex-basis-12 flex-end is-closed">
-            <f:render partial="List" section="Mobile" arguments="{_all}"/>
+
+            <f:comment><!--- Home --></f:comment>
+            <span class="nav-mobile__item nav-mobile__item--home">
+                 <a href="/">
+                    <f:translate key="{settings.themeLanguageFile}:partials.menus.main.list.home" />
+                 </a>
+    
+                <f:comment><!--
+                <span class="nav-mobile__item-icon-wrapper">
+                    <button class="nav-mobile__item-icon">
+                        <svg class="icon icon--12 is-hidden">
+                            <use xlink:href="#ic-plus-colored" />
+                        </svg>
+                    </button>
+                </span> --></f:comment>
+            </span>
+            
+            <!-- this will be loaded via AJAX to reduce DOM on load -->
+            <div class="nav-mobile__primary flex-basis-12 inner-nav-mob is-active-list" id="tx-rkwtemplate-mobile-menu">
+
+            </div>
         </nav>
     </f:if>
 
