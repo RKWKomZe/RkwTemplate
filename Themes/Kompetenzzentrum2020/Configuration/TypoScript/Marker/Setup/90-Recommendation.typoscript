@@ -129,5 +129,31 @@ lib.txRkwTemplate {
                 itemLimitPerPageOverride = 15
             }
         }
+        
+        //=================================================================
+        eventsSimilarReduced = USER
+        eventsSimilarReduced {
+
+            userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+            extensionName = RkwEvents
+            pluginName = Recommendation
+            vendorName = RKW
+            controller = Event
+            switchableControllerActions {
+                // Again: Controller-Name and Action
+                Event {
+                    1 = listSimilar
+                }
+            }
+
+            view =< plugin.tx_rkwevents.view
+            persistence =< plugin.tx_rkwevents.persistence
+            settings =< plugin.tx_rkwevents.settings
+
+            settings {
+                layout = Below
+                hideMoreLink = 1
+            }
+        }
     }
 }

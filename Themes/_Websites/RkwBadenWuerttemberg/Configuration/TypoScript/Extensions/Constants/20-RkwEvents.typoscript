@@ -35,6 +35,12 @@ plugin.tx_rkwevents {
         itemsPerPage = 36
 
 		list {
+		
+            multipartView {
+  
+                # cat=plugin.tx_rkwevents; type=bool; label=Use multipart view for list
+                enabled = 1
+            }
 
             filter {
 
@@ -52,6 +58,12 @@ plugin.tx_rkwevents {
 
                 # cat=plugin.tx_rkwevents; type=integer; label=Show filter option "address"
                 showAddress = 1
+                
+                # cat=plugin.tx_rkwevents; type=integer; label=Show filter option "freeOfCharge"
+                showFreeOfCharge = 1
+
+                # cat=plugin.tx_rkwevents; type=integer; label=Show filter option "eligible"
+                showEligible = 1
             }
         }
 	}
