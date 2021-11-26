@@ -99,6 +99,99 @@
 				<source>Adds a slide-container.</source>
 			</trans-unit>
 
+            <!-- LandingpageGridElements -->
+			<trans-unit id="contentElement.gridelements_pi1.landingpage.type.label">
+				<source>Typ</source>
+			</trans-unit>
+			<trans-unit id="contentElement.gridelements_pi1.landingpage.type.I.default">
+				<source>Default-Element</source>
+			</trans-unit>
+			<trans-unit id="contentElement.gridelements_pi1.landingpage.type.I.1">
+				<source>Primary Element</source>
+			</trans-unit>
+			<trans-unit id="contentElement.gridelements_pi1.landingpage.type.I.2">
+				<source>Secondary Element</source>
+			</trans-unit>
+
+            <!-- TilesContainer -->
+            <trans-unit id="contentElement.tilesContainer.title">
+                <source>Tiles-Container</source>
+            </trans-unit>
+            <trans-unit id="contentElement.tilesContainer.description">
+                <source>Adds a tiles-container.</source>
+            </trans-unit>
+
+            <!-- GalleryContainer -->
+            <trans-unit id="contentElement.galleryContainer.title">
+                <source>Gallery-Container</source>
+            </trans-unit>
+            <trans-unit id="contentElement.galleryContainer.description">
+                <source>Adds a gallery-container.</source>
+            </trans-unit>
+            <trans-unit id="contentElement.galleryContainer.content">
+                <source>Content</source>
+            </trans-unit>
+            <trans-unit id="contentElement.galleryContainer.header">
+                <source>Header</source>
+            </trans-unit>
+
+            <!-- CollageContainer -->
+            <trans-unit id="contentElement.collageContainer.title">
+                <source>Collage-Container</source>
+            </trans-unit>
+            <trans-unit id="contentElement.collageContainer.description">
+                <source>Adds a collage-container.</source>
+            </trans-unit>
+            <trans-unit id="contentElement.collageContainer.content">
+                <source>Content</source>
+            </trans-unit>
+            <trans-unit id="contentElement.collageContainer.header">
+                <source>Header</source>
+            </trans-unit>
+
+            <!-- MoreListContainer -->
+            <trans-unit id="contentElement.moreListContainer.title">
+                <source>MoreList-Container</source>
+            </trans-unit>
+            <trans-unit id="contentElement.moreListContainer.description">
+                <source>Adds a container with more infos.</source>
+            </trans-unit>
+            <trans-unit id="contentElement.moreListContainer.content">
+                <source>Content</source>
+            </trans-unit>
+            <trans-unit id="contentElement.moreListContainer.header">
+                <source>Header</source>
+            </trans-unit>
+
+            <!-- ListContainer -->
+            <trans-unit id="contentElement.listContainer.title">
+                <source>List-Container</source>
+            </trans-unit>
+            <trans-unit id="contentElement.listContainer.description">
+                <source>Adds a container to display a formatted list.</source>
+            </trans-unit>
+            <trans-unit id="contentElement.listContainer.content">
+                <source>Content</source>
+            </trans-unit>
+            <trans-unit id="contentElement.listContainer.header">
+                <source>Header</source>
+            </trans-unit>
+
+            <!-- StickyFooterContainer -->
+            <trans-unit id="contentElement.stickyFooterContainer.title">
+                <source>StickyFooter-Container</source>
+            </trans-unit>
+            <trans-unit id="contentElement.stickyFooterContainer.description">
+                <source>Adds a container to display a sticky footer.</source>
+            </trans-unit>
+            <trans-unit id="contentElement.stickyFooterContainer.content">
+                <source>Content</source>
+            </trans-unit>
+            <trans-unit id="contentElement.stickyFooterContainer.header">
+                <source>Header</source>
+            </trans-unit>
+
+
             <!-- Mission Statement -->
             <trans-unit id="contentElement.mission.title">
                 <source>Mission Statement</source>

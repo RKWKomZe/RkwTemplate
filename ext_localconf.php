@@ -71,11 +71,6 @@ call_user_func(
             ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/MoreList.svg']
         );
         $iconRegistry->registerIcon(
-            'rkw-template-stickyfooter', // Icon-Identifier, e.g. tx-myext-action-preview
-            \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-            ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/StickyFooter.svg']
-        );
-        $iconRegistry->registerIcon(
             'rkw-template-siteheader', // Icon-Identifier, e.g. tx-myext-action-preview
             \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
             ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/SiteHeader.svg']
@@ -133,7 +128,7 @@ call_user_func(
         $iconRegistry->registerIcon(
             'rkw-template-toclandingpage', // Icon-Identifier, e.g. tx-myext-action-preview
             \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-            ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/TableOfContentsLandingpage.svg']
+            ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/TableOfContents.svg']
         );        
         $iconRegistry->registerIcon(
             'rkw-template-overview', // Icon-Identifier, e.g. tx-myext-action-preview
