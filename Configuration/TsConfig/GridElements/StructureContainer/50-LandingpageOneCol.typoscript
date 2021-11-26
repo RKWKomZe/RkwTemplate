@@ -12,7 +12,7 @@ tx_gridelements.setup.contentContainerLandingpageOneCol {
                         name = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.contentContainerLandingpageOneCol.content
                         colPos = 50
                         allowed {
-                            CType = header, text, textpic, image, textmedia, rkwtemplate_textwithbutton, gridelements_pi1, html, form_formframework
+                            CType = header, text, textpic, image, textmedia, gridelements_pi1, html, form_formframework
                         }
                     }                   
                 }
