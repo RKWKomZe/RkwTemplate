@@ -2,9 +2,12 @@ lib.txRkwTemplate {
 
     recommendation {
 
-
         relatedSimilarLabel = TEXT
         relatedSimilarLabel.value = {$lib.txRkwTemplate.recommendation.relatedSimilar.label}
+
+        eventHeaderLabel = TEXT
+        eventHeaderLabel.value = {$lib.txRkwTemplate.recommendation.eventHeader.label}
+
 
         //=================================================================
         relatedDefault = COA
@@ -127,6 +130,33 @@ lib.txRkwTemplate {
                 layout = Reduced
                 hideMoreLink = 1
                 itemLimitPerPageOverride = 15
+            }
+        }
+
+
+        //=================================================================
+        eventsRecommendedReduced = USER
+        eventsRecommendedReduced {
+
+            userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+            extensionName = RkwEvents
+            pluginName = Seriesproposals
+            vendorName = RKW
+            controller = Event
+            switchableControllerActions {
+                // Again: Controller-Name and Action
+                Event {
+                    1 = seriesProposals
+                }
+            }
+
+            view =< plugin.tx_rkwevents.view
+            persistence =< plugin.tx_rkwevents.persistence
+            settings =< plugin.tx_rkwevents.settings
+
+            settings {
+                layout = Below
+                hideMoreLink = 1
             }
         }
         
