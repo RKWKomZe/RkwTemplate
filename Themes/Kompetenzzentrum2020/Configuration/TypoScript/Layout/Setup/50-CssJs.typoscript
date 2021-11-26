@@ -17,7 +17,6 @@ page {
         file500.media = all
     }
 
-
     //===============================================================
     // JS
     //===============================================================
@@ -29,8 +28,6 @@ page {
 
     }
 
-// remove AlertsAjaxJS because of loading performance issues
-includeJSFooter.rkwAlertsScript  >
 
     // Incldue as lib because it contains jQuery
     includeJSFooterlibs {

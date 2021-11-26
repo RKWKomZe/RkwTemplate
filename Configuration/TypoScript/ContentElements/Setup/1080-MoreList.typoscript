@@ -1,6 +1,0 @@
-tt_content {
-    rkwtemplate_morelist=< lib.contentElement
-    rkwtemplate_morelist{
-        templateName = MoreList
-    }
-}

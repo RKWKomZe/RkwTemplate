@@ -1,0 +1,53 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:rkwBasics="http://typo3.org/ns/RKW/RkwBasics/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+    <f:layout name="Rkw" />
+
+    <f:section name="Main">
+        
+        <f:if condition="<rkwBasics:isEmpty string='{data.tx_gridelements_view_column_110}' /> == 0">
+            
+            <div id="c{data.uid}" class="contentbox content-padding-layoutmax speaker-mod {f:if(condition: '{data.header_layout} == 1', then: 'primary-mod')}{f:if(condition: '{data.header_layout} == 2', then: 'secondary-mod')}">
+                <div class="flex-container">
+                    <f:render partial="Header" arguments="{
+                        header: data.header,
+                        layout: '2',
+                        layoutClass : 'h1',
+                        link: data.header_link,
+                        class: 'headline headline--underlined'
+                    }" />
+                </div>
+
+                <f:if condition="{images}">
+                    <f:then>
+                        <div class="speaker-header" style="background-image:url('{f:uri.image(image:images.0,cropVariant:'default')}')">
+                            <f:if condition="{data.rowDescription}">
+                                <blockquote class="blockquote-specials">
+                                    {data.rowDescription}
+                                </blockquote>
+                            </f:if>
+                        </div>
+                    </f:then>
+                    <f:else>
+                        <div class="speaker-header">
+                            <f:if condition="{data.rowDescription}">
+                                <blockquote class="blockquote-specials">
+                                    {data.rowDescription}
+                                </blockquote>
+                            </f:if>
+                        </div>
+                    </f:else>
+                </f:if>
+                
+                <div class="tiles-wrapper speaker-list-wrapper {f:if(condition: '{data.layout} == 0', then: 'speaker-img--default')}{f:if(condition: '{data.layout} == 10', then: 'speaker-img--rounded')}">
+                    <div class="tiles flex-container">
+                        <f:format.raw>{data.tx_gridelements_view_column_110}</f:format.raw>
+                    </div>
+                </div>
+            </div>
+        </f:if>
+    </f:section>
+
+</html>

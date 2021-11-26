@@ -30,6 +30,9 @@ plugin.tx_rkwtemplate_themeconfig {
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=baseUrl (With / at the end for ClickEnlarge)
         baseUrl = https://nord.rkw-kompetenzzentrum.de/
+        
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=integer; label=ID of page for newsletter subscription
+        newsletterSubscriptionPid = 
     }
 
     # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Show social media share icons

@@ -1,0 +1,41 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+    <f:layout name="Rkw" />
+
+    <f:section name="Main">
+
+        <f:if condition="{data.header_link}">
+            <f:then>
+                <a href="{data.header_link}" class="speaker-list__item" target="_blank" rel="nofollow">
+                    <f:render partial="Tile/Image" arguments="{_all}"/>
+                    <f:render partial="Tile/Text" arguments="{_all}"/>
+                </a>
+            </f:then>
+            <f:else>
+                <f:if condition="{data.bodytext} && !{data.header_link}">
+                    <f:then>
+                        <a href="#" class="speaker-list__item js-open-mdl" data-modal="mdl-c{data.uid}">
+                            <f:render partial="Tile/Image" arguments="{_all}"/>
+                            <f:render partial="Tile/Text" arguments="{_all}"/>
+                        </a>
+                        <f:render partial="Tile/Modal" arguments="{_all}"/>
+                    </f:then>
+                    <f:else>
+                        <f:if condition="!{data.bodytext} && !{data.header_link}">
+                            <div class="speaker-list__item">
+                                <f:render partial="Tile/Image" arguments="{_all}"/>
+                                <f:render partial="Tile/Text" arguments="{_all}"/>
+                            </div>
+                        </f:if>
+                    </f:else>
+                </f:if>
+            </f:else>
+        </f:if>
+    </f:section>
+</html>
+
+
+
+

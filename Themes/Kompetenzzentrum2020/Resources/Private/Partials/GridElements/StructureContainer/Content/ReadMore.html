@@ -1,0 +1,15 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:rkwBasics="http://typo3.org/ns/RkW/RkwBasics/Viewhelpers"
+    data-namespace-typo3-fluid="true">
+
+    <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.publication.isSubPage')}">
+        <f:then>
+            <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.readMore" />
+        </f:then>
+        <f:else>
+            <f:if condition="{data.tx_gridelements_backend_layout} == 'contentContainerOneColPagination'">
+                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.readMoreOneLevel" />
+            </f:if>
+        </f:else>
+    </f:if>
+</html>

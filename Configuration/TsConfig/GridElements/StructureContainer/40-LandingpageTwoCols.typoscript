@@ -11,16 +11,16 @@ tx_gridelements.setup.contentContainerLandingpageTwoCols {
                     1 {
                         name = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.contentContainerLandingpageTwoCols.content
                         colPos = 50
-                        maxitems = 1
                         allowed {
-                            CType = rkwtemplate_text, rkwtemplate_textwithbutton
+                            CType = header, text, textpic, image, textmedia, rkwtemplate_textwithbutton, gridelements_pi1, html, form_formframework
                         }
                     }
+                    
                     2 {
                         name = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.contentContainerLandingpageTwoCols.aside
                         colPos = 60
                         allowed {
-                            CType = rkwtemplate_text, rkwtemplate_toclandingpage
+                            CType = text, rkwtemplate_toclandingpage
                         }
                     }
                 }

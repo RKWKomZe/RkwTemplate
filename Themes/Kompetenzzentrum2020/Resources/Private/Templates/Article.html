@@ -32,7 +32,9 @@
 
             <f:comment><!-- boxes --></f:comment>
             <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.boxesArticle" data="{data}" />
-
+            
+            <f:comment><!-- sticky-footer --></f:comment>
+            <f:render partial="FooterSection/StickyFooter" section="Newsletter" arguments="{_all}" />
         </main>
 
     </f:section>

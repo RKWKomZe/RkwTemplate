@@ -1,0 +1,59 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:rkwBasics="http://typo3.org/ns/RKW/RkwBasics/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+    <f:layout name="Rkw" />
+
+    <f:section name="Main">
+
+        <div id="c{data.uid}" class="contentbox content-padding-layoutmax download-mod has-bg">
+            
+            <div class="parallax-container">
+                <div class="parallax">
+                    <img src="{f:uri.image(image:images.0,cropVariant:'default')}" alt="{image.title}" loading="lazy">
+                </div>
+            </div>
+            
+            <div class="flex-container download-mod__content {f:if(condition: '{data.header_layout} >= 2', then: 'download-mod__content--inverted')}">
+                <div class="typo3-fsc flex-basis-7">
+                    <div class="frame">
+                        <header>
+                            <f:render partial="Header" arguments="{
+                                header: data.header,
+                                layout: data.header_layout,
+                                link: data.header_link
+                            }" />
+                        </header>
+
+                        <rkwBasics:format.removeEmptyParagraphs>
+                            <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data.bodytext}</f:format.html>
+                        </rkwBasics:format.removeEmptyParagraphs>
+
+                        <f:if condition="{data.header_link}">
+                            <f:if condition="<rkwBasics:string.contains needle='#' haystack='{data.header_link}' /> == 1">
+                                <f:then>
+                                    <f:link.typolink
+                                        parameter="{data.header_link}"
+                                        class="btn btn--cta"
+                                        title="{data.rowDescription}"
+                                        additionalAttributes="{data-target:'{data.header_link}'}"
+                                    >{data.rowDescription}</f:link.typolink>
+                                </f:then>
+                                <f:else>
+                                    <f:link.typolink
+                                        parameter="{data.header_link}"
+                                        class="btn btn--cta"
+                                        title="{data.rowDescription}"
+                                    >{data.rowDescription}</f:link.typolink>
+                                </f:else>
+                            </f:if>
+                        </f:if>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </f:section>
+</html>
+

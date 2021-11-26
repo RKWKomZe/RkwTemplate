@@ -79,4 +79,23 @@
 
     </f:section>
 
+    <f:comment><!-- ==================================================================================== --></f:comment>
+
+    <f:section name="Landingpage">
+
+        <f:for each="{data.tx_gridelements_view_raw_columns.60}" as="item" iteration="asideIterator">
+            <f:if condition="{item.CType} != 'rkwtemplate_toclandingpage'">
+                <f:then>
+                    <div class="contentbox typo3-fsc {f:if(condition: asideIterator.isLast, then: 'text-small', else: '')}">
+                        <f:format.raw>{data.tx_gridelements_view_child_{item.uid}}</f:format.raw>
+                    </div>
+                </f:then>
+                <f:else>
+                    <f:format.raw>{data.tx_gridelements_view_child_{item.uid}}</f:format.raw>
+                </f:else>
+            </f:if>
+        </f:for>
+        
+    </f:section>
+
 </html>

@@ -81,3 +81,9 @@ foreach (glob(__DIR__ . "/GridElements/ContentContainer/*.php") as $filename) {
 foreach (glob(__DIR__ . "/ContentElements/*.php") as $filename) {
     include_once $filename;
 }
+foreach (glob(__DIR__ . "/ContentElements/Home/*.php") as $filename) {
+    include_once $filename;
+}
+foreach (glob(__DIR__ . "/ContentElements/Landingpage/*.php") as $filename) {
+    include_once $filename;
+}

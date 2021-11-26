@@ -1,0 +1,33 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+
+    <f:section name="Newsletter">
+        <f:if condition="{settings.websiteNewsletterSubscriptionPid}">
+            <div class="footer--fixed js-fixed-footer">
+                <div class="footer-content">
+                    <p class="h3"><f:translate key="{settings.themeLanguageFile}:partials.footerSection.stickyNewsletterHeadline" /></p>
+                    <div class="btn-list flex-container center-main">
+                        <f:link.page pageUid="{settings.websiteNewsletterSubscriptionPid}" target="_blank" class="btn btn--primary">
+                            <f:translate key="{settings.themeLanguageFile}:partials.footerSection.stickyNewsletterButton" />
+                        </f:link.page>
+                    </div>
+                </div>
+                <div class="footer-totop">
+                    <a class="footer-totop__close js-close-footer">&times;</a>
+                </div>
+            </div>
+        </f:if>
+    </f:section>
+
+    <!-- =========================================================================================== -->
+
+    <f:section name="Landingpage">
+        <div class="footer--fixed js-fixed-footer">
+            <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.landingpageStickyFooter" data="{data}" />
+        </div>
+    </f:section>
+
+</html>
+
+
+

@@ -1,8 +1,7 @@
 <html 
 	xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
 	xmlns:rkwAjax="http://typo3.org/ns/RKW/RkwAjax/ViewHelpers"
-	data-namespace-typo3-fluid="true"
->
+	data-namespace-typo3-fluid="true">
 
 	<f:comment><!-- skip links--></f:comment>
 	<f:render partial="Basics/SkipLinks" />
@@ -18,17 +17,10 @@
 		<f:comment><!-- main section --></f:comment>
 		<f:render section="Content" />
 
-        <f:if condition="{data.backend_layout} != 'pagets__landingPages'">
-            <f:comment><!-- footer --></f:comment>
-            <f:render partial="Basics/Footer" section="Default" arguments="{_all}"/>
-        </f:if>
+		<f:comment><!-- footer --></f:comment>
+		<f:render partial="Basics/Footer" section="Default" arguments="{_all}"/>
 
 	</div>
-
-    <f:if condition="{data.backend_layout} == 'pagets__landingPages'">
-        <f:comment><!-- footer --></f:comment>
-        <f:render partial="Basics/Footer" section="Default" arguments="{_all}"/>
-    </f:if>
 
 	<f:comment><!-- SVGs --></f:comment>
 	<f:render partial="Basics/SVGs" />

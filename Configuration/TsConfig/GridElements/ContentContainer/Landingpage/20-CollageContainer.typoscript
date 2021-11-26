@@ -1,0 +1,23 @@
+tx_gridelements.setup.collageContainer {
+
+    title = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.collageContainer.title
+    description = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.collageContainer.description
+    config {
+        colCount = 1
+        rowCount = 1
+        rows {
+            1 {
+                columns {
+                    1 {
+                        name = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.collage.title
+                        colPos = 90
+                        maxitems = 1
+                        allowed {
+                            CType = rkwtemplate_collage
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

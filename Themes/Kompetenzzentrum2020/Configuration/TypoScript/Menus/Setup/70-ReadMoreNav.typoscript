@@ -23,19 +23,26 @@ lib.txRkwTemplate {
                 pageNextParent < lib.txRkwBasics.pageNavigation.pageNextParent
                 pageNextSub < lib.txRkwBasics.pageNavigation.pageNextSub
                 
+                pagePrevRecursive < lib.txRkwBasics.pageNavigation.pagePrevRecursive
+                pageNextRecursive < lib.txRkwBasics.pageNavigation.pageNextRecursive
+
+                // Fix for next-button on last page of publication
+                pageNextParent.select.where.noTrimWrap = || AND sorting > (SELECT sorting FROM pages WHERE uid = {field:pid}) AND uid != {field:uid} AND (shortcut_mode IN (1,2) OR (shortcut_mode = 3 AND NOT shortcut ='{field:uid}') OR (shortcut_mode = 0 AND NOT shortcut ='{field:uid}')) AND (tx_rkwpdf2content_is_import_sub = 1)|
+                pageNextRecursive.ifEmpty.ifEmpty.cObject < .pageNextParent
+                        
                 nextPageLink = TEXT
                 nextPageLink {
 
                     stdWrap {
                         typolink {
-                            parameter.cObject < lib.txRkwBasics.pageNavigation.pageNextRecursive
+                            parameter.cObject < lib.txRkwTemplate.navigation.readMore.variables.pageNextRecursive
                             section = content
                             returnLast = url
                         }
                     }
         
                     if.isTrue.typolink {
-                        parameter.cObject < lib.txRkwBasics.pageNavigation.pageNextRecursive
+                        parameter.cObject < lib.txRkwTemplate.navigation.readMore.variables.pageNextRecursive
                         section = content
                         returnLast = url
                     }                
@@ -46,7 +53,7 @@ lib.txRkwTemplate {
                 
                     stdWrap {
                         typolink {
-                            parameter.cObject < lib.txRkwBasics.pageNavigation.pagePrevRecursive
+                            parameter.cObject < lib.txRkwTemplate.navigation.readMore.variables.pagePrevRecursive
                             section = content
                             returnLast = url
                         }
@@ -54,7 +61,7 @@ lib.txRkwTemplate {
         
                     // if it is set
                     if.isTrue.typolink {
-                        parameter.cObject < lib.txRkwBasics.pageNavigation.pagePrevRecursive
+                        parameter.cObject < lib.txRkwTemplate.navigation.readMore.variables.pagePrevRecursive
                         section = content
                         returnLast = url
                     } 

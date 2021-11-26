@@ -14,6 +14,7 @@ lib.txRkwTemplate.themeSettings {
     websiteLogoBrokenLinkFile = {$plugin.tx_rkwtemplate_themeconfig.website.logoBrokenLinkFile}
     websiteLogoUrl = {$plugin.tx_rkwtemplate_themeconfig.website.logoUrl}
     websiteLogoReplacementText = {$plugin.tx_rkwtemplate_themeconfig.website.logoReplacementText}
+    websiteNewsletterSubscriptionPid = {$plugin.tx_rkwtemplate_themeconfig.website.newsletterSubscriptionPid}
 
     // @deprecated start
     websiteLogoOffcanvasFile = {$plugin.tx_rkwtemplate_themeconfig.website.logoOffcanvasFile}

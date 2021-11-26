@@ -1,0 +1,6 @@
+tt_content {
+    rkwtemplate_button =< lib.contentElement
+    rkwtemplate_button {
+        templateName = Landingpage/Button
+    }
+}

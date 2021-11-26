@@ -8,9 +8,21 @@
             <trans-unit id="pages.tx_rkwtemplate_landingpage_primarycolor">
                 <source>Primary color</source>
             </trans-unit>
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_primarycolor_text">
+                <source>Color of text on primary color</source>
+            </trans-unit>
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_primarycolor_effect">
+                <source>Color of effects on primary color</source>
+            </trans-unit>                        
             <trans-unit id="pages.tx_rkwtemplate_landingpage_secondarycolor">
                 <source>Secondary color</source>
             </trans-unit>
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_secondarycolor_text">
+                <source>Color of text on secondary color</source>
+            </trans-unit>
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_secondarycolor_effect">
+                <source>Color of effects on secondary color</source>
+            </trans-unit> 
 
             <!-- Menu-stuff -->
             <trans-unit id="pages.tx_rkwtemplate_disable_flyout_menu">
@@ -68,6 +80,9 @@
             <trans-unit id="contentElement.slider.imageManipulation.desktop">
                 <source>Desktop</source>
             </trans-unit>
+            <trans-unit id="contentElement.slider.imageManipulation.desktop-big">
+                <source>Desktop (Big)</source>
+            </trans-unit>     
             <trans-unit id="contentElement.slider.imageManipulation.tablet">
                 <source>Tablet</source>
             </trans-unit>

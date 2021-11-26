@@ -62,7 +62,15 @@
             <trans-unit id="partials.infoBox.article.labelAbstract">
                 <source>Abstract</source>
             </trans-unit>
-
+            
+            
+            <trans-unit id="partials.footerSection.stickyNewsletterHeadline">
+                <source>Updates for the Medium-sized business</source>
+            </trans-unit>
+            <trans-unit id="partials.footerSection.stickyNewsletterButton">
+                <source>Subscribe to RKW Newsletter</source>
+            </trans-unit>
+            
 
             <trans-unit id="partials.infoBox.publication.labelMeta">
                 <source>Information</source>

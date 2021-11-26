@@ -1,0 +1,12 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:rkwBasics="http://typo3.org/ns/RkW/RkwBasics/Viewhelpers"
+    data-namespace-typo3-fluid="true">
+
+    <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.publication.isParentPage')}">
+        <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.startReading" />
+    
+        <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.publication.isParentPage')}">
+            <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.boxesPublicationOrder" data="{data}" />
+        </f:if>
+    </f:if>
+</html>

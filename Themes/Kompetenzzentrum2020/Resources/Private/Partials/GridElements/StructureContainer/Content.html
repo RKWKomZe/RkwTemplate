@@ -5,16 +5,8 @@
     <f:section name="Default">
 
         <f:comment><!-- table of contents as menu --></f:comment>
-        <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.publication.parentUid')} && {f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.publication.isSubPage')}">
-            <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.toc" data="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.publication.parentUid')}" />
-
-            <f:comment><!-- headline of current chapter --></f:comment>
-            <h2 class="h1">
-                <f:comment><em><f:translate key="{settings.themeLanguageFile}:partials.gridElements.contentContainer.content.labelChapter"/>:</em></f:comment>
-                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.publication.currentTitle" />
-            </h2>
-        </f:if>
-
+        <f:render partial="StructureContainer/Content/TableOfContents" arguments="{_all}"/>
+        
         <f:comment><!-- content --></f:comment>
         <rkwBasics:format.removeEmptyParagraphs>
             <f:format.html parseFuncTSPath="">
@@ -22,14 +14,8 @@
             </f:format.html>
         </rkwBasics:format.removeEmptyParagraphs>
 
-        <f:comment> <!-- read more nav and order form--></f:comment>
-        <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.publication.isParentPage')}">
-            <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.startReading" />
-
-            <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.publication.isParentPage')}">
-                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.boxesPublicationOrder" data="{data}" />
-            </f:if>
-        </f:if>
+        <f:comment> <!-- start reading and order form--></f:comment>
+        <f:render partial="StructureContainer/Content/StartReadingAndShop" arguments="{_all}"/>
 
         <f:comment><!-- optional second content section --></f:comment>
         <f:if condition="{data.tx_gridelements_view_column_51}">
@@ -41,24 +27,11 @@
         </f:if>
 
         <f:comment><!-- read more --></f:comment>
-        <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.publication.isSubPage')}">
-            <f:then>
-                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.readMore" />
-            </f:then>
-            <f:else>
-                <f:if condition="{data.tx_gridelements_backend_layout} == 'contentContainerOneColPagination'">
-                    <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.readMoreOneLevel" />
-                </f:if>
-            </f:else>
-        </f:if>
+        <f:render partial="StructureContainer/Content/ReadMore" arguments="{_all}"/>
 
         <f:comment><!-- image resources --></f:comment>
-        <f:if condition="! {rkwBasics:isEmpty(string:'{f:cObject(typoscriptObjectPath: \'lib.txRkwTemplate.pageInfo.imageResources\')}')}">
-            <p class="media-sources {f:if(condition: '! {rkwBasics:isEmpty(string:\'{data.tx_gridelements_view_column_70}\')}', then: 'media-sources--space')}" role="contentinfo">
-                <strong><f:translate key="{settings.themeLanguageFile}:partials.gridElements.contentContainer.content.imageResources" />: </strong>
-                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.pageInfo.imageResources" />
-            </p>
-        </f:if>
+        <f:render partial="StructureContainer/Content/ImageSources" arguments="{_all}"/>
+        
     </f:section>
 
     <!-- =========================================================================================== -->
@@ -66,15 +39,7 @@
     <f:section name="Reduced">
 
         <f:comment><!-- table of contents as menu --></f:comment>
-        <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.publication.parentUid')} && {f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.publication.isSubPage')}">
-            <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.toc" data="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.publication.parentUid')}" />
-
-            <f:comment><!-- headline of current chapter --></f:comment>
-            <h2 class="h1">
-                <f:comment><em><f:translate key="{settings.themeLanguageFile}:partials.gridElements.contentContainer.content.labelChapter"/>:</em></f:comment>
-                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.publication.currentTitle" />
-            </h2>
-        </f:if>
+        <f:render partial="StructureContainer/Content/TableOfContents" arguments="{_all}"/>
 
         <f:comment><!-- content --></f:comment>
         <rkwBasics:format.removeEmptyParagraphs>
@@ -83,14 +48,8 @@
             </f:format.html>
         </rkwBasics:format.removeEmptyParagraphs>
 
-        <f:comment> <!-- read more nav and order form--></f:comment>
-        <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.publication.isParentPage')}">
-            <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.startReading" />
-
-            <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.publication.isParentPage')}">
-                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.boxesPublicationOrder" data="{data}" />
-            </f:if>
-        </f:if>
+        <f:comment> <!-- start reading and order form--></f:comment>
+        <f:render partial="StructureContainer/Content/StartReadingAndShop" arguments="{_all}"/>
 
         <f:comment><!-- optional second content section --></f:comment>
         <f:if condition="{data.tx_gridelements_view_column_51}">
@@ -101,38 +60,29 @@
             </rkwBasics:format.removeEmptyParagraphs>
         </f:if>
 
-        <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.publication.isSubPage')}">
-            <f:then>
-                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.readMore" />
-            </f:then>
-            <f:else>
-                <f:if condition="{data.tx_gridelements_backend_layout} == 'contentContainerOneColPagination'">
-                    <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.readMoreOneLevel" />
-                </f:if>
-            </f:else>
-        </f:if>
+        <f:comment><!-- read more --></f:comment>
+        <f:render partial="StructureContainer/Content/ReadMore" arguments="{_all}"/>
 
         <f:comment><!-- image resources --></f:comment>
-        <f:if condition="! {rkwBasics:isEmpty(string:'{f:cObject(typoscriptObjectPath: \'lib.txRkwTemplate.pageInfo.imageResources\')}')}">
-            <p class="media-sources {f:if(condition: '! {rkwBasics:isEmpty(string:\'{data.tx_gridelements_view_column_70}\')}', then: 'media-sources--space')}" role="contentinfo">
-                <strong><f:translate key="{settings.themeLanguageFile}:partials.gridElements.contentContainer.content.imageResources" />: </strong>
-                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.pageInfo.imageResources" />
-            </p>
-        </f:if>
+        <f:render partial="StructureContainer/Content/ImageSources" arguments="{_all}"/>
+
     </f:section>
 
     <!-- =========================================================================================== -->
 
     <f:section name="Landingpage">
-
+        
         <f:comment><!-- content --></f:comment>
-        <rkwBasics:format.removeEmptyParagraphs>
-            <f:format.html parseFuncTSPath="">
-                {data.tx_gridelements_view_column_50}
-            </f:format.html>
-        </rkwBasics:format.removeEmptyParagraphs>
-
-    </f:section>
+        <div class="flex-container">
+            <div class="typo3-fsc {f:if(condition: '{rkwBasics:isEmpty(string: data.tx_gridelements_view_column_60)} == 0', then: 'flex-basis-7', else: 'flex-basis-12')}">
+                <rkwBasics:format.removeEmptyParagraphs>
+                    <f:format.html parseFuncTSPath="">
+                        {data.tx_gridelements_view_column_50}
+                    </f:format.html>
+                </rkwBasics:format.removeEmptyParagraphs>
+            </div>
+        </div>
+</f:section>
 
 </html>
 

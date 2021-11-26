@@ -14,17 +14,14 @@
 
                     <div class="picture-header__content flex-basis-6">
 
-                        <f:if condition="{data.header} && {data.header_layout} != 100">
-                            <f:if condition="{data.header_layout}">
-                                <f:then>
-                                    <h{data.header_layout} class="picture-list__header">{data.header}</h{data.header_layout}>
-                                </f:then>
-                                <f:else>
-                                    <h2 class="picture-list__header">{data.header}</h2>
-                                </f:else>
-                            </f:if>
-                        </f:if>
-
+                        <f:render partial="Header" arguments="{
+                            header: data.header,
+                            layout: data.header_layout,
+                            link: data.header_link,
+                            anchorId: data.uid,
+                            class: 'picture-list__header'
+                        }" />
+                        
                         <rkwBasics:format.removeEmptyParagraphs>
                             <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data.bodytext}</f:format.html>
                         </rkwBasics:format.removeEmptyParagraphs>

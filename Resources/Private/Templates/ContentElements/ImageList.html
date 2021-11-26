@@ -10,17 +10,13 @@
 
         <f:if condition="{f:count(subject: images)} > 0">
             <div class="picture-list-section" id="c{data.uid}">
-                <f:if condition="{data.header} && {data.header_layout} != 100">
-                    <f:if condition="{data.header_layout}">
-                        <f:then>
-                            <h{data.header_layout}>{data.header}</h{data.header_layout}>
-                        </f:then>
-                        <f:else>
-                            <h2>{data.header}</h2>
-                        </f:else>
-                    </f:if>
-                </f:if>
 
+                <f:render partial="Header" arguments="{
+                    header: data.header,
+                    layout: data.header_layout,
+                    link: data.header_link
+                }" />
+                
                 <div class="picture-list flex full-width-narrow">
                     <div class="flex-basis-2 picture-list__img full-width-narrow">
                         <f:if condition="{images.0.link}">

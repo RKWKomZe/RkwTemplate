@@ -2,147 +2,16 @@
     xmlns:rkwBasics="http://typo3.org/ns/RKW/RkwBasics/ViewHelpers"
     data-namespace-typo3-fluid="true">
 
-    <f:layout name="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.utility.pageLayoutSwitch')}" />
+    <f:layout name="Landingpage" />
+
 
     <f:section name="Header">
-
-        <style type="text/css">
-
-            .specials-textcolor-white {
-                color: #fff !important;
-            }
-
-            .specials-bgcolor-white {
-                background-color: #fff !important;
-            }
-
-            .specials-textcolor-primary {
-                color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primarycolor}</f:format.raw> !important;
-            }
-
-            .specials-bgcolor-primary {
-                background-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primarycolor}</f:format.raw> !important;
-                border-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primarycolor}</f:format.raw> !important;
-            }
-
-            .specials-textcolor-secondary {
-                color: <f:format.raw>{data.tx_rkwtemplate_landingpage_secondarycolor}</f:format.raw> !important;
-            }
-
-            .specials-bgcolor-secondary {
-                background-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_secondarycolor}</f:format.raw> !important;
-                border-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_secondarycolor}</f:format.raw> !important;
-            }
-
-            .btn--specials:hover {
-                background-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_secondarycolor}</f:format.raw> !important;
-                border-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_secondarycolor}</f:format.raw> !important;
-                color:#fff !important;
-            }
-
-            .tpl-specials-detail .contentbox.primary-mod {
-                background-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primarycolor}</f:format.raw>;
-                color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primarycolor}</f:format.raw>;
-            }
-
-            .tpl-specials-detail .contentbox.secondary-mod {
-                background-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_secondarycolor}</f:format.raw>;
-                color: <f:format.raw>{data.tx_rkwtemplate_landingpage_secondarycolor}</f:format.raw>;
-            }
-
-            .tpl-specials-detail .footer--specials .btn:hover,
-            .tpl-specials-detail .footer--specials .typo3-fsc .button:hover,
-            .typo3-fsc .tpl-specials-detail .footer--specials .button:hover {
-                background-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primarycolor}</f:format.raw> !important;
-                border-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primarycolor}</f:format.raw> !important;
-            }
-
-            .btn--white:hover {
-                background-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primarycolor}</f:format.raw> !important;
-                border-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primarycolor}</f:format.raw> !important;
-                color: #fff!important;
-            }
-
-            .tpl-specials-detail .contentbox.slider-mod .slider-mod__nav ul li button[aria-selected=true],
-            .tpl-specials-detail .contentbox.slider-mod .slider-mod__nav ul li button:hover {
-                border-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primarycolor}</f:format.raw> !important;
-            }
-
-            aside .contentbox a {
-                color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primarycolor}</f:format.raw> !important;
-            }
-
-            .tpl-specials-detail .contentbox.text-mod header h2::after {
-                content: " ";
-                display: block;
-                height: 4px;
-                width: 60px;
-                background-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primarycolor}</f:format.raw>;
-                border-radius: 4px;
-                margin-top: 15px;
-            }
-
-            .tpl-specials-detail .contentbox.more-mod .list-header .icon {
-                color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primarycolor}</f:format.raw>;
-            }
-
-            .tpl-specials-detail .contentbox a,
-            .tpl-specials-detail .contentbox p a {
-                color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primarycolor}</f:format.raw>;
-            }
-
-            .tpl-specials-detail .contentbox p a:hover,
-            .tpl-specials-detail .contentbox ul li a:hover {
-                border-bottom-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primarycolor}</f:format.raw>;
-            }
-
-            .tpl-specials-detail .typo3-fsc ul:not([class]) li:before,
-            .tpl-specials-detail ol.list-primary li:before,
-            .tpl-specials-detail ul.list-primary li:before {
-                color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primarycolor}</f:format.raw>;
-            }
-
-            .tpl-specials-detail .contentbox.primary-mod header h2::after,
-            .tpl-specials-detail .contentbox.secondary-mod header h2::after {
-                margin-top: 20px;
-                margin-bottom: 50px;
-            }
-
-            .tpl-specials-detail .contentbox.primary-mod header h2::after {
-                background-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_secondarycolor}</f:format.raw> !important;
-            }
-
-            .tpl-specials-detail .contentbox.secondary-mod header h2::after {
-                background-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primarycolor}</f:format.raw> !important;
-            }
-
-            .tpl-specials-detail .contentbox.secondary-mod p {
-                color: #333;
-            }
-
-            .tpl-specials-detail .contentbox .headline--underlined::after,
-            .tpl-specials-detail .contentbox .headline--underlined-primary::after {
-                background-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primarycolor}</f:format.raw> !important;
-            }
-
-            .tpl-specials-detail .contentbox.primary-mod .headline--underlined::after {
-                background-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_secondarycolor}</f:format.raw> !important;
-            }
-
-            .tpl-specials-detail .contentbox .headline--underlined-secondary::after {
-                background-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_secondarycolor}</f:format.raw> !important;
-            }
-
-            .tpl-specials-detail .contentbox.speaker-mod .speaker-list-wrapper .speaker-list__item:hover .speaker-link {
-                color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primarycolor}</f:format.raw> !important;
-                border-bottom-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primarycolor}</f:format.raw> !important;
-            }
-
-        </style>
-
-        <div class="siteheader siteheader--big siteheader--detailimg flex valign-center js-hero-class js-header-class">
-            <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.landingpageSiteHeader" data="{data}" />
-        </div>
+        
+        <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.content.landingpageSiteHeader', data:'{data}')}">
+            <div class="siteheader siteheader--big siteheader--detailimg flex valign-center js-hero-class">
+                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.landingpageSiteHeader" data="{data}" />
+            </div>
+        </f:if>
 
     </f:section>
 
@@ -156,14 +25,12 @@
 
             <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.landingpage" data="{data}" />
 
+            <f:comment><!-- image-sources --></f:comment>
             <f:if condition="! {rkwBasics:isEmpty(string:'{f:cObject(typoscriptObjectPath: \'lib.txRkwTemplate.pageInfo.imageResources\')}')} && {data.backend_layout} == 'pagets__landingPages'">
-                <div class="contentbox content-padding-layoutmax">
+                <div class="contentbox contentbox--no-vertical-padding content-padding-layoutmax">
                     <div class="flex-container">
                         <div class="flex-basis-12">
-                            <p class="media-sources {f:if(condition: '! {rkwBasics:isEmpty(string:\'{data.tx_gridelements_view_column_70}\')}', then: 'media-sources--space')}" role="contentinfo">
-                                <strong><f:translate key="{settings.themeLanguageFile}:partials.gridElements.contentContainer.content.imageResources" />: </strong>
-                                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.pageInfo.imageResources" />
-                            </p>
+                            <f:render partial="GridElements/StructureContainer/Content/ImageSources" arguments="{_all}"/>
                         </div>
                     </div>
                 </div>
@@ -171,9 +38,11 @@
 
             <f:comment><!-- call-to-action/sticky-footer --></f:comment>
             <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.content.landingpageStickyFooter', data:'{data}')}">
-                <f:render partial="FooterSection/Landingpage" arguments="{_all}" />
+                <f:render partial="FooterSection/StickyFooter" section="Landingpage" arguments="{_all}" />
             </f:if>
 
+            <f:comment><!-- sticky-footer --></f:comment>
+            <f:render partial="FooterSection/StickyFooter" section="Landingpage" arguments="{_all}" />
         </main>
 
     </f:section>

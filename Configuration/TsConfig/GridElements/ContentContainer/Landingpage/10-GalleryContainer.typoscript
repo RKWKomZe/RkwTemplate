@@ -1,0 +1,23 @@
+tx_gridelements.setup.galleryContainer {
+
+    title = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.galleryContainer.title
+    description = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.galleryContainer.description
+    config {
+        colCount = 1
+        rowCount = 1
+        rows {
+            1 {
+                columns {
+                    1 {
+                        name = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.gallery.title
+                        colPos = 80
+                        maxitems = 1
+                        allowed {
+                            CType = rkwtemplate_gallery
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

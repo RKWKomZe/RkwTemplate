@@ -9,10 +9,26 @@
                 <source>Primary color</source>
                 <target>Primärer Farbwert</target>
             </trans-unit>
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_primarycolor_text">
+                <source>Color of text on primary color</source>
+                <target>Farbe für Text auf primärer Farbe</target>
+            </trans-unit>
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_primarycolor_effect">
+                <source>Color of effects on primary color</source>
+                <target>Effekt-Farbe auf primärer Farbe</target>
+            </trans-unit>                        
             <trans-unit id="pages.tx_rkwtemplate_landingpage_secondarycolor">
                 <source>Secondary color</source>
                 <target>Sekundärer Farbwert</target>
             </trans-unit>
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_secondarycolor_text">
+                <source>Color of text on secondary color</source>
+                <target>Farbe für Text auf sekundärer Farbe</target>
+            </trans-unit>
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_secondarycolor_effect">
+                <source>Color of effects on secondary color</source>
+                <target>Effekt-Farbe auf sekundärer Farbe</target>
+            </trans-unit>                        
             
             <!-- Menu-stuff -->
             <trans-unit id="pages.tx_rkwtemplate_disable_flyout_menu">
@@ -82,6 +98,10 @@
             <trans-unit id="contentElement.slider.imageManipulation.desktop">
                 <source>Desktop</source>
             </trans-unit>
+            <trans-unit id="contentElement.slider.imageManipulation.desktop-big">
+                <source>Desktop (Big - Landingpage)</source>
+                <target>Desktop (Groß - Landingpage)</target>
+            </trans-unit>            
             <trans-unit id="contentElement.slider.imageManipulation.tablet">
                 <source>Tablet</source>
             </trans-unit>
@@ -532,6 +552,21 @@
                 <source>Aside</source>
                 <target>Marginalspalte</target>
             </trans-unit>
+
+            <!-- ContentContainerLandingpageOneCol -->
+            <trans-unit id="contentElement.contentContainerLandingpageOneCol.title">
+                <source>Content-Container with one col (Landingpage)</source>
+                <target>Inhalts-Container mit einer Spalte (Landingpage)</target>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerLandingpageOneCol.description">
+                <source>Add a Content-Container with one column.</source>
+                <target>Fügt einen Inhalts-Container mit einem einspaltigen Layout ein (nur Inhaltsspalte).</target>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerLandingpageOneCol.content">
+                <source>Content</source>
+                <target>Inhalt</target>
+            </trans-unit>
+           
 
             <!-- Shortlink -->
             <trans-unit id="contentElement.shortlink.title">

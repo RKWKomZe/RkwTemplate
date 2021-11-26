@@ -16,12 +16,6 @@ tt_content.gridelements_pi1.20.10.setup {
 
             templateName = StructureContainer/LandingpageTwoCols.html
 
-            // loading images as references
-            dataProcessing {
-                10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
-                10.references.fieldName = image
-                10.as = images
-            }
         }
         outerWrap = |
     }

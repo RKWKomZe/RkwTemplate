@@ -1,0 +1,28 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:rkwBasics="http://typo3.org/ns/RKW/RkwBasics/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+    <f:layout name="Rkw" />
+
+    <f:section name="Main">
+        <f:if condition="<rkwBasics:isEmpty string='{data.tx_gridelements_view_column_130}' /> == 0">
+            <div class="contentbox typo3-fsc content-padding-layoutmax infolist-mod {f:if(condition: '{data.header_layout} == 1', then: 'primary-mod')}{f:if(condition: '{data.header_layout} == 2', then: 'secondary-mod')}">
+                <div class="infolist frame">
+
+                    <f:render partial="Header" arguments="{
+                        header: data.header,
+                        layout: '2',
+                        layoutClass : 'h1',
+                        link: data.header_link,
+                        anchorId: data.uid,
+                        class: 'headline headline--underlined'
+                    }" />
+                    
+                    <f:format.raw>{data.tx_gridelements_view_column_130}</f:format.raw>
+                </div>
+            </div>
+        </f:if>
+    </f:section>
+
+</html>

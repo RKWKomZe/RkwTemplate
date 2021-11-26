@@ -67,6 +67,16 @@
             </trans-unit>
 
 
+            <trans-unit id="partials.footerSection.stickyNewsletterHeadline">
+                <source>Updates for the Medium-sized business</source>
+                <target>Updates für den Mittelstand</target>
+            </trans-unit>
+            <trans-unit id="partials.footerSection.stickyNewsletterButton">
+                <source>Subscribe to RKW Newsletter now</source>
+                <target>Jetzt RKW Newsletter abonnieren</target>
+            </trans-unit>
+
+
             <trans-unit id="partials.infoBox.article.labelMeta">
 				<source>Information</source>
 				<target>Informationen</target>
