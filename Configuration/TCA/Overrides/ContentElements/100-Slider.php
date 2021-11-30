@@ -45,8 +45,8 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_slider'] = [
                                 // original file dimensions: 2250x680; motive centered
                                 'cropVariants' => [
                                     // for landingpages
-                                    'desktop-big' => [
-                                        'title' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.slider.imageManipulation.desktop-big',
+                                    'desktop-landingpage-big' => [
+                                        'title' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.slider.imageManipulation.desktop-landingpage-big',
                                         'allowedAspectRatios' => [
                                             '2500:1400' => [
                                                 'title' => '2500 x 1400',
@@ -61,7 +61,24 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_slider'] = [
                                                 'height' => 1,
                                             ],
                                         ]
-                                    ],                                    
+                                    ],
+                                    'desktop-landingpage' => [
+                                        'title' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.slider.imageManipulation.desktop-landingpage',
+                                        'allowedAspectRatios' => [
+                                            '1460:1200' => [
+                                                'title' => '1460 x 1200',
+                                                'value' => 1460 / 1200
+                                            ]
+                                        ],
+                                        'coverAreas' => [
+                                            [
+                                                'x' => 0,
+                                                'y' => 0,
+                                                'width' => 0.55,
+                                                'height' => 1,
+                                            ],
+                                        ]
+                                    ],
                                     'desktop' => [
                                         'title' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.slider.imageManipulation.desktop',
                                         'allowedAspectRatios' => [

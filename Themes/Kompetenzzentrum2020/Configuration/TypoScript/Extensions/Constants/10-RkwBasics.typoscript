@@ -35,5 +35,11 @@ plugin.tx_rkwbasics {
 
             }
         }
+        
+         criticalCss {
+                       
+            # cat=plugin.tx_rkwbasics//a; type=boolean; label=Activate Rendering for Critical-CSS
+            enable = 1
+        }
     }
 }

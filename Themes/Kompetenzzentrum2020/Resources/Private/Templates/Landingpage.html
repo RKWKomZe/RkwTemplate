@@ -36,13 +36,9 @@
                 </div>
             </f:if>
 
-            <f:comment><!-- call-to-action/sticky-footer --></f:comment>
-            <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.content.landingpageStickyFooter', data:'{data}')}">
-                <f:render partial="FooterSection/StickyFooter" section="Landingpage" arguments="{_all}" />
-            </f:if>
-
             <f:comment><!-- sticky-footer --></f:comment>
             <f:render partial="FooterSection/StickyFooter" section="Landingpage" arguments="{_all}" />
+            
         </main>
 
     </f:section>

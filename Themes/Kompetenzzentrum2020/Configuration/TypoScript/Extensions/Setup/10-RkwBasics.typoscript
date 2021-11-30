@@ -3,9 +3,6 @@ plugin.tx_rkwbasics {
     settings {
         criticalCss {
         
-            # cat=plugin.tx_rkwbasics//a; type=boolean; label=Activate Rendering for Critical-CSS
-            enable = 0
-
             filesForLayout {
 
                 // Topic-Layout
@@ -23,6 +20,12 @@ plugin.tx_rkwbasics {
                 }
                 21 < .20
                 22 < .20  
+                
+                // Article-Layout
+                30000 {
+                    5 = https://use.typekit.net/frq0css.css
+                    10 = {$plugin.tx_rkwtemplate_themeconfig.paths.default.css}/critical/specials_detail.css   
+                }
             }
             
             filesToRemoveWhenActive {

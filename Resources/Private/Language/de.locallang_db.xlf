@@ -91,16 +91,29 @@
 				<source>White font</source>
 				<target>Weiße Schrift</target>
 			</trans-unit>
+            <trans-unit id="contentElement.slider.type.I.3">
+                <source>Black font on white background</source>
+                <target>Schwarze Schrift auf weißem Hintergrund</target>
+            </trans-unit>
+            <trans-unit id="contentElement.slider.type.I.4">
+                <source>White font on black background</source>
+                <target>Weiße Schrift auf schwarzem Hintergrund</target>
+            </trans-unit>
 			<trans-unit id="contentElement.slider.rowDescription">
 				<source>Label for Button</source>
 				<target>Beschriftung für Button</target>
 			</trans-unit>
             <trans-unit id="contentElement.slider.imageManipulation.desktop">
-                <source>Desktop</source>
+                <source>Desktop (not Landingpage)</source>
+                <target>Desktop (nicht Landingpage)</target>
             </trans-unit>
-            <trans-unit id="contentElement.slider.imageManipulation.desktop-big">
-                <source>Desktop (Big - Landingpage)</source>
-                <target>Desktop (Groß - Landingpage)</target>
+            <trans-unit id="contentElement.slider.imageManipulation.desktop-landingpage">
+                <source>Desktop (only Landingpage)</source>
+                <target>Desktop (nur Landingpage)</target>
+            </trans-unit>   
+            <trans-unit id="contentElement.slider.imageManipulation.desktop-landingpage-big">
+                <source>Desktop (only Landingpage, big)</source>
+                <target>Desktop (nur Landingpage, groß)</target>
             </trans-unit>            
             <trans-unit id="contentElement.slider.imageManipulation.tablet">
                 <source>Tablet</source>
@@ -657,6 +670,7 @@
 				<source>White font</source>
 				<target>Weiße Schrift</target>
 			</trans-unit>
+
 
             <!-- Text & Bilder -->
             <trans-unit id="contentElement.textpic.title">
