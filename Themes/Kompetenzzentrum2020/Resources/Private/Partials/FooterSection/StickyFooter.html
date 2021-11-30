@@ -3,7 +3,7 @@
 
     <f:section name="Newsletter">
         <f:if condition="{settings.websiteNewsletterSubscriptionPid}">
-            <div class="footer--fixed js-fixed-footer">
+            <div class="footer--fixed js-fixed-footer" data-use-cookie="true">
                 <div class="footer-content">
                     <p class="h3"><f:translate key="{settings.themeLanguageFile}:partials.footerSection.stickyNewsletterHeadline" /></p>
                     <div class="btn-list flex-container center-main">
@@ -22,9 +22,11 @@
     <!-- =========================================================================================== -->
 
     <f:section name="Landingpage">
-        <div class="footer--fixed js-fixed-footer">
-            <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.landingpageStickyFooter" data="{data}" />
-        </div>
+        <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.content.landingpageStickyFooter', data:'{data}')}">
+            <div class="footer--fixed js-fixed-footer">
+                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.landingpageStickyFooter" data="{data}" />
+            </div>
+        </f:if>
     </f:section>
 
 </html>

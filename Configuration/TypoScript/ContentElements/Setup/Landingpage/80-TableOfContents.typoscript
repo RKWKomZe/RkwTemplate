@@ -9,7 +9,7 @@ tt_content {
             10 {
                 table = tt_content
                 pidInList = this
-                where = (CType = 'gridelements_pi1' OR CType = 'rkwtemplate_textimagebackground' OR CType = 'list') AND CType != 'rkwtemplate_toclandingpage' AND colPos = 900 AND header != ''
+                where = (CType = 'gridelements_pi1' OR CType = 'rkwtemplate_textimagebackground' OR CType = 'list') AND CType != 'rkwtemplate_toclandingpage' AND colPos = 900 AND header != '' AND header_layout != 100
                 orderBy = sorting
                 as = items
             }

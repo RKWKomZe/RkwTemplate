@@ -7,15 +7,13 @@
 
     <f:section name="Main">
         <f:if condition="<rkwBasics:isEmpty string='{data.tx_gridelements_view_column_130}' /> == 0">
-            <div class="contentbox typo3-fsc content-padding-layoutmax infolist-mod {f:if(condition: '{data.header_layout} == 1', then: 'primary-mod')}{f:if(condition: '{data.header_layout} == 2', then: 'secondary-mod')}">
+            <div id="c{data.uid}" class="contentbox typo3-fsc content-padding-layoutmax infolist-mod {f:if(condition: '{data.header_position} == 1', then: 'primary-mod')}{f:if(condition: '{data.header_position} == 2', then: 'secondary-mod')}">
                 <div class="infolist frame">
 
                     <f:render partial="Header" arguments="{
                         header: data.header,
-                        layout: '2',
-                        layoutClass : 'h1',
+                        layout: data.header_layout,
                         link: data.header_link,
-                        anchorId: data.uid,
                         class: 'headline headline--underlined'
                     }" />
                     

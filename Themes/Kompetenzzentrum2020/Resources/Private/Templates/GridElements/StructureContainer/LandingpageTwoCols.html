@@ -12,7 +12,7 @@
 
     <f:comment><!-- content --></f:comment>
     <f:if condition="<rkwBasics:isEmpty string='{data.tx_gridelements_view_column_50}' /> == 0">
-        <div id="c{data.uid}" class="contentbox content-padding-layoutmax {f:if(condition: '{data.header_layout} == 1', then: 'primary-mod')}{f:if(condition: '{data.header_layout} == 2', then: 'secondary-mod')} text-mod">
+        <div id="c{data.uid}" class="contentbox content-padding-layoutmax {f:if(condition: '{data.header_position} == 1', then: 'primary-mod')}{f:if(condition: '{data.header_position} == 2', then: 'secondary-mod')} text-mod">
             <f:render partial="StructureContainer/Content" section="Landingpage" arguments="{_all}"/>
         </div>
     </f:if>
