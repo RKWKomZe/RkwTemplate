@@ -63,7 +63,7 @@ plugin.tx_rkwevents {
                 showFreeOfCharge = 1
 
                 # cat=plugin.tx_rkwevents; type=integer; label=Show filter option "eligible"
-                showEligible = 1
+                showEligible = 0
             }
         }
 	}
