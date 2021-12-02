@@ -14,8 +14,8 @@
                     <img src="{f:uri.image(image:images.0,cropVariant:'default')}" alt="{image.title}" loading="lazy">
                 </div>
             </div>
-            
-            <div class="flex-container download-mod__content {f:if(condition: '{data.header_layout} >= 2', then: 'download-mod__content--inverted')}">
+
+            <div class="flex-container download-mod__content {f:if(condition: '({data.header_layout} == 2) || ({data.header_layout} == 4))', then: 'download-mod__content--inverted')} {f:if(condition: '{data.header_layout} >= 3)', then: 'download-mod__content--background')}">
                 <div class="typo3-fsc flex-basis-7">
                     <div class="frame">
                         <header>

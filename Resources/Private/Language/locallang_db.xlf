@@ -5,24 +5,51 @@
 		<body>
 
             <!-- Primary and secondary color for landingpages -->
-            <trans-unit id="pages.tx_rkwtemplate_landingpage_primarycolor">
-                <source>Primary color</source>
+            <trans-unit id="pages.palettes.primary_color">
+                <source>Primary Color</source>
+            </trans-unit>   
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_primary_color">
+                <source>Color</source>
             </trans-unit>
-            <trans-unit id="pages.tx_rkwtemplate_landingpage_primarycolor_text">
-                <source>Color of text on primary color</source>
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_primary_effect_color">
+                <source>Color For Effects (e.g. link, buttons)</source>
             </trans-unit>
-            <trans-unit id="pages.tx_rkwtemplate_landingpage_primarycolor_effect">
-                <source>Color of effects on primary color</source>
-            </trans-unit>                        
-            <trans-unit id="pages.tx_rkwtemplate_landingpage_secondarycolor">
-                <source>Secondary color</source>
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_primary_effect_text_color">
+                <source>Text-Color On Effect-Color (e.g. Text on Buttons)</source>
+            </trans-unit>  
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_primary_top_text_color">
+               <source>Text-Color When Used As Background</source>
             </trans-unit>
-            <trans-unit id="pages.tx_rkwtemplate_landingpage_secondarycolor_text">
-                <source>Color of text on secondary color</source>
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_primary_top_effect_color">
+               <source>Effect-Color When Used As Background</source>
+            </trans-unit>    
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_primary_top_effect_text_color">
+               <source>Text-Color On Effect-Color When Used As Background</source>
+            </trans-unit>                       
+                    
+                    
+            <trans-unit id="pages.palettes.secondary_color">
+                <source>Secondary Color</source>
+            </trans-unit>      
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_secondary_color">
+                <source>Color</source>
             </trans-unit>
-            <trans-unit id="pages.tx_rkwtemplate_landingpage_secondarycolor_effect">
-                <source>Color of effects on secondary color</source>
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_secondary_effect_color">
+                <source>Color For Effects (e.g. link, buttons)</source>
+            </trans-unit>
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_secondary_effect_text_color">
+                <source>Text-Color On Effect-Color (e.g. Text on Buttons)</source>
+            </trans-unit>  
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_secondary_top_text_color">
+               <source>Text-Color When Used As Background</source>
+           </trans-unit>
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_secondary_top_effect_color">
+               <source>Effect-Color When Used As Background</source>
+            </trans-unit>    
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_secondary_top_effect_text_color">
+               <source>Text-Color On Effect-Color When Used As Background</source>
             </trans-unit> 
+
 
             <!-- Menu-stuff -->
             <trans-unit id="pages.tx_rkwtemplate_disable_flyout_menu">
@@ -494,8 +521,12 @@
 				<source>White font, no gradient</source>
 			</trans-unit>
 			<trans-unit id="contentElement.textImageBackground.type.I.3">
-				<source>White font, black gradient</source>
-			</trans-unit>
+                <source>Black font on white background</source>
+            </trans-unit>
+            <trans-unit id="contentElement.textImageBackground.type.I.4">
+                <source>White font on black background</source>
+            </trans-unit>
+            
 
             <!-- Text -->
             <trans-unit id="contentElement.text.title">

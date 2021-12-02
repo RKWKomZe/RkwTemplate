@@ -6,12 +6,21 @@
 	<f:comment><!-- basic colors --></f:comment>
 	<style>
 		:root {
-		--specials-primary-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primarycolor}</f:format.raw>;
-		--specials-text-color-on-primary: <f:format.raw>{data.tx_rkwtemplate_landingpage_primarycolor_text}</f:format.raw>;
-		--specials-effect-color-on-primary: <f:format.raw>{data.tx_rkwtemplate_landingpage_primarycolor_effect}</f:format.raw>;
-		--specials-secondary-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_secondarycolor}</f:format.raw>;
-		--specials-text-color-on-secondary: <f:format.raw>{data.tx_rkwtemplate_landingpage_secondarycolor_text}</f:format.raw>;
-		--specials-effect-color-on-secondary: <f:format.raw>{data.tx_rkwtemplate_landingpage_secondarycolor_effect}</f:format.raw>;
+
+			--specials-primary-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primary_color}</f:format.raw>; /* primary color */
+			--specials-primary-effect-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primary_effect_color}</f:format.raw>;  /* for links and buttons on white */
+			--specials-primary-effect-text-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primary_effect_text_color}</f:format.raw>;  /* for text on buttons on white */
+			--specials-primary-top-text-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primary_top_text_color}</f:format.raw>; /* for text on primary color */
+			--specials-primary-top-effect-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primary_top_effect_color}</f:format.raw>; /* for links and buttons on primary color*/
+			--specials-primary-top-effect-text-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_primary_top_effect_text_color}</f:format.raw>; /* for text on buttons on primary color */
+
+			--specials-secondary-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_secondary_color}</f:format.raw>; /* secondary color */
+			--specials-secondary-effect-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_secondary_effect_color}</f:format.raw>;  /* for links and buttons on white */
+			--specials-secondary-effect-text-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_secondary_effect_text_color}</f:format.raw>;  /* for text on buttons on white */
+			--specials-secondary-top-text-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_secondary_top_text_color}</f:format.raw>; /* for text on secondary color */
+			--specials-secondary-top-effect-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_secondary_top_effect_color}</f:format.raw>; /* for links and buttons on secondary color*/
+			--specials-secondary-top-effect-text-color: <f:format.raw>{data.tx_rkwtemplate_landingpage_secondary_top_effect_text_color}</f:format.raw>; /* for text on buttons on secondary color */
+
 		}
 	</style>
 

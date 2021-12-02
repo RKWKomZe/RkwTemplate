@@ -4,7 +4,12 @@
         <section class="contentbox content-padding-layoutmax box-mod">
             <f:if condition="{data.header}">
                 <div class="flex-container">
-                    <h3 id="c{data.uid}" class="h1 headline headline--underlined">{data.header}</h3>
+                    
+                    <f:render partial="Header/Header" arguments="{
+                        header: data.header,
+                        layout: '{f:if(condition:\'{data.header_layout}\', then:\'{data.header_layout}\', else:\'{settings.defaultHeaderType}\')}',
+                        positionClass: 'headline headline--underlined',
+                        link: data.header_link }" />
                 </div>
             </f:if>
     </f:section>

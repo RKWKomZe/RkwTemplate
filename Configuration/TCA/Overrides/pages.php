@@ -2,10 +2,11 @@
 
 $tmpColsPages = [
 
-    'tx_rkwtemplate_landingpage_primarycolor' => [
+
+    'tx_rkwtemplate_landingpage_primary_color' => [
         'displayCond' => 'FIELD:layout:=:30000',
         'exclude' => 0,
-        'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:pages.tx_rkwtemplate_landingpage_primarycolor',
+        'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:pages.tx_rkwtemplate_landingpage_primary_color',
         'config' => [
             'type' => 'input',
             'renderType' => 'colorpicker',
@@ -13,10 +14,10 @@ $tmpColsPages = [
             'eval' => 'required',
         ],
     ],
-    'tx_rkwtemplate_landingpage_primarycolor_text' => [
+    'tx_rkwtemplate_landingpage_primary_effect_color' => [
         'displayCond' => 'FIELD:layout:=:30000',
         'exclude' => 0,
-        'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:pages.tx_rkwtemplate_landingpage_primarycolor_text',
+        'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:pages.tx_rkwtemplate_landingpage_primary_effect_color',
         'config' => [
             'type' => 'input',
             'renderType' => 'colorpicker',
@@ -24,10 +25,10 @@ $tmpColsPages = [
             'eval' => 'required',
         ],
     ],
-    'tx_rkwtemplate_landingpage_primarycolor_effect' => [
+    'tx_rkwtemplate_landingpage_primary_effect_text_color' => [
         'displayCond' => 'FIELD:layout:=:30000',
         'exclude' => 0,
-        'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:pages.tx_rkwtemplate_landingpage_primarycolor_effect',
+        'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:pages.tx_rkwtemplate_landingpage_primary_effect_text_color',
         'config' => [
             'type' => 'input',
             'renderType' => 'colorpicker',
@@ -35,10 +36,10 @@ $tmpColsPages = [
             'eval' => 'required',
         ],
     ],
-    'tx_rkwtemplate_landingpage_secondarycolor' => [
+    'tx_rkwtemplate_landingpage_primary_top_text_color' => [
         'displayCond' => 'FIELD:layout:=:30000',
         'exclude' => 0,
-        'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:pages.tx_rkwtemplate_landingpage_secondarycolor',
+        'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:pages.tx_rkwtemplate_landingpage_primary_top_text_color',
         'config' => [
             'type' => 'input',
             'renderType' => 'colorpicker',
@@ -46,10 +47,10 @@ $tmpColsPages = [
             'eval' => 'required',
         ],
     ],
-    'tx_rkwtemplate_landingpage_secondarycolor_text' => [
+    'tx_rkwtemplate_landingpage_primary_top_effect_color' => [
         'displayCond' => 'FIELD:layout:=:30000',
         'exclude' => 0,
-        'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:pages.tx_rkwtemplate_landingpage_secondarycolor_text',
+        'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:pages.tx_rkwtemplate_landingpage_primary_top_effect_color',
         'config' => [
             'type' => 'input',
             'renderType' => 'colorpicker',
@@ -57,17 +58,85 @@ $tmpColsPages = [
             'eval' => 'required',
         ],
     ],
-    'tx_rkwtemplate_landingpage_secondarycolor_effect' => [
+    'tx_rkwtemplate_landingpage_primary_top_effect_text_color' => [
         'displayCond' => 'FIELD:layout:=:30000',
         'exclude' => 0,
-        'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:pages.tx_rkwtemplate_landingpage_secondarycolor_effect',
+        'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:pages.tx_rkwtemplate_landingpage_primary_top_effect_text_color',
         'config' => [
             'type' => 'input',
             'renderType' => 'colorpicker',
             'size' => 10,
             'eval' => 'required',
         ],
-    ],    
+    ],
+
+    'tx_rkwtemplate_landingpage_secondary_color' => [
+        'displayCond' => 'FIELD:layout:=:30000',
+        'exclude' => 0,
+        'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:pages.tx_rkwtemplate_landingpage_secondary_color',
+        'config' => [
+            'type' => 'input',
+            'renderType' => 'colorpicker',
+            'size' => 10,
+            'eval' => 'required',
+        ],
+    ],
+    'tx_rkwtemplate_landingpage_secondary_effect_color' => [
+        'displayCond' => 'FIELD:layout:=:30000',
+        'exclude' => 0,
+        'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:pages.tx_rkwtemplate_landingpage_secondary_effect_color',
+        'config' => [
+            'type' => 'input',
+            'renderType' => 'colorpicker',
+            'size' => 10,
+            'eval' => 'required',
+        ],
+    ],
+    'tx_rkwtemplate_landingpage_secondary_effect_text_color' => [
+        'displayCond' => 'FIELD:layout:=:30000',
+        'exclude' => 0,
+        'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:pages.tx_rkwtemplate_landingpage_secondary_effect_text_color',
+        'config' => [
+            'type' => 'input',
+            'renderType' => 'colorpicker',
+            'size' => 10,
+            'eval' => 'required',
+        ],
+    ],
+    'tx_rkwtemplate_landingpage_secondary_top_text_color' => [
+        'displayCond' => 'FIELD:layout:=:30000',
+        'exclude' => 0,
+        'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:pages.tx_rkwtemplate_landingpage_secondary_top_text_color',
+        'config' => [
+            'type' => 'input',
+            'renderType' => 'colorpicker',
+            'size' => 10,
+            'eval' => 'required',
+        ],
+    ],
+    'tx_rkwtemplate_landingpage_secondary_top_effect_color' => [
+        'displayCond' => 'FIELD:layout:=:30000',
+        'exclude' => 0,
+        'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:pages.tx_rkwtemplate_landingpage_secondary_top_effect_color',
+        'config' => [
+            'type' => 'input',
+            'renderType' => 'colorpicker',
+            'size' => 10,
+            'eval' => 'required',
+        ],
+    ],
+    'tx_rkwtemplate_landingpage_secondary_top_effect_text_color' => [
+        'displayCond' => 'FIELD:layout:=:30000',
+        'exclude' => 0,
+        'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:pages.tx_rkwtemplate_landingpage_secondary_top_effect_text_color',
+        'config' => [
+            'type' => 'input',
+            'renderType' => 'colorpicker',
+            'size' => 10,
+            'eval' => 'required',
+        ],
+    ],
+
     'tx_rkwtemplate_disable_flyout_menu' => [
         'exclude' => 1,
         'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:pages.tx_rkwtemplate_disable_flyout_menu',
@@ -86,11 +155,40 @@ $tmpColsPages = [
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns(
     'pages', $tmpColsPages
 );
+
+// create to new palettes
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette(
+    'pages',
+    'tx_rkwtemplate_primary_color',
+    'tx_rkwtemplate_landingpage_primary_color, tx_rkwtemplate_landingpage_primary_effect_color, tx_rkwtemplate_landingpage_primary_effect_text_color, --linebreak--, tx_rkwtemplate_landingpage_primary_top_text_color, tx_rkwtemplate_landingpage_primary_top_effect_color, tx_rkwtemplate_landingpage_primary_top_effect_text_color'
+);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette(
+    'pages',
+    'tx_rkwtemplate_secondary_color',
+    'tx_rkwtemplate_landingpage_secondary_color, tx_rkwtemplate_landingpage_secondary_effect_color, tx_rkwtemplate_landingpage_secondary_effect_text_color, --linebreak--, tx_rkwtemplate_landingpage_secondary_top_text_color, tx_rkwtemplate_landingpage_secondary_top_effect_color, tx_rkwtemplate_landingpage_secondary_top_effect_text_color'
+);
+
+// add field
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette(
     'pages',
     'layout',
-    '--linebreak--, tx_rkwtemplate_landingpage_primarycolor, , tx_rkwtemplate_landingpage_primarycolor_text, tx_rkwtemplate_landingpage_primarycolor_effect, tx_rkwtemplate_landingpage_secondarycolor, tx_rkwtemplate_landingpage_secondarycolor_text, tx_rkwtemplate_landingpage_secondarycolor_effect, tx_rkwtemplate_disable_flyout_menu'
+    '--linebreak--, tx_rkwtemplate_disable_flyout_menu, --linebreak--'
 );
+
+// add palettes in reverse order
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
+    'pages',
+    '--palette--;LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:pages.palettes.secondary_color;tx_rkwtemplate_secondary_color',
+    '',
+    'after:layout'
+);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
+    'pages',
+    '--palette--;LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:pages.palettes.primary_color;tx_rkwtemplate_primary_color;;--palette--;LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:pages.palettes.secondary_color;tx_rkwtemplate_secondary_color',
+    '',
+    'after:layout'
+);
+
 
 $extKey = 'rkw_template';
 
