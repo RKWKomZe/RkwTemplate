@@ -33,6 +33,19 @@ plugin.tx_rkwevents {
 
         // cat=plugin.tx_rkwevents; type=integer; label=Number of items in list view (default 10)
         itemsPerPage = 36
+        
+        costs {
+            red {
+                hint {
+                    # cat=plugin.tx_rkwevents; type=int; label=enable or disable the costsRedHint in /Partials/Event/Info/Costs.html
+                    enabled = 1
+                    
+                    # cat=plugin.tx_rkwevents; type=string; label=link for hint relating to reduced price condition
+                    # Hint: Can be overridden by property event->costsRedLink
+                    link =
+                }
+            }
+        }
 
 		list {
 		
