@@ -15,7 +15,22 @@ CREATE TABLE pages (
     tx_rkwtemplate_landingpage_secondary_top_text_color varchar(10) DEFAULT '' NOT NULL,
     tx_rkwtemplate_landingpage_secondary_top_effect_color varchar(10) DEFAULT '' NOT NULL,
     tx_rkwtemplate_landingpage_secondary_top_effect_text_color varchar(10) DEFAULT '' NOT NULL,
-
+    
+    tx_rkwtemplate_landingpage_tertiary_color varchar(10) DEFAULT '' NOT NULL,
+    tx_rkwtemplate_landingpage_tertiary_effect_color varchar(10) DEFAULT '' NOT NULL,
+    tx_rkwtemplate_landingpage_tertiary_effect_text_color varchar(10) DEFAULT '' NOT NULL,
+    tx_rkwtemplate_landingpage_tertiary_top_text_color varchar(10) DEFAULT '' NOT NULL,
+    tx_rkwtemplate_landingpage_tertiary_top_effect_color varchar(10) DEFAULT '' NOT NULL,
+    tx_rkwtemplate_landingpage_tertiary_top_effect_text_color varchar(10) DEFAULT '' NOT NULL,
+        
+    tx_rkwtemplate_landingpage_quarterly_color varchar(10) DEFAULT '' NOT NULL,
+    tx_rkwtemplate_landingpage_quarterly_effect_color varchar(10) DEFAULT '' NOT NULL,
+    tx_rkwtemplate_landingpage_quarterly_effect_text_color varchar(10) DEFAULT '' NOT NULL,
+    tx_rkwtemplate_landingpage_quarterly_top_text_color varchar(10) DEFAULT '' NOT NULL,
+    tx_rkwtemplate_landingpage_quarterly_top_effect_color varchar(10) DEFAULT '' NOT NULL,
+    tx_rkwtemplate_landingpage_quarterly_top_effect_text_color varchar(10) DEFAULT '' NOT NULL,
+    
+    tx_rkwtemplate_landingpage_show_more_colors int(1) unsigned DEFAULT '0' NOT NULL,
     tx_rkwtemplate_disable_flyout_menu int(1) unsigned DEFAULT '0' NOT NULL,
 );
 

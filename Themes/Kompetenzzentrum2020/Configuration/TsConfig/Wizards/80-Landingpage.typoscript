@@ -41,6 +41,8 @@
                 altLabels.. = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.gridelements_pi1.landingpage.type.I.default
                 addItems.1 = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.gridelements_pi1.landingpage.type.I.1
                 addItems.2 = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.gridelements_pi1.landingpage.type.I.2
+                addItems.3 = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.gridelements_pi1.landingpage.type.I.3
+                addItems.4 = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.gridelements_pi1.landingpage.type.I.4
             }
         }
 

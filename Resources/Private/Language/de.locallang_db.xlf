@@ -62,8 +62,78 @@
             <trans-unit id="pages.tx_rkwtemplate_landingpage_secondary_top_effect_text_color">
                <source>Text-Color On Effect-Color When Used As Background-color</source>
                <target>Text-Farbe auf Effekt-Farbe, wenn als Hintergrund verwendet</target>
-            </trans-unit>                 
+            </trans-unit>  
+            
+            
+            <trans-unit id="pages.palettes.tertiary_color">
+                <source>Tertiary Color</source>
+                <target>Tertiäre Farbe</target>
+            </trans-unit>      
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_tertiary_color">
+                <source>Color</source>
+                <target>Farbwert</target>
+            </trans-unit>
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_tertiary_effect_color">
+                <source>Color For Effects (e.g. link, buttons)</source>
+                <target>Effekt-Farbe (z. B. Links, Buttons)</target>
+            </trans-unit>
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_tertiary_effect_text_color">
+                <source>Text-Color On Effect-Color (e.g. Text on Buttons)</source>
+                <target>Text-Farbe auf Effekt-Farbe (z. B. Beschriftung von Buttons)</target>
+            </trans-unit>  
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_tertiary_top_text_color">
+               <source>Text-Color When Used As Background</source>
+               <target>Text-Farbe, wenn als Hintergrund verwendet</target>
+           </trans-unit>
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_tertiary_top_effect_color">
+               <source>Effect-Color When Used As Background</source>
+               <target>Effekt-Farbe, wenn als Hintergrund verwendet</target>
+            </trans-unit>    
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_tertiary_top_effect_text_color">
+               <source>Text-Color On Effect-Color When Used As Background-color</source>
+               <target>Text-Farbe auf Effekt-Farbe, wenn als Hintergrund verwendet</target>
+            </trans-unit>                
       
+      
+            <trans-unit id="pages.palettes.quarterly_color">
+                <source>Quarterly Color</source>
+                <target>Quartäre Farbe</target>
+            </trans-unit>      
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_quarterly_color">
+                <source>Color</source>
+                <target>Farbwert</target>
+            </trans-unit>
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_quarterly_effect_color">
+                <source>Color For Effects (e.g. link, buttons)</source>
+                <target>Effekt-Farbe (z. B. Links, Buttons)</target>
+            </trans-unit>
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_quarterly_effect_text_color">
+                <source>Text-Color On Effect-Color (e.g. Text on Buttons)</source>
+                <target>Text-Farbe auf Effekt-Farbe (z. B. Beschriftung von Buttons)</target>
+            </trans-unit>  
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_quarterly_top_text_color">
+               <source>Text-Color When Used As Background</source>
+               <target>Text-Farbe, wenn als Hintergrund verwendet</target>
+           </trans-unit>
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_quarterly_top_effect_color">
+               <source>Effect-Color When Used As Background</source>
+               <target>Effekt-Farbe, wenn als Hintergrund verwendet</target>
+            </trans-unit>    
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_quarterly_top_effect_text_color">
+               <source>Text-Color On Effect-Color When Used As Background-color</source>
+               <target>Text-Farbe auf Effekt-Farbe, wenn als Hintergrund verwendet</target>
+            </trans-unit>       
+            
+            
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_show_more_colors">
+               <source>Show more color options – only do this for a very good reason!</source>
+               <target>Zeige mehr Farb-Optionen – Bitte tun Sie dies nur aus einem sehr guten Grund!</target>
+            </trans-unit>   
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_show_more_colors.I.enabled">
+               <source>Activate – I know what I'm doing!</source>
+               <target>Aktivieren – Ich weiß, was ich tue!</target>
+            </trans-unit>  
+
             
             <!-- Menu-stuff -->
             <trans-unit id="pages.tx_rkwtemplate_disable_flyout_menu">
@@ -174,17 +244,25 @@
 				<target>Hervorheben als ...</target>
 			</trans-unit>
 			<trans-unit id="contentElement.gridelements_pi1.landingpage.type.I.default">
-				<source>default</source>
-				<target>Default-Element</target>
+				<source>Default-Element</source>
+				<target>Standard-Element</target>
 			</trans-unit>
 			<trans-unit id="contentElement.gridelements_pi1.landingpage.type.I.1">
-				<source>primary</source>
+				<source>Primary Element</source>
 				<target>Primäres Element</target>
 			</trans-unit>
 			<trans-unit id="contentElement.gridelements_pi1.landingpage.type.I.2">
-				<source>secondary</source>
+				<source>Secondary Element</source>
 				<target>Sekundäres Element</target>
 			</trans-unit>
+			<trans-unit id="contentElement.gridelements_pi1.landingpage.type.I.3">
+				<source>Tertiary Element (must be activated in the page properties)</source>
+				<target>Tertiäres Element (muss in Seiteneigenschaften aktiviert werden)</target>
+			</trans-unit>
+			<trans-unit id="contentElement.gridelements_pi1.landingpage.type.I.4">
+				<source>Quarterly Element (must be activated in the page properties)</source>
+				<target>Quartäres Element (muss in Seiteneigenschaften aktiviert werden)</target>
+			</trans-unit>						
 
             <!-- TilesContainer -->
             <trans-unit id="contentElement.tilesContainer.title">

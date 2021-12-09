@@ -51,6 +51,60 @@
             </trans-unit> 
 
 
+            <trans-unit id="pages.palettes.tertiary_color">
+                <source>Tertiary Color</source>
+            </trans-unit>      
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_tertiary_color">
+                <source>Color</source>
+            </trans-unit>
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_tertiary_effect_color">
+                <source>Color For Effects (e.g. link, buttons)</source>
+            </trans-unit>
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_tertiary_effect_text_color">
+                <source>Text-Color On Effect-Color (e.g. Text on Buttons)</source>
+            </trans-unit>  
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_tertiary_top_text_color">
+               <source>Text-Color When Used As Background</source>
+           </trans-unit>
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_tertiary_top_effect_color">
+               <source>Effect-Color When Used As Background</source>
+            </trans-unit>    
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_tertiary_top_effect_text_color">
+               <source>Text-Color On Effect-Color When Used As Background-color</source>
+            </trans-unit>                
+      
+      
+            <trans-unit id="pages.palettes.quarterly_color">
+                <source>Quarterly Color</source>
+            </trans-unit>      
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_quarterly_color">
+                <source>Color</source>
+            </trans-unit>
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_quarterly_effect_color">
+                <source>Color For Effects (e.g. link, buttons)</source>
+            </trans-unit>
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_quarterly_effect_text_color">
+                <source>Text-Color On Effect-Color (e.g. Text on Buttons)</source>
+            </trans-unit>  
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_quarterly_top_text_color">
+               <source>Text-Color When Used As Background</source>
+           </trans-unit>
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_quarterly_top_effect_color">
+               <source>Effect-Color When Used As Background</source>
+            </trans-unit>    
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_quarterly_top_effect_text_color">
+               <source>Text-Color On Effect-Color When Used As Background-color</source>
+            </trans-unit>       
+            
+            
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_show_more_colors">
+               <source>Show more color options – only do this for a very good reason!</source>
+            </trans-unit>   
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_show_more_colors.I.enabled">
+               <source>Activate – I know what I'm doing!</source>
+            </trans-unit>  
+            
+
             <!-- Menu-stuff -->
             <trans-unit id="pages.tx_rkwtemplate_disable_flyout_menu">
                 <source>Fly-Out Menu (only second menu-level)</source>
@@ -145,6 +199,12 @@
 			<trans-unit id="contentElement.gridelements_pi1.landingpage.type.I.2">
 				<source>Secondary Element</source>
 			</trans-unit>
+			<trans-unit id="contentElement.gridelements_pi1.landingpage.type.I.3">
+				<source>Tertiary Element (must be activated in the page properties)</source>
+			</trans-unit>
+			<trans-unit id="contentElement.gridelements_pi1.landingpage.type.I.4">
+				<source>Quarterly Element (must be activated in the page properties)</source>
+			</trans-unit>				
 
             <!-- TilesContainer -->
             <trans-unit id="contentElement.tilesContainer.title">
