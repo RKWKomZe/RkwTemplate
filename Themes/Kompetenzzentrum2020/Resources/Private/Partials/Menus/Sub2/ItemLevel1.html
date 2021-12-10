@@ -5,7 +5,7 @@
             {item.title}
         </a>
         <f:if condition="{item.children}">
-            <ul class="contentbox nav__dropdown">
+            <ul class="nav__dropdown">
                 <f:for each="{item.children}" as="item" iteration="iterator">
                     <f:render partial="ItemLevel2" arguments="{item: item, counter: iterator.cycle}"/>
                 </f:for>
