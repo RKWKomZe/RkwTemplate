@@ -27,6 +27,14 @@ plugin.tx_rkwevents {
 
 		// cat=plugin.tx_rkwevents; type=integer; label=PID for archive list
 		archivePid = 7354
+
+        mandatoryFields {
+
+            // cat=plugin.tx_rkwevents; type=string; label=Mandatory fields for registration of main person. Comma separated lists with property names (e.g. salutation, firstName, lastName, address, zip, city, email)
+            eventReservationMainPerson = salutation, firstName, lastName, email, address, zip, city, company
+
+        }
+
 	}
 }
 
