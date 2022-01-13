@@ -40,6 +40,12 @@ plugin.tx_rkwevents {
   
                 # cat=plugin.tx_rkwevents; type=bool; label=Use multipart view for list
                 enabled = 1
+
+                # cat=plugin.tx_rkwevents; type=integer; label=shown items of started events
+                limitStarted = 4
+
+                # cat=plugin.tx_rkwevents; type=integer; label=shown items of upcoming events
+                limitUpcoming = 8
             }
 
             filter {
