@@ -1,5 +1,6 @@
 <html
     xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:rkwEtracker="http://typo3.org/ns/RKW/RkwEtracker/ViewHelpers"
     data-namespace-typo3-fluid="true">
 
     <f:layout name="Rkw" />
@@ -8,10 +9,10 @@
 
         <f:if condition="{data.header_link}">
             <f:then>
-                <a href="{data.header_link}" class="speaker-list__item" target="_blank" rel="nofollow">
+                <rkwEtracker:link.typolink parameter="{data.header_link}" class="speaker-list__item">
                     <f:render partial="Tile/Image" arguments="{_all}"/>
                     <f:render partial="Tile/Text" arguments="{_all}"/>
-                </a>
+                </rkwEtracker:link.typolink>
             </f:then>
             <f:else>
                 <f:if condition="{data.bodytext} && !{data.header_link}">
