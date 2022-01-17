@@ -8,15 +8,19 @@
     <f:section name="Main">
 
         <f:if condition="<rkwBasics:isEmpty string='{data.tx_gridelements_view_column_140}' /> == 0">
-            <div class="footer-content">
+            <div class="footer-content flex-container">
                 <f:if condition="{f:count(subject: images)} > 0">
                     <div class="footer-thumb">
                         <img src="{f:uri.image(image:images.0,width:'1050',cropVariant:'default')}" alt="">
                     </div>
                 </f:if>
-                
-                <div class="btn-list flex-container center-main">
-                    <f:format.raw>{data.tx_gridelements_view_column_140}</f:format.raw>
+                <div class="footer-text">
+                    <f:if condition="{data.rowDescription}">
+                        <p>{data.rowDescription}</p>
+                    </f:if>
+                    <div class="btn-list flex-container center-main">
+                        <f:format.raw>{data.tx_gridelements_view_column_140}</f:format.raw>
+                    </div>
                 </div>
             </div>
             
