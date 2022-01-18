@@ -28,6 +28,19 @@ plugin.tx_rkwevents {
 		// cat=plugin.tx_rkwevents; type=integer; label=PID for archive list
 		archivePid = 7354
 
+        // cat=plugin.tx_rkwevents; type=integer; label=Defines the parent category for the FE-filter in event listing
+        parentCategoryForFilter = 144
+
+        list {
+
+            filter {
+
+                # cat=plugin.tx_rkwevents; type=integer; label=Show filter option "category"
+                showCategory = 1
+
+            }
+        }
+
         mandatoryFields {
 
             // cat=plugin.tx_rkwevents; type=string; label=Mandatory fields for registration of main person. Comma separated lists with property names (e.g. salutation, firstName, lastName, address, zip, city, email)
