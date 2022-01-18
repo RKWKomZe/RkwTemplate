@@ -135,7 +135,7 @@ lib.txRkwTemplate {
 
 
         //=================================================================
-        eventsRecommendedReduced = USER
+        eventsRecommendedReduced = USER_INT
         eventsRecommendedReduced {
 
             userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
@@ -161,7 +161,7 @@ lib.txRkwTemplate {
         }
         
         //=================================================================
-        eventsSimilarReduced = USER
+        eventsSimilarReduced = USER_INT
         eventsSimilarReduced {
 
             userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
