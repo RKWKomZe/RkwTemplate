@@ -8,12 +8,14 @@
         <div class="carousel-item__text {f:if(condition: '({data.header_layout} == 2) || ({data.header_layout} == 4))', then: 'carousel-item__text--inverted')} {f:if(condition: '{data.header_layout} >= 3)', then: 'carousel-item__text--background')} flex-container">
             <div class="carousel-item__textwrapper">
                 <f:if condition="{data.subheader}">
-                    <div class="carousel-cat"><f:format.stripTags>{data.subheader}</f:format.stripTags></div>
+                    <div class="carousel-cat"><f:format.stripTags allowedTags="<span>">{data.subheader}</f:format.stripTags></div>
                 </f:if>
                 <h1 class="carousel-title">{data.header}</h1>
-                <rkwEtracker:link.typolink parameter="{data.header_link}" class="btn btn--primary">
-                    <f:format.stripTags>{data.rowDescription}</f:format.stripTags>
-                </rkwEtracker:link.typolink>
+                <f:if condition="{data.header_link}">
+                    <rkwEtracker:link.typolink parameter="{data.header_link}" class="btn btn--primary">
+                        <f:format.stripTags>{data.rowDescription}</f:format.stripTags>
+                    </rkwEtracker:link.typolink>
+                </f:if>
             </div>
         </div>
 

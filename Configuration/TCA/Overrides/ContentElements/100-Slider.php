@@ -24,7 +24,7 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_slider'] = [
         ],
         'header_link' => [
             'config' => [
-                'eval' => 'trim,required',
+                'eval' => 'trim',
             ]
         ],
         'rowDescription' => [
