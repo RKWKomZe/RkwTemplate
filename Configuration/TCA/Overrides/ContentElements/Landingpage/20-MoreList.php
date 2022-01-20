@@ -43,7 +43,7 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_morelist'] = [
         ],
         'bodytext' => [
             'config' => [
-                'eval' => 'trim,required',
+                'eval' => 'trim',
                 'enableRichtext' => true,
             ]
         ],

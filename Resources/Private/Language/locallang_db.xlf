@@ -204,7 +204,35 @@
 			</trans-unit>
 			<trans-unit id="contentElement.gridelements_pi1.landingpage.type.I.4">
 				<source>Quarterly Element (must be activated in the page properties)</source>
-			</trans-unit>				
+			</trans-unit>	
+            <trans-unit id="contentElement.gridelements_pi1.landingpage.layout.label">
+                <source>Image style (TilesContainer only)</source>
+            </trans-unit>
+            <trans-unit id="contentElement.gridelements_pi1.landingpage.layout.default">
+                <source>Default image</source>
+            </trans-unit>
+            <trans-unit id="contentElement.gridelements_pi1.landingpage.layout.rounded">
+                <source>Rounded image</source>
+            </trans-unit>
+            <trans-unit id="contentElement.gridelements_pi1.landingpage.layout.label2">
+                <source>Close-Button</source>
+            </trans-unit>
+            <trans-unit id="contentElement.gridelements_pi1.landingpage.layout.showClose">
+                <source>Show</source>
+            </trans-unit>
+            <trans-unit id="contentElement.gridelements_pi1.landingpage.layout.hideClose">
+                <source>Hide</source>
+            </trans-unit>
+            <trans-unit id="contentElement.gridelements_pi1.landingpage.frameClass.label">
+                <source>Quotation-Box (TileContainer only)</source>
+            </trans-unit>
+            <trans-unit id="contentElement.gridelements_pi1.landingpage.frameClass.default">
+                <source>White Background, Black Font</source>
+            </trans-unit>
+            <trans-unit id="contentElement.gridelements_pi1.landingpage.frameClass.inverted">
+                <source>Black Background, White Font</source>
+            </trans-unit>            		
+            			
 
             <!-- TilesContainer -->
             <trans-unit id="contentElement.tilesContainer.title">
@@ -638,15 +666,6 @@
             </trans-unit>
             <trans-unit id="contentElement.tile.description">
                 <source>Adds an tile list-element.</source>
-            </trans-unit>
-            <trans-unit id="contentElement.tile.layout.label">
-                <source>Image style (TilesContainer only)</source>
-            </trans-unit>
-            <trans-unit id="contentElement.tile.layout.default">
-                <source>Default</source>
-            </trans-unit>
-            <trans-unit id="contentElement.tile.layout.rounded">
-                <source>Rounded image</source>
             </trans-unit>
 
             <!-- MoreList -->
