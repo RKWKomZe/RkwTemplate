@@ -34,6 +34,14 @@ plugin.tx_rkwevents {
         // cat=plugin.tx_rkwevents; type=integer; label=Number of items in list view (default 10)
         itemsPerPage = 36
 
+        costs {
+            red {
+                hint {
+                    enabled = 1
+                }
+            }
+        }
+
 		list {
 		
             multipartView {
