@@ -14,6 +14,19 @@
             <trans-unit id="partials.basics.skipLink.labelContent">
                 <source>Jump to contents</source>
             </trans-unit>
+            
+            <trans-unit id="partials.basics.languageSwitch.labelEnglish">
+                <source>en</source>
+            </trans-unit>
+            <trans-unit id="partials.basics.languageSwitch.ariaLabelEnglish">
+                <source>Switch to English</source>
+            </trans-unit>
+            <trans-unit id="partials.basics.languageSwitch.labelGerman">
+                <source>de</source>
+            </trans-unit>
+            <trans-unit id="partials.basics.languageSwitch.ariaLabelGerman">
+                <source>Switch to German</source>
+            </trans-unit>                
 
 
 			<trans-unit id="partials.menus.main.item.back">

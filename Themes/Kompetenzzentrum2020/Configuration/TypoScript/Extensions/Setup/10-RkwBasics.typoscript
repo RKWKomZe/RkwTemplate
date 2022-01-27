@@ -21,7 +21,13 @@ plugin.tx_rkwbasics {
                 21 < .20
                 22 < .20  
                 
-                // Article-Layout
+                // Home-Layout
+                40 {
+                    5 = https://use.typekit.net/frq0css.css
+                    10 = {$plugin.tx_rkwtemplate_themeconfig.paths.default.css}/critical/home.css   
+                }
+                
+                // Special-Details-Layout
                 30000 {
                     5 = https://use.typekit.net/frq0css.css
                     10 = {$plugin.tx_rkwtemplate_themeconfig.paths.default.css}/critical/specials_detail.css   

@@ -15,6 +15,24 @@
                 <source>Jump to contents</source>
                 <target>Zum Hauptinhalt springen</target>
             </trans-unit>
+            
+            
+            <trans-unit id="partials.basics.languageSwitch.labelEnglish">
+                <source>en</source>
+                <target>en</target>
+            </trans-unit>
+            <trans-unit id="partials.basics.languageSwitch.ariaLabelEnglish">
+                <source>Switch to English</source>
+                <target>Seite in englischer Version anzeigen</target>
+            </trans-unit>
+            <trans-unit id="partials.basics.languageSwitch.labelGerman">
+                <source>de</source>
+                <target>de</target>
+            </trans-unit>
+            <trans-unit id="partials.basics.languageSwitch.ariaLabelGerman">
+                <source>Switch to German</source>
+                <target>Seite in deutscher Version anzeigen</target>
+            </trans-unit>          
 
 
 			<trans-unit id="partials.menus.main.item.back">

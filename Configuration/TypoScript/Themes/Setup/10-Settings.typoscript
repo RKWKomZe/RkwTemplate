@@ -37,6 +37,7 @@ lib.txRkwTemplate.themeSettings {
 
     reducedMenuLevels = {$plugin.tx_rkwtemplate_themeconfig.reducedMenuLevels}
     shortMainMenu = {$plugin.tx_rkwtemplate_themeconfig.shortMainMenu}
+    showLanguageSwitch = {$plugin.tx_rkwtemplate_themeconfig.showLanguageSwitch}
     noTopicHeaderImageOnMobile = {$plugin.tx_rkwtemplate_themeconfig.noTopicHeaderImageOnMobile}
 
 }

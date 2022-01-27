@@ -17,7 +17,7 @@ lib.txRkwTemplate {
 
         //==================================================================
         languageId = TEXT
-        languageId.data = GPVar:L
+        languageId.data = TSFE:sys_language_uid
 
         //==================================================================
         copyright = TEXT

@@ -54,6 +54,8 @@ plugin.tx_rkwtemplate_themeconfig {
     # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Show social media icons
     socialMedia = 0
 
+    # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Shows a language switch in top of the page
+    showLanguageSwitch = 0
 
 }
 
