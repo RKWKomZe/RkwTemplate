@@ -38,6 +38,9 @@ plugin.tx_rkwevents {
                 # cat=plugin.tx_rkwevents; type=integer; label=Show filter option "category"
                 showCategory = 1
 
+                # cat=plugin.tx_rkwevents; type=integer; label=Show filter option "time"
+                showTime = 1
+
             }
         }
 
