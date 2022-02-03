@@ -24,7 +24,7 @@
                     <f:then>
                         <div class="speaker-header" style="background-image:url('{f:uri.image(image:images.0,cropVariant:'default')}')">
                             <f:if condition="{data.rowDescription}">
-                                <blockquote class="blockquote-specials {f:if(condition: '{data.frame_class} == 10', then: 'blockquote-specials--inverted')}">
+                                <blockquote class="blockquote-specials flex-basis-6 {f:if(condition: '{data.frame_class} == 10', then: 'blockquote-specials--inverted')}">
                                     {data.rowDescription}
                                 </blockquote>
                             </f:if>
@@ -33,7 +33,7 @@
                     <f:else>
                         <div class="speaker-header">
                             <f:if condition="{data.rowDescription}">
-                                <blockquote class="blockquote-specials {f:if(condition: '{data.frame_class} == 10', then: 'blockquote-specials--inverted')}">
+                                <blockquote class="blockquote-specials flex-basis-6 {f:if(condition: '{data.frame_class} == 10', then: 'blockquote-specials--inverted')}">
                                     {data.rowDescription}
                                 </blockquote>
                             </f:if>
