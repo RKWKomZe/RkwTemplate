@@ -41,6 +41,9 @@ plugin.tx_rkwevents {
                 # cat=plugin.tx_rkwevents; type=integer; label=Show filter option "time"
                 showTime = 1
 
+                # hint: use value "11" for the maximum amount of months!
+                showTimeNumberOfMonths = 11
+
             }
         }
 
