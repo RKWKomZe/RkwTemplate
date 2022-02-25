@@ -11,7 +11,7 @@
 		<f:comment><!-- header --></f:comment>
 		<header class="header {f:if(condition: '{rkwBasics:isEmpty(string:\'{f:cObject(typoscriptObjectPath:\\\'lib.txRkwTemplate.navigation.sub\\\', data:\\\'{data}\\\')}\')} == 0', then: 'has-nav')} {f:if(condition: '{settings.shortMainMenu}', then: 'has-nav--short')} {f:if(condition: '{settings.showLanguageSwitch}', then: 'has-lang-switch')}">
 			<f:if condition="{settings.showLanguageSwitch}">
-				<f:render partial="Basics/LanguageSwitch" arguments="{_all}"/>
+				<f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.language" data="{data}" />
 			</f:if>
 			<f:render partial="Basics/Header" arguments="{_all}"/>
 			<f:render section="Header" />

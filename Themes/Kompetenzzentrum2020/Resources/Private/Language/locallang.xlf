@@ -15,16 +15,16 @@
                 <source>Jump to contents</source>
             </trans-unit>
             
-            <trans-unit id="partials.basics.languageSwitch.labelEnglish">
+            <trans-unit id="partials.basics.languageSwitch.label1">
                 <source>en</source>
             </trans-unit>
-            <trans-unit id="partials.basics.languageSwitch.ariaLabelEnglish">
+            <trans-unit id="partials.basics.languageSwitch.ariaLabel1">
                 <source>Switch to English</source>
             </trans-unit>
-            <trans-unit id="partials.basics.languageSwitch.labelGerman">
+            <trans-unit id="partials.basics.languageSwitch.label0">
                 <source>de</source>
             </trans-unit>
-            <trans-unit id="partials.basics.languageSwitch.ariaLabelGerman">
+            <trans-unit id="partials.basics.languageSwitch.ariaLabel0">
                 <source>Switch to German</source>
             </trans-unit>                
 

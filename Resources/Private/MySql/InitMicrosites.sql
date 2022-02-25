@@ -1,10 +1,10 @@
 START TRANSACTION;
 
-SET @website_title = 'Bausachverständigentag';
-SET @configuration_name = 'Bausachverstaendigentag';
+SET @website_title = 'AufITGebaut';
+SET @configuration_name = 'AufITGebaut';
 SET @dataset_root = 11;
-SET @domain = 'bst.rkw-kompetenzzentrum.de';
-SET @media_path = '/media_bst/';
+SET @domain = 'aufitgebaut.rkw-kompetenzzentrum.de';
+SET @media_path = '/media/';
 SET @basic_layout_be = 'pagets__topicPages';
 SET @basic_layout_fe = 10;
 SET @home_layout_be = 'pagets__homePages';
@@ -26,9 +26,9 @@ SET @ts_config = '';
 SET @ts_config_includes = CONCAT ('EXT:rkw_template/Configuration/TsConfig/TsConfig.typoscript,EXT:rkw_template/Themes/_Microsites/', @configuration_name, '/Configuration/TsConfig/TsConfig.typoscript');
 
 SET @file_mount_title = CONCAT ('Media ', @website_title, ' (RW)');
-SET @file_mount_description = CONCAT ('Diese Freigabe ist für das ', @website_title);
+SET @file_mount_description = CONCAT ('Diese Freigabe ist für ', @website_title);
 SET @backend_group_data_title = CONCAT ('+ Datensatzsammlung ', @website_title);
-SET @backend_group_title = CONCAT ('+ Freigabe Extern: Red. ', @website_title);
+SET @backend_group_title = CONCAT ('++ Intern: Red. ', @website_title);
 SET @tstamp = UNIX_TIMESTAMP();
 
 -- =================================================
@@ -57,10 +57,12 @@ SET @other_rootpage = last_insert_id();
 -- Subpages of law
 INSERT INTO `pages` (`pid`, `tstamp`, `sorting`, `deleted`, `perms_userid`, `perms_groupid`, `perms_user`, `perms_group`, `perms_everybody`, `editlock`, `crdate`, `cruser_id`, `hidden`, `title`, `doktype`, `TSconfig`, `is_siteroot`, `php_tree_stop`, `tx_impexp_origuid`, `url`, `starttime`, `endtime`, `urltype`, `shortcut`, `shortcut_mode`, `no_cache`, `fe_group`, `subtitle`, `layout`, `target`, `media`, `lastUpdated`, `keywords`, `cache_timeout`, `cache_tags`, `newUntil`, `description`, `no_search`, `SYS_LASTCHANGED`, `abstract`, `module`, `extendToSubpages`, `author`, `author_email`, `nav_title`, `nav_hide`, `content_from_pid`, `mount_pid`, `mount_pid_ol`, `alias`, `l18n_cfg`, `fe_login_mode`, `backend_layout`, `backend_layout_next_level`, `categories`, `tx_rkwbasics_fe_layout_next_level`, `tx_rkwbasics_css_class`, `tx_rkwbasics_department`, `tx_rkwbasics_document_type`) VALUES
 (@law_rootpage, @tstamp, 256, 0, 1, 1, 31, 19, 19, 0, @tstamp, 1, 0, 'Impressum', 1, '', 0, 0, 0, '', 0, 0, 1, 0, 0, 0, '', '', 0, '', 0, 0, '', 0, '', 0, '', 0, 0, NULL, '', 0, '', '', '', 0, 0, 0, 0, '', 0, 0, '', '', 0,  0, 0, 6, 10),
+(@law_rootpage, @tstamp, 315, 0, 1, 1, 31, 19, 19, 0, @tstamp, 1, 0, 'Bildnachweise', 1, '', 0, 0, 0, '', 0, 0, 1, 0, 0, 0, '', '', 0,  '', 0, 0, '', 0, '', 0, '', 0, 0, '', '', 0, '', '', '', 0, 0, 0, 0, '', 0, 0, '', '', 0,  0, 0, 6, 10),
 (@law_rootpage, @tstamp, 512, 0, 1, 1, 31, 19, 19, 0, @tstamp, 1, 0, 'Datenschutz', 1, '', 0, 0, 0, '', 0, 0, 1, 0, 0, 0, '', '', 0,  '', 0, 0, '', 0, '', 0, '', 0, 0, '', '', 0, '', '', '', 0, 0, 0, 0, '', 0, 0, '', '', 0,  0, 0, 6, 10),
 (@law_rootpage, @tstamp, 448, 0, 1, 1, 31, 19, 19, 0, @tstamp, 1, 0, 'Allgemeine Geschäftsbedingungen', 1, '', 0, 0, 0, '', 0, 0, 1, 0, 0, 0, '', '', 0, '', 0, 0, '', 0, '', 0, '', 0, 0, '', '', 0, '', '', '', 0, 0, 0, 0, '', 0, 0, '', '', 0, 0, 0, 6, 10),
 (@law_rootpage, @tstamp, 352, 0, 1, 1, 31, 1, 1, 0, @tstamp, 1, 0, 'Allgemeine Nutzungsbedingungen', 7, '', 0, 0, 0, '', 0, 0, 1, 0, 0, 0, '', '', 0, '', 0, 0, '', 0, '', 0, '', 0, 0, '', '', 0, '', '', '', 0, 0, 1381, 1, '', 0, 0, '', '', 0, 0, 0, 0, 0),
 (@law_rootpage, @tstamp, 768, 0, 1, 1, 31, 19, 19, 0, @tstamp, 1, 0, 'Disclaimer', 1, '', 0, 0, 0, '', 0, 0, 1, 0, 0, 0, '', '', 0, '', 0, 0, '', 0, '', 0, '', 0, 0, '', '', 0, '', '', '', 0, 0, 0, 0, '', 0, 0, '', '', 0, 0, 0, 6, 10);
+
 
 -- =================================================
 -- Subpages of other

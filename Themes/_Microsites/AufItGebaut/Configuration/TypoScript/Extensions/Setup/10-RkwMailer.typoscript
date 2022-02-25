@@ -1,0 +1,10 @@
+module.tx_rkwmailer {
+
+    view {
+        partialRootPaths {
+            10 = {$plugin.tx_rkwtemplate_themeconfig.paths.extensions.root}/RkwMailer/Partials
+        }
+    }
+}
+
+plugin.tx_rkwmailer.view < module.tx_rkwmailer.view

@@ -17,19 +17,19 @@
             </trans-unit>
             
             
-            <trans-unit id="partials.basics.languageSwitch.labelEnglish">
+            <trans-unit id="partials.basics.languageSwitch.label1">
                 <source>en</source>
                 <target>en</target>
             </trans-unit>
-            <trans-unit id="partials.basics.languageSwitch.ariaLabelEnglish">
+            <trans-unit id="partials.basics.languageSwitch.ariaLabel1">
                 <source>Switch to English</source>
                 <target>Seite in englischer Version anzeigen</target>
             </trans-unit>
-            <trans-unit id="partials.basics.languageSwitch.labelGerman">
+            <trans-unit id="partials.basics.languageSwitch.label0">
                 <source>de</source>
                 <target>de</target>
             </trans-unit>
-            <trans-unit id="partials.basics.languageSwitch.ariaLabelGerman">
+            <trans-unit id="partials.basics.languageSwitch.ariaLabel0">
                 <source>Switch to German</source>
                 <target>Seite in deutscher Version anzeigen</target>
             </trans-unit>          
