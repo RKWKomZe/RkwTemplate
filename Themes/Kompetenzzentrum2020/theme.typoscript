@@ -158,6 +158,10 @@ plugin.tx_rkwtemplate_themeconfig {
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to YouTube page
         youTube = https://www.youtube.com/user/RKWexperten
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to Instagram page
+        instagram = https://www.instagram.com/rkwexperten
+
     }
 
     # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Show a reduced amount of menus
