@@ -34,6 +34,7 @@ lib.txRkwTemplate.themeSettings {
     socialMediaLinks.youTube = {$plugin.tx_rkwtemplate_themeconfig.socialMediaLinks.youTube}
     socialMediaLinks.xing = {$plugin.tx_rkwtemplate_themeconfig.socialMediaLinks.xing}
     socialMediaLinks.linkedIn = {$plugin.tx_rkwtemplate_themeconfig.socialMediaLinks.linkedIn}
+    socialMediaLinks.instagram = {$plugin.tx_rkwtemplate_themeconfig.socialMediaLinks.instagram}
 
     reducedMenuLevels = {$plugin.tx_rkwtemplate_themeconfig.reducedMenuLevels}
     shortMainMenu = {$plugin.tx_rkwtemplate_themeconfig.shortMainMenu}

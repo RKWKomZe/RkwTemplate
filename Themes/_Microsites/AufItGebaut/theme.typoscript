@@ -53,7 +53,16 @@ plugin.tx_rkwtemplate_themeconfig {
     socialMediaShare = 1
 
     # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Show social media icons
-    socialMedia = 0
+    socialMedia = 1
+    
+    socialMediaLinks {
+    
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to facebook page
+        facebook = https://www.facebook.com/aufitgebaut
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to xing page
+        xing = https://www.xing.com/communities/groups/wettbewerb-auf-it-gebaut-bauberufe-mit-zukunft-1041999?sc_o=b5178_20_601    
+    }
     
     # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Shows a language switch in top of the page
     showLanguageSwitch = 0

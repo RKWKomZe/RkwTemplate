@@ -30,7 +30,7 @@ plugin.tx_rkwtemplate_themeconfig {
         name = RKW Bayern
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=baseUrl (With / at the end for ClickEnlarge)
-        baseUrl = https://bayern.rkw-kompetenzzentrum.de
+        baseUrl = https://www.rkwbayern.de
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=integer; label=ID of Rootpage
         rootPid = 7344
@@ -74,6 +74,9 @@ plugin.tx_rkwtemplate_themeconfig {
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to YouTube page
         youTube =
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to Instagram page
+        instagram =
 
     }
 

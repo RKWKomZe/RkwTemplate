@@ -1,0 +1,57 @@
+
+page {
+
+	footerData {
+        1000 = TEXT
+        1000.value (
+
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-101314914-1"></script>
+            <script>
+                function setGoogleAnalyticsBlockCookie(value) {
+
+                    var name = 'googleAnalytics';
+                    var daysToLive = 30;
+
+                    // Encode value in order to escape semicolons, commas, and whitespace
+                    var cookie = name + "=" + encodeURIComponent(value);
+
+                    cookie += "; max-age=" + (daysToLive*24*60*60);
+                    document.cookie = cookie;
+
+                    alert("Änderung gespeichert.");
+                }
+
+                function getGoogleAnalyticsBlockCookie() {
+
+                    var name = 'googleAnalytics';
+
+                    // Split cookie string and get all individual name=value pairs in an array
+                    var cookieArr = document.cookie.split(";");
+
+                    // Loop through the array elements
+                    for(var i = 0; i < cookieArr.length; i++) {
+                        var cookiePair = cookieArr[i].split("=");
+
+                        /* Removing whitespace at the beginning of the cookie name
+                        and compare it with the given string */
+                        if(name == cookiePair[0].trim()) {
+                            // Decode the cookie value and return
+                            return decodeURIComponent(cookiePair[1]);
+                        }
+                    }
+
+                    return 0;
+                }
+
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                if (getGoogleAnalyticsBlockCookie() != 1) {
+                    gtag('config', 'UA-101314914-1', {'anonymize_ip': true});
+                }
+            </script>
+        )
+	}
+}
