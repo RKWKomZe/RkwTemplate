@@ -113,7 +113,7 @@ config {
 	// Sprache
 	//===============================================================
   	// Mulit-Lingualität herstellen, zunächst Standard setzen
-	linkVars=L
+	linkVars = L(0-5)
 	prefixLocalAnchors = all
 	
 	// Wenn Übersetzung nicht vorhanden, auf Standard-Sprache zurückgreifen
