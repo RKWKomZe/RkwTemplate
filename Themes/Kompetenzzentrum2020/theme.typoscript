@@ -154,7 +154,7 @@ plugin.tx_rkwtemplate_themeconfig {
         xing = https://www.xing.com/companies/rkwkompetenzzentrum
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to linkedIn page
-        linkedIn =
+        linkedIn = https://de.linkedin.com/company/rkw-kompetenzzentrum
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to YouTube page
         youTube = https://www.youtube.com/user/RKWexperten

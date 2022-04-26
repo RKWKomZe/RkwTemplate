@@ -70,7 +70,7 @@ plugin.tx_rkwtemplate_themeconfig {
         xing = http://www.xing.com/companies/rkwbayerne.v.
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to linkedIn page
-        linkedIn =
+        linkedIn = https://www.linkedin.com/company/rkw-bayern-e-v-
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to YouTube page
         youTube =
