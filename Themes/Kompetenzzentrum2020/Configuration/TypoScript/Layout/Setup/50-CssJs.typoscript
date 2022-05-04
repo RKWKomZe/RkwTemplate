@@ -8,6 +8,7 @@ page {
     includeCSS {
         file10 = {$plugin.tx_rkwtemplate_themeconfig.paths.default.css}/styles.css
         file10.media = all
+        file10.forceOnTop = 1
 
         // Nur auf den Druck-Seiten!
         // file30 = {$plugin.tx_rkwtemplate_themeconfig.paths.default.css}/print.css
