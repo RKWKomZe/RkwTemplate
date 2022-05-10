@@ -7,18 +7,3 @@ plugin.tx_rkwnewsletter {
         }
 	}
 }
-
-txRkwNewsletterWebView {
-
-    10 {
-        stdWrap.replacement {
-
-            20 {
-                replace = {$plugin.tx_rkwtemplate_themeconfig.paths.default.logos}/logo-emails.png
-            }
-            30 {
-                replace = {$plugin.tx_rkwtemplate_themeconfig.paths.default.images}/emails
-            }
-        }
-    }
-}

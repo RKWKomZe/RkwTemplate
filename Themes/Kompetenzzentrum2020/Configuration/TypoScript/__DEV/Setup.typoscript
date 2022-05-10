@@ -60,6 +60,7 @@ plugin.tx_rkwmailer {
 		baseUrl = http://rkw-kompetenzzentrum.rkw.local
 	}
 }
+
 rkwetracker.persistence < plugin.tx_rkwetracker.persistence
 
 

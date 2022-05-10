@@ -2,7 +2,9 @@ txRkwNewsletterWebView {
 
     10 {
         stdWrap.replacement {
-
+            10 {
+                replace = {$plugin.tx_rkwtemplate_themeconfig.website.baseUrl}
+            }
             20 {
                 replace = {$plugin.tx_rkwtemplate_themeconfig.paths.default.logos}/logo-emails.png
             }
