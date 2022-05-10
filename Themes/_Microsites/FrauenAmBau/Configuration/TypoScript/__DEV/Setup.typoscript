@@ -33,8 +33,7 @@ page {
 # STANDARD- MARKER
 #############################################################################
 
-# Module configuration
-module.tx_rkwmailer {
+plugin.tx_rkwmailer {
 
 	settings {
 

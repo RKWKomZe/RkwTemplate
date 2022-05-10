@@ -1,4 +1,4 @@
-module.tx_rkwmailer {
+plugin.tx_rkwmailer {
 
     settings {
 
@@ -13,5 +13,3 @@ module.tx_rkwmailer {
 
     }
 }
-
-plugin.tx_rkwmailer < module.tx_rkwmailer

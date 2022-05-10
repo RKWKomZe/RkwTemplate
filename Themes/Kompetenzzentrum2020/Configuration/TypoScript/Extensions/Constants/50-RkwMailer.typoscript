@@ -1,4 +1,4 @@
-module.tx_rkwmailer {
+plugin.tx_rkwmailer {
     persistence {
         // cat=module.tx_rkwmailer//a; type=string; label=Default storage PID
         storagePid = 776
@@ -19,5 +19,3 @@ module.tx_rkwmailer {
         counterPixelPid = 905
     }
 }
-
-plugin.tx_rkwmailer < module.tx_rkwmailer

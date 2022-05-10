@@ -52,8 +52,7 @@ plugin.tx_rkwconsultant {
 	}
 }
 
-# Module configuration
-module.tx_rkwmailer {
+plugin.tx_rkwmailer {
 
 	settings {
 

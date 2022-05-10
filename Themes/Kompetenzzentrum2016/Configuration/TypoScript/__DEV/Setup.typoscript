@@ -52,8 +52,7 @@ plugin.tx_rkwconsultant {
 	}
 }
 
-# Module configuration
-module.tx_rkwmailer {
+plugin.tx_rkwmailer {
 
 	settings {
 
@@ -62,8 +61,6 @@ module.tx_rkwmailer {
 	}
 }
 rkwetracker.persistence < plugin.tx_rkwetracker.persistence
-
-
 
 
 plugin.tx_rkwbasics{

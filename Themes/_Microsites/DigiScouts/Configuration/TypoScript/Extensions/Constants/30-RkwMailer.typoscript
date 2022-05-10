@@ -1,4 +1,4 @@
-module.tx_rkwmailer {
+plugin.tx_rkwmailer {
 
     settings {
 
@@ -12,5 +12,3 @@ module.tx_rkwmailer {
         counterPixelPid = 5036
     }
 }
-
-plugin.tx_rkwmailer < module.tx_rkwmailer

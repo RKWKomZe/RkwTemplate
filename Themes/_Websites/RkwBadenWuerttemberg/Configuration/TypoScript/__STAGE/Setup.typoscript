@@ -43,8 +43,7 @@ page {
 # STANDARD- MARKER
 #############################################################################
 
-# Module configuration
-module.tx_rkwmailer {
+plugin.tx_rkwmailer {
 
 	settings {
 
@@ -52,9 +51,6 @@ module.tx_rkwmailer {
 		baseUrl = http://example.rkw.codes/
 	}
 }
-plugin.tx_rkwmailer < module.tx_rkwmailer
-
-
 
 plugin.tx_rkwbasics{
 

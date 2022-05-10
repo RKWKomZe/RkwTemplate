@@ -49,8 +49,7 @@ plugin.tx_rkwconsultant {
 	}
 }
 
-# Module configuration
-module.tx_rkwmailer {
+plugin.tx_rkwmailer {
 
 	settings {
 
@@ -58,10 +57,6 @@ module.tx_rkwmailer {
 		baseUrl = http://ressinnobau.rkw.local
 	}
 }
-plugin.tx_rkwmailer < module.tx_rkwmailer
-
-
-
 
 plugin.tx_rkwbasics{
 
