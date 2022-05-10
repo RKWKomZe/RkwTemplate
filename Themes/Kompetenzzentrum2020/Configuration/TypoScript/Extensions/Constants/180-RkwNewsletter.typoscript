@@ -30,9 +30,6 @@ plugin.tx_rkwnewsletter {
 
         # cat=plugin.tx_rkwnewsletter//a; type=integer; label=Pid for subscriptions
         subscriptionPid = 4695
-        
-        # cat=plugin.tx_rkwnewsletter//a; type=integer; label=Pid for webview of newsletter
-        webViewPid = 1        
 
         # cat=plugin.tx_rkwnewsletter//a; type=string; label=Required fields for subscription
         requiredFieldsSubscription =

@@ -42,16 +42,6 @@ plugin.tx_rkwregistration {
     }
 }
 
-plugin.tx_rkwmailer {
-
-    settings {
-
-        // URL for hard-links in templates
-        baseUrl = http://rkw-kompetenzzentrum.rkw.local
-
-    }
-}
-
 plugin.tx_rkwetracker {
 
     settings {
