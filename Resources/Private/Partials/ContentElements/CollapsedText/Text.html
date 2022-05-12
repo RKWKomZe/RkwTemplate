@@ -9,10 +9,8 @@
 
     <f:if condition="{data.bodytext}">
         <div class="collapsed-text">
-            <div class="collapsed-text__container is-hidden">
-                <rkwBasics:format.removeEmptyParagraphs>
-                    <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data.bodytext}</f:format.html>
-                </rkwBasics:format.removeEmptyParagraphs>
+            <div class="collapsed-text__container show-first-headline typo3-fsc is-hidden">
+                <f:render partial="TextPic" arguments="{_all}"/>
             </div>
             <button class="collapsed-text__btn"
                 data-opentext="{f:translate(key:'LLL:EXT:rkw_template/Resources/Private/Language/locallang.xlf:contentElement.collapsed.showMore')}"

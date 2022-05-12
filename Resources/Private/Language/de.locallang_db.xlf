@@ -1129,6 +1129,29 @@
                 <source>Add a tap-text element.</source>
                 <target>Ein Textelement, das mit Anker-Links in Tab-Optik verwendet werden kann.</target>
             </trans-unit>
+            
+            
+            <!-- AccordionContainer -->
+            <trans-unit id="contentElement.accordionContainer.title">
+                <source>Accordion-Container</source>
+                <target>Akkordeon-Container</target>
+            </trans-unit>
+            <trans-unit id="contentElement.accordionContainer.description">
+                <source>Adds an Accodion-Container.</source>
+                <target>Fügt einen Container für Akkordeon-Elemente ein.</target>
+            </trans-unit>
+
+
+            <!-- Accordion -->
+            <trans-unit id="contentElement.accordion.title">
+                <source>Accordion-Element</source>
+                <target>Akkordeon-Element</target>
+            </trans-unit>
+            <trans-unit id="contentElement.accordion.description">
+                <source>Add an accodion-element.</source>
+                <target>Ein Element für die Verwendung in einem Akkordeon.</target>
+            </trans-unit>
+            
 
 		</body>
 	</file>

@@ -4,12 +4,11 @@
 // Define element fields
 //===============================================================
 
-$GLOBALS['TCA']['tt_content']['types']['rkwtemplate_collapsed'] = [
+$GLOBALS['TCA']['tt_content']['types']['rkwtemplate_accordion'] = [
     'showitem' => '
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
             --palette--;;general,
             --palette--;;headers,
-        rowDescription,
         bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.images,
             image,
@@ -26,7 +25,17 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_collapsed'] = [
                 'type' => 'passthrough'
             ]
         ],
+        'header' => [
+            'config' => [
+                'eval' => 'trim, required',
+            ]
+        ],
         'header_position' => [
+            'config' => [
+                'type' => 'passthrough'
+            ]
+        ],
+        'header_layout' => [
             'config' => [
                 'type' => 'passthrough'
             ]
@@ -39,17 +48,6 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_collapsed'] = [
         'subheader' => [
             'config' => [
                 'type' => 'passthrough'
-            ]
-        ],
-        'header' => [
-            'config' => [
-                'eval' => 'trim',
-            ]
-        ],
-        'rowDescription' => [
-            'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.collapsed.rowDescription',
-            'config' => [
-                'eval' => 'trim',
             ]
         ],
         'bodytext' => [
@@ -70,9 +68,9 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_collapsed'] = [
     'tt_content',
     'CType',
     [
-        'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.collapsed.title',
-        'rkwtemplate_collapsed',
-        'rkw-template-collapsed',
+        'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.accordion.title',
+        'rkwtemplate_accordion',
+        'rkw-template-accordion',
     ],
     'textmedia',
     'after'
