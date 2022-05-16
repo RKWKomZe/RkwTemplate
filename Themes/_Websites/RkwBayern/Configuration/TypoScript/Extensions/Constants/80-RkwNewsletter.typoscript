@@ -15,5 +15,32 @@ plugin.tx_rkwnewsletter {
 
         # cat=plugin.tx_rkwnewsletter//a; type=integer; label=Pid for subscriptions
         subscriptionPid = 9389
+
+        pages {
+
+            # permissions for pages elements
+            permissions {
+                # on create of a new issue
+                stage1 {
+                    # cat=plugin.tx_rkwnewsletter//a; type=integer; label=GroupId permission
+                    groupId = 76
+                }
+                # perms which come into effect on approve of stage 1
+                stage2 {
+                    # cat=plugin.tx_rkwnewsletter//a; type=integer; label=GroupId permission
+                    groupId = 77
+                }
+                # perms which come into effect on approve of stage 2
+                release {
+                    # cat=plugin.tx_rkwnewsletter//a; type=integer; label=GroupId permission
+                    groupId = 78
+                }
+                # perms which come into effect after final sending of the issue
+                sent {
+                    # cat=plugin.tx_rkwnewsletter//a; type=integer; label=GroupId permission
+                    groupId = 78
+                }
+            }
+        }
     }
 }
