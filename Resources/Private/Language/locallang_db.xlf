@@ -7,7 +7,7 @@
             <!-- Primary and secondary color for landingpages -->
             <trans-unit id="pages.palettes.primary_color">
                 <source>Primary Color</source>
-            </trans-unit>   
+            </trans-unit>
             <trans-unit id="pages.tx_rkwtemplate_landingpage_primary_color">
                 <source>Color</source>
             </trans-unit>
@@ -16,21 +16,21 @@
             </trans-unit>
             <trans-unit id="pages.tx_rkwtemplate_landingpage_primary_effect_text_color">
                 <source>Text-Color On Effect-Color (e.g. Text on Buttons)</source>
-            </trans-unit>  
+            </trans-unit>
             <trans-unit id="pages.tx_rkwtemplate_landingpage_primary_top_text_color">
                <source>Text-Color When Used As Background</source>
             </trans-unit>
             <trans-unit id="pages.tx_rkwtemplate_landingpage_primary_top_effect_color">
                <source>Effect-Color When Used As Background</source>
-            </trans-unit>    
+            </trans-unit>
             <trans-unit id="pages.tx_rkwtemplate_landingpage_primary_top_effect_text_color">
                <source>Text-Color On Effect-Color When Used As Background</source>
-            </trans-unit>                       
-                    
-                    
+            </trans-unit>
+
+
             <trans-unit id="pages.palettes.secondary_color">
                 <source>Secondary Color</source>
-            </trans-unit>      
+            </trans-unit>
             <trans-unit id="pages.tx_rkwtemplate_landingpage_secondary_color">
                 <source>Color</source>
             </trans-unit>
@@ -39,21 +39,21 @@
             </trans-unit>
             <trans-unit id="pages.tx_rkwtemplate_landingpage_secondary_effect_text_color">
                 <source>Text-Color On Effect-Color (e.g. Text on Buttons)</source>
-            </trans-unit>  
+            </trans-unit>
             <trans-unit id="pages.tx_rkwtemplate_landingpage_secondary_top_text_color">
                <source>Text-Color When Used As Background</source>
            </trans-unit>
             <trans-unit id="pages.tx_rkwtemplate_landingpage_secondary_top_effect_color">
                <source>Effect-Color When Used As Background</source>
-            </trans-unit>    
+            </trans-unit>
             <trans-unit id="pages.tx_rkwtemplate_landingpage_secondary_top_effect_text_color">
                <source>Text-Color On Effect-Color When Used As Background</source>
-            </trans-unit> 
+            </trans-unit>
 
 
             <trans-unit id="pages.palettes.tertiary_color">
                 <source>Tertiary Color</source>
-            </trans-unit>      
+            </trans-unit>
             <trans-unit id="pages.tx_rkwtemplate_landingpage_tertiary_color">
                 <source>Color</source>
             </trans-unit>
@@ -62,21 +62,21 @@
             </trans-unit>
             <trans-unit id="pages.tx_rkwtemplate_landingpage_tertiary_effect_text_color">
                 <source>Text-Color On Effect-Color (e.g. Text on Buttons)</source>
-            </trans-unit>  
+            </trans-unit>
             <trans-unit id="pages.tx_rkwtemplate_landingpage_tertiary_top_text_color">
                <source>Text-Color When Used As Background</source>
            </trans-unit>
             <trans-unit id="pages.tx_rkwtemplate_landingpage_tertiary_top_effect_color">
                <source>Effect-Color When Used As Background</source>
-            </trans-unit>    
+            </trans-unit>
             <trans-unit id="pages.tx_rkwtemplate_landingpage_tertiary_top_effect_text_color">
                <source>Text-Color On Effect-Color When Used As Background-color</source>
-            </trans-unit>                
-      
-      
+            </trans-unit>
+
+
             <trans-unit id="pages.palettes.quarterly_color">
                 <source>Quarterly Color</source>
-            </trans-unit>      
+            </trans-unit>
             <trans-unit id="pages.tx_rkwtemplate_landingpage_quarterly_color">
                 <source>Color</source>
             </trans-unit>
@@ -85,25 +85,25 @@
             </trans-unit>
             <trans-unit id="pages.tx_rkwtemplate_landingpage_quarterly_effect_text_color">
                 <source>Text-Color On Effect-Color (e.g. Text on Buttons)</source>
-            </trans-unit>  
+            </trans-unit>
             <trans-unit id="pages.tx_rkwtemplate_landingpage_quarterly_top_text_color">
                <source>Text-Color When Used As Background</source>
            </trans-unit>
             <trans-unit id="pages.tx_rkwtemplate_landingpage_quarterly_top_effect_color">
                <source>Effect-Color When Used As Background</source>
-            </trans-unit>    
+            </trans-unit>
             <trans-unit id="pages.tx_rkwtemplate_landingpage_quarterly_top_effect_text_color">
                <source>Text-Color On Effect-Color When Used As Background-color</source>
-            </trans-unit>       
-            
-            
+            </trans-unit>
+
+
             <trans-unit id="pages.tx_rkwtemplate_landingpage_show_more_colors">
                <source>Show more color options – only do this for a very good reason!</source>
-            </trans-unit>   
+            </trans-unit>
             <trans-unit id="pages.tx_rkwtemplate_landingpage_show_more_colors.I.enabled">
                <source>Activate – I know what I'm doing!</source>
-            </trans-unit>  
-            
+            </trans-unit>
+
 
             <!-- Menu-stuff -->
             <trans-unit id="pages.tx_rkwtemplate_disable_flyout_menu">
@@ -166,10 +166,10 @@
             </trans-unit>
             <trans-unit id="contentElement.slider.imageManipulation.desktop-landingpage">
                 <source>Desktop (only Landingpage)</source>
-            </trans-unit>   
+            </trans-unit>
             <trans-unit id="contentElement.slider.imageManipulation.desktop-landingpage-big">
                 <source>Desktop (only Landingpage, big)</source>
-            </trans-unit>         
+            </trans-unit>
             <trans-unit id="contentElement.slider.imageManipulation.tablet">
                 <source>Tablet</source>
             </trans-unit>
@@ -204,7 +204,7 @@
 			</trans-unit>
 			<trans-unit id="contentElement.gridelements_pi1.landingpage.type.I.4">
 				<source>Quarterly Element (must be activated in the page properties)</source>
-			</trans-unit>	
+			</trans-unit>
             <trans-unit id="contentElement.gridelements_pi1.landingpage.layout.label">
                 <source>Image style (TilesContainer only)</source>
             </trans-unit>
@@ -231,8 +231,8 @@
             </trans-unit>
             <trans-unit id="contentElement.gridelements_pi1.landingpage.frameClass.inverted">
                 <source>Black Background, White Font</source>
-            </trans-unit>            		
-            			
+            </trans-unit>
+
 
             <!-- TilesContainer -->
             <trans-unit id="contentElement.tilesContainer.title">
@@ -267,6 +267,20 @@
                 <source>Content</source>
             </trans-unit>
             <trans-unit id="contentElement.collageContainer.header">
+                <source>Header</source>
+            </trans-unit>
+
+            <!-- TagcloudContainer -->
+            <trans-unit id="contentElement.tagcloudContainer.title">
+                <source>Tagcloud-Container</source>
+            </trans-unit>
+            <trans-unit id="contentElement.tagcloudContainer.description">
+                <source>Adds a tagcloud-container.</source>
+            </trans-unit>
+            <trans-unit id="contentElement.tagcloudContainer.content">
+                <source>Content</source>
+            </trans-unit>
+            <trans-unit id="contentElement.tagcloudContainer.header">
                 <source>Header</source>
             </trans-unit>
 
@@ -614,7 +628,7 @@
             <trans-unit id="contentElement.textImageBackground.type.I.4">
                 <source>White font on black background</source>
             </trans-unit>
-            
+
 
             <!-- Text -->
             <trans-unit id="contentElement.text.title">
@@ -827,7 +841,7 @@
             <trans-unit id="contentElement.collage.imageManipulation.default">
                 <source>Default</source>
             </trans-unit>
-            
+
              <!-- TabContainer -->
             <trans-unit id="contentElement.tabContainer.title">
                 <source>Tab-Container</source>
@@ -844,6 +858,17 @@
             <trans-unit id="contentElement.tab.description">
                 <source>Add a tap-text element.</source>
             </trans-unit>
+
+			<!-- TagcloudElement -->
+			<trans-unit id="contentElement.tagcloudElement.title">
+				<source>Tagcloud element</source>
+			</trans-unit>
+			<trans-unit id="contentElement.tagcloudElement.description">
+				<source>Adds a tagcloud element.</source>
+			</trans-unit>
+			<trans-unit id="contentElement.tagcloudElement.type.label">
+				<source>Weight</source>
+			</trans-unit>
 
 		</body>
 	</file>

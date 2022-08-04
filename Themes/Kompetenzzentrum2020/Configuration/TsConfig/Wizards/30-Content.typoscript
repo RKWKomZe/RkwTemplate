@@ -7,14 +7,14 @@
 [RKW\RkwTemplate\Condition\Backend\BackendLayoutCondition = "pagets__contentPages"]
 
     // remove everything - except for some items
-    mod.wizards.newContentElement.wizardItems.common.show := removeFromList(rkwtemplate_mission, rkwtemplate_multimedia, rkwtemplate_promoter, rkwtemplate_slider, rkwtemplate_topic, rkwtemplate_shortlink, rkwtemplate_overview, rkwtemplate_textimagebackground, rkwtemplate_gallery, rkwtemplate_listelement, rkwtemplate_collage, rkwtemplate_text, rkwtemplate_textpic, rkwtemplate_toclandingpage, rkwtemplate_morelist, rkwtemplate_siteheader, rkwtemplate_tile, rkwtemplate_button)
+    mod.wizards.newContentElement.wizardItems.common.show := removeFromList(rkwtemplate_mission, rkwtemplate_multimedia, rkwtemplate_promoter, rkwtemplate_slider, rkwtemplate_topic, rkwtemplate_shortlink, rkwtemplate_overview, rkwtemplate_textimagebackground, rkwtemplate_gallery, rkwtemplate_listelement, rkwtemplate_collage, rkwtemplate_tagcloudelement, rkwtemplate_text, rkwtemplate_textpic, rkwtemplate_toclandingpage, rkwtemplate_morelist, rkwtemplate_siteheader, rkwtemplate_tile, rkwtemplate_button)
     mod.wizards.newContentElement.wizardItems.special.show =
     mod.wizards.newContentElement.wizardItems.forms.show = form_formframework
     mod.wizards.newContentElement.wizardItems.plugins.show = *
     mod.wizards.newContentElement.wizardItems.menu.show =
 
     // remove grid elements by their ID (aka name)
-    tx_gridelements.excludeLayoutIds = sliderContainer, topicContainer, logoContainer, promoterContainer, listContainer, stickyFooterContainer, tilesContainer, galleryContainer, collageContainer, moreListContainer,  contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerOneColOrderForm, contentContainerLandingpageTwoCols, contentContainerLandingpageOneCol
+    tx_gridelements.excludeLayoutIds = sliderContainer, topicContainer, logoContainer, promoterContainer, listContainer, stickyFooterContainer, tilesContainer, galleryContainer, collageContainer, moreListContainer, tagcloudContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerOneColOrderForm, contentContainerLandingpageTwoCols, contentContainerLandingpageOneCol
 
 [end]
 
@@ -25,7 +25,7 @@
     TCEFORM.tt_content.CType.keepItems = gridelements_pi1
 
     // remove grid elements by their ID (aka name)
-    tx_gridelements.excludeLayoutIds = sliderContainer, topicContainer, logoContainer, promoterContainer, listContainer, stickyFooterContainer, tilesContainer, galleryContainer, collageContainer, moreListContainer, tabContainer, accordionContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerOneColOrderForm, contentContainerLandingpageTwoCols, contentContainerLandingpageOneCol
+    tx_gridelements.excludeLayoutIds = sliderContainer, topicContainer, logoContainer, promoterContainer, listContainer, stickyFooterContainer, tilesContainer, galleryContainer, collageContainer, moreListContainer, tabContainer, accordionContainer, tagcloudContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerOneColOrderForm, contentContainerLandingpageTwoCols, contentContainerLandingpageOneCol
 
 [end]
 
@@ -37,6 +37,6 @@
     TCEFORM.tt_content.CType.keepItems = list
 
     // remove grid elements by their ID (aka name)
-    tx_gridelements.excludeLayoutIds = sliderContainer, topicContainer, logoContainer, promoterContainer, listContainer, stickyFooterContainer, tilesContainer, galleryContainer, collageContainer, moreListContainer, tabContainer, accordionContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerOneCol, contentContainerOneColPagination, contentContainerOneColOrderForm, contentContainerLandingpageTwoCols, contentContainerLandingpageOneCol
+    tx_gridelements.excludeLayoutIds = sliderContainer, topicContainer, logoContainer, promoterContainer, listContainer, stickyFooterContainer, tilesContainer, galleryContainer, collageContainer, moreListContainer, tabContainer, accordionContainer, tagcloudContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerOneCol, contentContainerOneColPagination, contentContainerOneColOrderForm, contentContainerLandingpageTwoCols, contentContainerLandingpageOneCol
 
 [end]

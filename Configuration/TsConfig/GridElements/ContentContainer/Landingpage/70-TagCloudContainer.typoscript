@@ -1,0 +1,22 @@
+tx_gridelements.setup.tagcloudContainer {
+
+    title = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.tagcloudContainer.title
+    description = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.tagcloudContainer.description
+    config {
+        colCount = 1
+        rowCount = 1
+        rows {
+            1 {
+                columns {
+                    1 {
+                        name = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.tagcloudElement.title
+                        colPos = 90
+                        allowed {
+                            CType = rkwtemplate_tagcloudelement
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
