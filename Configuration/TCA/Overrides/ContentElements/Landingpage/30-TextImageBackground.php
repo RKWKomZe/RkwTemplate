@@ -12,7 +12,7 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_textimagebackground'] = [
         rowDescription,
         bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.images,
-            image,            
+            image,
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,
             --palette--;;language,
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
@@ -20,11 +20,6 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_textimagebackground'] = [
     ',
     'columnsOverrides' => [
         'date' => [
-            'config' => [
-                'type' => 'passthrough'
-            ]
-        ],
-        'header_position' => [
             'config' => [
                 'type' => 'passthrough'
             ]

@@ -7,52 +7,55 @@
 
     <f:section name="Main">
 
-        <div id="c{data.uid}" class="contentbox content-padding-layoutmax download-mod has-bg">
-            
-            <div class="parallax-container">
-                <div class="parallax">
-                    <img src="{f:uri.image(image:images.0,cropVariant:'default')}" alt="{image.title}" loading="lazy">
-                </div>
+        <section id="c{data.uid}" class="contentbox content-padding-layoutmax download-mod {f:if(condition: '{data.header_position} == 1', then: 'primary-mod')}{f:if(condition: '{data.header_position} == 2', then: 'secondary-mod')}">
+
+            <div class="media-container">
+                <img src="{f:uri.image(image:images.0,cropVariant:'default')}" alt="{image.title}" loading="lazy">
             </div>
 
-            <div class="flex-container download-mod__content {f:if(condition: '({data.header_layout} == 2) || ({data.header_layout} == 4))', then: 'download-mod__content--inverted')} {f:if(condition: '{data.header_layout} >= 3)', then: 'download-mod__content--background')}">
-                <div class="typo3-fsc flex-basis-7">
-                    <div class="frame">
-                        <header>
-                            <f:render partial="Header" arguments="{
-                                header: data.header,
-                                layout: data.header_layout,
-                                link: data.header_link
-                            }" />
-                        </header>
+            <div class="flex-container download-mod__content-wrap">
+                <div class="download-mod__content flex-basis-7">
 
-                        <rkwBasics:format.removeEmptyParagraphs>
-                            <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data.bodytext}</f:format.html>
-                        </rkwBasics:format.removeEmptyParagraphs>
+                    <div class="download-mod__content-inner typo3-fsc">
+                        <div class="frame">
+                            <header>
+                                <f:render partial="Header" arguments="{
+                                    header: data.header,
+                                    layout: data.header_layout,
+                                    link: data.header_link
+                                }" />
+                            </header>
 
-                        <f:if condition="{data.header_link}">
-                            <f:if condition="<rkwBasics:string.contains needle='#' haystack='{data.header_link}' /> == 1">
-                                <f:then>
-                                    <f:link.typolink
-                                        parameter="{data.header_link}"
-                                        class="btn btn--cta"
-                                        title="{data.rowDescription}"
-                                        additionalAttributes="{data-target:'{data.header_link}'}"
-                                    >{data.rowDescription}</f:link.typolink>
-                                </f:then>
-                                <f:else>
-                                    <f:link.typolink
-                                        parameter="{data.header_link}"
-                                        class="btn btn--cta"
-                                        title="{data.rowDescription}"
-                                    >{data.rowDescription}</f:link.typolink>
-                                </f:else>
+                            <rkwBasics:format.removeEmptyParagraphs>
+                                <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data.bodytext}</f:format.html>
+                            </rkwBasics:format.removeEmptyParagraphs>
+
+                            <f:if condition="{data.header_link}">
+                                <f:if condition="<rkwBasics:string.contains needle='#' haystack='{data.header_link}' /> == 1">
+                                    <f:then>
+                                        <f:link.typolink
+                                            parameter="{data.header_link}"
+                                            class="btn btn--cta"
+                                            title="{data.rowDescription}"
+                                            additionalAttributes="{data-target:'{data.header_link}'}"
+                                        >{data.rowDescription}</f:link.typolink>
+                                    </f:then>
+                                    <f:else>
+                                        <f:link.typolink
+                                            parameter="{data.header_link}"
+                                            class="btn btn--cta"
+                                            title="{data.rowDescription}"
+                                        >{data.rowDescription}</f:link.typolink>
+                                    </f:else>
+                                </f:if>
                             </f:if>
-                        </f:if>
+                        </div>
                     </div>
+                    <div class="download-mod__background"></div>
+
                 </div>
             </div>
-        </div>
+        </section>
 
     </f:section>
 </html>
