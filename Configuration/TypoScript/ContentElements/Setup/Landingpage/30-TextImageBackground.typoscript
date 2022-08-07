@@ -1,4 +1,4 @@
-tt_content {
+  tt_content {
     rkwtemplate_textimagebackground =< lib.contentElement
     rkwtemplate_textimagebackground {
         templateName = Landingpage/TextImageBackground

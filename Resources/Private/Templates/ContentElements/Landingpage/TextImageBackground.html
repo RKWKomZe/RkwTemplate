@@ -1,13 +1,14 @@
 <html
     xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
     xmlns:rkwBasics="http://typo3.org/ns/RKW/RkwBasics/ViewHelpers"
+    xmlns:rkwTemplate="http://typo3.org/ns/RKW/RkwTemplate/ViewHelpers"
     data-namespace-typo3-fluid="true">
 
     <f:layout name="Rkw" />
 
     <f:section name="Main">
 
-        <section id="c{data.uid}" class="contentbox content-padding-layoutmax download-mod {f:if(condition: '{data.header_position} == 1', then: 'primary-mod')}{f:if(condition: '{data.header_position} == 2', then: 'secondary-mod')}">
+        <section id="c{data.uid}" class="contentbox content-padding-layoutmax download-mod {rkwTemplate:GetLandingpageElementModClass(headerPosition:'{data.header_position}')}">
 
             <div class="media-container">
                 <img src="{f:uri.image(image:images.0,cropVariant:'default')}" alt="{image.title}" loading="lazy">

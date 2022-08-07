@@ -300,8 +300,6 @@
                 <target>Schwarzer Hintergrund, Weiße Schrift</target>
             </trans-unit>
 
-
-
             <!-- TilesContainer -->
             <trans-unit id="contentElement.tilesContainer.title">
                 <source>Tiles-Container</source>
