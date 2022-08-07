@@ -1,17 +1,18 @@
 <html
     xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
     xmlns:rkwBasics="http://typo3.org/ns/RKW/RkwBasics/ViewHelpers"
+    xmlns:rkwTemplate="http://typo3.org/ns/RKW/RkwTemplate/ViewHelpers"
     data-namespace-typo3-fluid="true">
 
     <f:layout name="Rkw" />
 
     <f:section name="Main">
-        <f:if condition="<rkwBasics:isEmpty string='{data.tx_gridelements_view_column_90}' /> == 0">
-            <div id="c{data.uid}" class="contentbox content-padding-layoutmax tagcloud-mod {f:if(condition: '{data.header_position} == 1', then: 'primary-mod')}{f:if(condition: '{data.header_position} == 2', then: 'secondary-mod')}">
+        <f:if condition="<rkwBasics:isEmpty string='{data.tx_gridelements_view_column_160}' /> == 0">
+            <div id="c{data.uid}" class="contentbox content-padding-layoutmax tagcloud-mod {rkwTemplate:GetLandingpageElementModClass(headerPosition:'{data.header_position}')}">
                 <div class="flex-container center-main">
                     <div class="flex-basis-8">
                         <ul class="list-unstyled flex align-center center-main" role="navigation" aria-label="Tag cloud">
-                            <f:format.raw>{data.tx_gridelements_view_column_90}</f:format.raw>
+                            <f:format.raw>{data.tx_gridelements_view_column_160}</f:format.raw>
                         </ul>
                     </div>
                 </div>

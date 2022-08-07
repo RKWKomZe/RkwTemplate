@@ -3,7 +3,7 @@
 //=========================================================
 mod.wizards.newContentElement.wizardItems.common {
     elements {
-        rkwtemplate_listelement {
+        rkwtemplate_tagcloudelement {
             iconIdentifier = rkw-template-tagcloudelement
             title = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.tagcloudElement.title
             description = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.tagcloudElement.description
