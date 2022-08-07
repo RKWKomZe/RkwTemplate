@@ -45,7 +45,7 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_testimonial'] = [
         ],
         'header' => [
             'config' => [
-                'eval' => 'trim',
+                'eval' => 'required',
             ]
         ],
         'bodytext' => [
