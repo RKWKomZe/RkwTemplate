@@ -242,6 +242,14 @@
                 <source>Adds a tiles-container.</source>
             </trans-unit>
 
+            <!-- TestimonialContainer -->
+            <trans-unit id="contentElement.testimonialContainer.title">
+                <source>Testimonial-Container</source>
+            </trans-unit>
+            <trans-unit id="contentElement.testimonialContainer.description">
+                <source>Adds a testimonial-container.</source>
+            </trans-unit>
+
             <!-- GalleryContainer -->
             <trans-unit id="contentElement.galleryContainer.title">
                 <source>Gallery-Container</source>
@@ -681,6 +689,20 @@
             <trans-unit id="contentElement.tile.description">
                 <source>Adds an tile list-element.</source>
             </trans-unit>
+
+			<!-- Testimonial -->
+			<trans-unit id="contentElement.testimonial.title">
+				<source>Testimonial</source>
+			</trans-unit>
+			<trans-unit id="contentElement.testimonial.description">
+				<source>Adds a testimonial element.</source>
+			</trans-unit>
+			<trans-unit id="contentElement.testimonial.header.label">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="contentElement.testimonial.bodytext.label">
+				<source>Quote</source>
+			</trans-unit>
 
             <!-- MoreList -->
             <trans-unit id="contentElement.moreList.title">

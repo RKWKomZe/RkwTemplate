@@ -312,6 +312,16 @@
                 <target>Fügt einen Container für Kacheln ein. Üblicherweise wird dieses Element auf einer Landingpage eingesetzt.</target>
             </trans-unit>
 
+            <!-- TestimonialContainer -->
+            <trans-unit id="contentElement.testimonialContainer.title">
+                <source>Testimonial-Container</source>
+                <target>Testimonial-Container</target>
+            </trans-unit>
+            <trans-unit id="contentElement.testimonialContainer.description">
+                <source>Adds a testimonial-container.</source>
+                <target>Fügt einen Container für Testimonials ein. Üblicherweise wird dieses Element auf einer Landingpage eingesetzt.</target>
+            </trans-unit>
+
             <!-- GalleryContainer -->
             <trans-unit id="contentElement.galleryContainer.title">
                 <source>Gallery-Container</source>
@@ -923,6 +933,23 @@
                 <target>Eine Kachel mit Bild und zugehörigem Modal bei Klick auf jeweils enthaltenen Link, um weitere Informationen zu hinterlegen.</target>
             </trans-unit>
 
+            <!-- Testimonial -->
+            <trans-unit id="contentElement.testimonial.title">
+                <source>Testimonial</source>
+                <target>Testimonial</target>
+            </trans-unit>
+            <trans-unit id="contentElement.testimonial.description">
+                <source>Adds a testimonial element.</source>
+                <target>Eine Fläche mit Bild und Text zur Darstellung eines Zitats.</target>
+            </trans-unit>
+			<trans-unit id="contentElement.testimonial.header.label">
+				<source>Name</source>
+				<target>Urheber</target>
+			</trans-unit>
+			<trans-unit id="contentElement.testimonial.bodytext.label">
+				<source>Quote</source>
+				<target>Zitat</target>
+			</trans-unit>
 
             <!-- MoreList -->
             <trans-unit id="contentElement.moreList.title">

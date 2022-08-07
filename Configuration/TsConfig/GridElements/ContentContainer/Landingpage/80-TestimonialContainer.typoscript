@@ -1,0 +1,23 @@
+tx_gridelements.setup.testimonialContainer {
+
+    title = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.testimonialContainer.title
+    description = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.testimonialContainer.description
+    config {
+        colCount = 1
+        rowCount = 1
+        rows {
+            1 {
+                columns {
+                    1 {
+                        name = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.testimonial.title
+                        colPos = 170
+                        maxitems = 1
+                        allowed {
+                            CType = rkwtemplate_testimonial
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
