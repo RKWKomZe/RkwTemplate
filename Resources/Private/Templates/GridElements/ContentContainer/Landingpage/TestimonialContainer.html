@@ -8,10 +8,12 @@
 
     <f:section name="Main">
 
-        <section
-            id="c{data.uid}"
-            class="contentbox content-padding-layoutmax typo3-fsc testimonial-mod {rkwTemplate:GetLandingpageElementModClass(headerPosition:'{data.header_position}')}"
-        >
+        <f:if condition="{data.tx_gridelements_columns} != 50">
+            <section
+                id="c{data.uid}"
+                class="contentbox content-padding-layoutmax typo3-fsc testimonial-mod {rkwTemplate:GetLandingpageElementModClass(headerPosition:'{data.header_position}')}"
+            >
+        </f:if>
 
             <f:if condition="<rkwBasics:isEmpty string='{data.tx_gridelements_view_column_170}' /> == 0">
 
@@ -24,7 +26,9 @@
 
             </f:if>
 
-        </section>
+        <f:if condition="{data.tx_gridelements_columns} != 50">
+            </section>
+        </f:if>
 
     </f:section>
 
