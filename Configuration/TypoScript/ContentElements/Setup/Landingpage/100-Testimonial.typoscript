@@ -1,7 +1,7 @@
-  tt_content {
-    rkwtemplate_textimagebackground =< lib.contentElement
-    rkwtemplate_textimagebackground {
-        templateName = Landingpage/TextImageBackground
+tt_content {
+    rkwtemplate_testimonial =< lib.contentElement
+    rkwtemplate_testimonial {
+        templateName = Landingpage/Testimonial
 
         // loading images as references
         dataProcessing {
