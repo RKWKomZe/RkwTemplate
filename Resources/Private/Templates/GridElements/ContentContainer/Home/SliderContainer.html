@@ -7,10 +7,10 @@
 
     <f:section name="Main">
         <f:if condition="<rkwBasics:isEmpty string='{data.tx_gridelements_view_column_10}' /> == 0">
-            <div id="carouselSlider" class="carousel owl-carousel slide">
-                <div class="carousel-inner">
+            <div class="slider owl-carousel slide">
+                <div class="slider-inner">
                     <f:if condition="{f:count(subject: data.tx_gridelements_view_children)} > 1">
-                        <div class="carousel-indicators">
+                        <div class="slider-indicators">
                             <f:for each="{data.tx_gridelements_view_children}" as="slides" iteration="iterator">
                                 <button type="button" aria-label="{f:translate(key:'LLL:EXT:rkw_template/Resources/Private/Language/locallang.xlf:gridElement.sliderContainer.showSlide', arguments: '{1 : iterator.cycle}')}"></button>
                             </f:for>

@@ -1,0 +1,35 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:rkwBasics="http://typo3.org/ns/RKW/RkwBasics/ViewHelpers"
+    xmlns:rkwTemplate="http://typo3.org/ns/RKW/RkwTemplate/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+    <f:layout name="Rkw" />
+
+    <f:section name="Main">
+
+        <f:if condition="{data.tx_gridelements_columns} != 50">
+            <section
+                id="c{data.uid}"
+                class="contentbox content-padding-layoutmax typo3-fsc testimonial-mod {rkwTemplate:GetLandingpageElementModClass(headerPosition:'{data.header_position}')}"
+            >
+        </f:if>
+
+            <f:if condition="<rkwBasics:isEmpty string='{data.tx_gridelements_view_column_170}' /> == 0">
+
+                <div
+                    class="testimonial"
+                    style="background-image: url({f:uri.image(image:images.0,cropVariant:'default')})"
+                >
+                    <f:format.raw>{data.tx_gridelements_view_column_170}</f:format.raw>
+                </div>
+
+            </f:if>
+
+        <f:if condition="{data.tx_gridelements_columns} != 50">
+            </section>
+        </f:if>
+
+    </f:section>
+
+</html>
