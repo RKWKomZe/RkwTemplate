@@ -177,13 +177,31 @@
                 <source>Mobile</source>
             </trans-unit>
 
-
             <!-- SliderContainer -->
 			<trans-unit id="contentElement.sliderContainer.title">
 				<source>SliderContainer</source>
 			</trans-unit>
 			<trans-unit id="contentElement.sliderContainer.description">
 				<source>Adds a slide-container.</source>
+			</trans-unit>
+
+			<!-- BoxSlider -->
+			<trans-unit id="contentElement.boxSlider.title">
+				<source>BoxSlider</source>
+			</trans-unit>
+			<trans-unit id="contentElement.boxSlider.description">
+				<source>Adds a box slider.</source>
+			</trans-unit>
+			<trans-unit id="contentElement.boxSlider.subheader.label">
+				<source>Label for Button</source>
+			</trans-unit>
+
+			<!-- BoxSliderContainer -->
+			<trans-unit id="contentElement.boxSliderContainer.title">
+				<source>BoxSliderContainer</source>
+			</trans-unit>
+			<trans-unit id="contentElement.boxSliderContainer.description">
+				<source>Adds a box slide-container.</source>
 			</trans-unit>
 
             <!-- LandingpageGridElements -->
@@ -249,6 +267,7 @@
             <trans-unit id="contentElement.testimonialContainer.description">
                 <source>Adds a testimonial-container.</source>
             </trans-unit>
+
 
             <!-- GalleryContainer -->
             <trans-unit id="contentElement.galleryContainer.title">
