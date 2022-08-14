@@ -1,0 +1,22 @@
+tx_gridelements.setup.boxSliderContainer {
+
+    title = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.boxSliderContainer.title
+    description = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.boxSliderContainer.description
+    config {
+        colCount = 1
+        rowCount = 1
+        rows {
+            1 {
+                columns {
+                    1 {
+                        name = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.boxSliderElement.title
+                        colPos = 180
+                        allowed {
+                            CType = rkwtemplate_boxsliderelement
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

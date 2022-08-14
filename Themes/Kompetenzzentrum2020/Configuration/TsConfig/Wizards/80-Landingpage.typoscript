@@ -41,7 +41,7 @@
     TCEFORM.tt_content.CType.keepItems = gridelements_pi1
 
     // remove grid elements by their ID (aka name)
-    tx_gridelements.excludeLayoutIds = sliderContainer, logoContainer, topicContainer, promoterContainer, tabContainer, accordionContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerOneCol, contentContainerOneColPagination, contentContainerOneColOrderForm, contentContainerLandingpageTwoCols, contentContainerLandingpageOneCol, tilesContainer, testimonialContainer, galleryContainer, collageContainer, listContainer, moreListContainer, tagcloudContainer
+    tx_gridelements.excludeLayoutIds = sliderContainer, logoContainer, topicContainer, promoterContainer, tabContainer, accordionContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerOneCol, contentContainerOneColPagination, contentContainerOneColOrderForm, contentContainerLandingpageTwoCols, contentContainerLandingpageOneCol, tilesContainer, testimonialContainer, galleryContainer, collageContainer, listContainer, moreListContainer, tagcloudContainer, boxSliderContainer
 
 [end]
 
@@ -52,7 +52,7 @@
     TCEFORM.tt_content.CType.keepItems = gridelements_pi1
 
     // remove grid elements by their ID (aka name)
-    tx_gridelements.excludeLayoutIds = logoContainer, topicContainer, promoterContainer, tabContainer, accordionContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerOneCol, contentContainerOneColPagination, contentContainerOneColOrderForm, contentContainerLandingpageTwoCols, contentContainerLandingpageOneCol, stickyFooterContainer, tilesContainer, testimonialContainer, galleryContainer, collageContainer, listContainer, moreListContainer,  tagcloudContainer
+    tx_gridelements.excludeLayoutIds = logoContainer, topicContainer, promoterContainer, tabContainer, accordionContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerOneCol, contentContainerOneColPagination, contentContainerOneColOrderForm, contentContainerLandingpageTwoCols, contentContainerLandingpageOneCol, stickyFooterContainer, tilesContainer, testimonialContainer, galleryContainer, collageContainer, listContainer, moreListContainer, tagcloudContainer, boxSliderContainer
 
 [end]
 
