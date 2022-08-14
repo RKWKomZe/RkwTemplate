@@ -723,6 +723,14 @@
 				<source>Quote</source>
 			</trans-unit>
 
+            <!-- Keyvisual -->
+            <trans-unit id="contentElement.keyvisual.title">
+                <source>Keyvisual</source>
+            </trans-unit>
+            <trans-unit id="contentElement.keyvisual.description">
+                <source>Adds a keyvisual.</source>
+            </trans-unit>
+
             <!-- MoreList -->
             <trans-unit id="contentElement.moreList.title">
                 <source>More List</source>

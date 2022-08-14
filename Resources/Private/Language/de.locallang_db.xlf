@@ -779,6 +779,16 @@
                 <target>Fügt ein Inhaltsverzeichnis ein. Berücksichtigt werden darin die Überschriften (Feld: Überschrift) aller Inhaltselemente der aktuellen Seite.</target>
             </trans-unit>
 
+            <!-- Keyvisual -->
+            <trans-unit id="contentElement.keyvisual.title">
+                <source>Keyvisual</source>
+                <target>Keyvisual</target>
+            </trans-unit>
+            <trans-unit id="contentElement.keyvisual.description">
+                <source>Adds a keyvisual.</source>
+                <target>Fügt ein Keyvisual ein. Wird üblicherweise in der Marginalspalte einer Landingpage benutzt.</target>
+            </trans-unit>
+
             <!-- TableOfContentsLandingpage -->
             <trans-unit id="contentElement.toclandingpage.title">
                 <source>Table Of Contents</source>
