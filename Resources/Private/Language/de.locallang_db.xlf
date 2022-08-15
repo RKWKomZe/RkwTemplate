@@ -227,7 +227,6 @@
                 <source>Mobile</source>
             </trans-unit>
 
-
             <!-- SliderContainer -->
             <trans-unit id="contentElement.sliderContainer.title">
                 <source>Slider-Container</source>
@@ -237,6 +236,29 @@
                 <source>Adds a slide-container.</source>
                 <target>Fügt einen Container für Slider ein. Üblicherweise wird dieses Element auf der Startseite eingesetzt.</target>
             </trans-unit>
+
+			<!-- BoxSlider -->
+			<trans-unit id="contentElement.boxSlider.title">
+				<source>BoxSlider</source>
+				<target>BoxSlider-Element</target>
+			</trans-unit>
+			<trans-unit id="contentElement.boxSlider.description">
+				<source>Adds a box slider.</source>
+				<target>Ein BoxSlider-Element für die Verwendung im BoxSlider-Container.</target>
+			</trans-unit>
+			<trans-unit id="contentElement.boxSlider.subheader.label">
+				<source>Label for Button</source>
+				<target>Beschriftung für Button</target>
+			</trans-unit>
+
+			<!-- BoxSliderContainer -->
+			<trans-unit id="contentElement.boxSliderContainer.title">
+				<source>BoxSliderContainer</source>
+			</trans-unit>
+			<trans-unit id="contentElement.boxSliderContainer.description">
+				<source>Adds a box slide-container.</source>
+				<target>Fügt einen Container für BoxSlider ein. Üblicherweise wird dieses Element auf einer Landingpage eingesetzt.</target>
+			</trans-unit>
 
             <!-- LandingpageGridElements -->
 			<trans-unit id="contentElement.gridelements_pi1.landingpage.type.label">
@@ -757,6 +779,16 @@
                 <target>Fügt ein Inhaltsverzeichnis ein. Berücksichtigt werden darin die Überschriften (Feld: Überschrift) aller Inhaltselemente der aktuellen Seite.</target>
             </trans-unit>
 
+            <!-- Keyvisual -->
+            <trans-unit id="contentElement.keyvisual.title">
+                <source>Keyvisual</source>
+                <target>Keyvisual</target>
+            </trans-unit>
+            <trans-unit id="contentElement.keyvisual.description">
+                <source>Adds a keyvisual.</source>
+                <target>Fügt ein Keyvisual ein. Wird üblicherweise in der Marginalspalte einer Landingpage benutzt.</target>
+            </trans-unit>
+
             <!-- TableOfContentsLandingpage -->
             <trans-unit id="contentElement.toclandingpage.title">
                 <source>Table Of Contents</source>
@@ -863,7 +895,7 @@
                 <target>Text &amp; Bilder</target>
             </trans-unit>
             <trans-unit id="contentElement.textpic.description">
-                <source>Adds a combinded text-images-element.</source>
+                <source>Adds a combined text-images-element.</source>
                 <target>Text &amp; Bilder zum Einsatz auf einer Landingpage</target>
             </trans-unit>
 

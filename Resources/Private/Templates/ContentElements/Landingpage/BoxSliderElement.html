@@ -1,0 +1,47 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:rkwEtracker="http://typo3.org/ns/RKW/RkwEtracker/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+    <f:layout name="Rkw" />
+
+    <f:section name="Main">
+
+        <div class="boxslider-item">
+            <div class="tile">
+                <div class="tile__header has-img">
+                    <div class="tile__img">
+                        <!--
+                        <picture>
+                            <source srcset="../img/publications/tile-header2.png" media="(min-width: 0px) AND (min-resolution: 192dpi)">
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" alt="Bild" loading="lazy" srcset="../img/publications/tile-header2.png">
+                        </picture>
+                        -->
+                        <img src="{f:uri.image(image:images.0,cropVariant:'default')}" alt="{image.title}" loading="lazy">
+                    </div>
+                </div>
+                <div class="tile__content">
+                    <h3 class="tile__title icon">
+                        <span class="tile__title-text">{data.header}</span>
+                    </h3>
+                    <div class="tile__text">
+                        <f:format.raw>{data.bodytext}</f:format.raw>
+                        <f:if condition="{data.header_link}">
+                            <div class="flex-container btn-list--center">
+                                <rkwEtracker:link.typolink parameter="{data.header_link}" class="btn btn--primary">
+                                    {data.subheader}
+                                </rkwEtracker:link.typolink>
+                            </div>
+                        </f:if>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </f:section>
+</html>
+
+
+
+
