@@ -670,7 +670,7 @@
                 <source>Text &amp; Images</source>
             </trans-unit>
             <trans-unit id="contentElement.textpic.description">
-                <source>Adds a combinded text-images-element.</source>
+                <source>Adds a combined text-images-element.</source>
             </trans-unit>
 
             <!-- TextWithButton -->

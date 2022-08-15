@@ -895,7 +895,7 @@
                 <target>Text &amp; Bilder</target>
             </trans-unit>
             <trans-unit id="contentElement.textpic.description">
-                <source>Adds a combinded text-images-element.</source>
+                <source>Adds a combined text-images-element.</source>
                 <target>Text &amp; Bilder zum Einsatz auf einer Landingpage</target>
             </trans-unit>
 
