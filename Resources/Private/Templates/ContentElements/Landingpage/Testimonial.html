@@ -6,14 +6,21 @@
 
     <f:section name="Main">
 
-        <div class="testimonial__person">
-            <f:if condition="{f:count(subject: images)} > 0">
-                <div class="testimonial__image">
-                    <img src="{f:uri.image(image:images.0,cropVariant:'default')}" alt="{image.title}" loading="lazy">
+        <f:if condition="{f:count(subject: images)} > 0">
+            <f:then>
+                <div class="testimonial__person">
+                    <div class="testimonial__image">
+                        <img src="{f:uri.image(image:images.0,cropVariant:'default')}" alt="{image.title}" loading="lazy">
+                    </div>
+                    <div class="testimonial__name">{data.header}</div>
                 </div>
-            </f:if>
-            <div class="testimonial__name">{data.header}</div>
-        </div>
+            </f:then>
+            <f:else>
+                <div class="testimonial__person testimonial__person--no-image">
+                    <div class="testimonial__name">{data.header}</div>
+                </div>
+            </f:else>
+        </f:if>
 
         <blockquote class="testimonial__text">
             <f:format.nl2br><f:format.stripTags>{data.bodytext}"</f:format.stripTags></f:format.nl2br>

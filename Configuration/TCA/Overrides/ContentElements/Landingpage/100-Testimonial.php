@@ -56,7 +56,6 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_testimonial'] = [
         ],
         'image' => [
             'config' => [
-                'minitems' => 1,
                 'maxitems' => 1,
                 'overrideChildTca' => [
                     'columns' => [

@@ -17,13 +17,23 @@
 
             <f:if condition="<rkwBasics:isEmpty string='{data.tx_gridelements_view_column_170}' /> == 0">
 
-                <div
-                    class="testimonial"
-                    style="background-image: url({f:uri.image(image:images.0,cropVariant:'default')})"
-                >
-                    <f:format.raw>{data.tx_gridelements_view_column_170}</f:format.raw>
-                </div>
-
+                <f:if condition="({f:count(subject:images)} > 0)">
+                    <f:then>
+                        <div
+                            class="testimonial"
+                            style="background-image: url({f:uri.image(image:images.0,cropVariant:'default')})"
+                        >
+                            <f:format.raw>{data.tx_gridelements_view_column_170}</f:format.raw>
+                        </div>
+                    </f:then>
+                    <f:else>
+                        <div
+                         class="testimonial"
+                        >
+                            <f:format.raw>{data.tx_gridelements_view_column_170}</f:format.raw>
+                        </div>
+                    </f:else>
+                </f:if>
             </f:if>
 
         <f:if condition="{data.tx_gridelements_columns} != 50">
