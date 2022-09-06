@@ -23,9 +23,23 @@
 
     <f:section name="Landingpage">
         <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.content.landingpageStickyFooter', data:'{data}')}">
-            <div class="footer--fixed js-fixed-footer">
-                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.landingpageStickyFooter" data="{data}" />
-            </div>
+            <f:then>
+                <div class="footer--fixed js-fixed-footer">
+                    <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.landingpageStickyFooter" data="{data}" />
+                </div>
+            </f:then>
+            <f:else>
+                <div class="footer--toplink js-fixed-footer">
+                    <div class="footer-totop">
+                        <a href="#top" data-target="#top" class="footer-totop__link">
+                            <svg class="icon">
+                                <use xlink:href="#ic-arrow-footer" />
+                            </svg>
+                            <f:translate key="LLL:EXT:rkw_template/Resources/Private/Language/locallang.xlf:contentElement.stickyFooterContainer.labelScrollToTop" />
+                        </a>
+                    </div>
+                </div>
+            </f:else>
         </f:if>
     </f:section>
 
