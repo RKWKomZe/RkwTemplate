@@ -93,7 +93,7 @@
 										<f:render section="Main"/>
 										<f:render partial="Wraps/Topic/Recommendation" section="Footer" arguments="{_all}" />
 									</f:case>
-									
+
 									<f:comment><!-- everything else--></f:comment>
 									<f:defaultCase>
 										<div id="c{data.uid}" class="frame show-first-headline frame-{data.frame_class} frame-type-{data.CType} frame-layout-{data.layout}{f:if(condition: data.space_before_class, then: ' frame-space-before-{data.space_before_class}')}{f:if(condition: data.space_after_class, then: ' frame-space-after-{data.space_after_class}')}">
@@ -121,7 +121,7 @@
 									<f:render section="Footer" optional="true">
 										<f:render partial="Footer/All" arguments="{_all}" />
 									</f:render>
-								</div>							
+								</div>
 							</f:else>
 						</f:if>
 					</f:else>
@@ -134,7 +134,7 @@
 				============================================================= --></f:comment>
 
 				<f:comment><!-- Default --></f:comment>
-				<div id="c{data.uid}" class="frame frame-{data.frame_class} {f:if(condition:'{data.tstamp} >= 1603670400', then: ' show-first-headline')} frame-type-{data.CType} frame-layout-{data.layout}{f:if(condition: data.space_before_class, then: ' frame-space-before-{data.space_before_class}')}{f:if(condition: data.space_after_class, then: ' frame-space-after-{data.space_after_class}')} {f:if(condition:'{data.tx_gridelements_columns} == 60', then: ' contentbox')}">
+				<div id="c{data.uid}" class="frame frame-{data.frame_class} {f:if(condition:'{data.tstamp} >= 1603670400', then: ' show-first-headline')} frame-type-{data.CType} frame-layout-{data.layout}{f:if(condition: data.space_before_class, then: ' frame-space-before-{data.space_before_class}')}{f:if(condition: data.space_after_class, then: ' frame-space-after-{data.space_after_class}')}">
 					<f:if condition="{data._LOCALIZED_UID}">
 						<a id="c{data._LOCALIZED_UID}"></a>
 					</f:if>
@@ -151,7 +151,7 @@
 					<f:render section="After" optional="true">
 						<f:render partial="DropIn/After/All" arguments="{_all}" />
 					</f:render>
-				</div>				
+				</div>
 			</f:else>
 		</f:if>
 	</f:spaceless>
