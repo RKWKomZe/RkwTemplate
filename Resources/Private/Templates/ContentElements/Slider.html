@@ -11,5 +11,12 @@
             </div>
         </f:if>
 
+        <f:if condition="{f:count(subject: assets)} > 0 && {f:count(subject: images)} == 0">
+            <div class="slider-item">
+                <f:render partial="Slider/Video" arguments="{_all}"/>
+                <f:render partial="Slider/Text" arguments="{_all}"/>
+            </div>
+        </f:if>
+
     </f:section>
 </html>
