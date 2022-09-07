@@ -626,7 +626,7 @@
 
             <!-- TextImageBackground -->
             <trans-unit id="contentElement.textImageBackground.title">
-                <source>Text with image as background</source>
+                <source>Text with image or video as background</source>
             </trans-unit>
             <trans-unit id="contentElement.textImageBackground.description">
                 <source>Adds an text-image-background-element.</source>

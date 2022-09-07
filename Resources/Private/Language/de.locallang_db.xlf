@@ -852,12 +852,12 @@
 
             <!-- TextImageBackground -->
             <trans-unit id="contentElement.textImageBackground.title">
-                <source>Text with image as background</source>
-                <target>Text mit Bild als Hintergrund</target>
+                <source>Text with image or video as background</source>
+                <target>Text mit Bild oder Video als Hintergrund</target>
             </trans-unit>
             <trans-unit id="contentElement.textImageBackground.description">
                 <source>Adds an text-image-background-element.</source>
-                <target>Text, dessen Hintergrund vollständig von einem Bild ausgefüllt wird.</target>
+                <target>Text, dessen Hintergrund vollständig von einem Bild oder Video ausgefüllt wird.</target>
             </trans-unit>
             <trans-unit id="contentElement.textImageBackground.rowDescription">
                 <source>Linktext</source>
