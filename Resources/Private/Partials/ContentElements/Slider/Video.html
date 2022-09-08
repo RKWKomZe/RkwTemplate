@@ -1,0 +1,16 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+    <div class="slider-item__media">
+        <f:if condition="{f:count(subject: assets)} > 0">
+            <!-- video -->
+            <f:for each="{assets}" as="file">
+                <video autoplay muted playsinline preload="none">
+                    <source src="{file.originalFile.storage.configuration.basePath}{file.originalFile.identifier}" type="{file.originalFile.properties.mime_type}">
+                </video>
+            </f:for>
+        </f:if>
+    </div>
+
+</html>

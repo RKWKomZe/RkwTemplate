@@ -11,7 +11,18 @@
         <section id="c{data.uid}" class="contentbox content-padding-layoutmax download-mod {rkwTemplate:GetLandingpageElementModClass(headerPosition:'{data.header_position}')}">
 
             <div class="media-container">
-                <img src="{f:uri.image(image:images.0,cropVariant:'default')}" alt="{image.title}" loading="lazy">
+                <f:if condition="{f:count(subject: images)} > 0 && {f:count(subject: assets)} == 0">
+                    <!-- image -->
+                    <img src="{f:uri.image(image:images.0,cropVariant:'default')}" alt="{image.title}" loading="lazy">
+                </f:if>
+                <f:if condition="{f:count(subject: assets)} > 0">
+                    <!-- video -->
+                    <f:for each="{assets}" as="file">
+                        <video autoplay muted playsinline preload="none">
+                            <source src="{file.originalFile.storage.configuration.basePath}{file.originalFile.identifier}" type="{file.originalFile.properties.mime_type}">
+                        </video>
+                    </f:for>
+                </f:if>
             </div>
 
             <div class="flex-container download-mod__content-wrap">
