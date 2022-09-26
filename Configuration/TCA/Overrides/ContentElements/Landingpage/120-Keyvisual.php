@@ -10,7 +10,7 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_keyvisual'] = [
             --palette--;;general,
             --palette--;;headers,
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.images,
-            image,
+            image,imagewidth
     ',
     'columnsOverrides' => [
         'date' => [
@@ -72,7 +72,17 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_keyvisual'] = [
                     ]
                 ]
             ]
-        ]
+        ],
+        'imagewidth' => [
+            'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.keyvisual.imageManipulation.imagewidth',
+            'config' => [
+                'range' => [
+                    'upper' => 336,
+                    'lower' => 100,
+                ],
+                'default' => 336
+            ]
+        ],
     ]
 ];
 
