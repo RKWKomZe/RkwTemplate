@@ -730,6 +730,9 @@
             <trans-unit id="contentElement.keyvisual.description">
                 <source>Adds a keyvisual.</source>
             </trans-unit>
+			<trans-unit id="contentElement.keyvisual.imageManipulation.imagewidth">
+				<source>Width (min 100, max 336 pixel)</source>
+			</trans-unit>
 
             <!-- MoreList -->
             <trans-unit id="contentElement.moreList.title">
