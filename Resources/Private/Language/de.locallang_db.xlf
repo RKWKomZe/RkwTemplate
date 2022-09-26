@@ -788,6 +788,10 @@
                 <source>Adds a keyvisual.</source>
                 <target>Fügt ein Keyvisual ein. Wird üblicherweise in der Marginalspalte einer Landingpage benutzt.</target>
             </trans-unit>
+            <trans-unit id="contentElement.keyvisual.imageManipulation.imagewidth">
+				<source>Width (min 100, max 336 pixel)</source>
+				<target>Breite (min. 100, max. 336 Pixel)</target>
+            </trans-unit>
 
             <!-- TableOfContentsLandingpage -->
             <trans-unit id="contentElement.toclandingpage.title">

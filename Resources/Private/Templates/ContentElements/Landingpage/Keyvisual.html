@@ -4,7 +4,7 @@
 
     <f:section name="Main">
         <div class="keyvisual">
-            <img src="{f:uri.image(image:images.0,cropVariant:'default')}" alt="{image.title}" loading="lazy">
+            <f:image image="{images.0}" cropVariant="default" treatIdAsReference="TRUE" width="{data.imagewidth}" maxWidth="336" alt="{image.alternative}"/>
         </div>
     </f:section>
 
