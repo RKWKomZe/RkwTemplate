@@ -20,7 +20,7 @@ plugin.tx_rkwevents {
 		termsPid = 5081
 
 		// cat=plugin.tx_rkwevents; type=integer; label=PID for terms and conditions (AGB)
-		terms2Pid = 5080
+		terms2Pid = 7950
 
 		// cat=plugin.tx_rkwevents; type=integer; label=PID for gallery and sheets for event view
 		sheetsForEventPid = 5072
