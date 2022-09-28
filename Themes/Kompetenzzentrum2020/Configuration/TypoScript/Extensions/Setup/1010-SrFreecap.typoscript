@@ -1,0 +1,5 @@
+plugin.tx_srfreecap {
+    _LOCAL_LANG.de {
+        9221561048 = Ihre Eingabe im Feld für den Spam-Schutz war leider nicht korrekt. Bitte versuchen Sie es erneut.
+    }
+}

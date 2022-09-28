@@ -1,0 +1,5 @@
+plugin.tx_srfreecap {
+    // does not work; audio not used ATM
+    //accessibleOutput = 1
+
+}
