@@ -327,7 +327,7 @@ mod {
                         colPos = 1000
                         allowed {
                           CType = list
-                          list_type = , rkwcanvas_canvas
+                          list_type = , rkwcanvas_canvas, rkwmaps_gemmaps
                         }
                       }
                     }
