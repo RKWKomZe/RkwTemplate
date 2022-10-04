@@ -32,6 +32,9 @@ TCEFORM.pages {
         addItems.30000 = Landingpage
 
         addItems.40000 = Detailseite: Infografiken
+
+        addItems.50000 = Tool
+
     }
 
     //===============================================================
