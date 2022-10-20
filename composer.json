@@ -35,6 +35,7 @@
         "rkw/rkw-pdf2content": "~9.5.0 || dev-feature/upgrade9.5",
         "rkw/rkw-projects": "~9.5.0 || dev-feature/upgrade9.5",
         "rkw/rkw-registration": "~9.5.0 || dev-feature/upgrade9.5",
+        "rkw/rkw-related": "~9.5.0 || dev-feature/upgrade9.5",
 		"rkw/rkw-tools": "~9.5.0 || dev-feature/upgrade9.5"
 	},
 

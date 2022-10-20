@@ -177,13 +177,31 @@
                 <source>Mobile</source>
             </trans-unit>
 
-
             <!-- SliderContainer -->
 			<trans-unit id="contentElement.sliderContainer.title">
 				<source>SliderContainer</source>
 			</trans-unit>
 			<trans-unit id="contentElement.sliderContainer.description">
 				<source>Adds a slide-container.</source>
+			</trans-unit>
+
+			<!-- BoxSlider -->
+			<trans-unit id="contentElement.boxSlider.title">
+				<source>BoxSlider</source>
+			</trans-unit>
+			<trans-unit id="contentElement.boxSlider.description">
+				<source>Adds a box slider.</source>
+			</trans-unit>
+			<trans-unit id="contentElement.boxSlider.subheader.label">
+				<source>Label for Button</source>
+			</trans-unit>
+
+			<!-- BoxSliderContainer -->
+			<trans-unit id="contentElement.boxSliderContainer.title">
+				<source>BoxSliderContainer</source>
+			</trans-unit>
+			<trans-unit id="contentElement.boxSliderContainer.description">
+				<source>Adds a box slide-container.</source>
 			</trans-unit>
 
             <!-- LandingpageGridElements -->
@@ -242,6 +260,15 @@
                 <source>Adds a tiles-container.</source>
             </trans-unit>
 
+            <!-- TestimonialContainer -->
+            <trans-unit id="contentElement.testimonialContainer.title">
+                <source>Testimonial-Container</source>
+            </trans-unit>
+            <trans-unit id="contentElement.testimonialContainer.description">
+                <source>Adds a testimonial-container.</source>
+            </trans-unit>
+
+
             <!-- GalleryContainer -->
             <trans-unit id="contentElement.galleryContainer.title">
                 <source>Gallery-Container</source>
@@ -267,6 +294,20 @@
                 <source>Content</source>
             </trans-unit>
             <trans-unit id="contentElement.collageContainer.header">
+                <source>Header</source>
+            </trans-unit>
+
+            <!-- TagcloudContainer -->
+            <trans-unit id="contentElement.tagcloudContainer.title">
+                <source>Tagcloud-Container</source>
+            </trans-unit>
+            <trans-unit id="contentElement.tagcloudContainer.description">
+                <source>Adds a tagcloud-container.</source>
+            </trans-unit>
+            <trans-unit id="contentElement.tagcloudContainer.content">
+                <source>Content</source>
+            </trans-unit>
+            <trans-unit id="contentElement.tagcloudContainer.header">
                 <source>Header</source>
             </trans-unit>
 
@@ -611,7 +652,7 @@
 
             <!-- TextImageBackground -->
             <trans-unit id="contentElement.textImageBackground.title">
-                <source>Text with image as background</source>
+                <source>Text with image or video as background</source>
             </trans-unit>
             <trans-unit id="contentElement.textImageBackground.description">
                 <source>Adds an text-image-background-element.</source>
@@ -655,7 +696,7 @@
                 <source>Text &amp; Images</source>
             </trans-unit>
             <trans-unit id="contentElement.textpic.description">
-                <source>Adds a combinded text-images-element.</source>
+                <source>Adds a combined text-images-element.</source>
             </trans-unit>
 
             <!-- TextWithButton -->
@@ -693,6 +734,31 @@
             <trans-unit id="contentElement.tile.description">
                 <source>Adds an tile list-element.</source>
             </trans-unit>
+
+			<!-- Testimonial -->
+			<trans-unit id="contentElement.testimonial.title">
+				<source>Testimonial</source>
+			</trans-unit>
+			<trans-unit id="contentElement.testimonial.description">
+				<source>Adds a testimonial element.</source>
+			</trans-unit>
+			<trans-unit id="contentElement.testimonial.header.label">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="contentElement.testimonial.bodytext.label">
+				<source>Quote</source>
+			</trans-unit>
+
+            <!-- Keyvisual -->
+            <trans-unit id="contentElement.keyvisual.title">
+                <source>Keyvisual</source>
+            </trans-unit>
+            <trans-unit id="contentElement.keyvisual.description">
+                <source>Adds a keyvisual.</source>
+            </trans-unit>
+			<trans-unit id="contentElement.keyvisual.imageManipulation.imagewidth">
+				<source>Width (min 100, max 336 pixel)</source>
+			</trans-unit>
 
             <!-- MoreList -->
             <trans-unit id="contentElement.moreList.title">
@@ -887,13 +953,17 @@
                 <source>Add an Accordion-Element.</source>
             </trans-unit>
 
-   			<!-- Testimonial -->
-            <trans-unit id="contentElement.testimonial.title">
-                <source>Testimonial-Element</source>
-            </trans-unit>
-            <trans-unit id="contentElement.testimonial.description">
-                <source>Add an Testimonials-Element.</source>
-            </trans-unit>
+            
+			<!-- TagcloudElement -->
+			<trans-unit id="contentElement.tagcloudElement.title">
+				<source>Tagcloud element</source>
+			</trans-unit>
+			<trans-unit id="contentElement.tagcloudElement.description">
+				<source>Adds a tagcloud element.</source>
+			</trans-unit>
+			<trans-unit id="contentElement.tagcloudElement.type.label">
+				<source>Weight</source>
+			</trans-unit>
 
 		</body>
 	</file>

@@ -223,7 +223,7 @@ lib.txRkwTemplate {
             view =< plugin.tx_rkwbasics.view
             persistence =< plugin.tx_rkwbasics.persistence
             settings =< plugin.tx_rkwbasics.settings
-            settings.includeFieldsList = pages.tx_rkwbasics_teaser_image, pages.media, tt_content.image
+            settings.includeFieldsList = pages.tx_rkwbasics_teaser_image, pages.media, tt_content.image, tt_content.assets
         }
 
         //=================================================================

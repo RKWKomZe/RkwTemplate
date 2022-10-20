@@ -1,13 +1,20 @@
-tt_content {
+  tt_content {
     rkwtemplate_textimagebackground =< lib.contentElement
     rkwtemplate_textimagebackground {
         templateName = Landingpage/TextImageBackground
 
-        // loading images as references
         dataProcessing {
+
+            // loading images as references
             10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
             10.references.fieldName = image
             10.as = images
+
+            // loading assets as references
+            20 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+            20.references.fieldName = assets
+            20.as = assets
+
         }
     }
 }
