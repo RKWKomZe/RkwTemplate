@@ -1,7 +1,7 @@
 lib.txRkwTemplate {
 
     various {
-    
+
         mobileMenu = USER
         mobileMenu {
             userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
@@ -20,7 +20,7 @@ lib.txRkwTemplate {
             persistence =< plugin.tx_rkwtemplate.persistence
             settings =< plugin.tx_rkwtemplate.settings
         }
-    
+
         //=================================================================
         alerts = USER
         alerts {
@@ -50,7 +50,7 @@ lib.txRkwTemplate {
         loginInfo {
             userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
             extensionName = RkwRegistration
-            pluginName = RkwregistrationInfo
+            pluginName = Info
             vendorName = RKW
             controller = Info
             switchableControllerActions {

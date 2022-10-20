@@ -1,5 +1,5 @@
 {namespace rkwBasics=RKW\RkwBasics\ViewHelpers}
-<f:if condition="<rkwBasics:or or1='{settings.showDepartment}' or2='{settings.showCategory}' or3='{settingsArray.showProjects}' />">
+<f:if condition="{settings.showDepartment} || {settings.showCategory} || {settingsArray.showProjects}">
 	<f:form id="search-form" noCacheHash="true" action="list" controller="Tool" extensionName="RkwTools" pluginName="Overview" class="ajax" arguments="{ttContentUid: ttContentUid}" additionalAttributes="{data-page-type: '{settings.pageTypeAjax}'}" >
 		<div class="filter search-filter">
 			<f:if condition="{settings.showDepartment}">

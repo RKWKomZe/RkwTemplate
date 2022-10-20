@@ -12,7 +12,7 @@ tx_gridelements.setup.contentContainerOneColOrderForm {
                         name = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.contentContainerOneColOrderForm.content
                         colPos = 50
                         allowed {
-                            CType = header, text, textpic, image, textmedia, rkwtemplate_toc, rkwtemplate_imagetextoverlay, rkwtemplate_imagelist, rkwtemplate_collapsed, list, html, form_formframework
+                            CType = header, text, textpic, image, textmedia, rkwtemplate_toc, rkwtemplate_imagetextoverlay, rkwtemplate_imagelist, rkwtemplate_collapsed, rkwtemplate_testimonial, list, html, form_formframework
                         }
                     }
                 }

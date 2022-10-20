@@ -1,6 +1,6 @@
 plugin.tx_rkwregistration {
     persistence {
-        // cat=plugin.tx_abounitreservation//a; type=string; label=Default storage PID
+        // cat=plugin.tx_rkwreservation//a; type=string; label=Default storage PID
         storagePid = 618
     }
 
@@ -36,6 +36,9 @@ plugin.tx_rkwregistration {
 
             // cat=plugin.tx_rkwregistration//a; type=integer; label=Pid of edit password mask
             editPasswordPid = 622
+
+			# cat=plugin.tx_rkwregistration//a; type=integer; label=Pid of groups list
+			groupsListPid =	2263
 
             // cat=plugin.tx_rkwregistration//a; type=integer; label=Pid of terms & conditions
             termsPid = 1381
@@ -84,3 +87,4 @@ plugin.tx_rkwregistration {
         }
     }
 }
+

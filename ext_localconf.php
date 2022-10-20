@@ -18,7 +18,7 @@ call_user_func(
                 'Ajax' => 'mobileMenuAction',
             )
         );
-        
+
         //=================================================================
         // register icons
         //=================================================================
@@ -129,7 +129,7 @@ call_user_func(
             'rkw-template-toclandingpage', // Icon-Identifier, e.g. tx-myext-action-preview
             \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
             ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/TableOfContents.svg']
-        );        
+        );
         $iconRegistry->registerIcon(
             'rkw-template-overview', // Icon-Identifier, e.g. tx-myext-action-preview
             \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
@@ -140,6 +140,17 @@ call_user_func(
             \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
             ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/Tab.svg']
         );
+        $iconRegistry->registerIcon(
+            'rkw-template-accordion', // Icon-Identifier, e.g. tx-myext-action-preview
+            \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+            ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/Accordion.svg']
+        );
+        $iconRegistry->registerIcon(
+            'rkw-template-testimonial', // Icon-Identifier, e.g. tx-myext-action-preview
+            \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+            ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/Testimonial.svg']
+        );
+
         unset($iconRegistry);
 
         //=================================================================
@@ -169,14 +180,6 @@ call_user_func(
         //=================================================================
         $GLOBALS['TYPO3_CONF_VARS']['SYS']['locallangXMLOverride']['EXT:rkw_projects/Resources/Private/Language/locallang_db.xlf'][] = 'EXT:rkw_template/Themes/Kompetenzzentrum2020/Resources/Private/Language/Overrides/RkwProjects/locallang_db.xlf';
         $GLOBALS['TYPO3_CONF_VARS']['SYS']['locallangXMLOverride']['de']['EXT:rkw_projects/Resources/Private/Language/de.locallang_db.xlf'][] = 'EXT:rkw_template/Themes/Kompetenzzentrum2020/Resources/Private/Language/Overrides/RkwProjects/de.locallang_db.xlf';
-
-
-        //=================================================================
-        // register update wizard
-        //=================================================================
-        $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['ext/install']['update'][\RKW\RkwTemplate\Updates\UpdateCore8Wizard::class] = \RKW\RkwTemplate\Updates\UpdateCore8Wizard::class;
-        $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['ext/install']['update'][\RKW\RkwTemplate\Updates\UpdateFolderRestructureWizard::class] = \RKW\RkwTemplate\Updates\UpdateFolderRestructureWizard::class;
-        $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['ext/install']['update'][\RKW\RkwTemplate\Updates\UpdateLandingpagesWizard::class] = \RKW\RkwTemplate\Updates\UpdateLandingpagesWizard::class;
 
     },
     $_EXTKEY

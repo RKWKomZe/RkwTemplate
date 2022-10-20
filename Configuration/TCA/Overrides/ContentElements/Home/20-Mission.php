@@ -7,8 +7,9 @@
 $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_mission'] = [
     'showitem' => '
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
-            --palette--;;general,
-            --palette--;;headers,
+            header;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_formlabel,
+            --linebreak--,
+            subheader;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:subheader_formlabel,
            bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,
             --palette--;;language,
@@ -16,26 +17,6 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_mission'] = [
             --palette--;;hidden,
     ',
     'columnsOverrides' => [
-        'date' => [
-            'config' => [
-                'type' => 'passthrough'
-            ]
-        ],
-        'header_link' => [
-            'config' => [
-                'type' => 'passthrough'
-            ]
-        ],
-        'header_layout' => [
-            'config' => [
-                'type' => 'passthrough'
-            ]
-        ],
-        'header_position' => [
-            'config' => [
-                'type' => 'passthrough'
-            ]
-        ],
         'header' => [
             'config' => [
                 'eval' => 'required',

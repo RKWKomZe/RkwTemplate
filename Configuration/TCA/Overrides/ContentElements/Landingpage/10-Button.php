@@ -8,8 +8,10 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_button'] = [
     'showitem' => '
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
             --palette--;;general,
-            --palette--;;headers,
-        rowDescription,    
+            header_layout;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_layout_formlabel,
+            --linebreak--,
+            header_link;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_link_formlabel,
+        rowDescription,
         bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,
             --palette--;;language,
@@ -17,26 +19,6 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_button'] = [
             --palette--;;hidden,
     ',
     'columnsOverrides' => [
-        'date' => [
-            'config' => [
-                'type' => 'passthrough'
-            ]
-        ],
-        'header_position' => [
-            'config' => [
-                'type' => 'passthrough'
-            ]
-        ],
-        'header' => [
-            'config' => [
-                'type' => 'passthrough'
-            ]
-        ],
-        'subheader' => [
-            'config' => [
-                'type' => 'passthrough'
-            ]
-        ],
         'header_link' => [
             'config' => [
                 'eval' => 'trim',

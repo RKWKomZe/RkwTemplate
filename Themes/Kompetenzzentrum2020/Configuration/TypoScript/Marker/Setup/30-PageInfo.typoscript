@@ -129,21 +129,21 @@ lib.txRkwTemplate {
                 }
             }
         }
-       
+
         //=================================================================
-        startReading < lib.txRkwTemplate.navigation.startReading 
+        startReading < lib.txRkwTemplate.navigation.startReading
         startReading {
-        
+
             file = {$plugin.tx_rkwtemplate_themeconfig.paths.default.partials}/InfoBox/Partials/StartReading.html
             variables {
-                    
+
                 externalLink = TEXT
                 externalLink {
-                           
+
                    stdWrap.typolink {
                        parameter.field = tx_rkwbasics_external_link
-                       returnLast = url                   
-                   }             
+                       returnLast = url
+                   }
                 }
             }
         }
@@ -197,7 +197,7 @@ lib.txRkwTemplate {
                         parameter.data = file:current:publicUrl
                         ATagBeforeWrap = 1
                         ATagParams = class="btn btn--primary btn--small"
-    
+
                         // eTracker
                         userFunc = RKW\RkwEtracker\UserFunctions\Typolink->getParsedLinkWithDataAttributes
                     }

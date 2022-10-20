@@ -8,7 +8,7 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_accordion'] = [
     'showitem' => '
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
             --palette--;;general,
-            --palette--;;headers,
+            header;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_formlabel,
         bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.images,
             image,
@@ -20,34 +20,9 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_accordion'] = [
             --palette--;;hidden,
     ',
     'columnsOverrides' => [
-        'date' => [
-            'config' => [
-                'type' => 'passthrough'
-            ]
-        ],
         'header' => [
             'config' => [
                 'eval' => 'trim, required',
-            ]
-        ],
-        'header_position' => [
-            'config' => [
-                'type' => 'passthrough'
-            ]
-        ],
-        'header_layout' => [
-            'config' => [
-                'type' => 'passthrough'
-            ]
-        ],
-        'header_link' => [
-            'config' => [
-                'type' => 'passthrough'
-            ]
-        ],
-        'subheader' => [
-            'config' => [
-                'type' => 'passthrough'
             ]
         ],
         'bodytext' => [

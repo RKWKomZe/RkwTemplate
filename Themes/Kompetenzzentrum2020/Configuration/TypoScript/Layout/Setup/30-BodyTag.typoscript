@@ -115,7 +115,7 @@ page {
                         wrap3 = {|}
                         dataWrap = DB:tx_rkwevents_domain_model_event:{gp:tx_rkwevents_pi1|event}:department
                         // Intval zerstört Abfrage (anders als bei Authors haben wir hier keinen ObjectStorage bei "department")
-                        // @toDo Eigentlich sollte hier schon ein intval stattfinden!!
+                        // @todo Eigentlich sollte hier schon ein intval stattfinden!!
                         // dataWrap.intval = 1
                         insertData = 1
                     }

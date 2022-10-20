@@ -8,7 +8,7 @@
 
     // remove everything - except for some items
     // Important: this also has to include gridelements_pi1 for the gridContainer if needed!
-    TCEFORM.tt_content.CType.keepItems = gridelements_pi1, header, text, textpic, image, textmedia, html, list, rkwtemplate_slider, rkwtemplate_toclandingpage, rkwtemplate_textimagebackground, rkwtemplate_listelement, rkwtemplate_morelist, rkwtemplate_gallery, rkwtemplate_collage, rkwtemplate_button, rkwtemplate_tile
+    TCEFORM.tt_content.CType.keepItems = gridelements_pi1, header, text, textpic, image, textmedia, html, list, rkwtemplate_slider, rkwtemplate_toclandingpage, rkwtemplate_textimagebackground, rkwtemplate_listelement, rkwtemplate_morelist, rkwtemplate_gallery, rkwtemplate_collage, rkwtemplate_button, rkwtemplate_tile, rkwtemplate_testimonial
 
     // remove everything - except for some items
     mod.wizards.newContentElement.wizardItems.common.show = rkwtemplate_textimagebackground

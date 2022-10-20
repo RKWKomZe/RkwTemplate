@@ -2,32 +2,32 @@
 	<f:if condition="{header}">
 		<f:switch expression="{layout}">
 			<f:case value="1">
-				<h2 class="h2 {positionClass}">
+				<h2 class="h2 {positionClass}" f:if(condition='{anchorId}', then: 'id="c{anchorId}"', else: '')}>
 					<f:link.typolink parameter="{link}">{header}</f:link.typolink>
 				</h2>
 			</f:case>
 			<f:case value="2">
-				<h3 class="h3 {positionClass}">
+				<h3 class="h3 {positionClass}" f:if(condition='{anchorId}', then: 'id="c{anchorId}"', else: '')}>
 					<f:link.typolink parameter="{link}">{header}</f:link.typolink>
 				</h3>
 			</f:case>
 			<f:case value="3">
-				<h4 class="h4 {positionClass}">
+				<h4 class="h4 {positionClass}" f:if(condition='{anchorId}', then: 'id="c{anchorId}"', else: '')}>
 					<f:link.typolink parameter="{link}">{header}</f:link.typolink>
 				</h4>
 			</f:case>
 			<f:case value="4">
-				<h5 class="h5 {positionClass}">
+				<h5 class="h5 {positionClass}" f:if(condition='{anchorId}', then: 'id="c{anchorId}"', else: '')}>
 					<f:link.typolink parameter="{link}">{header}</f:link.typolink>
 				</h5>
 			</f:case>
 			<f:case value="5">
-				<h6 class="h6 {positionClass}">
+				<h6 class="h6 {positionClass}" f:if(condition='{anchorId}', then: 'id="c{anchorId}"', else: '')}>
 					<f:link.typolink parameter="{link}">{header}</f:link.typolink>
 				</h6>
 			</f:case>
 			<f:case value="6">
-				<h6 class="h6 {positionClass}">
+				<h6 class="h6 {positionClass}" f:if(condition='{anchorId}', then: 'id="c{anchorId}"', else: '')}>
 					<f:link.typolink parameter="{link}">{header}</f:link.typolink>
 				</h6>
 			</f:case>
@@ -38,6 +38,7 @@
 				<f:if condition="{default}">
 					<f:render partial="Header/Header" arguments="{
 						header: header,
+						anchorId: anchorId,
 						layout: default,
 						positionClass: positionClass,
 						link: link}" />

@@ -1,4 +1,4 @@
-<html 
+<html
 	xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
 	xmlns:rkwAjax="http://typo3.org/ns/RKW/RkwAjax/ViewHelpers"
 	data-namespace-typo3-fluid="true">
@@ -27,7 +27,7 @@
 			--specials-tertiary-top-text-color: <f:if condition="{data.tx_rkwtemplate_landingpage_tertiary_top_text_color}"><f:then><f:format.raw>{data.tx_rkwtemplate_landingpage_tertiary_top_text_color}</f:format.raw></f:then><f:else><f:format.raw>{data.tx_rkwtemplate_landingpage_secondary_top_text_color}</f:format.raw></f:else></f:if>; /* for text on tertiary color */
 			--specials-tertiary-top-effect-color: <f:if condition="{data.tx_rkwtemplate_landingpage_tertiary_top_effect_color}"><f:then><f:format.raw>{data.tx_rkwtemplate_landingpage_tertiary_top_effect_color}</f:format.raw></f:then><f:else><f:format.raw>{data.tx_rkwtemplate_landingpage_secondary_top_effect_color}</f:format.raw></f:else></f:if>; /* for links and buttons on tertiary color*/
 			--specials-tertiary-top-effect-text-color: <f:if condition="{data.tx_rkwtemplate_landingpage_tertiary_top_effect_text_color}"><f:then><f:format.raw>{data.tx_rkwtemplate_landingpage_tertiary_top_effect_text_color}</f:format.raw></f:then><f:else><f:format.raw>{data.tx_rkwtemplate_landingpage_secondary_top_effect_text_color}</f:format.raw></f:else></f:if>; /* for text on buttons on tertiary color */
-	
+
 			--specials-quarterly-color: <f:if condition="{data.tx_rkwtemplate_landingpage_quarterly_color}"><f:then><f:format.raw>{data.tx_rkwtemplate_landingpage_quarterly_color}</f:format.raw></f:then><f:else><f:format.raw>{data.tx_rkwtemplate_landingpage_secondary_color}</f:format.raw></f:else></f:if>; /* quarterly color */
 			--specials-quarterly-effect-color: <f:if condition="{data.tx_rkwtemplate_landingpage_quarterly_effect_color}"><f:then><f:format.raw>{data.tx_rkwtemplate_landingpage_quarterly_effect_color}</f:format.raw></f:then><f:else><f:format.raw>{data.tx_rkwtemplate_landingpage_secondary_effect_color}</f:format.raw></f:else></f:if>;  /* for links and buttons on white */
 			--specials-quarterly-effect-text-color: <f:if condition="{data.tx_rkwtemplate_landingpage_quarterly_effect_text_color}"><f:then><f:format.raw>{data.tx_rkwtemplate_landingpage_quarterly_effect_text_color}</f:format.raw></f:then><f:else><f:format.raw>{data.tx_rkwtemplate_landingpage_secondary_effect_text_color}</f:format.raw></f:else></f:if>;  /* for text on buttons on white */
@@ -40,7 +40,12 @@
 	<f:comment><!-- skip links--></f:comment>
 	<f:render partial="Basics/SkipLinks" />
 
-	<div class="pagewrap">
+    <div class="pagewrap">
+
+        <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.utility.pageLayoutSwitch')} == 'Microsite'">
+            <f:comment><!-- microsite bar --></f:comment>
+            <f:render partial="Basics/Header" section="MicrositeBar" arguments="{_all}"/>
+        </f:if>
 
 		<f:comment><!-- header --></f:comment>
 		<header class="header {f:if(condition: '{f:cObject(typoscriptObjectPath:\'lib.txRkwTemplate.navigation.sub\', data:\'{data}\')}', then: 'has-nav')} {f:if(condition: '{settings.shortMainMenu}', then: 'has-nav--short')}">
@@ -62,7 +67,7 @@
 	<f:comment><!-- Some AJAX-Requests --></f:comment>
 	<f:cObject typoscriptObjectPath="lib.txRkwTemplate.various.loginInfo" data="{data}" />
 	<f:cObject typoscriptObjectPath="lib.txRkwTemplate.various.mobileMenu" data="{data}" />
-	
+
 	<f:comment><!-- For Browser-Version-Check --></f:comment>
 	<div id="outdated"></div>
 

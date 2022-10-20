@@ -13,11 +13,12 @@
 
                         <f:render partial="Header" arguments="{
                             header: data.header,
+                            anchorId: data.uid,
                             layout: data.header_layout,
                             link: data.header_link,
                             class: 'headline headline--underlined'
                         }" />
-                        
+
                         <div class="flex-container">
                             <f:format.raw>{data.tx_gridelements_view_column_120}</f:format.raw>
                         </div>

@@ -32,13 +32,14 @@ class IsPageInCurrentRootlineViewHelper extends AbstractViewHelper
      */
     public function initializeArguments()
     {
+        parent::initializeArguments();
         $this->registerArgument('pageUid', 'integer', 'An pageUid to check against the current rootline.');
     }
 
 
     /**
-     * @param array                     $arguments
-     * @param \Closure                  $renderChildrenClosure
+     * @param array $arguments
+     * @param \Closure $renderChildrenClosure
      * @param RenderingContextInterface $renderingContext
      * @return bool
      */
@@ -46,7 +47,8 @@ class IsPageInCurrentRootlineViewHelper extends AbstractViewHelper
         array $arguments,
         \Closure $renderChildrenClosure,
         RenderingContextInterface $renderingContext
-    ) {
+    ): bool
+    {
 
         if (
             ($pageUid = $arguments['pageUid'])

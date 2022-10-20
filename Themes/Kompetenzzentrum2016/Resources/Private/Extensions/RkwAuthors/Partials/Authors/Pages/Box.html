@@ -2,7 +2,7 @@
 
 <f:section name="Default">
 	<f:if condition="{author}" >
-        <f:if condition="<rkwAuthors:and and1='{author.internal}' and2='{showPid}' />">
+        <f:if condition="{author.internal} && {showPid}">
 			<f:then>
 				<f:link.action action="show" pageUid="{showPid}" arguments="{author: '{author}'}" target="{f:if(condition: '{settings.detailLinkTargetBlank} == 1', then: '_blank')}" class="box big expert {f:if(condition: '{author.imageBoxes}', else: 'no-image')}" title="<rkwAuthors:GetCombinedName author='{author}'/>" >
 					<f:render section="Internal"  arguments="{_all}" />

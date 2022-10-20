@@ -33,13 +33,14 @@ class GetLandingpageElementModClassViewHelper extends AbstractViewHelper
      */
     public function initializeArguments()
     {
+        parent::initializeArguments();
         $this->registerArgument('headerPosition', 'integer', 'An integer defining appearance of the content element.');
     }
 
 
     /**
-     * @param array                     $arguments
-     * @param \Closure                  $renderChildrenClosure
+     * @param array $arguments
+     * @param \Closure $renderChildrenClosure
      * @param RenderingContextInterface $renderingContext
      * @return string
      */
@@ -47,11 +48,10 @@ class GetLandingpageElementModClassViewHelper extends AbstractViewHelper
         array $arguments,
         \Closure $renderChildrenClosure,
         RenderingContextInterface $renderingContext
-    ) {
+    ): string
+    {
 
-        if (
-            ($headerPosition = $arguments['headerPosition'])
-        ){
+        if ($headerPosition = $arguments['headerPosition']) {
 
             $modifiers = [
                 'primary-mod',

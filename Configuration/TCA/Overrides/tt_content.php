@@ -20,8 +20,10 @@
 $GLOBALS['TCA']['tt_content']['types']['gridelements_pi1'] = [
     'showitem' => '
     	--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
-        --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.header;header,
-        subheader,
+        header;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_formlabel,
+        --linebreak--,
+        header_layout;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_layout_formlabel,
+        header_position;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_position_formlabel,
         tx_gridelements_backend_layout,
         pi_flexform,
         tx_gridelements_children,
@@ -41,21 +43,6 @@ $GLOBALS['TCA']['tt_content']['types']['gridelements_pi1'] = [
 ];
 
 $GLOBALS['TCA']['tt_content']['types']['gridelements_pi1']['columnsOverrides'] = [
-    'date' => [
-        'config' => [
-            'type' => 'passthrough'
-        ]
-    ],
-    'subheader' => [
-        'config' => [
-            'type' => 'passthrough'
-        ]
-    ],
-    'header_link' => [
-        'config' => [
-            'type' => 'passthrough'
-        ]
-    ],
     'header' => [
         'config' => [
             'eval' => 'required',

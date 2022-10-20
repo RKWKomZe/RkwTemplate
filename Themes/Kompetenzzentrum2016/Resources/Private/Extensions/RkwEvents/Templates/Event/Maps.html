@@ -3,7 +3,7 @@
 
 <f:if condition="{event.onlineEvent} == 0">
     <f:then>
-        <f:if condition="<rkw:and and1='{event.longitude}' and2='{event.latitude}' />">
+        <f:if condition="{event.longitude} && {event.latitude}">
 
             <!-- show Google-map if geo-data is set -->
             <f:then>

@@ -2,7 +2,6 @@
 
 $tmpColsPages = [
 
-
     'tx_rkwtemplate_landingpage_primary_color' => [
         'displayCond' => 'FIELD:layout:=:30000',
         'exclude' => 0,
@@ -227,7 +226,7 @@ $tmpColsPages = [
             'size' => 10,
         ],
     ],
-    
+
     'tx_rkwtemplate_landingpage_quarterly_color' => [
         'displayCond' => [
             'AND' => [
@@ -334,7 +333,7 @@ $tmpColsPages = [
             ],
         ],
     ],
-        
+
     'tx_rkwtemplate_disable_flyout_menu' => [
         'exclude' => 1,
         'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:pages.tx_rkwtemplate_disable_flyout_menu',
