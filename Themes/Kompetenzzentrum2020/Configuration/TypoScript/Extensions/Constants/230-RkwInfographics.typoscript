@@ -5,6 +5,6 @@ plugin.tx_rkwinfographics {
     }
     settings {
         # cat=plugin.tx_rkwinfographics//a; type=string; label=PID for detail view
-        showPid =
+        showPid = 8649
     }
 }

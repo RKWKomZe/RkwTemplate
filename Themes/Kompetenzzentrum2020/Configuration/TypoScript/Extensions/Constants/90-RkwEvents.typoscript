@@ -3,7 +3,7 @@ plugin.tx_rkwevents {
 
 	persistence {
 		// cat=plugin.tx_rkwevents; type=integer; label=Default storage PID
-		storagePid = 2986,3234,3469,3621,3652,4789,4244,7961,7369
+		storagePid = 2986,3234,3469,3621,3652,4789,4244,7961
 
         # cat=plugin.tx_rkwevents; type=integer; label=Default storage PID for eventReservation (write only). PID set here has to be included in storagePid-List
         eventReservation.newRecordStoragePid = 4244
@@ -53,6 +53,8 @@ plugin.tx_rkwevents {
 		// cat=plugin.tx_rkwevents; type=integer; label=PageNum for AJAX-requests
 		ajaxTypeNum = 1472648979
 
+        # cat=plugin.tx_rkwevents; type=boolean; label=Hide GoogleMaps
+        hideMap = 1
 
         list {
 

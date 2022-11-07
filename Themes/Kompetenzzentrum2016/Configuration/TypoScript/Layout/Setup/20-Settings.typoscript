@@ -1,6 +1,0 @@
-page {
-    10 {
-        // make settings available in template
-        settings < lib.txRkwTemplate.themeSettings
-    }
-}

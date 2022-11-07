@@ -1,5 +1,12 @@
 plugin.tx_srfreecap {
-    // does not work; audio not used ATM
-    //accessibleOutput = 1
 
+    # cat=plugin.tx_srfreecap/dims/03; type=int+; label= CAPTCHA image additional width: The width, in pixels, of the generated image is based on the maximum possible length of the word plus the value of this property.
+	imageAdditionalWidth = 40
+
+    // does not work; audio not used ATM
+    # cat=plugin.tx_srfreecap/enable/03; type=boolean; label= Accessible output: If enabled, the CAPTCHA will include an audio version.
+	accessibleOutput = 0
+
+    # cat=plugin.tx_srfreecap/enable/02; type=boolean; label= Generate CAPTCHA with numbers only. This option is ignored if Use list of words is enabled.
+    generateNumbers = 0
 }

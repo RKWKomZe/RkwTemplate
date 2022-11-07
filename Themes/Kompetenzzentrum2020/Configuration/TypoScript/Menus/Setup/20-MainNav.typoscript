@@ -21,7 +21,7 @@ lib.txRkwTemplate {
                    entryLevel = 0
                    expandAll = 1
                    includeSpacer = 0
-                   // maxItems = 10
+
                    titleField = tx_rkwbasics_alternative_title // nav_title // title
                    // excludeUidList = {$plugin.tx_rkwtemplate_themeconfig.settings.mainNav.loginPid}
                    as = menuItems
@@ -58,10 +58,10 @@ lib.txRkwTemplate {
 
             settings < page.10.settings
         }
-        
+
         //=================================================================
         // mobile version for AJAX
-        mainMobile < .main 
-        mainMobile.file = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/Menus/MainMobile.html 
+        mainMobile < .main
+        mainMobile.file = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/Menus/MainMobile.html
     }
 }

@@ -14,7 +14,7 @@ plugin.tx_rkwregistration {
             storagePid = 618
 
             // cat=plugin.tx_rkwregistration//a; type=integer; label=Pid of login mask
-            loginPid = 610
+            loginPid = 609
 
             # cat=plugin.tx_rkwregistration//a; type=integer; label=Pid of external login mask
             loginExternalPid =
@@ -23,7 +23,7 @@ plugin.tx_rkwregistration {
             logoutPid = 623
 
             // cat=plugin.tx_rkwregistration//a; type=integer; label=Pid of registration mask
-            registrationPid = 620
+            registrationPid = 609
 
             // cat=plugin.tx_rkwregistration//a; type=integer; label=Pid of welcome page
             welcomePid = 621

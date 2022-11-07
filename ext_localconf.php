@@ -11,11 +11,11 @@ call_user_func(
             'RKW.' . $extKey,
             'Rkwtemplate',
             array(
-                'Ajax' => 'mobileMenuAction',
+                'Ajax' => 'mobileMenu',
             ),
             // non-cacheable actions
             array(
-                'Ajax' => 'mobileMenuAction',
+                'Ajax' => 'mobileMenu',
             )
         );
 
