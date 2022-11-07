@@ -1,0 +1,9 @@
+imports:
+  - { resource: "EXT:rkw_alerts/Configuration/Routes/Default.yaml" }
+  - { resource: "EXT:rkw_basics/Configuration/Routes/Default.yaml" }
+  - { resource: "EXT:rkw_authors/Configuration/Routes/Default.yaml" }
+  - { resource: "EXT:rkw_checkup/Configuration/Routes/Default.yaml" }
+  - { resource: "EXT:rkw_events/Configuration/Routes/Default.yaml" }
+  - { resource: "EXT:rkw_mailer/Configuration/Routes/Default.yaml" }
+  - { resource: "EXT:rkw_related/Configuration/Routes/Default.yaml" }
+  - { resource: "EXT:rkw_registration/Configuration/Routes/Default.yaml" }
