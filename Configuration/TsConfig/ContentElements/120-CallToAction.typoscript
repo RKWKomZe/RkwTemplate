@@ -1,0 +1,38 @@
+//=========================================================
+// Add contentElement to Wizard
+//=========================================================
+mod.wizards.newContentElement.wizardItems.common {
+    elements {
+        rkwtemplate_calltoaction {
+            iconIdentifier = rkw-template-calltoaction
+            title = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.callToAction.title
+            description = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.callToAction.description
+            tt_content_defValues {
+                CType = rkwtemplate_calltoaction
+            }
+        }
+    }
+    show := addToList(rkwtemplate_calltoaction)
+}
+
+//=========================================================
+// Change some fields
+//=========================================================
+TCEFORM.tt_content {
+
+  subheader {
+    types.rkwtemplate_calltoaction {
+      label = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.callToAction.subheader
+    }
+  }
+
+  header_position {
+    types.rkwtemplate_calltoaction {
+      label = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.callToAction.type.label
+      removeItems = center, right, left
+      altLabels.. = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.callToAction.type.I.default
+      addItems.1 = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.callToAction.type.I.1
+    }
+  }
+
+}
