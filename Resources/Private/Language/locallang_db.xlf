@@ -609,6 +609,31 @@
                 <source>Default</source>
             </trans-unit>
 
+            <!-- CallToAction -->
+            <trans-unit id="contentElement.callToAction.title">
+                <source>Call-to-action element with background</source>
+            </trans-unit>
+            <trans-unit id="contentElement.callToAction.description">
+                <source>Adds a call-to-action-element.</source>
+            </trans-unit>
+			<trans-unit id="contentElement.callToAction.subheader">
+				<source>Link text</source>
+			</trans-unit>
+            <trans-unit id="contentElement.callToAction.rowDescription">
+                <source>Short version</source>
+            </trans-unit>
+            <trans-unit id="contentElement.callToAction.imageManipulation.default">
+                <source>Default</source>
+            </trans-unit>
+            <trans-unit id="contentElement.callToAction.type.label">
+				<source>Font color</source>
+			</trans-unit>
+			<trans-unit id="contentElement.callToAction.type.I.default">
+				<source>Black font</source>
+			</trans-unit>
+			<trans-unit id="contentElement.callToAction.type.I.1">
+				<source>White font</source>
+			</trans-unit>
 
             <!-- ImageTextOverlay -->
             <trans-unit id="contentElement.imageTextOverlay.title">
