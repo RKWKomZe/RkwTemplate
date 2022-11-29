@@ -10,7 +10,7 @@
                 <f:if condition="{data.subheader}">
                     <div class="slider-cat"><f:format.stripTags allowedTags="<span>">{data.subheader}</f:format.stripTags></div>
                 </f:if>
-                <h1 class="slider-title">{data.header}</h1>
+                <div class="h1 slider-title">{data.header}</div>
                 <f:if condition="{data.header_link}">
                     <rkwEtracker:link.typolink parameter="{data.header_link}" class="btn btn--primary">
                         <f:format.stripTags>{data.rowDescription}</f:format.stripTags>
