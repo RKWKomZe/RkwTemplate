@@ -339,8 +339,18 @@
             </trans-unit>
             <trans-unit id="contentElement.testimonialContainer.description">
                 <source>Adds a testimonial-container.</source>
-                <target>Fügt einen Container für Testimonials ein. Üblicherweise wird dieses Element auf einer Landingpage eingesetzt.</target>
+                <target>Fügt einen Container für Testimonials ein.</target>
             </trans-unit>
+
+			<!-- topicLinksContainer -->
+			<trans-unit id="contentElement.topicLinksContainer.title">
+				<source>TopicLinks-Container</source>
+				<target>Themenverweis-Container</target>
+			</trans-unit>
+			<trans-unit id="contentElement.topicLinksContainer.description">
+				<source>Adds a topic-links-container.</source>
+				<target>Fügt einen Container für Verweise auf zentrale Themen und/oder Inhalte einer Website ein.</target>
+			</trans-unit>
 
             <!-- GalleryContainer -->
             <trans-unit id="contentElement.galleryContainer.title">

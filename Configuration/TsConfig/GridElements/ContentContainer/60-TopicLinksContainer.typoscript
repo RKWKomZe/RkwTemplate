@@ -1,0 +1,22 @@
+tx_gridelements.setup.topicLinksContainer {
+
+    title = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.topicLinksContainer.title
+    description = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.topicLinksContainer.description
+    config {
+        colCount = 1
+        rowCount = 1
+        rows {
+            1 {
+                columns {
+                    1 {
+                        name = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.topicLinksContainer.title
+                        colPos = 190
+                        allowed {
+                            CType = rkwtemplate_topic
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
