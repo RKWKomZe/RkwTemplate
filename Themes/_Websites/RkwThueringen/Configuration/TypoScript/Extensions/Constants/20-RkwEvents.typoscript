@@ -16,12 +16,6 @@ plugin.tx_rkwevents {
 		// cat=plugin.tx_rkwevents; type=integer; label=PID for create new reservation
 		reservationPid = 3769
 
-		// cat=plugin.tx_rkwevents; type=integer; label=PID for terms and conditions (AGB)
-		termsPid = 3776
-
-		// cat=plugin.tx_rkwevents; type=integer; label=PID for terms and conditions (AGB)
-		terms2Pid = 3775
-
 		// cat=plugin.tx_rkwevents; type=integer; label=PID for gallery and sheets for event view
 		sheetsForEventPid = 3767
 

@@ -17,4 +17,3 @@ editor:
     # the CSS file to be used inside the editor
     contentsCss:
       - "EXT:rkw_template/Themes/Kompetenzzentrum2020/Resources/Public/css/editor.css"
-      - "https://use.typekit.net/frq0css.css"

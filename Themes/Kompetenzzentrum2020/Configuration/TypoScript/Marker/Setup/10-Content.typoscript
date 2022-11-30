@@ -83,5 +83,13 @@ lib.txRkwTemplate {
         tool = CONTENT
         tool < styles.content.get
         tool.select.where = {#colPos} = 1000
+
+        login = CONTENT
+        login < styles.content.get
+        login.select.where = {#colPos} = 1100
+
+        loginDescription = CONTENT
+        loginDescription < styles.content.get
+        loginDescription.select.where = {#colPos} = 1110
     }
 }

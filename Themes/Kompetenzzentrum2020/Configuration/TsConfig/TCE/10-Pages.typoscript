@@ -22,18 +22,18 @@ TCEFORM.pages {
         addItems.22 = Artikel: Spezial
         addItems.30 = Publikationen
         addItems.40 = Home
+        addItems.50 = Landingpage
+        addItems.60 = Login
 
         // add more items
         addItems.9000 = Broken Link
         addItems.9100 = Sonderseite
+
         addItems.10000 = Detailseite: Experten
         addItems.20000 = Detailseite: Veranstaltungen
-
-        addItems.30000 = Landingpage
-
         addItems.40000 = Detailseite: Infografiken
+        addItems.50000 = Reduziertes Layout: Tool
 
-        addItems.50000 = Tool
 
     }
 
@@ -55,31 +55,17 @@ TCEFORM.pages {
         addItems.22 = Artikel: Spezial
         addItems.30 = Publikationen
         addItems.40 = Home
+        addItems.50 = Landingpage
+        addItems.60 = Login
 
         // add more items
         addItems.9000 = Broken Link
         addItems.9100 = Sonderseite
         addItems.10000 = Detailseite: Experten
         addItems.20000 = Detailseite: Veranstaltungen
-
-        addItems.30000 = Landingpage
-
         addItems.40000 = Detailseite: Infografiken
+        addItems.50000 = Reduziertes Layout: Tool
 
-    }
-
-    //===============================================================
-    // CSS- classes e.g. for menu
-    //===============================================================
-    tx_rkwbasics_css_class {
-
-        removeItems = 2, 3
-        altLabels.1 = 4-spaltiges Layout
-        // altLabels.3 = Innovation
-
-        // add more items
-        // addItems.4 = Fachkräftesicherung
-        // addItems.5 = Hauptmenü 5
     }
 }
 

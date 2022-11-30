@@ -25,9 +25,6 @@ plugin.tx_rkwnewsletter {
         # cat=plugin.tx_rkwnewsletter//a; type=integer; label=Pid of login mask
         loginPid = 610
 
-        # cat=plugin.tx_rkwnewsletter//a; type=integer; label=Pid of terms
-        termsPid = 1381
-
         # cat=plugin.tx_rkwnewsletter//a; type=integer; label=Pid for subscriptions
         subscriptionPid = 4695
 
@@ -101,6 +98,6 @@ module.tx_rkwnewsletter {
         # cat=plugin.tx_rkwnewsletter//a; type=string; label=Default storage PID
         storagePid = 0
     }
-    
+
     settings < plugin.tx_rkwnewsletter.settings
 }

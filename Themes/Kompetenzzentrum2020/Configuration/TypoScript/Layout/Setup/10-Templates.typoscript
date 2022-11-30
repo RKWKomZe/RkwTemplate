@@ -55,6 +55,16 @@ page {
                 value = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/Home.html
             }
 
+            50 = TEXT
+            50 {
+                value = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/Landingpage.html
+            }
+
+            60 = TEXT
+            60 {
+              value = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/Login.html
+            }
+
             9000 = TEXT
             9000 {
                 value = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/BrokenLink.html
@@ -75,10 +85,6 @@ page {
                 value = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/EventDetail.html
             }
 
-            30000 = TEXT
-            30000 {
-                value = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/Landingpage.html
-            }
 
             40000 = TEXT
             40000 {
@@ -89,6 +95,7 @@ page {
             50000 {
               value = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/Tool.html
             }
+
         }
 
         partialRootPaths {

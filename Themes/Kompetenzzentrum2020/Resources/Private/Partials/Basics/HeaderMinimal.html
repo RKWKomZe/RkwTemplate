@@ -1,0 +1,50 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:rkwBasics="http://typo3.org/ns/RKW/RkwBasics/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+    <div class="meta flex-basis-12 flex-container space-between">
+        <div class="site-logo {f:if(condition:'{settings.websiteLogoReplacementText}', else: 'site-logo--no-padding')} flex-basis-3">
+            <a href="{settings.websiteLogoUrl}" title="<f:translate key='{settings.themeLanguageFile}:partials.basics.logo.homeLink' />" class="site-logo__link">
+                <f:if condition="{settings.websiteLogoReplacementText}">
+                    <f:then>
+                        <span class="site_logo__text">{settings.websiteLogoReplacementText}</span>
+                    </f:then>
+                    <f:else>
+                        <img class="site-logo__desktop" src="{settings.websiteLogoFile}" alt="{settings.websiteName}" />
+                        <f:if condition="{settings.websiteLogoMobileFile}">
+                            <f:then>
+                                <img class="site-logo__mobile" src="{settings.websiteLogoMobileFile}" alt="{settings.websiteName}" />
+                            </f:then>
+                            <f:else>
+                                <img class="site-logo__mobile site-logo__mobile--fallback" src="{settings.websiteLogoFile}" alt="{settings.websiteName}" />
+                            </f:else>
+                        </f:if>
+                    </f:else>
+                </f:if>
+            </a>
+        </div>
+    </div>
+
+    <f:comment><!-- =================================================================  --></f:comment>
+
+    <f:section name="MicrositeBar">
+        <div class="microsite-bar">
+            <div class="microsite-bar__container">
+                <f:if condition="{settings.micrositeMainWebsiteLogoFile}">
+                    <div class="microsite-bar__logo">
+                        <a href="{settings.micrositeMainWebsiteUrl}" rel="nofollow"  target="_blank" class="page-header__microsite-button" aria-controls="main-menu" title="{settings.micrositeMainWebsiteName}">
+                            <img src="{settings.micrositeMainWebsiteLogoFile}" alt="{settings.micrositeMainWebsiteName}" />
+                        </a>
+                    </div>
+                </f:if>
+                <f:if condition="{settings.micrositeTextPoweredBy}">
+                    <div class="microsite-bar__text">
+                        <a href="{settings.micrositeMainWebsiteUrl}" rel="nofollow" target="_blank" title="{settings.micrositeMainWebsiteName}">
+                            <f:format.raw>{settings.micrositeTextPoweredBy}</f:format.raw>
+                        </a>
+                    </div>
+                </f:if>
+            </div>
+        </div>
+    </f:section>
+</html>

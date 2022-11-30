@@ -195,6 +195,11 @@ call_user_func(
             $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['rkwTemplateWePstra'] = 'EXT:rkw_template/Themes/WePstra/Configuration/TsConfig/RTE/Editor/Default.yaml';
         }
 
+        // override dropdown styles for RTE
+        if( TYPO3_MODE == "BE"){
+            $GLOBALS['TBE_STYLES']['skins']['rkw_template']['stylesheetDirectories'][] = 'EXT:rkw_template/Resources/Public/Backend/Css';
+        }
+
         //=================================================================
         // override language files for other extensions
         //=================================================================

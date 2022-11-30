@@ -29,12 +29,6 @@ plugin.tx_rkwevents {
 		// cat=plugin.tx_rkwevents; type=integer; label=PID for create new FeUser
 		storagePidFeUser = 618
 
-		// cat=plugin.tx_rkwevents; type=integer; label=PID for terms and conditions (AGB)
-		termsPid = 1381
-
-		// cat=plugin.tx_rkwevents; type=integer; label=PID for terms and conditions (AGB)
-		terms2Pid = 3039
-
 		// cat=plugin.tx_rkwevents; type=integer; label=PID for list future user events view
 		myEventsPid = 3003
 

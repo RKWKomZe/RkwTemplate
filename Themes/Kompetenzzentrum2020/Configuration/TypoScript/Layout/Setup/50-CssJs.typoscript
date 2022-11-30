@@ -13,9 +13,6 @@ page {
         // Nur auf den Druck-Seiten!
         // file30 = {$plugin.tx_rkwtemplate_themeconfig.paths.default.css}/print.css
         // file30.media = screen,print
-
-        file500 = https://use.typekit.net/frq0css.css
-        file500.media = all
     }
 
     //===============================================================

@@ -64,6 +64,5 @@ lib.txRkwTemplate {
             persistence =< plugin.tx_rkwregistration.persistence
             settings =< plugin.tx_rkwregistration.settings
         }
-
     }
 }

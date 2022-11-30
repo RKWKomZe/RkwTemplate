@@ -16,6 +16,8 @@ editor:
       # block level styles
       - { name: 'Tabelle Normal', element: 'table', attributes: { 'class': 'responsive-table' } }
       - { name: 'Tabelle Abwechselnd', element: 'table', attributes: { 'class': 'responsive-table responsive-table--background' } }
+      - { name: 'Text rot', element: 'td', attributes: { 'class': 'text-red' } }
+      - { name: 'Text grün', element: 'td', attributes: { 'class': 'text-green' } }
 
       # List styles
       # - { name: 'Download-Liste', element: 'ul', attributes: { 'class': 'links-list' } }

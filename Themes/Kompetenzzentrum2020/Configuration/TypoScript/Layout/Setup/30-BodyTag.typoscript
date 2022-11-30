@@ -68,9 +68,13 @@ page {
 
             50 = TEXT
             50 {
-                value = page-map page-grid--4
+                value = tpl-specials-detail show-first-headline body
             }
 
+            60 = TEXT
+            60 {
+                value = tpl-login body
+            }
 
             9000 = TEXT
             9000 {
@@ -130,14 +134,14 @@ page {
                 20.noTrimWrap = | ||
             }
 
-            30000 = TEXT
-            30000 {
-                value = tpl-specials-detail show-first-headline body
-            }
-
             50000 = TEXT
             50000 {
               value = tpl-tool show-first-headline body
+            }
+
+            60000 = TEXT
+            60000 {
+              value = tpl-login show-first-headline body
             }
 
             stdWrap.noTrimWrap = | ||
@@ -149,23 +153,6 @@ page {
             value = is-microsite
             stdWrap.noTrimWrap = | ||
             if.isTrue = {$plugin.tx_rkwtemplate_themeconfig.isMicrosite}
-        }
-
-        // CSS clas for grid
-        70 = CASE
-        70 {
-            // slide the template
-            key.data = levelfield:-1,tx_rkwbasics_css_class,slide
-
-            // default
-            default >
-
-            1 = TEXT
-            1 {
-                value = page-grid--4
-            }
-            stdWrap.noTrimWrap = | ||
-
         }
     }
 }
