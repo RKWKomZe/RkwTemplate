@@ -1,7 +1,0 @@
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:rkw_template/Themes/_Core/Configuration/TsConfig/TsConfig.typoscript">
-
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:rkw_template/Themes/WePstra/Configuration/TsConfig/Config" extensions="typoscript">
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:rkw_template/Themes/WePstra/Configuration/TsConfig/Extensions" extensions="typoscript">
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:rkw_template/Themes/WePstra/Configuration/TsConfig/RTE" extensions="typoscript">
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:rkw_template/Themes/WePstra/Configuration/TsConfig/TCE" extensions="typoscript">
-

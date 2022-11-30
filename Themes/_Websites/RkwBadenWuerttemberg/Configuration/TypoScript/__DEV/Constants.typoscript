@@ -18,7 +18,7 @@ plugin.tx_rkwrelated_similarcontent {
 }
 
 
-plugin.tx_rkwbasics {
+plugin.tx_accelerator {
     settings {
         cdn {
             enable = 0

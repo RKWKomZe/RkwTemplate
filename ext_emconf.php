@@ -26,6 +26,7 @@ $EM_CONF[$_EXTKEY] = [
         'depends' => [
             'typo3' => '8.7.0-9.5.99',
             'gridelements' => '8.6.3-8.7.99',
+            'accelerator' => '9.5.0-9.5.99',
             'rkw_alerts'  => '8.7.12-8.7.99',
             'rkw_ajax' => '8.7.56-8.7.99',
             'rkw_authors'  => '8.7.0-8.7.99',
@@ -34,7 +35,7 @@ $EM_CONF[$_EXTKEY] = [
             'rkw_events'  => '8.7.86-8.7.99',
             'rkw_pdf2content'  => '8.7.0-8.7.99',
             'rkw_projects' => '8.7.0-8.7.99',
-            'rkw_related' => '8.7.32-8.7.99',           
+            'rkw_related' => '8.7.32-8.7.99',
             'rkw_registration' => '8.7.36-8.7.99',
             'rkw_tools'  => '8.7.0-8.7.99',
         ],

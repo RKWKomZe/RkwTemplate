@@ -3,43 +3,4 @@ plugin.tx_rkwbasics {
         // cat=plugin.tx_rkwbasics//a; type=string; label=Default storage PID
         storagePid = 3
     }
-
-    settings {
-
-        cdn {
-
-            # cat=plugin.tx_rkwbasics//a; type=boolean; label=Activate CDN
-            enable = 1
-        }
-
-        htmlMinify {
-
-            # cat=plugin.tx_rkwbasics//a; type=boolean; label=Activate HTML Minifier
-            enable = 1
-        }
-
-        responsiveImages {
-            breakpoints {
-
-                # cat=plugin.tx_rkwbasics//a; type=integer; label=Breakpoint for desktop
-                desktop = {$plugin.tx_rkwtemplate_themeconfig.breakpoints.desktop}
-
-                # cat=plugin.tx_rkwbasics//a; type=integer; label=Breakpoint for tablet
-                tablet = {$plugin.tx_rkwtemplate_themeconfig.breakpoints.tablet}
-
-                # cat=plugin.tx_rkwbasics//a; type=integer; label=Second breakpoint for mobile
-                mobile2 = {$plugin.tx_rkwtemplate_themeconfig.breakpoints.mobile2}
-
-                # cat=plugin.tx_rkwbasics//a; type=integer; label=First breakpoint for mobile
-                mobile = {$plugin.tx_rkwtemplate_themeconfig.breakpoints.mobile}
-
-            }
-        }
-        
-         criticalCss {
-                       
-            # cat=plugin.tx_rkwbasics//a; type=boolean; label=Activate Rendering for Critical-CSS
-            enable = 1
-        }
-    }
 }

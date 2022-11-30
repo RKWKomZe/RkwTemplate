@@ -2,7 +2,7 @@
 # RKW Shop
 #=================================================================================
 plugin.tx_rkwshop.libs.responsiveThumbnail >
-plugin.tx_rkwshop.libs.responsiveThumbnail < lib.txRkwBasics.responsiveImage
+plugin.tx_rkwshop.libs.responsiveThumbnail < lib.txAccelerator.responsiveImage
 plugin.tx_rkwshop.libs.responsiveThumbnail {
 
     settings {
@@ -25,7 +25,7 @@ plugin.tx_rkwshop.libs.responsiveThumbnail {
 plugin.tx_rkwrelated.libs {
 
 	responsiveImageThumbnail >
-	responsiveImageThumbnail < lib.txRkwBasics.responsiveImage
+	responsiveImageThumbnail < lib.txAccelerator.responsiveImage
 	responsiveImageThumbnail {
         settings {
             breakpoint {
@@ -45,7 +45,7 @@ plugin.tx_rkwrelated.libs {
 	}
 
     responsiveLogoThumbnail >
-	responsiveLogoThumbnail < lib.txRkwBasics.responsiveImage
+	responsiveLogoThumbnail < lib.txAccelerator.responsiveImage
 	responsiveLogoThumbnail {
         settings {
             breakpoint {
@@ -61,7 +61,7 @@ plugin.tx_rkwrelated.libs {
 	}
 
 	responsivePdfThumbnail >
-	responsivePdfThumbnail < lib.txRkwBasics.responsiveImage
+	responsivePdfThumbnail < lib.txAccelerator.responsiveImage
 	responsivePdfThumbnail {
         settings {
             breakpoint {
@@ -83,7 +83,7 @@ plugin.tx_rkwrelated.libs {
 plugin.tx_rkwauthors.libs {
 
     responsiveImageThumbnail >
-	responsiveImageThumbnail < lib.txRkwBasics.responsiveImage
+	responsiveImageThumbnail < lib.txAccelerator.responsiveImage
 	responsiveImageThumbnail {
         settings {
             breakpoint {
@@ -105,7 +105,7 @@ plugin.tx_rkwauthors.libs {
 plugin.tx_rkwtools.libs {
 
     responsiveImageThumbnail >
-    responsiveImageThumbnail < lib.txRkwBasics.responsiveImage
+    responsiveImageThumbnail < lib.txAccelerator.responsiveImage
     responsiveImageThumbnail {
         settings {
             breakpoint {
@@ -125,7 +125,7 @@ plugin.tx_rkwtools.libs {
     }
 
     responsiveLogoThumbnail >
-    responsiveLogoThumbnail < lib.txRkwBasics.responsiveImage
+    responsiveLogoThumbnail < lib.txAccelerator.responsiveImage
     responsiveLogoThumbnail {
         settings {
             breakpoint {
@@ -141,7 +141,7 @@ plugin.tx_rkwtools.libs {
     }
 
     responsivePdfThumbnail >
-    responsivePdfThumbnail < lib.txRkwBasics.responsiveImage
+    responsivePdfThumbnail < lib.txAccelerator.responsiveImage
     responsivePdfThumbnail {
         settings {
             breakpoint {

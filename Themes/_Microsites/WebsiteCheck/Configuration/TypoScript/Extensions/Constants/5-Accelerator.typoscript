@@ -11,7 +11,7 @@ plugin.tx_accelerator {
         htmlMinify {
 
             # cat=plugin.tx_rkwbasics//a; type=boolean; label=Activate HTML Minifier
-            enable = 0
+            enable = 1
         }
     }
 }

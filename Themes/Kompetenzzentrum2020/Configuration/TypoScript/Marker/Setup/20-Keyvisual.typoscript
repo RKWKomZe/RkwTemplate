@@ -77,7 +77,7 @@ lib.txRkwTemplate {
             }
 
 
-            settings < lib.txRkwBasics.responsiveImage.settings
+            settings < lib.txAccelerator.responsiveImage.settings
             settings {
 
                 lazyLoading = 0
@@ -146,7 +146,7 @@ lib.txRkwTemplate {
                     }
                 }
 
-                settings < lib.txRkwBasics.responsiveImage.settings
+                settings < lib.txAccelerator.responsiveImage.settings
                 settings {
 
                     lazyLoading = 0

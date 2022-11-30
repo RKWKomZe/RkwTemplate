@@ -9,7 +9,7 @@ plugin.tx_rkwtemplate_themeconfig {
 
 }
 
-plugin.tx_rkwbasics {
+plugin.tx_accelerator {
     settings {
         cdn {
             enable = 0

@@ -8,7 +8,7 @@ plugin.tx_rkwtemplate_themeconfig {
 	website.baseUrl = http://rkw-bremen.rkw.codes/
 }
 
-plugin.tx_rkwbasics {
+plugin.tx_accelerator {
     settings {
         cdn {
             enable = 0
