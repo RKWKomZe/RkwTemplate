@@ -618,8 +618,6 @@
                 <target>Empfehlungen (Überschreibt Standard-Empfehlungen; derzeit nur mit Veranstaltungen möglich)</target>
             </trans-unit>
 
-
-
             <!-- ContentContainerTwoColsReduced -->
             <trans-unit id="contentElement.contentContainerTwoColsReduced.title">
                 <source>Content-Container with two Cols, reduced</source>
@@ -837,6 +835,39 @@
                 <target>Standard</target>
             </trans-unit>
 
+            <!-- CallToAction -->
+            <trans-unit id="contentElement.callToAction.title">
+                <source>Call to action with background</source>
+                <target>Call-to-action-Element mit Hintergrundbild</target>
+            </trans-unit>
+            <trans-unit id="contentElement.callToAction.description">
+                <source>Adds a call-to-action-element.</source>
+                <target>Ein großflächig dargestelltes Bild, auf dem ein Call-to-action-Element platziert wird.</target>
+            </trans-unit>
+            <trans-unit id="contentElement.callToAction.subheader">
+                <source>Link text</source>
+                <target>Beschriftung für Button</target>
+            </trans-unit>
+            <trans-unit id="contentElement.callToAction.rowDescription">
+                <source>Short Version</source>
+                <target>Kurztext</target>
+            </trans-unit>
+            <trans-unit id="contentElement.callToAction.imageManipulation.default">
+                <source>Default</source>
+                <target>Standard</target>
+            </trans-unit>
+            <trans-unit id="contentElement.callToAction.type.label">
+				<source>Font color</source>
+				<target>Schriftfarbe</target>
+			</trans-unit>
+			<trans-unit id="contentElement.callToAction.type.I.default">
+				<source>Black font</source>
+				<target>Schwarze Schrift</target>
+			</trans-unit>
+			<trans-unit id="contentElement.callToAction.type.I.1">
+				<source>White font</source>
+				<target>Weiße Schrift</target>
+			</trans-unit>
 
             <!-- ImageTextOverlay -->
             <trans-unit id="contentElement.imageTextOverlay.title">
