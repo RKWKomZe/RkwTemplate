@@ -30,7 +30,7 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_calltoaction'] = [
                 'eval' => 'trim',
             ]
         ],
-        'header_layout' => [
+        'header_position' => [
             'config' => [
                 'type' => 'passthrough'
             ]
