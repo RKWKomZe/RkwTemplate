@@ -209,9 +209,9 @@ lib.txRkwTemplate {
         imageResources = USER
         imageResources {
             userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
-            extensionName = RkwBasics
-            pluginName = Rkwmediasources
-            vendorName = RKW
+            extensionName = CoreExtended
+            pluginName = MediaSources
+            vendorName = Madj2k
             controller = MediaSources
             switchableControllerActions {
                 // Again: Controller-Name and Action
@@ -220,9 +220,9 @@ lib.txRkwTemplate {
                 }
             }
 
-            view =< plugin.tx_rkwbasics.view
-            persistence =< plugin.tx_rkwbasics.persistence
-            settings =< plugin.tx_rkwbasics.settings
+            view =< plugin.tx_coreextended.view
+            persistence =< plugin.tx_coreextended.persistence
+            settings =< plugin.tx_coreextended.settings
             settings.includeFieldsList = pages.tx_rkwbasics_teaser_image, pages.media, tt_content.image, tt_content.assets
         }
 

@@ -1,11 +1,11 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
-    xmlns:rkwAjax="http://typo3.org/ns/RKW/RkwAjax/ViewHelpers"
+    xmlns:ajaxApi="http://typo3.org/ns/Madj2k/AjaxApi/ViewHelpers"
     data-namespace-typo3-fluid="true">
 
     <template class="ajax" data-ajax-max-width="1280" data-ajax-url="{f:uri.action(action:'mobileMenu', absolute:'1', addQueryString:'1', additionalParams:'{rkw_ajax : \'{key: ajaxHelper.key, cid: ajaxHelper.contentUid, idl: \\\'1\\\'}\'}') -> f:format.raw()}"></template>
 
     <f:comment><!-- load mobile menu via AJAX, init it and then try to re-init login-info --></f:comment>
-    <rkwAjax:ajaxWrapper ajaxHelper="{ajaxHelper}" ajaxAction="replace" ajaxId="1">
+    <ajaxApi:ajaxWrapper ajaxHelper="{ajaxHelper}" ajaxAction="replace" ajaxId="1">
         <div>
             <f:if condition="{ajaxHelper.isAjaxCall}">
                 <template id="tx-rkwtemplate-mobile-menu-html">
@@ -26,6 +26,6 @@
                 </script>
             </f:if>
         </div>
-    </rkwAjax:ajaxWrapper>
+    </ajaxApi:ajaxWrapper>
 
 </html>

@@ -1,6 +1,6 @@
 <html
     xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
-    xmlns:rkwBasics="http://typo3.org/ns/RKW/RkwBasics/ViewHelpers"
+    xmlns:coreExtended="http://typo3.org/ns/Madj2k/CoreExtended/ViewHelpers"
     xmlns:rkwTemplate="http://typo3.org/ns/RKW/RkwTemplate/ViewHelpers"
     data-namespace-typo3-fluid="true">
 
@@ -13,7 +13,7 @@
             class="contentbox content-padding-layoutmax typo3-fsc boxslider-mod {rkwTemplate:GetLandingpageElementModClass(headerPosition:'{data.header_position}')}"
         >
 
-        <f:if condition="<rkwBasics:isEmpty string='{data.tx_gridelements_view_column_180}' /> == 0">
+        <f:if condition="<coreExtended:isEmpty string='{data.tx_gridelements_view_column_180}' /> == 0">
 
             <div class="flex-container">
                 <div class="boxslider owl-carousel flex-basis-12" data-carousel-number="{data.uid}">

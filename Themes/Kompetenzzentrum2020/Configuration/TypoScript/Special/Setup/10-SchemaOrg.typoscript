@@ -7,7 +7,7 @@ lib.txRkwTemplate {
     schemaOrg {
 
         url = TEXT
-        url < plugin.tx_rkwbasics.libs.canonical.10
+        url < lib.txCoreExtended.canonical.10
 
         #=================================================================
         logoUrl = TEXT

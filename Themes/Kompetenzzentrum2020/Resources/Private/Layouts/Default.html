@@ -1,6 +1,6 @@
 <html 
 	xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
-	xmlns:rkwBasics="http://typo3.org/ns/RKW/RkwBasics/ViewHelpers"
+	xmlns:coreExtended="http://typo3.org/ns/Madj2k/CoreExtended/ViewHelpers"
 	data-namespace-typo3-fluid="true">
 
 	<f:comment><!-- skip links--></f:comment>
@@ -9,7 +9,7 @@
 	<div class="pagewrap">
 
 		<f:comment><!-- header --></f:comment>
-		<header class="header {f:if(condition: '{rkwBasics:isEmpty(string:\'{f:cObject(typoscriptObjectPath:\\\'lib.txRkwTemplate.navigation.sub\\\', data:\\\'{data}\\\')}\')} == 0', then: 'has-nav')} {f:if(condition: '{settings.shortMainMenu}', then: 'has-nav--short')} {f:if(condition: '{settings.showLanguageSwitch}', then: 'has-lang-switch')}">
+		<header class="header {f:if(condition: '{coreExtended:isEmpty(string:\'{f:cObject(typoscriptObjectPath:\\\'lib.txRkwTemplate.navigation.sub\\\', data:\\\'{data}\\\')}\')} == 0', then: 'has-nav')} {f:if(condition: '{settings.shortMainMenu}', then: 'has-nav--short')} {f:if(condition: '{settings.showLanguageSwitch}', then: 'has-lang-switch')}">
 			<f:if condition="{settings.showLanguageSwitch}">
 				<f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.language" data="{data}" />
 			</f:if>

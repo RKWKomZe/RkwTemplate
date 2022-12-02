@@ -1,9 +1,9 @@
 <html
     xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
-    xmlns:rkwBasics="http://typo3.org/ns/RKW/RkwBasics/ViewHelpers"
+    xmlns:coreExtended="http://typo3.org/ns/Madj2k/CoreExtended/ViewHelpers"
     xmlns:rkwEtracker="http://typo3.org/ns/RKW/RkwEtracker/ViewHelpers"
     data-namespace-typo3-fluid="true">
-    <f:if condition="<rkwBasics:isEmpty string='{data.bodytext}' /> == 0">
+    <f:if condition="<coreExtended:isEmpty string='{data.bodytext}' /> == 0">
         <f:then>
             <h4 class="headline headline--underlined">{data.header}</h4>
             <p>

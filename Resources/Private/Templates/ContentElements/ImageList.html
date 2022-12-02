@@ -1,6 +1,6 @@
 <html
     xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
-    xmlns:rkwBasics="http://typo3.org/ns/RKW/RkwBasics/ViewHelpers"
+    xmlns:coreExtended="http://typo3.org/ns/Madj2k/CoreExtended/ViewHelpers"
     xmlns:rkwEtracker="http://typo3.org/ns/RKW/RkwEtracker/ViewHelpers"
     data-namespace-typo3-fluid="true">
 
@@ -37,9 +37,9 @@
                                 <f:render partial="CollapsedText/Text" arguments="{_all}"/>
                             </f:then>
                             <f:else>
-                                <rkwBasics:format.removeEmptyParagraphs>
+                                <coreExtended:format.removeEmptyParagraphs>
                                     <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data.bodytext}</f:format.html>
-                                </rkwBasics:format.removeEmptyParagraphs>
+                                </coreExtended:format.removeEmptyParagraphs>
                             </f:else>
                         </f:if>
                     </div>

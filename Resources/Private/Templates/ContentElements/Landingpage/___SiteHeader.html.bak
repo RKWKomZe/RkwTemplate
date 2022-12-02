@@ -1,6 +1,6 @@
 <html
     xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
-    xmlns:rkwBasics="http://typo3.org/ns/RKW/RkwBasics/ViewHelpers"
+    xmlns:coreExtended="http://typo3.org/ns/Madj2k/CoreExtended/ViewHelpers"
     data-namespace-typo3-fluid="true">
 
     <f:layout name="Rkw" />
@@ -12,14 +12,14 @@
                 <img src="{f:uri.image(image:images.0,cropVariant:'default')}" alt="{image.title}" loading="lazy">
             </div>
         </div>
-        
+
         <div class="flex-container flex-basis-12 siteheader__specials-title {f:if(condition: '{data.header_layout} >= 2', then: 'siteheader__specials-title--inverted')}">
             <h1>
                 {data.header}
             </h1>
-            
+
             <f:if condition="{data.header_link}">
-                <f:if condition="<rkwBasics:string.contains needle='#' haystack='{data.header_link}' /> == 1">
+                <f:if condition="<coreExtended:string.contains needle='#' haystack='{data.header_link}' /> == 1">
                     <f:then>
                         <f:link.typolink
                             parameter="{data.header_link}"

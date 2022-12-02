@@ -1,6 +1,6 @@
 <html
     xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
-    xmlns:rkwBasics="http://typo3.org/ns/RKW/RkwBasics/ViewHelpers"
+    xmlns:coreExtended="http://typo3.org/ns/Madj2k/CoreExtended/ViewHelpers"
     data-namespace-typo3-fluid="true">
 
     <div class="ce-textpic ce-{gallery.position.horizontal} ce-{gallery.position.vertical}{f:if(condition: gallery.position.noWrap, then: ' ce-nowrap')}">
@@ -10,9 +10,9 @@
 
         <f:if condition="{data.bodytext}">
             <div class="ce-bodytext">
-                <rkwBasics:format.removeEmptyParagraphs>
+                <coreExtended:format.removeEmptyParagraphs>
                     <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data.bodytext}</f:format.html>
-                </rkwBasics:format.removeEmptyParagraphs>
+                </coreExtended:format.removeEmptyParagraphs>
             </div>
         </f:if>
 

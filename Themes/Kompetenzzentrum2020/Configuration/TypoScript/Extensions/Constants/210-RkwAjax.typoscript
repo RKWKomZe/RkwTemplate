@@ -7,6 +7,6 @@ plugin.tx_rkwajax {
     settings {
 
         # cat=plugin.tx_rkwbasics//a; type=boolean; label=Include JS for AJAX-API (Version 2)?
-        includeAjaxApiJs2 = 1
+        includeAjaxApiJs = 1
     }
 }

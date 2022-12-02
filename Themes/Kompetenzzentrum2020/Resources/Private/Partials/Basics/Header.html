@@ -1,5 +1,5 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
-    xmlns:rkwBasics="http://typo3.org/ns/RKW/RkwBasics/ViewHelpers"
+    xmlns:coreExtended="http://typo3.org/ns/Madj2k/CoreExtended/ViewHelpers"
     data-namespace-typo3-fluid="true">
 
     <div class="meta flex-basis-12 flex-container space-between">
@@ -26,14 +26,14 @@
 
         <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.main" data="{data}" />
         <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.sub" data="{data}" />
-        <f:if condition="! {rkwBasics:isEmpty(string:'{f:cObject(typoscriptObjectPath: \'lib.txRkwTemplate.navigation.sub\', data:\'{data}\')}')}">
+        <f:if condition="! {coreExtended:isEmpty(string:'{f:cObject(typoscriptObjectPath: \'lib.txRkwTemplate.navigation.sub\', data:\'{data}\')}')}">
             <f:if condition="{settings.reducedMenuLevels}">
                 <f:then>
                     <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.rootline" data="{data}" />
                 </f:then>
                 <f:else>
                     <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.sub2" data="{data}" />
-                    <f:if condition="! {rkwBasics:isEmpty(string:'{f:cObject(typoscriptObjectPath: \'lib.txRkwTemplate.navigation.sub2\', data:\'{data}\')}')}">
+                    <f:if condition="! {coreExtended:isEmpty(string:'{f:cObject(typoscriptObjectPath: \'lib.txRkwTemplate.navigation.sub2\', data:\'{data}\')}')}">
                         <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.rootline" data="{data}" />
                     </f:if>
                 </f:else>

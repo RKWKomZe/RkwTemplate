@@ -26,6 +26,7 @@ $EM_CONF[$_EXTKEY] = [
         'depends' => [
             'typo3' => '8.7.0-9.5.99',
             'gridelements' => '8.6.3-8.7.99',
+            'core_extended' => '9.5.0-9.5.99',
             'accelerator' => '9.5.0-9.5.99',
             'rkw_alerts'  => '8.7.12-8.7.99',
             'rkw_ajax' => '8.7.56-8.7.99',

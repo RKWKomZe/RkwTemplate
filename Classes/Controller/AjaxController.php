@@ -24,7 +24,7 @@ namespace RKW\RkwTemplate\Controller;
  * @package RKW_RkwTemplaten
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  */
-class AjaxController extends \RKW\RkwAjax\Controller\AjaxAbstractController
+class AjaxController extends \Madj2k\AjaxApi\Controller\AjaxAbstractController
 {
 
     /**

@@ -1,6 +1,6 @@
 <html
     xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
-    xmlns:rkwBasics="http://typo3.org/ns/RKW/RkwBasics/ViewHelpers"
+    xmlns:coreExtended="http://typo3.org/ns/Madj2k/CoreExtended/ViewHelpers"
     xmlns:rkwTemplate="http://typo3.org/ns/RKW/RkwTemplate/ViewHelpers"
     data-namespace-typo3-fluid="true">
 
@@ -15,7 +15,7 @@
             >
         </f:if>
 
-            <f:if condition="<rkwBasics:isEmpty string='{data.tx_gridelements_view_column_170}' /> == 0">
+            <f:if condition="<coreExtended:isEmpty string='{data.tx_gridelements_view_column_170}' /> == 0">
 
                 <f:if condition="({f:count(subject:images)} > 0)">
                     <f:then>

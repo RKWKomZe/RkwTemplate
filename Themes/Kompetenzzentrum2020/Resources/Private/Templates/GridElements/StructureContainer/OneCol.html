@@ -1,5 +1,5 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
-    xmlns:rkwBasics="http://typo3.org/ns/RKW/RkwBasics/ViewHelpers"
+    xmlns:coreExtended="http://typo3.org/ns/Madj2k/CoreExtended/ViewHelpers"
     data-namespace-typo3-fluid="true">
 
     <f:comment><!-- schema.org --></f:comment>
@@ -17,7 +17,7 @@
     <f:render partial="StructureContainer/Sharing" arguments="{_all}" />
 
     <f:comment><!-- alerts --></f:comment>
-    <f:if condition="! {rkwBasics:isEmpty(string:'{f:cObject(typoscriptObjectPath: \'lib.txRkwTemplate.various.alerts\')}')}">
+    <f:if condition="! {coreExtended:isEmpty(string:'{f:cObject(typoscriptObjectPath: \'lib.txRkwTemplate.various.alerts\')}')}">
         <div class="contentbox contentbox--text contentbox--margin-top no-border-radius-smalldesk">
             <f:cObject typoscriptObjectPath="lib.txRkwTemplate.various.alerts" data="{data}" />
         </div>

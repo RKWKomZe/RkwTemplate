@@ -1,18 +1,18 @@
 <html
     xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
-    xmlns:rkwBasics="http://typo3.org/ns/RKW/RkwBasics/ViewHelpers"
+    xmlns:coreExtended="http://typo3.org/ns/Madj2k/CoreExtended/ViewHelpers"
     xmlns:rkwTemplate="http://typo3.org/ns/RKW/RkwTemplate/ViewHelpers"
     data-namespace-typo3-fluid="true">
 
     <f:comment><!-- aside --></f:comment>
-    <f:if condition="<rkwBasics:isEmpty string='{data.tx_gridelements_view_column_60}' /> == 0">
+    <f:if condition="<coreExtended:isEmpty string='{data.tx_gridelements_view_column_60}' /> == 0">
         <aside>
             <f:render partial="StructureContainer/Aside" section="Landingpage" arguments="{_all}"/>
         </aside>
     </f:if>
 
     <f:comment><!-- content --></f:comment>
-    <f:if condition="<rkwBasics:isEmpty string='{data.tx_gridelements_view_column_50}' /> == 0">
+    <f:if condition="<coreExtended:isEmpty string='{data.tx_gridelements_view_column_50}' /> == 0">
         <div id="c{data.uid}" class="contentbox content-padding-layoutmax text-mod {rkwTemplate:GetLandingpageElementModClass(headerPosition:'{data.header_position}')}">
             <f:render partial="StructureContainer/Content" section="Landingpage" arguments="{_all}"/>
         </div>

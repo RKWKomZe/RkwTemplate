@@ -1,5 +1,5 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
-    xmlns:rkwBasics="http://typo3.org/ns/RKW/RkwBasics/ViewHelpers"
+    xmlns:coreExtended="http://typo3.org/ns/Madj2k/CoreExtended/ViewHelpers"
     data-namespace-typo3-fluid="true">
 
     <f:section name="Default">
@@ -8,22 +8,22 @@
         <f:render partial="StructureContainer/Content/TableOfContents" arguments="{_all}"/>
         
         <f:comment><!-- content --></f:comment>
-        <rkwBasics:format.removeEmptyParagraphs>
+        <coreExtended:format.removeEmptyParagraphs>
             <f:format.html parseFuncTSPath="">
                 {data.tx_gridelements_view_column_50}
             </f:format.html>
-        </rkwBasics:format.removeEmptyParagraphs>
+        </coreExtended:format.removeEmptyParagraphs>
 
         <f:comment> <!-- start reading and order form--></f:comment>
         <f:render partial="StructureContainer/Content/StartReadingAndShop" arguments="{_all}"/>
 
         <f:comment><!-- optional second content section --></f:comment>
         <f:if condition="{data.tx_gridelements_view_column_51}">
-            <rkwBasics:format.removeEmptyParagraphs>
+            <coreExtended:format.removeEmptyParagraphs>
                 <f:format.html parseFuncTSPath="">
                     {data.tx_gridelements_view_column_51}
                 </f:format.html>
-            </rkwBasics:format.removeEmptyParagraphs>
+            </coreExtended:format.removeEmptyParagraphs>
         </f:if>
 
         <f:comment><!-- read more --></f:comment>
@@ -42,22 +42,22 @@
         <f:render partial="StructureContainer/Content/TableOfContents" arguments="{_all}"/>
 
         <f:comment><!-- content --></f:comment>
-        <rkwBasics:format.removeEmptyParagraphs>
+        <coreExtended:format.removeEmptyParagraphs>
             <f:format.html parseFuncTSPath="">
                 {data.tx_gridelements_view_column_50}
             </f:format.html>
-        </rkwBasics:format.removeEmptyParagraphs>
+        </coreExtended:format.removeEmptyParagraphs>
 
         <f:comment> <!-- start reading and order form--></f:comment>
         <f:render partial="StructureContainer/Content/StartReadingAndShop" arguments="{_all}"/>
 
         <f:comment><!-- optional second content section --></f:comment>
         <f:if condition="{data.tx_gridelements_view_column_51}">
-            <rkwBasics:format.removeEmptyParagraphs>
+            <coreExtended:format.removeEmptyParagraphs>
                 <f:format.html parseFuncTSPath="">
                     {data.tx_gridelements_view_column_51}
                 </f:format.html>
-            </rkwBasics:format.removeEmptyParagraphs>
+            </coreExtended:format.removeEmptyParagraphs>
         </f:if>
 
         <f:comment><!-- read more --></f:comment>
@@ -74,12 +74,12 @@
         
         <f:comment><!-- content --></f:comment>
         <div class="flex-container">
-            <div class="typo3-fsc {f:if(condition: '{rkwBasics:isEmpty(string: data.tx_gridelements_view_column_60)} == 0', then: 'flex-basis-7', else: 'flex-basis-12')}">
-                <rkwBasics:format.removeEmptyParagraphs>
+            <div class="typo3-fsc {f:if(condition: '{coreExtended:isEmpty(string: data.tx_gridelements_view_column_60)} == 0', then: 'flex-basis-7', else: 'flex-basis-12')}">
+                <coreExtended:format.removeEmptyParagraphs>
                     <f:format.html parseFuncTSPath="">
                         {data.tx_gridelements_view_column_50}
                     </f:format.html>
-                </rkwBasics:format.removeEmptyParagraphs>
+                </coreExtended:format.removeEmptyParagraphs>
             </div>
         </div>
 </f:section>
