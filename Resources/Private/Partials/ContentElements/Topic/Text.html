@@ -15,7 +15,7 @@
         </f:else>
     </f:if>
 
-    <f:if condition="{data.header_link}">
+    <f:if condition="{data.header_link} && {data.rowDescription}">
         <rkwEtracker:link.typolink parameter="{data.header_link}" class="btn btn--primary introtext__button">
             <f:if condition="{data.rowDescription}">
                 <f:then>
