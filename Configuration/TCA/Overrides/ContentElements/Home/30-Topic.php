@@ -10,9 +10,9 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_topic'] = [
             --palette--;;general,
             --palette--;;headers,
             rowDescription,
-            bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,            
+            bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.images,
-            image,            
+            image,
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,
             --palette--;;language,
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
@@ -41,7 +41,7 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_topic'] = [
         ],
         'header_link' => [
             'config' => [
-                'eval' => 'trim,required',
+                'eval' => 'trim',
             ]
         ],
         'bodytext' => [
