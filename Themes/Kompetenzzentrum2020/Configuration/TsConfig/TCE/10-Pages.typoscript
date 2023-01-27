@@ -35,6 +35,8 @@ TCEFORM.pages {
 
         addItems.50000 = Tool
 
+        addItems.60000 = Eingebetteter Inhalt
+
     }
 
     //===============================================================
