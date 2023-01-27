@@ -310,31 +310,54 @@ mod {
                 }
             }
 
-          //======================================
-          // Tool pages
-          //======================================
-          toolPages {
-            title = Tool
-            config {
-              backend_layout {
-                colCount = 1
-                rowCount = 1
-                rows {
-                  1 {
-                    columns {
-                      1 {
-                        name = Inhalte
-                        colPos = 1000
-                        allowed {
-                          CType = list
-                          list_type = , rkwcanvas_canvas, rkwmaps_gemmaps
+            //======================================
+            // Tool pages
+            //======================================
+            toolPages {
+                title = Tool
+                config {
+                    backend_layout {
+                        colCount = 1
+                        rowCount = 1
+                        rows {
+                            1 {
+                                columns {
+                                    1 {
+                                        name = Inhalte
+                                        colPos = 1000
+                                        allowed {
+                                            CType = list
+                                            list_type = , rkwcanvas_canvas, rkwmaps_gemmaps
+                                        }
+                                    }
+                                }
+                            }
                         }
-                      }
                     }
-                  }
                 }
-              }
             }
+
+          //======================================
+          // Embeddable content pages
+          //======================================
+          embedPages {
+              title = Eingebetteter Inhalt
+              config {
+                  backend_layout {
+                      colCount = 1
+                      rowCount = 1
+                      rows {
+                          1 {
+                              columns {
+                                  1 {
+                                      name = Inhalte
+                                      colPos = 1100
+                                  }
+                              }
+                          }
+                      }
+                  }
+              }
           }
 
         }

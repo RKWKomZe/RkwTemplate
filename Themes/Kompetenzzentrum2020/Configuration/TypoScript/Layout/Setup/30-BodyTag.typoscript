@@ -140,6 +140,11 @@ page {
               value = tpl-tool show-first-headline body
             }
 
+            60000 = TEXT
+            60000 {
+              value = tpl-embed show-first-headline body
+            }
+
             stdWrap.noTrimWrap = | ||
         }
 
