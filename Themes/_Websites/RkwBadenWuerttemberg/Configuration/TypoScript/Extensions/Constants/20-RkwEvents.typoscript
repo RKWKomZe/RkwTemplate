@@ -88,7 +88,7 @@ plugin.tx_rkwevents {
                 showTime = 1
 
                 # hint: use value "11" for the maximum amount of months!
-                showTimeNumberOfMonths = 6
+                showTimeNumberOfMonths = 11
 
                 # cat=plugin.tx_rkwevents; type=integer; label=Show filter option "address"
                 showAddress = 1
