@@ -23,16 +23,15 @@
                         <f:if condition="<rkwBasics:isEmpty string='{data.bodytext}' /> == 0">
                             {data.bodytext}
                         </f:if>
-                        <f:if condition="{data.header_link}">
-                            <div class="flex-container btn-list--center">
-                                <rkwEtracker:link.typolink parameter="{data.header_link}" class="btn btn--primary">
-                                    {data.subheader}
-                                </rkwEtracker:link.typolink>
-                            </div>
-                        </f:if>
                     </div>
                 </div>
-
+                <f:if condition="{data.header_link}">
+                    <div class="tile__footer flex-container btn-list--center">
+                        <rkwEtracker:link.typolink parameter="{data.header_link}" class="btn btn--primary">
+                            {data.subheader}
+                        </rkwEtracker:link.typolink>
+                    </div>
+                </f:if>
             </div>
         </div>
 
