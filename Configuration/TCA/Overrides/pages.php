@@ -530,7 +530,7 @@ $GLOBALS['TCA']['pages']['columns']['media']['config']['overrideChildTca']['colu
 ];
 
 /*
-$GLOBALS['TCA']['pages']['columns']['tx_rkwbasics_teaser_image']['config']['overrideChildTca']['columns']['crop']['config']['cropVariants'] =
+$GLOBALS['TCA']['pages']['columns']['tx_coreextended_preview_image']['config']['overrideChildTca']['columns']['crop']['config']['cropVariants'] =
     array_merge(
         [
             'teaser' => [
@@ -543,10 +543,10 @@ $GLOBALS['TCA']['pages']['columns']['tx_rkwbasics_teaser_image']['config']['over
                 ]
             ]
         ],
-        $GLOBALS['TCA']['pages']['columns']['tx_rkwbasics_teaser_image']['config']['overrideChildTca']['columns']['crop']['config']['cropVariants']
+        $GLOBALS['TCA']['pages']['columns']['tx_coreextended_preview_image']['config']['overrideChildTca']['columns']['crop']['config']['cropVariants']
     );
 */
-$GLOBALS['TCA']['pages']['columns']['tx_rkwbasics_teaser_image']['config']['overrideChildTca']['columns']['crop']['config']['cropVariants'] =
+$GLOBALS['TCA']['pages']['columns']['tx_coreextended_preview_image']['config']['overrideChildTca']['columns']['crop']['config']['cropVariants'] =
 [
     'teaser' => [
         'title' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:pages.keyvisual.imageManipulation.teaser',

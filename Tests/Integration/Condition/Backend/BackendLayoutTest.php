@@ -15,7 +15,6 @@ namespace RKW\RkwTemplate\Tests\Integration\Condition\Backend;
  */
 
 use Nimut\TestingFramework\TestCase\FunctionalTestCase;
-
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Object\ObjectManager;
 use RKW\RkwTemplate\Condition\Backend\BackendLayoutCondition;
@@ -42,6 +41,7 @@ class BackendLayoutTest extends FunctionalTestCase
         'typo3conf/ext/gridelements',
     ];
 
+
     /**
      * @var string[]
      */
@@ -49,17 +49,16 @@ class BackendLayoutTest extends FunctionalTestCase
     ];
 
 
+    /**
+     * @var \TYPO3\CMS\Extbase\Object\ObjectManager|null
+     */
+    private ?ObjectManager $objectManager = null;
+
 
     /**
-     * @var \TYPO3\CMS\Extbase\Object\ObjectManager
+     * @var \RKW\RkwTemplate\Condition\Backend\BackendLayoutCondition|null
      */
-    private $objectManager;
-
-
-    /**
-     * @var \RKW\RkwTemplate\Condition\Backend\BackendLayoutCondition
-     */
-    private $subject = null;
+    private ?BackendLayoutCondition $subject = null;
 
 
     /**
@@ -180,7 +179,6 @@ class BackendLayoutTest extends FunctionalTestCase
 
     //=============================================
 
-
     /**
      * @test
      */
@@ -199,6 +197,7 @@ class BackendLayoutTest extends FunctionalTestCase
         $this::assertEquals(5, $this->subject->getPid());
 
     }
+
 
     /**
      * @test
@@ -221,6 +220,7 @@ class BackendLayoutTest extends FunctionalTestCase
 
     }
 
+
     /**
      * @test
      */
@@ -242,6 +242,7 @@ class BackendLayoutTest extends FunctionalTestCase
         $this::assertEquals(5, $this->subject->getPid());
     }
 
+
     /**
      * @test
      */
@@ -262,6 +263,7 @@ class BackendLayoutTest extends FunctionalTestCase
         $_GET['edit']['tt_content'][9999] = 'edit';
         $this::assertEquals(5, $this->subject->getPid());
     }
+
 
     /**
      * @test
@@ -310,7 +312,6 @@ class BackendLayoutTest extends FunctionalTestCase
         $this::assertEquals(5, $this->subject->getPid());
     }
 
-
     //=============================================
 
     /**
@@ -320,7 +321,5 @@ class BackendLayoutTest extends FunctionalTestCase
     {
         parent::tearDown();
     }
-
-
 
 }

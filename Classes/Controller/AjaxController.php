@@ -1,5 +1,4 @@
 <?php
-
 namespace RKW\RkwTemplate\Controller;
 
 /*
@@ -18,10 +17,9 @@ namespace RKW\RkwTemplate\Controller;
 /**
  * Class AjaxController
  *
-
  * @author Steffen Kroggel <developer@steffenkroggel.de>
  * @copyright RKW Kompetenzzentrum
- * @package RKW_RkwTemplaten
+ * @package RKW_RkwTemplate
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  */
 class AjaxController extends \Madj2k\AjaxApi\Controller\AjaxAbstractController
@@ -34,7 +32,7 @@ class AjaxController extends \Madj2k\AjaxApi\Controller\AjaxAbstractController
      */
     public function mobileMenuAction()
     {
-
+        // just renders the template
     }
 
 

@@ -10,9 +10,17 @@ namespace RKW\RkwTemplate\Condition\Backend;
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  */
 
-use \TYPO3\CMS\Backend\Utility\BackendUtility;
+use TYPO3\CMS\Backend\Utility\BackendUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
+/**
+ * Class ColPosCondition
+ *
+ * @author Steffen Kroggel <developer@steffenkroggel.de>
+ * @copyright RKW Kompetenzzentrum
+ * @package RKW_RkwTemplate
+ * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
+ */
 class ColPosCondition extends \TYPO3\CMS\Core\Configuration\TypoScript\ConditionMatching\AbstractCondition
 {
 
@@ -23,7 +31,7 @@ class ColPosCondition extends \TYPO3\CMS\Core\Configuration\TypoScript\Condition
      * @param array $conditionParameters
      * @return bool
      */
-    public function matchCondition (array $conditionParameters)
+    public function matchCondition (array $conditionParameters): bool
     {
 
         $condition = $conditionParameters[0];

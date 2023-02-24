@@ -1,6 +1,6 @@
 <?php
-
 namespace RKW\RkwTemplate\ViewHelpers;
+
 /*
  * This file is part of the TYPO3 CMS project.
  *
@@ -30,8 +30,10 @@ class GetLandingpageElementModClassViewHelper extends AbstractViewHelper
 
     /**
      * Initialize arguments
+     *
+     * @return void
      */
-    public function initializeArguments()
+    public function initializeArguments(): void
     {
         parent::initializeArguments();
         $this->registerArgument('headerPosition', 'integer', 'An integer defining appearance of the content element.');
@@ -48,8 +50,7 @@ class GetLandingpageElementModClassViewHelper extends AbstractViewHelper
         array $arguments,
         \Closure $renderChildrenClosure,
         RenderingContextInterface $renderingContext
-    ): string
-    {
+    ): string {
 
         if ($headerPosition = $arguments['headerPosition']) {
 

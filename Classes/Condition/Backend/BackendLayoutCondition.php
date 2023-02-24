@@ -10,10 +10,17 @@ namespace RKW\RkwTemplate\Condition\Backend;
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  */
 
-use \TYPO3\CMS\Backend\Utility\BackendUtility;
+use TYPO3\CMS\Backend\Utility\BackendUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
-use TYPO3\CMS\Extbase\Utility\DebuggerUtility;
 
+/**
+ * Class BackendLayoutCondition
+ *
+ * @author Steffen Kroggel <developer@steffenkroggel.de>
+ * @copyright RKW Kompetenzzentrum
+ * @package RKW_RkwTemplate
+ * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
+ */
 class BackendLayoutCondition extends \TYPO3\CMS\Core\Configuration\TypoScript\ConditionMatching\AbstractCondition
 {
 
@@ -36,7 +43,6 @@ class BackendLayoutCondition extends \TYPO3\CMS\Core\Configuration\TypoScript\Co
 
             $pid = $this->getPid();
         }
-
 
         // do not use this on gridElements
         // those have colPos = -1
@@ -109,13 +115,12 @@ class BackendLayoutCondition extends \TYPO3\CMS\Core\Configuration\TypoScript\Co
     }
 
 
-
     /**
      * Returns current PID
      *
      * @return int
      */
-    public function getPid ()
+    public function getPid (): int
     {
         $pid = intval(GeneralUtility::_GP('id'));
         if ($editArray = GeneralUtility::_GP('edit')) {
