@@ -1,0 +1,38 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:coreExtended="http://typo3.org/ns/Madj2k/CoreExtended/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+    <f:comment><!-- schema.org --></f:comment>
+    <f:render partial="StructureContainer/SchemaOrg" arguments="{_all}"/>
+
+    <section id="content" class="section content flex-basis-9 full-width-smalldesk no-padding-narrow">
+
+        <f:comment><!-- content --></f:comment>
+        <div class="contentbox contentbox--text {f:if(condition:'{data.tx_gridelements_view_column_70}', then: 'contentbox--no-border-radius-bottom')} no-border-radius-smalldesk typo3-fsc">
+            <f:render partial="StructureContainer/Content" section="Default" arguments="{_all}"/>
+        </div>
+
+        <f:comment><!-- call to action --></f:comment>
+        <f:render partial="StructureContainer/CallToAction" arguments="{_all}"/>
+
+        <f:comment><!-- sharing --></f:comment>
+        <f:render partial="StructureContainer/Sharing" arguments="{_all}" />
+
+        <f:comment><!-- alerts --></f:comment>
+        <f:if condition="! {coreExtended:isEmpty(string:'{f:cObject(typoscriptObjectPath: \'lib.txRkwTemplate.various.alerts\')}')}">
+            <div class="contentbox contentbox--text contentbox--margin-top no-border-radius-smalldesk">
+                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.various.alerts" data="{data}" />
+            </div>
+        </f:if>
+
+        <f:comment><!-- recommendations --></f:comment>
+        <f:render partial="StructureContainer/Recommendation" section="Default" arguments="{_all}"/>
+
+    </section>
+
+    <f:comment><!-- aside --></f:comment>
+    <aside class="aside-info flex-basis-3 full-width-smalldesk aside-info--padding">
+        <f:render partial="StructureContainer/Aside" section="Full" arguments="{_all}"/>
+    </aside>
+
+</html>

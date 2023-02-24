@@ -1,0 +1,50 @@
+#############################################################################
+# Global paths
+#############################################################################
+
+plugin.tx_rkwtemplate_themeconfig {
+
+	# IMPORTANT: With / at the end for ClickEnlarge
+	website.baseUrl = http://ressinnobau.rkw.codes/
+
+}
+
+plugin.tx_accelerator {
+    settings {
+        cdn {
+            enable = 0
+        }
+        htmlMinify {
+            enable = 0
+        }
+    }
+}
+
+plugin.tx_rkwgeolocation {
+
+    settings {
+        # proxy = 192.168.1.8:80
+        proxyUsername =
+        proxyPassword =
+    }
+}
+
+plugin.tx_rkwregistration {
+
+    settings {
+        # proxy = 192.168.1.8:80
+        proxyUsername =
+        proxyPassword =
+
+    }
+}
+
+
+plugin.tx_rkwetracker {
+
+    settings {
+
+        # proxy = 192.168.1.8:80
+
+    }
+}

@@ -1,0 +1,27 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:coreExtended="http://typo3.org/ns/Madj2k/CoreExtended/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+    <div id="mdl-c{data.uid}" class="mdl">
+        <div class="mdl__inner">
+            <header class="mdl__header">
+                <span class="h4 mdl__headline">{data.header}</span>
+            </header>
+            <div class="mdl__content typo3-fsc">
+                <div class="frame show-first-headline">
+                    <coreExtended:format.removeEmptyParagraphs>
+                        <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data.bodytext}</f:format.html>
+                    </coreExtended:format.removeEmptyParagraphs>
+                </div>
+            </div>
+        </div>
+        <button class="mdl-close js-close-mdl">
+            <svg class="icon icon--48">
+                <use xlink:href="#ic-mobile-menu-close"/>
+            </svg>
+        </button>
+    </div>
+    <div class="mdl-layer js-mdl-layer"></div>
+
+</html>

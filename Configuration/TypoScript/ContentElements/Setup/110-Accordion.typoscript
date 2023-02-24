@@ -1,0 +1,7 @@
+// this is based on textPic NOT on lib.tt_content, because we need images in content here!
+tt_content {
+    rkwtemplate_accordion =< tt_content.textpic
+    rkwtemplate_accordion {
+        templateName = Accordion
+    }
+}

@@ -1,0 +1,22 @@
+tx_gridelements.setup.promoterContainer {
+
+    title = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.promoterContainer.title
+    description = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.promoterContainer.description
+    config {
+        colCount = 1
+        rowCount = 1
+        rows {
+            1 {
+                columns {
+                    1 {
+                        name = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.promoterContainer.title
+                        colPos = 40
+                        allowed {
+                            CType = rkwtemplate_promoter
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

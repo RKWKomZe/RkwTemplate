@@ -1,0 +1,22 @@
+tx_gridelements.setup.moreListContainer {
+
+    title = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.moreListContainer.title
+    description = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.moreListContainer.description
+    config {
+        colCount = 1
+        rowCount = 1
+        rows {
+            1 {
+                columns {
+                    1 {
+                        name = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.moreList.title
+                        colPos = 120
+                        allowed {
+                            CType = rkwtemplate_morelist
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

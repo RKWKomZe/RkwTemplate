@@ -1,0 +1,32 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+    <!-- first we need to find the active element -->
+    <f:for each="{menuItems}" as="itemPrimary" iteration="iterator">
+        <f:if condition="{itemPrimary.active}">
+
+            <li class="nav__item nav__item--white-background {f:if(condition:'{f:count(subject: menuItems)} > 1', then:'has-dropdown is-dropdown')}">
+
+                <!-- Do not insert line-breaks here because this will cause errors with the arrow (.::after) -->
+                <a href="{itemPrimary.link}" target="{f:if(condition: itemPrimary.target, then: itemPrimary.target, else:'_self')}"><span class="nav__item-text"><f:format.crop maxCharacters="50" respectWordBoundaries="true">{itemPrimary.title}</f:format.crop></span></a>
+
+                <!-- add all inactive elements of the same level -->
+                <f:if condition="{f:count(subject: menuItems)} > 1">
+                    <ul class="contentbox nav__dropdown">
+                        <f:for each="{menuItems}" as="itemSecondary" iteration="iterator">
+                            <f:if condition="! {itemSecondary.active}">
+                                <li class="nav-item__dropdown">
+                                    <a href="{itemSecondary.link}" target="{f:if(condition: itemSecondary.target, then: itemSecondary.target, else:'_self')}">
+                                        <span class="nav__item-text"><f:format.crop maxCharacters="50" respectWordBoundaries="true">{itemSecondary.title}</f:format.crop></span>
+                                    </a>
+                                </li>
+                            </f:if>
+                        </f:for>
+                    </ul>
+                </f:if>
+            </li>
+            <!-- load next level of active item-->
+            <f:if condition="{itemPrimary.children}">
+                <f:render partial="ItemList" arguments="{menuItems: itemPrimary.children}" />
+            </f:if>
+        </f:if>
+    </f:for>
+</html>

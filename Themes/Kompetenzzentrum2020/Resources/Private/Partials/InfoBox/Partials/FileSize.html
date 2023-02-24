@@ -1,0 +1,14 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+    <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.pageInfo.fileSize', data:'{data}')} > 0">
+        <div class="table__item">
+            <div class="table__title">
+                <f:translate key="{settings.themeLanguageFile}:partials.infoBox.partials.fileSize.labelFileSize"/>:
+            </div>
+            <div class="table__content">
+                <f:format.bytes units="B,KB,MB,GB"><f:cObject typoscriptObjectPath="lib.txRkwTemplate.pageInfo.fileSize" data="{data}" /></f:format.bytes> (<f:format.case mode="upper"><f:cObject typoscriptObjectPath="lib.txRkwTemplate.pageInfo.fileType" data="{data}" /></f:format.case>)
+            </div>
+        </div>
+    </f:if>
+
+</html>

@@ -1,7 +1,0 @@
-TCEFORM.pages.tx_rkwauthors_authorship.PAGE_TSCONFIG_IDLIST = 3467
-TCEFORM.pages.tx_rkwprojects_project_uid.PAGE_TSCONFIG_IDLIST = 3468
-TCEFORM.tx_rkwevents_domain_model_event.internal_contact.PAGE_TSCONFIG_IDLIST = 3467
-TCEFORM.tx_rkwevents_domain_model_event.external_contact.PAGE_TSCONFIG_IDLIST = 3469
-TCEFORM.tx_rkwevents_domain_model_event.place.PAGE_TSCONFIG_IDLIST = 3469
-TCEFORM.tx_rkwevents_domain_model_event.project.PAGE_TSCONFIG_IDLIST = 3468,133
-

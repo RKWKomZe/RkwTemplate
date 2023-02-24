@@ -1,0 +1,66 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+    <f:section name="Default">
+
+        <f:if condition="{settings.socialMedia} == 1">
+            <div class="nav socialwrapper flex-basis-12">
+                <ul class="sociallist">
+                    <f:if condition="{settings.socialMediaLinks.youTube}">
+                        <li class="sociallist__item">
+                            <a href="{settings.socialMediaLinks.youTube}" target="_blank" title="YouTube">
+                                <svg class="icon icon--24">
+                                    <use xlink:href="#ic-youtube" />
+                                </svg>
+                            </a>
+                        </li>
+                    </f:if>
+                    <f:if condition="{settings.socialMediaLinks.facebook}">
+                        <li class="sociallist__item">
+                            <a href="{settings.socialMediaLinks.facebook}" target="_blank" title="Facebook">
+                                <svg class="icon icon--24">
+                                    <use xlink:href="#ic-facebook" />
+                                </svg>
+                            </a>
+                        </li>
+                    </f:if>
+                    <f:if condition="{settings.socialMediaLinks.twitter}">
+                        <li class="sociallist__item">
+                            <a href="{settings.socialMediaLinks.twitter}" target="_blank" title="Twitter">
+                                <svg class="icon icon--24">
+                                    <use xlink:href="#ic-twitter" />
+                                </svg>
+                            </a>
+                        </li>
+                    </f:if>
+                    <f:if condition="{settings.socialMediaLinks.xing}">
+                        <li class="sociallist__item">
+                            <a href="{settings.socialMediaLinks.xing}" target="_blank" title="XING">
+                                <svg class="icon icon--24">
+                                    <use xlink:href="#ic-xing" />
+                                </svg>
+                            </a>
+                        </li>
+                    </f:if>
+                    <f:if condition="{settings.socialMediaLinks.linkedIn}">
+                        <li class="sociallist__item">
+                            <a href="{settings.socialMediaLinks.linkedIn}" target="_blank" title="LinkedIn">
+                                <svg class="icon icon--24">
+                                    <use xlink:href="#ic-linkedin" />
+                                </svg>
+                            </a>
+                        </li>
+                    </f:if>
+                    <f:if condition="{settings.socialMediaLinks.instagram}">
+                        <li class="sociallist__item">
+                            <a href="{settings.socialMediaLinks.instagram}" target="_blank" title="Instagram">
+                                <svg class="icon icon--24">
+                                    <use xlink:href="#ic-instagram" />
+                                </svg>
+                            </a>
+                        </li>
+                    </f:if>
+                </ul>
+            </div>
+        </f:if>
+    </f:section>
+</html>

@@ -1,0 +1,49 @@
+module.tx_rkwrelated {
+
+    settings {
+        # cat=plugin.tx_rkwrelated; type=string; label=List of PIDs whose cache is to delete, when contents are saved
+        clearCachePageList = 3471
+    }
+}
+
+plugin.tx_rkwrelated_similarcontent {
+
+    settings {
+
+        # cat=plugin.tx_rkwrelated_similarcontent//f; type=string; label=PIDs to include in list (comma separated)
+        startingPidList = {$plugin.tx_rkwtemplate_themeconfig.website.rootPid}
+
+        # cat=plugin.tx_rkwrelated_similarcontent//f; type=boolean; label=Override opening of links in same window (empty to deactivate override)
+        openLinksInSameWindowOverride = 1
+
+        # cat=plugin.tx_rkwrelated_similarcontent//f; type=boolean; label=Hide authors label
+        hideAuthors = 1
+    }
+}
+
+plugin.tx_rkwrelated_morecontent {
+
+    settings {
+
+        # cat=plugin.tx_rkwrelated_morecontent//f; type=string; label=PIDs to include in list (comma separated)
+        startingPidList = {$plugin.tx_rkwtemplate_themeconfig.website.rootPid}
+
+        # cat=plugin.tx_rkwrelated_morecontent//f; type=boolean; label=Override opening of links in same window (empty to deactivate override)
+        openLinksInSameWindowOverride = 1
+
+        # cat=plugin.tx_rkwrelated_morecontent//f; type=boolean; label=Hide authors label
+        hideAuthors = 1
+
+        # cat=plugin.tx_rkwrelated_morecontent//a; type=string; label=Path to powered-by image
+        poweredByImage =
+
+        detailPid {
+
+            # cat=plugin.tx_rkwrelated_morecontent//f; type=string; label=Detail pid (default)
+            default =
+
+            # cat=plugin.tx_rkwrelated_morecontent//f; type=string; label=Detail pid for publications
+            publication =
+        }
+    }
+}

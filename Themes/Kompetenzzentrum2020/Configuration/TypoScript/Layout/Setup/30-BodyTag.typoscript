@@ -1,0 +1,159 @@
+// ############################################################################
+// Extending BodyTag-Class//#############################################################################
+page {
+    bodyTagCObject.10 {
+        // Set CSS-Class based on field, including fallback
+        30 = RECORDS
+        30 {
+            source.data = levelfield : -1, tx_rkwbasics_department, slide
+            tables = tx_rkwbasics_domain_model_department
+            conf.tx_rkwbasics_domain_model_department = TEXT
+            conf.tx_rkwbasics_domain_model_department {
+                value = topic-1
+                override.field = css_class
+            }
+
+            stdWrap.noTrimWrap = | ||
+        }
+
+        50 = CASE
+        50 {
+            // slide the template
+            key.data = levelfield:-2,tx_rkwbasics_fe_layout_next_level,slide
+            key.override.field = layout
+
+            // default template file
+            default = TEXT
+            default.value = tpl-topic body
+
+            10 = TEXT
+            10 {
+                value = tpl-topic body
+            }
+
+            11 = TEXT
+            11 {
+                value = tpl-topic body
+            }
+
+            12 = TEXT
+            12 {
+                value = tpl-topic body
+            }
+
+            20 = TEXT
+            20 {
+                value = tpl-article body
+            }
+
+            21 = TEXT
+            21 {
+                value = tpl-article body
+            }
+
+            22 = TEXT
+            22 {
+                value = tpl-article body
+            }
+
+            30 = TEXT
+            30 {
+                value = tpl-publications body
+            }
+
+            40 = TEXT
+            40 {
+                value = tpl-home body
+            }
+
+            50 = TEXT
+            50 {
+                value = tpl-specials-detail show-first-headline body
+            }
+
+            60 = TEXT
+            60 {
+                value = tpl-login body
+            }
+
+            9000 = TEXT
+            9000 {
+                value = tpl-broken-link show-first-headline body
+            }
+
+            9100 = TEXT
+            9100 {
+                value = tpl-broken-link show-first-headline body
+            }
+
+            10000 = COA_INT
+            10000 {
+                10 = TEXT
+                10.value {
+                    // create nested select db query
+                    // 1. get/post author in frontend -> get department field
+                    stdWrap {
+                        wrap3 = {|}
+                        dataWrap = DB:tx_rkwauthors_domain_model_authors:{gp:tx_rkwauthors_rkwauthorsdetail|author}:department
+                        dataWrap.intval = 1
+                        insertData = 1
+                    }
+
+                    // 2. relation to table department -> get field css_class (of department which is part of author)
+                    wrap3 = {DB:tx_rkwbasics_domain_model_department:|:css_class}
+                    insertData = 1
+                }
+
+                20 = TEXT
+                20.value = tpl-contact-detail body
+                20.noTrimWrap = | ||
+            }
+
+            20000 = COA_INT
+            20000 {
+                10 = TEXT
+                10.value {
+                    // create nested select db query
+                    // 1. get/post event in frontend -> get department field
+                    stdWrap {
+                        wrap3 = {|}
+                        dataWrap = DB:tx_rkwevents_domain_model_event:{gp:tx_rkwevents_pi1|event}:department
+                        // Intval zerstört Abfrage (anders als bei Authors haben wir hier keinen ObjectStorage bei "department")
+                        // @todo Eigentlich sollte hier schon ein intval stattfinden!!
+                        // dataWrap.intval = 1
+                        insertData = 1
+                    }
+
+                    // 2. relation to table department -> get field css_class (of department which is part of the event)
+                    wrap3 = {DB:tx_rkwbasics_domain_model_department:|:css_class}
+                    insertData = 1
+                }
+
+                20 = TEXT
+                20.value = tpl-events body
+                20.noTrimWrap = | ||
+            }
+
+            50000 = TEXT
+            50000 {
+              value = tpl-tool show-first-headline body
+            }
+
+            60000 = TEXT
+            60000 {
+              value = tpl-login show-first-headline body
+            }
+
+            stdWrap.noTrimWrap = | ||
+        }
+
+
+        60 = TEXT
+        60 {
+            value = is-microsite
+            stdWrap.noTrimWrap = | ||
+            if.isTrue = {$plugin.tx_rkwtemplate_themeconfig.isMicrosite}
+        }
+    }
+}
+

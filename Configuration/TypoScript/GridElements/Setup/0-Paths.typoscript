@@ -1,0 +1,24 @@
+lib.gridelements.defaultGridSetup {
+
+     // we use the FluidStyledTemplates templates as fallback and get more and more specific
+     layoutRootPaths {
+        700 = {$plugin.tx_rkwtemplate_themeconfig.paths.default.root}/Extensions/FluidStyledContent/Layouts
+        800 = {$plugin.tx_rkwtemplate_themeconfig.paths.extensions.root}/FluidStyledContent/Layouts
+        900 = {$plugin.tx_rkwtemplate.view.layoutRootPath}GridElements
+        1000 = {$plugin.tx_rkwtemplate_themeconfig.paths.default.layouts}/GridElements
+     }
+
+     // no fallbacks here - we are building custom stuff!
+     templateRootPaths {
+        900 = {$plugin.tx_rkwtemplate.view.templateRootPath}GridElements
+        1000 = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/GridElements
+     }
+
+     partialRootPaths {
+        700 = {$plugin.tx_rkwtemplate_themeconfig.paths.default.root}/Extensions/FluidStyledContent/Partials
+        800 = {$plugin.tx_rkwtemplate_themeconfig.paths.extensions.root}/FluidStyledContent/Partials
+        900 = {$plugin.tx_rkwtemplate.view.partialRootPath}GridElements
+        1000 = {$plugin.tx_rkwtemplate_themeconfig.paths.default.partials}/GridElements
+     }
+
+}

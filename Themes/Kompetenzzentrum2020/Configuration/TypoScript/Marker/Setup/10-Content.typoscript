@@ -1,0 +1,95 @@
+lib.txRkwTemplate {
+
+    content {
+
+        home = CONTENT
+        home < styles.content.get
+        home.select.where = {#colPos} = 100
+
+        // deprecated???
+        related = CONTENT
+        related < styles.content.get
+        related.select.where = {#colPos} = 110
+        related.slide = -1
+
+        slider = CONTENT
+        slider < styles.content.get
+        slider.select.where = {#colPos} = 120
+
+        promotion = CONTENT
+        promotion < styles.content.get
+        promotion.select.where = {#colPos} = 210
+        promotion.slide = -1
+
+        boxesTopic = CONTENT
+        boxesTopic < styles.content.get
+        boxesTopic.select.where = {#colPos} = 220
+
+        boxesTopicInherit = CONTENT
+        boxesTopicInherit < styles.content.get
+        boxesTopicInherit.select.where = {#colPos} = 230
+        boxesTopicInherit.slide = -1
+
+        boxesArticle = CONTENT
+        boxesArticle < styles.content.get
+        boxesArticle.select.where = {#colPos} = 310
+
+        boxesPublicationOrder = CONTENT
+        boxesPublicationOrder < styles.content.get
+        boxesPublicationOrder.select.where = {#colPos} = 410
+        boxesPublicationOrder.slide = -1
+
+        boxesPublicationInherit = CONTENT
+        boxesPublicationInherit < styles.content.get
+        boxesPublicationInherit.select.where = {#colPos} = 420
+        boxesPublicationInherit.slide = -1
+
+        pluginOnly = CONTENT
+        pluginOnly < styles.content.get
+        pluginOnly.select.where = {#colPos} = 500
+
+        mainExpert = CONTENT
+        mainExpert < styles.content.get
+        mainExpert.select.where = {#colPos} = 600
+
+        headlineExpert = CONTENT
+        headlineExpert < styles.content.get
+        headlineExpert.select.where = {#colPos} = 610
+
+        boxesExpert = CONTENT
+        boxesExpert < styles.content.get
+        boxesExpert.select.where = {#colPos} = 620
+
+        mapHeader = CONTENT
+        mapHeader < styles.content.get
+        mapHeader.select.where = {#colPos} = 810
+
+        mapOverview = CONTENT
+        mapOverview < styles.content.get
+        mapOverview.select.where = {#colPos} = 820
+
+        landingpage = CONTENT
+        landingpage < styles.content.get
+        landingpage.select.where = {#colPos} = 900
+
+        landingpageStickyFooter = CONTENT
+        landingpageStickyFooter < styles.content.get
+        landingpageStickyFooter.select.where = {#colPos} = 910
+
+        landingpageSiteHeader = CONTENT
+        landingpageSiteHeader < styles.content.get
+        landingpageSiteHeader.select.where = {#colPos} = 920
+
+        tool = CONTENT
+        tool < styles.content.get
+        tool.select.where = {#colPos} = 1000
+
+        login = CONTENT
+        login < styles.content.get
+        login.select.where = {#colPos} = 1100
+
+        loginDescription = CONTENT
+        loginDescription < styles.content.get
+        loginDescription.select.where = {#colPos} = 1110
+    }
+}

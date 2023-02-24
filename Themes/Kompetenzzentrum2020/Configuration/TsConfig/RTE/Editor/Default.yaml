@@ -1,0 +1,19 @@
+####
+#  CKEditor configuration for rkw_template
+###
+
+# Load default processing options
+imports:
+  - { resource: 'EXT:rkw_template/Themes/_Core/Configuration/TsConfig/RTE/Editor/Basics.yaml' }
+  - { resource: 'EXT:rkw_template/Themes/Kompetenzzentrum2020/Configuration/TsConfig/RTE/Editor/Imports/Styles.yaml' }
+
+# Add configuration for the editor
+# For complete documentation see http://docs.ckeditor.com/#!/api/CKEDITOR.config
+editor:
+
+  # see: https://ckeditor.com/docs/ckeditor4/latest/api/CKEDITOR_config.html
+  config:
+
+    # the CSS file to be used inside the editor
+    contentsCss:
+      - "EXT:rkw_template/Themes/Kompetenzzentrum2020/Resources/Public/css/editor.css"

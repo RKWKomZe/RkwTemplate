@@ -1,0 +1,10 @@
+TCEFORM.pages.tx_rkwauthors_authorship.PAGE_TSCONFIG_IDLIST = 3467
+TCEFORM.pages.tx_rkwprojects_project_uid.PAGE_TSCONFIG_IDLIST = 3468
+# convention free path, no real TYPO3 context. Is used by a userFunc
+TCEFORM.tx_rkwprojects_domain_model_projects.PAGE_TSCONFIG_IDLIST = 3468
+TCEFORM.tx_rkwauthors_domain_model_authors.department.PAGE_TSCONFIG_IDLIST = 3467,132
+TCEFORM.tx_rkwevents_domain_model_event.internal_contact.PAGE_TSCONFIG_IDLIST = 3467
+TCEFORM.tx_rkwevents_domain_model_event.external_contact.PAGE_TSCONFIG_IDLIST = 3469
+TCEFORM.tx_rkwevents_domain_model_event.place.PAGE_TSCONFIG_IDLIST = 3469
+TCEFORM.tx_rkwevents_domain_model_event.project.PAGE_TSCONFIG_IDLIST = 3468,133
+TCEFORM.tx_rkwevents_domain_model_event.project.PAGE_TSCONFIG_IDLIST = 3468

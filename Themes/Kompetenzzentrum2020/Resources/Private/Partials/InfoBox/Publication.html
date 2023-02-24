@@ -1,0 +1,66 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+    <div class="flex-container siteheader__overlay siteheader__overlay-dark">
+
+        <!-- cover -->
+        <f:render partial="InfoBox/Partials/FileCover" arguments="{_all}"/>
+
+        <div class="flex-item flex-basis-7 siteheader__overlay-publications-info full-width-narrow">
+            <div class="siteheader__overlay-title">
+                <f:translate key="{settings.themeLanguageFile}:partials.infoBox.publication.labelMeta"/>
+            </div>
+
+            <!-- details -->
+            <div class="siteheader__overlay-text">
+                <div class="table">
+                    <f:render partial="InfoBox/Partials/DocumentType" arguments="{_all}"/>
+                    <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.publication.isSubPage')}">
+                        <f:render partial="InfoBox/Partials/ParentPage" arguments="{_all}"/>
+                    </f:if>
+                    <f:render partial="InfoBox/Partials/Date" section="Publication" arguments="{_all}"/>
+                    <f:render partial="InfoBox/Partials/FileSize" arguments="{_all}"/>
+                    <f:render partial="InfoBox/Partials/Project" arguments="{_all}"/>
+                    <f:render partial="InfoBox/Partials/Author" section="Default" arguments="{_all}"/>
+                </div>
+            </div>
+        </div>
+
+        <!-- buttons -->
+        <div class="flex-item flex-basis-3 siteheader__overlay-publications-btn full-width-narrow">
+            <div class="btn-list">
+
+                <!-- order -->
+                <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.content.boxesPublicationOrder', data:'{data}')}">
+                    <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.publication.isSubPage')}">
+                        <f:then>
+                            <f:link.page pageUid="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.publication.parentUid')}" section="tx-rkw-shop" class="btn btn--primary btn--small">
+                                <f:translate key="{settings.themeLanguageFile}:partials.infoBox.publication.labelOrder"/>
+                            </f:link.page>
+                        </f:then>
+                        <f:else>
+                            <a href="#tx-rkw-shop" data-target="#rkw-shop" class="btn btn--primary btn--small">
+                                <f:translate key="{settings.themeLanguageFile}:partials.infoBox.publication.labelOrder"/>
+                            </a>
+                        </f:else>
+                    </f:if>
+                </f:if>
+
+                <!-- download -->
+                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.pageInfo.fileDownload" data="{data}" />
+
+                <!-- ePaper -->
+                <f:comment>
+                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.pageInfo.externalLink" data="{data}" /></f:comment>
+
+                <!-- read -->
+                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.pageInfo.startReading" data="{data}"/>
+
+                <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.publication.isParentPage')}">
+                </f:if>
+
+
+            </div>
+        </div>
+    </div>
+
+</html>

@@ -1,0 +1,5 @@
+<INCLUDE_TYPOSCRIPT: source="FILE:./Config/Setup.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:./Pages/Setup.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:./Extensions/Setup.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:./Marker/Setup.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:./Pages/Setup/50-Print.typoscript">

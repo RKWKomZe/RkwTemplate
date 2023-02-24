@@ -1,0 +1,17 @@
+lib.txRkwTemplate {
+
+    recommendation {
+
+        relatedDefault {
+            label = Beispiele aus dem Wettbewerb
+        }
+
+        relatedPublication {
+            label = Aktuelle Publikationen
+        }
+
+        relatedSimilar {
+            label = Weitere Beispiele
+        }
+    }
+}

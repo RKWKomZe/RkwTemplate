@@ -1,0 +1,13 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+    <f:section name="Default">
+
+        <span class="breadcrumbs__text"><f:translate key="{settings.themeLanguageFile}:partials.menus.breadcrumb.list.label" /></span>
+        <ul class="breadcrumbs__list">
+            <f:for each="{menuItems}" as="item" iteration="iterator">
+                <f:render partial="Item" arguments="{item: item, iterator: iterator}"/>
+            </f:for>
+        </ul>
+
+    </f:section>
+</html>

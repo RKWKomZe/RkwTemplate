@@ -1,0 +1,26 @@
+
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:coreExtended="http://typo3.org/ns/Madj2k/CoreExtended/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+    <!-- title & subtitle -->
+    <div class="siteheader__title siteheader__title--detail-site">
+        <h1 class="h1">
+            <f:format.raw><f:format.crop maxCharacters="100" respectWordBoundaries="false">{data.title}</f:format.crop></f:format.raw>
+        </h1>
+        <f:if condition="{data.subtitle}">
+            <h2 class="siteheader__subtitle">{data.subtitle}</h2>
+        </f:if>
+    </div>
+
+    <!-- image or video -->
+    <f:if condition="! {coreExtended:isEmpty(string:'{f:cObject(typoscriptObjectPath: \'lib.txRkwTemplate.keyvisual.article\', data:\'{data}\')}')}">
+        <div class="siteheader__image">
+            <f:cObject typoscriptObjectPath="lib.txRkwTemplate.keyvisual.article" data="{data}" />
+        </div>
+    </f:if>
+
+</html>
+
+
+

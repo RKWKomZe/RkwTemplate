@@ -1,0 +1,24 @@
+// ############################################################################
+// Tuning for responsive images
+// ############################################################################
+
+tt_content.image.20.1 {
+
+    layoutKey.override = default
+    layoutKey.override.if.equals = svg
+    layoutKey.override.if.value.stdWrap.cObject = RECORDS
+    layoutKey.override.if.value.stdWrap.cObject {
+        source.data = file:current:originalUid
+        tables = sys_file
+        dontCheckPid = 1
+
+        conf.sys_file = TEXT
+        conf.sys_file {
+            field = extension
+        }
+    }
+
+	sourceCollection >
+	sourceCollection < plugin.tx_accelerator.libs.responsiveImages.sourceCollection
+
+}

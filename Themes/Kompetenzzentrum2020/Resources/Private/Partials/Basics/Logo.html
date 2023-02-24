@@ -1,0 +1,31 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+    <f:section name="Default">
+        <figure class="content-page__logo-container">
+            <a href="{settings.websiteLogoUrl}" title="<f:translate key='{settings.themeLanguageFile}:partials.basics.logo.homeLink' />">
+                <img src="{settings.websiteLogoFile}" alt="{settings.websiteName}" class="content-page__logo">
+            </a>
+        </figure>
+    </f:section>
+
+
+    <!-- ################################################################################# -->
+
+    <f:section name="Microsite">
+
+        <figure class="content-page__logo-container content-page__logo-container--microsite">
+            <a href="{settings.websiteLogoUrl}" title="<f:translate key='{settings.themeLanguageFile}:partials.basics.logo.homeLink' />">
+                <img src="{settings.websiteLogoFile}" alt="{settings.websiteName}" class="content-page__logo content-page__logo--desktop">
+                <f:if condition="{settings.micrositeLogoTabletFile}">
+                    <f:then>
+                        <img src="{settings.micrositeLogoTabletFile}" alt="{settings.websiteName}" class="content-page__logo content-page__logo--tablet">
+                    </f:then>
+                    <f:else>
+                        <img src="{settings.websiteLogoFile}" alt="{settings.websiteName}" class="content-page__logo content-page__logo--tablet content-page__logo--fallback">
+                    </f:else>
+                </f:if>
+            </a>
+        </figure>
+
+    </f:section>
+</html>

@@ -1,0 +1,70 @@
+plugin.tx_rkwauthors {
+	persistence {
+		// cat=plugin.tx_rkwauthors//a; type=string; label=Default storage PID
+		storagePid = 5086
+	}
+
+	settings {
+
+		// cat=plugin.tx_rkwauthors//a; type=boolean; label=list pid
+		listPid = 5076
+
+		// cat=plugin.tx_rkwauthors//a; type=boolean; label=show pid
+		showPid = 5077
+
+        # cat=plugin.tx_rkwauthors//a; type=integer; label=Show department instead of full function of author (1=instead of, 2=in addition)
+        showDepartmentAsFunction = 0
+
+        # cat=plugin.tx_rkwauthors//a; type=integer; label=Phone extension length
+        phoneExtensionLength = 2
+
+        # cat=plugin.tx_rkwauthors//a; type=boolean; label=Show small boxes when more than one author
+        noSmallBoxes = 1
+
+        contactForm {
+
+            # cat=plugin.tx_rkwauthors//a; type=boolean; label=activates the form
+            isActive = 1
+
+            # cat=plugin.tx_rkwauthors//a; type=boolean; label=Activates the possibility to get a copy of the message
+            allowSendCopyToUser = 1
+
+            # cat=plugin.tx_rkwauthors//a; type=integer; label=pid of terms
+            termsPid =
+
+            # cat=plugin.tx_rkwauthors//a; type=integer; label=pid of privacy
+            privacyPid = 5079
+
+            # cat=plugin.tx_rkwauthors//f; type=string; label=mandatory fields for contactform (e.g. email, message)
+            mandatoryFields = salutation, firstName, lastName, email, message
+
+        }
+    }
+}
+
+[PIDinRootline = 5865]
+
+    plugin.tx_rkwauthors {
+
+        settings {
+
+            # cat=plugin.tx_rkwauthors//a; type=boolean; label=Show department instead of full function of author
+            showDepartmentAsFunction = 1
+
+            contactForm {
+                mail {
+
+                    # override the authors mail address and mail name
+                    override {
+
+                        # cat=plugin.tx_rkwauthors//a; type=string; label=global mail to address (overrides authors mail address!)
+                        address = beratung@rkw-bw.de
+
+                        # cat=plugin.tx_rkwauthors//a; type=string; label=global mail to name (overrides authors name!)
+                        name = Beratung
+                    }
+                }
+            }
+        }
+    }
+[GLOBAL]

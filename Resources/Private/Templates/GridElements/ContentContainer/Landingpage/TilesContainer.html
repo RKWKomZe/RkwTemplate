@@ -1,0 +1,59 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:coreExtended="http://typo3.org/ns/Madj2k/CoreExtended/ViewHelpers"
+    xmlns:rkwTemplate="http://typo3.org/ns/RKW/RkwTemplate/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+    <f:layout name="Rkw" />
+
+    <f:section name="Main">
+
+        <f:if condition="<coreExtended:isEmpty string='{data.tx_gridelements_view_column_110}' /> == 0">
+
+            <div id="c{data.uid}" class="contentbox content-padding-layoutmax speaker-mod {rkwTemplate:GetLandingpageElementModClass(headerPosition:'{data.header_position}')}">
+                <div class="flex-container">
+                    <f:render partial="Header" arguments="{
+                        header: data.header,
+                        layout: data.header_layout,
+                        link: data.header_link,
+                        class: 'headline headline--underlined'
+                    }" />
+                </div>
+
+                <f:if condition="{images}">
+                    <f:then>
+                        <div class="speaker-header" style="background-image:url('{f:uri.image(image:images.0,cropVariant:'default')}')">
+                            <f:if condition="{data.rowDescription}">
+                                <blockquote class="blockquote-specials flex-basis-6 {f:if(condition: '{data.frame_class} == 10', then: 'blockquote-specials--inverted')}">
+                                    {data.rowDescription}"
+                                    <f:if condition="{data.subheader}">
+                                        <div class="blockquote-specials__name text-small">{data.subheader}</div>
+                                    </f:if>
+                                </blockquote>
+                            </f:if>
+                        </div>
+                    </f:then>
+                    <f:else>
+                        <f:if condition="{data.rowDescription}">
+                            <div class="speaker-header">
+                                <blockquote class="blockquote-specials flex-basis-6 {f:if(condition: '{data.frame_class} == 10', then: 'blockquote-specials--inverted')}">
+                                    {data.rowDescription}"
+                                    <f:if condition="{data.subheader}">
+                                        <div class="blockquote-specials__name text-small">{data.subheader}</div>
+                                    </f:if>
+                                </blockquote>
+                            </div>
+                        </f:if>
+                    </f:else>
+                </f:if>
+
+                <div class="tiles-wrapper speaker-list-wrapper {f:if(condition: '{data.layout} == 0', then: 'speaker-img--default')}{f:if(condition: '{data.layout} == 10', then: 'speaker-img--rounded')}{f:if(condition: '{data.rowDescription} == \'\' && {f:count(subject: images)} == 0', then: ' speaker-list-wrapper--no-margin')}">
+                    <div class="tiles flex-container">
+                        <f:format.raw>{data.tx_gridelements_view_column_110}</f:format.raw>
+                    </div>
+                </div>
+            </div>
+        </f:if>
+    </f:section>
+
+</html>

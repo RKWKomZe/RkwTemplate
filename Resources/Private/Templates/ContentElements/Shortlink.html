@@ -1,0 +1,32 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:rkwEtracker="http://typo3.org/ns/RKW/RkwEtracker/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+    <f:layout name="Rkw" />
+
+    <f:section name="Main">
+
+        <f:if condition="<rkwEtracker:link.typolink parameter='{data.header_link}' />">
+
+            <f:switch expression="{data.header_layout}">
+                <f:case value="4"><li class="iconlist__item public"></f:case>
+                <f:case value="5"><li class="iconlist__item download"></f:case>
+                <f:case value="6"><li class="iconlist__item book"></f:case>
+                <f:case value="7"><li class="iconlist__item public"></f:case>
+                <f:defaultCase><li class="iconlist__item public"></f:defaultCase>
+            </f:switch>
+
+                <rkwEtracker:link.typolink parameter="{data.header_link}">
+                    {data.header}
+                </rkwEtracker:link.typolink>
+
+            </li>
+        </f:if>
+    </f:section>
+</html>
+
+
+
+
+
+

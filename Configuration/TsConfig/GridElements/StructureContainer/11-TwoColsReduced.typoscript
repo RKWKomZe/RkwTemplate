@@ -1,0 +1,61 @@
+tx_gridelements.setup.contentContainerTwoColsReduced {
+
+    title = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.contentContainerTwoColsReduced.title
+    description = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.contentContainerTwoColsReduced.description
+    config {
+        colCount = 2
+        rowCount = 3
+        rows {
+            1 {
+                columns {
+                    1 {
+                        name = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.contentContainerTwoColsReduced.content
+                        colPos = 50
+                        allowed {
+                            CType = header, text, textpic, image, textmedia, rkwtemplate_toc, rkwtemplate_imagetextoverlay, rkwtemplate_imagelist, rkwtemplate_collapsed, gridelements_pi1, list, html, form_formframework, rkwtemplate_calltoaction
+                            tx_gridelements_backend_layout = tabContainer, accordionContainer, testimonialContainer, topicLinksContainer
+                        }
+                    }
+                    2 {
+                        name = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.contentContainerTwoColsReduced.aside
+                        colPos = 60
+                        rowspan = 2
+                        # maxitems = 3
+                        allowed {
+                            CType = rkwtemplate_shortlink
+                        }
+                    }
+                }
+            }
+
+            2 {
+
+                columns {
+                    1 {
+                        name = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.contentContainerTwoCols.callToAction
+                        colPos = 70
+                        allowed {
+                            CType = list
+                            list_type = rkwauthors_rkwauthorscontactbox
+                        }
+                    }
+                }
+            }
+
+
+            3 {
+
+                columns {
+                    1 {
+                        name = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.contentContainerTwoCols.overrideRecommendation
+                        colPos = 90
+                        allowed {
+                            CType = list
+                            list_type = rkwevents_recommendation
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

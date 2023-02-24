@@ -1,0 +1,36 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:coreExtended="http://typo3.org/ns/Madj2k/CoreExtended/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+    <f:layout name="Rkw" />
+
+    <f:section name="Main">
+
+        <div class="flex-basis-4">
+            <div class="list-header">
+                <h5>
+                    <f:if condition="{data.header_layout}">
+                        <svg class="icon icon--16">
+                            <use xlink:href="#{data.header_layout}"/>
+                        </svg>
+                    </f:if>
+                    {data.header}
+                </h5>
+            </div>
+            
+            <div class="typo3-fsc">
+                <div class="frame">
+                    <coreExtended:format.removeEmptyParagraphs>
+                        <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data.bodytext}</f:format.html>
+                    </coreExtended:format.removeEmptyParagraphs>
+                </div>
+            </div>
+        </div>
+
+    </f:section>
+</html>
+
+
+
+

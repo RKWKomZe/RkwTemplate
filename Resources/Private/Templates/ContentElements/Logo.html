@@ -1,0 +1,29 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:rkwEtracker="http://typo3.org/ns/RKW/RkwEtracker/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+    <f:layout name="Rkw" />
+
+    <f:section name="Main">
+
+        <f:if condition="{f:count(subject: images)} > 0">
+            <f:if condition="<rkwEtracker:link.typolink parameter='{data.header_link}' />">
+                <f:then>
+                    <rkwEtracker:link.typolink parameter="{data.header_link}" class="full-width-medium">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" loading="lazy" srcset="{f:uri.image(image:images.0,maxWidth:'160',maxHeight:'320',cropVariant:'default')}" alt="{data.header}" />
+                    </rkwEtracker:link.typolink>
+                </f:then>
+                <f:else>
+                    <a href="#" class="full-width-medium">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" loading="lazy" srcset="{f:uri.image(image:images.0,maxWidth:'160',maxHeight:'320',cropVariant:'default')}" alt="{data.header}" />
+                    </a>
+                </f:else>
+            </f:if>
+        </f:if>
+    </f:section>
+
+</html>
+
+
+

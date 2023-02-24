@@ -1,0 +1,27 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+	<f:layout name="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.utility.pageLayoutSwitch')}" />
+
+	<f:section name="Header">
+		<f:render partial="HeaderSection/Special" arguments="{_all}"/>
+	</f:section>
+
+	<f:comment><!-- ======================================================================== --></f:comment>
+
+	<f:section name="Content">
+		<main class="main flex-container no-padding-narrow" id="main">
+			<section class="section content">
+
+				<f:comment><!-- content --></f:comment>
+				<section class="section content flex-basis-12 full-width-smalldesk no-padding-narrow">
+					<div id="content" class="contentbox contentbox--text contentbox--no-border-radius no-border-radius-smalldesk typo3-fsc">
+						<f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.pluginOnly" data="{data}" />
+					</div>
+				</section>
+
+			</section>
+		</main>
+
+	</f:section>
+
+</html>

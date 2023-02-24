@@ -1,0 +1,68 @@
+lib.txRkwTemplate {
+
+    various {
+
+        mobileMenu = USER
+        mobileMenu {
+            userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+            extensionName = RkwTemplate
+            pluginName = Rkwtemplate
+            vendorName = RKW
+            controller = Ajax
+            switchableControllerActions {
+                // Again: Controller-Name and Action
+                Ajax {
+                    1 = mobileMenu
+                }
+            }
+
+            view =< plugin.tx_rkwtemplate.view
+            persistence =< plugin.tx_rkwtemplate.persistence
+            settings =< plugin.tx_rkwtemplate.settings
+        }
+
+        //=================================================================
+        alerts = USER
+        alerts {
+            userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+            extensionName = RkwAlerts
+            pluginName = Rkwalerts
+            vendorName = RKW
+            controller = Alert
+            switchableControllerActions {
+                // Again: Controller-Name and Action
+                Alert {
+                    1 = new
+                    2 = newNonCached
+                    3 = create
+                    4 = optIn
+                }
+            }
+
+            view =< plugin.tx_rkwalerts.view
+            persistence =< plugin.tx_rkwalerts.persistence
+            settings =< plugin.tx_rkwalerts.settings
+        }
+
+
+        //=================================================================
+        loginInfo = USER
+        loginInfo {
+            userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+            extensionName = RkwRegistration
+            pluginName = Info
+            vendorName = RKW
+            controller = Info
+            switchableControllerActions {
+                // Again: Controller-Name and Action
+                Info {
+                    1 = loginInfo
+                }
+            }
+
+            view =< plugin.tx_rkwregistration.view
+            persistence =< plugin.tx_rkwregistration.persistence
+            settings =< plugin.tx_rkwregistration.settings
+        }
+    }
+}

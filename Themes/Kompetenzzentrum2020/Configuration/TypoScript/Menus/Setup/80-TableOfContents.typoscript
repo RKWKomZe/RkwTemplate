@@ -1,0 +1,29 @@
+lib.txRkwTemplate {
+
+    navigation {
+
+        toc = FLUIDTEMPLATE
+        toc {
+
+            file = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/Menus/TableOfContents.html
+            partialRootPaths.0 = {$plugin.tx_rkwtemplate_themeconfig.paths.default.partials}/Menus/TableOfContents
+
+            dataProcessing {
+                10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+                10 {
+                   special = directory
+                   special.value.current = 1
+                   expandAll = 1
+                   levels = 10
+                   includeSpacer = 0
+                   titleField = tx_rkwbasics_alternative_title // nav_title // title
+                   excludeUidList >
+
+                   as = menuItems
+                }
+            }
+
+            settings < page.10.settings
+        }
+    }
+}

@@ -1,0 +1,72 @@
+module.tx_rkwrelated {
+
+    settings {
+        # cat=plugin.tx_rkwrelated; type=string; label=List of PIDs whose cache is to delete, when contents are saved
+        clearCachePageList = {$plugin.tx_rkwtemplate_themeconfig.website.rootPid}
+    }
+}
+
+plugin.tx_rkwrelated_similarcontent {
+
+
+	settings {
+
+        # cat=plugin.tx_rkwrelated_similarcontent//f; type=string; label=PIDs to include in list (comma separated)
+        startingPidList = {$plugin.tx_rkwtemplate_themeconfig.website.rootPid}
+
+        # cat=plugin.tx_rkwrelated_similarcontent//f; type=boolean; label=Hide authors label
+        hideAuthors = 1
+
+        itemLimitPerPage {
+
+            # cat=plugin.tx_rkwrelated_similarcontent//a; type=integer; label=Items per page for default layout
+            default = 1000
+
+            # cat=plugin.tx_rkwrelated_similarcontent//a; type=integer; label=Items per page for home layout
+            home = 7
+
+            # cat=plugin.tx_rkwrelated_similarcontent//a; type=integer; label=Items per page for reduced layout
+            reduced = 3
+
+            # cat=plugin.tx_rkwrelated_similarcontent//a; type=integer; label=Items per page for below layout
+            below = 3
+        }
+
+	}
+}
+
+plugin.tx_rkwrelated_morecontent {
+
+	settings {
+
+        # cat=plugin.tx_rkwrelated_morecontent//f; type=string; label=PIDs to include in list (comma separated)
+        startingPidList = {$plugin.tx_rkwtemplate_themeconfig.website.rootPid}
+
+        # cat=plugin.tx_rkwrelated_morecontent//f; type=boolean; label=Hide authors label
+        hideAuthors = 1
+
+        detailPid {
+
+            # cat=plugin.tx_rkwrelated_morecontent//f; type=string; label=Detail pid (default)
+            default =
+
+            # cat=plugin.tx_rkwrelated_morecontent//f; type=string; label=Detail pid for publications
+            publication =
+        }
+
+        itemLimitPerPage {
+
+            # cat=plugin.tx_rkwrelated_similarcontent//a; type=integer; label=Items per page for default layout
+            default = 1000
+
+            # cat=plugin.tx_rkwrelated_similarcontent//a; type=integer; label=Items per page for home layout
+            home = 7
+
+            # cat=plugin.tx_rkwrelated_similarcontent//a; type=integer; label=Items per page for reduced layout
+            reduced = 3
+
+            # cat=plugin.tx_rkwrelated_similarcontent//a; type=integer; label=Items per page for below layout
+            below = 3
+        }
+	}
+}

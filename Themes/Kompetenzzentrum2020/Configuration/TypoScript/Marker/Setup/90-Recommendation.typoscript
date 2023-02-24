@@ -1,0 +1,189 @@
+lib.txRkwTemplate {
+
+    recommendation {
+
+        relatedSimilarLabel = TEXT
+        relatedSimilarLabel.value = {$lib.txRkwTemplate.recommendation.relatedSimilar.label}
+
+        eventHeaderLabel = TEXT
+        eventHeaderLabel.value = {$lib.txRkwTemplate.recommendation.eventHeader.label}
+
+
+        //=================================================================
+        relatedDefault = COA
+        relatedDefault {
+
+            10 = LOAD_REGISTER
+            10 {
+                pageUid.cObject = TEXT
+                pageUid.cObject {
+                    field = pageUid
+                    ifEmpty.cObject = TEXT
+                    ifEmpty.cObject {
+                        value.current = 1
+                        ifEmpty = 0
+                    }
+                }
+            }
+
+            20 = RECORDS
+            20 {
+
+                source.data = register:pageUid
+                source.intval = 1
+
+                dontCheckPid = 1
+                tables = pages
+                max = 1
+
+                conf.pages = RECORDS
+                conf.pages {
+
+                    source.field = tx_rkwprojects_project_uid
+                    tables = tx_rkwprojects_domain_model_projects
+                    conf.tx_rkwprojects_domain_model_projects = COA
+                    conf.tx_rkwprojects_domain_model_projects {
+
+                        10 = USER
+                        10 {
+                            userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+                            extensionName = RkwRelated
+                            pluginName = Morecontent
+                            vendorName = RKW
+                            controller = More
+                            switchableControllerActions {
+                                // Again: Controller-Name and Action
+                                More {
+                                    1 = list
+                                }
+                            }
+
+                            view =< plugin.tx_rkwrelated_morecontent.view
+                            persistence =< plugin.tx_rkwrelated_morecontent.persistence
+                            settings =< plugin.tx_rkwrelated_morecontent.settings
+
+                            settings {
+
+                                layout = Reduced
+                                pagePropertyFilter = project
+                                displayPublications = 2
+                                headline = {$lib.txRkwTemplate.recommendation.relatedDefault.label}
+                            }
+                        }
+                    }
+                }
+            }
+
+
+            90 = RESTORE_REGISTER
+        }
+
+        //=================================================================
+        relatedPublication < .relatedDefault
+        relatedPublication{
+            20 {
+                conf.pages {
+                    conf.tx_rkwprojects_domain_model_projects {
+                        10 {
+                            settings {
+                                displayPublications = 1
+                                headline = {$lib.txRkwTemplate.recommendation.relatedPublication.label}
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+        //=================================================================
+        relatedSimilar = USER
+        relatedSimilar {
+
+            userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+            extensionName = RkwRelated
+            pluginName = Similarcontent
+            vendorName = RKW
+            controller = Similar
+            switchableControllerActions {
+                // Again: Controller-Name and Action
+                Similar {
+                    1 = list
+                }
+            }
+
+            view =< plugin.tx_rkwrelated_similarcontent.view
+            persistence =< plugin.tx_rkwrelated_similarcontent.persistence
+            settings =< plugin.tx_rkwrelated_similarcontent.settings
+
+            settings {
+                layout = Below
+                hideMoreLink = 1
+            }
+        }
+
+        //=================================================================
+        relatedSimilarReduced < .relatedSimilar
+        relatedSimilarReduced {
+
+            settings {
+                layout = Reduced
+                hideMoreLink = 1
+                itemLimitPerPageOverride = 15
+            }
+        }
+
+
+        //=================================================================
+        eventsRecommendedReduced = USER_INT
+        eventsRecommendedReduced {
+
+            userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+            extensionName = RkwEvents
+            pluginName = Seriesproposals
+            vendorName = RKW
+            controller = Event
+            switchableControllerActions {
+                // Again: Controller-Name and Action
+                Event {
+                    1 = seriesProposals
+                }
+            }
+
+            view =< plugin.tx_rkwevents.view
+            persistence =< plugin.tx_rkwevents.persistence
+            settings =< plugin.tx_rkwevents.settings
+
+            settings {
+                layout = Below
+                hideMoreLink = 1
+            }
+        }
+        
+        //=================================================================
+        eventsSimilarReduced = USER_INT
+        eventsSimilarReduced {
+
+            userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+            extensionName = RkwEvents
+            pluginName = Recommendation
+            vendorName = RKW
+            controller = Event
+            switchableControllerActions {
+                // Again: Controller-Name and Action
+                Event {
+                    1 = listSimilar
+                }
+            }
+
+            view =< plugin.tx_rkwevents.view
+            persistence =< plugin.tx_rkwevents.persistence
+            settings =< plugin.tx_rkwevents.settings
+
+            settings {
+                layout = Below
+                hideMoreLink = 1
+            }
+        }
+    }
+}

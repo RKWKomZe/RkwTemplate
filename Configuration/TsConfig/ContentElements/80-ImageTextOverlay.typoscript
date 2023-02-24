@@ -1,0 +1,16 @@
+//=========================================================
+// Add contentElement to Wizard
+//=========================================================
+mod.wizards.newContentElement.wizardItems.common {
+    elements {
+        rkwtemplate_imagetextoverlay {
+            iconIdentifier = rkw-template-imagetextoverlay
+            title = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.imageTextOverlay.title
+            description = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.imageTextOverlay.description
+            tt_content_defValues {
+                CType = rkwtemplate_imagetextoverlay
+            }
+        }
+    }
+    show := addToList(rkwtemplate_imagetextoverlay)
+}

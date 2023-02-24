@@ -1,0 +1,22 @@
+#############################################################################
+// STANDARD- MARKER
+#############################################################################
+page {
+	10 {
+		variables{
+		
+			content = CONTENT
+			content < styles.content.get
+
+		}
+	}
+}
+
+lib.txRkwTemplate {
+
+    content {
+
+        main = CONTENT
+        main < styles.content.get
+    }
+}

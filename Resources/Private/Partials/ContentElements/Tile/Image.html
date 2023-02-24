@@ -1,0 +1,13 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+    <f:if condition="{f:count(subject: images)} > 0">
+        <div class="speaker-list__item__header">
+            <div class="speaker-img">
+                <img src="{f:uri.image(image:images.0,cropVariant:'default')}" alt="{image.title}" loading="lazy">
+            </div>
+        </div>
+    </f:if>
+
+</html>

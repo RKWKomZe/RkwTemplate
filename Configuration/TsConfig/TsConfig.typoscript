@@ -1,0 +1,10 @@
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:rkw_template/Configuration/TsConfig/ContentElements" extensions="typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:rkw_template/Configuration/TsConfig/ContentElements/Home" extensions="typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:rkw_template/Configuration/TsConfig/ContentElements/Landingpage" extensions="typoscript">
+
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:rkw_template/Configuration/TsConfig/GridElements" extensions="typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:rkw_template/Configuration/TsConfig/GridElements/ContentContainer" extensions="typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:rkw_template/Configuration/TsConfig/GridElements/ContentContainer/Home" extensions="typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:rkw_template/Configuration/TsConfig/GridElements/ContentContainer/Landingpage" extensions="typoscript">
+
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:rkw_template/Configuration/TsConfig/GridElements/StructureContainer" extensions="typoscript">

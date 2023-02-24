@@ -1,0 +1,3 @@
+// Disable rendering of Yoast SEO meta tags
+// We do this on our own!
+config.yoast_seo.enabled = 0

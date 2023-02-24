@@ -1,0 +1,14 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+    
+<div class="article">
+        <article>
+            <f:render partial="StructureContainer/Content" arguments="{_all}"/>
+            <f:render partial="StructureContainer/CallToAction" arguments="{_all}"/>
+        </article>
+        <f:render partial="StructureContainer/Recommendation" arguments="{_all}"/>
+    </div>
+
+    <aside class="related-box">
+        <f:render partial="StructureContainer/Aside" arguments="{_all}"/>
+    </aside>
+</html>

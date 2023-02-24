@@ -1,0 +1,88 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:coreExtended="http://typo3.org/ns/Madj2k/CoreExtended/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+    <f:section name="Default">
+
+        <f:comment><!-- table of contents as menu --></f:comment>
+        <f:render partial="StructureContainer/Content/TableOfContents" arguments="{_all}"/>
+        
+        <f:comment><!-- content --></f:comment>
+        <coreExtended:format.removeEmptyParagraphs>
+            <f:format.html parseFuncTSPath="">
+                {data.tx_gridelements_view_column_50}
+            </f:format.html>
+        </coreExtended:format.removeEmptyParagraphs>
+
+        <f:comment> <!-- start reading and order form--></f:comment>
+        <f:render partial="StructureContainer/Content/StartReadingAndShop" arguments="{_all}"/>
+
+        <f:comment><!-- optional second content section --></f:comment>
+        <f:if condition="{data.tx_gridelements_view_column_51}">
+            <coreExtended:format.removeEmptyParagraphs>
+                <f:format.html parseFuncTSPath="">
+                    {data.tx_gridelements_view_column_51}
+                </f:format.html>
+            </coreExtended:format.removeEmptyParagraphs>
+        </f:if>
+
+        <f:comment><!-- read more --></f:comment>
+        <f:render partial="StructureContainer/Content/ReadMore" arguments="{_all}"/>
+
+        <f:comment><!-- image resources --></f:comment>
+        <f:render partial="StructureContainer/Content/ImageSources" arguments="{_all}"/>
+        
+    </f:section>
+
+    <!-- =========================================================================================== -->
+
+    <f:section name="Reduced">
+
+        <f:comment><!-- table of contents as menu --></f:comment>
+        <f:render partial="StructureContainer/Content/TableOfContents" arguments="{_all}"/>
+
+        <f:comment><!-- content --></f:comment>
+        <coreExtended:format.removeEmptyParagraphs>
+            <f:format.html parseFuncTSPath="">
+                {data.tx_gridelements_view_column_50}
+            </f:format.html>
+        </coreExtended:format.removeEmptyParagraphs>
+
+        <f:comment> <!-- start reading and order form--></f:comment>
+        <f:render partial="StructureContainer/Content/StartReadingAndShop" arguments="{_all}"/>
+
+        <f:comment><!-- optional second content section --></f:comment>
+        <f:if condition="{data.tx_gridelements_view_column_51}">
+            <coreExtended:format.removeEmptyParagraphs>
+                <f:format.html parseFuncTSPath="">
+                    {data.tx_gridelements_view_column_51}
+                </f:format.html>
+            </coreExtended:format.removeEmptyParagraphs>
+        </f:if>
+
+        <f:comment><!-- read more --></f:comment>
+        <f:render partial="StructureContainer/Content/ReadMore" arguments="{_all}"/>
+
+        <f:comment><!-- image resources --></f:comment>
+        <f:render partial="StructureContainer/Content/ImageSources" arguments="{_all}"/>
+
+    </f:section>
+
+    <!-- =========================================================================================== -->
+
+    <f:section name="Landingpage">
+        
+        <f:comment><!-- content --></f:comment>
+        <div class="flex-container">
+            <div class="typo3-fsc {f:if(condition: '{coreExtended:isEmpty(string: data.tx_gridelements_view_column_60)} == 0', then: 'flex-basis-7', else: 'flex-basis-12')}">
+                <coreExtended:format.removeEmptyParagraphs>
+                    <f:format.html parseFuncTSPath="">
+                        {data.tx_gridelements_view_column_50}
+                    </f:format.html>
+                </coreExtended:format.removeEmptyParagraphs>
+            </div>
+        </div>
+</f:section>
+
+</html>
+

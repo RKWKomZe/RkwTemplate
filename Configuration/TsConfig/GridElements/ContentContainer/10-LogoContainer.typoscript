@@ -1,0 +1,22 @@
+tx_gridelements.setup.logoContainer {
+
+    title = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.logoContainer.title
+    description = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.logoContainer.description
+    config {
+        colCount = 1
+        rowCount = 1
+        rows {
+            1 {
+                columns {
+                    1 {
+                        name = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.logo.title
+                        colPos = 30
+                        allowed {
+                            CType = rkwtemplate_logo
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

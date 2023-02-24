@@ -1,0 +1,35 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:coreExtended="http://typo3.org/ns/Madj2k/CoreExtended/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+    <f:section name="Default">
+        <f:if condition="! {coreExtended:isEmpty(string:'{f:cObject(typoscriptObjectPath: \'lib.txRkwTemplate.pageInfo.authorsList\', data:\'{data}\')}')}">
+            <div class="table__item">
+                <div class="table__title">
+                    <f:translate key="{settings.themeLanguageFile}:partials.infoBox.partials.authors.labelAuthors"/>:
+                </div>
+                <div class="table__content">
+                    <f:cObject typoscriptObjectPath="lib.txRkwTemplate.pageInfo.authorsList" data="{data}" />
+                </div>
+            </div>
+        </f:if>
+    </f:section>
+
+
+    <f:section name="NonRecursive">
+        <f:if condition="! {coreExtended:isEmpty(string:'{f:cObject(typoscriptObjectPath: \'lib.txRkwTemplate.pageInfo.authorsListNonRecursive\', data:\'{data}\')}')}">
+            <div class="table__item">
+                <div class="table__title">
+                    <f:translate key="{settings.themeLanguageFile}:partials.infoBox.partials.authors.labelAuthors"/>:
+                </div>
+                <div class="table__content">
+                    <f:cObject typoscriptObjectPath="lib.txRkwTemplate.pageInfo.authorsListNonRecursive" data="{data}" />
+                </div>
+            </div>
+        </f:if>
+    </f:section>
+</html>
+
+
+
+

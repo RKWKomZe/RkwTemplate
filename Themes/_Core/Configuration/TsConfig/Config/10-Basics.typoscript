@@ -1,0 +1,15 @@
+// ############################################################################
+// TCEMAIN
+// ############################################################################
+TCEMAIN {
+
+	// Set additional params for previews with varnish
+	preview {
+		pages {
+			additionalGetParameters {
+				no_varnish = 1
+			}
+		}
+	}
+}
+

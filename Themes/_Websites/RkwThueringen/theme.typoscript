@@ -1,0 +1,92 @@
+// ############################################################################
+// Global paths
+// ############################################################################
+plugin.tx_rkwtemplate_themeconfig {
+
+    # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Name of main-theme
+    themeName = Kompetenzzentrum2020
+
+    # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Name of the sub-theme
+    subThemeName = _Websites/RkwThueringen
+
+    paths {
+        default {
+
+            # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Path to logos
+            logos = EXT:rkw_template/Themes/{$plugin.tx_rkwtemplate_themeconfig.subThemeName}/Resources/Public/images/logos
+
+            # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Path to icons
+            icons = EXT:rkw_template/Themes/Kompetenzzentrum2020/Resources/Public/images/icons/grey
+        }
+
+        extensions {
+
+            # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Root path for extension layouts, templates and partials
+            root = EXT:rkw_template/Themes/{$plugin.tx_rkwtemplate_themeconfig.subThemeName}/Resources/Private/Extensions
+        }
+    }
+
+    website {
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Name of website
+        name = RKW Thüringen
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=baseUrl (With / at the end for ClickEnlarge)
+        baseUrl = https://www.rkw-thueringen.de/
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=integer; label=ID of Rootpage
+        rootPid = 3757
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Publisher of website
+        publisher = RKW Thüringen
+
+        # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Logo of website (mobile-version)
+        logoMobileFile =
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=integer; label=ID of page for newsletter subscription
+        newsletterSubscriptionPid = 
+    }
+
+    # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Is this website a microsite?
+    isMicrosite = 0
+
+    # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Show social media share icons
+    socialMediaShare = 0
+
+    # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Show social media icons
+    socialMedia = 0
+
+    socialMediaLinks {
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to facebook page
+        facebook =
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to twitter page
+        twitter =
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to xing page
+        xing =
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to linkedIn page
+        linkedIn =
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to YouTube page
+        youTube =
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to Instagram page
+        instagram =
+
+    }
+
+    # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Show a reduced amount of menus
+    reducedMenuLevels = 0
+
+    # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Main menu has less items than normal so breakpoint for hamburger menu can be 1024 instead of 1200
+    shortMainMenu = 0
+
+    # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Shows a language switch in top of the page
+    showLanguageSwitch = 0
+
+}
+
+

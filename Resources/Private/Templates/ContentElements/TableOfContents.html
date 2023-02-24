@@ -1,0 +1,21 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+    <f:layout name="Rkw" />
+
+    <f:section name="Main">
+        <f:if condition="{items-> f:count()} > 1">
+            <nav class="anchor-nav">
+                <p class="anchor-nav__header">{data.header}</p>
+                <ol class="anchor-nav__list">
+                    <f:for each="{items}" as="item">
+                        <li class="anchor-nav__item">
+                            <a href="#c{item.data.uid}" data-target="#c{item.data.uid}">
+                                {item.data.header}
+                            </a>
+                        </li>
+                    </f:for>
+                </ol>
+            </nav>
+        </f:if>
+    </f:section>
+</html>

@@ -1,0 +1,25 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+    <f:section name="Header">
+        <f:if condition="{data.tx_gridelements_backend_layout} == 'logoContainer'">
+            <f:then>
+                <section class="section content mt-3 no-padding-narrow">
+            </f:then>
+            <f:else>
+                <section class="section content mt-3 content-padding-layoutmax">
+                    <f:if condition="{data.header}">
+                        <f:then>
+                            <h3 class="h3 section__headline">
+                                {data.header}
+                            </h3>
+                        </f:then>
+                    </f:if>
+            </f:else>
+        </f:if>
+    </f:section>
+
+
+    <f:section name="Footer">
+        </section>
+    </f:section>
+</html>

@@ -1,0 +1,46 @@
+//############################################################################
+// CSS and JS
+//############################################################################
+page {
+    //===============================================================
+    // CSS
+    //===============================================================
+    includeCSS {
+        file10 = {$plugin.tx_rkwtemplate_themeconfig.paths.default.css}/styles.css
+        file10.media = all
+        file10.forceOnTop = 1
+
+        // Nur auf den Druck-Seiten!
+        // file30 = {$plugin.tx_rkwtemplate_themeconfig.paths.default.css}/print.css
+        // file30.media = screen,print
+    }
+
+    //===============================================================
+    // JS
+    //===============================================================
+    // Remove JavaScripts from header
+    includeJS >
+
+    // Include JavaScripts in footer (loading time optimization)
+    includeJSFooter {
+
+    }
+
+
+    // Incldue as lib because it contains jQuery
+    includeJSFooterlibs {
+
+        // Important: Force on top is dependent on its call in script, so the latest call is the first script being loaded
+        // it is NOT dependent on the number given to that file
+        file15 = {$plugin.tx_rkwtemplate_themeconfig.paths.default.js}/scripts.js
+        file15.forceOnTop = 1
+
+        file10 = {$plugin.tx_rkwtemplate_themeconfig.paths.default.js}/vendor.js
+        file10.forceOnTop = 1
+
+        file5 = {$plugin.tx_rkwtemplate_themeconfig.paths.default.js}/browserversion.js
+        file5.forceOnTop = 1
+
+    }
+}
+

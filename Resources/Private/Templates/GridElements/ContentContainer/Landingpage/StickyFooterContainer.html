@@ -1,0 +1,42 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:coreExtended="http://typo3.org/ns/Madj2k/CoreExtended/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+    <f:layout name="Rkw" />
+
+    <f:section name="Main">
+
+        <f:if condition="<coreExtended:isEmpty string='{data.tx_gridelements_view_column_140}' /> == 0">
+            <div class="footer-content flex-container">
+                <f:if condition="{f:count(subject: images)} > 0">
+                    <div class="footer-thumb">
+                        <img src="{f:uri.image(image:images.0,width:'1050',cropVariant:'default')}" alt="">
+                    </div>
+                </f:if>
+                <div class="footer-text">
+                    <f:if condition="{data.rowDescription}">
+                        <p>{data.rowDescription}</p>
+                    </f:if>
+                    <div class="btn-list flex-container center-main">
+                        <f:format.raw>{data.tx_gridelements_view_column_140}</f:format.raw>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-totop">
+                <a class="footer-totop__close {f:if(condition: '{data.layout} == 10', then: 'footer-totop__close--hide', else: 'js-close-footer')}">
+                    &times;
+                </a>
+    
+                <a href="#top" data-target="#top" class="footer-totop__link">
+                    <svg class="icon">
+                        <use xlink:href="#ic-arrow-footer" />
+                    </svg>
+                    <f:translate key="LLL:EXT:rkw_template/Resources/Private/Language/locallang.xlf:contentElement.stickyFooterContainer.labelScrollToTop" />
+                </a>
+            </div>
+        </f:if>
+    </f:section>
+
+</html>

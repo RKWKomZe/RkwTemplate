@@ -1,0 +1,63 @@
+config {
+
+
+	# Cache deaktivieren (nur für Entwicklung)
+	no_cache = 1
+	admPanel = 0
+
+	# Cache- Headers für intern gecachte Seiten
+	# sendCacheHeaders = 0
+
+	# Compress and concatenate
+	concatenateJs = 0
+	compressJs = 0
+
+	# Compress and concatenate
+	concatenateCss = 0
+	compressCss = 0
+
+	# No error handler
+    contentObjectExceptionHandler = 0
+
+}
+
+#############################################################################
+# STANDARD- MARKER
+#############################################################################
+
+plugin.tx_rkwconsultant {
+
+	settings {
+
+		# for preview and unlocking of an hidden consultant profile (after create / edit)
+		allowedRemoteAddr = 127.0.0.1
+
+		consultant {
+
+			# max profiles per user (no value = no limit)
+			maxProfilesUser >
+		}
+
+	}
+}
+
+plugin.tx_rkwmailer {
+
+	settings {
+
+		# URL for hard-links in templates
+		baseUrl = http://rkw-kompetenzzentrum.rkw.local
+	}
+}
+
+rkwetracker.persistence < plugin.tx_rkwetracker.persistence
+
+
+
+
+plugin.tx_rkwbasics{
+
+    settings {
+        # proxy = 192.168.1.8:80
+    }
+}

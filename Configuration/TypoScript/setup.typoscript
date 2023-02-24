@@ -1,0 +1,36 @@
+plugin.tx_rkwtemplate {
+
+	view {
+		layoutRootPaths {
+			0 = EXT:rkw_template/Resources/Private/Layouts/
+			10 = {$plugin.tx_rkwtemplate.view.layoutRootPath}			
+			30 = {$plugin.tx_rkwtemplate_themeconfig.paths.default.root}/Extensions/rkwTemplate/Layouts		
+		}
+		templateRootPaths {
+			0 = EXT:rkw_template/Resources/Private/Templates/
+            10 = {$plugin.tx_rkwtemplate.view.templateRootPath}
+            10 = {$plugin.tx_rkwtemplate_themeconfig.paths.default.root}/Extensions/rkwTemplate/Templates
+        }
+		partialRootPaths {
+			0 = EXT:rkw_template/Resources/Private/Partials/
+			10 = {$plugin.tx_rkwtemplate.view.partialRootPath}
+			20 = {$plugin.tx_rkwtemplate_themeconfig.paths.default.root}/Extensions/rkwTemplate/Partials
+        }
+	}
+
+	persistence {
+		storagePid = {$plugin.tx_rkwtemplate.persistence.storagePid}
+	}
+
+	settings {
+
+
+	}
+}
+
+
+<INCLUDE_TYPOSCRIPT: source="FILE:./FluidStyledContents/Setup.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:./ContentElements/Setup.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:./GridElements/Setup.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:./Themes/Setup.typoscript">
+

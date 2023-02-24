@@ -1,0 +1,23 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+    <f:layout name="Login" />
+    
+    <f:section name="Header" />
+    
+    
+    <f:comment><!-- ======================================================================== --></f:comment>
+    
+    
+    <f:section name="Content">
+        <main class="main flex-container" id="main">
+
+            <f:comment><!-- plugin only --></f:comment>
+            <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.login" data="{data}" />
+
+
+            <f:comment><!-- plugin only --></f:comment>
+            <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.loginDescription" data="{data}" />
+        </main>
+    </f:section>
+
+</html>
