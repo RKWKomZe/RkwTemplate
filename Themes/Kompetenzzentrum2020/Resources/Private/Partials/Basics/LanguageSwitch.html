@@ -1,0 +1,17 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+    <div class="lang-switch flex-basis-12 flex-container">
+        
+        <a href="{f:uri.page(additionalParams: '{L: \'0\'}')}" 
+            aria-label="{f:translate(key:'{settings.themeLanguageFile}:partials.basics.languageSwitch.ariaLabelEnglish')}" 
+            class="lang-switch__link {f:if(condition: '{f:cObject(typoscriptObjectPath:\'lib.txRkwTemplate.utility.languageId\', data=\'{data}\')} == 0', then: 'is-active')}">
+            <f:translate key="{settings.themeLanguageFile}:partials.basics.languageSwitch.labelGerman" />
+        </a>
+        
+        <a href="{f:uri.page(additionalParams: '{L: \'1\'}')}" 
+            aria-label="{f:translate(key:'{settings.themeLanguageFile}:partials.basics.languageSwitch.ariaLabelEnglish')}" 
+            class="lang-switch__link {f:if(condition: '{f:cObject(typoscriptObjectPath:\'lib.txRkwTemplate.utility.languageId\', data=\'{data}\')} == 1', then: 'is-active')}">
+            <f:translate key="{settings.themeLanguageFile}:partials.basics.languageSwitch.labelEnglish" />
+        </a>
+    </div>
+</html>

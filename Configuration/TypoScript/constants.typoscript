@@ -1,0 +1,21 @@
+plugin.tx_rkwtemplate {
+	view {
+		# cat=plugin.tx_rkwtemplate/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:rkw_template/Resources/Private/Templates/
+
+		# cat=plugin.tx_rkwtemplate/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:rkw_template/Resources/Private/Partials/
+
+		# cat=plugin.tx_rkwtemplate/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:rkw_template/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_rkwtemplate//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}
+
+<INCLUDE_TYPOSCRIPT: source="FILE:./FluidStyledContents/Constants.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:./ContentElements/Constants.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:./GridElements/Constants.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:./Themes/Constants.typoscript">

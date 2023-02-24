@@ -1,0 +1,293 @@
+lib.txRkwTemplate {
+
+    pageInfo {
+
+        projectName = COA
+        projectName {
+            10 = RECORDS
+            10 {
+                source.data = levelfield: -1 , tx_rkwprojects_project_uid, slide
+                tables = tx_rkwprojects_domain_model_projects
+                conf.tx_rkwprojects_domain_model_projects = TEXT
+                conf.tx_rkwprojects_domain_model_projects {
+                    field = short_name
+                    override.field = internal_name
+                }
+
+                // Default value if empty
+                stdWrap.ifEmpty.cObject = COA
+                stdWrap.ifEmpty.cObject {
+                    10 = TEXT
+                    10.value = Default
+                }
+            }
+        }
+
+        //=================================================================
+        projectLink < .projectName
+        projectLink {
+            10 {
+                conf.tx_rkwprojects_domain_model_projects {
+                    field = name
+                    override.field = short_name
+                    stdWrap.typolink {
+                        parameter.field = project_pid
+                        ATagParams = class="link link--underlined"
+                    }
+                    if.isTrue.field = project_pid
+                }
+
+                stdWrap.ifEmpty.cObject >
+            }
+        }
+
+        //=================================================================
+        documentType = COA
+        documentType {
+
+            10 = RECORDS
+            10 {
+                source.data = levelfield: -1 , tx_rkwbasics_document_type, slide
+                tables = tx_rkwbasics_domain_model_documenttype
+                conf.tx_rkwbasics_domain_model_documenttype = TEXT
+                conf.tx_rkwbasics_domain_model_documenttype {
+                    field = name
+                   // override.field = short_name
+                }
+            }
+        }
+
+        //=================================================================
+        fileSize = FILES
+        fileSize {
+            references {
+                table = pages
+                data = levelfield : -1, tx_coreextended_file, slide
+            }
+
+            renderObj = COA
+            renderObj {
+                10 = TEXT
+                10 {
+                    data = file:current:size
+                }
+            }
+        }
+
+        //=================================================================
+        fileThumbnail = FILES
+        fileThumbnail {
+            references {
+                table = pages
+                data = levelfield : -1, tx_coreextended_file, slide
+            }
+
+            renderObj = COA
+            renderObj {
+                10 = IMAGE
+                10 {
+                    file {
+                        // take current file
+                        import.data = file:current:publicUrl
+                        ext = png
+
+                        // set maxW of fallback image
+                        maxW = 190c
+                    }
+
+                    // set alt-Text and title
+                    altText.data = file:current:title
+                    titleText.data = file:current:alternative
+
+                    if.value.data = file:current:extension
+                    if.equals = pdf
+                }
+
+                // Fallback images for Word- and Excel-Files
+                stdWrap.ifEmpty.cObject = COA
+                stdWrap.ifEmpty.cObject {
+                    10 < lib.txRkwTemplate.pageInfo.pdfThumbnail.renderObj.10
+                    10 {
+                        file.import >
+                        file.ext >
+                        file = {$plugin.tx_rkwtemplate_themeconfig.paths.default.images}/placeholder-files-doc.jpg
+                        if.equals = doc
+                    }
+
+                    11 < .10
+                    11.if.equals = docx
+
+                    12 < .10
+                    12.if.equals = docm
+
+                    20 < .10
+                    20.file = {$plugin.tx_rkwtemplate_themeconfig.paths.default.images}/placeholder-files-xls.jpg
+                    20.if.equals = xls
+
+                    21 < .20
+                    21.if.equals = xlsx
+                }
+            }
+        }
+
+        //=================================================================
+        startReading < lib.txRkwTemplate.navigation.startReading
+        startReading {
+
+            file = {$plugin.tx_rkwtemplate_themeconfig.paths.default.partials}/InfoBox/Partials/StartReading.html
+            variables {
+
+                externalLink = TEXT
+                externalLink {
+
+                   stdWrap.typolink {
+                       parameter.field = tx_rkwbasics_external_link
+                       returnLast = url
+                   }
+                }
+            }
+        }
+
+        //=================================================================
+        coverThumbnail = FILES
+        coverThumbnail {
+            references {
+                table = pages
+                data = levelfield : -1, tx_coreextended_cover, slide
+            }
+
+            renderObj = COA
+            renderObj < lib.txRkwTemplate.pageInfo.fileThumbnail.renderObj
+            renderObj {
+                10.if >
+                stdWrap >
+            }
+        }
+
+        //=================================================================
+        fileType = FILES
+        fileType {
+            references < lib.txRkwTemplate.pageInfo.fileThumbnail.references
+
+            renderObj = COA
+            renderObj {
+
+                5 = TEXT
+                5.data = file:current:extension
+
+            }
+        }
+
+        //=================================================================
+        fileDownload = FILES
+        fileDownload {
+            references < lib.txRkwTemplate.pageInfo.fileThumbnail.references
+
+            renderObj = COA
+            renderObj {
+                // store url
+                5 = LOAD_REGISTER
+                5.imageUrl.data = file:current:publicUrl
+
+                10 = TEXT
+                10 {
+                    value =  {LLL:EXT:rkw_template/Themes/Kompetenzzentrum2020/Resources/Private/Language/locallang.xlf:typoscript.pageInfo.fileDownload.download} ({file:current:extension})
+                    insertData = 1
+                    stdWrap.typolink {
+                        parameter.data = file:current:publicUrl
+                        ATagBeforeWrap = 1
+                        ATagParams = class="btn btn--primary btn--small"
+
+                        // eTracker
+                        userFunc = RKW\RkwEtracker\UserFunctions\Typolink->getParsedLinkWithDataAttributes
+                    }
+                }
+            }
+        }
+
+        //=================================================================
+        imageResources = USER
+        imageResources {
+            userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+            extensionName = CoreExtended
+            pluginName = MediaSources
+            vendorName = Madj2k
+            controller = MediaSources
+            switchableControllerActions {
+                // Again: Controller-Name and Action
+                MediaSources {
+                    1 = listPage
+                }
+            }
+
+            view =< plugin.tx_coreextended.view
+            persistence =< plugin.tx_coreextended.persistence
+            settings =< plugin.tx_coreextended.settings
+            settings.includeFieldsList = pages.tx_coreextended_preview_image, pages.media, tt_content.image, tt_content.assets
+        }
+
+        //=================================================================
+        authorsBox = USER
+        authorsBox {
+            userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+            extensionName = RkwAuthors
+            pluginName = Rkwauthors
+            vendorName = RKW
+            controller = Authors
+            switchableControllerActions {
+                // Again: Controller-Name and Action
+                Authors {
+                    1 = pageBox
+                }
+            }
+
+            view =< plugin.tx_rkwauthors.view
+            persistence =< plugin.tx_rkwauthors.persistence
+            settings =< plugin.tx_rkwauthors.settings
+        }
+
+        //=================================================================
+        authorsList = USER
+        authorsList {
+            userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+            extensionName = RkwAuthors
+            pluginName = Rkwauthors
+            vendorName = RKW
+            controller = Authors
+            switchableControllerActions {
+                // Again: Controller-Name and Action
+                Authors {
+                    1 = pageCommaList
+                }
+            }
+
+            view =< plugin.tx_rkwauthors.view
+            persistence =< plugin.tx_rkwauthors.persistence
+            settings =< plugin.tx_rkwauthors.settings
+        }
+
+        //=================================================================
+        authorsListNonRecursive = USER
+        authorsListNonRecursive {
+            userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+            extensionName = RkwAuthors
+            pluginName = Rkwauthors
+            vendorName = RKW
+            controller = Authors
+            switchableControllerActions {
+              // Again: Controller-Name and Action
+              Authors {
+                  1 = pageCommaList
+              }
+            }
+
+            view =< plugin.tx_rkwauthors.view
+            persistence =< plugin.tx_rkwauthors.persistence
+            settings =< plugin.tx_rkwauthors.settings
+            settings {
+                recursiveAuthorList = 0
+            }
+        }
+
+    }
+}

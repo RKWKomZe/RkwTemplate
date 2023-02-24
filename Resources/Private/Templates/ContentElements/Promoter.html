@@ -1,0 +1,30 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:rkwEtracker="http://typo3.org/ns/RKW/RkwEtracker/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+    <f:layout name="Rkw" />
+
+    <f:section name="Main">
+
+        <f:if condition="{f:count(subject: images)} > 0">
+            <div class="promoters__item {f:if(condition:'{data.header_layout} == 1', then: 'promoters__item--big', else: '')}">
+                <f:if condition="<rkwEtracker:link.typolink parameter='{data.header_link}' />">
+                    <f:then>
+                        <rkwEtracker:link.typolink parameter="{data.header_link}" additionalAttributes="{rel:'no_follow'}">
+                            <f:render partial="Promoter/Inner" arguments="{_all}"/>
+                        </rkwEtracker:link.typolink>
+                    </f:then>
+                    <f:else>
+                        <f:render partial="Promoter/Inner" arguments="{_all}"/>
+                    </f:else>
+                </f:if>
+            </div>
+        </f:if>
+
+    </f:section>
+
+</html>
+
+
+

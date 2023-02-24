@@ -1,0 +1,1002 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-11-11T13:43:13Z" product-name="rkw_template">
+		<header/>
+		<body>
+
+            <!-- Primary and secondary color for landingpages -->
+            <trans-unit id="pages.palettes.primary_color">
+                <source>Primary Color</source>
+            </trans-unit>
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_primary_color">
+                <source>Color</source>
+            </trans-unit>
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_primary_effect_color">
+                <source>Color For Effects (e.g. link, buttons)</source>
+            </trans-unit>
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_primary_effect_text_color">
+                <source>Text-Color On Effect-Color (e.g. Text on Buttons)</source>
+            </trans-unit>
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_primary_top_text_color">
+               <source>Text-Color When Used As Background</source>
+            </trans-unit>
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_primary_top_effect_color">
+               <source>Effect-Color When Used As Background</source>
+            </trans-unit>
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_primary_top_effect_text_color">
+               <source>Text-Color On Effect-Color When Used As Background</source>
+            </trans-unit>
+
+
+            <trans-unit id="pages.palettes.secondary_color">
+                <source>Secondary Color</source>
+            </trans-unit>
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_secondary_color">
+                <source>Color</source>
+            </trans-unit>
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_secondary_effect_color">
+                <source>Color For Effects (e.g. link, buttons)</source>
+            </trans-unit>
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_secondary_effect_text_color">
+                <source>Text-Color On Effect-Color (e.g. Text on Buttons)</source>
+            </trans-unit>
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_secondary_top_text_color">
+               <source>Text-Color When Used As Background</source>
+           </trans-unit>
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_secondary_top_effect_color">
+               <source>Effect-Color When Used As Background</source>
+            </trans-unit>
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_secondary_top_effect_text_color">
+               <source>Text-Color On Effect-Color When Used As Background</source>
+            </trans-unit>
+
+
+            <trans-unit id="pages.palettes.tertiary_color">
+                <source>Tertiary Color</source>
+            </trans-unit>
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_tertiary_color">
+                <source>Color</source>
+            </trans-unit>
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_tertiary_effect_color">
+                <source>Color For Effects (e.g. link, buttons)</source>
+            </trans-unit>
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_tertiary_effect_text_color">
+                <source>Text-Color On Effect-Color (e.g. Text on Buttons)</source>
+            </trans-unit>
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_tertiary_top_text_color">
+               <source>Text-Color When Used As Background</source>
+           </trans-unit>
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_tertiary_top_effect_color">
+               <source>Effect-Color When Used As Background</source>
+            </trans-unit>
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_tertiary_top_effect_text_color">
+               <source>Text-Color On Effect-Color When Used As Background-color</source>
+            </trans-unit>
+
+
+            <trans-unit id="pages.palettes.quarterly_color">
+                <source>Quarterly Color</source>
+            </trans-unit>
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_quarterly_color">
+                <source>Color</source>
+            </trans-unit>
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_quarterly_effect_color">
+                <source>Color For Effects (e.g. link, buttons)</source>
+            </trans-unit>
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_quarterly_effect_text_color">
+                <source>Text-Color On Effect-Color (e.g. Text on Buttons)</source>
+            </trans-unit>
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_quarterly_top_text_color">
+               <source>Text-Color When Used As Background</source>
+           </trans-unit>
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_quarterly_top_effect_color">
+               <source>Effect-Color When Used As Background</source>
+            </trans-unit>
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_quarterly_top_effect_text_color">
+               <source>Text-Color On Effect-Color When Used As Background-color</source>
+            </trans-unit>
+
+
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_show_more_colors">
+               <source>Show more color options – only do this for a very good reason!</source>
+            </trans-unit>
+            <trans-unit id="pages.tx_rkwtemplate_landingpage_show_more_colors.I.enabled">
+               <source>Activate – I know what I'm doing!</source>
+            </trans-unit>
+
+
+            <!-- Menu-stuff -->
+            <trans-unit id="pages.tx_rkwtemplate_disable_flyout_menu">
+                <source>Fly-Out Menu (only second menu-level)</source>
+            </trans-unit>
+            <trans-unit id="pages.tx_rkwtemplate_disable_flyout_menu.I.enabled">
+                <source>Do not show fly-out-menu for this menu-item</source>
+            </trans-unit>
+
+		    <!-- Cropping for pages media-field -->
+            <trans-unit id="pages.keyvisual.imageManipulation.topicDesktop">
+               <source>Topic (Desktop)</source>
+            </trans-unit>
+            <trans-unit id="pages.keyvisual.imageManipulation.articleDesktop">
+               <source>Article (Desktop)</source>
+            </trans-unit>
+            <trans-unit id="pages.keyvisual.imageManipulation.teaser">
+               <source>Teaser</source>
+            </trans-unit>
+            <trans-unit id="pages.keyvisual.imageManipulation.menuFlyoutLevel2">
+               <source>Menu-Flyout (2nd level)</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwauthors_domain_model_authors.image_box.imageManipulation.teaser">
+               <source>Small box</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwauthors_domain_model_authors.image_box.imageManipulation.big">
+               <source>Detail view</source>
+            </trans-unit>
+            <trans-unit id="tx_rkwtools_domain_model_tool.keyvisual.imageManipulation.teaser">
+               <source>Teaser</source>
+            </trans-unit>
+
+            <!-- Slider -->
+			<trans-unit id="contentElement.slider.title">
+				<source>Slider</source>
+			</trans-unit>
+			<trans-unit id="contentElement.slider.description">
+				<source>Adds a slider.</source>
+			</trans-unit>
+			<trans-unit id="contentElement.slider.type.I.default">
+				<source>Black font</source>
+			</trans-unit>
+			<trans-unit id="contentElement.slider.type.I.1">
+				<source>Black font</source>
+			</trans-unit>
+			<trans-unit id="contentElement.slider.type.I.2">
+				<source>White font</source>
+			</trans-unit>
+            <trans-unit id="contentElement.slider.type.I.3">
+                <source>Black font on white background</source>
+            </trans-unit>
+            <trans-unit id="contentElement.slider.type.I.4">
+                <source>White font on black background</source>
+            </trans-unit>
+			<trans-unit id="contentElement.slider.rowDescription">
+				<source>Label for Button</source>
+			</trans-unit>
+            <trans-unit id="contentElement.slider.imageManipulation.desktop">
+                <source>Desktop</source>
+            </trans-unit>
+            <trans-unit id="contentElement.slider.imageManipulation.desktop-landingpage">
+                <source>Desktop (only Landingpage)</source>
+            </trans-unit>
+            <trans-unit id="contentElement.slider.imageManipulation.desktop-landingpage-big">
+                <source>Desktop (only Landingpage, big)</source>
+            </trans-unit>
+            <trans-unit id="contentElement.slider.imageManipulation.tablet">
+                <source>Tablet</source>
+            </trans-unit>
+            <trans-unit id="contentElement.slider.imageManipulation.mobile">
+                <source>Mobile</source>
+            </trans-unit>
+
+            <!-- SliderContainer -->
+			<trans-unit id="contentElement.sliderContainer.title">
+				<source>SliderContainer</source>
+			</trans-unit>
+			<trans-unit id="contentElement.sliderContainer.description">
+				<source>Adds a slide-container.</source>
+			</trans-unit>
+
+			<!-- BoxSlider -->
+			<trans-unit id="contentElement.boxSlider.title">
+				<source>BoxSlider</source>
+			</trans-unit>
+			<trans-unit id="contentElement.boxSlider.description">
+				<source>Adds a box slider.</source>
+			</trans-unit>
+			<trans-unit id="contentElement.boxSlider.subheader.label">
+				<source>Label for Button</source>
+			</trans-unit>
+
+			<!-- BoxSliderContainer -->
+			<trans-unit id="contentElement.boxSliderContainer.title">
+				<source>BoxSliderContainer</source>
+			</trans-unit>
+			<trans-unit id="contentElement.boxSliderContainer.description">
+				<source>Adds a box slide-container.</source>
+			</trans-unit>
+
+            <!-- LandingpageGridElements -->
+			<trans-unit id="contentElement.gridelements_pi1.landingpage.type.label">
+				<source>Typ</source>
+			</trans-unit>
+			<trans-unit id="contentElement.gridelements_pi1.landingpage.type.I.default">
+				<source>Default-Element</source>
+			</trans-unit>
+			<trans-unit id="contentElement.gridelements_pi1.landingpage.type.I.1">
+				<source>Primary Element</source>
+			</trans-unit>
+			<trans-unit id="contentElement.gridelements_pi1.landingpage.type.I.2">
+				<source>Secondary Element</source>
+			</trans-unit>
+			<trans-unit id="contentElement.gridelements_pi1.landingpage.type.I.3">
+				<source>Tertiary Element (must be activated in the page properties)</source>
+			</trans-unit>
+			<trans-unit id="contentElement.gridelements_pi1.landingpage.type.I.4">
+				<source>Quarterly Element (must be activated in the page properties)</source>
+			</trans-unit>
+            <trans-unit id="contentElement.gridelements_pi1.landingpage.layout.label">
+                <source>Image style (TilesContainer only)</source>
+            </trans-unit>
+            <trans-unit id="contentElement.gridelements_pi1.landingpage.layout.default">
+                <source>Default image</source>
+            </trans-unit>
+            <trans-unit id="contentElement.gridelements_pi1.landingpage.layout.rounded">
+                <source>Rounded image</source>
+            </trans-unit>
+            <trans-unit id="contentElement.gridelements_pi1.landingpage.layout.label2">
+                <source>Close-Button</source>
+            </trans-unit>
+            <trans-unit id="contentElement.gridelements_pi1.landingpage.layout.showClose">
+                <source>Show</source>
+            </trans-unit>
+            <trans-unit id="contentElement.gridelements_pi1.landingpage.layout.hideClose">
+                <source>Hide</source>
+            </trans-unit>
+            <trans-unit id="contentElement.gridelements_pi1.landingpage.frameClass.label">
+                <source>Quotation-Box (TileContainer only)</source>
+            </trans-unit>
+            <trans-unit id="contentElement.gridelements_pi1.landingpage.frameClass.default">
+                <source>White Background, Black Font</source>
+            </trans-unit>
+            <trans-unit id="contentElement.gridelements_pi1.landingpage.frameClass.inverted">
+                <source>Black Background, White Font</source>
+            </trans-unit>
+
+
+            <!-- TilesContainer -->
+            <trans-unit id="contentElement.tilesContainer.title">
+                <source>Tiles-Container</source>
+            </trans-unit>
+            <trans-unit id="contentElement.tilesContainer.description">
+                <source>Adds a tiles-container.</source>
+            </trans-unit>
+
+            <!-- TestimonialContainer -->
+            <trans-unit id="contentElement.testimonialContainer.title">
+                <source>Testimonial-Container</source>
+            </trans-unit>
+            <trans-unit id="contentElement.testimonialContainer.description">
+                <source>Adds a testimonial-container.</source>
+            </trans-unit>
+
+			<!-- topicLinksContainer -->
+			<trans-unit id="contentElement.topicLinksContainer.title">
+				<source>TopicLinks-Container</source>
+			</trans-unit>
+			<trans-unit id="contentElement.topicLinksContainer.description">
+				<source>Adds a topic-links-container.</source>
+			</trans-unit>
+
+            <!-- GalleryContainer -->
+            <trans-unit id="contentElement.galleryContainer.title">
+                <source>Gallery-Container</source>
+            </trans-unit>
+            <trans-unit id="contentElement.galleryContainer.description">
+                <source>Adds a gallery-container.</source>
+            </trans-unit>
+            <trans-unit id="contentElement.galleryContainer.content">
+                <source>Content</source>
+            </trans-unit>
+            <trans-unit id="contentElement.galleryContainer.header">
+                <source>Header</source>
+            </trans-unit>
+
+            <!-- CollageContainer -->
+            <trans-unit id="contentElement.collageContainer.title">
+                <source>Collage-Container</source>
+            </trans-unit>
+            <trans-unit id="contentElement.collageContainer.description">
+                <source>Adds a collage-container.</source>
+            </trans-unit>
+            <trans-unit id="contentElement.collageContainer.content">
+                <source>Content</source>
+            </trans-unit>
+            <trans-unit id="contentElement.collageContainer.header">
+                <source>Header</source>
+            </trans-unit>
+
+            <!-- TagcloudContainer -->
+            <trans-unit id="contentElement.tagcloudContainer.title">
+                <source>Tagcloud-Container</source>
+            </trans-unit>
+            <trans-unit id="contentElement.tagcloudContainer.description">
+                <source>Adds a tagcloud-container.</source>
+            </trans-unit>
+            <trans-unit id="contentElement.tagcloudContainer.content">
+                <source>Content</source>
+            </trans-unit>
+            <trans-unit id="contentElement.tagcloudContainer.header">
+                <source>Header</source>
+            </trans-unit>
+
+            <!-- MoreListContainer -->
+            <trans-unit id="contentElement.moreListContainer.title">
+                <source>MoreList-Container</source>
+            </trans-unit>
+            <trans-unit id="contentElement.moreListContainer.description">
+                <source>Adds a container with more infos.</source>
+            </trans-unit>
+            <trans-unit id="contentElement.moreListContainer.content">
+                <source>Content</source>
+            </trans-unit>
+            <trans-unit id="contentElement.moreListContainer.header">
+                <source>Header</source>
+            </trans-unit>
+
+            <!-- ListContainer -->
+            <trans-unit id="contentElement.listContainer.title">
+                <source>List-Container</source>
+            </trans-unit>
+            <trans-unit id="contentElement.listContainer.description">
+                <source>Adds a container to display a formatted list.</source>
+            </trans-unit>
+            <trans-unit id="contentElement.listContainer.content">
+                <source>Content</source>
+            </trans-unit>
+            <trans-unit id="contentElement.listContainer.header">
+                <source>Header</source>
+            </trans-unit>
+
+            <!-- StickyFooterContainer -->
+            <trans-unit id="contentElement.stickyFooterContainer.title">
+                <source>StickyFooter-Container</source>
+            </trans-unit>
+            <trans-unit id="contentElement.stickyFooterContainer.description">
+                <source>Adds a container to display a sticky footer.</source>
+            </trans-unit>
+            <trans-unit id="contentElement.stickyFooterContainer.content">
+                <source>Content</source>
+            </trans-unit>
+            <trans-unit id="contentElement.stickyFooterContainer.header">
+                <source>Header</source>
+            </trans-unit>
+
+
+            <!-- Mission Statement -->
+            <trans-unit id="contentElement.mission.title">
+                <source>Mission Statement</source>
+            </trans-unit>
+            <trans-unit id="contentElement.mission.description">
+                <source>Adds a Mission Statement.</source>
+            </trans-unit>
+
+            <!-- Topic -->
+            <trans-unit id="contentElement.topic.title">
+               <source>Topic</source>
+            </trans-unit>
+            <trans-unit id="contentElement.topic.description">
+               <source>Displays a topic.</source>
+            </trans-unit>
+            <trans-unit id="contentElement.topic.rowDescription">
+                <source>Label for Button</source>
+            </trans-unit>
+            <trans-unit id="contentElement.topic.imageManipulation.default">
+               <source>Default</source>
+            </trans-unit>
+            <trans-unit id="contentElement.topic.type.I.0">
+				<source>Default</source>
+			</trans-unit>
+			<trans-unit id="contentElement.topic.type.I.2">
+				<source>Entrepreneurship</source>
+			</trans-unit>
+			<trans-unit id="contentElement.topic.type.I.3">
+				<source>Innovation</source>
+			</trans-unit>
+            <trans-unit id="contentElement.topic.type.I.4">
+                <source>Skilled-Workers</source>
+            </trans-unit>
+            <trans-unit id="contentElement.topic.type.I.5">
+                <source>APRODI</source>
+            </trans-unit>
+            <trans-unit id="contentElement.topic.type.I.6">
+                <source>No Color</source>
+            </trans-unit>
+
+
+            <!-- TopicContainer -->
+            <trans-unit id="contentElement.topicContainer.title">
+                <source>Topic-Container</source>
+            </trans-unit>
+            <trans-unit id="contentElement.topicContainer.description">
+                <source>Adds a topic-container.</source>
+            </trans-unit>
+
+
+            <!-- Media -->
+            <trans-unit id="contentElement.multimedia.title">
+                <source>Media</source>
+            </trans-unit>
+            <trans-unit id="contentElement.multimedia.description">
+                <source>Adds a Media-Element.</source>
+            </trans-unit>
+
+
+            <!-- Logo -->
+            <trans-unit id="contentElement.logo.title">
+                <source>Logo</source>
+            </trans-unit>
+            <trans-unit id="contentElement.logo.description">
+                <source>Adds a Logo-Element.</source>
+            </trans-unit>
+            <trans-unit id="contentElement.logo.imageManipulation.default">
+               <source>Default</source>
+            </trans-unit>
+            <trans-unit id="contentElement.logo.imageManipulation.free">
+                <source>Free</source>
+            </trans-unit>
+
+
+            <!-- LogoContainer -->
+            <trans-unit id="contentElement.logoContainer.title">
+                <source>Logo-Container</source>
+            </trans-unit>
+            <trans-unit id="contentElement.logoContainer.description">
+                <source>Adds a logo-container.</source>
+            </trans-unit>
+
+
+            <!-- Promoter -->
+            <trans-unit id="contentElement.promoter.title">
+                <source>Promoter</source>
+            </trans-unit>
+            <trans-unit id="contentElement.promoter.description">
+                <source>Adds a Promoter-Element.</source>
+            </trans-unit>
+
+
+            <!-- PromoterContainer -->
+            <trans-unit id="contentElement.promoterContainer.title">
+                <source>Promoter-Container</source>
+            </trans-unit>
+            <trans-unit id="contentElement.promoterContainer.description">
+                <source>Adds a Promoter-Container.</source>
+            </trans-unit>
+
+            <!-- ContentContainerTwoCols -->
+            <trans-unit id="contentElement.contentContainerTwoCols.title">
+                <source>Content-Container with two Cols</source>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerTwoCols.description">
+                <source>Add a Content-Container with two Cols.</source>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerTwoCols.content">
+                <source>Content</source>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerTwoCols.aside">
+                <source>Aside</source>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerTwoCols.asideFurther">
+                <source>Aside - Further Contents</source>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerTwoCols.callToAction">
+                <source>Call To Action</source>
+            </trans-unit>
+
+
+            <!-- ContentContainerTwoColsReduced -->
+            <trans-unit id="contentElement.contentContainerTwoColsReduced.title">
+                <source>Content-Container with two Cols, reduced</source>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerTwoColsReduced.description">
+                <source>Add a Content-Container with two Cols (Reduced Design) </source>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerTwoColsReduced.content">
+                <source>Content</source>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerTwoColsReduced.aside">
+                <source>Aside</source>
+            </trans-unit>
+
+
+            <!-- ContentContainerOneCol -->
+            <trans-unit id="contentElement.contentContainerOneCol.title">
+                <source>Content-Container with one Col</source>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerOneCol.description">
+                <source>Add a Content-Container with one Col.</source>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerOneCol.content">
+                <source>Content</source>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerOneCol.callToAction">
+                <source>Call To Action</source>
+            </trans-unit>
+
+
+            <!-- ContentContainerOneColPagination -->
+            <trans-unit id="contentElement.contentContainerOneColPagination.title">
+                <source>Content-Container with one Col, pagination</source>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerOneColPagination.description">
+                <source>Add a Content-Container with one Col and pagination.</source>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerOneColPagination.content">
+                <source>Content</source>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerOneColPagination.callToAction">
+                <source>Call To Action</source>
+            </trans-unit>
+
+
+           <!-- ContentContainerOrderForm -->
+            <trans-unit id="contentElement.contentContainerOneColOrderForm.title">
+                <source>Content-Container with one Col and two Rows (for publications)</source>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerOneColOrderForm.description">
+                <source>Add a Content-Container with one Col and two Rows.</source>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerOneColOrderForm.content">
+                <source>Content above order form</source>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerOneColOrderForm.content2">
+                <source>Content below the order form</source>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerOneColOrderForm.callToAction">
+                <source>Call To Action</source>
+            </trans-unit>
+
+            <!-- ContentContainerLandingpageTwoCols -->
+            <trans-unit id="contentElement.contentContainerLandingpageTwoCols.title">
+                <source>Content-Container with two columns (Landingpage)</source>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerLandingpageTwoCols.description">
+                <source>Add a Content-Container with two columns.</source>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerLandingpageTwoCols.content">
+                <source>Content</source>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerLandingpageTwoCols.aside">
+                <source>Aside</source>
+            </trans-unit>
+
+  			<!-- ContentContainerLandingpageOneCol -->
+            <trans-unit id="contentElement.contentContainerLandingpageOneCol.title">
+                <source>Content-Container with one col (Landingpage)</source>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerLandingpageOneCol.description">
+                <source>Add a Content-Container with one column.</source>
+            </trans-unit>
+            <trans-unit id="contentElement.contentContainerLandingpageOneCol.content">
+                <source>Content</source>
+            </trans-unit>
+
+            <!-- Shortlink -->
+            <trans-unit id="contentElement.shortlink.title">
+                <source>Shortlink</source>
+            </trans-unit>
+            <trans-unit id="contentElement.shortlink.description">
+                <source>Adds a Shortlink-Element.</source>
+            </trans-unit>
+			<trans-unit id="contentElement.shortlink.type.I.0">
+				<source>Default (Article)</source>
+			</trans-unit>
+            <trans-unit id="contentElement.shortlink.type.I.4">
+                <source>Link</source>
+            </trans-unit>
+            <trans-unit id="contentElement.shortlink.type.I.5">
+                <source>Download</source>
+            </trans-unit>
+            <trans-unit id="contentElement.shortlink.type.I.6">
+                <source>Publication</source>
+            </trans-unit>
+            <trans-unit id="contentElement.shortlink.type.I.7">
+                <source>Project</source>
+            </trans-unit>
+
+            <!-- Overview -->
+            <trans-unit id="contentElement.overview.title">
+                <source>Overview</source>
+            </trans-unit>
+            <trans-unit id="contentElement.overview.description">
+                <source>Adds an overview text.</source>
+            </trans-unit>
+
+  			<!-- TableOfContents -->
+            <trans-unit id="contentElement.toc.title">
+                <source>Table Of Contents</source>
+            </trans-unit>
+            <trans-unit id="contentElement.toc.description">
+                <source>Adds a table of contents.</source>
+            </trans-unit>
+
+            <!-- TableOfContentsLandingpage -->
+            <trans-unit id="contentElement.toclandingpage.title">
+                <source>Table Of Contents</source>
+            </trans-unit>
+            <trans-unit id="contentElement.toclandingpage.description">
+                <source>Adds a table of contents.</source>
+            </trans-unit>
+
+            <!-- CollapsedText -->
+            <trans-unit id="contentElement.collapsed.title">
+                <source>Collapsed Text</source>
+            </trans-unit>
+            <trans-unit id="contentElement.collapsed.description">
+                <source>Adds a collapsed text element.</source>
+            </trans-unit>
+            <trans-unit id="contentElement.collapsed.rowDescription">
+                <source>Short Version</source>
+            </trans-unit>
+
+
+            <!-- ImageList -->
+            <trans-unit id="contentElement.imageList.title">
+                <source>Image List</source>
+            </trans-unit>
+            <trans-unit id="contentElement.imageList.description">
+                <source>Adds an image list -element.</source>
+            </trans-unit>
+            <trans-unit id="contentElement.imageList.rowDescription">
+                <source>Short Version</source>
+            </trans-unit>
+            <trans-unit id="contentElement.imageList.imageManipulation.default">
+                <source>Default</source>
+            </trans-unit>
+
+            <!-- CallToAction -->
+            <trans-unit id="contentElement.callToAction.title">
+                <source>Call-to-action element with background</source>
+            </trans-unit>
+            <trans-unit id="contentElement.callToAction.description">
+                <source>Adds a call-to-action-element.</source>
+            </trans-unit>
+			<trans-unit id="contentElement.callToAction.subheader">
+				<source>Link text</source>
+			</trans-unit>
+            <trans-unit id="contentElement.callToAction.rowDescription">
+                <source>Short version</source>
+            </trans-unit>
+            <trans-unit id="contentElement.callToAction.imageManipulation.default">
+                <source>Default</source>
+            </trans-unit>
+            <trans-unit id="contentElement.callToAction.type.label">
+				<source>Font color</source>
+			</trans-unit>
+			<trans-unit id="contentElement.callToAction.type.I.default">
+				<source>Black font</source>
+			</trans-unit>
+			<trans-unit id="contentElement.callToAction.type.I.1">
+				<source>White font</source>
+			</trans-unit>
+
+            <!-- ImageTextOverlay -->
+            <trans-unit id="contentElement.imageTextOverlay.title">
+                <source>Image with text overlay</source>
+            </trans-unit>
+            <trans-unit id="contentElement.imageTextOverlay.description">
+                <source>Adds an image-text-overlay -element.</source>
+            </trans-unit>
+            <trans-unit id="contentElement.imageTextOverlay.rowDescription">
+                <source>Short Version</source>
+            </trans-unit>
+            <trans-unit id="contentElement.imageTextOverlay.imageManipulation.default">
+                <source>Default</source>
+            </trans-unit>
+
+            <!-- TextImageBackground -->
+            <trans-unit id="contentElement.textImageBackground.title">
+                <source>Text with image or video as background</source>
+            </trans-unit>
+            <trans-unit id="contentElement.textImageBackground.description">
+                <source>Adds an text-image-background-element.</source>
+            </trans-unit>
+            <trans-unit id="contentElement.textImageBackground.rowDescription">
+                <source>Link text</source>
+            </trans-unit>
+            <trans-unit id="contentElement.textImageBackground.imageManipulation.default">
+                <source>Default</source>
+            </trans-unit>
+			<trans-unit id="contentElement.textImageBackground.type.label">
+				<source>Font color</source>
+			</trans-unit>
+			<trans-unit id="contentElement.textImageBackground.type.I.default">
+				<source>Black font, no gradient</source>
+			</trans-unit>
+			<trans-unit id="contentElement.textImageBackground.type.I.1">
+				<source>Black font, white gradient</source>
+			</trans-unit>
+			<trans-unit id="contentElement.textImageBackground.type.I.2">
+				<source>White font, no gradient</source>
+			</trans-unit>
+			<trans-unit id="contentElement.textImageBackground.type.I.3">
+                <source>Black font on white background</source>
+            </trans-unit>
+            <trans-unit id="contentElement.textImageBackground.type.I.4">
+                <source>White font on black background</source>
+            </trans-unit>
+
+
+            <!-- Text -->
+            <trans-unit id="contentElement.text.title">
+                <source>Text</source>
+            </trans-unit>
+            <trans-unit id="contentElement.text.description">
+                <source>Adds a text-element.</source>
+            </trans-unit>
+
+            <!-- Text & Bilder -->
+            <trans-unit id="contentElement.textpic.title">
+                <source>Text &amp; Images</source>
+            </trans-unit>
+            <trans-unit id="contentElement.textpic.description">
+                <source>Adds a combined text-images-element.</source>
+            </trans-unit>
+
+            <!-- TextWithButton -->
+            <trans-unit id="contentElement.textWithButton.title">
+                <source>Text with button as call-to-action element</source>
+            </trans-unit>
+            <trans-unit id="contentElement.textWithButton.description">
+                <source>Adds an text-with-button-element.</source>
+            </trans-unit>
+            <trans-unit id="contentElement.textWithButton.rowDescription">
+                <source>Short Version</source>
+            </trans-unit>
+            <trans-unit id="contentElement.textWithButton.imageManipulation.default">
+                <source>Default</source>
+            </trans-unit>
+
+            <!-- Button -->
+            <trans-unit id="contentElement.button.title">
+                <source>Button as call-to-action element</source>
+            </trans-unit>
+            <trans-unit id="contentElement.button.description">
+                <source>Adds an button-element.</source>
+            </trans-unit>
+            <trans-unit id="contentElement.button.rowDescription">
+                <source>Link text</source>
+            </trans-unit>
+            <trans-unit id="contentElement.button.imageManipulation.default">
+                <source>Default</source>
+            </trans-unit>
+
+            <!-- Tile -->
+            <trans-unit id="contentElement.tile.title">
+                <source>Tile</source>
+            </trans-unit>
+            <trans-unit id="contentElement.tile.description">
+                <source>Adds an tile list-element.</source>
+            </trans-unit>
+
+			<!-- Testimonial -->
+			<trans-unit id="contentElement.testimonial.title">
+				<source>Testimonial</source>
+			</trans-unit>
+			<trans-unit id="contentElement.testimonial.description">
+				<source>Adds a testimonial element.</source>
+			</trans-unit>
+			<trans-unit id="contentElement.testimonial.header.label">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="contentElement.testimonial.bodytext.label">
+				<source>Quote</source>
+			</trans-unit>
+
+            <!-- Keyvisual -->
+            <trans-unit id="contentElement.keyvisual.title">
+                <source>Keyvisual</source>
+            </trans-unit>
+            <trans-unit id="contentElement.keyvisual.description">
+                <source>Adds a keyvisual.</source>
+            </trans-unit>
+			<trans-unit id="contentElement.keyvisual.imageManipulation.imagewidth">
+				<source>Width (min 100, max 336 pixel)</source>
+			</trans-unit>
+
+            <!-- MoreList -->
+            <trans-unit id="contentElement.moreList.title">
+                <source>More List</source>
+            </trans-unit>
+            <trans-unit id="contentElement.moreList.description">
+                <source>Adds an more list-element.</source>
+            </trans-unit>
+            <trans-unit id="contentElement.moreList.rowDescription">
+                <source>Short Version</source>
+            </trans-unit>
+            <trans-unit id="contentElement.moreList.imageManipulation.default">
+                <source>Default</source>
+            </trans-unit>
+            <trans-unit id="contentElement.moreList.header_layout.label">
+                <source>Icons</source>
+            </trans-unit>
+            <trans-unit id="contentElement.moreList.header_layout.icon.youtube">
+                <source>Youtube</source>
+            </trans-unit>
+            <trans-unit id="contentElement.moreList.header_layout.icon.facebook">
+                <source>Facebook</source>
+            </trans-unit>
+            <trans-unit id="contentElement.moreList.header_layout.icon.instagram">
+                <source>Instagram</source>
+            </trans-unit>
+            <trans-unit id="contentElement.moreList.header_layout.icon.twitter">
+                <source>Twitter</source>
+            </trans-unit>
+            <trans-unit id="contentElement.moreList.header_layout.icon.xing">
+                <source>Xing</source>
+            </trans-unit>
+            <trans-unit id="contentElement.moreList.header_layout.icon.linkedin">
+                <source>LinkedIn</source>
+            </trans-unit>
+            <trans-unit id="contentElement.moreList.header_layout.icon.document">
+                <source>Document</source>
+            </trans-unit>
+            <trans-unit id="contentElement.moreList.header_layout.icon.date">
+                <source>Calendar</source>
+            </trans-unit>
+            <trans-unit id="contentElement.moreList.header_layout.icon.trash">
+                <source>Trash</source>
+            </trans-unit>
+            <trans-unit id="contentElement.moreList.header_layout.icon.date-alarm">
+                <source>Alarm</source>
+            </trans-unit>
+            <trans-unit id="contentElement.moreList.header_layout.icon.location">
+                <source>Location</source>
+            </trans-unit>
+            <trans-unit id="contentElement.moreList.header_layout.icon.download">
+                <source>Download</source>
+            </trans-unit>
+            <trans-unit id="contentElement.moreList.header_layout.icon.views">
+                <source>Eye</source>
+            </trans-unit>
+            <trans-unit id="contentElement.moreList.header_layout.icon.search">
+                <source>Magnifying glass</source>
+            </trans-unit>
+            <trans-unit id="contentElement.moreList.header_layout.icon.ticket">
+                <source>Ticket</source>
+            </trans-unit>
+            <trans-unit id="contentElement.moreList.header_layout.icon.speech">
+                <source>Speak</source>
+            </trans-unit>
+            <trans-unit id="contentElement.moreList.header_layout.icon.mail">
+                <source>Envelope</source>
+            </trans-unit>
+            <trans-unit id="contentElement.moreList.header_layout.icon.phone">
+                <source>Phone</source>
+            </trans-unit>
+            <trans-unit id="contentElement.moreList.header_layout.icon.globe">
+                <source>Globe</source>
+            </trans-unit>
+            <trans-unit id="contentElement.moreList.header_layout.icon.clipboard">
+                <source>Clipboard</source>
+            </trans-unit>
+            <trans-unit id="contentElement.moreList.header_layout.icon.contacts">
+                <source>Contacts</source>
+            </trans-unit>
+            <trans-unit id="contentElement.moreList.header_layout.icon.people">
+                <source>People</source>
+            </trans-unit>
+            <trans-unit id="contentElement.moreList.header_layout.icon.events">
+                <source>Events</source>
+            </trans-unit>
+
+            <!-- ListElement -->
+            <trans-unit id="contentElement.listElement.title">
+                <source>Structured list element (headline, text)</source>
+            </trans-unit>
+            <trans-unit id="contentElement.listElement.description">
+                <source>Adds a structured list element.</source>
+            </trans-unit>
+            <trans-unit id="contentElement.listElement.rowDescription">
+                <source>Short Version</source>
+            </trans-unit>
+            <trans-unit id="contentElement.listElement.imageManipulation.default">
+                <source>Default</source>
+            </trans-unit>
+
+            <!-- SiteHeader -->
+            <trans-unit id="contentElement.siteHeader.title">
+                <source>Header-Image with Call-to-Action-Button</source>
+            </trans-unit>
+            <trans-unit id="contentElement.siteHeader.description">
+                <source>Adds a header image element.</source>
+            </trans-unit>
+            <trans-unit id="contentElement.siteHeader.rowDescription">
+                <source>Link caption (only on landing page header)</source>
+            </trans-unit>
+            <trans-unit id="contentElement.siteHeader.imageManipulation.default">
+                <source>Default</source>
+            </trans-unit>
+			<trans-unit id="contentElement.siteHeader.type.label">
+				<source>Font color</source>
+			</trans-unit>
+			<trans-unit id="contentElement.siteHeader.type.I.default">
+				<source>Black font, no gradient</source>
+			</trans-unit>
+			<trans-unit id="contentElement.siteHeader.type.I.1">
+				<source>Black font, white gradient</source>
+			</trans-unit>
+			<trans-unit id="contentElement.siteHeader.type.I.2">
+				<source>White font, no gradient</source>
+			</trans-unit>
+			<trans-unit id="contentElement.siteHeader.type.I.3">
+				<source>White font, black gradient</source>
+			</trans-unit>
+
+            <!-- Gallery -->
+            <trans-unit id="contentElement.gallery.title">
+                <source>Gallery with thumbnails and fading background image</source>
+            </trans-unit>
+            <trans-unit id="contentElement.gallery.description">
+                <source>Adds a gallery element.</source>
+            </trans-unit>
+            <trans-unit id="contentElement.gallery.rowDescription">
+                <source>Short Version</source>
+            </trans-unit>
+            <trans-unit id="contentElement.gallery.imageManipulation.default">
+                <source>Large image</source>
+            </trans-unit>
+            <trans-unit id="contentElement.gallery.imageManipulation.thumbnail">
+                <source>Thumbnail</source>
+            </trans-unit>
+
+            <!-- Collage -->
+            <trans-unit id="contentElement.collage.title">
+                <source>Collage</source>
+            </trans-unit>
+            <trans-unit id="contentElement.collage.description">
+                <source>Adds a collage element.</source>
+            </trans-unit>
+            <trans-unit id="contentElement.collage.rowDescription">
+                <source>Short Version</source>
+            </trans-unit>
+            <trans-unit id="contentElement.collage.imageManipulation.default">
+                <source>Default</source>
+            </trans-unit>
+
+             <!-- TabContainer -->
+            <trans-unit id="contentElement.tabContainer.title">
+                <source>Tab-Container</source>
+            </trans-unit>
+            <trans-unit id="contentElement.tabContainer.description">
+                <source>Adds a Tab-Container.</source>
+            </trans-unit>
+
+
+            <!-- Tab -->
+            <trans-unit id="contentElement.tab.title">
+                <source>Tab</source>
+            </trans-unit>
+            <trans-unit id="contentElement.tab.description">
+                <source>Add a tap-text element.</source>
+            </trans-unit>
+
+			<!-- AccordionContainer -->
+            <trans-unit id="contentElement.accordionContainer.title">
+                <source>Accordion-Container</source>
+            </trans-unit>
+            <trans-unit id="contentElement.accordionContainer.description">
+                <source>Adds an Accordion-Container.</source>
+            </trans-unit>
+
+            <!-- Accordion -->
+            <trans-unit id="contentElement.accordion.title">
+                <source>Accordion-Element</source>
+            </trans-unit>
+            <trans-unit id="contentElement.accordion.description">
+                <source>Add an Accordion-Element.</source>
+            </trans-unit>
+
+            
+			<!-- TagcloudElement -->
+			<trans-unit id="contentElement.tagcloudElement.title">
+				<source>Tagcloud element</source>
+			</trans-unit>
+			<trans-unit id="contentElement.tagcloudElement.description">
+				<source>Adds a tagcloud element.</source>
+			</trans-unit>
+			<trans-unit id="contentElement.tagcloudElement.type.label">
+				<source>Weight</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

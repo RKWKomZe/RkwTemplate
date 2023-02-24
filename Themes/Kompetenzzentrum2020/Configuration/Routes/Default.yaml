@@ -1,0 +1,12 @@
+RkwTemplate:
+  type: Extbase
+  namespace: 'tx_rkwtemplate_rkwtemplate'
+  routes:
+    - routePath: '/rkw-template/mobilemenu'
+      _controller: 'Ajax::mobileMenu'
+  defaultController: 'Ajax::mobileMenu'
+
+imports:
+  - { resource: "EXT:rkw_template/Themes/Kompetenzzentrum2020/Configuration/Routes/Imports/Languages.yaml" }
+  - { resource: "EXT:rkw_template/Themes/Kompetenzzentrum2020/Configuration/Routes/Imports/Extensions.yaml" }
+  - { resource: "EXT:rkw_template/Themes/Kompetenzzentrum2020/Configuration/Routes/Imports/PageTypes.yaml" }

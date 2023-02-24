@@ -1,0 +1,69 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+    <f:layout name="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.utility.pageLayoutSwitch')}" />
+
+
+    <f:section name="Header">
+
+    </f:section>
+
+
+    <f:comment><!-- ======================================================================== --></f:comment>
+
+
+    <f:section name="Content">
+
+        <main class="main flex-container space-between no-padding-narrow" id="main">
+            <section class="section content flex-item flex-basis-9 full-width-smalldesk no-padding-narrow">
+
+                <div class="siteheader siteheader--extended siteheader--flexible no-border-radius-smalldesk">
+
+                    <f:comment><!-- header --></f:comment>
+                    <f:cObject typoscriptObjectPath="lib.txRkwTemplate.event.title" data="{data}" />
+
+                    <f:comment><!-- GoogleMaps --></f:comment>
+                    <div class="siteheader__image">
+                        <f:format.raw><f:cObject typoscriptObjectPath="lib.txRkwTemplate.event.maps" data="{data}" /></f:format.raw>
+                    </div>
+
+                    <f:comment><!-- overview --></f:comment>
+                    <div class="siteheader__meta flex-container space-between">
+                        <f:cObject typoscriptObjectPath="lib.txRkwTemplate.event.info" data="{data}" />
+                    </div>
+
+                </div>
+
+                <f:comment><!-- breadcrumb --></f:comment>
+                <div class="breadcrumbs flex-container nav breadcrumb-padding">
+                    <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.breadcrumb" data="{data}" />
+                </div>
+
+                <f:comment><!-- content --></f:comment>
+                <div class="contentbox contentbox--text contentbox--no-border-radius no-border-radius-smalldesk typo3-fsc">
+                    <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.main" data="{data}" />
+                </div>
+
+            </section>
+
+            <f:comment><!-- similar contents --></f:comment>
+            <aside class="aside-info flex-item flex-basis-3 aside-info--padding full-width-smalldesk">
+                <div class="asideinner">
+                    <h4 class="asideinner__title content-padding-smalldesk">
+                        <f:cObject typoscriptObjectPath="lib.txRkwTemplate.recommendation.eventHeaderLabel" />
+                    </h4>
+                    <div class="contentbox no-border-radius-smalldesk">
+                        <f:cObject typoscriptObjectPath="lib.txRkwTemplate.recommendation.eventsRecommendedReduced" />
+                        <f:cObject typoscriptObjectPath="lib.txRkwTemplate.recommendation.eventsSimilarReduced" />
+                    </div>
+
+                </div>
+            </aside>
+
+        </main>
+
+
+
+
+    </f:section>
+
+</html>

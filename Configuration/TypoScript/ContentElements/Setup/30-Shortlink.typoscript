@@ -1,0 +1,13 @@
+tt_content {
+    rkwtemplate_shortlink =< lib.contentElement
+    rkwtemplate_shortlink {
+        templateName = Shortlink
+
+        // loading images as references
+        dataProcessing {
+            10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+            10.references.fieldName = image
+            10.as = images
+        }
+    }
+}

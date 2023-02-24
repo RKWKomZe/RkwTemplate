@@ -1,0 +1,29 @@
+#############################################################################
+// Head-Data
+#############################################################################
+page {
+
+    //===============================================================
+    // Other
+    //===============================================================
+    headerData {
+
+        // override title with Yoast-Title
+        100 {
+
+            20 = COA
+            20 =< lib.yoastSEO.pageTitleComplete
+        }
+
+
+        // Viewport
+        200 = TEXT
+        200.value (
+			<meta name="viewport" content="initial-scale=1, maximum-scale=5, minimum-scale=1">
+        )
+
+        // Facebook Instant Articles
+        5500 = TEXT
+        5500.value = <meta property="fb:pages" content="436969943109294" />
+    }
+}

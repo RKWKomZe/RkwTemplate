@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-02-19T11:21:59Z" product-name="rkwbasics">
+		<header/>
+		<body>
+
+
+            <!-- ================================================================= -->
+            <!-- Partials -->
+            <!-- ================================================================= -->
+            <trans-unit id="partials.basics.skipLink.labelNavigation">
+                <source>Jump to navigation</source>
+            </trans-unit>
+            <trans-unit id="partials.basics.skipLink.labelContent">
+                <source>Jump to contents</source>
+            </trans-unit>
+            
+            <trans-unit id="partials.basics.languageSwitch.label1">
+                <source>en</source>
+            </trans-unit>
+            <trans-unit id="partials.basics.languageSwitch.ariaLabel1">
+                <source>Switch to English</source>
+            </trans-unit>
+            <trans-unit id="partials.basics.languageSwitch.label0">
+                <source>de</source>
+            </trans-unit>
+            <trans-unit id="partials.basics.languageSwitch.ariaLabel0">
+                <source>Switch to German</source>
+            </trans-unit>                
+
+
+			<trans-unit id="partials.menus.main.item.back">
+				<source>Go one level back</source>
+			</trans-unit>
+            <trans-unit id="partials.menus.main.item.next">
+                <source>Show Submenu</source>
+            </trans-unit>
+
+
+			<trans-unit id="partials.menus.main.list.home">
+				<source>Home</source>
+			</trans-unit>
+
+
+			<trans-unit id="partials.menus.main.closure.contact">
+				<source>Contact</source>
+			</trans-unit>
+			<trans-unit id="partials.menus.main.closure.login">
+				<source>Login</source>
+			</trans-unit>
+			<trans-unit id="partials.menus.main.closure.funding">
+				<source>Funding Request</source>
+			</trans-unit>
+
+
+            <trans-unit id="partials.menus.breadcrumb.list.label">
+                <source>You are here:</source>
+            </trans-unit>
+
+
+            <trans-unit id="partials.menus.tableOfContents.labelHeader">
+                <source>Table of Contents</source>
+            </trans-unit>
+            <trans-unit id="partials.menus.tableOfContents.labelShowMore">
+                <source>Show More</source>
+            </trans-unit>
+            <trans-unit id="partials.menus.tableOfContents.labelShowLess">
+                <source>Show less</source>
+            </trans-unit>
+
+
+            <trans-unit id="partials.infoBox.article.labelMeta">
+				<source>Information</source>
+			</trans-unit>
+            <trans-unit id="partials.infoBox.article.labelAbstract">
+                <source>Abstract</source>
+            </trans-unit>
+            
+            
+            <trans-unit id="partials.footerSection.stickyNewsletterHeadline">
+                <source>Updates for the Medium-sized business</source>
+            </trans-unit>
+            <trans-unit id="partials.footerSection.stickyNewsletterButton">
+                <source>Subscribe to RKW Newsletter</source>
+            </trans-unit>
+            
+
+            <trans-unit id="partials.infoBox.publication.labelMeta">
+                <source>Information</source>
+            </trans-unit>
+            <trans-unit id="partials.infoBox.publication.labelOrder">
+                <source>Order now</source>
+            </trans-unit>
+
+
+            <trans-unit id="partials.infoBox.partials.project.labelProject">
+                <source>Project</source>
+            </trans-unit>
+			<trans-unit id="partials.infoBox.partials.date.labelDate">
+				<source>Published</source>
+			</trans-unit>
+			<trans-unit id="partials.infoBox.partials.date.labelPubYear">
+				<source>Year of Publication</source>
+			</trans-unit>
+            <trans-unit id="partials.infoBox.partials.fileSize.labelFileSize">
+                <source>Filesize</source>
+            </trans-unit>
+            <trans-unit id="partials.infoBox.partials.documentType.labelDocumentType">
+                <source>Type</source>
+            </trans-unit>
+            <trans-unit id="partials.infoBox.partials.authors.labelAuthors">
+				<source>Authors</source>
+			</trans-unit>
+            <trans-unit id="partials.infoBox.partials.parentPage.labelParentPage">
+                <source>Publication</source>
+            </trans-unit>
+            <trans-unit id="partials.infoBox.partials.readMore.labelReadOnline">
+                <source>Read online</source>
+            </trans-unit>
+            <trans-unit id="partials.infoBox.partials.readMore.labelReadOnline.select.website">
+                <source>... as website</source>
+            </trans-unit>
+            <trans-unit id="partials.infoBox.partials.readMore.labelReadOnline.select.ePaper">
+                <source>... as ePaper (external)</source>
+            </trans-unit>
+            <trans-unit id="partials.infoBox.partials.readMore.labelReadOnline.ePaper">
+                <source>Read ePaper (external)</source>
+            </trans-unit>
+
+
+            <trans-unit id="partials.keyVisual.publication.sub.labelChapter">
+                <source>Chapter</source>
+            </trans-unit>
+
+
+            <trans-unit id="partials.basics.logo.homeLink">
+                <source>Home</source>
+            </trans-unit>
+
+
+            <!-- ================================================================= -->
+            <!-- Templates -->
+            <!-- ================================================================= -->
+            <trans-unit id="templates.menus.main.open">
+                <source>Open Mainmenu</source>
+            </trans-unit>
+            <trans-unit id="templates.menus.main.close">
+                <source>Close Mainmenu</source>
+            </trans-unit>
+            <trans-unit id="templates.menus.readMore.previous">
+                <source>Back</source>
+            </trans-unit>
+            <trans-unit id="templates.menus.readMore.next">
+                <source>Next</source>
+            </trans-unit>
+            <trans-unit id="templates.menus.readMore.readOnlineNow">
+                <source>Read online now</source>
+            </trans-unit>
+
+            <!-- ================================================================= -->
+            <!-- Layouts -->
+            <!-- ================================================================= -->
+
+
+            <!-- ================================================================== -->
+            <!-- TypoScript -->
+            <!-- ================================================================== -->
+            <trans-unit id="typoscript.relatedDefault">
+                <source>From the project</source>
+            </trans-unit>
+            <trans-unit id="typoscript.relatedPublication">
+                <source>Publications</source>
+            </trans-unit>
+
+            <trans-unit id="typoscript.pageInfo.fileDownload.download">
+                <source>Download</source>
+            </trans-unit>
+            <trans-unit id="typoscript.pageInfo.externalLink.ePaper">
+                <source>ePaper (external)</source>
+            </trans-unit>
+
+            <!-- ================================================================== -->
+            <!-- Content Elements -->
+            <!-- ================================================================== -->
+            <!-- Shortlink -->
+            <trans-unit id="contentElement.shortlink.type.I.0">
+                <source>Article</source>
+            </trans-unit>
+            <trans-unit id="contentElement.shortlink.type.I.4">
+                <source>Link</source>
+            </trans-unit>
+            <trans-unit id="contentElement.shortlink.type.I.5">
+                <source>Download</source>
+            </trans-unit>
+            <trans-unit id="contentElement.shortlink.type.I.6">
+                <source>Publication</source>
+            </trans-unit>
+            <trans-unit id="contentElement.shortlink.type.I.7">
+                <source>Project</source>
+            </trans-unit>
+
+
+            <!-- CollapsedText -->
+            <trans-unit id="contentElement.collapsed.showMore">
+                <source>show more</source>
+            </trans-unit>
+            <trans-unit id="contentElement.collapsed.showLess">
+                <source>show less</source>
+            </trans-unit>
+
+
+            <!-- Topic -->
+            <trans-unit id="contentElement.topic.showMore">
+                <source>show more</source>
+            </trans-unit>
+
+            <!-- Tile -->
+            <trans-unit id="contentElement.tile.labelShowMore">
+                <source>Show More</source>
+            </trans-unit>
+
+           <!-- StickyFooter -->
+            <trans-unit id="contentElement.stickyFooter.labelScrollToTop">
+                <source>Scroll to top</source>
+            </trans-unit>
+
+            <!-- ================================================================== -->
+            <!-- Grid Elements -->
+            <!-- ================================================================== -->
+            <trans-unit id="partials.gridElements.contentContainer.aside.information">
+                <source>Further information</source>
+            </trans-unit>
+            <trans-unit id="partials.gridElements.contentContainer.content.imageResources">
+                <source>Image Resources</source>
+            </trans-unit>
+            <trans-unit id="partials.gridElements.contentContainer.content.labelChapter">
+                <source>Chapter</source>
+            </trans-unit>
+            <trans-unit id="partials.gridElements.contentContainer.sharing.label">
+                <source>You like what you read? Share it:</source>
+            </trans-unit>
+
+		</body>
+	</file>
+</xliff>

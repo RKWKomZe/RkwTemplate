@@ -1,0 +1,20 @@
+tt_content {
+    rkwtemplate_slider =< lib.contentElement
+    rkwtemplate_slider {
+        templateName = Slider
+
+        dataProcessing {
+
+            // loading images as references
+            10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+            10.references.fieldName = image
+            10.as = images
+
+            // loading assets as references
+            20 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+            20.references.fieldName = assets
+            20.as = assets
+
+        }
+    }
+}

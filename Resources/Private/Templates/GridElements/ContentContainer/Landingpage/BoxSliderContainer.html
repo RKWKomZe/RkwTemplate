@@ -1,0 +1,35 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:coreExtended="http://typo3.org/ns/Madj2k/CoreExtended/ViewHelpers"
+    xmlns:rkwTemplate="http://typo3.org/ns/RKW/RkwTemplate/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+    <f:layout name="Rkw" />
+
+    <f:section name="Main">
+
+        <section
+            id="c{data.uid}"
+            class="contentbox content-padding-layoutmax typo3-fsc boxslider-mod {rkwTemplate:GetLandingpageElementModClass(headerPosition:'{data.header_position}')}"
+        >
+
+        <f:if condition="<coreExtended:isEmpty string='{data.tx_gridelements_view_column_180}' /> == 0">
+
+            <div class="flex-container">
+                <div class="boxslider owl-carousel flex-basis-12" data-carousel-number="{data.uid}">
+
+                    <div class="boxslider-inner">
+                        <div class="boxslider-nav" id="boxslider-nav-{data.uid}"></div>
+                        <f:format.raw>{data.tx_gridelements_view_column_180}</f:format.raw>
+                    </div>
+
+                </div>
+            </div>
+
+        </f:if>
+
+        </section>
+
+    </f:section>
+
+</html>

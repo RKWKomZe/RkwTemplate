@@ -1,0 +1,24 @@
+tx_gridelements.setup.sliderContainer {
+
+    title = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.sliderContainer.title
+    description = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.sliderContainer.description
+    config {
+        colCount = 1
+        rowCount = 1
+        rows {
+            1 {
+                columns {
+                    1 {
+                        name = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.slider.title
+                        colPos = 10
+                        allowed {
+                            CType = rkwtemplate_slider, list
+                            list_type = , rkwrelated_selectedcategories
+                        }
+                        maxitems = 7
+                    }
+                }
+            }
+        }
+    }
+}

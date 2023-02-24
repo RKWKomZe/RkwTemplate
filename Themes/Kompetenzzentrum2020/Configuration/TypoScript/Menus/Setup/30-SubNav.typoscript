@@ -1,0 +1,43 @@
+lib.txRkwTemplate {
+
+    navigation {
+
+
+        sub = FLUIDTEMPLATE
+        sub {
+            file = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/Menus/Sub.html
+            partialRootPaths.0 = {$plugin.tx_rkwtemplate_themeconfig.paths.default.partials}/Menus/Sub
+
+            dataProcessing {
+                10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+                10 {
+
+                   levels = 1
+                   entryLevel = 1
+                   expandAll = 1
+                   includeSpacer = 0
+                   titleField = tx_rkwbasics_alternative_title // nav_title // title
+                   as = menuItems
+                }
+
+            }
+
+            settings < page.10.settings
+        }
+    }
+}
+
+[globalVar = LIT:1 = {$plugin.tx_rkwtemplate_themeconfig.isMicrosite}]
+    lib.txRkwTemplate {
+        navigation {
+            sub {
+                dataProcessing {
+                    10 {
+                       entryLevel = 0
+                    }
+                }
+            }
+        }
+    }
+[global]
+

@@ -1,0 +1,27 @@
+####
+#  CKEditor configuration for rkw_template
+###
+
+# Load default processing options
+imports:
+  - { resource: "EXT:rte_ckeditor/Configuration/RTE/Processing.yaml" }
+  - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Base.yaml" }
+  - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Plugins.yaml" }
+  - { resource: 'EXT:rkw_template/Themes/_Core/Configuration/TsConfig/RTE/Editor/Imports/Processing.yaml' }
+  - { resource: 'EXT:rkw_template/Themes/_Core/Configuration/TsConfig/RTE/Editor/Imports/Toolbar.yaml' }
+
+# Add configuration for the editor
+# For complete documentation see http://docs.ckeditor.com/#!/api/CKEDITOR.config
+editor:
+
+  # see: https://ckeditor.com/docs/ckeditor4/latest/api/CKEDITOR_config.html
+  config:
+
+    # set default language, will be overridden by content
+    defaultContentLanguage: "de"
+    defaultLanguage: "de"
+    wsc_lang: "de_DE"
+
+    # activate spellchecker
+    scayt_autoStartup: true
+    scayt_sLang: "de_DE"

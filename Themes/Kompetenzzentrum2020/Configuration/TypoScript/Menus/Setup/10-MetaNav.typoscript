@@ -1,0 +1,33 @@
+lib.txRkwTemplate {
+
+    navigation {
+
+        meta = FLUIDTEMPLATE
+        meta {
+
+            file = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/Menus/Meta.html
+            partialRootPaths.0 = {$plugin.tx_rkwtemplate_themeconfig.paths.default.partials}/Menus/Meta
+
+            dataProcessing {
+                10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+                10 {
+                   special = directory
+                   special.value = {$plugin.tx_rkwtemplate_themeconfig.settings.metaNav.pid}
+                   levels = 1
+                   entryLevel = 0
+                   expandAll = 1
+                   includeSpacer = 0
+                   maxItems = 10
+                   titleField = tx_rkwbasics_alternative_title // nav_title // title
+                   excludeUidList >
+
+                   as = menuItems
+                }
+            }
+
+            settings {
+                linkTarget = {$plugin.tx_rkwtemplate_themeconfig.settings.metaNav.linkTarget}
+            }
+        }
+    }
+}

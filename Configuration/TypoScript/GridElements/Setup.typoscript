@@ -1,0 +1,7 @@
+<INCLUDE_TYPOSCRIPT: source="DIR:./Setup" extensions="typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:./Setup/ContentContainer" extensions="typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:./Setup/ContentContainer/Home" extensions="typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:./Setup/ContentContainer/Landingpage" extensions="typoscript">
+
+<INCLUDE_TYPOSCRIPT: source="DIR:./Setup/StructureContainer" extensions="typoscript">
+

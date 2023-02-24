@@ -1,0 +1,51 @@
+module.tx_rkwrelated {
+
+    settings {
+        # cat=plugin.tx_rkwrelated; type=string; label=List of PIDs whose cache is to delete, when contents are saved
+        clearCachePageList = 3865
+    }
+}
+
+
+plugin.tx_rkwrelated_similarcontent {
+
+
+	settings {
+
+        # cat=plugin.tx_rkwrelated_similarcontent//f; type=string; label=PIDs to include in list (comma separated)
+        # startingPidList = {$plugin.tx_rkwtemplate_themeconfig.website.rootPid}
+
+        # cat=plugin.tx_rkwrelated_similarcontent//f; type=boolean; label=Hide authors label
+        hideAuthors = 0
+
+        # cat=plugin.tx_rkwrelated_similarcontent//a; type=boolean; label=Do not search for similar contents based on category
+        noCategorySearch = 1
+
+        # cat=plugin.tx_rkwrelated_similarcontent//a; type=boolean; label=Do not search for similar contents based on department
+        noDepartmentSearch = 1
+
+        # cat=plugin.tx_rkwrelated_similarcontent//a; type=boolean; label=Do not search for similar contents based on project
+        noProjectSearch = 0
+	}
+}
+
+plugin.tx_rkwrelated_morecontent {
+
+	settings {
+
+        # cat=plugin.tx_rkwrelated_morecontent//f; type=string; label=PIDs to include in list (comma separated)
+        startingPidList =  {$plugin.tx_rkwtemplate_themeconfig.website.rootPid}
+
+        # cat=plugin.tx_rkwrelated_morecontent//f; type=boolean; label=Hide authors label
+        hideAuthors = 0
+
+        detailPid {
+
+            # cat=plugin.tx_rkwrelated_morecontent//f; type=string; label=Detail pid (default)
+            default =
+
+            # cat=plugin.tx_rkwrelated_morecontent//f; type=string; label=Detail pid for publications
+            publication =
+        }
+	}
+}

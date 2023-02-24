@@ -1,0 +1,12 @@
+plugin.tx_rkwtemplate_themeconfig {
+
+    settings {
+
+        mainNav {
+            contactPid = 4770
+            loginPid = 4768
+        }
+    }
+}
+
+

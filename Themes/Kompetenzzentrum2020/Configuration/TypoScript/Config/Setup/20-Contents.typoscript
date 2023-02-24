@@ -1,0 +1,42 @@
+lib.parseFunc_RTE {
+
+    //===============================================================
+    // Remap H1 in contents to H2 
+    //===============================================================
+    nonTypoTagStdWrap.encapsLines {
+       remapTag.H1 = H2
+    }
+    
+             
+    //===============================================================
+    // Adaption of CSS-classes for tables and lists
+    //===============================================================           
+    externalBlocks {
+
+
+        table.stdWrap.HTMLparser = 1
+        table.stdWrap.HTMLparser.tags.table.fixAttrib.class {
+            default = responsive-table
+            always = 1
+            list = responsive-table,responsive-table--background
+        }
+        
+  
+        ul {
+			callRecursive {
+				tagStdWrap.HTMLparser.tags.ul.fixAttrib.class {
+					default = list-primary
+				}
+			}
+		}
+
+		ol {
+			callRecursive {
+				tagStdWrap.HTMLparser.tags.ol.fixAttrib.class {
+					default = list-ordered
+				}
+			}
+        }
+    }
+}
+

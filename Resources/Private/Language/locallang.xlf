@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-11-11T13:43:13Z" product-name="rkw_template">
+		<header/>
+		<body>
+
+            <!-- SliderContainer -->
+            <trans-unit id="gridElement.sliderContainer.showSlide">
+                <source>Show Slide %s</source>
+            </trans-unit>
+
+            <!-- Shortlink -->
+			<trans-unit id="contentElement.shortlink.type.I.0">
+				<source>Default (Article)</source>
+			</trans-unit>
+            <trans-unit id="contentElement.shortlink.type.I.4">
+                <source>Link</source>
+            </trans-unit>
+            <trans-unit id="contentElement.shortlink.type.I.5">
+                <source>Download</source>
+            </trans-unit>
+            <trans-unit id="contentElement.shortlink.type.I.6">
+                <source>Publication</source>
+            </trans-unit>
+            <trans-unit id="contentElement.shortlink.type.I.7">
+                <source>Project</source>
+            </trans-unit>
+
+            <!-- CollapsedText -->
+            <trans-unit id="contentElement.collapsed.showMore">
+                <source>show more</source>
+            </trans-unit>
+            <trans-unit id="contentElement.collapsed.showLess">
+                <source>show less</source>
+            </trans-unit>
+
+            <!-- Topic -->
+            <trans-unit id="contentElement.topic.showMore">
+                <source>show more</source>
+            </trans-unit>
+
+            <!-- Tile -->
+            <trans-unit id="contentElement.tile.labelShowMore">
+                <source>Show more</source>
+            </trans-unit>
+
+            <!-- StickyFooterContainer -->
+            <trans-unit id="contentElement.stickyFooterContainer.labelScrollToTop">
+                <source>Scroll to top</source>
+            </trans-unit>
+
+		</body>
+	</file>
+</xliff>

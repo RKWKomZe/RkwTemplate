@@ -1,0 +1,58 @@
+
+// ############################################################################
+// add specific elements to wizards - by colPos and backend_layout
+// ############################################################################
+
+// Basic settings that are at least valid for all columns. The more specific settings only further limit permissions of the basic settings further
+[RKW\RkwTemplate\Condition\Backend\BackendLayoutCondition = "pagets__landingPages"]
+
+    // remove everything - except for some items
+    // Important: this also has to include gridelements_pi1 for the gridContainer if needed!
+    TCEFORM.tt_content.CType.keepItems = gridelements_pi1, header, text, textpic, image, textmedia, html, list, rkwtemplate_slider, rkwtemplate_toclandingpage, rkwtemplate_keyvisual, rkwtemplate_textimagebackground, rkwtemplate_listelement, rkwtemplate_morelist, rkwtemplate_gallery, rkwtemplate_collage, rkwtemplate_button, rkwtemplate_tile, rkwtemplate_testimonial, rkwtemplate_tagcloudelement
+
+    // remove everything - except for some items
+    mod.wizards.newContentElement.wizardItems.common.show = rkwtemplate_textimagebackground
+    mod.wizards.newContentElement.wizardItems.special.show =
+    mod.wizards.newContentElement.wizardItems.forms.show =
+    mod.wizards.newContentElement.wizardItems.menu.show =
+    mod.wizards.newContentElement.wizardItems.plugins.show = *
+
+    // remove grid elements by their ID (aka name)
+    tx_gridelements.excludeLayoutIds = topicContainer, logoContainer, promoterContainer, tabContainer, accordionContainer, topicLinksContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerOneCol, contentContainerOneColPagination, contentContainerOneColOrderForm
+
+[end]
+
+
+[RKW\RkwTemplate\Condition\Backend\BackendLayoutCondition = "pagets__landingPages"] && [RKW\RkwTemplate\Condition\Backend\ColPosCondition = "900"]
+
+    // remove everything - except for some items
+    // Important: this also has to include gridelements_pi1 for the gridContainer if needed!
+    TCEFORM.tt_content.CType.keepItems = gridelements_pi1, rkwtemplate_textimagebackground, list
+
+    // remove grid elements by their ID (aka name)
+    tx_gridelements.excludeLayoutIds = sliderContainer, topicContainer, logoContainer, promoterContainer, tabContainer, accordionContainer, topicLinksContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerOneCol, contentContainerOneColPagination, contentContainerOneColOrderForm, stickyFooterContainer
+
+[end]
+
+[RKW\RkwTemplate\Condition\Backend\BackendLayoutCondition = "pagets__landingPages"] && [RKW\RkwTemplate\Condition\Backend\ColPosCondition = "910"]
+
+    // remove everything - except for some items
+    // Important: this also has to include gridelements_pi1 for the gridContainer if needed!
+    TCEFORM.tt_content.CType.keepItems = gridelements_pi1
+
+    // remove grid elements by their ID (aka name)
+    tx_gridelements.excludeLayoutIds = sliderContainer, logoContainer, topicContainer, promoterContainer, tabContainer, accordionContainer, topicLinksContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerOneCol, contentContainerOneColPagination, contentContainerOneColOrderForm, contentContainerLandingpageTwoCols, contentContainerLandingpageOneCol, tilesContainer, testimonialContainer, galleryContainer, collageContainer, listContainer, moreListContainer, tagcloudContainer, boxSliderContainer
+
+[end]
+
+[RKW\RkwTemplate\Condition\Backend\BackendLayoutCondition = "pagets__landingPages"] && [RKW\RkwTemplate\Condition\Backend\ColPosCondition = "920"]
+
+    // remove everything - except for some items
+    // Important: this also has to include gridelements_pi1 for the gridContainer if needed!
+    TCEFORM.tt_content.CType.keepItems = gridelements_pi1
+
+    // remove grid elements by their ID (aka name)
+    tx_gridelements.excludeLayoutIds = logoContainer, topicContainer, promoterContainer, tabContainer, accordionContainer, topicLinksContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerOneCol, contentContainerOneColPagination, contentContainerOneColOrderForm, contentContainerLandingpageTwoCols, contentContainerLandingpageOneCol, stickyFooterContainer, tilesContainer, testimonialContainer, galleryContainer, collageContainer, listContainer, moreListContainer, tagcloudContainer, boxSliderContainer
+
+[end]
+

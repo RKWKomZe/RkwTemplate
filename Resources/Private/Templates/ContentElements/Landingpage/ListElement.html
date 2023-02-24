@@ -1,0 +1,31 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:coreExtended="http://typo3.org/ns/Madj2k/CoreExtended/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+    <f:layout name="Rkw" />
+
+    <f:section name="Main">
+
+        <div class="infolist-item">
+
+            <f:render partial="Header" arguments="{
+                header: data.header,
+                layout: data.header_layout,
+                link: data.header_link,
+                anchorId: data.uid
+            }" />
+            
+            <div class="infolist-item__text">
+                <coreExtended:format.removeEmptyParagraphs>
+                    <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data.bodytext}</f:format.html>
+                </coreExtended:format.removeEmptyParagraphs>
+            </div>
+        </div>
+
+    </f:section>
+</html>
+
+
+
+

@@ -1,0 +1,18 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+    <f:comment><!-- schema.org --></f:comment>
+    <f:render partial="StructureContainer/SchemaOrg" arguments="{_all}"/>
+
+
+    <f:comment><!-- content --></f:comment>
+    <div id="content" class="contentbox contentbox--text {f:if(condition:'{data.tx_gridelements_view_column_70}', then: 'contentbox--no-border-radius-bottom')} contentbox--no-border-radius no-border-radius-smalldesk typo3-fsc">
+        <f:render partial="StructureContainer/Content" section="Reduced" arguments="{_all}"/>
+    </div>
+
+    <f:comment><!-- call to action --></f:comment>
+    <f:render partial="StructureContainer/CallToAction" arguments="{_all}"/>
+
+    <f:comment><!-- sharing --></f:comment>
+    <f:render partial="StructureContainer/Sharing" arguments="{_all}" />
+
+</html>

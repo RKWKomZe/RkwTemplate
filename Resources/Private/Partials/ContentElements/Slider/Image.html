@@ -1,0 +1,60 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+    <div class="slider-item__img">
+        <f:if condition="{f:count(subject: images)} == 3">
+            <f:then>
+                <!-- solution for three separate images -->
+                <picture class="slider-img">
+                    <source srcset="{f:uri.image(image:images.0,width:'1460',height:'800m',cropVariant:'desktop')}" media="(min-width: 1025px)" />
+                    <source srcset="{f:uri.image(image:images.1,width:'1024',height:'680m',cropVariant:'tablet')}" media="(min-width:769px)" />
+                    <source srcset="{f:uri.image(image:images.1,width:'768',height:'510m',cropVariant:'tablet')}" media="(min-width:481px)" />
+                    <source srcset="{f:uri.image(image:images.2,width:'480',height:'450m',cropVariant:'mobile')}" media="(min-width:321px)" />
+                    <source srcset="{f:uri.image(image:images.2,width:'320',height:'360m',cropVariant:'mobile')}" media="(min-width:0px)" />
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" alt="{data.header}" />
+                </picture>
+            </f:then>
+            <f:else>
+                <f:if condition="{f:count(subject: images)} == 4">
+                    <f:then>
+                        <!-- solution for four separate images -->
+                        <picture class="slider-img">
+                            <source srcset="{f:uri.image(image:images.0,width:'2500',height:'1400m',cropVariant:'desktop-landingpage-big')}" media="(min-width: 1461px)" />
+                            <source srcset="{f:uri.image(image:images.1,width:'1460',height:'1200m',cropVariant:'desktop-landingpage')}" media="(min-width: 1025px)" />
+                            <source srcset="{f:uri.image(image:images.2,width:'1024',height:'680m',cropVariant:'tablet')}" media="(min-width:769px)" />
+                            <source srcset="{f:uri.image(image:images.2,width:'768',height:'510m',cropVariant:'tablet')}" media="(min-width:481px)" />
+                            <source srcset="{f:uri.image(image:images.3,width:'480',height:'450m',cropVariant:'mobile')}" media="(min-width:321px)" />
+                            <source srcset="{f:uri.image(image:images.3,width:'320',height:'360m',cropVariant:'mobile')}" media="(min-width:0px)" />
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" alt="{data.header}" />
+                        </picture>
+                    </f:then>
+                    <f:else>
+                        <f:if condition="{f:count(subject: images)} > 0">
+
+                            <!-- solution for one image -->
+                            <picture class="slider-img">
+                                <f:if condition="{data.parentgrid_colPos} == '920'">
+                                    <f:then>
+                                        <source srcset="{f:uri.image(image:images.0,width:'2500',height:'1400m',cropVariant:'desktop-big')}" media="(min-width: 1461px)" />
+                                        <source srcset="{f:uri.image(image:images.0,width:'1460',height:'1200m',cropVariant:'desktop-landingpage')}" media="(min-width: 1025px)" />
+                                    </f:then>
+                                    <f:else>
+                                        <source srcset="{f:uri.image(image:images.0,width:'1460',height:'800m',cropVariant:'desktop')}" media="(min-width: 1025px)" />
+                                    </f:else>
+                                </f:if>
+                                <source srcset="{f:uri.image(image:images.0,width:'1024',height:'800m',cropVariant:'tablet')}" media="(min-width:769px)" />
+                                <source srcset="{f:uri.image(image:images.0,width:'768',height:'510m',cropVariant:'tablet')}" media="(min-width:481px)" />
+                                <source srcset="{f:uri.image(image:images.0,width:'480',height:'450m',cropVariant:'mobile')}" media="(min-width:321px)" />
+                                <source srcset="{f:uri.image(image:images.0,width:'320',height:'360m',cropVariant:'mobile')}" media="(min-width:0px)" />
+                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" alt="{data.header}" />
+                            </picture>
+                        </f:if>
+                    </f:else>
+                </f:if>
+
+            </f:else>
+        </f:if>
+    </div>
+
+</html>

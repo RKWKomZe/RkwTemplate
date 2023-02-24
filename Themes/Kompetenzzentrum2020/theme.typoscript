@@ -1,0 +1,179 @@
+plugin.tx_rkwtemplate_themeconfig {
+
+    # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Name of theme
+    themeName = Kompetenzzentrum2020
+
+    paths {
+
+        default {
+
+            # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Root path for layouts, templates and partials
+            root = EXT:rkw_template/Themes/{$plugin.tx_rkwtemplate_themeconfig.themeName}/Resources/Private
+
+            # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Path to templates
+            templates = {$plugin.tx_rkwtemplate_themeconfig.paths.default.root}/Templates
+
+            # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Path to partials
+            partials = {$plugin.tx_rkwtemplate_themeconfig.paths.default.root}/Partials
+
+            # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Path to layouts
+            layouts = {$plugin.tx_rkwtemplate_themeconfig.paths.default.root}/Layouts
+
+            # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Path to CSS-file
+            css = EXT:rkw_template/Themes/{$plugin.tx_rkwtemplate_themeconfig.themeName}/Resources/Public/css
+
+            # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Path to images
+            images = EXT:rkw_template/Themes/{$plugin.tx_rkwtemplate_themeconfig.themeName}/Resources/Public/img
+
+            # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Path to logos
+            logos = EXT:rkw_template/Themes/{$plugin.tx_rkwtemplate_themeconfig.themeName}/Resources/Public/img/global/logos
+
+            # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Path to icons
+            icons = EXT:rkw_template/Themes/{$plugin.tx_rkwtemplate_themeconfig.themeName}/Resources/Public/img/global/icons/white
+
+            # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Path to JavaScripts
+            js = EXT:rkw_template/Themes/{$plugin.tx_rkwtemplate_themeconfig.themeName}/Resources/Public/js
+
+            # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Path to special stuff
+            specials = EXT:rkw_template/Themes/{$plugin.tx_rkwtemplate_themeconfig.themeName}/Resources/Public/specials
+
+            # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Path to libs
+            lib = EXT:rkw_template/Themes/{$plugin.tx_rkwtemplate_themeconfig.themeName}/Resources/Public/libs
+        }
+
+        extensions {
+
+            # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Root path for extension layouts, templates and partials
+            root = EXT:rkw_template/Themes/{$plugin.tx_rkwtemplate_themeconfig.themeName}/Resources/Private/Extensions
+        }
+
+        microsite {
+
+            # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Path to images
+            mainWebsiteImages = EXT:rkw_template/Themes/{$plugin.tx_rkwtemplate_themeconfig.themeName}/Resources/Public/img
+
+            # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Path to logos
+            mainWebsiteLogos = EXT:rkw_template/Themes/{$plugin.tx_rkwtemplate_themeconfig.themeName}/Resources/Public/img/global/logos
+        }
+    }
+
+    // From CSS:
+    // $mq-wide: "only screen and (max-width: 90em)"; // 1440px
+    // $mq-mwide: "only screen and (max-width: 80em)"; // 1280px
+    // $mq-smalldesk: "only screen and (max-width: 64em)"; // 1024px
+    // $mq-medium: "only screen and (max-width: 48em)"; // 768px
+    // $mq-narrow: "only screen and (max-width: 37.5em)"; // 600px
+    // $mq-mobile: "only screen and (max-width: 30em)"; // 480px
+    breakpoints {
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=integer; label=Mobile breakpoint (in pixel)
+        mobile = 321
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=integer; label=Second Mobile breakpoint (in pixel)
+        mobile2 = 601
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=integer; label=Tablet breakpoint (in pixel)
+        tablet = 768
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=integer; label=Desktop breakpoint (in pixel)
+        desktop = 1024
+    }
+
+
+    website {
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Name of website
+        name = RKW Kompetenzzentrum
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=baseUrl (With / at the end for ClickEnlarge)
+        baseUrl = https://www.rkw-kompetenzzentrum.de/
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=integer; label=ID of Rootpage
+        rootPid = 1
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Publisher of website
+        publisher = RKW Kompetenzzentrum
+
+        # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Logo of website (desktop-version)
+        logoFile = {$plugin.tx_rkwtemplate_themeconfig.paths.default.logos}/logo.png
+
+        # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Logo of website (mobile-version)
+        logoMobileFile = {$plugin.tx_rkwtemplate_themeconfig.paths.default.logos}/logo-mobile.png
+
+        # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Broken link logo of website
+        logoBrokenLinkFile = {$plugin.tx_rkwtemplate_themeconfig.paths.default.logos}/broken-link.png
+
+        # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Open Graph overlay logo
+        logoOpenGraphOverlayFile = {$plugin.tx_rkwtemplate_themeconfig.paths.default.icons}/favicon-96x96.png
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link on logo
+        logoUrl = /
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Use this text instead of a logo
+        logoReplacementText =
+        
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=integer; label=ID of page for newsletter subscription
+        newsletterSubscriptionPid = 2182
+    }
+
+
+    # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Is this website a microsite?
+    isMicrosite = 0
+
+    microsite {
+
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Vertical text (on microsites only)
+        textPoweredBy = Ein Angebot des RKW<span class="hide-mobile"> Kompetenzzentrums &ndash; hier mehr erfahren</span>
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to main website (on microsites only)
+        mainWebsiteUrl = https://www.rkw-kompetenzzentrum.de
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Name of main website (on microsites only)
+        mainWebsiteName = RKW Kompetenzzentrum
+
+        # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Icon of main website (on microsites only)
+        mainWebsiteLogoFile = {$plugin.tx_rkwtemplate_themeconfig.paths.microsite.mainWebsiteLogos}/logo-icon.png
+    }
+
+    # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Show social media share icons
+    socialMediaShare = 1
+
+    # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Show social media icons
+    socialMedia = 1
+
+    socialMediaLinks {
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to facebook page
+        facebook = https://de-de.facebook.com/RKWexperten/
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to twitter page
+        twitter = https://twitter.com/rkw_experten
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to xing page
+        xing = https://www.xing.com/companies/rkwkompetenzzentrum
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to linkedIn page
+        linkedIn = https://de.linkedin.com/company/rkw-kompetenzzentrum
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to YouTube page
+        youTube = https://www.youtube.com/user/RKWexperten
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to Instagram page
+        instagram = https://www.instagram.com/rkwexperten
+
+    }
+
+    # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Show a reduced amount of menus
+    reducedMenuLevels = 0
+
+    # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Main menu has less items than normal so breakpoint for hamburger menu can be 1024 instead of 1200
+    shortMainMenu = 0
+    
+    # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Shows a language switch in top of the page
+    showLanguageSwitch = 0
+    
+    # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Show no header-images on topic-templates on mobile
+    noTopicHeaderImageOnMobile = 0
+    
+}

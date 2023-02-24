@@ -1,0 +1,24 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:coreExtended="http://typo3.org/ns/Madj2k/CoreExtended/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+    <f:if condition="{data.rowDescription}">
+        <p>{data.rowDescription}</p>
+    </f:if>
+
+    <f:if condition="{data.bodytext}">
+        <div class="collapsed-text">
+            <div class="collapsed-text__container show-first-headline typo3-fsc is-hidden">
+                <f:render partial="TextPic" arguments="{_all}"/>
+            </div>
+            <button class="collapsed-text__btn"
+                data-opentext="{f:translate(key:'LLL:EXT:rkw_template/Resources/Private/Language/locallang.xlf:contentElement.collapsed.showMore')}"
+                data-closetext="{f:translate(key:'LLL:EXT:rkw_template/Resources/Private/Language/locallang.xlf:contentElement.collapsed.showLess')}">
+                {f:translate(key:'LLL:EXT:rkw_template/Resources/Private/Language/locallang.xlf:contentElement.collapsed.showMore')}
+            </button>
+        </div>
+    </f:if>
+
+</html>
+

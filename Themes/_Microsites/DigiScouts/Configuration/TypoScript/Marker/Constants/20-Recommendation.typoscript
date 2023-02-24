@@ -1,0 +1,9 @@
+lib.txRkwTemplate {
+
+    recommendation {
+
+        relatedSimilar {
+            label = Aus dem Projekt
+        }
+    }
+}

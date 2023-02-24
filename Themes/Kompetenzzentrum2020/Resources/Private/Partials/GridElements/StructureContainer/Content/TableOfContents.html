@@ -1,0 +1,15 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:coreExtended="http://typo3.org/ns/Madj2k/CoreExtended/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+    <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.publication.parentUid')} && {f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.publication.isSubPage')}">
+        <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.toc" data="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.publication.parentUid')}" />
+    
+        <f:comment><!-- headline of current chapter --></f:comment>
+        <h2 class="h1">
+            <f:comment><em><f:translate key="{settings.themeLanguageFile}:partials.gridElements.contentContainer.content.labelChapter"/>:</em></f:comment>
+            <f:cObject typoscriptObjectPath="lib.txRkwTemplate.publication.currentTitle" />
+        </h2>
+    </f:if>
+
+</html>

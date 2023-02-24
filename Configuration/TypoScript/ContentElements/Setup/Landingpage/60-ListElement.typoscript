@@ -1,0 +1,6 @@
+tt_content {
+    rkwtemplate_listelement =< lib.contentElement
+    rkwtemplate_listelement {
+        templateName = Landingpage/ListElement
+    }
+}

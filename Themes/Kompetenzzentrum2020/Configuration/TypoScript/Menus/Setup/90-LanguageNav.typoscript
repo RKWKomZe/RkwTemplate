@@ -1,0 +1,27 @@
+// ############################################################################
+// Mainmenu
+// ############################################################################
+lib.txRkwTemplate {
+
+    navigation {
+
+        language = FLUIDTEMPLATE
+        language {
+
+            file = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/Menus/Language.html
+            partialRootPaths.0 = {$plugin.tx_rkwtemplate_themeconfig.paths.default.partials}/Menus/Language
+
+            dataProcessing {
+                10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+                10 {
+
+                   special = language
+                   special.value = 0,1
+                   as = menuItems
+                }
+            }
+
+            settings < page.10.settings
+        }
+    }
+}

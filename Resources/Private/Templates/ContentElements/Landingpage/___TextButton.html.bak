@@ -1,0 +1,47 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:rkwEtracker="http://typo3.org/ns/RKW/RkwEtracker/ViewHelpers"
+    xmlns:coreExtended="http://typo3.org/ns/Madj2k/CoreExtended/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+<f:layout name="Rkw" />
+
+<f:section name="Main">
+
+    <div class="frame">
+        <header>
+            <f:render partial="Header" arguments="{
+                header: data.header,
+                layout: data.header_layout,
+                link: data.header_link,
+                anchorId: data.uid
+            }" />
+        </header>
+
+        <coreExtended:format.removeEmptyParagraphs>
+            <f:format.html parseFuncTSPath="lib.parseFunc_RTE">{data.bodytext}</f:format.html>
+        </coreExtended:format.removeEmptyParagraphs>
+
+        <f:if condition="{data.header_link}">
+            <f:if condition="<coreExtended:string.contains needle='#' haystack='{data.header_link}' /> == 1">
+                <f:then>
+                    <f:link.typolink
+                        parameter="{data.header_link}"
+                        class="btn btn--cta"
+                        title="{data.rowDescription}"
+                        additionalAttributes="{data-target:'{data.header_link}'}"
+                    >{data.rowDescription}</f:link.typolink>
+                </f:then>
+                <f:else>
+                    <f:link.typolink
+                        parameter="{data.header_link}"
+                        class="btn btn--cta"
+                        title="{data.rowDescription}"
+                    >{data.rowDescription}</f:link.typolink>
+                </f:else>
+            </f:if>
+        </f:if>
+    </div>
+
+
+</f:section>
+</html>

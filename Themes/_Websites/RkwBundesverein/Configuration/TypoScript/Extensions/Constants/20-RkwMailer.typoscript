@@ -1,0 +1,12 @@
+plugin.tx_rkwmailer {
+
+
+    settings {
+
+        // Page for redirect plugin
+        redirectPid = 4363
+
+        // Link plugin for pixel counter (HTML-mails only)
+        counterPixelPid = 4363
+    }
+}

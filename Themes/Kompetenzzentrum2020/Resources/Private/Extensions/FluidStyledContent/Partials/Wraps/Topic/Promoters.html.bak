@@ -1,0 +1,13 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+    <f:section name="Header">
+        <section class="section content flex-basis-12 full-width-smalldesk no-padding-narrow">
+            <div role="contentinfo" class="promoters no-border-radius-layoutmax">
+    </f:section>
+
+
+    <f:section name="Footer">
+            </div>
+        </section>
+    </f:section>
+</html>

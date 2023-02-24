@@ -1,0 +1,7 @@
+RTE {
+    default {
+
+        // Set YAML-configuration for editor
+        preset = rkwTemplateKompetenzzentrum2020Dev
+    }
+}

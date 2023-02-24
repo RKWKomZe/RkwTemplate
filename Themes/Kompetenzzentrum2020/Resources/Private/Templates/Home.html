@@ -1,0 +1,25 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+    <f:layout name="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.utility.pageLayoutSwitch')}" />
+
+    <f:section name="Header">
+        <div class="siteheader">
+            <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.slider" data="{data}" />
+        </div>
+    </f:section>
+
+
+    <f:comment><!-- ======================================================================== --></f:comment>
+
+
+    <f:section name="Content">
+        <main class="main" id="main">
+            <section class="section content">
+                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.home" data="{data}" />
+            </section>
+            
+            <f:comment><!-- sticky-footer --></f:comment>
+            <f:render partial="FooterSection/StickyFooter" section="Newsletter" arguments="{_all}" />
+        </main>
+    </f:section>
+</html>

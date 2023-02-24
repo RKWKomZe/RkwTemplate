@@ -1,0 +1,39 @@
+//=========================================================
+// Add contentElement to Wizard
+//=========================================================
+mod.wizards.newContentElement.wizardItems.common {
+    elements {
+        rkwtemplate_tagcloudelement {
+            iconIdentifier = rkw-template-tagcloudelement
+            title = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.tagcloudElement.title
+            description = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.tagcloudElement.description
+            tt_content_defValues {
+                CType = rkwtemplate_tagcloudelement
+            }
+        }
+    }
+    show := addToList(rkwtemplate_tagcloudelement)
+}
+
+//=========================================================
+// Change some fields
+//=========================================================
+TCEFORM.tt_content {
+
+  header_layout {
+    types.rkwtemplate_tagcloudelement {
+      label = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.tagcloudElement.type.label
+      removeItems = 0,100
+      altLabels.1 = 1
+      altLabels.2 = 2
+      altLabels.3 = 3
+      altLabels.4 = 4
+      altLabels.5 = 5
+      addItems.6 = 6
+      addItems.7 = 7
+      addItems.8 = 8
+      addItems.9 = 9
+    }
+  }
+
+}

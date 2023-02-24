@@ -1,0 +1,21 @@
+lib.txRkwTemplate {
+
+    recommendation {
+
+        relatedDefault {
+            label = Aktuelle Artikel
+        }
+
+        relatedPublication {
+            label = Aktuelle Publikationen
+        }
+
+        relatedSimilar {
+            label = Auch interessant
+        }
+
+        eventHeader {
+            label = Empfehlungen für Sie
+        }
+    }
+}

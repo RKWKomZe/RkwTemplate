@@ -1,0 +1,383 @@
+mod {
+    web_layout {
+        BackendLayouts {
+
+            //======================================
+            // Home
+            //======================================
+            homePages {
+                title = Home
+                config {
+                    backend_layout {
+                        colCount = 2
+                        rowCount = 2
+                        rows {
+                            1 {
+                                columns {
+                                    1 {
+                                        name = Slider
+                                        colPos = 120
+                                        maxitems = 1
+                                    }
+                                }
+                            }
+                            2 {
+                                columns {
+                                    1 {
+                                        name = Inhalte
+                                        colPos = 100
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
+            //======================================
+            // Topic Pages
+            //======================================
+            topicPages {
+                title = Thema
+                config {
+                    backend_layout {
+                        colCount = 1
+                        rowCount = 4
+                        rows {
+
+                            1 {
+                                columns {
+                                    1 {
+                                        name = Förderer
+                                        colPos = 210
+                                        maxitems = 1
+                                    }
+
+                                }
+                            }
+
+                            2 {
+                                columns {
+                                    1 {
+                                        name = Inhalt
+                                        colPos = 0
+                                    }
+
+                                }
+                            }
+
+                            3 {
+                                columns {
+                                    1 {
+                                        name = Boxen ohne Vererbung auf Unterseiten
+                                        colPos = 220
+                                    }
+                                }
+                            }
+
+                            4 {
+                                columns {
+                                    1 {
+                                        name = Boxen mit Vererbung auf Unterseiten
+                                        colPos = 230
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            //======================================
+            // Plugin only
+            //======================================
+            pluginOnlyPages {
+                title = Thema: Nur Plugin / Sonderseite
+                config {
+                    backend_layout {
+                        colCount = 1
+                        rowCount = 1
+                        rows {
+                            1 {
+                                columns {
+                                    1 {
+                                        name = Plugin
+                                        colPos = 500
+                                        maxitems = 1
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            //======================================
+            // Content Pages
+            //======================================
+            contentPages {
+                title = Artikel / Broken Link
+                config {
+                    backend_layout {
+                        colCount = 1
+                        rowCount = 2
+                        rows {
+                            1 {
+                                columns {
+                                    1 {
+                                        name = Inhalt
+                                        colPos = 0
+                                    }
+                                }
+                            }
+
+                            2 {
+                                columns {
+                                    1 {
+                                        name = Boxen
+                                        colPos = 310
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            //======================================
+            // Login page
+            //======================================
+            loginPages {
+                title = Login
+                config {
+                    backend_layout {
+                        colCount = 1
+                        rowCount = 2
+                        rows {
+                            1 {
+                                columns {
+                                    1 {
+                                        name = Plugin
+                                        colPos = 1100
+                                        maxitems = 1
+                                        allowed {
+                                            CType = list
+                                            list_type = , rkwregistration_auth, rkwregistration_welcome
+                                        }
+                                    }
+                                }
+                            }
+                            2 {
+                                columns {
+                                    1 {
+                                        name = Beschreibung
+                                        colPos = 1110
+                                         allowed {
+                                            CType = text
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            //======================================
+            // Publication Pages
+            //======================================
+            publicationPages {
+                title = Publikationen
+                config {
+                    backend_layout {
+                        colCount = 1
+                        rowCount = 3
+                        rows {
+                            1 {
+                                columns {
+                                    1 {
+                                        name = Inhalt
+                                        colPos = 0
+                                    }
+                                }
+                            }
+                            2 {
+                                columns {
+                                    1 {
+                                        name = Bestellformular
+                                        colPos = 410
+                                    }
+                                }
+                            }
+                            3 {
+                                columns {
+                                    1 {
+                                        name = Boxen mit Vererbung auf Unterseiten
+                                        colPos = 420
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            //======================================
+            // Expert Pages Details
+            //======================================
+            expertPagesDetail {
+                title = Detailseite: Experten
+                config {
+                    backend_layout {
+                        colCount = 1
+                        rowCount = 3
+                        rows {
+                            1 {
+                                columns {
+                                    1 {
+                                        name = Überschrift
+                                        colPos = 610
+                                    }
+                                }
+                            }
+
+                            2 {
+                                columns {
+                                    1 {
+                                        name = Inhalte
+                                        colPos = 600
+                                    }
+                                }
+                            }
+
+                            3 {
+                                columns {
+                                    1 {
+                                        name = Boxen ohne Vererbung auf Unterseiten
+                                        colPos = 620
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            //======================================
+            // Event Pages Details
+            //======================================
+            eventsDetail {
+                title = Detailseite: Veranstaltungen
+                config {
+                    backend_layout {
+                        colCount = 1
+                        rowCount = 1
+                        rows {
+                            1 {
+                                columns {
+                                    1 {
+                                        name = Inhalt
+                                        colPos = 0
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            //======================================
+            // Infographics Pages Details
+            //======================================
+            infographicDetail {
+                title = Detailseite: Infografiken
+                config {
+                    backend_layout {
+                        colCount = 1
+                        rowCount = 1
+                        rows {
+                            1 {
+                                columns {
+                                    1 {
+                                        name = Inhalt
+                                        colPos = 0
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            //======================================
+            // Landingpage
+            //======================================
+            landingPages {
+                title = Landingpage
+                config {
+                    backend_layout {
+                        colCount = 1
+                        rowCount = 3
+                        rows {
+                            1 {
+                                columns {
+                                    1 {
+                                        name = Header
+                                        colPos = 920
+                                        maxitems = 1
+                                    }
+                                }
+                            }
+                            2 {
+                                columns {
+                                    1 {
+                                        name = Inhalte
+                                        colPos = 900
+                                    }
+                                }
+                            }
+                            3 {
+                                columns {
+                                    1 {
+                                        name = Call to action
+                                        colPos = 910
+                                        maxitems = 1
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            //======================================
+            // Tool pages
+            //======================================
+            toolPages {
+                title = Reduziertes Layout: Tool
+                config {
+                    backend_layout {
+                        colCount = 1
+                        rowCount = 1
+                        rows {
+                            1 {
+                                columns {
+                                    1 {
+                                        name = Tool
+                                        colPos = 1000
+                                        maxitems = 1
+                                        allowed {
+                                            CType = list
+                                            list_type = , rkwcanvas_canvas, rkwmaps_gemmaps
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

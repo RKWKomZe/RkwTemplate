@@ -1,0 +1,8 @@
+lib.txRkwTemplate {
+
+    recommendation {
+
+        // No related items
+        relatedSimilarReduced >
+    }
+}

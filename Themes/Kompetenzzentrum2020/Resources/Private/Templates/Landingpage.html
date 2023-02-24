@@ -1,0 +1,46 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:coreExtended="http://typo3.org/ns/Madj2k/CoreExtended/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+    <f:layout name="Landingpage" />
+
+
+    <f:section name="Header">
+        
+        <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.content.landingpageSiteHeader', data:'{data}')}">
+            <div class="siteheader siteheader--big siteheader--detailimg flex valign-center js-hero-class">
+                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.landingpageSiteHeader" data="{data}" />
+            </div>
+        </f:if>
+
+    </f:section>
+
+
+    <f:comment><!-- ======================================================================== --></f:comment>
+
+
+    <f:section name="Content">
+
+        <main class="main space-between no-padding-narrow" id="main">
+
+            <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.landingpage" data="{data}" />
+
+            <f:comment><!-- image-sources --></f:comment>
+            <f:if condition="! {coreExtended:isEmpty(string:'{f:cObject(typoscriptObjectPath: \'lib.txRkwTemplate.pageInfo.imageResources\')}')} && {data.backend_layout} == 'pagets__landingPages'">
+                <div class="contentbox contentbox--no-vertical-padding content-padding-layoutmax">
+                    <div class="flex-container">
+                        <div class="flex-basis-12">
+                            <f:render partial="GridElements/StructureContainer/Content/ImageSources" arguments="{_all}"/>
+                        </div>
+                    </div>
+                </div>
+            </f:if>
+
+            <f:comment><!-- sticky-footer --></f:comment>
+            <f:render partial="FooterSection/StickyFooter" section="Landingpage" arguments="{_all}" />
+            
+        </main>
+
+    </f:section>
+
+</html>

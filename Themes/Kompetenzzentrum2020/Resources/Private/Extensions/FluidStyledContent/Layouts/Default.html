@@ -1,0 +1,182 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+	<f:spaceless>
+		<f:if condition="({data.CType} == 'list')">
+			<f:comment><!-- =============================================================
+				rendering for plugins
+			============================================================= --></f:comment>
+			<f:then>
+
+				<f:if condition="{data.colPos} > 0">
+					<f:comment><!-- =============================================================
+						rendering for plugins that are greater than colPos 0
+					============================================================= --></f:comment>
+					<f:then>
+
+						<f:switch expression="{data.colPos}">
+							<f:comment><!-- Home: Main --></f:comment>
+							<f:case value="100">
+								<f:render partial="Wraps/Home/Main" section="Header" arguments="{_all}" />
+								<f:render section="Main"/>
+								<f:render partial="Wraps/Home/Main" section="Footer" arguments="{_all}" />
+							</f:case>
+
+							<f:comment><!-- Home: Related contents
+							<f:case value="110">
+								<f:render partial="Wraps/Home/Aside" section="Header" arguments="{_all}" />
+								<f:render section="Main"/>
+								<f:render partial="Wraps/Home/Aside" section="Footer" arguments="{_all}" />
+							</f:case>--></f:comment>
+
+							<f:comment><!-- Plugin only --></f:comment>
+							<f:case value="500">
+								<f:render partial="Wraps/PluginOnly/Main" section="Header" arguments="{_all}" />
+								<f:render section="Main"/>
+								<f:render partial="Wraps/PluginOnly/Main" section="Footer" arguments="{_all}" />
+							</f:case>
+
+							<f:comment><!-- Expert --></f:comment>
+							<f:case value="600">
+								<f:render partial="Wraps/PluginOnly/Main" section="Header" arguments="{_all}" />
+								<f:render section="Main"/>
+								<f:render partial="Wraps/PluginOnly/Main" section="Footer" arguments="{_all}" />
+							</f:case>
+
+							<f:case value="610">
+								<f:render partial="Wraps/PluginOnly/Main" section="Header" arguments="{_all}" />
+								<f:render section="Main"/>
+								<f:render partial="Wraps/PluginOnly/Main" section="Footer" arguments="{_all}" />
+							</f:case>
+
+							<f:comment><!-- Landingpages --></f:comment>
+							<f:case value="900">
+								<f:render partial="Wraps/Landingpage/Main" section="Header" arguments="{_all}" />
+								<f:render section="Main"/>
+								<f:render partial="Wraps/Landingpage/Main" section="Footer" arguments="{_all}" />
+							</f:case>
+
+                            <f:comment><!-- Tools --></f:comment>
+                            <f:case value="1000">
+                                <f:render partial="Wraps/Tool/Main" section="Header" arguments="{_all}" />
+                                <f:render section="Main"/>
+                                <f:render partial="Wraps/Tool/Main" section="Footer" arguments="{_all}" />
+                            </f:case>
+
+                            <f:comment><!-- Login --></f:comment>
+                            <f:case value="1100">
+                                <f:render partial="Wraps/Login/Main" section="Header" arguments="{_all}" />
+                                <f:render section="Main"/>
+                                <f:render partial="Wraps/Login/Main" section="Footer" arguments="{_all}" />
+                            </f:case>
+                            <f:defaultCase>
+								<f:render partial="Wraps/Topic/Main" section="Header" arguments="{_all}" />
+								<f:render section="Main"/>
+								<f:render partial="Wraps/Topic/Main" section="Footer" arguments="{_all}" />
+							</f:defaultCase>
+						</f:switch>
+
+					</f:then>
+					<f:else>
+						<f:if condition="{data.colPos} < 0">
+							<f:comment><!-- =============================================================
+								rendering for plugins that are lower than colPos 0 (gridelements)
+							============================================================= --></f:comment>
+							<f:then>
+								<f:switch expression="{data.tx_gridelements_columns}">
+
+									<f:comment><!-- Rendering for Promoters --></f:comment>
+									<f:case value="40">
+										<f:render section="Main"/>
+									</f:case>
+
+									<f:comment><!-- Rendering for Call2Action --></f:comment>
+									<f:case value="70">
+										<f:render section="Main"/>
+									</f:case>
+
+									<f:comment><!-- Rendering for Aside --></f:comment>
+									<f:case value="80">
+										<f:render partial="Wraps/Topic/Aside" section="Header" arguments="{_all}" />
+										<f:render section="Main"/>
+										<f:render partial="Wraps/Topic/Aside" section="Footer" arguments="{_all}" />
+									</f:case>
+
+									<f:comment><!-- Rendering for Recommendation-Override --></f:comment>
+									<f:case value="90">
+										<f:render partial="Wraps/Topic/Recommendation" section="Header" arguments="{_all}" />
+										<f:render section="Main"/>
+										<f:render partial="Wraps/Topic/Recommendation" section="Footer" arguments="{_all}" />
+									</f:case>
+
+									<f:comment><!-- everything else--></f:comment>
+									<f:defaultCase>
+										<div id="c{data.uid}" class="frame show-first-headline frame-{data.frame_class} frame-type-{data.CType} frame-layout-{data.layout}{f:if(condition: data.space_before_class, then: ' frame-space-before-{data.space_before_class}')}{f:if(condition: data.space_after_class, then: ' frame-space-after-{data.space_after_class}')}">
+											<f:render section="Header" optional="true">
+												<f:render partial="Header/All" arguments="{_all}" />
+											</f:render>
+											<f:render section="Main"/>
+											<f:render section="Footer" optional="true">
+												<f:render partial="Footer/All" arguments="{_all}" />
+											</f:render>
+										</div>
+									</f:defaultCase>
+								</f:switch>
+							</f:then>
+
+							<f:comment><!-- =============================================================
+								rendering for plugins are equal colPos 0 (normal content)
+							============================================================= --></f:comment>
+							<f:else>
+								<div id="c{data.uid}" class="frame show-first-headline frame-{data.frame_class} frame-type-{data.CType} frame-layout-{data.layout}{f:if(condition: data.space_before_class, then: ' frame-space-before-{data.space_before_class}')}{f:if(condition: data.space_after_class, then: ' frame-space-after-{data.space_after_class}')}">
+									<f:render section="Header" optional="true">
+										<f:render partial="Header/All" arguments="{_all}" />
+									</f:render>
+									<f:render section="Main"/>
+									<f:render section="Footer" optional="true">
+										<f:render partial="Footer/All" arguments="{_all}" />
+									</f:render>
+								</div>
+							</f:else>
+						</f:if>
+					</f:else>
+				</f:if>
+
+			</f:then>
+			<f:else>
+				<f:comment><!-- =============================================================
+					rendering for everything else that is NOT a plugin
+				============================================================= --></f:comment>
+
+                <f:switch expression="{data.colPos}">
+                    <f:comment><!-- Login --></f:comment>
+                    <f:case value="1110">
+                        <f:render partial="Wraps/Login/Description" section="Header" arguments="{_all}" />
+                        <f:render section="Main"/>
+                        <f:render partial="Wraps/Login/Description" section="Footer" arguments="{_all}" />
+                    </f:case>
+    
+                    <f:comment><!-- everything else--></f:comment>
+                    <f:defaultCase>
+                        <div id="c{data.uid}" class="frame frame-{data.frame_class} {f:if(condition:'{data.tstamp} >= 1603670400', then: ' show-first-headline')} frame-type-{data.CType} frame-layout-{data.layout}{f:if(condition: data.space_before_class, then: ' frame-space-before-{data.space_before_class}')}{f:if(condition: data.space_after_class, then: ' frame-space-after-{data.space_after_class}')}">
+                            <f:if condition="{data._LOCALIZED_UID}">
+                                <a id="c{data._LOCALIZED_UID}"></a>
+                            </f:if>
+                            <f:render section="Before" optional="true">
+                                <f:render partial="DropIn/Before/All" arguments="{_all}" />
+                            </f:render>
+                            <f:render section="Header" optional="true">
+                                <f:render partial="Header/All" arguments="{_all}" />
+                            </f:render>
+                            <f:render section="Main" optional="true" />
+                            <f:render section="Footer" optional="true">
+                                <f:render partial="Footer/All" arguments="{_all}" />
+                            </f:render>
+                            <f:render section="After" optional="true">
+                                <f:render partial="DropIn/After/All" arguments="{_all}" />
+                            </f:render>
+                        </div>
+                    </f:defaultCase>
+                </f:switch>
+			</f:else>
+		</f:if>
+	</f:spaceless>
+</html>

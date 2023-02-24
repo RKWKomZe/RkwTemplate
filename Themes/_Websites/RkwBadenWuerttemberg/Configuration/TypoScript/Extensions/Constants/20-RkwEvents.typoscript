@@ -1,0 +1,104 @@
+
+plugin.tx_rkwevents {
+
+	persistence {
+		// cat=plugin.tx_rkwevents; type=integer; label=Default storage PID
+		storagePid = 5088
+	}
+	settings {
+
+		// cat=plugin.tx_rkwevents; type=integer; label=PID for list view
+		listPid = 5066
+
+		// cat=plugin.tx_rkwevents; type=integer; label=PID for detail view
+		showPid = 5072
+
+		// cat=plugin.tx_rkwevents; type=integer; label=PID for create new reservation
+		reservationPid = 5074
+
+		// cat=plugin.tx_rkwevents; type=integer; label=PID for gallery and sheets for event view
+		sheetsForEventPid = 5072
+
+		// cat=plugin.tx_rkwevents; type=integer; label=PID for archive list
+		archivePid = 5073
+
+        # cat=plugin.tx_rkwevents; type=boolean; label=Hide GoogleMaps
+        hideMap = 1
+
+        // cat=plugin.tx_rkwevents; type=integer; label=Number of items in list view (default 10)
+        itemsPerPage = 36
+
+        costs {
+            red {
+                hint {
+
+                    # cat=plugin.tx_rkwevents; type=int; label=enable or disable the costsRedHint in /Partials/Event/Info/Costs.html
+                    enabled = 1
+
+                    # cat=plugin.tx_rkwevents; type=string; label=link for hint relating to reduced price condition
+                    # Hint: Can be overridden by property event->costsRedLink
+                    link =
+                }
+            }
+        }
+        eligibility {
+            hint {
+
+                # cat=plugin.tx_rkwevents; type=int; label=enable or disable the costsRedHint in /Partials/Event/Info/Costs.html
+                enabled = 1
+
+                # cat=plugin.tx_rkwevents; type=string; label=link for hint relating to eligibility
+                # Hint: Can be overridden by property event->eligibilityLink
+                link = 1
+            }
+        }
+
+		list {
+
+            multipartView {
+
+                # cat=plugin.tx_rkwevents; type=bool; label=Use multipart view for list
+                enabled = 1
+
+                # cat=plugin.tx_rkwevents; type=integer; label=shown items of started events
+                limitStarted = 4
+
+                # cat=plugin.tx_rkwevents; type=integer; label=shown items of upcoming events
+                limitUpcoming = 8
+            }
+
+            filter {
+
+                # cat=plugin.tx_rkwevents; type=integer; label=Show filter option "department"
+                showDepartment = 0
+
+                # cat=plugin.tx_rkwevents; type=integer; label=Show filter option "documentType"
+                showDocumentType = 1
+
+                # cat=plugin.tx_rkwevents; type=integer; label=Show filter option "category"
+                showCategory = 1
+
+                # cat=plugin.tx_rkwevents; type=integer; label=Show filter option "time"
+                showTime = 1
+
+                # hint: use value "11" for the maximum amount of months!
+                showTimeNumberOfMonths = 6
+
+                # cat=plugin.tx_rkwevents; type=integer; label=Show filter option "address"
+                showAddress = 1
+
+                # cat=plugin.tx_rkwevents; type=integer; label=Show filter option "freeOfCharge"
+                showFreeOfCharge = 1
+
+                # cat=plugin.tx_rkwevents; type=integer; label=Show filter option "eligible"
+                showEligible = 1
+            }
+        }
+	}
+
+}
+
+
+
+
+

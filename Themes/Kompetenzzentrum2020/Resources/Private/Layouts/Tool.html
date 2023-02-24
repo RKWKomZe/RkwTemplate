@@ -1,0 +1,35 @@
+<html
+	xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	xmlns:ajaxApi="http://typo3.org/ns/Madj2k/AjaxApi/ViewHelpers"
+	data-namespace-typo3-fluid="true">
+
+	<f:comment><!-- skip links--></f:comment>
+	<f:render partial="Basics/SkipLinks" />
+
+	<div class="pagewrap">
+
+		<f:comment><!-- header --></f:comment>
+		<header class="header {f:if(condition: '{f:cObject(typoscriptObjectPath:\'lib.txRkwTemplate.navigation.sub\', data:\'{data}\')}', then: 'has-nav')} {f:if(condition: '{settings.shortMainMenu}', then: 'has-nav--short')}">
+			<f:render partial="Basics/Header" arguments="{_all}"/>
+			<f:render section="Header" />
+		</header>
+
+		<f:comment><!-- main section --></f:comment>
+		<f:render section="Content" />
+
+		<f:comment><!-- footer --></f:comment>
+		<f:render partial="Basics/Footer" section="Default" arguments="{_all}"/>
+
+	</div>
+
+	<f:comment><!-- SVGs --></f:comment>
+	<f:render partial="Basics/SVGs" />
+
+	<f:comment><!-- Some AJAX-Requests --></f:comment>
+	<f:cObject typoscriptObjectPath="lib.txRkwTemplate.various.loginInfo" data="{data}" />
+	<f:cObject typoscriptObjectPath="lib.txRkwTemplate.various.mobileMenu" data="{data}" />
+
+	<f:comment><!-- For Browser-Version-Check --></f:comment>
+	<div id="outdated"></div>
+
+</html>

@@ -1,0 +1,22 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+    <f:if condition="{menuItems}">
+
+        <nav class="anchor-nav anchor-nav--no-border-radius">
+            <p class="anchor-nav__header"><f:translate key="{settings.themeLanguageFile}:partials.menus.tableOfContents.labelHeader" /></p>
+            <div class="collapsed-text">
+                <div class="collapsed-text__container is-hidden">
+                    <f:render partial="List" arguments="{_all}"/>
+                </div>
+
+                <button class="collapsed-text__btn"
+                    data-opentext="{f:translate(key:'{settings.themeLanguageFile}:partials.menus.tableOfContents.labelShowMore')}"
+                    data-closetext="{f:translate(key:'{settings.themeLanguageFile}:partials.menus.tableOfContents.labelShowLess')}">
+                    <f:translate key="{settings.themeLanguageFile}:partials.menus.tableOfContents.labelShowMore" />
+                </button>
+            </div>
+        </nav>
+
+    </f:if>
+
+</html>

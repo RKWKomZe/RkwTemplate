@@ -1,0 +1,22 @@
+tx_gridelements.setup.accordionContainer {
+
+    title = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.accordionContainer.title
+    description = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.accordionContainer.description
+    config {
+        colCount = 1
+        rowCount = 1
+        rows {
+            1 {
+                columns {
+                    1 {
+                        name = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.accordionContainer.title
+                        colPos = 150
+                        allowed {
+                            CType = rkwtemplate_accordion
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,186 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+    <f:layout name="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.utility.pageLayoutSwitch')}" />
+
+    <f:section name="Header">
+
+    </f:section>
+
+
+    <f:comment><!-- ======================================================================== --></f:comment>
+
+
+    <f:section name="Content">
+
+        <main class="main flex-container space-between no-padding-narrow" id="main">
+            <section class="section content flex-item flex-basis-9 full-width-smalldesk no-padding-narrow">
+
+                <f:comment><!-- header & infobox --></f:comment>
+                <f:render partial="HeaderSection/Article" arguments="{_all}" />
+
+                <f:comment><!-- breadcrumb--></f:comment>
+                <div class="breadcrumbs flex-container nav breadcrumb-padding">
+                    <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.breadcrumb" data="{data}" />
+                </div>
+
+                <f:comment><!-- content --></f:comment>
+                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.main" data="{data}" />
+            </section>
+
+            <f:comment><!-- similar contents --></f:comment>
+            <f:render partial="Aside" arguments="{_all}" />
+
+            <f:comment><!-- boxes --></f:comment>
+            <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.boxesArticle" data="{data}" />
+            
+            <f:comment><!-- sticky-footer --></f:comment>
+            <f:render partial="FooterSection/StickyFooter" section="Newsletter" arguments="{_all}" />
+        </main>
+
+    </f:section>
+
+
+
+    <f:section name="content---old">
+
+        <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.utility.pageLayoutType')} == 22">
+            <f:then>
+                <f:render section="Special" arguments="{_all}"/>
+            </f:then>
+            <f:else>
+                <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.utility.pageLayoutType')} == 21">
+                    <f:then>
+                        <f:render section="Tools" arguments="{_all}"/>
+                    </f:then>
+                    <f:else>
+                        <f:render section="Default" arguments="{_all}"/>
+                    </f:else>
+                </f:if>
+            </f:else>
+        </f:if>
+
+    </f:section>
+
+
+    <f:comment><!-- ======================================================================== --></f:comment>
+
+    <f:section name="Default">
+
+        <f:comment><!-- top-menu --></f:comment>
+        <f:render partial="SubNav" section="Default" arguments="{_all}"/>
+
+        <div class="page-area-grid">
+            <div class="article">
+
+                <article class="project-article" aria-labelledby="article-headline">
+
+                    <f:comment><!-- key-visual and slogan --></f:comment>
+                    <f:render partial="HeaderSection/Article/Default" arguments="{_all}"/>
+
+                    <f:comment><!-- infobox --></f:comment>
+                    <f:render partial="InfoBox/Article" arguments="{_all}"/>
+
+                    <f:comment><!-- content --></f:comment>
+                    <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.main" data="{data}" />
+
+                    <f:comment><!-- footer --></f:comment>
+                    <f:comment>
+                    <footer class="article-footer">
+                        <f:render partial="SharePrint/Print" arguments="{_all}"/>
+                        <f:render partial="SharePrint/SocialMedia" arguments="{_all}"/>
+                    </footer></f:comment>
+                </article>
+
+                <div class="sections narrow">
+
+                    <f:comment><!-- alerts --></f:comment>
+                    <f:render partial="AlertsBox" arguments="{_all}"/>
+
+                    <f:comment><!-- boxes --></f:comment>
+                    <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.boxesArticle" data="{data}" />
+
+                </div>
+            </div>
+
+            <f:comment><!-- related --></f:comment>
+            <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.related" data="{data}" />
+        </div>
+    </f:section>
+
+    <f:comment><!-- ======================================================================== --></f:comment>
+
+    <f:section name="Tools">
+
+        <f:comment><!-- top-menu --></f:comment>
+        <f:render partial="SubNav" section="Default" arguments="{_all}"/>
+
+        <div class="page-area-grid">
+            <div class="article">
+
+                <article class="project-article" aria-labelledby="article-headline">
+
+                    <f:comment><!-- key-visual and slogan --></f:comment>
+                    <f:render partial="HeaderSection/Article/Tools" arguments="{_all}"/>
+
+                    <f:comment><!-- infobox --></f:comment>
+                    <f:render partial="InfoBox/Article" arguments="{_all}"/>
+
+                    <f:comment><!-- content --></f:comment>
+                    <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.main" data="{data}" />
+
+                    <f:comment><!-- footer --></f:comment>
+                    <f:comment><footer class="article-footer">
+                        <f:render partial="SharePrint/Print" arguments="{_all}"/>
+                        <f:render partial="SharePrint/SocialMedia" arguments="{_all}"/>
+                    </footer></f:comment>
+                </article>
+
+                <div class="sections narrow">
+
+                    <f:comment><!-- alerts --></f:comment>
+                    <f:render partial="AlertsBox" arguments="{_all}"/>
+
+                    <f:comment><!-- boxes --></f:comment>
+                    <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.boxesArticle" data="{data}" />
+
+                </div>
+            </div>
+
+            <f:comment><!-- related --></f:comment>
+            <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.related" data="{data}" />
+        </div>
+
+    </f:section>
+
+
+    <f:comment><!-- ======================================================================== --></f:comment>
+
+    <f:section name="Special">
+
+        <div class="page-area-grid">
+            <div class="article">
+
+                <article class="project-article" aria-labelledby="article-headline">
+
+                    <f:comment><!-- key-visual and slogan --></f:comment>
+                    <f:render partial="HeaderSection/Article/Special" arguments="{_all}"/>
+
+                    <f:comment><!-- main part --></f:comment>
+                    <div class="content-box content wysiwyg">
+                        <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.main" data="{data}" />
+                    </div>
+
+                </article>
+
+                <div class="sections narrow">
+
+                    <f:comment><!-- boxes --></f:comment>
+                    <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.boxesArticle" data="{data}" />
+
+                </div>
+            </div>
+        </div>
+
+    </f:section>
+
+</html>

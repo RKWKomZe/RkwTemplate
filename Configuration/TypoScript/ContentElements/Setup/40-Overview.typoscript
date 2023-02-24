@@ -1,0 +1,6 @@
+tt_content {
+    rkwtemplate_overview =< lib.contentElement
+    rkwtemplate_overview {
+        templateName = Overview
+    }
+}

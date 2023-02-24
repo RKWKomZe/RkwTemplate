@@ -1,0 +1,22 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:coreExtended="http://typo3.org/ns/Madj2k/CoreExtended/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+    <f:layout name="Rkw" />
+
+    <f:section name="Main">
+        <f:if condition="<coreExtended:isEmpty string='{data.tx_gridelements_view_column_20}' /> == 0">
+            <div class="flex center-main introtext introtext-white py-3">
+                <div class="introtext__wrapper {f:if(condition: '{f:count(subject:data.tx_gridelements_view_children)} == 4', then: 'introtext__wrapper--big', else: '')}">
+                    <h{f:if(condition: data.header_layout, then: '{data.header_layout}', else: '2')} class="headline headline--underlined" id="c{data.uid}">
+                    {data.header}
+                    </h{f:if(condition: data.header_layout, then: '{data.header_layout}', else: '2')}>
+                    <div class="flex mt-1">
+                        <f:format.raw>{data.tx_gridelements_view_column_20}</f:format.raw>
+                    </div>
+                </div>
+            </div>
+        </f:if>
+    </f:section>
+</html>

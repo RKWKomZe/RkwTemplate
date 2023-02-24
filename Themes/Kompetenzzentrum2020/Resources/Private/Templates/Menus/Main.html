@@ -1,0 +1,48 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+
+    <f:if condition="{menuItems}">
+
+        <nav class="nav nav--primary flex-basis-9 flex flex-end full-width-smalldesk" id="navigation">
+            <f:render partial="List" section="Default" arguments="{_all}"/>
+        </nav>
+
+        <div class="nav-mobile-hamburger flex-container flex-basis-6">
+            <button class="nav-mobile-hamburger__button" aria-label="{f:translate(key:'{settings.themeLanguageFile}:templates.menus.main.open')}">
+                <svg class="icon icon--48 icon-open">
+                    <use xlink:href="#ic-mobile-menu" />
+                </svg>
+            </button>
+            <button class="nav-mobile-hamburger__button" aria-label="{f:translate(key:'{settings.themeLanguageFile}:templates.menus.main.close')}">
+                <svg class="icon icon--48 icon-close is-none">
+                    <use xlink:href="#ic-mobile-menu-close" />
+                </svg>
+            </button>
+        </div>
+
+        <nav class="nav-mobile flex-basis-12 flex-end is-closed">
+
+            <f:comment><!--- Home --></f:comment>
+            <span class="nav-mobile__item nav-mobile__item--home">
+                 <a href="/">
+                    <f:translate key="{settings.themeLanguageFile}:partials.menus.main.list.home" />
+                 </a>
+    
+                <f:comment><!--
+                <span class="nav-mobile__item-icon-wrapper">
+                    <button class="nav-mobile__item-icon">
+                        <svg class="icon icon--12 is-hidden">
+                            <use xlink:href="#ic-plus-colored" />
+                        </svg>
+                    </button>
+                </span> --></f:comment>
+            </span>
+            
+            <!-- this will be loaded via AJAX to reduce DOM on load -->
+            <div class="nav-mobile__primary flex-basis-12 inner-nav-mob is-active-list" id="tx-rkwtemplate-mobile-menu">
+
+            </div>
+        </nav>
+    </f:if>
+
+</html>

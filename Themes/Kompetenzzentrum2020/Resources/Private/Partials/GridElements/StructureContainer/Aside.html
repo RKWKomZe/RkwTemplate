@@ -1,0 +1,101 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:coreExtended="http://typo3.org/ns/Madj2k/CoreExtended/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+    <f:section name="Full">
+        <div class="asideinner">
+
+            <f:comment><!-- authors --></f:comment>
+            <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.pageInfo.authorsBox')}">
+                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.pageInfo.authorsBox" />
+            </f:if>
+
+            <f:comment><!-- project logo --></f:comment>
+            <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.boxes.projectLogo', data:'{pageUid: data.pid}' )}">
+                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.boxes.projectLogo" data="{pageUid: data.pid}" />
+            </f:if>
+
+            <f:if condition="{data.tx_gridelements_view_column_60} || {data.tx_gridelements_view_column_80}">
+                <h4 class="mt-1 asideinner__title content-padding-smalldesk">
+                    <f:translate key="{settings.themeLanguageFile}:partials.gridElements.contentContainer.aside.information" />
+                </h4>
+
+                <f:comment><!-- links by authors --></f:comment>
+                <div class="contentbox no-border-radius-smalldesk">
+                    <f:if condition="{data.tx_gridelements_view_column_60}">
+                        <ul class="iconlist">
+                            <f:format.html parseFuncTSPath="">{data.tx_gridelements_view_column_60}</f:format.html>
+                        </ul>
+                    </f:if>
+
+                    <f:comment><!-- further boxes
+                    <f:if condition="{data.tx_gridelements_view_column_80}">
+                        <f:format.html parseFuncTSPath="">{data.tx_gridelements_view_column_80}</f:format.html>
+                    </f:if>-->
+                    </f:comment>
+
+                    <f:comment><!-- Related contents --></f:comment>
+                    <f:cObject typoscriptObjectPath="lib.txRkwTemplate.recommendation.relatedDefault" data="{pageUid: data.pid}" />
+                    <f:cObject typoscriptObjectPath="lib.txRkwTemplate.recommendation.relatedPublication" data="{pageUid: data.pid}" />
+
+
+                </div>
+            </f:if>
+        </div>
+
+    </f:section>
+
+    <f:comment><!-- ==================================================================================== --></f:comment>
+
+    <f:section name="Reduced">
+
+        <div class="asideinner">
+
+            <f:comment><!-- authors --></f:comment>
+            <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.pageInfo.authorsBox')}">
+                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.pageInfo.authorsBox" />
+            </f:if>
+
+            <f:comment><!-- project logo --></f:comment>
+            <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.boxes.projectLogo', data:'{pageUid: data.pid}' )}">
+                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.boxes.projectLogo" data="{pageUid: data.pid}" />
+            </f:if>
+
+            <f:if condition="{data.tx_gridelements_view_column_60}">
+                <h4 class="mt-1 asideinner__title content-padding-smalldesk">
+                    <f:translate key="{settings.themeLanguageFile}:partials.gridElements.contentContainer.aside.information" />
+                </h4>
+
+                <f:comment><!-- links by authors --></f:comment>
+                <div class="contentbox no-border-radius-smalldesk">
+                    <f:if condition="{data.tx_gridelements_view_column_60}">
+                        <ul class="iconlist">
+                            <f:format.html parseFuncTSPath="">{data.tx_gridelements_view_column_60}</f:format.html>
+                        </ul>
+                    </f:if>
+                </div>
+            </f:if>
+        </div>
+
+    </f:section>
+
+    <f:comment><!-- ==================================================================================== --></f:comment>
+
+    <f:section name="Landingpage">
+
+        <f:for each="{data.tx_gridelements_view_raw_columns.60}" as="item" iteration="asideIterator">
+            <f:if condition="{item.CType} != 'rkwtemplate_toclandingpage'">
+                <f:then>
+                    <div class="contentbox typo3-fsc {f:if(condition: asideIterator.isLast, then: 'text-small', else: '')}">
+                        <f:format.raw>{data.tx_gridelements_view_child_{item.uid}}</f:format.raw>
+                    </div>
+                </f:then>
+                <f:else>
+                    <f:format.raw>{data.tx_gridelements_view_child_{item.uid}}</f:format.raw>
+                </f:else>
+            </f:if>
+        </f:for>
+
+    </f:section>
+
+</html>

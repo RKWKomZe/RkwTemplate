@@ -1,0 +1,27 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:coreExtended="http://typo3.org/ns/Madj2k/CoreExtended/ViewHelpers"
+    xmlns:rkwTemplate="http://typo3.org/ns/RKW/RkwTemplate/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+    <f:layout name="Rkw" />
+
+    <f:section name="Main">
+        <f:if condition="<coreExtended:isEmpty string='{data.tx_gridelements_view_column_130}' /> == 0">
+            <div id="c{data.uid}" class="contentbox typo3-fsc content-padding-layoutmax infolist-mod {rkwTemplate:GetLandingpageElementModClass(headerPosition:'{data.header_position}')}">
+                <div class="infolist frame">
+
+                    <f:render partial="Header" arguments="{
+                        header: data.header,
+                        layout: data.header_layout,
+                        link: data.header_link,
+                        class: 'headline headline--underlined'
+                    }" />
+
+                    <f:format.raw>{data.tx_gridelements_view_column_130}</f:format.raw>
+                </div>
+            </div>
+        </f:if>
+    </f:section>
+
+</html>

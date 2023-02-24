@@ -1,0 +1,8 @@
+plugin.tx_rkwauthors {
+
+    settings {
+        // cat=plugin.tx_rkwauthors//a; type=string; label=BaseUrl for schema.org images of authors
+        baseUrlSchemaOrg = {$plugin.tx_rkwtemplate_themeconfig.website.baseUrl}
+    }
+}
+

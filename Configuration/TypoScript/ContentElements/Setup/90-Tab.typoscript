@@ -1,0 +1,6 @@
+tt_content {
+    rkwtemplate_tab =< lib.contentElement
+    rkwtemplate_tab {
+        templateName = Tab
+    }
+}

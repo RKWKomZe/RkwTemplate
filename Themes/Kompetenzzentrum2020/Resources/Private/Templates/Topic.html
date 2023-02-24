@@ -1,0 +1,57 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+    <f:layout name="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.utility.pageLayoutSwitch')}" />
+
+    <f:section name="Header">
+        <f:render partial="HeaderSection/Topic" arguments="{_all}"/>
+    </f:section>
+
+
+    <f:comment><!-- ======================================================================== --></f:comment>
+
+
+    <f:section name="Content">
+        <main class="main flex-container no-padding-narrow" id="main">
+            <div class="flex-container no-margin-narrow flex-grow">
+
+                <f:comment><!-- breadcrumb--></f:comment>
+                <section class="section content flex-basis-12 full-width-smalldesk no-padding-narrow pb-0">
+                    <div class="breadcrumbs flex-container nav breadcrumb-padding">
+                        <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.breadcrumb" data="{data}" />
+                    </div>
+                </section>
+
+                <f:comment><!-- promotion --></f:comment>
+                <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.content.promotion', data:'{data}')}">
+                    <section class="section content flex-basis-12 full-width-smalldesk no-padding-narrow">
+                        <div role="contentinfo" class="promoters no-border-radius-layoutmax">
+                            <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.promotion" data="{data}" />
+                        </div>
+                    </section>
+                </f:if>
+
+                <f:comment><!-- content --></f:comment>
+                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.main" data="{data}" />
+
+                <f:comment><!-- box party - but not for MeinRKW ! --></f:comment>
+                <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.utility.pageLayoutType')} != 12">
+
+                    <f:comment><!-- alerts --></f:comment>
+                    <f:comment><f:render partial="AlertsBox" arguments="{_all}"/></f:comment>
+
+                    <f:comment><!-- boxes --></f:comment>
+                    <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.content.boxesTopic', data:'{data}')}">
+                        <f:then>
+                            <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.boxesTopic" data="{data}" />
+                        </f:then>
+                        <f:else>
+                            <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.boxesTopicInherit" data="{data}" />
+                        </f:else>
+                    </f:if>
+                </f:if>
+            </div>
+        </main>
+
+    </f:section>
+
+</html>

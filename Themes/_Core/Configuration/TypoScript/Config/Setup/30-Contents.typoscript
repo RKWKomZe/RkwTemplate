@@ -1,0 +1,114 @@
+lib.parseFunc_RTE {
+
+	//===============================================================
+	// Standardklassen und Wraps
+	//===============================================================
+	nonTypoTagStdWrap.encapsLines {
+   
+		// RTE Tuning --> gegen Standardklassen
+		addAttributes.P.class >
+		remapTag >
+		addAttributes.DIV.class >
+
+		// Angabe von Tags, die nicht mit einem zusätzlichen wrap umgeben werden dürfen
+		encapsTagList = cite, div, p, pre, h1, h2, h3, h4, h5, h6, ul, ol, li
+
+	}
+
+	externalBlocks {
+
+		//===============================================================
+		// Keine P-Tags in Tabellen
+		//===============================================================
+		table.HTMLtableCells {
+			
+			default >
+			default.stdWrap {
+				parseFunc =< lib.parseFunc
+				HTMLparser {
+					removeTags = p
+					keepNonMatchedTags = 1
+				}
+			}
+   		}
+
+   
+   		//===============================================================
+		// Anpassung CSS- Klassen für Listenelemente und Tabellen
+		//===============================================================
+		table.stdWrap.HTMLparser = 1
+		table.stdWrap.HTMLparser.tags.table.fixAttrib.class {
+			default = contenttable responsive
+			always = 1
+			list = responsive,contenttable,contenttable-1
+		}
+
+   		dl >
+		dl {
+			stripNL = 1
+
+			// Entfernen von p-Tags um dl-tags
+      		stdWrap{
+				HTMLparser{
+				  // tags zum expliziten Entfernen
+				  removeTags = p
+
+				  // alle anderen behalten wir (z.B. li)
+				  keepNonMatchedTags = 1
+				}
+        	}
+		}
+
+
+   		ul >
+		ul {
+			stripNL = 1
+			callRecursive = 1
+			callRecursive {
+				tagStdWrap.HTMLparser = 1
+				tagStdWrap.HTMLparser.tags.ul.fixAttrib.class {
+					default = content-unordered-list
+					always = 1
+
+				}
+			}
+
+			// Entfernen von p-Tags um li-tags
+      		stdWrap{
+				HTMLparser{
+				  // tags zum expliziten Entfernen
+				  removeTags = p
+
+				  // alle anderen behalten wir (z.B. li)
+				  keepNonMatchedTags = 1
+				}
+        	}
+		}
+
+		ol >
+		ol < .ul
+		ol {
+			callRecursive {
+				tagStdWrap.HTMLparser.tags.ol.fixAttrib.class {
+					default = content-unordered-list
+					always = 1
+				}
+			}
+        }
+
+        // Entfernen des style-Attributs
+		blockquote {
+			callRecursive = 1
+			callRecursive {
+				tagStdWrap.HTMLparser = 1
+				tagStdWrap.HTMLparser.tags.blockquote.overrideAttribs >
+			}
+		}
+	}
+}
+
+
+
+
+
+

@@ -1,0 +1,67 @@
+// ############################################################################
+// Mainmenu
+// ############################################################################
+lib.txRkwTemplate {
+
+    navigation {
+
+        main = FLUIDTEMPLATE
+        main {
+
+            file = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/Menus/Main.html
+            partialRootPaths.0 = {$plugin.tx_rkwtemplate_themeconfig.paths.default.partials}/Menus/Main
+
+            dataProcessing {
+                10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+                10 {
+
+                   special = directory
+                   special.value = {$plugin.tx_rkwtemplate_themeconfig.website.rootPid}
+                   levels = 5
+                   entryLevel = 0
+                   expandAll = 1
+                   includeSpacer = 0
+
+                   titleField = tx_rkwbasics_alternative_title // nav_title // title
+                   // excludeUidList = {$plugin.tx_rkwtemplate_themeconfig.settings.mainNav.loginPid}
+                   as = menuItems
+
+                   dataProcessing {
+                     10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+                     10 {
+                        references.fieldName = media
+                        as = image
+                     }
+                   }
+                }
+
+                20 < lib.txRkwTemplate.navigation.meta.dataProcessing.10
+                20 {
+                   as = menuItemsMeta
+                }
+            }
+
+            variables {
+
+                contactPid = TEXT
+                contactPid.value = {$plugin.tx_rkwtemplate_themeconfig.settings.mainNav.contactPid}
+
+                loginPid = TEXT
+                loginPid.value = {$plugin.tx_rkwtemplate_themeconfig.settings.mainNav.loginPid}
+
+                fundingPid = TEXT
+                fundingPid.value = {$plugin.tx_rkwtemplate_themeconfig.settings.mainNav.fundingPid}
+
+                currentPid = TEXT
+                currentPid.data =  GP:id
+            }
+
+            settings < page.10.settings
+        }
+
+        //=================================================================
+        // mobile version for AJAX
+        mainMobile < .main
+        mainMobile.file = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/Menus/MainMobile.html
+    }
+}

@@ -1,0 +1,59 @@
+module.tx_rkwrelated {
+
+    settings {
+        # cat=plugin.tx_rkwrelated; type=string; label=List of PIDs whose cache is to delete, when contents are saved
+        clearCachePageList = 1, 3561, 158, 378, 3795, 3595, 3471, 3757, 4763, 5062
+    }
+}
+
+plugin.tx_rkwrelated_similarcontent {
+
+    settings {
+
+        # cat=plugin.tx_rkwrelated_similarcontent//f; type=integer; label=PID to start search from
+        startingPid =
+
+        # cat=plugin.tx_rkwrelated_similarcontent//f; type=string; label=PIDs to include in list (comma separated)
+        startingPidList = 1
+
+        # cat=plugin.tx_rkwrelated_similarcontent//a; type=boolean; label=ID of parent sys_category for similar search
+        sysCategoryParentUid = 24
+
+        # cat=plugin.tx_rkwrelated_morecontent//f; type=boolean; label=Override opening of links in same window (empty to deactivate override)
+        openLinksInSameWindowOverride = 1
+
+        detailPid {
+
+            # cat=plugin.tx_rkwrelated_morecontent//f; type=string; label=Detail pid (default)
+            default =
+
+            # cat=plugin.tx_rkwrelated_morecontent//f; type=string; label=Detail pid for publications
+            publication = 1370
+        }
+    }
+}
+
+plugin.tx_rkwrelated_morecontent {
+
+    settings {
+
+        # cat=plugin.tx_rkwrelated_morecontent//f; type=integer; label=PID to start search from
+        startingPid =
+
+        # cat=plugin.tx_rkwrelated_morecontent//f; type=string; label=PIDs to include in list (comma separated)
+        startingPidList = 1
+
+        # cat=plugin.tx_rkwrelated_morecontent//f; type=boolean; label=Override opening of links in same window (empty to deactivate override)
+        openLinksInSameWindowOverride = 1
+
+        detailPid {
+
+            # cat=plugin.tx_rkwrelated_morecontent//f; type=string; label=Detail pid (default)
+            default =
+
+            # cat=plugin.tx_rkwrelated_morecontent//f; type=string; label=Detail pid for publications
+            publication = 1370
+        }
+
+    }
+}

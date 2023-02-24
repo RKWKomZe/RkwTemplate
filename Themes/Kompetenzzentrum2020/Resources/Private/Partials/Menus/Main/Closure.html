@@ -1,0 +1,83 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:rkwTemplate="http://typo3.org/ns/RKW/RkwTemplate/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+    <f:section name="Default">
+        <f:if condition="{fundingPid}">
+            <li class="nav__item {f:if(condition:'{rkwTemplate:IsPageInCurrentRootline(pageUid:\'{fundingPid}\')}', then:' is-active')}">
+                <a href="{f:uri.page(pageUid:'{fundingPid}')}" class="btn btn--primary btn--nav" >
+                    <f:translate key="{settings.themeLanguageFile}:partials.menus.main.closure.funding" />
+                </a>
+            </li>
+        </f:if>
+        <f:if condition="{contactPid}">
+            <li class="nav__item {f:if(condition:'{rkwTemplate:IsPageInCurrentRootline(pageUid:\'{contactPid}\')}', then:' is-active')}">
+                <a href="{f:uri.page(pageUid:'{contactPid}')}" class="btn btn--secondary btn--nav" >
+                    <f:translate key="{settings.themeLanguageFile}:partials.menus.main.closure.contact" />
+                </a>
+            </li>
+        </f:if>
+        <f:if condition="{loginPid}">
+            <li class="nav__item {f:if(condition:'{rkwTemplate:IsPageInCurrentRootline(pageUid:\'{loginPid}\')}', then:' is-active')} tx-rkwregistration-login-class">
+                <a href="{f:uri.page(pageUid:'{loginPid}')}" class="btn btn--secondary btn--nav tx-rkwregistration-login-text">
+                    <f:translate key="{settings.themeLanguageFile}:partials.menus.main.closure.login" />
+                </a>
+            </li>
+        </f:if>
+        <!--
+        <li class="nav__item nav__item--search">
+            <a href="search.php" class="nav__item-search" aria-label="Suche">
+                <svg class="icon icon--24">
+                    <use xlink:href="#ic-search" /></svg>
+            </a>
+        </li>-->
+
+    </f:section>
+
+    <f:comment><!-- ======================================================================== --></f:comment>
+
+
+    <f:section name="Mobile">
+
+        <f:comment>
+        <!-- Problem with overlapping when a certain amount of menu-items is reached in menu above -->
+        <div class="nav-mobile__bottom flex">
+            <ul class="nav-mobile__bottom-btnlinks">
+                <!-- <f:if condition="{contactPid}'">
+                    <li class="nav-mobile__item nav-mobile__item--bottom {f:if(condition:'{rkwTemplate:IsPageInCurrentRootline(pageUid:\'{contactPid}\')}', then:' is-active')}">
+                        <a href="{f:uri.page(pageUid:'{contactPid}')}" >
+                            <f:translate key="{settings.themeLanguageFile}:partials.menus.main.closure.contact" />
+                        </a>
+                    </li>
+                </f:if>-->
+                <f:if condition="{loginPid}'">
+                    <li class="nav-mobile__item nav-mobile__item--bottom tx-rkwregistration-login-class">
+                        <a href="{f:uri.page(pageUid:'{loginPid}')}" class="nav-mobile__item nav-mobile__item--bottom tx-rkwregistration-login-text">
+                            <f:translate key="{settings.themeLanguageFile}:partials.menus.main.closure.login" />
+                        </a>
+                    </li>
+                </f:if>
+                <!--
+                <li class="nav-mobile__item nav-mobile__item--bottom">
+                    <a href="">Suche</a>
+                </li>
+                -->
+            </ul>
+
+            <f:if condition="{menuItemsMeta}">
+                <ul class="nav-mobile__bottom-footer">
+                    <f:for each="{menuItemsMeta}" as="item" iteration="iterator">
+                        <li class="nav-mobile__item">
+                            <a href="{item.link}" target="{f:if(condition: item.target, then: item.target, else:'_self')}">
+                                {item.title}
+                            </a>
+                        </li>
+                    </f:for>
+                </ul>
+            </f:if>
+        </div>
+        </f:comment>
+    </f:section>
+
+
+</html>

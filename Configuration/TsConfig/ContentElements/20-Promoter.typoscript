@@ -1,0 +1,31 @@
+//=========================================================
+// Add contentElement to Wizard
+//=========================================================
+mod.wizards.newContentElement.wizardItems.common {
+    elements {
+        rkwtemplate_promoter {
+            iconIdentifier = rkw-template-promoter
+            title = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.promoter.title
+            description = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.promoter.description
+            tt_content_defValues {
+                CType = rkwtemplate_promoter
+            }
+        }
+    }
+    show := addToList(rkwtemplate_promoter)
+}
+
+//=========================================================
+// Change some fields
+//=========================================================
+TCEFORM.tt_content {
+
+    header_layout {
+        types.rkwtemplate_promoter {
+            removeItems = 2,3,4,5,100
+            altLabels.0 = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.promoter.type.I.default
+            altLabels.1 = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.promoter.type.I.subtitle
+        }
+    }
+
+}
