@@ -1,0 +1,43 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:rkwBasics="http://typo3.org/ns/RKW/RkwBasics/ViewHelpers"
+    xmlns:rkwEtracker="http://typo3.org/ns/RKW/RkwEtracker/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+    <f:layout name="Rkw" />
+
+    <f:section name="Main">
+
+        <div class="boxslider-item">
+            <div class="tile">
+                <div class="tile__header has-img">
+                    <div class="tile__img">
+                        <img src="{f:uri.image(image:images.0,cropVariant:'default')}" alt="{image.title}" loading="lazy">
+                    </div>
+                </div>
+                <div class="tile__content">
+                    <h3 class="tile__title icon">
+                        <span class="tile__title-text">{data.header}</span>
+                    </h3>
+                    <div class="tile__text">
+                        <f:if condition="<rkwBasics:isEmpty string='{data.bodytext}' /> == 0">
+                            {data.bodytext}
+                        </f:if>
+                    </div>
+                </div>
+                <f:if condition="{data.header_link}">
+                    <div class="tile__footer flex-container btn-list--center">
+                        <rkwEtracker:link.typolink parameter="{data.header_link}" class="btn btn--primary">
+                            {data.subheader}
+                        </rkwEtracker:link.typolink>
+                    </div>
+                </f:if>
+            </div>
+        </div>
+
+    </f:section>
+</html>
+
+
+
+

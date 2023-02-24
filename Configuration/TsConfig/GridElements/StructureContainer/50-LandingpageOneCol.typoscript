@@ -14,7 +14,7 @@ tx_gridelements.setup.contentContainerLandingpageOneCol {
                         allowed {
                             CType = header, text, textpic, image, textmedia, gridelements_pi1, html, form_formframework
                         }
-                    }                   
+                    }
                 }
             }
         }

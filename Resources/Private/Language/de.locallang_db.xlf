@@ -8,7 +8,7 @@
             <trans-unit id="pages.palettes.primary_color">
                 <source>Primary Color</source>
                 <target>Primäre Farbe</target>
-             </trans-unit>   
+             </trans-unit>
             <trans-unit id="pages.tx_rkwtemplate_landingpage_primary_color">
                 <source>Color</source>
                 <target>Farbwert</target>
@@ -20,7 +20,7 @@
             <trans-unit id="pages.tx_rkwtemplate_landingpage_primary_effect_text_color">
                 <source>Text-Color On Effect-Color (e.g. Text on Buttons)</source>
                 <target>Text-Farbe auf Effekt-Farbe (z. B. Beschriftung von Buttons)</target>
-            </trans-unit>  
+            </trans-unit>
             <trans-unit id="pages.tx_rkwtemplate_landingpage_primary_top_text_color">
                <source>Text-Color When Used As Background</source>
                <target>Text-Farbe, wenn als Hintergrund verwendet</target>
@@ -28,17 +28,17 @@
             <trans-unit id="pages.tx_rkwtemplate_landingpage_primary_top_effect_color">
                <source>Effect-Color When Used As Background</source>
                <target>Effekt-Farbe, wenn als Hintergrund verwendet</target>
-            </trans-unit>    
+            </trans-unit>
             <trans-unit id="pages.tx_rkwtemplate_landingpage_primary_top_effect_text_color">
                <source>Text-Color On Effect-Color When Used As Background</source>
                <target>Text-Farbe auf Effekt-Farbe, wenn als Hintergrund verwendet</target>
-            </trans-unit>                       
-                    
-                    
+            </trans-unit>
+
+
             <trans-unit id="pages.palettes.secondary_color">
                 <source>Secondary Color</source>
                 <target>Sekundäre Farbe</target>
-            </trans-unit>      
+            </trans-unit>
             <trans-unit id="pages.tx_rkwtemplate_landingpage_secondary_color">
                 <source>Color</source>
                 <target>Farbwert</target>
@@ -50,7 +50,7 @@
             <trans-unit id="pages.tx_rkwtemplate_landingpage_secondary_effect_text_color">
                 <source>Text-Color On Effect-Color (e.g. Text on Buttons)</source>
                 <target>Text-Farbe auf Effekt-Farbe (z. B. Beschriftung von Buttons)</target>
-            </trans-unit>  
+            </trans-unit>
             <trans-unit id="pages.tx_rkwtemplate_landingpage_secondary_top_text_color">
                <source>Text-Color When Used As Background</source>
                <target>Text-Farbe, wenn als Hintergrund verwendet</target>
@@ -58,17 +58,17 @@
             <trans-unit id="pages.tx_rkwtemplate_landingpage_secondary_top_effect_color">
                <source>Effect-Color When Used As Background</source>
                <target>Effekt-Farbe, wenn als Hintergrund verwendet</target>
-            </trans-unit>    
+            </trans-unit>
             <trans-unit id="pages.tx_rkwtemplate_landingpage_secondary_top_effect_text_color">
                <source>Text-Color On Effect-Color When Used As Background-color</source>
                <target>Text-Farbe auf Effekt-Farbe, wenn als Hintergrund verwendet</target>
-            </trans-unit>  
-            
-            
+            </trans-unit>
+
+
             <trans-unit id="pages.palettes.tertiary_color">
                 <source>Tertiary Color</source>
                 <target>Tertiäre Farbe</target>
-            </trans-unit>      
+            </trans-unit>
             <trans-unit id="pages.tx_rkwtemplate_landingpage_tertiary_color">
                 <source>Color</source>
                 <target>Farbwert</target>
@@ -80,7 +80,7 @@
             <trans-unit id="pages.tx_rkwtemplate_landingpage_tertiary_effect_text_color">
                 <source>Text-Color On Effect-Color (e.g. Text on Buttons)</source>
                 <target>Text-Farbe auf Effekt-Farbe (z. B. Beschriftung von Buttons)</target>
-            </trans-unit>  
+            </trans-unit>
             <trans-unit id="pages.tx_rkwtemplate_landingpage_tertiary_top_text_color">
                <source>Text-Color When Used As Background</source>
                <target>Text-Farbe, wenn als Hintergrund verwendet</target>
@@ -88,17 +88,17 @@
             <trans-unit id="pages.tx_rkwtemplate_landingpage_tertiary_top_effect_color">
                <source>Effect-Color When Used As Background</source>
                <target>Effekt-Farbe, wenn als Hintergrund verwendet</target>
-            </trans-unit>    
+            </trans-unit>
             <trans-unit id="pages.tx_rkwtemplate_landingpage_tertiary_top_effect_text_color">
                <source>Text-Color On Effect-Color When Used As Background-color</source>
                <target>Text-Farbe auf Effekt-Farbe, wenn als Hintergrund verwendet</target>
-            </trans-unit>                
-      
-      
+            </trans-unit>
+
+
             <trans-unit id="pages.palettes.quarterly_color">
                 <source>Quarterly Color</source>
                 <target>Quartäre Farbe</target>
-            </trans-unit>      
+            </trans-unit>
             <trans-unit id="pages.tx_rkwtemplate_landingpage_quarterly_color">
                 <source>Color</source>
                 <target>Farbwert</target>
@@ -110,7 +110,7 @@
             <trans-unit id="pages.tx_rkwtemplate_landingpage_quarterly_effect_text_color">
                 <source>Text-Color On Effect-Color (e.g. Text on Buttons)</source>
                 <target>Text-Farbe auf Effekt-Farbe (z. B. Beschriftung von Buttons)</target>
-            </trans-unit>  
+            </trans-unit>
             <trans-unit id="pages.tx_rkwtemplate_landingpage_quarterly_top_text_color">
                <source>Text-Color When Used As Background</source>
                <target>Text-Farbe, wenn als Hintergrund verwendet</target>
@@ -118,23 +118,23 @@
             <trans-unit id="pages.tx_rkwtemplate_landingpage_quarterly_top_effect_color">
                <source>Effect-Color When Used As Background</source>
                <target>Effekt-Farbe, wenn als Hintergrund verwendet</target>
-            </trans-unit>    
+            </trans-unit>
             <trans-unit id="pages.tx_rkwtemplate_landingpage_quarterly_top_effect_text_color">
                <source>Text-Color On Effect-Color When Used As Background-color</source>
                <target>Text-Farbe auf Effekt-Farbe, wenn als Hintergrund verwendet</target>
-            </trans-unit>       
-            
-            
+            </trans-unit>
+
+
             <trans-unit id="pages.tx_rkwtemplate_landingpage_show_more_colors">
                <source>Show more color options – only do this for a very good reason!</source>
                <target>Zeige mehr Farb-Optionen – Bitte tun Sie dies nur aus einem sehr guten Grund!</target>
-            </trans-unit>   
+            </trans-unit>
             <trans-unit id="pages.tx_rkwtemplate_landingpage_show_more_colors.I.enabled">
                <source>Activate – I know what I'm doing!</source>
                <target>Aktivieren – Ich weiß, was ich tue!</target>
-            </trans-unit>  
+            </trans-unit>
 
-            
+
             <!-- Menu-stuff -->
             <trans-unit id="pages.tx_rkwtemplate_disable_flyout_menu">
                 <source>Fly-Out Menu (only second menu-level)</source>
@@ -215,18 +215,17 @@
             <trans-unit id="contentElement.slider.imageManipulation.desktop-landingpage">
                 <source>Desktop (only Landingpage)</source>
                 <target>Desktop (nur Landingpage)</target>
-            </trans-unit>   
+            </trans-unit>
             <trans-unit id="contentElement.slider.imageManipulation.desktop-landingpage-big">
                 <source>Desktop (only Landingpage, big)</source>
                 <target>Desktop (nur Landingpage, groß)</target>
-            </trans-unit>            
+            </trans-unit>
             <trans-unit id="contentElement.slider.imageManipulation.tablet">
                 <source>Tablet</source>
             </trans-unit>
             <trans-unit id="contentElement.slider.imageManipulation.mobile">
                 <source>Mobile</source>
             </trans-unit>
-
 
             <!-- SliderContainer -->
             <trans-unit id="contentElement.sliderContainer.title">
@@ -237,6 +236,29 @@
                 <source>Adds a slide-container.</source>
                 <target>Fügt einen Container für Slider ein. Üblicherweise wird dieses Element auf der Startseite eingesetzt.</target>
             </trans-unit>
+
+			<!-- BoxSlider -->
+			<trans-unit id="contentElement.boxSlider.title">
+				<source>BoxSlider</source>
+				<target>BoxSlider-Element</target>
+			</trans-unit>
+			<trans-unit id="contentElement.boxSlider.description">
+				<source>Adds a box slider.</source>
+				<target>Ein BoxSlider-Element für die Verwendung im BoxSlider-Container.</target>
+			</trans-unit>
+			<trans-unit id="contentElement.boxSlider.subheader.label">
+				<source>Label for Button</source>
+				<target>Beschriftung für Button</target>
+			</trans-unit>
+
+			<!-- BoxSliderContainer -->
+			<trans-unit id="contentElement.boxSliderContainer.title">
+				<source>BoxSliderContainer</source>
+			</trans-unit>
+			<trans-unit id="contentElement.boxSliderContainer.description">
+				<source>Adds a box slide-container.</source>
+				<target>Fügt einen Container für BoxSlider ein. Üblicherweise wird dieses Element auf einer Landingpage eingesetzt.</target>
+			</trans-unit>
 
             <!-- LandingpageGridElements -->
 			<trans-unit id="contentElement.gridelements_pi1.landingpage.type.label">
@@ -262,7 +284,7 @@
 			<trans-unit id="contentElement.gridelements_pi1.landingpage.type.I.4">
 				<source>Quarterly Element (must be activated in the page properties)</source>
 				<target>Quartäres Element (muss in Seiteneigenschaften aktiviert werden)</target>
-			</trans-unit>	
+			</trans-unit>
             <trans-unit id="contentElement.gridelements_pi1.landingpage.layout.label">
                 <source>Image style (TilesContainer only)</source>
                 <target>Bilddarstellung (nur bei Kachel-Container)</target>
@@ -299,8 +321,6 @@
                 <source>Black Background, White Font</source>
                 <target>Schwarzer Hintergrund, Weiße Schrift</target>
             </trans-unit>
-			
-								
 
             <!-- TilesContainer -->
             <trans-unit id="contentElement.tilesContainer.title">
@@ -311,6 +331,26 @@
                 <source>Adds a tiles-container.</source>
                 <target>Fügt einen Container für Kacheln ein. Üblicherweise wird dieses Element auf einer Landingpage eingesetzt.</target>
             </trans-unit>
+
+            <!-- TestimonialContainer -->
+            <trans-unit id="contentElement.testimonialContainer.title">
+                <source>Testimonial-Container</source>
+                <target>Testimonial-Container</target>
+            </trans-unit>
+            <trans-unit id="contentElement.testimonialContainer.description">
+                <source>Adds a testimonial-container.</source>
+                <target>Fügt einen Container für Testimonials ein.</target>
+            </trans-unit>
+
+			<!-- topicLinksContainer -->
+			<trans-unit id="contentElement.topicLinksContainer.title">
+				<source>TopicLinks-Container</source>
+				<target>Themenverweis-Container</target>
+			</trans-unit>
+			<trans-unit id="contentElement.topicLinksContainer.description">
+				<source>Adds a topic-links-container.</source>
+				<target>Fügt einen Container für Verweise auf zentrale Themen und/oder Inhalte einer Website ein.</target>
+			</trans-unit>
 
             <!-- GalleryContainer -->
             <trans-unit id="contentElement.galleryContainer.title">
@@ -344,6 +384,24 @@
                 <target>Inhalt</target>
             </trans-unit>
             <trans-unit id="contentElement.collageContainer.header">
+                <source>Header</source>
+                <target>Überschrift (wird für ein mögliches Inhaltsverzeichnis benötigt)</target>
+            </trans-unit>
+
+            <!-- TagcloudContainer -->
+            <trans-unit id="contentElement.tagcloudContainer.title">
+                <source>Tagcloud-Container</source>
+                <target>Tagcloud-Container</target>
+            </trans-unit>
+            <trans-unit id="contentElement.tagcloudContainer.description">
+                <source>Adds a tagcloud-container.</source>
+                <target>Fügt einen Container für eine Tagcloud ein. Üblicherweise wird dieses Element auf einer Landingpage eingesetzt.</target>
+            </trans-unit>
+            <trans-unit id="contentElement.tagcloudContainer.content">
+                <source>Content</source>
+                <target>Inhalt</target>
+            </trans-unit>
+            <trans-unit id="contentElement.tagcloudContainer.header">
                 <source>Header</source>
                 <target>Überschrift (wird für ein mögliches Inhaltsverzeichnis benötigt)</target>
             </trans-unit>
@@ -567,8 +625,6 @@
                 <source>Override for Recommendation</source>
                 <target>Empfehlungen (Überschreibt Standard-Empfehlungen; derzeit nur mit Veranstaltungen möglich)</target>
             </trans-unit>
-            
-                    
 
             <!-- ContentContainerTwoColsReduced -->
             <trans-unit id="contentElement.contentContainerTwoColsReduced.title">
@@ -679,7 +735,7 @@
                 <source>Content</source>
                 <target>Inhalt</target>
             </trans-unit>
-           
+
 
             <!-- Shortlink -->
             <trans-unit id="contentElement.shortlink.title">
@@ -731,6 +787,20 @@
                 <target>Fügt ein Inhaltsverzeichnis ein. Berücksichtigt werden darin die Überschriften (Feld: Überschrift) aller Inhaltselemente der aktuellen Seite.</target>
             </trans-unit>
 
+            <!-- Keyvisual -->
+            <trans-unit id="contentElement.keyvisual.title">
+                <source>Keyvisual</source>
+                <target>Keyvisual</target>
+            </trans-unit>
+            <trans-unit id="contentElement.keyvisual.description">
+                <source>Adds a keyvisual.</source>
+                <target>Fügt ein Keyvisual ein. Wird üblicherweise in der Marginalspalte einer Landingpage benutzt.</target>
+            </trans-unit>
+            <trans-unit id="contentElement.keyvisual.imageManipulation.imagewidth">
+				<source>Width (min 100, max 336 pixel)</source>
+				<target>Breite (min. 100, max. 336 Pixel)</target>
+            </trans-unit>
+
             <!-- TableOfContentsLandingpage -->
             <trans-unit id="contentElement.toclandingpage.title">
                 <source>Table Of Contents</source>
@@ -754,7 +824,7 @@
                 <source>Short Version</source>
                 <target>Kurzfassung</target>
             </trans-unit>
-       
+
             <!-- ImageList -->
             <trans-unit id="contentElement.imageList.title">
                 <source>Image List</source>
@@ -772,8 +842,41 @@
                 <source>Default</source>
                 <target>Standard</target>
             </trans-unit>
-            
-            
+
+            <!-- CallToAction -->
+            <trans-unit id="contentElement.callToAction.title">
+                <source>Call to action with background</source>
+                <target>Call-to-action-Element mit Hintergrundbild</target>
+            </trans-unit>
+            <trans-unit id="contentElement.callToAction.description">
+                <source>Adds a call-to-action-element.</source>
+                <target>Ein großflächig dargestelltes Bild, auf dem ein Call-to-action-Element platziert wird.</target>
+            </trans-unit>
+            <trans-unit id="contentElement.callToAction.subheader">
+                <source>Link text</source>
+                <target>Beschriftung für Button</target>
+            </trans-unit>
+            <trans-unit id="contentElement.callToAction.rowDescription">
+                <source>Short Version</source>
+                <target>Kurztext</target>
+            </trans-unit>
+            <trans-unit id="contentElement.callToAction.imageManipulation.default">
+                <source>Default</source>
+                <target>Standard</target>
+            </trans-unit>
+            <trans-unit id="contentElement.callToAction.type.label">
+				<source>Font color</source>
+				<target>Schriftfarbe</target>
+			</trans-unit>
+			<trans-unit id="contentElement.callToAction.type.I.default">
+				<source>Black font</source>
+				<target>Schwarze Schrift</target>
+			</trans-unit>
+			<trans-unit id="contentElement.callToAction.type.I.1">
+				<source>White font</source>
+				<target>Weiße Schrift</target>
+			</trans-unit>
+
             <!-- ImageTextOverlay -->
             <trans-unit id="contentElement.imageTextOverlay.title">
                 <source>Image with text overlay</source>
@@ -790,16 +893,16 @@
             <trans-unit id="contentElement.imageTextOverlay.imageManipulation.default">
                 <source>Default</source>
                 <target>Standard</target>
-            </trans-unit>            
+            </trans-unit>
 
             <!-- TextImageBackground -->
             <trans-unit id="contentElement.textImageBackground.title">
-                <source>Text with image as background</source>
-                <target>Text mit Bild als Hintergrund</target>
+                <source>Text with image or video as background</source>
+                <target>Text mit Bild oder Video als Hintergrund</target>
             </trans-unit>
             <trans-unit id="contentElement.textImageBackground.description">
                 <source>Adds an text-image-background-element.</source>
-                <target>Text, dessen Hintergrund vollständig von einem Bild ausgefüllt wird.</target>
+                <target>Text, dessen Hintergrund vollständig von einem Bild oder Video ausgefüllt wird.</target>
             </trans-unit>
             <trans-unit id="contentElement.textImageBackground.rowDescription">
                 <source>Linktext</source>
@@ -837,7 +940,7 @@
                 <target>Text &amp; Bilder</target>
             </trans-unit>
             <trans-unit id="contentElement.textpic.description">
-                <source>Adds a combinded text-images-element.</source>
+                <source>Adds a combined text-images-element.</source>
                 <target>Text &amp; Bilder zum Einsatz auf einer Landingpage</target>
             </trans-unit>
 
@@ -905,6 +1008,23 @@
                 <target>Eine Kachel mit Bild und zugehörigem Modal bei Klick auf jeweils enthaltenen Link, um weitere Informationen zu hinterlegen.</target>
             </trans-unit>
 
+            <!-- Testimonial -->
+            <trans-unit id="contentElement.testimonial.title">
+                <source>Testimonial</source>
+                <target>Testimonial</target>
+            </trans-unit>
+            <trans-unit id="contentElement.testimonial.description">
+                <source>Adds a testimonial element.</source>
+                <target>Eine Fläche mit Bild und Text zur Darstellung eines Zitats.</target>
+            </trans-unit>
+			<trans-unit id="contentElement.testimonial.header.label">
+				<source>Name</source>
+				<target>Urheber</target>
+			</trans-unit>
+			<trans-unit id="contentElement.testimonial.bodytext.label">
+				<source>Quote</source>
+				<target>Zitat</target>
+			</trans-unit>
 
             <!-- MoreList -->
             <trans-unit id="contentElement.moreList.title">
@@ -1107,8 +1227,8 @@
                 <source>Default</source>
                 <target>Standard</target>
             </trans-unit>
-            
-            
+
+
             <!-- TabContainer -->
             <trans-unit id="contentElement.tabContainer.title">
                 <source>Tab-Container</source>
@@ -1129,8 +1249,8 @@
                 <source>Add a tap-text element.</source>
                 <target>Ein Textelement, das mit Anker-Links in Tab-Optik verwendet werden kann.</target>
             </trans-unit>
-            
-            
+
+
             <!-- AccordionContainer -->
             <trans-unit id="contentElement.accordionContainer.title">
                 <source>Accordion-Container</source>
@@ -1151,7 +1271,20 @@
                 <source>Add an accodion-element.</source>
                 <target>Ein Element für die Verwendung in einem Akkordeon.</target>
             </trans-unit>
-            
+
+			<!-- TagcloudElement -->
+			<trans-unit id="contentElement.tagcloudElement.title">
+				<source>Tagcloud element</source>
+				<target>Tagcloud-Element</target>
+			</trans-unit>
+			<trans-unit id="contentElement.tagcloudElement.description">
+				<source>Adds a tagcloud element.</source>
+				<target>Fügt ein Tagcloud-Element hinzu.</target>
+			</trans-unit>
+			<trans-unit id="contentElement.tagcloudElement.type.label">
+				<source>Weight</source>
+				<target>Gewichtung</target>
+			</trans-unit>
 
 		</body>
 	</file>

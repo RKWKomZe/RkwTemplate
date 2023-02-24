@@ -79,5 +79,13 @@ lib.txRkwTemplate {
         landingpageSiteHeader = CONTENT
         landingpageSiteHeader < styles.content.get
         landingpageSiteHeader.select.where = {#colPos} = 920
+
+        tool = CONTENT
+        tool < styles.content.get
+        tool.select.where = {#colPos} = 1000
+
+        embed = CONTENT
+        embed < styles.content.get
+        embed.select.where = {#colPos} = 1100
     }
 }

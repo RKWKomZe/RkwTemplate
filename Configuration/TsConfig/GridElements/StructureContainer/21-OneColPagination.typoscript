@@ -12,8 +12,8 @@ tx_gridelements.setup.contentContainerOneColPagination {
                         name = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.contentContainerOneColPagination.content
                         colPos = 50
                         allowed {
-                            CType = header, text, textpic, image, textmedia, rkwtemplate_toc, rkwtemplate_imagetextoverlay, rkwtemplate_imagelist, rkwtemplate_collapsed, gridelements_pi1, list, html, form_formframework
-                            tx_gridelements_backend_layout = tabContainer, accordionContainer
+                            CType = header, text, textpic, image, textmedia, rkwtemplate_toc, rkwtemplate_imagetextoverlay, rkwtemplate_imagelist, rkwtemplate_collapsed, gridelements_pi1, list, html, form_formframework, rkwtemplate_calltoaction
+                            tx_gridelements_backend_layout = tabContainer, accordionContainer, testimonialContainer, topicLinksContainer
                         }
                     }
                 }

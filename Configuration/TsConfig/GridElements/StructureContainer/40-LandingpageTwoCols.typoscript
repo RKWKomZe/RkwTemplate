@@ -15,12 +15,12 @@ tx_gridelements.setup.contentContainerLandingpageTwoCols {
                             CType = header, text, textpic, image, textmedia, gridelements_pi1, html, form_formframework
                         }
                     }
-                    
+
                     2 {
                         name = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.contentContainerLandingpageTwoCols.aside
                         colPos = 60
                         allowed {
-                            CType = text, rkwtemplate_toclandingpage
+                            CType = text, rkwtemplate_toclandingpage, rkwtemplate_keyvisual
                         }
                     }
                 }

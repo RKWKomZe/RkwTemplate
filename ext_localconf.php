@@ -18,7 +18,7 @@ call_user_func(
                 'Ajax' => 'mobileMenuAction',
             )
         );
-        
+
         //=================================================================
         // register icons
         //=================================================================
@@ -29,6 +29,16 @@ call_user_func(
             'rkw-template-slider', // Icon-Identifier, e.g. tx-myext-action-preview
             \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
             ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/Slider.svg']
+        );
+        $iconRegistry->registerIcon(
+            'rkw-template-boxsliderelement', // Icon-Identifier, e.g. tx-myext-action-preview
+            \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+            ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/Slider.svg']
+        );
+        $iconRegistry->registerIcon(
+            'rkw-template-calltoaction', // Icon-Identifier, e.g. tx-myext-action-preview
+            \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+            ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/Collapsed.svg']
         );
         $iconRegistry->registerIcon(
             'rkw-template-collage', // Icon-Identifier, e.g. tx-myext-action-preview
@@ -91,6 +101,16 @@ call_user_func(
             ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/TextWithButton.svg']
         );
         $iconRegistry->registerIcon(
+            'rkw-template-tagcloudelement', // Icon-Identifier, e.g. tx-myext-action-preview
+            \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+            ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/Tile.svg']
+        );
+        $iconRegistry->registerIcon(
+            'rkw-template-testimonial', // Icon-Identifier, e.g. tx-myext-action-preview
+            \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+            ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/Tile.svg']
+        );
+        $iconRegistry->registerIcon(
             'rkw-template-tile', // Icon-Identifier, e.g. tx-myext-action-preview
             \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
             ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/Tile.svg']
@@ -126,10 +146,15 @@ call_user_func(
             ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/TableOfContents.svg']
         );
         $iconRegistry->registerIcon(
+            'rkw-template-keyvisual', // Icon-Identifier, e.g. tx-myext-action-preview
+            \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
+            ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/TableOfContents.svg']
+        );
+        $iconRegistry->registerIcon(
             'rkw-template-toclandingpage', // Icon-Identifier, e.g. tx-myext-action-preview
             \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
             ['source' => 'EXT:rkw_template/Resources/Public/ContentElements/Icons/TableOfContents.svg']
-        );        
+        );
         $iconRegistry->registerIcon(
             'rkw-template-overview', // Icon-Identifier, e.g. tx-myext-action-preview
             \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,

@@ -1,10 +1,10 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
     <f:section name="Header">
-        <section class="contentbox content-padding-layoutmax box-mod">
+        <section id="c{data.uid}" class="contentbox content-padding-layoutmax box-mod">
             <f:if condition="{data.header}">
                 <div class="flex-container">
-                    
+
                     <f:render partial="Header/Header" arguments="{
                         header: data.header,
                         layout: '{f:if(condition:\'{data.header_layout}\', then:\'{data.header_layout}\', else:\'{settings.defaultHeaderType}\')}',
@@ -13,8 +13,7 @@
                 </div>
             </f:if>
     </f:section>
-    
-    
+
     <f:section name="Footer">
         </section>
     </f:section>

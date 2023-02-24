@@ -1,6 +1,7 @@
 <html
     xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
     xmlns:rkwBasics="http://typo3.org/ns/RKW/RkwBasics/ViewHelpers"
+    xmlns:rkwTemplate="http://typo3.org/ns/RKW/RkwTemplate/ViewHelpers"
     data-namespace-typo3-fluid="true">
 
     <f:comment><!-- aside --></f:comment>
@@ -12,7 +13,7 @@
 
     <f:comment><!-- content --></f:comment>
     <f:if condition="<rkwBasics:isEmpty string='{data.tx_gridelements_view_column_50}' /> == 0">
-        <div id="c{data.uid}" class="contentbox content-padding-layoutmax {f:if(condition: '{data.header_position} == 1', then: 'primary-mod')}{f:if(condition: '{data.header_position} == 2', then: 'secondary-mod')} text-mod">
+        <div id="c{data.uid}" class="contentbox content-padding-layoutmax text-mod {rkwTemplate:GetLandingpageElementModClass(headerPosition:'{data.header_position}')}">
             <f:render partial="StructureContainer/Content" section="Landingpage" arguments="{_all}"/>
         </div>
     </f:if>

@@ -46,11 +46,6 @@ $GLOBALS['TCA']['tt_content']['types']['gridelements_pi1']['columnsOverrides'] =
             'type' => 'passthrough'
         ]
     ],
-    'subheader' => [
-        'config' => [
-            'type' => 'passthrough'
-        ]
-    ],
     'header_link' => [
         'config' => [
             'type' => 'passthrough'

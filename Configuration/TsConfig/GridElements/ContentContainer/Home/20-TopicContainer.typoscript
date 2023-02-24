@@ -14,7 +14,7 @@ tx_gridelements.setup.topicContainer {
                         allowed {
                             CType = rkwtemplate_topic
                         }
-                        maxitems = 4
+                        maxitems = 8
                     }
                 }
             }

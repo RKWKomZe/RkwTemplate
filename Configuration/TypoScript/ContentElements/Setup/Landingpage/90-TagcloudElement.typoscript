@@ -1,0 +1,6 @@
+tt_content {
+    rkwtemplate_tagcloudelement =< lib.contentElement
+    rkwtemplate_tagcloudelement {
+        templateName = Landingpage/TagcloudElement
+    }
+}

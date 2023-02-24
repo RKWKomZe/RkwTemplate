@@ -135,6 +135,16 @@ page {
                 value = tpl-specials-detail show-first-headline body
             }
 
+            50000 = TEXT
+            50000 {
+              value = tpl-tool show-first-headline body
+            }
+
+            60000 = TEXT
+            60000 {
+              value = tpl-embed show-first-headline body
+            }
+
             stdWrap.noTrimWrap = | ||
         }
 

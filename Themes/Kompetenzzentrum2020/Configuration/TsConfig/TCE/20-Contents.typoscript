@@ -17,22 +17,22 @@ TCEFORM.tt_content {
     // 25 = In text, right (nowrap)
     // 26 = In text, left (nowrap)
     imageorient {
-        removeItems = 1,2,9,10,25,26
+        removeItems = 1,2,9,10
     }
-    
-    
+
+
     //===============================================================
     // for headlines
     //===============================================================
     header_layout {
-    
+
         altLabels {
-            1 = H2   
+            1 = H2
             2 = H3
             3 = H4
-            4 = H5        
+            4 = H5
         }
-        
+
         removeItems = 5
     }
 }
