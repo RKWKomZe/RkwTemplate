@@ -1,0 +1,40 @@
+plugin.tx_feregister {
+    settings {
+
+        # cat=plugin.tx_feregister//a; type=integer; label=Pid of login mask
+        loginPid =
+
+        # cat=plugin.tx_feregister//a; type=integer; label=Pid of logout mask
+        logoutPid =
+
+        # cat=plugin.tx_feregister//a; type=integer; label=Pid of registration mask
+        registrationPid =
+
+        # cat=plugin.tx_feregister//a; type=integer; label=Pid of welcome page
+        welcomePid =
+
+        # cat=plugin.tx_feregister//a; type=integer; label=Pid of welcome page for guests
+        welcomeGuestPid =
+
+        # cat=plugin.tx_feregister//a; type=integer; label=Pid of edit user mask
+        editUserPid =
+
+        # cat=plugin.tx_feregister//a; type=integer; label=Pid of groups list
+        groupsListPid =
+
+        consent {
+
+            // cat=plugin.tx_feregister//a; type=integer; label=Pid of terms & conditions
+            termsPid = 4782
+
+            // cat=plugin.tx_feregister; type=integer; label=PID for terms and conditions (AGB)
+            terms2Pid = 4781
+
+            # cat=plugin.tx_feregister//a; type=integer; label=Pid of privacy & conditions
+            privacyPid = 4780
+
+            # cat=plugin.tx_feregister//a; type=string; label=Company name for consent
+            companyName = das RKW Bremen
+        }
+    }
+}

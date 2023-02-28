@@ -42,7 +42,7 @@ TCEFORM.pages {
     //===============================================================
     // determine selectable layouts
     // value = 0 equals inheritance, value = 1 is default
-    tx_rkwbasics_fe_layout_next_level {
+    tx_accelerator_fe_layout_next_level {
 
         removeItems = 1,2,3,4,100
 

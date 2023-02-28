@@ -15,8 +15,8 @@ routeEnhancers:
       'csv/': 180
 
       # extension-specific pageNums
-      rkw-registration.json: 1449722003
-      'rkw-newletter/': 1536732477
+      fe-register.json: 1449722003
+      rkw-newletter: 1536732477
       yoast-snippetpreview.json: 1480321830
 
       # sitemaps and RSS

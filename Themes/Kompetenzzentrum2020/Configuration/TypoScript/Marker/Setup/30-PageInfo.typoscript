@@ -231,7 +231,7 @@ lib.txRkwTemplate {
         authorsBox {
             userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
             extensionName = RkwAuthors
-            pluginName = Rkwauthors
+            pluginName = Main
             vendorName = RKW
             controller = Authors
             switchableControllerActions {
@@ -251,7 +251,7 @@ lib.txRkwTemplate {
         authorsList {
             userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
             extensionName = RkwAuthors
-            pluginName = Rkwauthors
+            pluginName = Main
             vendorName = RKW
             controller = Authors
             switchableControllerActions {
@@ -271,7 +271,7 @@ lib.txRkwTemplate {
         authorsListNonRecursive {
             userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
             extensionName = RkwAuthors
-            pluginName = Rkwauthors
+            pluginName = Main
             vendorName = RKW
             controller = Authors
             switchableControllerActions {

@@ -1,0 +1,37 @@
+plugin.tx_feregister {
+    settings {
+
+        # cat=plugin.tx_feregister//a; type=integer; label=Pid of login mask
+        loginPid =
+
+        # cat=plugin.tx_feregister//a; type=integer; label=Pid of logout mask
+        logoutPid =
+
+        # cat=plugin.tx_feregister//a; type=integer; label=Pid of registration mask
+        registrationPid =
+
+        # cat=plugin.tx_feregister//a; type=integer; label=Pid of welcome page
+        welcomePid =
+
+        # cat=plugin.tx_feregister//a; type=integer; label=Pid of welcome page for guests
+        welcomeGuestPid =
+
+        # cat=plugin.tx_feregister//a; type=integer; label=Pid of edit user mask
+        editUserPid =
+
+        # cat=plugin.tx_feregister//a; type=integer; label=Pid of groups list
+        groupsListPid =
+
+        consent {
+
+            // cat=plugin.tx_feregister//a; type=integer; label=Pid of terms & conditions
+            termsPid =
+
+            # cat=plugin.tx_feregister//a; type=integer; label=Pid of privacy & conditions
+            privacyPid =
+
+            # cat=plugin.tx_feregister//a; type=string; label=Company name for consent
+            companyName = das RKW
+        }
+    }
+}

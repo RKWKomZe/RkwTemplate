@@ -1,0 +1,12 @@
+plugin.tx_ajaxapi {
+    persistence {
+        // cat=plugin.tx_ajaxapi//a; type=string; label=Default storage PID
+        storagePid = 3
+    }
+
+    settings {
+
+        # cat=plugin.tx_ajaxapi//a; type=boolean; label=Include JS for AJAX-API (Version 2)?
+        includeAjaxApiJs = 1
+    }
+}

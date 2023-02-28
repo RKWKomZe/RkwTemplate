@@ -1,0 +1,15 @@
+plugin.tx_postmaster {
+
+    settings {
+
+        # cat=plugin.tx_postmaster; type=integer; label=Pid of redirect plugin
+        redirectPid = 3951
+
+        // Delay for redirect
+        redirectDelay = 0
+
+        # cat=plugin.tx_postmaster; type=integer; label=Pid of plugin for pixel counter (HTML-mails only)
+        counterPixelPid = 3951
+
+    }
+}

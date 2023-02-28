@@ -49,7 +49,7 @@ plugin.tx_rkwconsultant {
 	}
 }
 
-plugin.tx_rkwmailer {
+plugin.tx_postmaster {
 
 	settings {
 
