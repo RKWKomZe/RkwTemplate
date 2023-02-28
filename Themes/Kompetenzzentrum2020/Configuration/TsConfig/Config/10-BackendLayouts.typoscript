@@ -163,7 +163,7 @@ mod {
                                         maxitems = 1
                                         allowed {
                                             CType = list
-                                            list_type = , rkwregistration_auth, rkwregistration_welcome
+                                            list_type = , feregister_auth, feregister_welcome
                                         }
                                     }
                                 }

@@ -1,0 +1,21 @@
+plugin.tx_postmaster {
+    persistence {
+        // cat=module.tx_postmaster//a; type=string; label=Default storage PID
+        storagePid = 776
+    }
+
+    settings {
+
+       # cat=module.tx_postmaster; type=integer; label=Pid of privacy information
+        privacyPid = 1921
+
+        # cat=module.tx_postmaster; type=integer; label=Pid of redirect plugin
+        redirectPid = 905
+
+        # cat=module.tx_postmaster; type=integer; label= Delay for redirect (in sec)
+        redirectDelay = 0
+
+        # cat=module.tx_postmaster; type=integer; label=Pid of plugin for pixel counter (HTML-mails only)
+        counterPixelPid = 905
+    }
+}

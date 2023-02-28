@@ -12,31 +12,31 @@ TCEFORM.pages{
 	//===============================================================
 	// Label der Layoutauswahlbox abändern
 	layout.label = Frontend Layout (ohne Unterseiten)
-	
+
 	// Die Layouts die man auswählen kann können hier benannt werden
 	// Der Wert für 0 sollte leer bleiben, 1 entspricht default
 	layout {
-	
+
 		altLabels.0 = Vererben
 		altLabels.1 = Standard
 		altLabels.2 = Layout 1
 		altLabels.3 = Layout 2
-	
+
 		// für mehr Layoutauswahlmöglichkeiten folgendes nehmen
 		// addItems.4 = Layout 3
 		// addItems.5 = Layout 4
 	}
-	
+
 	//===============================================================
 	// Frontendlayout mit Unterseiten
 	//===============================================================
 	// Der Wert für 0 sollte leer bleiben, 1 entspricht default
-	tx_rkwbasics_fe_layout_next_level {
+	tx_coreextended_fe_layout_next_level {
 		altLabels.0 = Vererben
 		altLabels.1 = Standard
 		altLabels.2 = Layout 1
 		altLabels.3 = Layout 2
-	
+
 		// für mehr Layoutauswahlmöglichkeiten folgendes nehmen
 		// addItems.4 = Layout 3
 		// addItems.5 = Layout 4

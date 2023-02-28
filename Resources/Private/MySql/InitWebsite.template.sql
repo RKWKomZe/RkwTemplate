@@ -110,7 +110,7 @@ ALTER TABLE `pages`
 --
 ALTER TABLE `pages`
   MODIFY `uid` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
-  
+
 --
 -- Tabellenstruktur für Tabelle `tt_content`
 --
@@ -150,7 +150,7 @@ INSERT INTO `tt_content` (`uid`, `pid`, `tstamp`, `crdate`, `cruser_id`, `sortin
 (6, '#@pid_contact_details#', '#@tstamp#', '#@tstamp#', 1, 128, 'list', 600, '', NULL, 'rkwauthors_rkwauthorsdetail', 0, NULL, -2, '', 0, '0', 0, 0),
 (7, '#@pid_404#', '#@tstamp#', '#@tstamp#', 1, 256, 'gridelements_pi1', 0, 'Container', NULL, '', 0, NULL, -2, 'contentContainerOneCol', 1, '0', 0, 0),
 (8, '#@pid_404#', '#@tstamp#', '#@tstamp#', 1, 256, 'text', -1, '', '<h3>Und was nun?</h3>\r\n<ul><li>Überprüfen Sie die Schreibweise in der Adresszeile Ihres Browsers ODER</li><li>Nutzen Sie unsere <link 1368 - internal-link "Öffnet Link in gleichem Fenster">Suche</link> ODER</li><li>Kontaktieren Sie unseren Support unter <link service@rkw.de - - "E-Mail Schreiben">service@rkw.de</link></li></ul>', '', 0, NULL, -2, '', 0, '#@gridcontainer_id#', 50, 0),
-(9, '#@pid_redirect#', '#@tstamp#', '#@tstamp#', 1, 256, 'list', -500, '', NULL, 'rkwmailer_rkwmailer', 0, NULL, -2, '', 0, '0', 0, 0);
+(9, '#@pid_redirect#', '#@tstamp#', '#@tstamp#', 1, 256, 'list', -500, '', NULL, 'postmaster_tracking', 0, NULL, -2, '', 0, '0', 0, 0);
 
 --
 -- Indizes der exportierten Tabellen

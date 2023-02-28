@@ -49,7 +49,7 @@ lib.txRkwTemplate {
         loginInfo = USER
         loginInfo {
             userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
-            extensionName = RkwRegistration
+            extensionName = FeRegister
             pluginName = Info
             vendorName = RKW
             controller = Info
@@ -60,9 +60,9 @@ lib.txRkwTemplate {
                 }
             }
 
-            view =< plugin.tx_rkwregistration.view
-            persistence =< plugin.tx_rkwregistration.persistence
-            settings =< plugin.tx_rkwregistration.settings
+            view =< plugin.tx_feregister.view
+            persistence =< plugin.tx_feregister.persistence
+            settings =< plugin.tx_feregister.settings
         }
     }
 }

@@ -1,0 +1,11 @@
+plugin.tx_feregister {
+
+    settings {
+
+        users {
+
+            # cat=plugin.tx_feregister//a; type=string; label=Groups a user is added to when registering as guest
+            guest.groupsOnRegister = 7
+        }
+    }
+}

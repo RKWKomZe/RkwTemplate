@@ -18,8 +18,8 @@
             </li>
         </f:if>
         <f:if condition="{loginPid}">
-            <li class="nav__item {f:if(condition:'{rkwTemplate:IsPageInCurrentRootline(pageUid:\'{loginPid}\')}', then:' is-active')} tx-rkwregistration-login-class">
-                <a href="{f:uri.page(pageUid:'{loginPid}')}" class="btn btn--secondary btn--nav tx-rkwregistration-login-text">
+            <li class="nav__item {f:if(condition:'{rkwTemplate:IsPageInCurrentRootline(pageUid:\'{loginPid}\')}', then:' is-active')} tx-feregister-login-class">
+                <a href="{f:uri.page(pageUid:'{loginPid}')}" class="btn btn--secondary btn--nav tx-feregister-login-text">
                     <f:translate key="{settings.themeLanguageFile}:partials.menus.main.closure.login" />
                 </a>
             </li>
@@ -51,8 +51,8 @@
                     </li>
                 </f:if>-->
                 <f:if condition="{loginPid}'">
-                    <li class="nav-mobile__item nav-mobile__item--bottom tx-rkwregistration-login-class">
-                        <a href="{f:uri.page(pageUid:'{loginPid}')}" class="nav-mobile__item nav-mobile__item--bottom tx-rkwregistration-login-text">
+                    <li class="nav-mobile__item nav-mobile__item--bottom tx-feregister-login-class">
+                        <a href="{f:uri.page(pageUid:'{loginPid}')}" class="nav-mobile__item nav-mobile__item--bottom tx-feregister-login-text">
                             <f:translate key="{settings.themeLanguageFile}:partials.menus.main.closure.login" />
                         </a>
                     </li>

@@ -44,7 +44,7 @@ page {
 # STANDARD- MARKER
 #############################################################################
 
-plugin.tx_rkwmailer {
+plugin.tx_postmaster {
 
 	settings {
 
