@@ -158,11 +158,11 @@ mod {
                             1 {
                                 columns {
                                     1 {
-                                        name = Plugin
+                                        name = Hauptinhalt / Plugin
                                         colPos = 1100
                                         maxitems = 1
                                         allowed {
-                                            CType = list
+                                            CType = list, text
                                             list_type = , feregister_auth, feregister_welcome
                                         }
                                     }

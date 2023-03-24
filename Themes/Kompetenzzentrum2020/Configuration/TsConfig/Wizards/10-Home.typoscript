@@ -4,7 +4,7 @@
 // ############################################################################
 
 // Basic settings that are at least valid for all columns. The more specific settings only further limit permissions of the basic settings further
-[RKW\RkwTemplate\Condition\Backend\BackendLayoutCondition = "pagets__homePages"]
+[backendLayout() == "pagets__homePages"]
 
     // remove everything - except for some items
     // Important: this also has to include gridelements_pi1 for the gridContainer if needed!
@@ -22,7 +22,7 @@
 
 [end]
 
-[RKW\RkwTemplate\Condition\Backend\BackendLayoutCondition = "pagets__homePages"] && [RKW\RkwTemplate\Condition\Backend\ColPosCondition = "100"]
+[backendLayout() == "pagets__homePages" && backendColPos() == "100"]
 
     // remove everything - except for some items
     // Important: this also has to include gridelements_pi1 for the gridContainer if needed!
@@ -37,7 +37,7 @@
 [end]
 
 
-[RKW\RkwTemplate\Condition\Backend\BackendLayoutCondition = "pagets__homePages"] && [RKW\RkwTemplate\Condition\Backend\ColPosCondition = "110"]
+[backendLayout() == "pagets__homePages" && backendColPos() == "110"]
 
     // remove everything - except for some items
     // Important: this also has to include gridelements_pi1 for the gridContainer if needed!
@@ -49,7 +49,7 @@
 [end]
 
 
-[RKW\RkwTemplate\Condition\Backend\BackendLayoutCondition = "pagets__homePages"] && [RKW\RkwTemplate\Condition\Backend\ColPosCondition = "120"]
+[backendLayout() == "pagets__homePages" && backendColPos() == "120"]
 
     // remove everything - except for some items
     // Important: this also has to include gridelements_pi1 for the gridContainer if needed!

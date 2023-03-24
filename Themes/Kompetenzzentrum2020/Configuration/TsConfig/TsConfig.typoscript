@@ -6,15 +6,15 @@
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:rkw_template/Themes/Kompetenzzentrum2020/Configuration/TsConfig/RTE" extensions="typoscript">
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:rkw_template/Themes/Kompetenzzentrum2020/Configuration/TsConfig/Wizards" extensions="typoscript">
 
-[PIDinRootline = 3561,158,378,3566,1370]
+[3561 in tree.rootLineIds || 158 in tree.rootLineIds || 378 in tree.rootLineIds || 3566 in tree.rootLineIds || 1370 in tree.rootLineIds]
     <INCLUDE_TYPOSCRIPT: source="FILE:EXT:rkw_template/Themes/Kompetenzzentrum2020/Configuration/TsConfig/Permissions/10-Publications.typoscript">
-[global]
+[END]
 
 # Environments
-[applicationContext = Development*]
+[applicationContext matches "#^Development#"]
     <INCLUDE_TYPOSCRIPT: source="EXT:rkw_template/Themes/Kompetenzzentrum2020/Configuration/TsConfig/__DEV/TsConfig.typoscript">
-[global]
+[END]
 
-[applicationContext = Production/Staging]
+[applicationContext matches "#^Production/(Dev|Staging)#"]
     <INCLUDE_TYPOSCRIPT: source="EXT:rkw_template/Themes/Kompetenzzentrum2020/Configuration/TsConfig/__STAGE/TsConfig.typoscript">
-[global]
+[END]

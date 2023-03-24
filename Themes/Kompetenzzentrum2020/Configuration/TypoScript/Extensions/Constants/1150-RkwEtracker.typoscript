@@ -1,7 +1,10 @@
 plugin.tx_rkwetracker {
     persistence {
-        // cat=plugin.tx_rkwetracker; type=integer; label=Default storage PID
+        // cat=plugin.tx_rkwetracker; type=string; label=Default storage PID
         storagePid = 3364
+
+        # cat=plugin.tx_rkwetracker//a; type=integer; label=Storage PID for new records
+        newRecordStoragePid = 3364
     }
 
     settings {

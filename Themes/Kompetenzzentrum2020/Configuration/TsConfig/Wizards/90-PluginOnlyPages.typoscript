@@ -4,7 +4,7 @@
 // ############################################################################
 
 // Basic settings that are at least valid for all columns. The more specific settings only further limit permissions of the basic settings further
-[RKW\RkwTemplate\Condition\Backend\BackendLayoutCondition = "pagets__pluginOnlyPages"]
+[backendLayout() == "pagets__pluginOnlyPages"]
 
     // remove everything - except for some items
     mod.wizards.newContentElement.wizardItems.common.show =

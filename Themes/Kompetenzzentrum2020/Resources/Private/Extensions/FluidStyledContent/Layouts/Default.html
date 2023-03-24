@@ -61,20 +61,21 @@
                                 <f:render partial="Wraps/Tool/Main" section="Footer" arguments="{_all}" />
                             </f:case>
 
-                            <f:comment><!-- Login --></f:comment>
+                            <f:comment><!-- Login-Main --></f:comment>
                             <f:case value="1100">
                                 <f:render partial="Wraps/Login/Main" section="Header" arguments="{_all}" />
                                 <f:render section="Main"/>
                                 <f:render partial="Wraps/Login/Main" section="Footer" arguments="{_all}" />
                             </f:case>
+                            
                             <f:defaultCase>
 								<f:render partial="Wraps/Topic/Main" section="Header" arguments="{_all}" />
 								<f:render section="Main"/>
 								<f:render partial="Wraps/Topic/Main" section="Footer" arguments="{_all}" />
 							</f:defaultCase>
 						</f:switch>
-
 					</f:then>
+                    
 					<f:else>
 						<f:if condition="{data.colPos} < 0">
 							<f:comment><!-- =============================================================
@@ -147,7 +148,14 @@
 				============================================================= --></f:comment>
 
                 <f:switch expression="{data.colPos}">
-                    <f:comment><!-- Login --></f:comment>
+                    <f:comment><!-- Login-Main --></f:comment>
+                    <f:case value="1100">
+                        <f:render partial="Wraps/Login/Main" section="Header" arguments="{_all}" />
+                        <f:render section="Main"/>
+                        <f:render partial="Wraps/Login/Main" section="Footer" arguments="{_all}" />
+                    </f:case>
+                    
+                    <f:comment><!-- Login-Description --></f:comment>
                     <f:case value="1110">
                         <f:render partial="Wraps/Login/Description" section="Header" arguments="{_all}" />
                         <f:render section="Main"/>

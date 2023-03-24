@@ -19,7 +19,7 @@ page {
         50 = CASE
         50 {
             // slide the template
-            key.data = levelfield:-2,tx_rkwbasics_fe_layout_next_level,slide
+            key.data = levelfield:-2,tx_coreextended_fe_layout_next_level,slide
             key.override.field = layout
 
             // default template file

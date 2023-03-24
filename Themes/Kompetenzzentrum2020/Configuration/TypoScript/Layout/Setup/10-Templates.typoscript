@@ -8,7 +8,7 @@ page {
         file.stdWrap.cObject = CASE
         file.stdWrap.cObject {
             // slide the template
-            key.data = levelfield:-2,tx_rkwbasics_fe_layout_next_level,slide
+            key.data = levelfield:-2,tx_coreextended_fe_layout_next_level,slide
             key.override.field = layout
 
             // default template file
@@ -23,11 +23,6 @@ page {
             11 = TEXT
             11 {
                 value = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/PluginOnly.html
-            }
-
-            12 = TEXT
-            12 {
-                value = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/Topic.html
             }
 
             20 = TEXT

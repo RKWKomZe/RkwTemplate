@@ -4,7 +4,7 @@
 // ############################################################################
 
 // Basic settings that are at least valid for all columns. The more specific settings only further limit permissions of the basic settings further
-[RKW\RkwTemplate\Condition\Backend\BackendLayoutCondition = "pagets__publicationPages"]
+[backendLayout() == "pagets__publicationPages"]
 
     // remove everything - except for some items
     mod.wizards.newContentElement.wizardItems.common.show := removeFromList(rkwtemplate_mission, rkwtemplate_multimedia, rkwtemplate_promoter, rkwtemplate_slider, rkwtemplate_topic, rkwtemplate_shortlink, rkwtemplate_overview, rkwtemplate_textimagebackground, rkwtemplate_tab, rkwtemplate_gallery, rkwtemplate_listelement, rkwtemplate_collage,  rkwtemplate_tacloud, rkwtemplate_text, rkwtemplate_textpic, rkwtemplate_toclandingpage, rkwtemplate_keyvisual, rkwtemplate_morelist, rkwtemplate_siteheader, rkwtemplate_tile, rkwtemplate_testimonial, rkwtemplate_button)
@@ -18,7 +18,7 @@
 
 [end]
 
-[RKW\RkwTemplate\Condition\Backend\BackendLayoutCondition = "pagets__publicationPages"] && [RKW\RkwTemplate\Condition\Backend\ColPosCondition = "0"]
+[backendLayout() == "pagets__publicationPages" && backendColPos() == "0"]
 
     // remove everything - except for some items
     // Important: this also has to include gridelements_pi1 for the gridContainer if needed!
@@ -29,7 +29,7 @@
 
 [end]
 
-[RKW\RkwTemplate\Condition\Backend\BackendLayoutCondition = "pagets__publicationPages"] && [RKW\RkwTemplate\Condition\Backend\ColPosCondition = "410"]
+[backendLayout() == "pagets__publicationPages" && backendColPos() == "410"]
 
     // remove everything - except for some items
     // Important: this also has to include gridelements_pi1 for the gridContainer if needed!
@@ -40,7 +40,7 @@
 
 [end]
 
-[RKW\RkwTemplate\Condition\Backend\BackendLayoutCondition = "pagets__publicationPages"] && [RKW\RkwTemplate\Condition\Backend\ColPosCondition = "420"]
+[backendLayout() == "pagets__publicationPages" && backendColPos() == "420"]
 
     // remove everything - except for some items
     // Important: this also has to include gridelements_pi1 for the gridContainer if needed!

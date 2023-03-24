@@ -6,8 +6,8 @@ lib.txRkwTemplate {
 
     socialMedia {
 
-        shareUrl = TEXT
-        shareUrl < lib.txCoreExtended.canonical.10
+        shareUrl = USER_INT
+        shareUrl.userFunc = Madj2k\CoreExtended\MetaTag\CanonicalGenerator->getPath
         shareUrl.stdWrap.rawUrlEncode = 1
 
     }

@@ -27,7 +27,7 @@ lib.txRkwTemplate {
     }
 }
 
-[globalVar = LIT:1 = {$plugin.tx_rkwtemplate_themeconfig.isMicrosite}]
+[{$plugin.tx_rkwtemplate_themeconfig.isMicrosite} == 1]
     lib.txRkwTemplate {
         navigation {
             sub2 {
@@ -39,4 +39,4 @@ lib.txRkwTemplate {
             }
         }
     }
-[global]
+[END]

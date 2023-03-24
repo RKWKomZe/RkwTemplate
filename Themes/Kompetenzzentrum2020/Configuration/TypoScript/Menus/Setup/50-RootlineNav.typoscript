@@ -28,7 +28,7 @@ lib.txRkwTemplate {
     }
 }
 
-[globalVar = LIT:1 = {$plugin.tx_rkwtemplate_themeconfig.isMicrosite}] || [globalVar = LIT:1 = {$plugin.tx_rkwtemplate_themeconfig.reducedMenuLevels}]
+[{$plugin.tx_rkwtemplate_themeconfig.isMicrosite} == 1 || {$plugin.tx_rkwtemplate_themeconfig.reducedMenuLevels} == 1]
     lib.txRkwTemplate {
         navigation {
             rootline {
@@ -40,9 +40,9 @@ lib.txRkwTemplate {
             }
         }
     }
-[global]
+[END]
 
-[globalVar = LIT:1 = {$plugin.tx_rkwtemplate_themeconfig.isMicrosite}] && [globalVar = LIT:1 = {$plugin.tx_rkwtemplate_themeconfig.reducedMenuLevels}]
+[{$plugin.tx_rkwtemplate_themeconfig.isMicrosite} == 1 && {$plugin.tx_rkwtemplate_themeconfig.reducedMenuLevels} == 1]
 
     lib.txRkwTemplate {
         navigation {
@@ -55,4 +55,4 @@ lib.txRkwTemplate {
             }
         }
     }
-[global]
+[END]

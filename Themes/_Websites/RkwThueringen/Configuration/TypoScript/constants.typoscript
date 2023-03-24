@@ -9,10 +9,10 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:./Special/Constants.typoscript">
 
 # Environments
-[applicationContext = Development*]
+[applicationContext matches "#^Development#"]
     <INCLUDE_TYPOSCRIPT: source="FILE:./__DEV/Constants.typoscript">
-[global]
+[END]
 
-[applicationContext = Production/Staging]
+[applicationContext matches "#^Production/(Dev|Staging)#"]
     <INCLUDE_TYPOSCRIPT: source="FILE:./__STAGE/Constants.typoscript">
-[global]
+[END]

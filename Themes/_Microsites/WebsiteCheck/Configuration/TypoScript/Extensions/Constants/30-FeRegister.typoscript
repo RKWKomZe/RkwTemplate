@@ -2,10 +2,19 @@ plugin.tx_feregister {
 
     settings {
 
-        users {
+        # cat=plugin.tx_feregister//a; type=integer; label=Pid of login mask
+        loginPid = 9294
 
-            # cat=plugin.tx_feregister//a; type=string; label=Groups a user is added to when registering as guest
-            guest.groupsOnRegister = 7
-        }
+        # cat=plugin.tx_feregister//a; type=integer; label=Pid of logout mask
+        logoutPid = 9291
+
+        # cat=plugin.tx_feregister//a; type=integer; label=Pid of registration mask
+        registrationPid = 9294
+
+        # cat=plugin.tx_feregister//a; type=integer; label=Pid of welcome page
+        welcomePid = 9295
+
+        # cat=plugin.tx_feregister//a; type=integer; label=Pid of welcome page for guests
+        welcomeGuestPid = 9293
     }
 }
