@@ -86,10 +86,10 @@ lib.txRkwTemplate {
 
         login = CONTENT
         login < styles.content.get
-        login.select.where = {#colPos} = 1100
+        login.select.where = {#colPos} = 2000
 
         loginDescription = CONTENT
         loginDescription < styles.content.get
-        loginDescription.select.where = {#colPos} = 1110
+        loginDescription.select.where = {#colPos} = 2010
     }
 }

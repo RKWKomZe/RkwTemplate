@@ -159,7 +159,7 @@ mod {
                                 columns {
                                     1 {
                                         name = Hauptinhalt / Plugin
-                                        colPos = 1100
+                                        colPos = 2000
                                         maxitems = 1
                                         allowed {
                                             CType = list, text
@@ -172,7 +172,7 @@ mod {
                                 columns {
                                     1 {
                                         name = Beschreibung
-                                        colPos = 1110
+                                        colPos = 2010
                                          allowed {
                                             CType = text
                                         }
