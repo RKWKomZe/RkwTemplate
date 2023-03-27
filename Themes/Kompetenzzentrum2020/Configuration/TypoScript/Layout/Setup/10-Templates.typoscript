@@ -91,6 +91,10 @@ page {
               value = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/Tool.html
             }
 
+            60000 = TEXT
+            60000 {
+              value = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/Embed.html
+            }
         }
 
         partialRootPaths {

@@ -73,7 +73,7 @@ page {
 
             60 = TEXT
             60 {
-                value = tpl-login body
+                value = tpl-login show-first-headline body
             }
 
             9000 = TEXT
@@ -134,6 +134,11 @@ page {
                 20.noTrimWrap = | ||
             }
 
+            40000 = TEXT
+            40000 {
+                value = page-map page-grid--4
+            }
+
             50000 = TEXT
             50000 {
               value = tpl-tool show-first-headline body
@@ -141,7 +146,7 @@ page {
 
             60000 = TEXT
             60000 {
-              value = tpl-login show-first-headline body
+              value = tpl-embed show-first-headline body
             }
 
             stdWrap.noTrimWrap = | ||

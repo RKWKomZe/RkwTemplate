@@ -111,7 +111,7 @@ plugin.tx_rkwtemplate_themeconfig {
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Use this text instead of a logo
         logoReplacementText =
-        
+
         # cat=plugin.tx_rkwtemplate_themeconfig; type=integer; label=ID of page for newsletter subscription
         newsletterSubscriptionPid = 2182
     }
@@ -122,15 +122,14 @@ plugin.tx_rkwtemplate_themeconfig {
 
     microsite {
 
-
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Vertical text (on microsites only)
-        textPoweredBy = Ein Angebot des RKW<span class="hide-mobile"> Kompetenzzentrums &ndash; hier mehr erfahren</span>
+        textPoweredBy = Ein Angebot des <span class="show-mobile">RKW</span><span class="hide-mobile"> {$plugin.tx_rkwtemplate_themeconfig.website.name} &ndash; hier mehr erfahren</span>
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to main website (on microsites only)
-        mainWebsiteUrl = https://www.rkw-kompetenzzentrum.de
+        mainWebsiteUrl = {$plugin.tx_rkwtemplate_themeconfig.website.baseUrl}
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Name of main website (on microsites only)
-        mainWebsiteName = RKW Kompetenzzentrum
+        mainWebsiteName = {$plugin.tx_rkwtemplate_themeconfig.website.name}
 
         # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Icon of main website (on microsites only)
         mainWebsiteLogoFile = {$plugin.tx_rkwtemplate_themeconfig.paths.microsite.mainWebsiteLogos}/logo-icon.png
@@ -169,11 +168,11 @@ plugin.tx_rkwtemplate_themeconfig {
 
     # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Main menu has less items than normal so breakpoint for hamburger menu can be 1024 instead of 1200
     shortMainMenu = 0
-    
+
     # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Shows a language switch in top of the page
     showLanguageSwitch = 0
-    
+
     # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Show no header-images on topic-templates on mobile
     noTopicHeaderImageOnMobile = 0
-    
+
 }

@@ -66,11 +66,11 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_boxsliderelement'] = [
                                     'default' => [
                                         'title' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.imageList.imageManipulation.default',
                                         'allowedAspectRatios' => [
-                                            '125:125' => [
-                                                'title' => '125 x 125',
-                                                'value' => 125 / 125
+                                            '350:192' => [
+                                                'title' => '350 x 192',
+                                                'value' => 350 / 192
                                             ]
-                                        ],
+                                        ]
                                     ]
                                 ]
                             ]

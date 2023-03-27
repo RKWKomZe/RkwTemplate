@@ -378,6 +378,29 @@ mod {
                     }
                 }
             }
+            
+           //======================================
+           // Embeddable content pages
+           //======================================
+          embedPages {
+              title = Eingebetteter Inhalt
+              config {
+                  backend_layout {
+                      colCount = 1
+                      rowCount = 1
+                      rows {
+                          1 {
+                              columns {
+                                  1 {
+                                      name = Inhalte
+                                      colPos = 1100
+                                  }
+                              }
+                          }
+                      }
+                  }
+              }
+          }
         }
     }
 }
