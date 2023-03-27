@@ -378,12 +378,12 @@ mod {
                     }
                 }
             }
-            
+
            //======================================
            // Embeddable content pages
            //======================================
           embedPages {
-              title = Eingebetteter Inhalt
+              title = Eingebetteter Inhalt (HTML)
               config {
                   backend_layout {
                       colCount = 1

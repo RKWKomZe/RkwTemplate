@@ -31,10 +31,9 @@ TCEFORM.pages {
         addItems.10000 = Detailseite: Experten
         addItems.20000 = Detailseite: Veranstaltungen
         addItems.40000 = Detailseite: Infografiken
+
         addItems.50000 = Reduziertes Layout: Tool
-
-
-        addItems.60000 = Eingebetteter Inhalt
+        addItems.60000 = Eingebetteter Inhalt (HTML)
 
     }
 
@@ -61,11 +60,13 @@ TCEFORM.pages {
         // add more items
         addItems.9000 = Broken Link
         addItems.9100 = Sonderseite
+
         addItems.10000 = Detailseite: Experten
         addItems.20000 = Detailseite: Veranstaltungen
         addItems.40000 = Detailseite: Infografiken
-        addItems.50000 = Reduziertes Layout: Tool
 
+        addItems.50000 = Reduziertes Layout: Tool
+        addItems.60000 = Eingebetteter Inhalt (HTML)
     }
 }
 
