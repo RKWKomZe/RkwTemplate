@@ -1,10 +1,16 @@
-
 plugin.tx_rkwevents {
 
 	persistence {
 		// cat=plugin.tx_rkwevents; type=integer; label=Default storage PID
-		// storagePid =
+		storagePid = 3652
+
+        # cat=plugin.tx_rkwevents; type=integer; label=Default storage PID for eventReservation (write only). PID set here has to be included in storagePid-List
+        eventReservation.newRecordStoragePid = 3652
+
+        # cat=plugin.tx_rkwevents; type=integer; label=Default storage PID for eventReservationAddPerson (write only). PID set here has to be included in storagePid-List
+        eventReservationAddPerson.newRecordStoragePid = 3652
 	}
+
 	settings {
 
 		// cat=plugin.tx_rkwevents; type=integer; label=PID for list view

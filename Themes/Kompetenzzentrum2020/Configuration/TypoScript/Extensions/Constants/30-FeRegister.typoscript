@@ -1,31 +1,31 @@
 plugin.tx_feregister {
     persistence {
         # cat=plugin.tx_rkwreservation//a; type=string; label=Default storage PID
-        storagePid = 618
+        storagePid = 10480, 618
     }
 
     settings {
 
         # cat=plugin.tx_feregister//a; type=integer; label=Pid of login mask
-        loginPid = 609
+        loginPid = 10513
 
         # cat=plugin.tx_feregister//a; type=integer; label=Pid of logout mask
-        logoutPid = 623
+        logoutPid = 10500
 
         # cat=plugin.tx_feregister//a; type=integer; label=Pid of registration mask
-        registrationPid = 609
+        registrationPid = 10513
 
         # cat=plugin.tx_feregister//a; type=integer; label=Pid of welcome page
-        welcomePid = 621
+        welcomePid = 10512
 
         # cat=plugin.tx_feregister//a; type=integer; label=Pid of welcome page for guests
-        welcomeGuestPid = 9240
+        welcomeGuestPid = 10511
 
         # cat=plugin.tx_feregister//a; type=integer; label=Pid of edit user mask
-        editUserPid = 613
+        editUserPid = 10506
 
         # cat=plugin.tx_feregister//a; type=integer; label=Pid of groups list
-        groupsListPid =	2263
+        groupsListPid =	10510
 
         # cat=plugin.tx_feregister//a; type=string; label=Company email for service
         companyEmail = service@rkw.de

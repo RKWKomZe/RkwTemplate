@@ -1,26 +1,32 @@
 plugin.tx_feregister {
+
+    persistence {
+        # cat=plugin.tx_rkwreservation//a; type=string; label=Default storage PID
+        storagePid = 10489, 618
+    }
+
     settings {
 
         # cat=plugin.tx_feregister//a; type=integer; label=Pid of login mask
-        loginPid =
+        loginPid = 10558
 
         # cat=plugin.tx_feregister//a; type=integer; label=Pid of logout mask
-        logoutPid =
+        logoutPid = 10545
 
         # cat=plugin.tx_feregister//a; type=integer; label=Pid of registration mask
-        registrationPid =
+        registrationPid = 10558
 
         # cat=plugin.tx_feregister//a; type=integer; label=Pid of welcome page
-        welcomePid =
+        welcomePid = 10557
 
         # cat=plugin.tx_feregister//a; type=integer; label=Pid of welcome page for guests
-        welcomeGuestPid =
+        welcomeGuestPid = 10556
 
         # cat=plugin.tx_feregister//a; type=integer; label=Pid of edit user mask
-        editUserPid =
+        editUserPid = 10551
 
         # cat=plugin.tx_feregister//a; type=integer; label=Pid of groups list
-        groupsListPid =
+        groupsListPid = 10555
 
         consent {
 
