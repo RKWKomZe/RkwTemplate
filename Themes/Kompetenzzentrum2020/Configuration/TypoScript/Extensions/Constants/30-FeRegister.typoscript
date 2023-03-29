@@ -1,31 +1,34 @@
 plugin.tx_feregister {
     persistence {
         # cat=plugin.tx_rkwreservation//a; type=string; label=Default storage PID
-        storagePid = 618
+        storagePid = 10480, 618
     }
 
     settings {
 
         # cat=plugin.tx_feregister//a; type=integer; label=Pid of login mask
-        loginPid = 9238
+        loginPid = 10513
 
         # cat=plugin.tx_feregister//a; type=integer; label=Pid of logout mask
-        logoutPid = 623
+        logoutPid = 10500
 
         # cat=plugin.tx_feregister//a; type=integer; label=Pid of registration mask
-        registrationPid = 9238
+        registrationPid = 10513
 
         # cat=plugin.tx_feregister//a; type=integer; label=Pid of welcome page
-        welcomePid = 621
+        welcomePid = 10512
 
         # cat=plugin.tx_feregister//a; type=integer; label=Pid of welcome page for guests
-        welcomeGuestPid = 9240
+        welcomeGuestPid = 10511
 
         # cat=plugin.tx_feregister//a; type=integer; label=Pid of edit user mask
-        editUserPid = 613
+        editUserPid = 10506
 
         # cat=plugin.tx_feregister//a; type=integer; label=Pid of groups list
-        groupsListPid =	2263
+        groupsListPid =	10510
+
+        # cat=plugin.tx_feregister//a; type=string; label=Company email for service
+        companyEmail = service@rkw.de
 
         consent {
              # cat=plugin.tx_feregister//a; type=integer; label=Pid of terms & conditions
@@ -42,16 +45,15 @@ plugin.tx_feregister {
 
             # cat=plugin.tx_feregister//a; type=string; label=Company name for consent
             companyName = das RKW Kompetenzzentrum
-        }
 
+            # cat=plugin.tx_feregister//a; type=string; label=Company email for revocation of consent
+            companyEmail = service@rkw.de
+        }
 
         users {
 
             # cat=plugin.tx_feregister//a; type=string; label=Groups a user is added to when registering
             groupsOnRegister = 2
-
-            # cat=plugin.tx_feregister//a; type=string; label=Language-key on registering (default:default)
-            languageKeyOnRegister = de
 
             # cat=plugin.tx_feregister//a; type=integer; label=How many days a user has to opt in via email
             daysForOptIn = 7

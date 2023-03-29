@@ -6,8 +6,8 @@ lib.txRkwTemplate {
 
     schemaOrg {
 
-        url = TEXT
-        url < lib.txCoreExtended.canonical.10
+        url = USER_INT
+        url.userFunc = Madj2k\CoreExtended\MetaTag\CanonicalGenerator->getPath
 
         #=================================================================
         logoUrl = TEXT
@@ -101,7 +101,7 @@ lib.txRkwTemplate {
 
         #=================================================================
         pageLayout = TEXT
-        pageLayout.data = levelfield:-2,tx_rkwbasics_fe_layout_next_level,slide
+        pageLayout.data = levelfield:-2,tx_coreextended_fe_layout_next_level,slide
         pageLayout.override.field = layout
 
         #=================================================================
@@ -120,7 +120,7 @@ lib.txRkwTemplate {
 
             userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
             extensionName = RkwAuthors
-            pluginName = Rkwauthors
+            pluginName = Main
             vendorName = RKW
             controller = Authors
             switchableControllerActions {

@@ -1,0 +1,23 @@
+
+// ############################################################################
+// add specific elements to wizards - by colPos and backend_layout
+// ############################################################################
+
+// Basic settings that are at least valid for all columns. The more specific settings only further limit permissions of the basic settings further
+[backendLayout() == "pagets__embedPages"]
+
+    // remove everything - except for some items
+    // Important: this also has to include gridelements_pi1 for the gridContainer if needed!
+    //  TCEFORM.tt_content.CType.keepItems = gridelements_pi1, header, text, textpic, image, textmedia, html, list, rkwtemplate_slider, rkwtemplate_toclandingpage, rkwtemplate_keyvisual, rkwtemplate_textimagebackground, rkwtemplate_listelement, rkwtemplate_morelist, rkwtemplate_gallery, rkwtemplate_collage, rkwtemplate_button, rkwtemplate_tile, rkwtemplate_testimonial, rkwtemplate_tagcloudelement
+
+    // remove everything - except for some items
+    mod.wizards.newContentElement.wizardItems.common.show =
+    mod.wizards.newContentElement.wizardItems.special.show = html
+    mod.wizards.newContentElement.wizardItems.forms.show =
+    mod.wizards.newContentElement.wizardItems.plugins.show =
+    mod.wizards.newContentElement.wizardItems.menu.show =
+
+    // remove grid elements by their ID (aka name)
+    tx_gridelements.excludeLayoutIds = sliderContainer, topicContainer, logoContainer, promoterContainer, listContainer, stickyFooterContainer, tilesContainer, testimonialContainer, galleryContainer, collageContainer, moreListContainer, tabContainer, accordionContainer, tagcloudContainer, boxSliderContainer, topicLinksContainer, contentContainerOneCol, contentContainerOneColPagination, contentContainerOneColOrderForm, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerOneColOrderForm, contentContainerLandingpageTwoCols, contentContainerLandingpageOneCol
+
+[end]

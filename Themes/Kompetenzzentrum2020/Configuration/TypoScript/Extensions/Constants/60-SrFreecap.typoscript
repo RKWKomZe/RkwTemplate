@@ -8,5 +8,5 @@ plugin.tx_srfreecap {
 	accessibleOutput = 0
 
     # cat=plugin.tx_srfreecap/enable/02; type=boolean; label= Generate CAPTCHA with numbers only. This option is ignored if Use list of words is enabled.
-    generateNumbers = 0
+    generateNumbers = 1
 }

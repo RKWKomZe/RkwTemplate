@@ -11,12 +11,12 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:../../../_Core/Configuration/TypoScript/Pages/Setup/50-Print.typoscript">
 
 # Environments
-[applicationContext = Development*]
+[applicationContext matches "#^Development#"]
     <INCLUDE_TYPOSCRIPT: source="FILE:./__DEV/Setup.typoscript">
-[global]
+[END]
 
-[applicationContext = Production/Staging]
+[applicationContext matches "#^Production/(Dev|Staging)#"]
     <INCLUDE_TYPOSCRIPT: source="FILE:./__STAGE/Setup.typoscript">
-[global]
+[END]
 
 txRkwAjaxPage.10 < page.10

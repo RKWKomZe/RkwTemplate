@@ -14,7 +14,7 @@ TCEFORM.tt_content {
 //=========================================================
 // Change some fields depending on layout and colPos
 //=========================================================
-[RKW\RkwTemplate\Condition\Backend\BackendLayoutCondition = "pagets__landingPages"] && [RKW\RkwTemplate\Condition\Backend\ColPosCondition = "900"]
+[backendLayout() == "pagets__landingPages" && backendColPos() == "900"]
 
     TCEFORM.tt_content {
 
@@ -37,7 +37,7 @@ TCEFORM.tt_content {
                 addItems.10 = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.gridelements_pi1.landingpage.layout.rounded
             }
         }
-        
+
          frame_class {
             types.gridelements_pi1 {
                 removeItems = ruler-before, ruler-after, indent, indent-left, indent-right, none
@@ -52,7 +52,7 @@ TCEFORM.tt_content {
 [end]
 
 
-[RKW\RkwTemplate\Condition\Backend\BackendLayoutCondition = "pagets__landingPages"] && [RKW\RkwTemplate\Condition\Backend\ColPosCondition = "910"]
+[backendLayout() == "pagets__landingPages" && backendColPos() == "910"]
 
     TCEFORM.tt_content {
 

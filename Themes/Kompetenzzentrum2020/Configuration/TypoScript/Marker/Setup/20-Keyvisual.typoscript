@@ -63,7 +63,7 @@ lib.txRkwTemplate {
         article {
 
             file = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/FluidTemplateLibs/Keyvisual/Article.html
-            partialRootPaths.0 = {$plugin.tx_rkwbasics.view.templateRootPath}
+            partialRootPaths.0 = {$plugin.tx_accelerator.view.templateRootPath}
 
             dataProcessing {
                 10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
@@ -129,7 +129,7 @@ lib.txRkwTemplate {
             20 {
 
                 file = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/FluidTemplateLibs/Keyvisual/Publication.html
-                partialRootPaths.0 = {$plugin.tx_rkwbasics.view.templateRootPath}
+                partialRootPaths.0 = {$plugin.tx_accelerator.view.templateRootPath}
 
                 variables {
 

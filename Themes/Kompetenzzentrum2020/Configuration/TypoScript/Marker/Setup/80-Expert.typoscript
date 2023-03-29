@@ -2,27 +2,6 @@ lib.txRkwTemplate {
 
     expert {
 
-        //=================================================================
-        work = COA_INT
-        work {
-            10 = USER_INT
-            10 {
-                userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
-                extensionName = RkwAuthors
-                pluginName = Rkwauthorswork
-                vendorName = RKW
-                controller = Authors
-                switchableControllerActions {
-                    // Again: Controller-Name and Action
-                    Authors {
-                        1 = showWork
-                    }
-                }
 
-                view =< plugin.tx_rkwauthors.view
-                persistence =< plugin.tx_rkwauthors.persistence
-                settings =< plugin.tx_rkwauthors.settings
-            }
-        }
     }
 }

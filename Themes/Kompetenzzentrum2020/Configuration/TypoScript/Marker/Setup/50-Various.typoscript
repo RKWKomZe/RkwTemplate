@@ -26,7 +26,7 @@ lib.txRkwTemplate {
         alerts {
             userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
             extensionName = RkwAlerts
-            pluginName = Rkwalerts
+            pluginName = Create
             vendorName = RKW
             controller = Alert
             switchableControllerActions {
@@ -51,7 +51,7 @@ lib.txRkwTemplate {
             userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
             extensionName = FeRegister
             pluginName = Info
-            vendorName = RKW
+            vendorName = Madj2k
             controller = Info
             switchableControllerActions {
                 // Again: Controller-Name and Action

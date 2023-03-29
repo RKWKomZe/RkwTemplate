@@ -42,7 +42,7 @@ plugin.tx_rkwauthors {
     }
 }
 
-[PIDinRootline = 5865]
+[5865 in tree.rootLineIds]
 
     plugin.tx_rkwauthors {
 

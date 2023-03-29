@@ -158,11 +158,11 @@ mod {
                             1 {
                                 columns {
                                     1 {
-                                        name = Plugin
-                                        colPos = 1100
+                                        name = Hauptinhalt / Plugin
+                                        colPos = 2000
                                         maxitems = 1
                                         allowed {
-                                            CType = list
+                                            CType = list, text
                                             list_type = , feregister_auth, feregister_welcome
                                         }
                                     }
@@ -172,7 +172,7 @@ mod {
                                 columns {
                                     1 {
                                         name = Beschreibung
-                                        colPos = 1110
+                                        colPos = 2010
                                          allowed {
                                             CType = text
                                         }
@@ -378,6 +378,29 @@ mod {
                     }
                 }
             }
+
+           //======================================
+           // Embeddable content pages
+           //======================================
+          embedPages {
+              title = Eingebetteter Inhalt (HTML)
+              config {
+                  backend_layout {
+                      colCount = 1
+                      rowCount = 1
+                      rows {
+                          1 {
+                              columns {
+                                  1 {
+                                      name = Inhalte
+                                      colPos = 1100
+                                  }
+                              }
+                          }
+                      }
+                  }
+              }
+          }
         }
     }
 }

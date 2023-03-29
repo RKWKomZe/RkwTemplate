@@ -8,14 +8,6 @@ page {
     //===============================================================
     headerData {
 
-        // override title with Yoast-Title
-        100 {
-
-            20 = COA
-            20 =< lib.yoastSEO.pageTitleComplete
-        }
-
-
         // Viewport
         200 = TEXT
         200.value (

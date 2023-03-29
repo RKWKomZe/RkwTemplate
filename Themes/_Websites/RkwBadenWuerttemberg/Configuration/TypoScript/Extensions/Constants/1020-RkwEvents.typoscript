@@ -4,7 +4,14 @@ plugin.tx_rkwevents {
 	persistence {
 		// cat=plugin.tx_rkwevents; type=integer; label=Default storage PID
 		storagePid = 5088
+
+        # cat=plugin.tx_rkwevents; type=integer; label=Default storage PID for eventReservation (write only). PID set here has to be included in storagePid-List
+        eventReservation.newRecordStoragePid = 5088
+
+        # cat=plugin.tx_rkwevents; type=integer; label=Default storage PID for eventReservationAddPerson (write only). PID set here has to be included in storagePid-List
+        eventReservationAddPerson.newRecordStoragePid = 5088
 	}
+
 	settings {
 
 		// cat=plugin.tx_rkwevents; type=integer; label=PID for list view
@@ -82,7 +89,7 @@ plugin.tx_rkwevents {
                 showTime = 1
 
                 # hint: use value "11" for the maximum amount of months!
-                showTimeNumberOfMonths = 6
+                showTimeNumberOfMonths = 11
 
                 # cat=plugin.tx_rkwevents; type=integer; label=Show filter option "address"
                 showAddress = 1

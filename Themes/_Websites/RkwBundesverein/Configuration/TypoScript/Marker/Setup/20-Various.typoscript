@@ -3,7 +3,7 @@ lib.txRkwTemplate {
     various {
 
         //=================================================================
-        alerts >
+        alerts = TEXT
 
     }
 }
