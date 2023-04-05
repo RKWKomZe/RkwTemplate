@@ -22,7 +22,7 @@ lib.txRkwTemplate {
                    expandAll = 1
                    includeSpacer = 0
 
-                   titleField = tx_rkwbasics_alternative_title // nav_title // title
+                   titleField = tx_coreextended_alternative_title // nav_title // title
                    // excludeUidList = {$plugin.tx_rkwtemplate_themeconfig.settings.mainNav.loginPid}
                    as = menuItems
 
