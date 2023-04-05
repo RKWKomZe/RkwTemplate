@@ -15,7 +15,7 @@ plugin.tx_accelerator {
             enable = 0
         }
         htmlMinify {
-            enable = 1
+            enable = 0
         }
     }
 }
