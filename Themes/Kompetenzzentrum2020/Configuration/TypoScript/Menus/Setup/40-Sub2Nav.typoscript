@@ -16,7 +16,7 @@ lib.txRkwTemplate {
                    entryLevel = 2
                    expandAll = 1
                    includeSpacer = 0
-                   titleField = tx_rkwbasics_alternative_title // nav_title // title
+                   titleField = tx_coreextended_alternative_title // nav_title // title
                    as = menuItems
                 }
 
