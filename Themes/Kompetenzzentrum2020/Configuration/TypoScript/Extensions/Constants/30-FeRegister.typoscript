@@ -1,7 +1,10 @@
 plugin.tx_feregister {
     persistence {
         # cat=plugin.tx_rkwreservation//a; type=string; label=Default storage PID
-        storagePid = 10480, 618
+        storagePid = 10480, 10483, 10486, 10489, 10492, 10495, 618
+
+        # cat=plugin.tx_feregister//a; type=string; label=Storage PID for new records
+        storagePidNewRecords = 10480
     }
 
     settings {
