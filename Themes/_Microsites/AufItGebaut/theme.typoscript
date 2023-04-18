@@ -20,7 +20,7 @@ plugin.tx_rkwtemplate_themeconfig {
         name = AufITGebaut
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=baseUrl (With / at the end for ClickEnlarge)
-        baseUrl = https://aufitgebaut.de
+        baseUrl = https://www.aufitgebaut.de
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=integer; label=ID of Rootpage
         rootPid = 9189
