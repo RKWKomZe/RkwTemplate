@@ -43,10 +43,10 @@ plugin.tx_rkwtemplate_themeconfig {
         # textPoweredBy = Ein Projekt des RKW Kompetenzzentrums
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to main website (on microsites only)
-        # mainWebsiteUrl = #
+        mainWebsiteUrl = https://www.rkw-kompetenzzentrum.de
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Name of main website (on microsites only)
-        # mainWebsiteName = RKW
+        mainWebsiteName = RKW Kompetenzzentrum
 
         # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Icon of main website (on microsites only)
         # mainWebsiteLogoFile =

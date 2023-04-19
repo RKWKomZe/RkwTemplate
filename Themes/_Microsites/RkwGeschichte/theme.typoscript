@@ -41,7 +41,7 @@ plugin.tx_rkwtemplate_themeconfig {
         mainWebsiteUrl = https://www.rkw-kompetenzzentrum.de/das-rkw/das-rkw/ueber-uns/
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Name of main website (on microsites only)
-        # mainWebsiteName =
+        mainWebsiteName = RKW Kompetenzzentrum
 
         # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Icon of main website (on microsites only)
         # mainWebsiteLogoFile =

@@ -36,10 +36,10 @@ plugin.tx_rkwtemplate_themeconfig {
         # textPoweredBy = Ein Angebot des RKW Kompetenzzentrums
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to main website (on microsites only)
-        # mainWebsiteUrl = https://www.rkw-kompetenzzentrum.de
+        mainWebsiteUrl = https://www.rkw-kompetenzzentrum.de
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Name of main website (on microsites only)
-        # mainWebsiteName = RKW Kompetenzzentrum
+        mainWebsiteName = RKW Kompetenzzentrum
 
         # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Icon of main website (on microsites only)
         # mainWebsiteLogoFile =
@@ -50,9 +50,9 @@ plugin.tx_rkwtemplate_themeconfig {
 
     # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Is this website a microsite?
     isMicrosite = 1
-    
+
     # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Shows a language switch in top of the page
-    showLanguageSwitch = 0    
+    showLanguageSwitch = 0
 
 }
 
