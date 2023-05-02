@@ -14,15 +14,13 @@ routeEnhancers:
       'plaintext/': 170
       'csv/': 180
 
-      # extension-specific pageNums
-      fe-register.json: 1449722003
-      rkw-newletter: 1536732477
-      yoast-snippetpreview.json: 1480321830
-
       # sitemaps and RSS
-      rkw-sitemap.xml: 1453279478
-      rkw-rss.xml: 1449588488
-      rkw-instantarticles.xml: 1449588489
+      sitemap.xml: 1453279478
+      rss.xml: 1449588488
+      instantarticles.xml: 1449588489
+
+      # extension-specific pageNums
+      rkw-newletter: 1536732477
 
       # some relicts from old AJAX-stuff
       rkw-shop.json: 1510210402
