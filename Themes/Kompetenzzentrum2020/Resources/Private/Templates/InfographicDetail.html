@@ -24,7 +24,7 @@
                     <!-- infobox -->
                     <div class="flex-container siteheader__meta siteheader__overlay-dark">
                         <div class="flex-item flex-basis-2 siteheader__overlay-img">
-                            <div class="siteheader__overlay-magazine">
+                            <div class="siteheader__overlay-magazine flex">
                                 <f:cObject typoscriptObjectPath="lib.txRkwTemplate.infographic.cover" data="{data}" />
                             </div>
                         </div>
@@ -70,7 +70,7 @@
                 <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.main" data="{data}" />
 
             </section>
-            
+
             <f:comment><!-- sticky-footer --></f:comment>
             <f:render partial="FooterSection/StickyFooter" section="Newsletter" arguments="{_all}" />
         </main>
