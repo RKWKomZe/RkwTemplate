@@ -13,6 +13,7 @@ tx_gridelements.setup.contentContainerLandingpageOneCol {
                         colPos = 50
                         allowed {
                             CType = header, text, textpic, image, textmedia, gridelements_pi1, html, form_formframework
+                            tx_gridelements_backend_layout = accordionContainer
                         }
                     }
                 }

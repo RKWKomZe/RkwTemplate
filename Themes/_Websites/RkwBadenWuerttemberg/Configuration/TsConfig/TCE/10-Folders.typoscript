@@ -12,3 +12,4 @@ TCEFORM.tx_rkwevents_domain_model_event.categories.PAGE_TSCONFIG_IDLIST = 5088
 TCEFORM.tx_rkwshop_domain_model_product.product_bundle.PAGE_TSCONFIG_IDLIST = 5596
 TCEFORM.tx_rkwshop_domain_model_orderitem.product.PAGE_TSCONFIG_IDLIST = 5596
 TCEFORM.tx_rkwshop_domain_model_product.author.PAGE_TSCONFIG_IDLIST = 5086
+TCEFORM.tt_content.pi_flexform.rkwrelated_morecontent.filteroptions.settings.categoriesList.config.treeConfig.rootUid = 23
