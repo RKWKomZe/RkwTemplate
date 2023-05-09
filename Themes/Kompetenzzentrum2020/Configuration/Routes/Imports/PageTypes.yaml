@@ -15,13 +15,13 @@ routeEnhancers:
       'csv/': 180
 
       # sitemaps and RSS
-      sitemap.xml: 1453279478
-      rss.xml: 1449588488
-      instantarticles.xml: 1449588489
+      sitemap/: 1453279478
+      rss/: 1449588488
+      instantarticles/: 1449588489
 
       # extension-specific pageNums
-      rkw-newletter: 1536732477
+      rkw-newletter/: 1536732477
 
       # some relicts from old AJAX-stuff
-      rkw-shop.json: 1510210402
-      rkw-tools.json: 1512989710
+      rkw-shop/: 1510210402
+      rkw-tools/: 1512989710
