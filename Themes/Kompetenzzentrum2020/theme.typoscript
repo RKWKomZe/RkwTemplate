@@ -147,7 +147,7 @@ plugin.tx_rkwtemplate_themeconfig {
         facebook = https://de-de.facebook.com/RKWexperten/
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to twitter page
-        twitter = https://twitter.com/rkw_experten
+        twitter =
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to xing page
         xing = https://www.xing.com/companies/rkwkompetenzzentrum
