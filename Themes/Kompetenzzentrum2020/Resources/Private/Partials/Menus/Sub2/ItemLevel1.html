@@ -1,11 +1,22 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
-   <li class="nav__item {f:if(condition:item.active, then:' is-active')} {f:if(condition:item.children, then:'has-dropdown is-dropdown')}">
-        <a href="{item.link}" target="{f:if(condition: item.target, then: item.target, else:'_self')}" {f:if(condition:item.children, then:'aria-haspopup="true"')}>
+   <li class="nav__item {f:if(condition:item.active, then:' is-active')} {f:if(condition:item.children, then:'has-dropdown')}">
+        <a href="{item.link}" target="{f:if(condition: item.target, then: item.target, else:'_self')}"
+           {f:if(condition:item.active, then:' aria-current="page"')}>
             {item.title}
         </a>
         <f:if condition="{item.children}">
-            <ul class="nav__dropdown">
+
+            <button class="js-dropdown-item"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    aria-controls="flyout-{item.data.uid}">
+                <svg class="icon icon--12" aria-label="{f:translate(key:'{settings.themeLanguageFile}:partials.menus.sub2.item.openSubmenuAriaLabel')}">
+                    <use xlink:href="#ic-arrow-primary" />
+                </svg>
+            </button>
+            
+            <ul class="nav__dropdown js-dropdown-toggle" id="flyout-{item.data.uid}">
                 <f:for each="{item.children}" as="item" iteration="iterator">
                     <f:render partial="ItemLevel2" arguments="{item: item, counter: iterator.cycle}"/>
                 </f:for>

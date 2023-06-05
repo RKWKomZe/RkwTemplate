@@ -5,9 +5,13 @@
 		<body>
 
 		    <!-- SliderContainer -->
-            <trans-unit id="gridElement.sliderContainer.showSlide">
-                <source>Show Slide %s</source>
-                <target>Zeige Slide %s</target>
+            <trans-unit id="gridElement.sliderContainer.previousAriaLabel">
+                <source>Go to previous Slide</source>
+                <target>Zum vorherigen Slide blättern</target>
+            </trans-unit>
+            <trans-unit id="gridElement.sliderContainer.nextAriaLabel">
+                <source>Go to next slide</source>
+                <target>Zum nächsten Slide blättern</target>
             </trans-unit>
 
             <!-- Shortlink -->

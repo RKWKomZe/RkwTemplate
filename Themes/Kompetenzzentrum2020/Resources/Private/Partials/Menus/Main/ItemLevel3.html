@@ -4,31 +4,37 @@
     <f:section name="Mobile">
 
         <li class="nav-mobile__item {f:if(condition:item.active, then:' is-active')}">
-            <a class="{f:if(condition: '{item.children} && {item.data.doktype} == 4 && {item.data.shortcut_mode} == 1', then: 'nav-mobile__item--toggle')}" href="{item.link}" target="{f:if(condition: item.target, then: item.target, else:'_self')}" {f:if(condition:item.children, then:' aria-haspopup="true"')}>
+        
+            <a href="{item.link}" 
+               class="nav-mobile__item-link {f:if(condition: '{item.children} && {item.data.doktype} == 4 && {item.data.shortcut_mode} == 1', then: 'nav-mobile__item--toggle')}" 
+               target="{f:if(condition: item.target, then: item.target, else:'_self')}"
+               {f:if(condition:item.active, then:' aria-current="page"')}>
                 {item.title}
             </a>
 
             <f:if condition="{item.children}">
-                <span class="nav-mobile__item-icon-wrapper nav-mobile__item--toggle">
-                    <button class="nav-mobile__item-icon" aria-label="{f:translate(key:'{settings.themeLanguageFile}:partials.menus.main.item.more')}">
-                        <svg class="icon icon--12">
-                            <use xlink:href="#ic-arrow-primary" />
-                        </svg>
-                    </button>
-                </span>
+                <button class="nav-mobile__item-icon nav-mobile__item--toggle" 
+                        aria-label="{f:translate(key:'{settings.themeLanguageFile}:partials.menus.main.item.nextLevelAriaLabel')}"
+                        aria-haspopup="true"
+                        aria-controls="mobile-submenu-{item.data.uid}">
+                    <svg class="icon icon--12">
+                        <use xlink:href="#ic-arrow-primary" />
+                    </svg>
+                </button>
 
-                <div class="flex-basis-12 inner-nav-mob {f:if(condition:item.active, then:' is-active-list')}">
+                <div class="flex-basis-12 inner-nav-mob {f:if(condition:subItem.active, then: 'is-active-list')-> f:for(each:item.children, as: 'subItem')}" id="mobile-submenu-{item.data.uid}">
                     <ul>
 
                         <!-- Backlink -->
                         <li class="nav-mobile__item nav-mobile__back-link">
-                            <span class="nav-mobile__item-icon-wrapper nav-mobile__item--toggle">
-                                <button class="nav-mobile__item-icon" aria-haspopup="true" aria-label="{f:translate(key:'{settings.themeLanguageFile}:partials.menus.main.item.back')}">
-                                    <svg class="icon icon--12">
-                                        <use xlink:href="#ic-arrow-primary" />
-                                    </svg>
-                                </button>
-                            </span>
+                            <button class="nav-mobile__item-icon nav-mobile__item--toggle nav-mobile__item-link"
+                                    aria-haspopup="true"
+                                    aria-label="{f:translate(key:'{settings.themeLanguageFile}:partials.menus.main.item.previousLevelAriaLabel')}"
+                                    aria-controls="mobile-submenu-{item.data.pid}">
+                                <svg class="icon icon--12">
+                                    <use xlink:href="#ic-arrow-primary" />
+                                </svg>
+                            </button>
                             <strong>
                                 {item.title}
                             </strong>

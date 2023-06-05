@@ -34,9 +34,10 @@
                 </div>
 
                 <f:comment><!-- breadcrumb --></f:comment>
-                <div class="breadcrumbs flex-container nav breadcrumb-padding">
+                <nav class="breadcrumbs flex-container nav breadcrumb-padding"
+                     aria-label="{f:translate(key:'{settings.themeLanguageFile}:templates.menus.breadcrumb.descriptionAriaLabel')}">
                     <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.breadcrumb" data="{data}" />
-                </div>
+                </nav>
 
                 <f:comment><!-- content --></f:comment>
                 <div class="contentbox contentbox--text contentbox--no-border-radius no-border-radius-smalldesk typo3-fsc">

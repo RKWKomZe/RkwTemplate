@@ -3,14 +3,26 @@
     <f:for each="{menuItems}" as="itemPrimary" iteration="iterator">
         <f:if condition="{itemPrimary.active}">
 
-            <li class="nav__item nav__item--white-background {f:if(condition:'{f:count(subject: menuItems)} > 1', then:'has-dropdown is-dropdown')}">
+            <li class="nav__item nav__item--white-background {f:if(condition:'{f:count(subject: menuItems)} > 1', then:'has-dropdown')}">
 
                 <!-- Do not insert line-breaks here because this will cause errors with the arrow (.::after) -->
-                <a href="{itemPrimary.link}" target="{f:if(condition: itemPrimary.target, then: itemPrimary.target, else:'_self')}"><span class="nav__item-text"><f:format.crop maxCharacters="50" respectWordBoundaries="true">{itemPrimary.title}</f:format.crop></span></a>
+                <a href="{itemPrimary.link}" target="{f:if(condition: itemPrimary.target, then: itemPrimary.target, else:'_self')}"
+                   {f:if(condition:itemPrimary.active, then:' aria-current="page"')}>
+                    <span class="nav__item-text"><f:format.crop maxCharacters="50" respectWordBoundaries="true">{itemPrimary.title}</f:format.crop></span>
+                </a>
 
                 <!-- add all inactive elements of the same level -->
                 <f:if condition="{f:count(subject: menuItems)} > 1">
-                    <ul class="contentbox nav__dropdown">
+                    <button class="js-dropdown-item"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                            aria-controls="flyout-{item.data.uid}">
+                        <svg class="icon icon--12" aria-label="{f:translate(key:'{settings.themeLanguageFile}:partials.menus.rootline.itemList.openSubmenuAriaLabel')}">
+                            <use xlink:href="#ic-arrow-primary" />
+                        </svg>
+                    </button>
+                    
+                    <ul class="contentbox nav__dropdown js-dropdown-toggle" id="flyout-{item.data.uid}">
                         <f:for each="{menuItems}" as="itemSecondary" iteration="iterator">
                             <f:if condition="! {itemSecondary.active}">
                                 <li class="nav-item__dropdown">

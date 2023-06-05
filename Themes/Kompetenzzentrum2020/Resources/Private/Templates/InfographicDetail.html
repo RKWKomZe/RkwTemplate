@@ -62,9 +62,10 @@
                 </div>
 
                 <f:comment><!-- breadcrumb --></f:comment>
-                <div class="breadcrumbs flex-container nav breadcrumb-padding">
+                <nav class="breadcrumbs flex-container nav breadcrumb-padding"
+                     aria-label="{f:translate(key:'{settings.themeLanguageFile}:templates.menus.breadcrumb.descriptionAriaLabel')}">
                     <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.breadcrumb" data="{data}" />
-                </div>
+                </nav>
 
                 <f:comment><!-- content --></f:comment>
                 <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.main" data="{data}" />

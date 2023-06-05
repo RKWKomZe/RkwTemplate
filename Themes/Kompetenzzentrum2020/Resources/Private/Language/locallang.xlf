@@ -14,34 +14,47 @@
             <trans-unit id="partials.basics.skipLink.labelContent">
                 <source>Jump to contents</source>
             </trans-unit>
-            
-            <trans-unit id="partials.basics.languageSwitch.label1">
+
+
+			<trans-unit id="partials.basics.languageSwitch.enLabel">
                 <source>en</source>
             </trans-unit>
-            <trans-unit id="partials.basics.languageSwitch.ariaLabel1">
+            <trans-unit id="partials.basics.languageSwitch.enAriaLabel">
                 <source>Switch to English</source>
             </trans-unit>
-            <trans-unit id="partials.basics.languageSwitch.label0">
+            <trans-unit id="partials.basics.languageSwitch.deLabel">
                 <source>de</source>
             </trans-unit>
-            <trans-unit id="partials.basics.languageSwitch.ariaLabel0">
+            <trans-unit id="partials.basics.languageSwitch.deAriaLabel">
                 <source>Switch to German</source>
-            </trans-unit>                
-
-
-			<trans-unit id="partials.menus.main.item.back">
-				<source>Go one level back</source>
-			</trans-unit>
-            <trans-unit id="partials.menus.main.item.next">
-                <source>Show Submenu</source>
             </trans-unit>
 
 
+			<trans-unit id="partials.basics.footer.descriptionAriaLabel">
+				<source>Footer-section of website</source>
+			</trans-unit>
+			<trans-unit id="partials.basics.footer.metaNavAriaLabel">
+				<source>Meta-navigation</source>
+			</trans-unit>
+
+
+			<trans-unit id="partials.basics.socialMedia.descriptionAriaLabel">
+				<source>Social Media-Profiles</source>
+			</trans-unit>
+
+
+			<trans-unit id="partials.menus.main.item.openSubmenuAriaLabel">
+				<source>Open submenu with Enter or arrow key down; close with Escape</source>
+			</trans-unit>
+			<trans-unit id="partials.menus.main.item.previousLevelAriaLabel">
+				<source>Go one level back</source>
+			</trans-unit>
+            <trans-unit id="partials.menus.main.item.nextLevelAriaLabel">
+                <source>Show Submenu</source>
+            </trans-unit>
 			<trans-unit id="partials.menus.main.list.home">
 				<source>Home</source>
 			</trans-unit>
-
-
 			<trans-unit id="partials.menus.main.closure.contact">
 				<source>Contact</source>
 			</trans-unit>
@@ -50,6 +63,16 @@
 			</trans-unit>
 			<trans-unit id="partials.menus.main.closure.funding">
 				<source>Funding Request</source>
+			</trans-unit>
+
+
+			<trans-unit id="partials.menus.sub2.item.openSubmenuAriaLabel">
+				<source>Open submenu with Enter or arrow key down; close with Escape</source>
+			</trans-unit>
+
+
+			<trans-unit id="partials.menus.rootline.itemList.openSubmenuAriaLabel">
+				<source>Open submenu with Enter or arrow key down; close with Escape</source>
 			</trans-unit>
 
 
@@ -75,15 +98,18 @@
             <trans-unit id="partials.infoBox.article.labelAbstract">
                 <source>Abstract</source>
             </trans-unit>
-            
-            
+
+
             <trans-unit id="partials.footerSection.stickyNewsletterHeadline">
                 <source>Updates for the Medium-sized business</source>
             </trans-unit>
             <trans-unit id="partials.footerSection.stickyNewsletterButton">
                 <source>Subscribe to RKW Newsletter</source>
             </trans-unit>
-            
+			<trans-unit id="stickyNewsletterCloseButtonAriaLabel">
+				<source>Close hint</source>
+			</trans-unit>
+
 
             <trans-unit id="partials.infoBox.publication.labelMeta">
                 <source>Information</source>
@@ -136,26 +162,62 @@
             <trans-unit id="partials.basics.logo.homeLink">
                 <source>Home</source>
             </trans-unit>
+            <trans-unit id="partials.basics.logo.homeLinkAriaLabel">
+                <source>Link to home</source>
+            </trans-unit>
 
 
             <!-- ================================================================= -->
             <!-- Templates -->
             <!-- ================================================================= -->
-            <trans-unit id="templates.menus.main.open">
+            <trans-unit id="templates.menus.main.openAriaLabel">
                 <source>Open Mainmenu</source>
             </trans-unit>
-            <trans-unit id="templates.menus.main.close">
+            <trans-unit id="templates.menus.main.closeAriaLabel">
                 <source>Close Mainmenu</source>
             </trans-unit>
+            <trans-unit id="templates.menus.main.headlineAriaLabelMobileAriaLabel">
+                <source>Main menu for mobile view</source>
+            </trans-unit>
+            <trans-unit id="templates.menus.main.headlineAriaLabel">
+                <source>Main menu</source>
+            </trans-unit>
+
+
+			<trans-unit id="templates.menu.sub.descriptionAriaLabel">
+				<source>First level sub-menu</source>
+				<target>Untermenü erster Ebene</target>
+			</trans-unit>
+
+
+			<trans-unit id="templates.menu.sub2.descriptionAriaLabel">
+				<source>Second level sub-menu</source>
+				<target>Untermenü zweiter Ebene</target>
+			</trans-unit>
+
+
+			<trans-unit id="templates.menu.rootline.descriptionAriaLabel">
+				<source>Third level sub-menu</source>
+				<target>Untermenü dritter Ebene</target>
+			</trans-unit>
+
+
             <trans-unit id="templates.menus.readMore.previous">
                 <source>Back</source>
             </trans-unit>
             <trans-unit id="templates.menus.readMore.next">
                 <source>Next</source>
             </trans-unit>
+
+
             <trans-unit id="templates.menus.readMore.readOnlineNow">
                 <source>Read online now</source>
             </trans-unit>
+
+
+			<trans-unit id="templates.menus.breadcrumb.descriptionAriaLabel">
+				<source>Breadcrumb-Navigation</source>
+			</trans-unit>
 
             <!-- ================================================================= -->
             <!-- Layouts -->

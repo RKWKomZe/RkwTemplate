@@ -3,17 +3,17 @@
 
     <f:section name="Newsletter">
         <f:if condition="{settings.websiteNewsletterSubscriptionPid}">
-            <div class="footer--fixed js-fixed-footer" data-use-cookie="true">
+            <div class="footer--fixed js-fixed-footer" data-use-cookie="true" role="alertdialog" aria-hidden="true" aria-labelledby="newsletterFooterHeadline">
                 <div class="footer-content">
-                    <p class="h3"><f:translate key="{settings.themeLanguageFile}:partials.footerSection.stickyNewsletterHeadline" /></p>
+                    <p class="h3" id="newsletterFooterHeadline"><f:translate key="{settings.themeLanguageFile}:partials.footerSection.stickyNewsletterHeadline" /></p>
                     <div class="btn-list flex-container center-main">
-                        <f:link.page pageUid="{settings.websiteNewsletterSubscriptionPid}" target="_blank" class="btn btn--primary">
+                        <f:link.page pageUid="{settings.websiteNewsletterSubscriptionPid}" target="_blank" class="btn btn--primary" tabindex="1">
                             <f:translate key="{settings.themeLanguageFile}:partials.footerSection.stickyNewsletterButton" />
                         </f:link.page>
                     </div>
                 </div>
                 <div class="footer-totop">
-                    <a class="footer-totop__close js-close-footer">&times;</a>
+                    <a class="footer-totop__close js-close-footer" tabindex="2" aria-label="{f:translate(key:'{settings.themeLanguageFile}:partials.footerSection.stickyNewsletterCloseButtonAriaLabel')}">&times;</a>
                 </div>
             </div>
         </f:if>

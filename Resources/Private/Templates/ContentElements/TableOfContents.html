@@ -4,8 +4,8 @@
 
     <f:section name="Main">
         <f:if condition="{items-> f:count()} > 1">
-            <nav class="anchor-nav">
-                <p class="anchor-nav__header">{data.header}</p>
+            <nav class="anchor-nav" aria-labelledby="toc-headline-{data.uid}">
+                <p class="anchor-nav__header" id="toc-headline-{data.uid}" aria-role="heading" aria-level="2">{data.header}</p>
                 <ol class="anchor-nav__list">
                     <f:for each="{items}" as="item">
                         <li class="anchor-nav__item">

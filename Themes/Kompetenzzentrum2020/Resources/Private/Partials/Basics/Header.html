@@ -4,19 +4,23 @@
 
     <div class="meta flex-basis-12 flex-container space-between">
         <div class="site-logo {f:if(condition:'{settings.websiteLogoReplacementText}', else: 'site-logo--no-padding')} flex-basis-3">
-            <a href="{settings.websiteLogoUrl}" title="<f:translate key='{settings.themeLanguageFile}:partials.basics.logo.homeLink' />" class="site-logo__link">
+            <a 
+                href="{settings.websiteLogoUrl}" 
+                title="<f:translate key='{settings.themeLanguageFile}:partials.basics.logo.homeLink' />" 
+                aria-label="<f:translate key='{settings.themeLanguageFile}:partials.basics.logo.homeLinkAriaLabel' />"
+                class="site-logo__link">
                 <f:if condition="{settings.websiteLogoReplacementText}">
                     <f:then>
                         <span class="site_logo__text">{settings.websiteLogoReplacementText}</span>
                     </f:then>
                     <f:else>
-                        <img class="site-logo__desktop" src="{settings.websiteLogoFile}" alt="{settings.websiteName}" />
+                        <img class="site-logo__desktop" src="{settings.websiteLogoFile}" alt="" />
                         <f:if condition="{settings.websiteLogoMobileFile}">
                             <f:then>
-                                <img class="site-logo__mobile" src="{settings.websiteLogoMobileFile}" alt="{settings.websiteName}" />
+                                <img class="site-logo__mobile" src="{settings.websiteLogoMobileFile}" alt="" />
                             </f:then>
                             <f:else>
-                                <img class="site-logo__mobile site-logo__mobile--fallback" src="{settings.websiteLogoFile}" alt="{settings.websiteName}" />
+                                <img class="site-logo__mobile site-logo__mobile--fallback" src="{settings.websiteLogoFile}" alt="" />
                             </f:else>
                         </f:if>
                     </f:else>
@@ -49,14 +53,18 @@
             <div class="microsite-bar__container">
                 <f:if condition="{settings.micrositeMainWebsiteLogoFile}">
                     <div class="microsite-bar__logo">
-                        <a href="{settings.micrositeMainWebsiteUrl}" rel="nofollow"  target="_blank" class="page-header__microsite-button" aria-controls="main-menu" title="{settings.micrositeMainWebsiteName}">
-                            <img src="{settings.micrositeMainWebsiteLogoFile}" alt="{settings.micrositeMainWebsiteName}" />
+                        <a href="{settings.micrositeMainWebsiteUrl}" 
+                           rel="nofollow"  
+                           target="_blank" class="page-header__microsite-button" 
+                           aria-controls="main-menu" 
+                           title="{settings.micrositeMainWebsiteName}">
+                            <img src="{settings.micrositeMainWebsiteLogoFile}" alt="" />
                         </a>
                     </div>
                 </f:if>
                 <f:if condition="{settings.micrositeTextPoweredBy}">
                     <div class="microsite-bar__text">
-                        <a href="{settings.micrositeMainWebsiteUrl}" rel="nofollow" target="_blank" title="{settings.micrositeMainWebsiteName}">
+                        <a href="{settings.micrositeMainWebsiteUrl}" rel="nofollow" target="_blank" title="">
                             <f:format.raw>{settings.micrositeTextPoweredBy}</f:format.raw>
                         </a>
                     </div>

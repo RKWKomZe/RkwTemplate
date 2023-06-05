@@ -5,7 +5,7 @@ plugin.tx_srfreecap {
 
     // does not work; audio not used ATM
     # cat=plugin.tx_srfreecap/enable/03; type=boolean; label= Accessible output: If enabled, the CAPTCHA will include an audio version.
-	accessibleOutput = 0
+	accessibleOutput = 1
 
     # cat=plugin.tx_srfreecap/enable/02; type=boolean; label= Generate CAPTCHA with numbers only. This option is ignored if Use list of words is enabled.
     generateNumbers = 1
