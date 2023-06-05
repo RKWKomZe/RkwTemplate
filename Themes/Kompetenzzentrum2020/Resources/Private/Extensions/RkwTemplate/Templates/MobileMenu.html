@@ -2,7 +2,7 @@
     xmlns:ajaxApi="http://typo3.org/ns/Madj2k/AjaxApi/ViewHelpers"
     data-namespace-typo3-fluid="true">
 
-    <template class="ajax" data-ajax-max-width="1280" data-ajax-url="{f:uri.action(action:'mobileMenu', absolute:'1', addQueryString:'1', additionalParams:'{ajax_api : \'{key: ajaxHelper.key, cid: ajaxHelper.contentUid, idl: \\\'1\\\'}\'}') -> f:format.raw()}"></template>
+    <template class="ajax" data-ajax-max-width="1440" data-ajax-url="{f:uri.action(action:'mobileMenu', absolute:'1', addQueryString:'1', additionalParams:'{ajax_api : \'{key: ajaxHelper.key, cid: ajaxHelper.contentUid, idl: \\\'1\\\'}\'}') -> f:format.raw()}"></template>
 
     <f:comment><!-- load mobile menu via AJAX, init it and then try to re-init login-info --></f:comment>
     <ajaxApi:ajaxWrapper ajaxHelper="{ajaxHelper}" ajaxAction="replace" ajaxId="1">

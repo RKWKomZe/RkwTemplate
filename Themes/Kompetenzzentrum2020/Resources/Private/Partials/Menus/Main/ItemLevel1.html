@@ -2,13 +2,26 @@
 
     <f:section name="Default">
 
-        <li class="nav__item {f:if(condition: '{item.children} && !{item.data.tx_rkwtemplate_disable_flyout_menu}', then:' js-dropdown-item')} {f:if(condition:item.active, then:' is-active')}">
-            <a class="{f:if(condition: '{item.children} && !{item.data.tx_rkwtemplate_disable_flyout_menu}', then:'nav__item-link')}" href="{item.link}" target="{f:if(condition: item.target, then: item.target, else:'_self')}" tabindex="{iterator.index}" {f:if(condition: '{item.children} && !{item.data.tx_rkwtemplate_disable_flyout_menu}', then:' aria-haspopup="true" aria-controls="flyout-{item.data.uid}"')} >
+        <li class="nav__item {f:if(condition: '{item.children} && !{item.data.tx_rkwtemplate_disable_flyout_menu}', then:' has-dropdown')} {f:if(condition:item.active, then:' is-active')}">
+            <a href="{item.link}"
+               class="{f:if(condition: '{item.children} && !{item.data.tx_rkwtemplate_disable_flyout_menu}', then:'nav__item-link')}"  
+               target="{f:if(condition: item.target, then: item.target, else:'_self')}"
+               {f:if(condition:item.active, then:' aria-current="page"')}>
                 {item.title}
             </a>
             
             <f:if condition="{item.children} && !{item.data.tx_rkwtemplate_disable_flyout_menu}">
-                <div class="nav-flyout js-toggle-dropdown" role="menu" id="flyout-{item.data.uid}">
+
+                <button class="js-dropdown-item"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        aria-controls="flyout-{item.data.uid}">
+                    <svg class="icon icon--12" aria-label="{f:translate(key:'{settings.themeLanguageFile}:partials.menus.main.item.openSubmenuAriaLabel')}">
+                        <use xlink:href="#ic-arrow-primary" />
+                    </svg>
+                </button>
+                
+                <div class="nav-flyout js-dropdown-toggle" id="flyout-{item.data.uid}">
                     <div class="hover-background">
                         <ul class="nav-flyout__dropdown">
                             <f:for each="{item.children}" as="item" iteration="iterator">
@@ -27,32 +40,39 @@
     <f:section name="Mobile">
 
         <li class="nav-mobile__item {f:if(condition:item.active, then:' is-active')} {f:if(condition: '{item.data.uid} == {loginPid}', then: 'tx-feregister-login-class')}">
-            <a href="{item.link}" class="{f:if(condition: '{item.data.uid} == {loginPid}', then: 'tx-feregister-login-text')} {f:if(condition: '{item.children} && {item.data.doktype} == 4 && {item.data.shortcut_mode} == 1', then: 'nav-mobile__item--toggle')}" target="{f:if(condition: item.target, then: item.target, else:'_self')}" {f:if(condition:item.children, then:' aria-haspopup="true"')}>
+        
+            <a href="{item.link}" 
+               class="nav-mobile__item-link {f:if(condition: '{item.data.uid} == {loginPid}', then: 'tx-feregister-login-text')} {f:if(condition: '{item.children} && {item.data.doktype} == 4 && {item.data.shortcut_mode} == 1', then: 'nav-mobile__item--toggle')}" 
+               target="{f:if(condition: item.target, then: item.target, else:'_self')}"
+               {f:if(condition:item.active, then:' aria-current="page"')}>
                 {item.title}
             </a>
 
 
             <f:if condition="{item.children}">
-                <span class="nav-mobile__item-icon-wrapper nav-mobile__item--toggle">
-                    <button class="nav-mobile__item-icon" aria-label="{f:translate(key:'{settings.themeLanguageFile}:partials.menus.main.item.more')}">
-                        <svg class="icon icon--12">
-                            <use xlink:href="#ic-arrow-primary" />
-                        </svg>
-                    </button>
-                </span>
+                <button class="nav-mobile__item-icon nav-mobile__item--toggle" 
+                        aria-label="{f:translate(key:'{settings.themeLanguageFile}:partials.menus.main.item.nextLevelAriaLabel')}"
+                        aria-haspopup="true"
+                        aria-controls="mobile-submenu-{item.data.uid}">
+                    <svg class="icon icon--12">
+                        <use xlink:href="#ic-arrow-primary" />
+                    </svg>
+                </button>
 
-                <div class="flex-basis-12 inner-nav-mob {f:if(condition:item.active, then:' is-active-list')}">
+                
+                <div class="flex-basis-12 inner-nav-mob {f:if(condition:subItem.active, then: 'is-active-list')-> f:for(each:item.children, as: 'subItem')}" id="mobile-submenu-{item.data.uid}">
                     <ul>
 
                         <f:comment><!-- Backlink --></f:comment>
                         <li class="nav-mobile__item nav-mobile__back-link">
-                            <span class="nav-mobile__item-icon-wrapper nav-mobile__item--toggle">
-                                <button class="nav-mobile__item-icon" aria-haspopup="true" aria-label="{f:translate(key:'{settings.themeLanguageFile}:partials.menus.main.item.back')}">
-                                    <svg class="icon icon--12">
-                                        <use xlink:href="#ic-arrow-primary" />
-                                    </svg>
-                                </button>
-                            </span>
+                            <button class="nav-mobile__item-icon nav-mobile__item--toggle nav-mobile__item-link" 
+                                    aria-haspopup="true" 
+                                    aria-label="{f:translate(key:'{settings.themeLanguageFile}:partials.menus.main.item.previousLevelAriaLabel')}"
+                                    aria-controls="tx-rkwtemplate-mobile-menu">
+                                <svg class="icon icon--12">
+                                    <use xlink:href="#ic-arrow-primary" />
+                                </svg>
+                            </button>
                             <strong>
                                 {item.title}
                             </strong>

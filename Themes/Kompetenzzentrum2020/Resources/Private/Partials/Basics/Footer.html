@@ -1,16 +1,18 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
     <f:section name="Default">
-        <div class="footerwrap">
-            <footer class="footer flex-container">
-                <div class="nav footerlinks flex-basis-12">
-                    <span class="footerlinks__desc float-left">
+        <nav class="footerwrap">
+            <footer class="footer flex-container"
+                    aria-label="{f:translate(key:'{settings.themeLanguageFile}:partials.basics.footer.descriptionAriaLabel')}">
+                <nav class="nav footerlinks flex-basis-12"
+                     aria-label="{f:translate(key:'{settings.themeLanguageFile}:partials.basics.footer.metaNavAriaLabel')}">
+                    <span class="footerlinks__desc float-left" role="none">
                         <f:cObject typoscriptObjectPath="lib.txRkwTemplate.utility.copyright" data="{data}" />
                     </span>
                     <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.meta" />
-                </div>
+                </nav>
                 <f:render partial="Basics/SocialMedia" section="Default" arguments="{_all}" />
             </footer>
-        </div>
+        </nav>
     </f:section>
 </html>

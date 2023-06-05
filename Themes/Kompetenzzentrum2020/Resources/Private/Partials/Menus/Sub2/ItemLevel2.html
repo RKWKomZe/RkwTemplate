@@ -1,7 +1,8 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
    <li class="nav-item__dropdown {f:if(condition:item.active, then:' is-active')}">
-        <a href="{item.link}" target="{f:if(condition: item.target, then: item.target, else:'_self')}">
+        <a href="{item.link}" target="{f:if(condition: item.target, then: item.target, else:'_self')}"
+           {f:if(condition:item.active, then:' aria-current="page"')}>
             {item.title}
         </a>
    </li>

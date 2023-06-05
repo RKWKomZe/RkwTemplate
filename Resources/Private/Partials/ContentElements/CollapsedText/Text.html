@@ -9,12 +9,14 @@
 
     <f:if condition="{data.bodytext}">
         <div class="collapsed-text">
-            <div class="collapsed-text__container show-first-headline typo3-fsc is-hidden">
+            <div class="collapsed-text__container show-first-headline typo3-fsc is-hidden" aria-hidden="true" id="collapsed-text-{data.uid}">
                 <f:render partial="TextPic" arguments="{_all}"/>
             </div>
             <button class="collapsed-text__btn"
                 data-opentext="{f:translate(key:'LLL:EXT:rkw_template/Resources/Private/Language/locallang.xlf:contentElement.collapsed.showMore')}"
-                data-closetext="{f:translate(key:'LLL:EXT:rkw_template/Resources/Private/Language/locallang.xlf:contentElement.collapsed.showLess')}">
+                data-closetext="{f:translate(key:'LLL:EXT:rkw_template/Resources/Private/Language/locallang.xlf:contentElement.collapsed.showLess')}"
+                aria-expanded="false" 
+                aria-controls="collapsed-text-{data.uid}">
                 {f:translate(key:'LLL:EXT:rkw_template/Resources/Private/Language/locallang.xlf:contentElement.collapsed.showMore')}
             </button>
         </div>

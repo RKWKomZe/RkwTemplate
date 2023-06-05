@@ -1,7 +1,8 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
     <f:if condition="{menuItems}">
-        <nav class="nav nav--secondary flex-basis-12 flex mt-2">
+        <nav class="nav nav--secondary flex-basis-12 flex mt-2" 
+             aria-label="{f:translate(key:'{settings.themeLanguageFile}:templates.menu.sub.descriptionAriaLabel')}">
             <f:render partial="List" section="Default" arguments="{_all}"/>
         </nav>
     </f:if>

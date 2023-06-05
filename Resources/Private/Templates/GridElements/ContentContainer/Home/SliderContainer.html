@@ -8,15 +8,32 @@
     <f:section name="Main">
         <f:if condition="<coreExtended:isEmpty string='{data.tx_gridelements_view_column_10}' /> == 0">
             <div class="slider owl-carousel slide">
-                <div class="slider-inner">
+                <div class="slider-inner" id="slider-{data.uid}">
+
+                    <f:format.raw>{data.tx_gridelements_view_column_10}</f:format.raw>
+
                     <f:if condition="{f:count(subject: data.tx_gridelements_view_children)} > 1">
-                        <div class="slider-indicators">
-                            <f:for each="{data.tx_gridelements_view_children}" as="slides" iteration="iterator">
-                                <button type="button" aria-label="{f:translate(key:'LLL:EXT:rkw_template/Resources/Private/Language/locallang.xlf:gridElement.sliderContainer.showSlide', arguments: '{1 : iterator.cycle}')}"></button>
-                            </f:for>
+                        <div class="slider-nav">
+                            <button class="slider-nav__button slider-nav__button--prev" 
+                                    title="{f:translate(key:'LLL:EXT:rkw_template/Resources/Private/Language/locallang.xlf:gridElement.sliderContainer.previousAriaLabel')}"
+                                    aria-controls="slider-{data.uid}"
+                                    aria-label="{f:translate(key:'LLL:EXT:rkw_template/Resources/Private/Language/locallang.xlf:gridElement.sliderContainer.previousAriaLabel')}">
+                                <svg class="icon icon--12"
+                                     aria-label="{f:translate(key:'LLL:EXT:rkw_template/Resources/Private/Language/locallang.xlf:gridElement.sliderContainer.previousAriaLabel')}">
+                                    <use href="#ic-arrow-primary" />
+                                </svg>
+                            </button>
+                            <button class="slider-nav__button slider-nav__button--next" 
+                                    title="{f:translate(key:'LLL:EXT:rkw_template/Resources/Private/Language/locallang.xlf:gridElement.sliderContainer.nextAriaLabel')}"
+                                    aria-controls="slider-{data.uid}"
+                                    aria-label="{f:translate(key:'LLL:EXT:rkw_template/Resources/Private/Language/locallang.xlf:gridElement.sliderContainer.nextAriaLabel')}">
+                                <svg class="icon icon--12"
+                                     aria-label="{f:translate(key:'LLL:EXT:rkw_template/Resources/Private/Language/locallang.xlf:gridElement.sliderContainer.nextAriaLabel')}">
+                                    <use href="#ic-arrow-primary" />
+                                </svg>
+                            </button>
                         </div>
                     </f:if>
-                    <f:format.raw>{data.tx_gridelements_view_column_10}</f:format.raw>
                 </div>
             </div>
         </f:if>

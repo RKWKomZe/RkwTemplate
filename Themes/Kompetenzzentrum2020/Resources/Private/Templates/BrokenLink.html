@@ -15,9 +15,10 @@
 
 				<f:comment><!-- breadcrumb--></f:comment>
 				<section class="section content flex-basis-12 full-width-smalldesk no-padding-narrow pb-0">
-					<div class="breadcrumbs flex-container nav breadcrumb-padding">
+					<nav class="breadcrumbs flex-container nav breadcrumb-padding"
+                         aria-label="{f:translate(key:'{settings.themeLanguageFile}:templates.menus.breadcrumb.descriptionAriaLabel')}">
 						<f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.breadcrumb" data="{data}" />
-					</div>
+					</nav>
 				</section>
 
 				<f:comment><!-- content --></f:comment>
