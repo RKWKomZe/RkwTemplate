@@ -50,7 +50,7 @@ plugin.tx_feregister {
             companyName = das RKW Kompetenzzentrum
 
             # cat=plugin.tx_feregister//a; type=string; label=Company email for revocation of consent
-            companyEmail = service@rkw.de
+            companyEmail = widerruf.evaluation@rkw.de
         }
 
         users {

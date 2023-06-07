@@ -1,0 +1,12 @@
+plugin.tx_rkwoutcome {
+    settings {
+        # cat=plugin.tx_rkwoutcome//a; type=integer; label=Pid of target groups
+        targetGroupsPid = 173
+
+        # cat=plugin.tx_rkwoutcome//a; type=integer; label=Pid of survey detail page
+        surveyShowPid = 10610
+
+        # cat=plugin.tx_rkwoutcome//a; type=integer; label=Uid of root page with typoscript settings
+        rootPageUid = 1
+    }
+}
