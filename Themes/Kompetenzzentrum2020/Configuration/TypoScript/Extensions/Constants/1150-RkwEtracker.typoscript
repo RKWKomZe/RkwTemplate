@@ -1,6 +1,6 @@
 plugin.tx_rkwetracker {
     persistence {
-        // cat=plugin.tx_rkwetracker; type=string; label=Default storage PID
+        # cat=plugin.tx_rkwetracker; type=string; label=Default storage PID
         storagePid = 3364
 
         # cat=plugin.tx_rkwetracker//a; type=integer; label=Storage PID for new records
@@ -8,10 +8,10 @@ plugin.tx_rkwetracker {
     }
 
     settings {
-        // cat=plugin.tx_rkwetracker; type=string; Account start date
+        # cat=plugin.tx_rkwetracker; type=string; Account start date
         accountStartDate = 2016-01-18
 
-        // cat=plugin.tx_rkwetracker; type=integer; Pid for SingleSignOn
+        # cat=plugin.tx_rkwetracker; type=integer; Pid for SingleSignOn
         singleSignOnPid = 3369
 
         # cat=plugin.tx_rkwetracker; type=string; Domains which names won't be displayed in report

@@ -2,7 +2,7 @@
 plugin.tx_rkwevents {
 
 	persistence {
-		// cat=plugin.tx_rkwevents; type=integer; label=Default storage PID
+		# cat=plugin.tx_rkwevents; type=integer; label=Default storage PID
 		storagePid = 4244,2986,3234,3469,3621,3652,4789,7961
 
         # cat=plugin.tx_rkwevents; type=integer; label=Default storage PID for eventReservation (write only). PID set here has to be included in storagePid-List
@@ -14,37 +14,37 @@ plugin.tx_rkwevents {
 
 	settings {
 
-		// cat=plugin.tx_rkwevents; type=integer; label=PID for list view
+		# cat=plugin.tx_rkwevents; type=integer; label=PID for list view
 		listPid = 1369
 
-		// cat=plugin.tx_rkwevents; type=integer; label=PID for detail view
+		# cat=plugin.tx_rkwevents; type=integer; label=PID for detail view
 		showPid = 2982
 
-		// cat=plugin.tx_rkwevents; type=integer; label=PID for login
+		# cat=plugin.tx_rkwevents; type=integer; label=PID for login
 		loginPid = 	610
 
-		// cat=plugin.tx_rkwevents; type=integer; label=PID for create new reservation
+		# cat=plugin.tx_rkwevents; type=integer; label=PID for create new reservation
 		reservationPid = 2983
 
-		// cat=plugin.tx_rkwevents; type=integer; label=PID for create new FeUser
+		# cat=plugin.tx_rkwevents; type=integer; label=PID for create new FeUser
 		storagePidFeUser = 618
 
-		// cat=plugin.tx_rkwevents; type=integer; label=PID for list future user events view
+		# cat=plugin.tx_rkwevents; type=integer; label=PID for list future user events view
 		myEventsPid = 3003
 
-        // cat=plugin.tx_rkwevents; type=integer; label=Defines the parent category for the FE-filter in event listing
+        # cat=plugin.tx_rkwevents; type=integer; label=Defines the parent category for the FE-filter in event listing
         parentCategoryForFilter = 23
 
-		// cat=plugin.tx_rkwevents; type=integer; label=PID for gallery and sheets for event view
+		# cat=plugin.tx_rkwevents; type=integer; label=PID for gallery and sheets for event view
 		sheetsForEventPid = 2982
 
-		// cat=plugin.tx_rkwevents; type=integer; label=PID for archive list
+		# cat=plugin.tx_rkwevents; type=integer; label=PID for archive list
 		archivePid = 2984
 
-		// cat=plugin.tx_rkwevents; type=integer; label=Number of items in list view (default 10)
+		# cat=plugin.tx_rkwevents; type=integer; label=Number of items in list view (default 10)
         itemsPerPage = 20
 
-		// cat=plugin.tx_rkwevents; type=integer; label=PageNum for AJAX-requests
+		# cat=plugin.tx_rkwevents; type=integer; label=PageNum for AJAX-requests
 		ajaxTypeNum = 1472648979
 
         # cat=plugin.tx_rkwevents; type=boolean; label=Hide GoogleMaps
@@ -61,17 +61,20 @@ plugin.tx_rkwevents {
 
 		mandatoryFields {
 
-			// cat=plugin.tx_rkwevents; type=string; label=Mandatory fields for registration of main person. Comma separated lists with property names (e.g. salutation, firstName, lastName, address, zip, city, email)
+			# cat=plugin.tx_rkwevents; type=string; label=Mandatory fields for registration of main person. Comma separated lists with property names (e.g. salutation, firstName, lastName, address, zip, city, email)
 			eventReservationMainPerson = salutation, firstName, lastName, email, address, zip, city
 
-			// cat=plugin.tx_rkwevents; type=string; label=Mandatory fields for registration of additional persons. Comma separated lists with property names (e.g. salutation, firstName, lastName, address, zip, city, email)
+			# cat=plugin.tx_rkwevents; type=string; label=Mandatory fields for registration of additional persons. Comma separated lists with property names (e.g. salutation, firstName, lastName, address, zip, city, email)
 			eventReservationAdditionalPersons = salutation, firstName, lastName,
 		}
 
 		mail {
-			// cat=plugin.tx_rkwevents; type=string; label=Uids of be_users for E-mail notification
+			# cat=plugin.tx_rkwevents; type=string; label=Uids of be_users for E-mail notification
 			backendUser  = 1
 		}
+
+		# cat=plugin.tx_rkwevents//a; type=integer; label=Pid of target groups
+		targetGroupsPid = 173
 	}
 }
 

@@ -1,6 +1,6 @@
 plugin.tx_postmaster {
     persistence {
-        // cat=module.tx_postmaster//a; type=string; label=Default storage PID
+        # cat=module.tx_postmaster//a; type=string; label=Default storage PID
         storagePid = 776
     }
 

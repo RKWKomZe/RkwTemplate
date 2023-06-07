@@ -1,6 +1,6 @@
 plugin.tx_ajaxapi {
     persistence {
-        // cat=plugin.tx_ajaxapi//a; type=string; label=Default storage PID
+        # cat=plugin.tx_ajaxapi//a; type=string; label=Default storage PID
         storagePid = 3
     }
 
