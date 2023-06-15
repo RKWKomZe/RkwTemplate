@@ -3,18 +3,18 @@ plugin.tx_feregister {
     settings {
 
         # cat=plugin.tx_feregister//a; type=integer; label=Pid of login mask
-        loginPid = 9294
+        loginPid = 10991
 
         # cat=plugin.tx_feregister//a; type=integer; label=Pid of logout mask
-        logoutPid = 9291
+        logoutPid = 10988
 
         # cat=plugin.tx_feregister//a; type=integer; label=Pid of registration mask
-        registrationPid = 9294
+        registrationPid = 10991
 
         # cat=plugin.tx_feregister//a; type=integer; label=Pid of welcome page
-        welcomePid = 9295
+        welcomePid = 3953
 
         # cat=plugin.tx_feregister//a; type=integer; label=Pid of welcome page for guests
-        welcomeGuestPid = 9293
+        welcomeGuestPid = 10990
     }
 }
