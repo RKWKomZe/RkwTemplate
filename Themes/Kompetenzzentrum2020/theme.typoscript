@@ -123,13 +123,13 @@ plugin.tx_rkwtemplate_themeconfig {
     microsite {
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Vertical text (on microsites only)
-        textPoweredBy = Ein Angebot des <span class="show-mobile">RKW</span><span class="hide-mobile"> {$plugin.tx_rkwtemplate_themeconfig.website.name} &ndash; hier mehr erfahren</span>
+        textPoweredBy = Ein Angebot des <span class="show-mobile">RKW</span><span class="hide-mobile"> RKW-Kompetenzzentrums &ndash; hier mehr erfahren</span>
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to main website (on microsites only)
-        mainWebsiteUrl = {$plugin.tx_rkwtemplate_themeconfig.website.baseUrl}
+        mainWebsiteUrl = https://www.rkw-kompetenzzentrum.de/
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Name of main website (on microsites only)
-        mainWebsiteName = {$plugin.tx_rkwtemplate_themeconfig.website.name}
+        mainWebsiteName = RKW Kompetenzzentrum
 
         # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Icon of main website (on microsites only)
         mainWebsiteLogoFile = {$plugin.tx_rkwtemplate_themeconfig.paths.microsite.mainWebsiteLogos}/logo-icon.png
