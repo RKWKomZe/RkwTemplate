@@ -1,0 +1,20 @@
+plugin.tx_feregister {
+
+    settings {
+
+        # cat=plugin.tx_feregister//a; type=integer; label=Pid of login mask
+        loginPid = 10996
+
+        # cat=plugin.tx_feregister//a; type=integer; label=Pid of logout mask
+        logoutPid = 10993
+
+        # cat=plugin.tx_feregister//a; type=integer; label=Pid of registration mask
+        registrationPid = 10996
+
+        # cat=plugin.tx_feregister//a; type=integer; label=Pid of welcome page
+        welcomePid = 6688
+
+        # cat=plugin.tx_feregister//a; type=integer; label=Pid of welcome page for guests
+        welcomeGuestPid = 10995
+    }
+}
