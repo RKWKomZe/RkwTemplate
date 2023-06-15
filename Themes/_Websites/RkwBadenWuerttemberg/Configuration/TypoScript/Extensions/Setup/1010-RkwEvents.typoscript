@@ -9,7 +9,7 @@ plugin.tx_rkwevents {
 
 
 // show all items on this page without pagination
-[page|uid = 5891]
+[page["uid"] == 5891]
     plugin.tx_rkwrelated_morecontent.settings.itemLimitPerPage.default = 100
 [END]
 
