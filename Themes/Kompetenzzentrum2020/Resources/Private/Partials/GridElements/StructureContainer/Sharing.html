@@ -15,16 +15,19 @@
                         </svg>
                     </a>
                 </li>
-                <li class="sociallist__item">
-                    <a href="https://twitter.com/intent/tweet?url={f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.socialMedia.shareUrl')}" 
-                        target="_blank" 
-                        title="Twitter" 
-                        rel="nofollow">
-                        <svg class="icon icon--24" aria-label="Twitter">
-                            <use xlink:href="#ic-twitter"/>
-                        </svg>
-                    </a>
-                </li>
+                <f:comment>
+                    <!-- Removing Twitter, because we don't use it any more.... whatever -->
+                    <li class="sociallist__item">
+                        <a href="https://twitter.com/intent/tweet?url={f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.socialMedia.shareUrl')}" 
+                            target="_blank" 
+                            title="Twitter" 
+                            rel="nofollow">
+                            <svg class="icon icon--24" aria-label="Twitter">
+                                <use xlink:href="#ic-twitter"/>
+                            </svg>
+                        </a>
+                    </li>
+                </f:comment>
                 <li class="sociallist__item">
                     <a href="https://www.xing.com/app/user?op=share;url={f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.socialMedia.shareUrl')}" 
                         target="_blank" 
