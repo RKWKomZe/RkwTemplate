@@ -8,7 +8,7 @@ plugin.tx_rkwnewsletter {
     settings {
 
         # cat=plugin.tx_rkwnewsletter//a; type=integer; label=Pid of login mask
-        loginPid = 7350
+        loginPid = 10543
 
         # cat=plugin.tx_rkwnewsletter//a; type=integer; label=Pid of terms
         termsPid = 7362

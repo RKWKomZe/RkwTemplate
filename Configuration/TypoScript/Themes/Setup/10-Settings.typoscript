@@ -15,6 +15,8 @@ lib.txRkwTemplate.themeSettings {
     websiteLogoUrl = {$plugin.tx_rkwtemplate_themeconfig.website.logoUrl}
     websiteLogoReplacementText = {$plugin.tx_rkwtemplate_themeconfig.website.logoReplacementText}
     websiteNewsletterSubscriptionPid = {$plugin.tx_rkwtemplate_themeconfig.website.newsletterSubscriptionPid}
+    websiteNewsletterSubscriptionButtonTextOverride = {$plugin.tx_rkwtemplate_themeconfig.website.newsletterSubscriptionButtonTextOverride}
+    websiteNewsletterSubscriptionHeadlineTextOverride = {$plugin.tx_rkwtemplate_themeconfig.website.newsletterSubscriptionHeadlineTextOverride}
 
     // @deprecated start
     websiteLogoOffcanvasFile = {$plugin.tx_rkwtemplate_themeconfig.website.logoOffcanvasFile}
