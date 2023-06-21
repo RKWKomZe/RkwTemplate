@@ -23,7 +23,7 @@ plugin.tx_rkwnewsletter {
         automaticApprovalStage2 = 604800
 
         # cat=plugin.tx_rkwnewsletter//a; type=integer; label=Pid of login mask
-        loginPid = 610
+        loginPid =  10513
 
         # cat=plugin.tx_rkwnewsletter//a; type=integer; label=Pid for subscriptions
         subscriptionPid = 10508
