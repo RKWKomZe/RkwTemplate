@@ -3,7 +3,7 @@
 $tmpColsPages = [
 
     'tx_rkwtemplate_landingpage_primary_color' => [
-        'displayCond' => 'FIELD:layout:=:30000',
+        'displayCond' => 'FIELD:layout:=:50',
         'exclude' => 0,
         'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:pages.tx_rkwtemplate_landingpage_primary_color',
         'config' => [
@@ -14,7 +14,7 @@ $tmpColsPages = [
         ],
     ],
     'tx_rkwtemplate_landingpage_primary_effect_color' => [
-        'displayCond' => 'FIELD:layout:=:30000',
+        'displayCond' => 'FIELD:layout:=:50',
         'exclude' => 0,
         'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:pages.tx_rkwtemplate_landingpage_primary_effect_color',
         'config' => [
@@ -25,7 +25,7 @@ $tmpColsPages = [
         ],
     ],
     'tx_rkwtemplate_landingpage_primary_effect_text_color' => [
-        'displayCond' => 'FIELD:layout:=:30000',
+        'displayCond' => 'FIELD:layout:=:50',
         'exclude' => 0,
         'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:pages.tx_rkwtemplate_landingpage_primary_effect_text_color',
         'config' => [
@@ -36,7 +36,7 @@ $tmpColsPages = [
         ],
     ],
     'tx_rkwtemplate_landingpage_primary_top_text_color' => [
-        'displayCond' => 'FIELD:layout:=:30000',
+        'displayCond' => 'FIELD:layout:=:50',
         'exclude' => 0,
         'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:pages.tx_rkwtemplate_landingpage_primary_top_text_color',
         'config' => [
@@ -47,7 +47,7 @@ $tmpColsPages = [
         ],
     ],
     'tx_rkwtemplate_landingpage_primary_top_effect_color' => [
-        'displayCond' => 'FIELD:layout:=:30000',
+        'displayCond' => 'FIELD:layout:=:50',
         'exclude' => 0,
         'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:pages.tx_rkwtemplate_landingpage_primary_top_effect_color',
         'config' => [
@@ -58,7 +58,7 @@ $tmpColsPages = [
         ],
     ],
     'tx_rkwtemplate_landingpage_primary_top_effect_text_color' => [
-        'displayCond' => 'FIELD:layout:=:30000',
+        'displayCond' => 'FIELD:layout:=:50',
         'exclude' => 0,
         'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:pages.tx_rkwtemplate_landingpage_primary_top_effect_text_color',
         'config' => [
@@ -70,7 +70,7 @@ $tmpColsPages = [
     ],
 
     'tx_rkwtemplate_landingpage_secondary_color' => [
-        'displayCond' => 'FIELD:layout:=:30000',
+        'displayCond' => 'FIELD:layout:=:50',
         'exclude' => 0,
         'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:pages.tx_rkwtemplate_landingpage_secondary_color',
         'config' => [
@@ -81,7 +81,7 @@ $tmpColsPages = [
         ],
     ],
     'tx_rkwtemplate_landingpage_secondary_effect_color' => [
-        'displayCond' => 'FIELD:layout:=:30000',
+        'displayCond' => 'FIELD:layout:=:50',
         'exclude' => 0,
         'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:pages.tx_rkwtemplate_landingpage_secondary_effect_color',
         'config' => [
@@ -92,7 +92,7 @@ $tmpColsPages = [
         ],
     ],
     'tx_rkwtemplate_landingpage_secondary_effect_text_color' => [
-        'displayCond' => 'FIELD:layout:=:30000',
+        'displayCond' => 'FIELD:layout:=:50',
         'exclude' => 0,
         'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:pages.tx_rkwtemplate_landingpage_secondary_effect_text_color',
         'config' => [
@@ -103,7 +103,7 @@ $tmpColsPages = [
         ],
     ],
     'tx_rkwtemplate_landingpage_secondary_top_text_color' => [
-        'displayCond' => 'FIELD:layout:=:30000',
+        'displayCond' => 'FIELD:layout:=:50',
         'exclude' => 0,
         'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:pages.tx_rkwtemplate_landingpage_secondary_top_text_color',
         'config' => [
@@ -114,7 +114,7 @@ $tmpColsPages = [
         ],
     ],
     'tx_rkwtemplate_landingpage_secondary_top_effect_color' => [
-        'displayCond' => 'FIELD:layout:=:30000',
+        'displayCond' => 'FIELD:layout:=:50',
         'exclude' => 0,
         'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:pages.tx_rkwtemplate_landingpage_secondary_top_effect_color',
         'config' => [
@@ -125,7 +125,7 @@ $tmpColsPages = [
         ],
     ],
     'tx_rkwtemplate_landingpage_secondary_top_effect_text_color' => [
-        'displayCond' => 'FIELD:layout:=:30000',
+        'displayCond' => 'FIELD:layout:=:50',
         'exclude' => 0,
         'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:pages.tx_rkwtemplate_landingpage_secondary_top_effect_text_color',
         'config' => [
@@ -139,7 +139,7 @@ $tmpColsPages = [
     'tx_rkwtemplate_landingpage_tertiary_color' => [
         'displayCond' => [
             'AND' => [
-                'FIELD:layout:=:30000',
+                'FIELD:layout:=:50',
                 'FIELD:tx_rkwtemplate_landingpage_show_more_colors:REQ:TRUE'
             ]
         ],
@@ -154,7 +154,7 @@ $tmpColsPages = [
     'tx_rkwtemplate_landingpage_tertiary_effect_color' => [
         'displayCond' => [
             'AND' => [
-                'FIELD:layout:=:30000',
+                'FIELD:layout:=:50',
                 'FIELD:tx_rkwtemplate_landingpage_show_more_colors:REQ:TRUE'
             ]
         ],
@@ -169,7 +169,7 @@ $tmpColsPages = [
     'tx_rkwtemplate_landingpage_tertiary_effect_text_color' => [
         'displayCond' => [
             'AND' => [
-                'FIELD:layout:=:30000',
+                'FIELD:layout:=:50',
                 'FIELD:tx_rkwtemplate_landingpage_show_more_colors:REQ:TRUE'
             ]
         ],
@@ -184,7 +184,7 @@ $tmpColsPages = [
     'tx_rkwtemplate_landingpage_tertiary_top_text_color' => [
         'displayCond' => [
             'AND' => [
-                'FIELD:layout:=:30000',
+                'FIELD:layout:=:50',
                 'FIELD:tx_rkwtemplate_landingpage_show_more_colors:REQ:TRUE'
             ]
         ],
@@ -199,7 +199,7 @@ $tmpColsPages = [
     'tx_rkwtemplate_landingpage_tertiary_top_effect_color' => [
         'displayCond' => [
             'AND' => [
-                'FIELD:layout:=:30000',
+                'FIELD:layout:=:50',
                 'FIELD:tx_rkwtemplate_landingpage_show_more_colors:REQ:TRUE'
             ]
         ],
@@ -214,7 +214,7 @@ $tmpColsPages = [
     'tx_rkwtemplate_landingpage_tertiary_top_effect_text_color' => [
         'displayCond' => [
             'AND' => [
-                'FIELD:layout:=:30000',
+                'FIELD:layout:=:50',
                 'FIELD:tx_rkwtemplate_landingpage_show_more_colors:REQ:TRUE'
             ]
         ],
@@ -230,7 +230,7 @@ $tmpColsPages = [
     'tx_rkwtemplate_landingpage_quarterly_color' => [
         'displayCond' => [
             'AND' => [
-                'FIELD:layout:=:30000',
+                'FIELD:layout:=:50',
                 'FIELD:tx_rkwtemplate_landingpage_show_more_colors:REQ:TRUE'
             ]
         ],
@@ -245,7 +245,7 @@ $tmpColsPages = [
     'tx_rkwtemplate_landingpage_quarterly_effect_color' => [
         'displayCond' => [
             'AND' => [
-                'FIELD:layout:=:30000',
+                'FIELD:layout:=:50',
                 'FIELD:tx_rkwtemplate_landingpage_show_more_colors:REQ:TRUE'
             ]
         ],
@@ -260,7 +260,7 @@ $tmpColsPages = [
     'tx_rkwtemplate_landingpage_quarterly_effect_text_color' => [
         'displayCond' => [
             'AND' => [
-                'FIELD:layout:=:30000',
+                'FIELD:layout:=:50',
                 'FIELD:tx_rkwtemplate_landingpage_show_more_colors:REQ:TRUE'
             ]
         ],
@@ -275,7 +275,7 @@ $tmpColsPages = [
     'tx_rkwtemplate_landingpage_quarterly_top_text_color' => [
         'displayCond' => [
             'AND' => [
-                'FIELD:layout:=:30000',
+                'FIELD:layout:=:50',
                 'FIELD:tx_rkwtemplate_landingpage_show_more_colors:REQ:TRUE'
             ]
         ],
@@ -290,7 +290,7 @@ $tmpColsPages = [
     'tx_rkwtemplate_landingpage_quarterly_top_effect_color' => [
         'displayCond' => [
             'AND' => [
-                'FIELD:layout:=:30000',
+                'FIELD:layout:=:50',
                 'FIELD:tx_rkwtemplate_landingpage_show_more_colors:REQ:TRUE'
             ]
         ],
@@ -305,7 +305,7 @@ $tmpColsPages = [
     'tx_rkwtemplate_landingpage_quarterly_top_effect_text_color' => [
         'displayCond' => [
             'AND' => [
-                'FIELD:layout:=:30000',
+                'FIELD:layout:=:50',
                 'FIELD:tx_rkwtemplate_landingpage_show_more_colors:REQ:TRUE'
             ]
         ],
@@ -319,7 +319,7 @@ $tmpColsPages = [
     ],
 
     'tx_rkwtemplate_landingpage_show_more_colors' => [
-        'displayCond' => 'FIELD:layout:=:30000',
+        'displayCond' => 'FIELD:layout:=:50',
         'exclude' => 0,
         'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:pages.tx_rkwtemplate_landingpage_show_more_colors',
         'onChange' => 'reload',
