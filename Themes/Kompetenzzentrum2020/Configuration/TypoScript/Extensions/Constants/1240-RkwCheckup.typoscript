@@ -9,9 +9,6 @@ plugin.tx_rkwcheckup {
     }
     settings {
 
-        # cat=plugin.tx_rkwcheckup//a; type=integer; label=Default terms PID
-        termsPid = 1381
-
         # cat=plugin.tx_rkwcheckup//a; type=boolean; label=Include CSS?
         includeCss = 0
     }
