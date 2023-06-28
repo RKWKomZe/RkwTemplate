@@ -1,17 +1,17 @@
 plugin.tx_rkwalerts {
     persistence {
         # cat=plugin.tx_rkwalerts//a; type=string; label=Default storage PID
-        storagePid = 907
+        storagePid = 10485
 
 		# cat=plugin.tx_rkwalerts//a; type=integer; label=Storage PID for new records
-		newRecordStoragePid = 907
+		newRecordStoragePid = 10485
     }
 
     settings {
         # cat=plugin.tx_rkwalerts//a; type=integer; label=Pid of login mask
-        loginPid = 10499
+        loginPid = 10528
 
         # cat=plugin.tx_rkwalerts//a; type=integer; label=Pid list plugin
-        listPid = 10509
+        listPid = 10524
     }
 }
