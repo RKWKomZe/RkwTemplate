@@ -3,7 +3,7 @@ plugin.tx_coreextended {
 	settings {
         resources {
             #  cat=plugin.tx_coreextended//a; type=integer; label=PageUid of resource-list plugin
-            listPid =
+            listPid = 11027
         }
 	}
 }
