@@ -28,7 +28,10 @@ plugin.tx_feregister {
         editUserPid = 10506
 
         # cat=plugin.tx_feregister//a; type=integer; label=Pid of groups list
-        groupsListPid =	10510
+        groupListPid =	10510
+
+        # cat=plugin.tx_feregister//a; type=integer; label=Pid for group-opt-in. Must be accessible if logged in AND if not logged in
+        groupOptInPid =	11090
 
         # cat=plugin.tx_feregister//a; type=string; label=Company email for service
         companyEmail = service@rkw.de
