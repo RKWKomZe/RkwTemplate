@@ -163,7 +163,7 @@ mod {
                                         maxitems = 1
                                         allowed {
                                             CType = list, text
-                                            list_type = , feregister_auth, feregister_welcome
+                                            list_type = , feregister_auth, feregister_welcome, feregister_groupoptin
                                         }
                                     }
                                 }

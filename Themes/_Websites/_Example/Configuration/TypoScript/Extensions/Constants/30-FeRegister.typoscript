@@ -20,7 +20,7 @@ plugin.tx_feregister {
         editUserPid =
 
         # cat=plugin.tx_feregister//a; type=integer; label=Pid of groups list
-        groupsListPid =
+        groupListPid =
 
         consent {
 

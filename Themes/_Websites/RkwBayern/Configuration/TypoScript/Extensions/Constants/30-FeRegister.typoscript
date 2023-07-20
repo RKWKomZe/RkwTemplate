@@ -27,7 +27,10 @@ plugin.tx_feregister {
         editUserPid = 10536
 
         # cat=plugin.tx_feregister//a; type=integer; label=Pid of groups list
-        groupsListPid = 10540
+        groupListPid = 10540
+
+        # cat=plugin.tx_feregister//a; type=integer; label=Pid for group-opt-in. Must be accessible if logged in AND if not logged in
+        groupOptInPid =	11091
 
         consent {
 
