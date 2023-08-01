@@ -1,6 +1,0 @@
-tt_content {
-    rkwtemplate_testimonial =< lib.tt_content
-    rkwtemplate_testimonial {
-        templateName = Testimonial
-    }
-}

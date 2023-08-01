@@ -40,7 +40,7 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_slider'] = [
         ],
         'image' => [
             'config' => [
-                'minitems' => 1,
+                'minitems' => 0,
                 // 'maxitems' => 1,
                 'overrideChildTca' => [
                     'columns' => [

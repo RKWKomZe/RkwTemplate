@@ -37,10 +37,10 @@ config {
     // Exceptions for FE-Rendering
     //===============================================================
     // Custom class
-    contentObjectExceptionHandler = Madj2k\CoreExtended\Error\ContentObjectProductionExceptionHandler
+    //contentObjectExceptionHandler = Madj2k\CoreExtended\Error\ContentObjectProductionExceptionHandler
 
     // Customizing error message
-    contentObjectExceptionHandler.errorMessage = Leider ist ein Fehler aufgetreten. Helfen Sie uns, den Fehler zu beheben und schreiben Sie uns unter Angabe des Fehlercodes "%s" an <a href="mailto:service@rkw.de?subject=Errorcode:%20%s">service@rkw.de</a>
+    //contentObjectExceptionHandler.errorMessage = Leider ist ein Fehler aufgetreten. Helfen Sie uns, den Fehler zu beheben und schreiben Sie uns unter Angabe des Fehlercodes "%s" an <a href="mailto:service@rkw.de?subject=Errorcode:%20%s">service@rkw.de</a>
 
     // Ignore these error codes
     // contentObjectExceptionHandler.ignoreCodes.10 = 1414512813
