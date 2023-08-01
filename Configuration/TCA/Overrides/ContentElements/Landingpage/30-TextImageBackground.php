@@ -51,7 +51,7 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_textimagebackground'] = [
         ],
         'image' => [
             'config' => [
-                'minitems' => 1,
+                'minitems' => 0,
                 'maxitems' => 1,
                 'overrideChildTca' => [
                     'columns' => [

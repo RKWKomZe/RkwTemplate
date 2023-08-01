@@ -1,0 +1,46 @@
+plugin.tx_rkwnewsletter {
+
+    persistence {
+        # cat=plugin.tx_rkwnewsletter//a; type=string; label=Default storage PID
+        storagePid = 10997
+    }
+
+    settings {
+
+        # cat=plugin.tx_rkwnewsletter//a; type=integer; label=Pid of login mask
+        loginPid = 10588
+
+        # cat=plugin.tx_rkwnewsletter//a; type=integer; label=Pid of terms
+        termsPid = 3776
+
+        # cat=plugin.tx_rkwnewsletter//a; type=integer; label=Pid for subscriptions
+            subscriptionPid = 10583
+
+        pages {
+
+            # permissions for pages elements
+            permissions {
+                # on create of a new issue
+                stage1 {
+                    # cat=plugin.tx_rkwnewsletter//a; type=integer; label=GroupId permission
+                    groupId = 84
+                }
+                # perms which come into effect on approve of stage 1
+                stage2 {
+                    # cat=plugin.tx_rkwnewsletter//a; type=integer; label=GroupId permission
+                    groupId = 85
+                }
+                # perms which come into effect on approve of stage 2
+                release {
+                    # cat=plugin.tx_rkwnewsletter//a; type=integer; label=GroupId permission
+                    groupId = 83
+                }
+                # perms which come into effect after final sending of the issue
+                sent {
+                    # cat=plugin.tx_rkwnewsletter//a; type=integer; label=GroupId permission
+                    groupId = 83
+                }
+            }
+        }
+    }
+}
