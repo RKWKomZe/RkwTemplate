@@ -44,7 +44,14 @@ plugin.tx_rkwtemplate_themeconfig {
         logoMobileFile =
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=integer; label=ID of page for newsletter subscription
-        newsletterSubscriptionPid = 
+        newsletterSubscriptionPid = 11116
+
+        # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Override default label newsletter subscription (Button)
+        newsletterSubscriptionButtonTextOverride = Jetzt den RKW Thüringen Newsletter abonnieren
+
+        # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Override default label for newsletter subscription (Headline)
+        newsletterSubscriptionHeadlineTextOverride =
+
     }
 
     # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Is this website a microsite?
