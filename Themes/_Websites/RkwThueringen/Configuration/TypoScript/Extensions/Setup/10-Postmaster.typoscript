@@ -2,7 +2,7 @@ plugin.tx_postmaster {
 
     view {
         partialRootPaths {
-            10 = {$plugin.tx_rkwtemplate_themeconfig.paths.extensions.root}/Postmaster/Partials
+            20 = {$plugin.tx_rkwtemplate_themeconfig.paths.extensions.root}/Postmaster/Partials
         }
     }
 }
