@@ -3,7 +3,7 @@ plugin.tx_rkwevents {
 
 	persistence {
 		# cat=plugin.tx_rkwevents; type=integer; label=Default storage PID
-		storagePid = 4244,2986,3234,3469,3621,3652,4789,7961
+		storagePid = 4244,2986,3234,3469,3621,3652,4789,7961,7369
 
         # cat=plugin.tx_rkwevents; type=integer; label=Default storage PID for eventReservation (write only). PID set here has to be included in storagePid-List
         eventReservation.newRecordStoragePid = 4244
@@ -21,7 +21,7 @@ plugin.tx_rkwevents {
 		showPid = 2982
 
 		# cat=plugin.tx_rkwevents; type=integer; label=PID for login
-		loginPid = 	610
+		loginPid = 	3577
 
 		# cat=plugin.tx_rkwevents; type=integer; label=PID for create new reservation
 		reservationPid = 2983
