@@ -2,7 +2,7 @@ plugin.tx_rkwevents {
 
 	persistence {
 		// cat=plugin.tx_rkwevents; type=integer; label=Default storage PID
-		storagePid = 3652
+		storagePid = 3652,2986,3234,3469,4789,7961
 
         # cat=plugin.tx_rkwevents; type=integer; label=Default storage PID for eventReservation (write only). PID set here has to be included in storagePid-List
         eventReservation.newRecordStoragePid = 3652
