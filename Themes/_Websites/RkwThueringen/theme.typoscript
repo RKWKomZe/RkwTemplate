@@ -57,6 +57,21 @@ plugin.tx_rkwtemplate_themeconfig {
     # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Is this website a microsite?
     isMicrosite = 0
 
+     microsite {
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Vertical text (on microsites only)
+        textPoweredBy = Ein Angebot des RKW Thüringen
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to main website (on microsites only)
+        mainWebsiteUrl = https://www.rkw-thueringen.de
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Name of main website (on microsites only)
+        mainWebsiteName = RKW Thüringen
+
+        # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Icon of main website (on microsites only)
+        # mainWebsiteLogoFile =
+    }
+
     # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Show social media share icons
     socialMediaShare = 0
 
