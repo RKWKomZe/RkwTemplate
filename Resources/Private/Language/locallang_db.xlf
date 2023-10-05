@@ -126,10 +126,10 @@
             <trans-unit id="pages.keyvisual.imageManipulation.menuFlyoutLevel2">
                <source>Menu-Flyout (2nd level)</source>
             </trans-unit>
-            <trans-unit id="tx_rkwauthors_domain_model_authors.image_box.imageManipulation.teaser">
-               <source>Small box</source>
+            <trans-unit id="tx_rkwauthors_domain_model_authors.imageBoxes.imageManipulation.teaser">
+               <source>View in Box</source>
             </trans-unit>
-            <trans-unit id="tx_rkwauthors_domain_model_authors.image_box.imageManipulation.big">
+            <trans-unit id="tx_rkwauthors_domain_model_authors.imageBig.imageManipulation.big">
                <source>Detail view</source>
             </trans-unit>
             <trans-unit id="tx_rkwtools_domain_model_tool.keyvisual.imageManipulation.teaser">
@@ -985,7 +985,7 @@
                 <source>Add an Accordion-Element.</source>
             </trans-unit>
 
-            
+
 			<!-- TagcloudElement -->
 			<trans-unit id="contentElement.tagcloudElement.title">
 				<source>Tagcloud element</source>
