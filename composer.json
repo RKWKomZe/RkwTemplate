@@ -16,16 +16,10 @@
             "role": "Developer"
         }
     ],
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/RKWKomZe/gridelements.git"
-        }
-    ],
     "require": {
         "php": ">=7.4",
         "typo3/cms-core": "~9.5.0 || ~10.4.0",
-        "gridelementsteam/gridelements" : "~9.8.0",
+        "gridelementsteam/gridelements" : "~11.1.0",
 		"madj2k/t3-core-extended": "~9.5.4 || ~10.4.0",
 		"madj2k/t3-accelerator": "~9.5.2 || ~10.4.0",
 		"madj2k/t3-ajax-api": "~9.5.0 || ~10.4.0",
