@@ -43,9 +43,9 @@ plugin.tx_rkwtemplate_themeconfig {
 
         # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Logo of website (mobile-version)
         logoMobileFile =
-        
+
         # cat=plugin.tx_rkwtemplate_themeconfig; type=integer; label=ID of page for newsletter subscription
-        newsletterSubscriptionPid =         
+        newsletterSubscriptionPid =
     }
 
     # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Is this website a microsite?
@@ -63,19 +63,22 @@ plugin.tx_rkwtemplate_themeconfig {
         facebook =
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to twitter page
-        twitter =  https://twitter.com/rkw_bw?lang=de
+        twitter =
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to xing page
-        xing = https://www.xing.com/companies/rkwbaden-w%C3%BCrttemberg
+        xing =
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to linkedIn page
         linkedIn = https://de.linkedin.com/company/rkw-baden-wuerttemberg
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to YouTube page
-        youTube =
+        youTube = https://www.youtube.com/@rkwbw6785
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to Instagram page
-        instagram =
+        instagram = https://www.instagram.com/rkw_bw/
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to TikTok
+        tiktok = https://www.tiktok.com/@rkw_bw
 
     }
 
@@ -84,12 +87,12 @@ plugin.tx_rkwtemplate_themeconfig {
 
     # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Main menu has less items than normal so breakpoint for hamburger menu can be 1024 instead of 1200
     shortMainMenu = 0
-    
+
     # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Shows a language switch in top of the page
-    showLanguageSwitch = 0    
-    
+    showLanguageSwitch = 0
+
     # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Show no header-images on topic-templates on mobile
     noTopicHeaderImageOnMobile = 1
-    
+
 }
 
