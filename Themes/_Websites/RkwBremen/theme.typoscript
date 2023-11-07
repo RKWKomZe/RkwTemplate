@@ -39,9 +39,9 @@ plugin.tx_rkwtemplate_themeconfig {
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Use this text instead of a logo
         logoReplacementText =
-        
+
         # cat=plugin.tx_rkwtemplate_themeconfig; type=integer; label=ID of page for newsletter subscription
-        newsletterSubscriptionPid = 
+        newsletterSubscriptionPid =
     }
 
     # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Is this website a microsite?
@@ -73,6 +73,9 @@ plugin.tx_rkwtemplate_themeconfig {
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to Instagram page
         instagram =
 
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to TikTok
+        tiktok =
+
     }
 
     # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Show a reduced amount of menus
@@ -80,9 +83,9 @@ plugin.tx_rkwtemplate_themeconfig {
 
     # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Main menu has less items than normal so breakpoint for hamburger menu can be 1024 instead of 1200
     shortMainMenu = 0
-    
+
     # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Shows a language switch in top of the page
-    showLanguageSwitch = 0    
+    showLanguageSwitch = 0
 
 }
 

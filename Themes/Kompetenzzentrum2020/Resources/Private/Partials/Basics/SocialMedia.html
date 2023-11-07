@@ -51,6 +51,15 @@
                             </a>
                         </li>
                     </f:if>
+                    <f:if condition="{settings.socialMediaLinks.tiktok}">
+                        <li class="sociallist__item">
+                            <a href="{settings.socialMediaLinks.tiktok}" target="_blank" title="TikTok">
+                                <svg class="icon icon--24" aria-label="TikTok">
+                                    <use xlink:href="#ic-tiktok" />
+                                </svg>
+                            </a>
+                        </li>
+                    </f:if>                    
                     <f:if condition="{settings.socialMediaLinks.instagram}">
                         <li class="sociallist__item">
                             <a href="{settings.socialMediaLinks.instagram}" target="_blank" title="Instagram">

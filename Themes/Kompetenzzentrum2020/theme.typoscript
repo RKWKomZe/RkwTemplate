@@ -167,6 +167,9 @@ plugin.tx_rkwtemplate_themeconfig {
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to Instagram page
         instagram = https://www.instagram.com/rkwexperten
 
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to TikTok
+        tiktok =
+
     }
 
     # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Show a reduced amount of menus
