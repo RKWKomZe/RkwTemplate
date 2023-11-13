@@ -40,6 +40,7 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_morelist'] = [
                     ['LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.moreList.header_layout.icon.twitter', 'ic-twitter'],
                     ['LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.moreList.header_layout.icon.xing', 'ic-xing'],
                     ['LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.moreList.header_layout.icon.linkedin', 'ic-linkedin'],
+                    ['LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.moreList.header_layout.icon.tiktok', 'ic-tiktok'],
                     ['LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.moreList.header_layout.icon.document', 'ic-document'],
                     ['LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.moreList.header_layout.icon.date', 'ic-date'],
                     ['LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.moreList.header_layout.icon.trash', 'ic-trash'],

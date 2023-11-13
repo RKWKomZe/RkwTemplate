@@ -11,6 +11,8 @@ languages:
     direction: ltr
     flag: de
     languageId: '0'
+    solr_host_read: solr
+    solr_core_read: core_de
   -
     title: Englisch
     enabled: false
@@ -25,3 +27,10 @@ languages:
     languageId: '1'
     fallbackType: strict
     fallbacks: ''
+    solr_host_read: solr
+    solr_core_read: core_en
+solr_enabled_read: true
+solr_path_read: /solr/
+solr_port_read: 8983
+solr_scheme_read: http
+solr_use_write_connection: false
