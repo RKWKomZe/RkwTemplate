@@ -107,8 +107,8 @@ INSERT INTO `tt_content` ( `pid`, `tstamp`, `crdate`, `cruser_id`, `hidden`, `so
 
 -- =================================================
 -- Sys-Template
-INSERT INTO `sys_template` ( `pid`, `t3ver_oid`, `t3ver_id`, `t3ver_wsid`, `t3ver_label`, `t3ver_state`, `t3ver_stage`, `t3ver_count`, `t3ver_tstamp`, `t3_origuid`, `tstamp`, `sorting`, `crdate`, `cruser_id`, `title`, `sitetitle`, `hidden`, `starttime`, `endtime`, `root`, `clear`, `include_static_file`, `constants`, `config`, `nextLevel`, `description`, `basedOn`, `deleted`, `includeStaticAfterBasedOn`, `static_file_mode`) VALUES
-(@rootpage, 0, 0, 0, '', 0, 0, 0, 0, 0, @tstamp, 256, @tstamp, 1, @website_title, '', 0, 0, 0, 1, 3, @sys_template_include_static_file, @sys_template_constants, @sys_template_setup, '', NULL, '', 0, 0, 0);
+INSERT INTO `sys_template` ( `pid`, `t3ver_oid`, `t3ver_wsid`, `t3ver_label`, `t3ver_state`, `t3ver_stage`, `t3ver_count`, `t3ver_tstamp`, `t3_origuid`, `tstamp`, `sorting`, `crdate`, `cruser_id`, `title`, `sitetitle`, `hidden`, `starttime`, `endtime`, `root`, `clear`, `include_static_file`, `constants`, `config`, `nextLevel`, `description`, `basedOn`, `deleted`, `includeStaticAfterBasedOn`, `static_file_mode`) VALUES
+(@rootpage, 0, 0, '', 0, 0, 0, 0, 0, @tstamp, 256, @tstamp, 1, @website_title, '', 0, 0, 0, 1, 3, @sys_template_include_static_file, @sys_template_constants, @sys_template_setup, '', NULL, '', 0, 0, 0);
 
 -- =================================================
 -- Sys-Domain

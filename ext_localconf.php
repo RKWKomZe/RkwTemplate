@@ -212,5 +212,5 @@ call_user_func(
         $GLOBALS['TYPO3_CONF_VARS']['SYS']['locallangXMLOverride']['de']['EXT:rkw_projects/Resources/Private/Language/de.locallang_db.xlf'][] = 'EXT:rkw_template/Themes/Kompetenzzentrum2020/Resources/Private/Language/Overrides/RkwProjects/de.locallang_db.xlf';
 
     },
-    $_EXTKEY
+    'rkw_template'
 );

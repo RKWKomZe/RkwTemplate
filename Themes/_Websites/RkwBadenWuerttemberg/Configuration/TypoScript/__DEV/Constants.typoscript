@@ -18,17 +18,6 @@ plugin.tx_rkwrelated_similarcontent {
 }
 
 
-plugin.tx_accelerator {
-    settings {
-        cdn {
-            enable = 0
-        }
-        htmlMinify {
-            enable = 0
-        }
-    }
-}
-
 plugin.tx_rkwgeolocation {
 
     settings {
