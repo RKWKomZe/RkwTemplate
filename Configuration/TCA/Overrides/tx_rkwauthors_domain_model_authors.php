@@ -4,9 +4,9 @@ $GLOBALS['TCA']['tx_rkwauthors_domain_model_authors']['columns']['image_boxes'][
     'default' => [
         'title' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:tx_rkwauthors_domain_model_authors.imageBoxes.imageManipulation.teaser',
         'allowedAspectRatios' => [
-            '350:192' => [
-                'title' => '350 x 192',
-                'value' => 350 / 192
+            '350:350' => [
+                'title' => '350 x 350',
+                'value' => 350 / 350
             ]
         ]
     ],
