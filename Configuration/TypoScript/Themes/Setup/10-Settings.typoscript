@@ -23,6 +23,7 @@ lib.txRkwTemplate.themeSettings {
     websiteLogoOffcanvasIconOnlyFile = {$plugin.tx_rkwtemplate_themeconfig.website.logoOffcanvasIconOnlyFile}
     // @depecated end
 
+    micrositeShowBar = {$plugin.tx_rkwtemplate_themeconfig.microsite.showBar}
     micrositeLogoTabletFile = {$plugin.tx_rkwtemplate_themeconfig.microsite.logoTabletFile}
     micrositeTextPoweredBy = {$plugin.tx_rkwtemplate_themeconfig.microsite.textPoweredBy}
     micrositeMainWebsiteUrl = {$plugin.tx_rkwtemplate_themeconfig.microsite.mainWebsiteUrl}
