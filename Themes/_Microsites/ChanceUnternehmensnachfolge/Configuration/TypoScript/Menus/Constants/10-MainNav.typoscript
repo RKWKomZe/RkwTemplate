@@ -2,9 +2,11 @@ plugin.tx_rkwtemplate_themeconfig {
 
     settings {
 
-        metaNav {
-            pid = 11020
-            linkTarget =
+        mainNav {
+            contactPid =
+            loginPid =
         }
     }
 }
+
+
