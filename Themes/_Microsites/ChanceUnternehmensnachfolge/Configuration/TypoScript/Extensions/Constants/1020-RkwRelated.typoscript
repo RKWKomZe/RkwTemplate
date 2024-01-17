@@ -33,7 +33,7 @@ plugin.tx_rkwrelated_morecontent {
 	settings {
 
         # cat=plugin.tx_rkwrelated_morecontent//f; type=string; label=PIDs to include in list (comma separated)
-        startingPidList =  {$plugin.tx_rkwtemplate_themeconfig.website.rootPid}
+        startingPidList = {$plugin.tx_rkwtemplate_themeconfig.website.rootPid}
 
         # cat=plugin.tx_rkwrelated_morecontent//f; type=boolean; label=Hide authors label
         hideAuthors = 0
