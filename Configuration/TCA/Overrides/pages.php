@@ -418,6 +418,7 @@ $extKey = 'rkw_template';
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Themes/_Microsites/AufItGebaut/Configuration/TsConfig/TsConfig.typoscript', 'RKW Template - Theme: AufItGebaut');
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Themes/_Microsites/BauDigi/Configuration/TsConfig/TsConfig.typoscript', 'RKW Template - Theme: BauDigi');
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Themes/_Microsites/Bausachverstaendigentag/Configuration/TsConfig/TsConfig.typoscript', 'RKW Template - Theme: Bausachverständigentag');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Themes/_Microsites/ChanceUnternehmensnachfolge/Configuration/TsConfig/TsConfig.typoscript', 'RKW Template - Theme: Chance Unternehmensnachfolge');
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Themes/_Microsites/DigiScouts/Configuration/TsConfig/TsConfig.typoscript', 'RKW Template - Theme: DigiScouts');
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Themes/_Microsites/EEPA/Configuration/TsConfig/TsConfig.typoscript', 'RKW Template - Theme: EEPA');
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Themes/_Microsites/FrauenAmBau/Configuration/TsConfig/TsConfig.typoscript', 'RKW Template - Theme: FrauenAmBau');

@@ -38,6 +38,9 @@ plugin.tx_rkwtemplate_themeconfig {
 
     microsite {
 
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Show the microsite bar in header?
+        # showBar = 1
+
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Vertical text (on microsites only)
         # textPoweredBy =
 
