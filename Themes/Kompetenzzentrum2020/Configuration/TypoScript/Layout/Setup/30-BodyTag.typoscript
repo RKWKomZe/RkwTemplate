@@ -159,6 +159,14 @@ page {
             stdWrap.noTrimWrap = | ||
             if.isTrue = {$plugin.tx_rkwtemplate_themeconfig.isMicrosite}
         }
+
+        70 = TEXT
+        70 {
+            value = hide-micrositebar
+            stdWrap.noTrimWrap = | ||
+            if.isFalse = {$plugin.tx_rkwtemplate_themeconfig.microsite.showBar}
+        }
+
     }
 }
 
