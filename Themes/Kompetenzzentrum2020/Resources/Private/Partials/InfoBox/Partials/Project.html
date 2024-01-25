@@ -1,13 +1,19 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
-
-    <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.pageInfo.projectLink', data:'{data}')}">
+    <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.pageInfo.projectName', data:'{data}')}">
         <div class="table__item">
             <div class="table__title">
                 <f:translate key="{settings.themeLanguageFile}:partials.infoBox.partials.project.labelProject"/>:
             </div>
             <div class="table__content">
-                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.pageInfo.projectLink" data="{data}" />
+                <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.pageInfo.projectLink', data:'{data}')}">
+                    <f:then>
+                        <f:cObject typoscriptObjectPath="lib.txRkwTemplate.pageInfo.projectLink" data="{data}" />
+                    </f:then>
+                    <f:else>
+                        <f:cObject typoscriptObjectPath="lib.txRkwTemplate.pageInfo.projectName" data="{data}" />
+                    </f:else>
+                </f:if>
             </div>
         </div>
     </f:if>
