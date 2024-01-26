@@ -78,7 +78,7 @@ plugin.tx_rkwtemplate_themeconfig {
         # cat=plugin.tx_rkwtemplate_themeconfig; type=integer; label=Desktop breakpoint (in pixel)
         desktop = 1024
     }
-
+    
 
     website {
 
