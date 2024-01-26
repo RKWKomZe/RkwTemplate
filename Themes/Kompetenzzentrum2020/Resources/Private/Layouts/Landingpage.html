@@ -43,13 +43,10 @@
     <div class="pagewrap">
 
         <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.utility.pageLayoutSwitch')} == 'Microsite'">
-            <f:comment><!-- microsite bar --></f:comment>
-            <f:render partial="Basics/Header" section="MicrositeBar" arguments="{_all}"/>
-        </f:if>
-
-        <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.utility.pageLayoutSwitch')} == 'Microsite'">
-            <f:comment><!-- microsite bar --></f:comment>
-            <f:render partial="Basics/Header" section="MicrositeBar" arguments="{_all}"/>
+            <f:if condition="{settings.micrositeShowBar}">
+                <f:comment><!-- microsite bar --></f:comment>
+                <f:render partial="Basics/Header" section="MicrositeBar" arguments="{_all}"/>
+            </f:if>
         </f:if>
 
 		<f:comment><!-- header --></f:comment>
