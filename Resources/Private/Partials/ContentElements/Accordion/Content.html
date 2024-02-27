@@ -1,6 +1,12 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
-    <div class="accordion__item-content" aria-hidden="true" id="accordion-content-{data.uid}" role="region" aria-labelledby="accordion-item-{data.uid}">
+    <div
+        id="accordion-content-{data.uid}"
+        class="accordion__item-content"
+        aria-hidden="true"
+        aria-labelledby="accordion-item-{data.uid}"
+        role="region" 
+    >
         <div class="accordion__item-inner frame show-first-headline typo3-fsc">
             <f:render partial="TextPic" arguments="{_all}"/>
         </div>
