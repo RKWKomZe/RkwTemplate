@@ -1,9 +1,15 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
-    <button class="accordion__button accordion-control" aria-expanded="false" aria-controls="accordion-content-{data.uid}" id="accordion-item-{data.uid}">
-        <span class="accordion__title">{data.header}
-            <span class="accordion__icon"></span>
-        </span>
+    <button
+        id="accordion-item-{data.uid}"
+        class="accordion__button accordion-control"
+        aria-expanded="false"
+        aria-controls="accordion-content-{data.uid}" 
+    >
+        <svg class="icon accordion__icon">
+            <use xlink:href="#ic-circle-close" />
+        </svg>
+        <span class="accordion__title">{data.header}</span>
     </button>
         
 </html>
