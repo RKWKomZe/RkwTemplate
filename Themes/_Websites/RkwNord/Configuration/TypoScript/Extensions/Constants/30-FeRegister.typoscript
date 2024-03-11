@@ -1,0 +1,47 @@
+plugin.tx_feregister {
+
+    persistence {
+
+        # cat=plugin.tx_feregister//a; type=string; label=Storage PID for new records
+        storagePidNewRecords = 11718
+    }
+
+    settings {
+
+        # cat=plugin.tx_feregister//a; type=integer; label=Pid of login mask
+        loginPid = 11722
+
+        # cat=plugin.tx_feregister//a; type=integer; label=Pid of logout mask
+        logoutPid = 11736
+
+        # cat=plugin.tx_feregister//a; type=integer; label=Pid of registration mask
+        registrationPid = 11722
+
+        # cat=plugin.tx_feregister//a; type=integer; label=Pid of welcome page
+        welcomePid = 11723
+
+        # cat=plugin.tx_feregister//a; type=integer; label=Pid of welcome page for guests
+        welcomeGuestPid = 11724
+
+        # cat=plugin.tx_feregister//a; type=integer; label=Pid of edit user mask
+        editUserPid = 11731
+
+        # cat=plugin.tx_feregister//a; type=integer; label=Pid of groups list
+        groupListPid = 11725
+
+        consent {
+
+            // cat=plugin.tx_feregister//a; type=integer; label=Pid of terms & conditions
+            termsPid = 3614
+
+            // cat=plugin.tx_feregister; type=integer; label=PID for terms and conditions (AGB)
+            terms2Pid = 3613
+
+            # cat=plugin.tx_feregister//a; type=integer; label=Pid of privacy & conditions
+            privacyPid = 3612
+
+            # cat=plugin.tx_feregister//a; type=string; label=Company name for consent
+            companyName = das RKW Nord
+        }
+    }
+}
