@@ -1,51 +1,47 @@
 plugin.tx_feregister {
 
     persistence {
+
         # cat=plugin.tx_feregister//a; type=string; label=Storage PID for new records
-        storagePidNewRecords = 10495
+        storagePidNewRecords = 11718
     }
 
     settings {
 
         # cat=plugin.tx_feregister//a; type=integer; label=Pid of login mask
-        loginPid = 10588
+        loginPid = 11722
 
         # cat=plugin.tx_feregister//a; type=integer; label=Pid of logout mask
-        logoutPid = 10575
+        logoutPid = 11736
 
         # cat=plugin.tx_feregister//a; type=integer; label=Pid of registration mask
-        registrationPid = 10588
+        registrationPid = 11722
 
         # cat=plugin.tx_feregister//a; type=integer; label=Pid of welcome page
-        welcomePid = 10587
+        welcomePid = 11723
 
         # cat=plugin.tx_feregister//a; type=integer; label=Pid of welcome page for guests
-        welcomeGuestPid = 10586
+        welcomeGuestPid = 11724
 
         # cat=plugin.tx_feregister//a; type=integer; label=Pid of edit user mask
-        editUserPid = 10581
+        editUserPid = 11731
 
         # cat=plugin.tx_feregister//a; type=integer; label=Pid of groups list
-        groupListPid = 10585
-
-        # cat=plugin.tx_feregister//a; type=integer; label=Pid for group-opt-in. Must be accessible if logged in AND if not logged in
-        groupOptInPid =	11094
+        groupListPid = 11725
 
         consent {
+
             // cat=plugin.tx_feregister//a; type=integer; label=Pid of terms & conditions
-            termsPid = 3776
+            termsPid = 3614
 
             // cat=plugin.tx_feregister; type=integer; label=PID for terms and conditions (AGB)
-            terms2Pid = 3775
+            terms2Pid = 3613
 
             # cat=plugin.tx_feregister//a; type=integer; label=Pid of privacy & conditions
-            privacyPid = 3774
+            privacyPid = 3612
 
             # cat=plugin.tx_feregister//a; type=string; label=Company name for consent
-            companyName = das RKW Thüringen
-
-            # cat=plugin.tx_feregister//a; type=string; label=Company email for revocation of consent
-            companyEmail = info@rkw-thueringen.de
+            companyName = das RKW Nord
         }
     }
 }
