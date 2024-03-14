@@ -14,13 +14,13 @@
                         <span class="site_logo__text">{settings.websiteLogoReplacementText}</span>
                     </f:then>
                     <f:else>
-                        <img class="site-logo__desktop" src="{settings.websiteLogoFile}" alt="" />
+                        <img class="site-logo__desktop" src="{settings.websiteLogoFile}" alt="{settings.websiteName}" />
                         <f:if condition="{settings.websiteLogoMobileFile}">
                             <f:then>
-                                <img class="site-logo__mobile" src="{settings.websiteLogoMobileFile}" alt="" />
+                                <img class="site-logo__mobile" src="{settings.websiteLogoMobileFile}" alt="{settings.websiteName}" />
                             </f:then>
                             <f:else>
-                                <img class="site-logo__mobile site-logo__mobile--fallback" src="{settings.websiteLogoFile}" alt="" />
+                                <img class="site-logo__mobile site-logo__mobile--fallback" src="{settings.websiteLogoFile}" alt="{settings.websiteName}" />
                             </f:else>
                         </f:if>
                     </f:else>
@@ -58,7 +58,7 @@
                            target="_blank" class="page-header__microsite-button" 
                            aria-controls="main-menu" 
                            title="{settings.micrositeMainWebsiteName}">
-                            <img src="{settings.micrositeMainWebsiteLogoFile}" alt="" />
+                            <img src="{settings.micrositeMainWebsiteLogoFile}" alt="{settings.micrositeMainWebsiteName}" />
                         </a>
                     </div>
                 </f:if>
