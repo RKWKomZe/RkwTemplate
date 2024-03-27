@@ -30,7 +30,7 @@ plugin.tx_rkwtemplate_themeconfig {
         name = RKW Nord
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=baseUrl (With / at the end for ClickEnlarge)
-        baseUrl = https://www.rkw-nord.de
+        baseUrl = https://nord.rkw-kompetenzzentrum.de/
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=integer; label=ID of Rootpage
         rootPid = 3595

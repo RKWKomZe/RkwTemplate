@@ -5,16 +5,8 @@
 plugin.tx_rkwtemplate_themeconfig {
 
 	# IMPORTANT: With / at the end for ClickEnlarge
-	website.baseUrl = http://rkw-kompetenzzentrum.rkw.codes/
+	website.baseUrl = http://ausbildungsbotschafter.rkw.local/
 
-}
-
-plugin.tx_accelerator {
-    settings {
-        htmlMinify {
-            enable = 0
-        }
-    }
 }
 
 plugin.tx_rkwgeolocation {
@@ -36,11 +28,12 @@ plugin.tx_feregister {
     }
 }
 
+
 plugin.tx_rkwetracker {
 
     settings {
 
-       # proxy = 192.168.1.8:80
+        # proxy = 192.168.1.8:80
 
     }
 }

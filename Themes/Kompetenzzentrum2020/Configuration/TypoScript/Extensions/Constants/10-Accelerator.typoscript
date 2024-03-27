@@ -2,12 +2,6 @@ plugin.tx_accelerator {
 
     settings {
 
-        cdn {
-
-            # cat=plugin.tx_accelerator//a; type=boolean; label=Activate CDN
-            enable = 1
-        }
-
         htmlMinify {
 
             # cat=plugin.tx_accelerator//a; type=boolean; label=Activate HTML Minifier
