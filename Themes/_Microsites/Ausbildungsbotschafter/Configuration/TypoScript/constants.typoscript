@@ -1,0 +1,18 @@
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:rkw_template/Themes/Kompetenzzentrum2020/Configuration/TypoScript/constants.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:../../theme.typoscript">
+
+<INCLUDE_TYPOSCRIPT: source="FILE:./Config/Constants.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:./Extensions/Constants.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:./Layout/Constants.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:./Marker/Constants.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:./Menus/Constants.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:./Special/Constants.typoscript">
+
+# Environments
+[applicationContext matches "#^Development#"]
+    <INCLUDE_TYPOSCRIPT: source="FILE:./__DEV/Constants.typoscript">
+[END]
+
+[applicationContext matches "#^Production/(Dev|Staging)#"]
+    <INCLUDE_TYPOSCRIPT: source="FILE:./__STAGE/Constants.typoscript">
+[END]
