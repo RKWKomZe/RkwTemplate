@@ -1,0 +1,63 @@
+
+plugin.tx_rkwevents {
+
+	persistence {
+		// cat=plugin.tx_rkwevents; type=integer; label=Default storage PID
+		storagePid = 11720
+
+        # cat=plugin.tx_rkwevents; type=integer; label=Default storage PID for eventReservation (write only). PID set here has to be included in storagePid-List
+        eventReservation.newRecordStoragePid = 11720
+
+        # cat=plugin.tx_rkwevents; type=integer; label=Default storage PID for eventReservationAddPerson (write only). PID set here has to be included in storagePid-List
+        eventReservationAddPerson.newRecordStoragePid = 11720
+	}
+
+	settings {
+
+		// cat=plugin.tx_rkwevents; type=integer; label=PID for list view
+		listPid = 3599
+
+		// cat=plugin.tx_rkwevents; type=integer; label=PID for detail view
+		showPid = 3605
+
+		// cat=plugin.tx_rkwevents; type=integer; label=PID for create new reservation
+		reservationPid = 3607
+
+		// cat=plugin.tx_rkwevents; type=integer; label=PID for gallery and sheets for event view
+		sheetsForEventPid = 3605
+
+		// cat=plugin.tx_rkwevents; type=integer; label=PID for archive list
+		archivePid = 3606
+
+        // cat=plugin.tx_rkwevents; type=integer; label=Defines the parent category for the FE-filter in event listing
+        parentCategoryForFilter = 144
+
+        list {
+
+            filter {
+
+                # cat=plugin.tx_rkwevents; type=integer; label=Show filter option "category"
+                showCategory = 1
+
+                # cat=plugin.tx_rkwevents; type=integer; label=Show filter option "time"
+                showTime = 1
+
+                # hint: use value "11" for the maximum amount of months!
+                showTimeNumberOfMonths = 11
+
+            }
+        }
+
+        mandatoryFields {
+
+            // cat=plugin.tx_rkwevents; type=string; label=Mandatory fields for registration of main person. Comma separated lists with property names (e.g. salutation, firstName, lastName, address, zip, city, email)
+            eventReservationMainPerson = salutation, firstName, lastName, email, address, zip, city, company
+
+        }
+
+    }
+}
+
+
+
+
