@@ -4,5 +4,5 @@ services:
     autoconfigure: true
     public: false
 
-  RKW\Templates\:
+  RKW\Template\:
     resource: '../Classes/*'
