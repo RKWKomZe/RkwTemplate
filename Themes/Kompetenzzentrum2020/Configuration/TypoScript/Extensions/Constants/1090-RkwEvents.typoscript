@@ -6,10 +6,10 @@ plugin.tx_rkwevents {
 		storagePid = 2986,3234,3469,3621,3652,4789,4244,7961
 
         # cat=plugin.tx_rkwevents; type=integer; label=Default storage PID for eventReservation (write only). PID set here has to be included in storagePid-List
-        eventReservation.newRecordStoragePid = 4244
+        eventReservation.newRecordStoragePid = 2986
 
         # cat=plugin.tx_rkwevents; type=integer; label=Default storage PID for eventReservationAddPerson (write only). PID set here has to be included in storagePid-List
-        eventReservationAddPerson.newRecordStoragePid = 4244
+        eventReservationAddPerson.newRecordStoragePid = 2986
     }
 
 	settings {
