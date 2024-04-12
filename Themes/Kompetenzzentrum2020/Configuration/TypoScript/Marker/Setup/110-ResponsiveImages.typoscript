@@ -1,5 +1,4 @@
 /**
  * make settings available in extensions by inheriting into their settings
- * <sms:media file="{image}" srcset=sizes="(min-width: 1200px) 600px, (min-width: 900px) 800px, 100vw" />
  */
 

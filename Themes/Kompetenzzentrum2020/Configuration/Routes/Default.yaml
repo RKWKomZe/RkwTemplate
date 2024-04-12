@@ -7,6 +7,5 @@ RkwTemplate:
   defaultController: 'Ajax::mobileMenu'
 
 imports:
-  - { resource: "EXT:rkw_template/Themes/Kompetenzzentrum2020/Configuration/Routes/Imports/Languages.yaml" }
   - { resource: "EXT:rkw_template/Themes/Kompetenzzentrum2020/Configuration/Routes/Imports/Extensions.yaml" }
   - { resource: "EXT:rkw_template/Themes/Kompetenzzentrum2020/Configuration/Routes/Imports/PageTypes.yaml" }
