@@ -27,6 +27,7 @@ $EM_CONF[$_EXTKEY] = [
             'gridelements' => '9.8.0-9.8.99',
             'ajax_api' => '9.5.0-10.4.99',
             'core_extended' => '9.5.4-10.4.99',
+            'dr_seo' => '9.5.4-12.4.99',
             'accelerator' => '9.5.11-10.4.99',
             'fe_register' => '9.5.0-10.4.99',
             'rkw_alerts'  => '9.5.0-10.4.99',
