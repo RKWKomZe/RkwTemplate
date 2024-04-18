@@ -5,7 +5,7 @@
 plugin.tx_rkwtemplate_themeconfig {
 
 	# IMPORTANT: With / at the end for ClickEnlarge
-	website.baseUrl = http://rkw-bw.rkw.local/
+	website.baseUrl = https://rkw-bw.ddev.site:8443/
 
 }
 plugin.tx_rkwrelated_similarcontent {

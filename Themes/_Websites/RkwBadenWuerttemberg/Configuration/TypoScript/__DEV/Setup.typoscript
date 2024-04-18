@@ -49,7 +49,7 @@ plugin.tx_postmaster {
 	settings {
 
 		# URL for hard-links in templates
-		baseUrl = http://rkw-bw.rkw.local/
+		baseUrl = https://rkw-bw.ddev.site:8443/
 	}
 }
 
