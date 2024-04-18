@@ -5,7 +5,7 @@
 plugin.tx_rkwtemplate_themeconfig {
 
 	# IMPORTANT: With / at the end for ClickEnlarge
-	website.baseUrl = http://karriereseiten-check.rkw.local/
+	website.baseUrl = https://karriereseiten-check.ddev.site:8443/
 
 }
 

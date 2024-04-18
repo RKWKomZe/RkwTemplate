@@ -38,7 +38,7 @@ plugin.tx_postmaster {
 	settings {
 
 		# URL for hard-links in templates
-		baseUrl = http://frauenambau.rkw.local
+		baseUrl = https://frauenambau.ddev.site:8443
 	}
 }
 rkwetracker.persistence < plugin.tx_rkwetracker.persistence
