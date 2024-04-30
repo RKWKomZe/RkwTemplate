@@ -5,7 +5,7 @@
 plugin.tx_rkwtemplate_themeconfig {
 
 	# IMPORTANT: With / at the end for ClickEnlarge
-	website.baseUrl = https://aprodi-projekt.ddev.site:8443/
+	website.baseUrl = http://aprodi-projekt.rkw.local/
 
 }
 
