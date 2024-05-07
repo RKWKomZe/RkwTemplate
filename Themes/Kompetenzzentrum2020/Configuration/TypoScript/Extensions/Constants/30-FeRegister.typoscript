@@ -81,6 +81,9 @@ plugin.tx_feregister {
             # cat=plugin.tx_feregister//a; type=string; label=Login text
             loginText = Mein RKW
 
+            # cat=plugin.tx_feregister//a; type=string; label=Register mandatory fields, values must be comma-separated
+            requiredFormFields = email, last_name, first_name
+
             passwordSettings {
                 # cat=plugin.tx_feregister//a; type=integer; label=Minimum password length (default = 8)
                 minLength = 10
