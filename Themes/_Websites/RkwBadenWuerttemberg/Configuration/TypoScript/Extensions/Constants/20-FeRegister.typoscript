@@ -44,6 +44,11 @@ plugin.tx_feregister {
 
             # cat=plugin.tx_feregister//a; type=string; label=Company name for consent
             companyName = das RKW Baden-Württemberg
+
+            topics {
+                # cat=plugin.tx_feregister//a; type=bool; label=Enable category selection
+                enable = 0
+            }
         }
     }
 }

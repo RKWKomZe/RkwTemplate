@@ -42,6 +42,11 @@ plugin.tx_feregister {
 
             # cat=plugin.tx_feregister//a; type=string; label=Company name for consent
             companyName = das RKW Nord
+
+            topics {
+                # cat=plugin.tx_feregister//a; type=bool; label=Enable category selection
+                enable = 0
+            }
         }
     }
 }
