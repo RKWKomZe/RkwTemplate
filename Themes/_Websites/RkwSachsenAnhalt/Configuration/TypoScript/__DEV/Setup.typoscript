@@ -38,7 +38,7 @@ plugin.tx_postmaster {
 	settings {
 
 		# URL for hard-links in templates
-		baseUrl = https://rkw-sachsenanhalt.ddev.site:8443
+		baseUrl = http://rkw-sachsenanhalt.rkw.local/
 	}
 }
 
