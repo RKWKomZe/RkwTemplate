@@ -54,6 +54,11 @@ plugin.tx_feregister {
 
             # cat=plugin.tx_feregister//a; type=string; label=Company email for revocation of consent
             companyEmail = widerruf@rkw.de
+
+            topics {
+                categoryParentUid = 261
+                categoryMaxDepth = 0
+            }
         }
 
         users {

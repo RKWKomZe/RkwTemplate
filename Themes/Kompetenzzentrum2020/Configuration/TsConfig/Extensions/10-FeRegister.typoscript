@@ -1,0 +1,5 @@
+TCEFORM.fe_users.tx_feregister_consent_topics.config.treeConfig.rootUid = 261
+TCEFORM.fe_users.tx_feregister_consent_topics.config.treeConfig.appearance.maxLevels = 10
+
+TCEFORM.tx_feregister_domain_model_consent.consent_topics.config.treeConfig.rootUid = 261
+TCEFORM.tx_feregister_domain_model_consent.consent_topics.config.treeConfig.appearance.maxLevels = 10
