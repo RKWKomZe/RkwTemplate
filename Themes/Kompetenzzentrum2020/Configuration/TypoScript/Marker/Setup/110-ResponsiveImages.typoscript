@@ -1,0 +1,4 @@
+/**
+ * make settings available in extensions by inheriting into their settings
+ */
+

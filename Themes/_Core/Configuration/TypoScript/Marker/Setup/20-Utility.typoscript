@@ -8,7 +8,7 @@ lib.txRkwTemplate {
 
         //=================================================================
         websiteUrl = USER_INT
-        websiteUrl.userFunc = Madj2k\CoreExtended\MetaTag\CanonicalGenerator->getPath
+        websiteUrl.userFunc = Madj2k\DrSeo\MetaTag\CanonicalGenerator->getPath
 
         //=================================================================
         websiteUrlEncoded < .websiteUrl

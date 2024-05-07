@@ -7,7 +7,7 @@ lib.txRkwTemplate {
     schemaOrg {
 
         url = USER_INT
-        url.userFunc = Madj2k\CoreExtended\MetaTag\CanonicalGenerator->getPath
+        url.userFunc = Madj2k\DrSeo\MetaTag\CanonicalGenerator->getPath
 
         #=================================================================
         logoUrl = TEXT
