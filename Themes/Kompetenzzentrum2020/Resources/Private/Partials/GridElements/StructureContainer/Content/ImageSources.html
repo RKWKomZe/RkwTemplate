@@ -3,9 +3,6 @@
     data-namespace-typo3-fluid="true">
 
     <f:if condition="! {coreExtended:isEmpty(string:'{f:cObject(typoscriptObjectPath: \'lib.txRkwTemplate.pageInfo.imageResources\')}')}">
-        <p class="media-sources {f:if(condition: '! {coreExtended:isEmpty(string:\'{data.tx_gridelements_view_column_70}\')}', then: 'media-sources--space')}" role="contentinfo">
-            <strong><f:translate key="{settings.themeLanguageFile}:partials.gridElements.contentContainer.content.imageResources" />: </strong>
-            <f:cObject typoscriptObjectPath="lib.txRkwTemplate.pageInfo.imageResources" />
-        </p>
+       <f:cObject typoscriptObjectPath="lib.txRkwTemplate.pageInfo.imageResources" />
     </f:if>
 </html>

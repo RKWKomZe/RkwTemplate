@@ -292,9 +292,6 @@
             <trans-unit id="partials.gridElements.contentContainer.aside.information">
                 <source>Further information</source>
             </trans-unit>
-            <trans-unit id="partials.gridElements.contentContainer.content.imageResources">
-                <source>Image Resources</source>
-            </trans-unit>
             <trans-unit id="partials.gridElements.contentContainer.content.labelChapter">
                 <source>Chapter</source>
             </trans-unit>

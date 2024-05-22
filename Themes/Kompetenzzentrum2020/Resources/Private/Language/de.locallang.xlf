@@ -359,10 +359,7 @@
                 <source>Futher information</source>
                 <target>Weiterführende Links</target>
             </trans-unit>
-			<trans-unit id="partials.gridElements.contentContainer.content.imageResources">
-				<source>Image Resources</source>
-				<target>Bildnachweise</target>
-			</trans-unit>
+
 			<trans-unit id="partials.gridElements.contentContainer.content.labelChapter">
 				<source>Chapter</source>
 				<target>Kapitel</target>
