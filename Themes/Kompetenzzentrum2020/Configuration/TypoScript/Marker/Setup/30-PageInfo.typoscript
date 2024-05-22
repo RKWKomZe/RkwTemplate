@@ -209,20 +209,20 @@ lib.txRkwTemplate {
         imageResources = USER
         imageResources {
             userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
-            extensionName = CoreExtended
-            pluginName = MediaSources
+            extensionName = CopyrightGuardian
+            pluginName = MediaSource
             vendorName = Madj2k
-            controller = MediaSources
+            controller = MediaSource
             switchableControllerActions {
-                // Again: Controller-Name and Action
-                MediaSources {
-                    1 = listPage
+            // Again: Controller-Name and Action
+                MediaSource {
+                    1 = list
                 }
             }
 
-            view =< plugin.tx_coreextended.view
-            persistence =< plugin.tx_coreextended.persistence
-            settings =< plugin.tx_coreextended.settings
+            view =< plugin.tx_copyrightguadian.view
+            persistence =< plugin.tx_copyrightguadian.persistence
+            settings =< plugin.tx_copyrightguadian.settings
             settings.resources.includeFieldsList = pages.tx_coreextended_preview_image, pages.media, tt_content.image, tt_content.assets
         }
 

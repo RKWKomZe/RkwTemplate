@@ -1,3 +1,8 @@
+# start import stuff for all websites - should be part of site-package!
+@import 'EXT:accelerator/Configuration/TypoScript/setup.typoscript'
+@import 'EXT:accelerator/Configuration/TypoScript/ResponsiveImages/setup.typoscript'
+# end important stuff
+
 <INCLUDE_TYPOSCRIPT: source="FILE:../../../_Core/Configuration/TypoScript/setup.typoscript">
 
 <INCLUDE_TYPOSCRIPT: source="FILE:./Config/Setup.typoscript">
