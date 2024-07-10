@@ -7,20 +7,26 @@
 
     <f:section name="Main">
 
-        <div id="c{data.uid}" class="call-to-action flex-container" style="background-image: url('{f:uri.image(image:images.0,width:'1050',cropVariant:'default')}')">
-            <div class="call-to-action__text {f:if(condition: '{data.header_layout} == 1', then: 'call-to-action__text--inverted')} flex-basis-8">
-                <f:render partial="Header" arguments="{
-                        header: data.header
-                    }" />
-                <p>{data.rowDescription}</p>
-            </div>
+        <div
+            id="c{data.uid}"
+            class="call-to-action {f:if(condition: '{data.header_layout} == 1', then: 'call-to-action--inverted')} flex-container"
+            style="background-image: url('{f:uri.image(image:images.0,width:'1050',cropVariant:'default')}')"
+        >
+            <div class="call-to-action__textwrapper flex-container flex">
+                <div class="call-to-action__text flex-basis-8">
+                    <f:render partial="Header" arguments="{
+                            header: data.header
+                        }" />
+                    <p>{data.rowDescription}</p>
+                </div>
 
-            <div class="call-to-action__button flex-basis-4 flex align-center">
-                <f:if condition="{data.header_link}">
-                    <rkwEtracker:link.typolink parameter="{data.header_link}" class="btn btn--primary">
-                        {data.subheader}
-                    </rkwEtracker:link.typolink>
-                </f:if>
+                <div class="call-to-action__button flex-basis-4 flex align-center">
+                    <f:if condition="{data.header_link}">
+                        <rkwEtracker:link.typolink parameter="{data.header_link}" class="btn btn--primary">
+                            {data.subheader}
+                        </rkwEtracker:link.typolink>
+                    </f:if>
+                </div>
             </div>
         </div>
 
