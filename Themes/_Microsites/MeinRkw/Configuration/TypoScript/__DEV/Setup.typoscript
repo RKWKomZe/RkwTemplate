@@ -26,7 +26,7 @@ plugin.tx_postmaster {
 	settings {
 
 		# URL for hard-links in templates
-		baseUrl = https://mein.ddev.site:8443
+		baseUrl = https://mein-rkw.ddev.site:8443
 	}
 }
 
