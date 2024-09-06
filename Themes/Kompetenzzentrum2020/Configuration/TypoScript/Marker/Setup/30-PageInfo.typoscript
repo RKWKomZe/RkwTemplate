@@ -8,10 +8,11 @@ lib.txRkwTemplate {
             10 {
                 source.data = levelfield: -1 , tx_rkwprojects_project_uid, slide
                 tables = tx_rkwprojects_domain_model_projects
+
                 conf.tx_rkwprojects_domain_model_projects = TEXT
                 conf.tx_rkwprojects_domain_model_projects {
-                    field = short_name
-                    override.field = internal_name
+                    field = name
+                    //  override.field = internal_name
                 }
 
                 // Default value if empty
@@ -29,7 +30,7 @@ lib.txRkwTemplate {
             10 {
                 conf.tx_rkwprojects_domain_model_projects {
                     field = name
-                    override.field = short_name
+                    //  override.field = short_name
                     stdWrap.typolink {
                         parameter.field = project_pid
                         ATagParams = class="link link--underlined"
@@ -52,7 +53,7 @@ lib.txRkwTemplate {
                 conf.tx_rkwbasics_domain_model_documenttype = TEXT
                 conf.tx_rkwbasics_domain_model_documenttype {
                     field = name
-                   // override.field = short_name
+                    // override.field = short_name
                 }
             }
         }
