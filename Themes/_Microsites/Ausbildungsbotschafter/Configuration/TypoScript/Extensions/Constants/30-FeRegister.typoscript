@@ -29,6 +29,12 @@ plugin.tx_feregister {
         # cat=plugin.tx_feregister//a; type=integer; label=Pid of groups list
         groupListPid = 12386
 
+        # cat=plugin.tx_feregister//a; type=integer; label=Pid for group-opt-in. Must be accessible if logged in AND if not logged in
+        groupOptInPid = 12397
+
+        # cat=plugin.tx_feregister//a; type=string; label=Company email for service
+        companyEmail = service@rkw.de
+
         consent {
 
             // cat=plugin.tx_feregister//a; type=integer; label=Pid of terms & conditions
