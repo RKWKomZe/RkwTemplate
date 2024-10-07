@@ -1,0 +1,9 @@
+mod {
+    web_list {
+        tableDisplayOrder {
+            tx_rkwevents_domain_model_eventseries {
+                before = sys_category
+            }
+        }
+    }
+}
