@@ -1,4 +1,4 @@
-<html 
+<html
 	xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
 	xmlns:coreExtended="http://typo3.org/ns/Madj2k/CoreExtended/ViewHelpers"
 	data-namespace-typo3-fluid="true">
@@ -18,7 +18,9 @@
 		</header>
 
 		<f:comment><!-- main section --></f:comment>
+        <!--TYPO3SEARCH_begin-->
 		<f:render section="Content" />
+        <!--TYPO3SEARCH_end-->
 
 		<f:comment><!-- footer --></f:comment>
 		<f:render partial="Basics/Footer" section="Default" arguments="{_all}"/>
@@ -31,7 +33,7 @@
 	<f:comment><!-- Some AJAX-Requests --></f:comment>
 	<f:cObject typoscriptObjectPath="lib.txRkwTemplate.various.loginInfo" data="{data}" />
 	<f:cObject typoscriptObjectPath="lib.txRkwTemplate.various.mobileMenu" data="{data}" />
-	
+
 	<f:comment><!-- For Browser-Version-Check --></f:comment>
 	<div id="outdated"></div>
 

@@ -12,7 +12,7 @@ tx_gridelements.setup.topicLinksContainer {
                         name = LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.topicLinksContainer.title
                         colPos = 190
                         allowed {
-                            CType = rkwtemplate_topic
+                            CType = rkwtemplate_topic, mask_link_tile_container
                         }
                     }
                 }
