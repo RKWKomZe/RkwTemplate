@@ -19,10 +19,12 @@
                 <f:render partial="HeaderSection/Article" arguments="{_all}" />
 
                 <f:comment><!-- breadcrumb--></f:comment>
+                <!--TYPO3SEARCH_end-->
                 <nav class="breadcrumbs flex-container nav breadcrumb-padding"
                      aria-label="{f:translate(key:'{settings.themeLanguageFile}:templates.menus.breadcrumb.descriptionAriaLabel')}">
                     <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.breadcrumb" data="{data}" />
                 </nav>
+                <!--TYPO3SEARCH_begin-->
 
                 <f:comment><!-- content --></f:comment>
                 <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.main" data="{data}" />
@@ -33,7 +35,7 @@
 
             <f:comment><!-- boxes --></f:comment>
             <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.boxesArticle" data="{data}" />
-            
+
             <f:comment><!-- sticky-footer --></f:comment>
             <f:render partial="FooterSection/StickyFooter" section="Newsletter" arguments="{_all}" />
         </main>

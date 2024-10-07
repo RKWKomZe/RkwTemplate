@@ -15,10 +15,12 @@
             <section class="section content content-padding-layoutmax">
 
                 <f:comment><!-- breadcrumb--></f:comment>
-                <nav class="breadcrumbs flex-container nav breadcrumb-py" 
+                <!--TYPO3SEARCH_end-->
+                <nav class="breadcrumbs flex-container nav breadcrumb-py"
                      aria-label="{f:translate(key:'{settings.themeLanguageFile}:templates.menus.breadcrumb.descriptionAriaLabel')}">
                     <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.breadcrumb" data="{data}" />
                 </nav>
+                <!--TYPO3SEARCH_begin-->
 
                 <f:comment><!-- plugin only --></f:comment>
                 <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.pluginOnly" data="{data}" />
@@ -27,7 +29,7 @@
 
             <f:comment><!-- sticky-footer --></f:comment>
             <f:render partial="FooterSection/StickyFooter" section="Newsletter" arguments="{_all}" />
-            
+
         </main>
     </f:section>
 </html>

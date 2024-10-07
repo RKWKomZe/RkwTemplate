@@ -32,7 +32,7 @@
     mod.wizards.newContentElement.wizardItems.common.show := removeFromList(rkwtemplate_slider)
 
     // remove grid elements by their ID (aka name)
-    tx_gridelements.excludeLayoutIds = sliderContainer, promoterContainer, listContainer, stickyFooterContainer, tilesContainer, testimonialContainer, galleryContainer, collageContainer, moreListContainer, tabContainer, accordionContainer, tagcloudContainer, boxSliderContainer, topicLinksContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerOneCol, contentContainerOneColPagination, contentContainerOneColOrderForm, contentContainerLandingpageTwoCols, contentContainerLandingpageOneCol
+    tx_gridelements.excludeLayoutIds = ssliderContainer, promoterContainer, listContainer, stickyFooterContainer, tilesContainer, testimonialContainer, galleryContainer, collageContainer, moreListContainer, tabContainer, accordionContainer, tagcloudContainer, boxSliderContainer, topicLinksContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerOneCol, contentContainerOneColPagination, contentContainerOneColOrderForm, contentContainerLandingpageTwoCols, contentContainerLandingpageOneCol
 
 [end]
 
