@@ -1,0 +1,5 @@
+plugin.tx_solr.search.faceting.facets {
+    didacticDevice {
+        manualSortOrder = Veranstaltungen, Coaching und Beratung, Erfahrungsaustausch, Mittelstandsprojekte, Blog
+    }
+}
