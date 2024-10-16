@@ -265,6 +265,15 @@ var klaroConfig = {
           description: 'Dieses Cookie speichert die getroffene Auswahl der durch die Nutzenden zugelassenen Cookies.'
         },
       },
+      onAccept: `
+        var _etrackerOnReady = typeof _etrackerOnReady === 'undefined' ? [] : _etrackerOnReady;
+        _etrackerOnReady.push(function(){ _etracker.enableCookies() });
+      `,
+      onInit: ``,
+      onDecline: `
+				var _etrackerOnReady = typeof _etrackerOnReady === 'undefined' ? [] : _etrackerOnReady;
+				_etrackerOnReady.push(function(){ _etracker.disableCookies() });
+			`,
     },
     {
       purposes: ['statistics'],

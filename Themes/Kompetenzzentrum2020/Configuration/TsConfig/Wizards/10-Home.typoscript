@@ -26,7 +26,7 @@
 
     // remove everything - except for some items
     // Important: this also has to include gridelements_pi1 for the gridContainer if needed!
-    TCEFORM.tt_content.CType.keepItems = gridelements_pi1, rkwtemplate_mission, rkwtemplate_multimedia, list
+    TCEFORM.tt_content.CType.keepItems = gridelements_pi1, rkwtemplate_mission, rkwtemplate_multimedia, list, mask_search_header, mask_link_tile_container
 
     // remove everything - except for some items
     mod.wizards.newContentElement.wizardItems.common.show := removeFromList(rkwtemplate_slider)
