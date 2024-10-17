@@ -1,0 +1,75 @@
+lib.txKlarokratie {
+
+    etracker {
+
+        domain = COA
+        domain {
+            10 = TEXT
+            10.data = getIndpEnv:HTTP_HOST
+        }
+
+        categoryLevel1 = COA
+        categoryLevel1 {
+            30 = RECORDS
+            30 {
+                source.data = levelfield: -1 , tx_rkwbasics_department, slide
+                tables = tx_rkwbasics_domain_model_department
+                conf.tx_rkwbasics_domain_model_department = TEXT
+                conf.tx_rkwbasics_domain_model_department {
+                    field = name
+                    override.field = internal_name
+                }
+
+                // Default value if empty
+                stdWrap.ifEmpty.cObject = COA
+                stdWrap.ifEmpty.cObject {
+                    10 = TEXT
+                    10.value = Default
+                }
+            }
+        }
+
+        categoryLevel2 = COA
+        categoryLevel2 {
+            10 = RECORDS
+            10 {
+                source.data = levelfield: -1 , tx_rkwprojects_project_uid, slide
+                tables = tx_rkwprojects_domain_model_projects
+                conf.tx_rkwprojects_domain_model_projects = TEXT
+                conf.tx_rkwprojects_domain_model_projects {
+                    field = short_name
+                    override.field = internal_name
+                }
+
+                // Default value if empty
+                stdWrap.ifEmpty.cObject = COA
+                stdWrap.ifEmpty.cObject {
+                    10 = TEXT
+                    10.value = Default
+                }
+            }
+        }
+
+        categoryLevel3 = COA
+        categoryLevel3 {
+            30 = RECORDS
+            30 {
+                source.data = levelfield: -1, tx_rkwbasics_document_type, slide
+                tables = tx_rkwbasics_domain_model_documenttype
+                conf.tx_rkwbasics_domain_model_documenttype = TEXT
+                conf.tx_rkwbasics_domain_model_documenttype {
+                    field = name
+                    override.field = short_name
+                    override.override.field = internal_name
+                }
+
+                // Default value if empty
+                stdWrap.ifEmpty.cObject = COA
+                stdWrap.ifEmpty.cObject {
+                    10 = TEXT
+                    10.value = Default
+                }
+            }
+        }
+    }
+}
