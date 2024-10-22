@@ -11,7 +11,10 @@ page {
         // Fix for flashing modals
         1729612193 = TEXT
         1729612193.value (
-            <style>.mdl {position: fixed; top: 50%; left: 50%; opacity: 0; visibility: hidden;}</style>
+            <style>
+            .mdl {position: fixed; top: 50%; left: 50%; opacity: 0; visibility: hidden;}
+            .mdl-layer { position: fixed; left: 0; top: 0; opacity: 0; visibility: hidden;}
+            </style>
         )
 
         // Viewport
