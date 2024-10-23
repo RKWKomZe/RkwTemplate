@@ -3,6 +3,7 @@
     --green2: #d63f11;
     --green3: #d63f11;
     --font-family: "Palanquin", Helvetica, Arial, sans-serif;
+    margin: auto;
 }
 .klaro .context-notice {
     background-color: #f2f2f2;
