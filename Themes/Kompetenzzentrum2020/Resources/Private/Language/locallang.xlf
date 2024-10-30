@@ -106,7 +106,7 @@
             <trans-unit id="partials.footerSection.stickyNewsletterButton">
                 <source>Subscribe to RKW Newsletter</source>
             </trans-unit>
-			<trans-unit id="stickyNewsletterCloseButtonAriaLabel">
+			<trans-unit id="partials.footerSection.stickyNewsletterCloseButtonAriaLabel">
 				<source>Close hint</source>
 			</trans-unit>
 
@@ -279,11 +279,6 @@
             <!-- Tile -->
             <trans-unit id="contentElement.tile.labelShowMore">
                 <source>Show More</source>
-            </trans-unit>
-
-           <!-- StickyFooter -->
-            <trans-unit id="contentElement.stickyFooter.labelScrollToTop">
-                <source>Scroll to top</source>
             </trans-unit>
 
             <!-- ================================================================== -->

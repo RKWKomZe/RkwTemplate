@@ -73,7 +73,11 @@
             </trans-unit>
 
             <!-- StickyFooterContainer -->
-            <trans-unit id="contentElement.stickyFooterContainer.labelScrollToTop">
+			<trans-unit id="contentElement.stickyFooterContainer.closeButtonAriaLabel">
+				<source>Close hint</source>
+				<target>Hinweis schließen</target>
+			</trans-unit>
+			<trans-unit id="contentElement.stickyFooterContainer.labelScrollToTop">
                 <source>Scroll to top</source>
                 <target>Nach oben</target>
             </trans-unit>
