@@ -121,7 +121,7 @@
                 <source>Subscribe to RKW Newsletter now</source>
                 <target>Jetzt RKW Newsletter abonnieren</target>
             </trans-unit>
-			<trans-unit id="stickyNewsletterCloseButtonAriaLabel">
+			<trans-unit id="partials.footerSection.stickyNewsletterCloseButtonAriaLabel">
 				<source>Close hint</source>
 				<target>Hinweis schließen</target>
 			</trans-unit>
@@ -344,12 +344,6 @@
             <trans-unit id="contentElement.tile.labelShowMore">
                 <source>Show More</source>
                 <target>Mehr lesen</target>
-            </trans-unit>
-
-           <!-- StickyFooter -->
-            <trans-unit id="contentElement.stickyFooter.labelScrollToTop">
-                <source>Scroll to top</source>
-                <target>Nach oben</target>
             </trans-unit>
 
             <!-- ================================================================== -->

@@ -48,6 +48,9 @@
             </trans-unit>
 
             <!-- StickyFooterContainer -->
+            <trans-unit id="contentElement.stickyFooterContainer.closeButtonAriaLabel">
+                <source>Close hint</source>
+            </trans-unit>
             <trans-unit id="contentElement.stickyFooterContainer.labelScrollToTop">
                 <source>Scroll to top</source>
             </trans-unit>
