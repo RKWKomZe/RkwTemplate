@@ -23,12 +23,14 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="footer-totop">
-                <a class="footer-totop__close {f:if(condition: '{data.layout} == 10', then: 'footer-totop__close--hide', else: 'js-close-footer')}">
-                    &times;
-                </a>
-    
+                <button
+                    class="btn--icon footer-totop__close {f:if(condition: '{data.layout} == 10', then: 'footer-totop__close--hide', else: 'js-close-footer')}"
+                    tabindex="2"
+                    aria-label="{f:translate(key:'LLL:EXT:rkw_template/Resources/Private/Language/locallang.xlf:contentElement.stickyFooterContainer.closeButtonAriaLabel')}"
+                >&times;</button>
+
                 <a href="#top" data-target="#top" class="footer-totop__link">
                     <svg class="icon">
                         <use xlink:href="#ic-arrow-footer" />
