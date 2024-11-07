@@ -1,4 +1,7 @@
-<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:rkwEtracker="http://typo3.org/ns/RKW/RkwEtracker/ViewHelpers"
+    data-namespace-typo3-fluid="true">
 
     <f:layout name="Rkw" />
 
@@ -18,6 +21,27 @@
                 <p class="text-lead">
                     <f:format.nl2br><f:format.stripTags>{data.bodytext}</f:format.stripTags></f:format.nl2br>
                 </p>
+
+                <f:if condition="{data.header_link}">
+                    <rkwEtracker:link.typolink parameter="{data.header_link}" class="btn btn--primary">
+                        <f:if condition="{data.rowDescription}">
+                            <f:then>
+                                {data.rowDescription}
+                            </f:then>
+                            <f:else>
+                                <f:if condition="{settings.themeLanguageFile}">
+                                    <f:then>
+                                        <f:translate key="{settings.themeLanguageFile}:contentElement.topic.showMore" />
+                                    </f:then>
+                                    <f:else>
+                                        {data.header}
+                                    </f:else>
+                                </f:if>
+                            </f:else>
+                        </f:if>
+                    </rkwEtracker:link.typolink>
+                </f:if>
+
             </div>
         </div>
 
