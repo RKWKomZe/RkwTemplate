@@ -10,7 +10,9 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_mission'] = [
             header;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_formlabel,
             --linebreak--,
             subheader;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:subheader_formlabel,
-           bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,
+            header_link;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_link_formlabel,
+            rowDescription,
+            bodytext;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:bodytext_formlabel,
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,
             --palette--;;language,
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access,
@@ -22,12 +24,24 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_mission'] = [
                 'eval' => 'required',
             ]
         ],
+        'header_link' => [
+            'config' => [
+                'eval' => 'trim',
+            ]
+        ],
         'bodytext' => [
             'config' => [
                 'enableRichtext' => false,
                 'eval' => 'required',
             ]
-        ]
+        ],
+        'rowDescription' => [
+            'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:contentElement.topic.rowDescription',
+            'config' => [
+                'type' => 'input',
+                'eval' => 'trim',
+            ]
+        ],
     ]
 ];
 
