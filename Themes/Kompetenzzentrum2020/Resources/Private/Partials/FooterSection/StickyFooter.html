@@ -16,7 +16,7 @@
                         </f:if>
                         </p>
                     <div class="btn-list flex-container center-main">
-                        <f:link.page pageUid="{settings.websiteNewsletterSubscriptionPid}" target="_blank" class="btn btn--primary" tabindex="1">
+                        <f:link.page pageUid="{settings.websiteNewsletterSubscriptionPid}" target="_blank" class="btn btn--primary" tabindex="0">
                             <f:if condition="{settings.websiteNewsletterSubscriptionButtonTextOverride}">
                                 <f:then>
                                     {settings.websiteNewsletterSubscriptionButtonTextOverride}
@@ -30,8 +30,7 @@
                 </div>
                 <div class="footer-totop">
                     <button
-                        class="btn--icon footer-totop__close js-close-footer"
-                        tabindex="2"
+                        class="btn--link footer-totop__close js-close-footer"
                         aria-label="{f:translate(key:'{settings.themeLanguageFile}:partials.footerSection.stickyNewsletterCloseButtonAriaLabel')}"
                     >&times;</button>
                 </div>
