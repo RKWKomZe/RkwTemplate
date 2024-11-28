@@ -7,7 +7,7 @@ lib.txRkwTemplate {
     socialMedia {
 
         shareUrl = USER_INT
-        shareUrl.userFunc = Madj2k\DrSeo\MetaTag\CanonicalGenerator->getPath
+        shareUrl.userFunc = Madj2k\DrSerp\MetaTag\CanonicalGenerator->getPath
         shareUrl.stdWrap.rawUrlEncode = 1
 
     }
