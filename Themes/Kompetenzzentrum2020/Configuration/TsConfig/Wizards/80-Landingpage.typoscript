@@ -27,7 +27,7 @@
 
     // remove everything - except for some items
     // Important: this also has to include gridelements_pi1 for the gridContainer if needed!
-    TCEFORM.tt_content.CType.keepItems = gridelements_pi1, rkwtemplate_textimagebackground, list
+    TCEFORM.tt_content.CType.keepItems = gridelements_pi1, header, text, textpic, image, textmedia, html, list, rkwtemplate_textimagebackground
 
     // remove grid elements by their ID (aka name)
     tx_gridelements.excludeLayoutIds = sliderContainer, topicContainer, logoContainer, promoterContainer, tabContainer, accordionContainer, topicLinksContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerOneCol, contentContainerOneColPagination, contentContainerOneColOrderForm, stickyFooterContainer

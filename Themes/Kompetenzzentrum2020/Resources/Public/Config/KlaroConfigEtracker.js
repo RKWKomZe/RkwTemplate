@@ -125,6 +125,9 @@ var klaroConfig = {
 				privacyPolicy: { name: "Datenschutzerklärung" },
 				testing: "Testmodus!",
 			},
+      decline: "Ablehnen",
+      acceptSelected: "Nur ausgewählte",
+      acceptAll:"Zustimmen",
 			purposes: {
         functional: {
           title: "Funktional",
@@ -159,6 +162,9 @@ var klaroConfig = {
         privacyPolicy: { name: "Data protection declaration" },
         testing: "Testmodus!",
       },
+      decline: "Decline",
+      acceptSelected: "Only selected",
+      acceptAll:"Agree",
 			purposes: {
         functional: {
           title: "Functional",
