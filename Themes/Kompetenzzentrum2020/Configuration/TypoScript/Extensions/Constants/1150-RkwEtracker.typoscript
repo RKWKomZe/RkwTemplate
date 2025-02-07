@@ -9,7 +9,8 @@ plugin.tx_rkwetracker {
 
     settings {
 
-        disable = 1
+        # cat=plugin.tx_rkwetracker; type=bool; Disable code
+        disableCode = 1
 
         # cat=plugin.tx_rkwetracker; type=string; Account start date
         accountStartDate = 2016-01-18
