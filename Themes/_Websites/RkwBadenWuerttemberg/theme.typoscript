@@ -72,13 +72,13 @@ plugin.tx_rkwtemplate_themeconfig {
         linkedIn = https://de.linkedin.com/company/rkw-baden-wuerttemberg
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to YouTube page
-        youTube = https://www.youtube.com/@rkwbw6785
+        youTube =
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to Instagram page
         instagram = https://www.instagram.com/rkw_bw/
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to TikTok
-        tiktok = https://www.tiktok.com/@rkw_bw
+        tiktok =
 
     }
 
