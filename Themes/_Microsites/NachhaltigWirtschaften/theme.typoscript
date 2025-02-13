@@ -9,7 +9,7 @@ plugin.tx_rkwtemplate_themeconfig {
     paths {
         default {
             # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Path to logos
-            # logos = EXT:rkw_template/Themes/{$plugin.tx_rkwtemplate_themeconfig.subThemeName}/Resources/Public/images/logos
+            logos = EXT:rkw_template/Themes/{$plugin.tx_rkwtemplate_themeconfig.subThemeName}/Resources/Public/images/logos
         }
     }
 
@@ -25,10 +25,10 @@ plugin.tx_rkwtemplate_themeconfig {
         rootPid = 12715
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Use this text instead of a logo
-        logoReplacementText = nachhaltig-wirtschaften.jetzt
+        logoReplacementText =
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Publisher of website
-        publisher = Nachhaltig wirtschaften
+        publisher = RKW
     }
 
 
