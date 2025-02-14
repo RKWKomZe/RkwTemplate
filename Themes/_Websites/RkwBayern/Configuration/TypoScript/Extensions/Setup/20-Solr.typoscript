@@ -4,7 +4,7 @@ plugin.tx_solr {
         faceting {
             facets {
                 didacticDevice {
-                    manualSortOrder = Termine Seminare, Termine Erfahrungsaustausch, Coaching und Beratung, Mittelstandsprojekte, Blog
+                    manualSortOrder = Termine Seminare, Termine Erfahrungsaustauschkreis, Coaching und Beratung, Mittelstandsprojekte, Blog
                 }
             }
         }
@@ -14,7 +14,7 @@ plugin.tx_solr {
         queue {
             rkw_events {
                 fields {
-                    // RKWBayern: Instead of default "Veranstaltung" the title of the "documentyType" ("Veranstaltungsart") should be used
+                    // RkwBayern: Instead of default "Veranstaltung" the title of the "documentyType" ("Veranstaltungsart") should be used
                     didacticDevice_stringS = TEXT
                     didacticDevice_stringS {
 
