@@ -1,5 +1,38 @@
-plugin.tx_solr.search.faceting.facets {
-    didacticDevice {
-        manualSortOrder = Veranstaltungen, Coaching und Beratung, Erfahrungsaustausch, Mittelstandsprojekte, Blog
+plugin.tx_solr {
+
+    search {
+        faceting {
+            facets {
+                didacticDevice {
+                    manualSortOrder = Termine Seminare, Termine Erfahrungsaustauschkreis, Coaching und Beratung, Mittelstandsprojekte, Blog
+                }
+            }
+        }
+    }
+
+    index {
+        queue {
+            rkw_events {
+                fields {
+                    // RkwBayern: Instead of default "Veranstaltung" the title of the "documentyType" ("Veranstaltungsart") should be used
+                    didacticDevice_stringS = TEXT
+                    didacticDevice_stringS {
+
+                        cObject = COA
+                        cObject {
+                            15 = USER
+                            15 {
+                                userFunc = RKW\RkwSolrsearch\UserFunctions\SolrIndexer->getDocumentType
+                                modify = Seminar::Seminare
+                            }
+                        }
+                        # add static string
+                        noTrimWrap = |Termine ||
+                        # do something if a documentType is given
+                        required = 1
+                    }
+                }
+            }
+        }
     }
 }

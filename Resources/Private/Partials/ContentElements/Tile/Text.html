@@ -2,16 +2,18 @@
     xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
     data-namespace-typo3-fluid="true">
 
-    <div class="speaker-list__item__content">
-        <div class="speaker-title">
-            <strong>{data.header}</strong>
-            {data.subheader}
+    <f:if condition="{data.header} || {data.subheader}">
+        <div class="speaker-list__item__content">
+            <div class="speaker-title">
+                <strong>{data.header}</strong>
+                {data.subheader}
+            </div>
+            <f:if condition="{data.bodytext} || {data.header_link}">
+                <span class="speaker-link">
+                    <f:translate key="LLL:EXT:rkw_template/Resources/Private/Language/locallang.xlf:contentElement.tile.labelShowMore" />
+                </span>
+            </f:if>
         </div>
-        <f:if condition="{data.bodytext} || {data.header_link}">
-            <span class="speaker-link">
-                <f:translate key="LLL:EXT:rkw_template/Resources/Private/Language/locallang.xlf:contentElement.tile.labelShowMore" />
-            </span>
-        </f:if>
-    </div>
+    </f:if>
 
 </html>
