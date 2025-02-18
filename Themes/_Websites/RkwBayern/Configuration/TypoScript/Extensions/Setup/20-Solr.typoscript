@@ -23,7 +23,7 @@ plugin.tx_solr {
                             15 = USER
                             15 {
                                 userFunc = RKW\RkwSolrsearch\UserFunctions\SolrIndexer->getDocumentType
-                                modify = Seminar::Seminare
+                                modify = Seminar::Seminare, Online-Seminar::Seminare, Lehrgang::Seminare, Inhouse-Schulung::Seminare
                             }
                         }
                         # add static string
