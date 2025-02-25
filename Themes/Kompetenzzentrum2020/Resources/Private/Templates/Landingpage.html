@@ -6,13 +6,20 @@
 
 
     <f:section name="Header">
-        
         <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.content.landingpageSiteHeader', data:'{data}')}">
-            <div class="siteheader siteheader--big siteheader--detailimg flex valign-center js-hero-class">
-                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.landingpageSiteHeader" data="{data}" />
-            </div>
+            <f:if condition="{settings.campaign.show}">
+                <f:then>
+                    <div class="siteheader siteheader--campaign siteheader--big siteheader--detailimg flex valign-center js-hero-class">
+                        <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.landingpageSiteHeader" data="{data}" />
+                    </div>
+                </f:then>
+                <f:else>
+                    <div class="siteheader siteheader--big siteheader--detailimg flex valign-center js-hero-class">
+                        <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.landingpageSiteHeader" data="{data}" />
+                    </div>
+                </f:else>
+            </f:if>
         </f:if>
-
     </f:section>
 
 
@@ -38,7 +45,7 @@
 
             <f:comment><!-- sticky-footer --></f:comment>
             <f:render partial="FooterSection/StickyFooter" section="Landingpage" arguments="{_all}" />
-            
+
         </main>
 
     </f:section>
