@@ -6,9 +6,18 @@
         <f:if condition="{f:count(subject: assets)} > 0">
             <!-- video -->
             <f:for each="{assets}" as="file">
-                <video autoplay muted playsinline preload="none">
+                <video autoplay muted playsinline loop preload="none">
                     <source src="{file.originalFile.storage.configuration.basePath}{file.originalFile.identifier}" type="{file.originalFile.properties.mime_type}">
                 </video>
+                <button
+                    class="btn--play-pause"
+                    aria-label="Video pausieren"
+                    aria-pressed="false"
+                >
+                    <svg class="icon icon--24">
+                        <use xlink:href="#ic-pause" />
+                    </svg>
+                </button>
             </f:for>
         </f:if>
     </div>
