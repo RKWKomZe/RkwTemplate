@@ -49,5 +49,13 @@ plugin.tx_rkwrelated_morecontent {
             # cat=plugin.tx_rkwrelated_morecontent//f; type=string; label=Detail pid for publications
             publication =
         }
+
+        itemLimitPerPage {
+
+            # cat=plugin.tx_rkwrelated_morecontent//a; type=integer; label=Items per page for default layout
+            default = 4
+
+        }
+
     }
 }

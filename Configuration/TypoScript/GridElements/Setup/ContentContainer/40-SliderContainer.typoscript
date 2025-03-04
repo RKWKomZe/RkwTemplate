@@ -13,6 +13,21 @@ tt_content.gridelements_pi1.20.10.setup {
             partialRootPaths < lib.gridelements.defaultGridSetup.partialRootPaths
 
             templateName = ContentContainer/Home/SliderContainer.html
+
+            variables {
+                showAnnualTopic = TEXT
+                showAnnualTopic.value = {$plugin.tx_rkwtemplate_themeconfig.campaign.show}
+
+                campaignLabel = TEXT
+                campaignLabel.value = {$plugin.tx_rkwtemplate_themeconfig.campaign.label}
+
+                campaignImageFile = TEXT
+                campaignImageFile.value = {$plugin.tx_rkwtemplate_themeconfig.campaign.imageFile}
+
+                campaignColor = TEXT
+                campaignColor.value = {$plugin.tx_rkwtemplate_themeconfig.campaign.color}
+            }
+
         }
         outerWrap = |
     }

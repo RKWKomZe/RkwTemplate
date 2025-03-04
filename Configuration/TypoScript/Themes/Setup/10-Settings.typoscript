@@ -30,6 +30,11 @@ lib.txRkwTemplate.themeSettings {
     micrositeMainWebsiteName  = {$plugin.tx_rkwtemplate_themeconfig.microsite.mainWebsiteName}
     micrositeMainWebsiteLogoFile = {$plugin.tx_rkwtemplate_themeconfig.microsite.mainWebsiteLogoFile}
 
+    campaign.show = {$plugin.tx_rkwtemplate_themeconfig.campaign.show}
+    campaign.label = {$plugin.tx_rkwtemplate_themeconfig.campaign.label}
+    campaign.imageFile = {$plugin.tx_rkwtemplate_themeconfig.campaign.imageFile}
+    campaign.color = {$plugin.tx_rkwtemplate_themeconfig.campaign.color}
+
     socialMediaShare = {$plugin.tx_rkwtemplate_themeconfig.socialMediaShare}
     socialMedia = {$plugin.tx_rkwtemplate_themeconfig.socialMedia}
     socialMediaLinks.facebook = {$plugin.tx_rkwtemplate_themeconfig.socialMediaLinks.facebook}

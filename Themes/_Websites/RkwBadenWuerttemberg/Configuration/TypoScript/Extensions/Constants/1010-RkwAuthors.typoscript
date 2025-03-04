@@ -10,7 +10,7 @@ plugin.tx_rkwauthors {
 		listPid = 5076
 
 		// cat=plugin.tx_rkwauthors//a; type=boolean; label=show pid
-		showPid = 5077
+		showPid =
 
         # cat=plugin.tx_rkwauthors//a; type=integer; label=Show department instead of full function of author (1=instead of, 2=in addition)
         showDepartmentAsFunction = 0
@@ -24,7 +24,7 @@ plugin.tx_rkwauthors {
         contactForm {
 
             # cat=plugin.tx_rkwauthors//a; type=boolean; label=activates the form
-            isActive = 1
+            isActive = 0
 
             # cat=plugin.tx_rkwauthors//a; type=boolean; label=Activates the possibility to get a copy of the message
             allowSendCopyToUser = 1
