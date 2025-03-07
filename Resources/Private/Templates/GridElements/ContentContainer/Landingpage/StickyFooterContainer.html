@@ -28,9 +28,10 @@
                 <button
                     class="btn--link footer-totop__close {f:if(condition: '{data.layout} == 10', then: 'footer-totop__close--hide', else: 'js-close-footer')}"
                     aria-label="{f:translate(key:'LLL:EXT:rkw_template/Resources/Private/Language/locallang.xlf:contentElement.stickyFooterContainer.closeButtonAriaLabel')}"
+                    tabindex="-1"
                 >&times;</button>
 
-                <a href="#top" data-target="#top" class="footer-totop__link">
+                <a href="#top" data-target="#top" class="footer-totop__link" tabindex="-1">
                     <svg class="icon">
                         <use xlink:href="#ic-arrow-footer" />
                     </svg>
