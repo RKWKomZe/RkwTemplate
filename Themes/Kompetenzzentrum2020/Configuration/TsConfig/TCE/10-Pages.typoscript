@@ -16,6 +16,7 @@ TCEFORM.pages {
         altLabels.0 = Vererben
         addItems.10 = Thema
         addItems.11 = Thema: Nur Plugin
+        addItems.12 = Thema: Großer Header
         addItems.20 = Artikel
         addItems.21 = Artikel: Tools
         addItems.22 = Artikel: Spezial
@@ -49,6 +50,7 @@ TCEFORM.pages {
         altLabels.0 = Vererben
         addItems.10 = Thema
         addItems.11 = Thema: Nur Plugin
+        addItems.12 = Thema: Großer Header
         addItems.20 = Artikel
         addItems.21 = Artikel: Tools
         addItems.22 = Artikel: Spezial
