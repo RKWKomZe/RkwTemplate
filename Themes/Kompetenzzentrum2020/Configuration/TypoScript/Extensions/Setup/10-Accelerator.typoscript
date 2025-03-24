@@ -1,3 +1,4 @@
+/*
 plugin.tx_accelerator {
 
     settings {
@@ -10,7 +11,9 @@ plugin.tx_accelerator {
                     10 = {$plugin.tx_rkwtemplate_themeconfig.paths.default.css}/critical/topic.css
                 }
                 10 < .0
-                12 < .0
+                12 {
+                    10 = {$plugin.tx_rkwtemplate_themeconfig.paths.default.css}/critical/topic_full.css
+                }
 
                 // Article-Layout
                 20 {
@@ -36,3 +39,4 @@ plugin.tx_accelerator {
         }
 	}
 }
+*/

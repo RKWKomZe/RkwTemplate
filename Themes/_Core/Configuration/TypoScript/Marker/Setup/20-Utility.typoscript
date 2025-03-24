@@ -39,7 +39,7 @@ lib.txRkwTemplate {
         //=================================================================
         pageLayoutType = TEXT
         pageLayoutType.data = levelfield:-2,tx_coreextended_fe_layout_next_level,slide
-        pageLayoutType.override.field = layout
+        pageLayoutType.override.data = field:layout
 
         //=================================================================
         pageLayoutSwitch = TEXT

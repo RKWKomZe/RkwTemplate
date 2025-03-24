@@ -25,6 +25,11 @@ page {
                 value = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/PluginOnly.html
             }
 
+            12 = TEXT
+            12 {
+                value = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/Topic.html
+            }
+
             20 = TEXT
             20 {
                 value = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/Article.html
