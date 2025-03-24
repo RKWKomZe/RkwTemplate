@@ -3,14 +3,14 @@
 
     <f:if condition="{menuItems}">
 
-        <nav class="nav nav--primary flex-basis-9 flex flex-end full-width-smalldesk" 
+        <nav class="nav nav--primary flex-basis-9 flex flex-end full-width-smalldesk"
              id="navigation"
              aria-label="{f:translate(key:'{settings.themeLanguageFile}:templates.menus.main.headlineAriaLabel')}">
             <f:render partial="List" section="Default" arguments="{_all}"/>
         </nav>
 
         <div class="nav-mobile-hamburger flex-container flex-basis-6">
-            <button class="nav-mobile-hamburger__button"
+            <button class="nav-mobile-hamburger__button js-nav-open"
                     aria-label="{f:translate(key:'{settings.themeLanguageFile}:templates.menus.main.openAriaLabel')}"
                     aria-controls="mobile-nav">
                 <svg class="icon icon--48 icon-open"
@@ -18,7 +18,7 @@
                     <use xlink:href="#ic-mobile-menu" />
                 </svg>
             </button>
-            <button class="nav-mobile-hamburger__button"
+            <button class="nav-mobile-hamburger__button js-nav-close"
                     aria-label="{f:translate(key:'{settings.themeLanguageFile}:templates.menus.main.closeAriaLabel')}"
                     aria-controls="mobile-nav">
                 <svg class="icon icon--48 icon-close is-none"
@@ -28,11 +28,12 @@
             </button>
         </div>
 
-        <nav 
-            class="nav-mobile flex-basis-12 flex-end is-closed" 
+        <nav
+            class="nav-mobile flex-basis-12 flex-end is-closed"
             id="mobile-nav"
-            aria-label="{f:translate(key:'{settings.themeLanguageFile}:templates.menus.main.headlineAriaLabelMobileAriaLabel')}">
-            
+            aria-label="{f:translate(key:'{settings.themeLanguageFile}:templates.menus.main.headlineAriaLabelMobileAriaLabel')}"
+            aria-expanded="false">
+
             <!-- this will be loaded via AJAX to reduce DOM on load -->
             <div class="nav-mobile__primary flex-basis-12 inner-nav-mob is-active-list" id="tx-rkwtemplate-mobile-menu">
 

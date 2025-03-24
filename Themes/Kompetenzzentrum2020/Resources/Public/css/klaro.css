@@ -2,6 +2,7 @@
     --green1: #d63f11;
     --green2: #d63f11;
     --green3: #d63f11;
+    --dark1: #ffffff;
     --font-family: "Palanquin", Helvetica, Arial, sans-serif;
     margin: auto;
 }
@@ -22,7 +23,6 @@
     font-weight: 600;
     border-radius: 8px;
     display: inline-block;
-    border: 0px;
     cursor: pointer;
     letter-spacing: 0.01em;
     border: 2px solid #d63f11;
@@ -50,7 +50,14 @@
 .klaro .cookie-notice .cm-btn.cm-btn-success-var:hover,
 .klaro .cookie-modal .cm-btn.cm-btn-success-var:hover,
 .klaro .cookie-modal .cm-btn.cm-btn-accept:hover,
-.klaro .cookie-modal .cm-btn.cm-btn-decline:hover {
+.klaro .cookie-modal .cm-btn.cm-btn-decline:hover,
+.klaro .cookie-modal .cm-btn.cm-btn-accept-all:hover,
+.klaro .context-notice .cm-btn.cm-btn-success-var:focus,
+.klaro .cookie-notice .cm-btn.cm-btn-success-var:focus,
+.klaro .cookie-modal .cm-btn.cm-btn-success-var:focus,
+.klaro .cookie-modal .cm-btn.cm-btn-accept:focus,
+.klaro .cookie-modal .cm-btn.cm-btn-decline:focus,
+.klaro .cookie-modal .cm-btn.cm-btn-accept-all:focus {
     background-color:#fff;
     color: #505050;
 }
@@ -71,3 +78,24 @@
     font-size: 1.2em;
 }
 
+.klaro .cookie-modal .cm-btn.cm-btn-accept-all{
+    background-color: #408040;
+    border: 2px solid #408040;
+}
+
+.klaro .cookie-modal .cm-btn.cm-btn-accept-all:hover,
+.klaro .cookie-modal .cm-btn.cm-btn-accept-all:focus {
+    color: #408040;
+    border: 2px solid #408040;
+}
+
+.klaro .cookie-modal .cm-btn.cm-btn-decline {
+    background-color: #e41a11;
+    border: 2px solid #e41a11;
+}
+
+.klaro .cookie-modal .cm-btn.cm-btn-decline:hover,
+.klaro .cookie-modal .cm-btn.cm-btn-decline:focus {
+    color: #e41a11;
+    border: 2px solid #e41a11;
+}

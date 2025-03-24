@@ -3,9 +3,18 @@
     <f:layout name="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.utility.pageLayoutSwitch')}" />
 
     <f:section name="Header">
-        <div class="siteheader">
-            <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.slider" data="{data}" />
-        </div>
+        <f:if condition="{settings.campaign.show}">
+            <f:then>
+                <div class="siteheader siteheader--campaign">
+                    <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.slider" data="{data}" />
+                </div>
+            </f:then>
+            <f:else>
+                <div class="siteheader">
+                    <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.slider" data="{data}" />
+                </div>
+            </f:else>
+        </f:if>
     </f:section>
 
 
@@ -17,7 +26,7 @@
             <section class="section content">
                 <f:cObject typoscriptObjectPath="lib.txRkwTemplate.content.home" data="{data}" />
             </section>
-            
+
             <f:comment><!-- sticky-footer --></f:comment>
             <f:render partial="FooterSection/StickyFooter" section="Newsletter" arguments="{_all}" />
         </main>

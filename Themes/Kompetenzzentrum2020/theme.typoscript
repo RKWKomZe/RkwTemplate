@@ -28,6 +28,9 @@ plugin.tx_rkwtemplate_themeconfig {
             # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Path to logos
             logos = EXT:rkw_template/Themes/{$plugin.tx_rkwtemplate_themeconfig.themeName}/Resources/Public/img/global/logos
 
+            # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Path to campaigns
+            campaigns = EXT:rkw_template/Themes/{$plugin.tx_rkwtemplate_themeconfig.themeName}/Resources/Public/img/global/campaigns
+
             # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Path to icons
             icons = EXT:rkw_template/Themes/{$plugin.tx_rkwtemplate_themeconfig.themeName}/Resources/Public/img/global/icons/grey
 
@@ -186,5 +189,21 @@ plugin.tx_rkwtemplate_themeconfig {
 
     # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Show no header-images on topic-templates on mobile
     noTopicHeaderImageOnMobile = 0
+
+    campaign {
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Show campaign?
+        show = 0
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Set the campaign's label
+        label = RKW Jahresthema 2025 - Nachhaltigkeit
+
+        # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Claim as image for the campaign's ribbon on slider
+        imageFile = {$plugin.tx_rkwtemplate_themeconfig.paths.default.campaigns}/campaign-2025.png
+
+        # cat=plugin.tx_rkwtemplate_themeconfig/file; type=color; label=Background color for the campaign's ribbon on slider
+        color = #76B830
+
+    }
 
 }

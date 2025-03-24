@@ -16,13 +16,13 @@
                     <button class="js-dropdown-item"
                             aria-haspopup="true"
                             aria-expanded="false"
-                            aria-controls="flyout-{item.data.uid}">
+                            aria-controls="flyout-{itemPrimary.data.uid}">
                         <svg class="icon icon--12" aria-label="{f:translate(key:'{settings.themeLanguageFile}:partials.menus.rootline.itemList.openSubmenuAriaLabel')}">
                             <use xlink:href="#ic-arrow-primary" />
                         </svg>
                     </button>
-                    
-                    <ul class="contentbox nav__dropdown js-dropdown-toggle" id="flyout-{item.data.uid}">
+
+                    <ul class="contentbox nav__dropdown js-dropdown-toggle" id="flyout-{itemPrimary.data.uid}">
                         <f:for each="{menuItems}" as="itemSecondary" iteration="iterator">
                             <f:if condition="! {itemSecondary.active}">
                                 <li class="nav-item__dropdown">
