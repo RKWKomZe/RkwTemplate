@@ -465,6 +465,25 @@ $GLOBALS['TCA']['pages']['columns']['layout'] = array_merge (
 //======================================================================================================
 $GLOBALS['TCA']['pages']['columns']['media']['config']['overrideChildTca']['columns']['crop']['config']['cropVariants'] = [
 
+// for landingpages
+    'topicDesktopFull' => [
+        'title' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:pages.keyvisual.imageManipulation.topicDesktopFull',
+        'allowedAspectRatios' => [
+            '2500:1400' => [
+                'title' => '2500 x 1400',
+                'value' => 2500 / 1400
+            ]
+        ],
+        'coverAreas' => [
+            [
+                'x' => 0,
+                'y' => 0,
+                'width' => 0.46,
+                'height' => 1,
+            ],
+        ]
+    ],
+
     'topicDesktop' => [
         'title' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:pages.keyvisual.imageManipulation.topicDesktop',
         'allowedAspectRatios' => [

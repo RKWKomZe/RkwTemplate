@@ -6,7 +6,7 @@
             <f:comment><!-- big header --></f:comment>
             <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.utility.pageLayoutType')} == '12'">
                 <f:then>
-                    <div class="siteheader siteheader siteheader--full flex valign-center {f:if(condition:'{settings.noTopicHeaderImageOnMobile}', then: 'siteheader--no-image-mobile', else: '')}" style="background-image: url('{f:cObject(typoscriptObjectPath: 'lib.txRkwTemplate.keyvisual.topic')}')">
+                    <div class="siteheader siteheader siteheader--full flex valign-center {f:if(condition:'{settings.noTopicHeaderImageOnMobile}', then: 'siteheader--no-image-mobile', else: '')}" style="background-image: url('{f:cObject(typoscriptObjectPath: 'lib.txRkwTemplate.keyvisual.topicFull')}')">
                         <f:render section="Sub" arguments="{_all}"/>
                     </div>
                 </f:then>

@@ -117,6 +117,9 @@
             <trans-unit id="pages.keyvisual.imageManipulation.topicDesktop">
                <source>Topic (Desktop)</source>
             </trans-unit>
+            <trans-unit id="pages.keyvisual.imageManipulation.topicDesktopFull">
+               <source>Topic (Desktop, full)</source>
+            </trans-unit>
             <trans-unit id="pages.keyvisual.imageManipulation.articleDesktop">
                <source>Article (Desktop)</source>
             </trans-unit>
