@@ -1,0 +1,13 @@
+plugin.tx_rkwevents {
+
+    persistence {
+        // cat=plugin.tx_rkwevents; type=integer; label=Default storage PID
+        storagePid = 2986,3469,3652,4789,5088,7369,11720,12903
+    }
+
+}
+
+
+
+
+
