@@ -49,7 +49,7 @@ plugin.tx_rkwtemplate_themeconfig {
         # cat=plugin.tx_rkwtemplate_themeconfig; type=integer; label=ID of page for newsletter subscription
         newsletterSubscriptionPid = 11116
 
-        # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Override default label newsletter subscription (Button)
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Override default label newsletter subscription (Button)
         newsletterSubscriptionButtonTextOverride = Jetzt den RKW Thüringen Newsletter abonnieren
 
         # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Override default label for newsletter subscription (Headline)
