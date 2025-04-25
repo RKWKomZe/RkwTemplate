@@ -347,6 +347,25 @@ $tmpColsPages = [
             ],
         ],
     ],
+    'tx_rkwtemplate_disable_title_prefix' => [
+        'exclude' => 1,
+        'displayCond' => [
+            'AND' => [
+                'FIELD:tx_rkwpdf2content_is_import:=:1',
+                'FIELD:tx_rkwpdf2content_is_import_sub:=:0',
+            ]
+        ],
+        'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:pages.tx_rkwtemplate_disable_title_prefix',
+        'config' => [
+            'type' => 'check',
+            'default' => 0,
+            'items' => [
+                '1' => [
+                    '0' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:pages.tx_rkwtemplate_disable_title_prefix.I.enabled'
+                ],
+            ],
+        ],
+    ],
 ];
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns(
@@ -381,6 +400,15 @@ $tmpColsPages = [
     'layout',
     '--linebreak--, tx_rkwtemplate_disable_flyout_menu, --linebreak--'
 );
+
+// add field
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette(
+    'pages',
+    'title',
+    '--linebreak--, tx_rkwtemplate_disable_title_prefix, --linebreak--',
+    'after:title'
+);
+
 
 // add palettes in reverse order
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(

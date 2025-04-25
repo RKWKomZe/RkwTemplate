@@ -113,6 +113,15 @@
                 <source>Do not show fly-out-menu for this menu-item</source>
             </trans-unit>
 
+            <!-- publication-stuff -->
+            <trans-unit id="pages.tx_rkwtemplate_disable_title_prefix">
+                <source>Title-Prefix (publications only)</source>
+            </trans-unit>
+            <trans-unit id="pages.tx_rkwtemplate_disable_title_prefix.I.enabled">
+                <source>Do not add prefix for this publication</source>
+            </trans-unit>
+
+
 		    <!-- Cropping for pages media-field -->
             <trans-unit id="pages.keyvisual.imageManipulation.topicDesktop">
                <source>Topic (Desktop)</source>
