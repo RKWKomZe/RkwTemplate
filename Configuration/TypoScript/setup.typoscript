@@ -28,9 +28,35 @@ plugin.tx_rkwtemplate {
 	}
 }
 
+#=============================================================
+# Additions based on loaded extensions
+#=============================================================
+[extensionLoaded('rkw_pdf2content')]
+    lib.txCoreExtended {
+
+        titleTag {
+
+            // prepend publication title on publication pages
+            // For import-sub-pages only!
+            // defined in: EXT:core_extended/Configuration/TypoScript/Includes/40-TitleTag.typoscript
+            10 {
+
+                // we use tx_rkwpdf2content_is_import_sub AND we add tx_rkwtemplate_disable_title_prefix after that
+                // if tx_rkwtemplate_disable_title_prefix is empty or zero, the value equals 1
+                // if tx_rkwtemplate_disable_title_prefix is 1, the value equals 11 - and thus the condition is false!
+                if {
+                    equals {
+                         dataWrap.cObject = TEXT
+                         dataWrap.cObject.data = levelfield : -1, tx_rkwtemplate_disable_title_prefix, slide
+                    }
+                }
+            }
+        }
+    }
+[END]
+
 
 <INCLUDE_TYPOSCRIPT: source="FILE:./FluidStyledContents/Setup.typoscript">
 <INCLUDE_TYPOSCRIPT: source="FILE:./ContentElements/Setup.typoscript">
 <INCLUDE_TYPOSCRIPT: source="FILE:./GridElements/Setup.typoscript">
 <INCLUDE_TYPOSCRIPT: source="FILE:./Themes/Setup.typoscript">
-

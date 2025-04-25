@@ -145,6 +145,18 @@
                 <target>Für diesen Menüpunkt kein Fly-Out-Menü anzeigen</target>
             </trans-unit>
 
+
+            <!-- publication-stuff -->
+            <trans-unit id="pages.tx_rkwtemplate_disable_title_prefix">
+                <source>Title-Prefix (publications only)</source>
+                <target>Titel-Präfix (nur Publikationen)</target>
+            </trans-unit>
+            <trans-unit id="pages.tx_rkwtemplate_disable_title_prefix.I.enabled">
+                <source>Do not add prefix for this publication</source>
+                <target>Für diese Publikation keinen Präfix ergänzen</target>
+            </trans-unit>
+
+
 		    <!-- Cropping -->
             <trans-unit id="pages.keyvisual.imageManipulation.topicDesktop">
                <source>Topic (Desktop)</source>
