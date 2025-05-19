@@ -9,13 +9,28 @@
     <f:section name="Main">
 
         <section
-            id="c{data.uid}"
             class="contentbox content-padding-layoutmax typo3-fsc boxslider-mod {rkwTemplate:GetLandingpageElementModClass(headerPosition:'{data.header_position}')}"
         >
 
         <f:if condition="<coreExtended:isEmpty string='{data.tx_gridelements_view_column_180}' /> == 0">
 
-            <div class="flex-container">
+            <f:if condition="{data.header}">
+                <f:then>
+                    <div class="flex-container">
+                        <f:render partial="Header/Header" arguments="{
+                            header: data.header,
+                            anchorId: data.uid,
+                            layout: '{f:if(condition:\'{data.header_layout}\', then:\'{data.header_layout}\', else:\'{settings.defaultHeaderType}\')}',
+                            positionClass: 'headline headline--underlined',
+                            link: data.header_link }" />
+                    </div>
+                    <div class="flex-container">
+                </f:then>
+                <f:else>
+                    <div id="c{data.uid}" class="flex-container">
+                </f:else>
+            </f:if>
+
                 <div class="boxslider owl-carousel flex-basis-12" data-carousel-number="{data.uid}">
 
                     <div class="boxslider-inner">
