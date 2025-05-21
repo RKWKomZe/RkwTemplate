@@ -8931,6 +8931,10 @@ body:not(.keyboard-focused) .slideup-footer .slideup__information-nav li button:
 
 .main .content .contentbox a:not(.btn):link, .main .content .contentbox a:not(.btn):visited {
     text-decoration: underline;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    word-wrap: break-word;
+    /* legacy support */
 }
 
 .main .content .contentbox a:not(.btn):link:hover, .main .content .contentbox a:not(.btn):link:focus, .main .content .contentbox a:not(.btn):visited:hover, .main .content .contentbox a:not(.btn):visited:focus {
