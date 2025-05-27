@@ -57,6 +57,61 @@ lib.txRkwTemplate {
             90 = RESTORE_REGISTER
         }
 
+        topicFull = COA
+        topicFull {
+
+            10 = FILES
+            10 {
+
+                references {
+                    table = pages
+                    data = levelfield: -1, media, slide
+                }
+
+                renderObj = COA
+                renderObj {
+
+                    5 = LOAD_REGISTER
+                    5 {
+                        imageIdList.cObject = TEXT
+                        imageIdList.cObject.data = register:imageIdList
+                        imageIdList.cObject.wrap = |,{file:current:uid}
+                        imageIdList.cObject.wrap.insertData = 1
+                    }
+                }
+            }
+
+            20 = FLUIDTEMPLATE
+            20 {
+
+                file = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/FluidTemplateLibs/Keyvisual/TopicFull.html
+                variables {
+
+                    imageReference = TEXT
+                    imageReference {
+                        data = register:imageIdList
+                        stdWrap.replacement {
+                            1 {
+                                search = #(.+)?,([0-9]+)$#
+                                replace = ${2}
+                                useRegExp = 1
+                            }
+                        }
+                    }
+                }
+
+                stdWrap.replacement {
+                    1 {
+                        search = #\s#
+                        replace =
+                        useRegExp = 1
+                    }
+                }
+            }
+
+            90 = RESTORE_REGISTER
+        }
+
         #============================================================
 
         article = FLUIDTEMPLATE

@@ -102,7 +102,7 @@ lib.txRkwTemplate {
         #=================================================================
         pageLayout = TEXT
         pageLayout.data = levelfield:-2,tx_coreextended_fe_layout_next_level,slide
-        pageLayout.override.field = layout
+        pageLayout.override.data = field:layout
 
         #=================================================================
         pageAbstract = TEXT

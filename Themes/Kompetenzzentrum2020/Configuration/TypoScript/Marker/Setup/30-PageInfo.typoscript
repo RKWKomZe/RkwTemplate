@@ -215,15 +215,15 @@ lib.txRkwTemplate {
             vendorName = Madj2k
             controller = MediaSource
             switchableControllerActions {
-            // Again: Controller-Name and Action
+                // Again: Controller-Name and Action
                 MediaSource {
                     1 = list
                 }
             }
 
-            view =< plugin.tx_copyrightguadian.view
-            persistence =< plugin.tx_copyrightguadian.persistence
-            settings =< plugin.tx_copyrightguadian.settings
+            view =< plugin.tx_copyrightguardian.view
+            persistence =< plugin.tx_copyrightguardian.persistence
+            settings =< plugin.tx_copyrightguardian.settings
             settings.resources.includeFieldsList = pages.tx_coreextended_preview_image, pages.media, tt_content.image, tt_content.assets
         }
 

@@ -347,6 +347,25 @@ $tmpColsPages = [
             ],
         ],
     ],
+    'tx_rkwtemplate_disable_title_prefix' => [
+        'exclude' => 1,
+        'displayCond' => [
+            'AND' => [
+                'FIELD:tx_rkwpdf2content_is_import:=:1',
+                'FIELD:tx_rkwpdf2content_is_import_sub:=:0',
+            ]
+        ],
+        'label' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:pages.tx_rkwtemplate_disable_title_prefix',
+        'config' => [
+            'type' => 'check',
+            'default' => 0,
+            'items' => [
+                '1' => [
+                    '0' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:pages.tx_rkwtemplate_disable_title_prefix.I.enabled'
+                ],
+            ],
+        ],
+    ],
 ];
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns(
@@ -381,6 +400,15 @@ $tmpColsPages = [
     'layout',
     '--linebreak--, tx_rkwtemplate_disable_flyout_menu, --linebreak--'
 );
+
+// add field
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette(
+    'pages',
+    'title',
+    '--linebreak--, tx_rkwtemplate_disable_title_prefix, --linebreak--',
+    'after:title'
+);
+
 
 // add palettes in reverse order
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
@@ -464,6 +492,25 @@ $GLOBALS['TCA']['pages']['columns']['layout'] = array_merge (
 // croppings
 //======================================================================================================
 $GLOBALS['TCA']['pages']['columns']['media']['config']['overrideChildTca']['columns']['crop']['config']['cropVariants'] = [
+
+// for landingpages
+    'topicDesktopFull' => [
+        'title' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:pages.keyvisual.imageManipulation.topicDesktopFull',
+        'allowedAspectRatios' => [
+            '2500:1400' => [
+                'title' => '2500 x 1400',
+                'value' => 2500 / 1400
+            ]
+        ],
+        'coverAreas' => [
+            [
+                'x' => 0,
+                'y' => 0,
+                'width' => 0.46,
+                'height' => 1,
+            ],
+        ]
+    ],
 
     'topicDesktop' => [
         'title' => 'LLL:EXT:rkw_template/Resources/Private/Language/locallang_db.xlf:pages.keyvisual.imageManipulation.topicDesktop',
