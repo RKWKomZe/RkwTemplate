@@ -41,7 +41,7 @@ plugin.tx_rkwtemplate_themeconfig {
         # textPoweredBy =
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to main website (on microsites only)
-        mainWebsiteUrl = https://www.rkw-kompetenzzentrum.de/das-rkw/das-rkw/ueber-uns/
+        mainWebsiteUrl = https://www.rkw-kompetenzzentrum.de/
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Name of main website (on microsites only)
         # mainWebsiteName =
