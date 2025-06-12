@@ -3842,6 +3842,7 @@ select.f3-form-error {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    text-decoration: none !important;
 }
 
 .tile:hover:not(.has-logo) {
