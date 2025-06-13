@@ -25,6 +25,9 @@ plugin.tx_rkwrelated_similarcontent {
 
         # cat=plugin.tx_rkwrelated_similarcontent//a; type=boolean; label=Do not search for similar contents based on project
         noProjectSearch = 0
+
+        # cat=plugin.tx_rkwrelated_morecontent//a; type=string; label=Path to powered-by image
+        poweredByImage = EXT:rkw_related/Resources/Public/Images/bmwe-logo-2025-schirmherrschaft.png
 	}
 }
 
@@ -33,7 +36,10 @@ plugin.tx_rkwrelated_morecontent {
 	settings {
 
         # cat=plugin.tx_rkwrelated_morecontent//f; type=string; label=PIDs to include in list (comma separated)
-        startingPidList =  {$plugin.tx_rkwtemplate_themeconfig.website.rootPid}
+        startingPidList = {$plugin.tx_rkwtemplate_themeconfig.website.rootPid}
+
+        # cat=plugin.tx_rkwrelated_morecontent//a; type=string; label=Path to powered-by image
+        poweredByImage = EXT:rkw_template/Themes/{$plugin.tx_rkwtemplate_themeconfig.subThemeName}/Resources/Public/Images/bmwe-logo-2025-schirmherrschaft.png
 
         # cat=plugin.tx_rkwrelated_morecontent//f; type=boolean; label=Hide authors label
         hideAuthors = 0

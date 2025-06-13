@@ -3842,6 +3842,7 @@ select.f3-form-error {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    text-decoration: none !important;
 }
 
 .tile:hover:not(.has-logo) {
@@ -8931,6 +8932,10 @@ body:not(.keyboard-focused) .slideup-footer .slideup__information-nav li button:
 
 .main .content .contentbox a:not(.btn):link, .main .content .contentbox a:not(.btn):visited {
     text-decoration: underline;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    word-wrap: break-word;
+    /* legacy support */
 }
 
 .main .content .contentbox a:not(.btn):link:hover, .main .content .contentbox a:not(.btn):link:focus, .main .content .contentbox a:not(.btn):visited:hover, .main .content .contentbox a:not(.btn):visited:focus {
@@ -12012,9 +12017,14 @@ body:not(.keyboard-focused) .tpl-specials-detail .siteheader .primary-mod.conten
     color: #505050;
 }
 
+.tpl-specials-detail .siteheader .primary-mod.testimonial-mod .testimonial,
+.tpl-specials-detail main .primary-mod.testimonial-mod .testimonial {
+    background-color: var(--specials-primary-color);
+}
+
 .tpl-specials-detail .siteheader .primary-mod.testimonial-mod .testimonial__person,
 .tpl-specials-detail main .primary-mod.testimonial-mod .testimonial__person {
-    background-color: var(--specials-primary-color);
+    background-color: var(--specials-primary-top-effect-color);
     color: var(--specials-primary-top-text-color);
 }
 
@@ -12279,9 +12289,14 @@ body:not(.keyboard-focused) .tpl-specials-detail .siteheader .secondary-mod.cont
     color: #505050;
 }
 
+.tpl-specials-detail .siteheader .secondary-mod.testimonial-mod .testimonial,
+.tpl-specials-detail main .secondary-mod.testimonial-mod .testimonial {
+    background-color: var(--specials-secondary-color);
+}
+
 .tpl-specials-detail .siteheader .secondary-mod.testimonial-mod .testimonial__person,
 .tpl-specials-detail main .secondary-mod.testimonial-mod .testimonial__person {
-    background-color: var(--specials-secondary-color);
+    background-color: var(--specials-secondary-top-effect-color);
     color: var(--specials-secondary-top-text-color);
 }
 
@@ -12566,9 +12581,14 @@ body:not(.keyboard-focused) .tpl-specials-detail .siteheader .tertiary-mod.conte
     color: #505050;
 }
 
+.tpl-specials-detail .siteheader .tertiary-mod.testimonial-mod .testimonial,
+.tpl-specials-detail main .tertiary-mod.testimonial-mod .testimonial {
+    background-color: var(--specials-tertiary-color);
+}
+
 .tpl-specials-detail .siteheader .tertiary-mod.testimonial-mod .testimonial__person,
 .tpl-specials-detail main .tertiary-mod.testimonial-mod .testimonial__person {
-    background-color: var(--specials-tertiary-color);
+    background-color: var(--specials-tertiary-top-effect-color);
     color: var(--specials-tertiary-top-text-color);
 }
 
@@ -12853,9 +12873,14 @@ body:not(.keyboard-focused) .tpl-specials-detail .siteheader .quarterly-mod.cont
     color: #505050;
 }
 
+.tpl-specials-detail .siteheader .quarterly-mod.testimonial-mod .testimonial,
+.tpl-specials-detail main .quarterly-mod.testimonial-mod .testimonial {
+    background-color: var(--specials-quarterly-color);
+}
+
 .tpl-specials-detail .siteheader .quarterly-mod.testimonial-mod .testimonial__person,
 .tpl-specials-detail main .quarterly-mod.testimonial-mod .testimonial__person {
-    background-color: var(--specials-quarterly-color);
+    background-color: var(--specials-quarterly-top-effect-color);
     color: var(--specials-quarterly-top-text-color);
 }
 
