@@ -192,7 +192,7 @@ lib.txRkwTemplate {
 
                 10 = TEXT
                 10 {
-                    value =  {LLL:EXT:rkw_template/Themes/Kompetenzzentrum2020/Resources/Private/Language/locallang.xlf:typoscript.pageInfo.fileDownload.download} ({file:current:extension})
+                    value = {LLL:EXT:rkw_template/Themes/Kompetenzzentrum2020/Resources/Private/Language/locallang.xlf:typoscript.pageInfo.fileDownload.download} ({file:current:extension})
                     insertData = 1
                     stdWrap.typolink {
                         parameter.data = file:current:publicUrl
@@ -201,6 +201,48 @@ lib.txRkwTemplate {
 
                         // eTracker
                         userFunc = RKW\RkwEtracker\UserFunctions\Typolink->getParsedLinkWithDataAttributes
+                    }
+                }
+            }
+        }
+
+        fileDownloadProduct = CONTENT
+        fileDownloadProduct {
+            table = tx_rkwshop_domain_model_product
+            select {
+                pidInList = 2829
+                where = TEXT
+                where {
+                    data = TSFE:id
+                    wrap = page=|
+                }
+                max = 1
+            }
+            renderObj = COA
+            renderObj {
+                10 = FILES
+                10 {
+                    references < lib.txRkwTemplate.pageInfo.fileThumbnail.references
+
+                    renderObj = COA
+                    renderObj {
+#                        // store url
+#                        5 = LOAD_REGISTER
+#                        5.imageUrl.data = file:current:publicUrl
+
+                        10 = TEXT
+                        10 {
+                            value = {LLL:EXT:rkw_template/Themes/Kompetenzzentrum2020/Resources/Private/Language/locallang.xlf:typoscript.pageInfo.fileDownload.download} ({file:current:extension})
+                            insertData = 1
+                            stdWrap.typolink {
+                                parameter.data = file:current:publicUrl
+                                ATagBeforeWrap = 1
+                                ATagParams = class="btn btn--primary btn--small js-open-mdl"
+
+                                // eTracker
+                                userFunc = RKW\RkwEtracker\UserFunctions\Typolink->getParsedLinkWithDataAttributes
+                            }
+                        }
                     }
                 }
             }
