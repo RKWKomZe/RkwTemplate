@@ -222,7 +222,13 @@ lib.txRkwTemplate {
             renderObj {
                 10 = FILES
                 10 {
-                    references < lib.txRkwTemplate.pageInfo.fileThumbnail.references
+                    references {
+                        table = tx_rkwshop_domain_model_product
+                        uid.field = uid
+                        fieldName = download
+                    }
+
+                    maxItems = 1
 
                     renderObj = COA
                     renderObj {
@@ -237,7 +243,7 @@ lib.txRkwTemplate {
                             stdWrap.typolink {
                                 parameter.data = file:current:publicUrl
                                 ATagBeforeWrap = 1
-                                ATagParams = class="btn btn--primary btn--small js-open-mdl"
+                                ATagParams = class="btn btn--primary btn--small js-outcome"
 
                                 // eTracker
                                 userFunc = RKW\RkwEtracker\UserFunctions\Typolink->getParsedLinkWithDataAttributes
