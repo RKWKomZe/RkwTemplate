@@ -8,11 +8,24 @@
 
 	<div class="pagewrap">
 
+        <!-- get me header -->
 		<f:comment><!-- header --></f:comment>
 		<header class="header {f:if(condition: '{coreExtended:isEmpty(string:\'{f:cObject(typoscriptObjectPath:\\\'lib.txRkwTemplate.navigation.sub\\\', data:\\\'{data}\\\')}\')} == 0', then: 'has-nav')} {f:if(condition: '{settings.shortMainMenu}', then: 'has-nav--short')} {f:if(condition: '{settings.showLanguageSwitch}', then: 'has-lang-switch')}">
 			<f:if condition="{settings.showLanguageSwitch}">
 				<f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.language" data="{data}" />
 			</f:if>
+            <f:if condition="{settings.accessibilityMenu.easyToReadUid}">
+                <nav class="lang-switch flex-basis-12 flex-container">
+                    <a href="{f:uri.page(pageUid:'{settings.accessibilityMenu.easyToReadUid}')}"
+                        title="{f:translate(key:'{settings.themeLanguageFile}:partials.basics.accessibility.easyToRead.ariaLabel')}"
+                        aria-label="{f:translate(key:'{settings.themeLanguageFile}:partials.basics.accessibility.easyToRead.ariaLabel')}"
+                        class="lang-switch__link {f:if(condition: '{data.uid} == {settings.accessibilityMenu.easyToReadUid}', then: 'is-active')}">
+                        <svg class="icon icon--24" aria-label="{f:translate(key:'{settings.themeLanguageFile}:partials.basics.accessibility.easyToRead.label')}">
+                            <use xlink:href="#ic-easy-to-read" />
+                        </svg>
+                    </a>
+                </nav>
+            </f:if>
 			<f:render partial="Basics/Header" arguments="{_all}"/>
 			<f:render section="Header" />
 		</header>
