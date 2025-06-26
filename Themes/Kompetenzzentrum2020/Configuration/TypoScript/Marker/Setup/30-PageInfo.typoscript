@@ -210,12 +210,12 @@ lib.txRkwTemplate {
         fileDownloadProduct {
             table = tx_rkwshop_domain_model_product
             select {
-                pidInList = 2829
+                pidInList = {$plugin.tx_rkwshop.persistence.storagePid}
+                selectFields = tx_rkwshop_domain_model_product.*
+                join = tx_rkwoutcome_domain_model_surveyconfiguration ON tx_rkwoutcome_domain_model_surveyconfiguration.product = tx_rkwshop_domain_model_product.uid
                 where = TEXT
-                where {
-                    data = TSFE:id
-                    wrap = page=|
-                }
+                where = tx_rkwshop_domain_model_product.page = {TSFE:id} AND tx_rkwshop_domain_model_product.record_type = '\\RKW\\RkwShop\\Domain\\Model\\ProductDownload'
+                where.insertData = 1
                 max = 1
             }
             renderObj = COA

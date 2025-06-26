@@ -52,7 +52,6 @@
                 </f:if>
 
                 <!-- download -->
-                <!-- download based on product linked to current page -->
                 <f:if condition="{f:cObject(typoscriptObjectPath:'lib.txRkwTemplate.pageInfo.fileDownloadProduct')}">
                     <f:then>
                         <f:cObject typoscriptObjectPath="lib.txRkwTemplate.pageInfo.fileDownloadProduct" />
@@ -61,7 +60,6 @@
                         <f:cObject typoscriptObjectPath="lib.txRkwTemplate.pageInfo.fileDownload" data="{data}" />
                     </f:else>
                 </f:if>
-                <!-- end download -->
 
                 <!-- ePaper -->
                 <f:comment>
