@@ -26,7 +26,10 @@ plugin.tx_rkwevents {
 		// cat=plugin.tx_rkwevents; type=integer; label=PID for gallery and sheets for event view
 		sheetsForEventPid = 3491
 
-		// cat=plugin.tx_rkwevents; type=integer; label=PID for archive list
+        // cat=plugin.tx_rkwevents; type=integer; label=PID for cancel reservation via link
+        cancelRegPid = 13061
+
+        // cat=plugin.tx_rkwevents; type=integer; label=PID for archive list
 		archivePid = 3493
 	}
 }

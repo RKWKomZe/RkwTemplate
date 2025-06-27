@@ -35,6 +35,16 @@
             </trans-unit>
 
 
+			<trans-unit id="partials.basics.accessibility.easyToRead.label">
+				<source>Easy to read</source>
+				<target>Leichte Sprache</target>
+			</trans-unit>
+			<trans-unit id="partials.basics.accessibility.easyToRead.ariaLabel">
+				<source>Show easy to read information</source>
+				<target>Informationen in leichter Sprache anzeigen</target>
+			</trans-unit>
+
+
 			<trans-unit id="partials.basics.footer.descriptionAriaLabel">
 				<source>Footer-section of website</source>
 				<target>Fußbereich der Website</target>

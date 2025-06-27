@@ -167,4 +167,11 @@ plugin.tx_rkwtemplate_themeconfig {
 
     }
 
+    accessibilityMenu {
+
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=integer; label=ID of Easy-to-read-page
+        easyToReadUid =
+
+    }
+
 }
