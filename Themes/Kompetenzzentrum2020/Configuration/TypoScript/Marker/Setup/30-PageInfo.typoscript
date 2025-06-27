@@ -192,7 +192,7 @@ lib.txRkwTemplate {
 
                 10 = TEXT
                 10 {
-                    value =  {LLL:EXT:rkw_template/Themes/Kompetenzzentrum2020/Resources/Private/Language/locallang.xlf:typoscript.pageInfo.fileDownload.download} ({file:current:extension})
+                    value = {LLL:EXT:rkw_template/Themes/Kompetenzzentrum2020/Resources/Private/Language/locallang.xlf:typoscript.pageInfo.fileDownload.download} ({file:current:extension})
                     insertData = 1
                     stdWrap.typolink {
                         parameter.data = file:current:publicUrl
@@ -201,6 +201,54 @@ lib.txRkwTemplate {
 
                         // eTracker
                         userFunc = RKW\RkwEtracker\UserFunctions\Typolink->getParsedLinkWithDataAttributes
+                    }
+                }
+            }
+        }
+
+        fileDownloadProduct = CONTENT
+        fileDownloadProduct {
+            table = tx_rkwshop_domain_model_product
+            select {
+                pidInList = {$plugin.tx_rkwshop.persistence.storagePid}
+                selectFields = tx_rkwshop_domain_model_product.*
+                join = tx_rkwoutcome_domain_model_surveyconfiguration ON tx_rkwoutcome_domain_model_surveyconfiguration.product = tx_rkwshop_domain_model_product.uid
+                where = TEXT
+                where = tx_rkwshop_domain_model_product.page = {TSFE:id} AND tx_rkwshop_domain_model_product.record_type = '\\RKW\\RkwShop\\Domain\\Model\\ProductDownload'
+                where.insertData = 1
+                max = 1
+            }
+            renderObj = COA
+            renderObj {
+                10 = FILES
+                10 {
+                    references {
+                        table = tx_rkwshop_domain_model_product
+                        uid.field = uid
+                        fieldName = download
+                    }
+
+                    maxItems = 1
+
+                    renderObj = COA
+                    renderObj {
+#                        // store url
+#                        5 = LOAD_REGISTER
+#                        5.imageUrl.data = file:current:publicUrl
+
+                        10 = TEXT
+                        10 {
+                            value = {LLL:EXT:rkw_template/Themes/Kompetenzzentrum2020/Resources/Private/Language/locallang.xlf:typoscript.pageInfo.fileDownload.download} ({file:current:extension})
+                            insertData = 1
+                            stdWrap.typolink {
+                                parameter.data = file:current:publicUrl
+                                ATagBeforeWrap = 1
+                                ATagParams = class="btn btn--primary btn--small js-outcome" data-product-uid="{field:uid}"
+
+                                // eTracker
+                                userFunc = RKW\RkwEtracker\UserFunctions\Typolink->getParsedLinkWithDataAttributes
+                            }
+                        }
                     }
                 }
             }
