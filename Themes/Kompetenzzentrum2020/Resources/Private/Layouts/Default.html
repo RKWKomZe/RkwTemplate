@@ -14,18 +14,7 @@
 			<f:if condition="{settings.showLanguageSwitch}">
 				<f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.language" data="{data}" />
 			</f:if>
-            <f:if condition="{settings.accessibilityMenu.easyToReadUid}">
-                <nav class="lang-switch flex-basis-12 flex-container">
-                    <a href="{f:uri.page(pageUid:'{settings.accessibilityMenu.easyToReadUid}')}"
-                        title="{f:translate(key:'{settings.themeLanguageFile}:partials.basics.accessibility.easyToRead.ariaLabel')}"
-                        aria-label="{f:translate(key:'{settings.themeLanguageFile}:partials.basics.accessibility.easyToRead.ariaLabel')}"
-                        class="lang-switch__link {f:if(condition: '{data.uid} == {settings.accessibilityMenu.easyToReadUid}', then: 'is-active')}">
-                        <svg class="icon icon--24" aria-label="{f:translate(key:'{settings.themeLanguageFile}:partials.basics.accessibility.easyToRead.label')}">
-                            <use xlink:href="#ic-easy-to-read" />
-                        </svg>
-                    </a>
-                </nav>
-            </f:if>
+			<f:render partial="Basics/Accessibility" arguments="{_all}"/>
 			<f:render partial="Basics/Header" arguments="{_all}"/>
 			<f:render section="Header" />
 		</header>

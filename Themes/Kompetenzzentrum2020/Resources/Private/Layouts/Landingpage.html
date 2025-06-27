@@ -51,6 +51,7 @@
 
 		<f:comment><!-- header --></f:comment>
 		<header class="header {f:if(condition: '{f:cObject(typoscriptObjectPath:\'lib.txRkwTemplate.navigation.sub\', data:\'{data}\')}', then: 'has-nav')} {f:if(condition: '{settings.shortMainMenu}', then: 'has-nav--short')}">
+            <f:render partial="Basics/Accessibility" arguments="{_all}"/>
 			<f:render partial="Basics/Header" arguments="{_all}"/>
 			<f:render section="Header" />
 		</header>
