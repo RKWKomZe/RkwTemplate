@@ -3,10 +3,18 @@
     xmlns:coreExtended="http://typo3.org/ns/Madj2k/CoreExtended/ViewHelpers"
     data-namespace-typo3-fluid="true">
 
-    <div id="mdl-c{data.uid}" class="mdl">
+    <div
+        id="mdl-c{data.uid}"
+        class="mdl"
+        tabindex="-1"
+        aria-labelledby="mdl-c{data.uid}-header-id"
+    >
         <div class="mdl__inner">
             <header class="mdl__header">
-                <span class="h4 mdl__headline">{data.header}</span>
+                <span
+                    class="h4 mdl__headline"
+                    id="mdl-c{data.uid}-header-id"
+                >{data.header}</span>
             </header>
             <div class="mdl__content typo3-fsc">
                 <div class="frame show-first-headline">
@@ -16,7 +24,10 @@
                 </div>
             </div>
         </div>
-        <button class="mdl-close js-close-mdl">
+        <button
+            class="mdl-close js-close-mdl"
+            aria-label="{f:translate(key:'LLL:EXT:rkw_template/Resources/Private/Language/locallang.xlf:contentElement.Modal.closeButtonAriaLabel')}"
+        >
             <svg class="icon icon--48">
                 <use xlink:href="#ic-mobile-menu-close"/>
             </svg>

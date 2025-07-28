@@ -72,6 +72,12 @@
                 <target>Mehr lesen</target>
             </trans-unit>
 
+			<!--- Modal -->
+			<trans-unit id="contentElement.Modal.closeButtonAriaLabel">
+				<source>Close dialog</source>
+				<target>Dialog schließen</target>
+			</trans-unit>
+
             <!-- StickyFooterContainer -->
 			<trans-unit id="contentElement.stickyFooterContainer.closeButtonAriaLabel">
 				<source>Close hint</source>

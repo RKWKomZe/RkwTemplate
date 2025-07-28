@@ -1761,7 +1761,6 @@ body {
     color: #ffffff;
     border-radius: 8px;
     display: inline-block;
-    border: 0px;
     cursor: pointer;
     font-family: "Palanquin", Helvetica, Arial, sans-serif;
     padding: 1em;
@@ -6878,6 +6877,10 @@ section[aria-labelledby="media-sources-list-title"] {
     color: #333333;
 }
 
+.content video {
+    max-width: 100%;
+}
+
 /**! ==================================================
  * MODULES
  * ================================================== */
@@ -8930,7 +8933,7 @@ body:not(.keyboard-focused) .slideup-footer .slideup__information-nav li button:
     text-decoration: underline;
 }
 
-.main .content .contentbox a:not(.btn):link, .main .content .contentbox a:not(.btn):visited {
+.main .content .contentbox a:not(.btn):not(.button):link, .main .content .contentbox a:not(.btn):not(.button):visited {
     text-decoration: underline;
     word-break: break-word;
     overflow-wrap: anywhere;
@@ -8938,7 +8941,7 @@ body:not(.keyboard-focused) .slideup-footer .slideup__information-nav li button:
     /* legacy support */
 }
 
-.main .content .contentbox a:not(.btn):link:hover, .main .content .contentbox a:not(.btn):link:focus, .main .content .contentbox a:not(.btn):visited:hover, .main .content .contentbox a:not(.btn):visited:focus {
+.main .content .contentbox a:not(.btn):not(.button):link:hover, .main .content .contentbox a:not(.btn):not(.button):link:focus, .main .content .contentbox a:not(.btn):not(.button):visited:hover, .main .content .contentbox a:not(.btn):not(.button):visited:focus {
     text-decoration: underline;
 }
 
