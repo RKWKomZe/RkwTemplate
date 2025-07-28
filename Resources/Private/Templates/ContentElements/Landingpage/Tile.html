@@ -17,7 +17,14 @@
             <f:else>
                 <f:if condition="{data.bodytext} && !{data.header_link}">
                     <f:then>
-                        <a href="#" class="speaker-list__item js-open-mdl" data-modal="mdl-c{data.uid}">
+                        <a
+                            href="#"
+                            class="speaker-list__item js-open-mdl"
+                            data-modal="mdl-c{data.uid}"
+                            aria-haspopup="dialog"
+                            aria-expanded="false"
+                            aria-controls="mdl-c{data.uid}"
+                        >
                             <f:render partial="Tile/Image" arguments="{_all}"/>
                             <f:render partial="Tile/Text" arguments="{_all}"/>
                         </a>
