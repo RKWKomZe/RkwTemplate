@@ -3877,8 +3877,9 @@ function addSmoothScrolling() {
  * jQuery Plugin – Modal
  *
  * Author: helllicht
+ * Author: Christian Dilger <c.dilger@addorange.de>
  *
- * Last updated: 25.05.2020
+ * Last updated: 04.07.2025
  *
  */
 
@@ -3891,15 +3892,19 @@ function addSmoothScrolling() {
       noScroll: "lock-scroll",
       openButton: "js-open-mdl",
       closeButton: "js-close-mdl",
-      body: "body",
-      backgroundOverlay: "js-mdl-layer",
       modal: "mdl",
+      modalBackground: "js-mdl-layer",
+      body: "body",
     };
 
-  var plugin;
+  var instance = null;
 
   // The plugin constructor
   function Plugin(element, options) {
+    if (instance) {
+      return instance;
+    }
+
     this.element = element;
     // Merge defaults with passed options
     this.settings = $.extend({}, defaults, options);
@@ -3908,101 +3913,128 @@ function addSmoothScrolling() {
     this._name = pluginName;
 
     this.init();
+
+    instance = this;
   }
 
   $.extend(Plugin.prototype, {
     init: function () {
-      // Use "plugin" to reference the current instance of the object
-      // Can be used inside of functions to prevent conflict with "this"
-      plugin = this;
-
       // Setup elements and global variables
-      // plugin.settings.$el = $(this.element);
-      plugin.settings.$mdl = $("." + plugin.settings.modal);
-      plugin.settings.$openBtn = $("." + plugin.settings.openButton);
-      plugin.settings.$closeBtn = $("." + plugin.settings.closeButton);
-      plugin.settings.$bgOverlay = $("." + plugin.settings.backgroundOverlay);
-      plugin.settings.$body = $("." + plugin.settings.body);
-      // plugin.settings.$noScroll = $("." + plugin.settings.noScroll);
+      this.settings.$modal = $("." + this.settings.modal);
+      this.settings.$activeModal = null;
+      this.settings.$tabbableElements = null;
+      this.settings.$openBtn = $("." + this.settings.openButton);
+      this.settings.$triggerElement = null;
+      this.settings.$closeBtn = $("." + this.settings.closeButton);
+      this.settings.$bgOverlay = $("." + this.settings.modalBackground);
+      this.settings.$body = $("." + this.settings.body);
 
-      plugin.bindEvents();
+      this.bindEvents();
     },
 
     // Bind all event listeners for this plugin
     bindEvents: function () {
-      plugin.settings.$openBtn.on("click", plugin.open);
-      plugin.settings.$closeBtn.on("click", plugin.close);
-      plugin.settings.$bgOverlay.on("click", plugin.close);
+      var self = this;
+      $(document).on('click', '.' + this.settings.openButton, function (e) {
+        e.preventDefault();
+        if (e.target.tagName.toLowerCase() === 'label') {
+          return;
+        }
+        self.open(e);
+      });
+      $(document).on('click', '.' + this.settings.closeButton, function (e) {
+        self.close(e);
+      });
+      $(document).on('click', '.' + this.settings.modalBackground, function (e) {
+        self.close(e);
+      });
+      $(document).on('change', 'input[type="checkbox"]', function(e) {
+        var label = $('label[for="' + $(this).attr('id') + '"].' + self.settings.openButton);
+        if (label.length > 0) {
+          if ($(this).is(':checked')) {
+            var simulatedEvent = {
+              target: label[0],
+              preventDefault: function () {}
+            };
+            self.open(simulatedEvent);
+          }
+        }
+      });
+
+      this.boundFocusTrap = this.focusTrap.bind(this);
     },
 
     open: function (e) {
-      // $(this)
-      //   .parent()
-      //   .next(plugin.settings.$mdl)
-      //   .addClass(plugin.settings.isActive);
+      var self = this;
+      this.settings.$triggerElement = $(e.target).closest('.' + this.settings.openButton);
+      this.settings.$triggerElement.attr('aria-expanded', 'true');
 
-      var dataMdl = $(this).attr("data-modal");
-      var elType = $(this).prop('nodeName').toLowerCase();
+      this.settings.$activeModal = $("#" + this.settings.$triggerElement.attr("data-modal"));
+      this.settings.$activeModal
+        .addClass(this.settings.isActive)
+        .attr('aria-hidden', false)
+        .attr('aria-modal', true)
+        .attr('role', 'dialog')
+        .focus()
+        .next(this.settings.$bgOverlay)
+        .addClass(this.settings.isActive);
 
-      // if we have a checkbox, we only open the modal if the checkbox is activated
-      if (elType === 'label') {
-        var checkboxId = $(this).attr('for');
-        var checkbox = $('#' + checkboxId);
-        var wasChecked = checkbox.is(':checked');
-        if (wasChecked === true) {
-          return;
-        }
-      } else {
-        e.preventDefault();
-      }
+      this.settings.$body.addClass(this.settings.noScroll);
 
-      $("#" + dataMdl).addClass(plugin.settings.isActive)
-        .next(plugin.settings.$bgOverlay)
-        .addClass(plugin.settings.isActive);
-
-      plugin.settings.$body.addClass(plugin.settings.noScroll);
+      this.settings.$tabbableElements = this.settings.$activeModal.find(
+        'a[href], area[href], input:not([disabled]):not([type="hidden"]), select:not([disabled]), textarea:not([disabled]), button:not([disabled]), iframe, object, embed, [tabindex]:not([tabindex="-1"]), [contenteditable]'
+      );
+      setTimeout(function() {
+        self.settings.$tabbableElements.first().focus();
+      }, 50);
 
       //Add Keyboard listener
-      $(window).on("keydown", plugin.keyboardInputManagement);
+      $(window).on("keydown", this.boundFocusTrap);
     },
 
     close: function (e) {
       e.preventDefault();
-      plugin.settings.$bgOverlay.removeClass(plugin.settings.isActive);
-      plugin.settings.$body.removeClass(plugin.settings.noScroll);
-      plugin.settings.$mdl.removeClass(plugin.settings.isActive);
+
+      this.settings.$triggerElement
+        .focus()
+        .attr('aria-expanded', 'false');
+
+      this.settings.$activeModal
+        .removeClass(this.settings.isActive)
+        .attr('aria-hidden', true)
+        .removeAttr('aria-modal')
+        .removeAttr('role')
+        .next(this.settings.$bgOverlay)
+        .removeClass(this.settings.isActive);
+
+      this.settings.$body.removeClass(this.settings.noScroll);
+
+      this.settings.$activeModal = null;
+      this.settings.$triggerElement = null;
 
       //Remove keyboard listener
-      $(window).unbind("keydown");
+      $(window).off("keydown", this.boundFocusTrap);
     },
 
-    keyboardInputManagement: function (e) {
-      e.preventDefault();
-      if (e.key == "Tab" && e.shiftKey) {
-        var tabbableEls = plugin.settings.$mdl.find(":tabbable");
-        var indexActiveEl = plugin.settings.$mdl
-          .find(":tabbable")
-          .index(document.activeElement);
-        if (indexActiveEl <= 0) {
-          tabbableEls.last().focus();
-        } else if (indexActiveEl > 0) {
-          tabbableEls[indexActiveEl - 1].focus();
-        }
-      } else if (e.key == "Tab") {
-        var tabbableEls = plugin.settings.$mdl.find(":tabbable");
-        var indexActiveEl = plugin.settings.$mdl
-          .find(":tabbable")
-          .index(document.activeElement);
-        if (indexActiveEl == -1 || indexActiveEl >= tabbableEls.length - 1) {
-          tabbableEls.first().focus();
-        } else if (
-          indexActiveEl >= 0 &&
-          indexActiveEl < tabbableEls.length - 1
-        ) {
-          tabbableEls[indexActiveEl + 1].focus();
-        }
-      } else if (e.key == "Escape") {
-        plugin.close();
+    focusTrap: function (e) {
+
+      if (e.key === "Escape") {
+        e.preventDefault();
+        this.close(e);
+      }
+
+      if (e.key === "Tab") {
+        var firstTabbableElement = this.settings.$tabbableElements.first()[0];
+        var lastTabbableElement = this.settings.$tabbableElements.last()[0];
+
+        if (e.shiftKey && document.activeElement === firstTabbableElement) {
+          e.preventDefault();
+          lastTabbableElement.focus();
+        } else
+          if (!e.shiftKey && document.activeElement === lastTabbableElement) {
+            e.preventDefault();
+            firstTabbableElement.focus();
+          }
       }
     },
   });
@@ -4010,11 +4042,10 @@ function addSmoothScrolling() {
   // A really lightweight plugin wrapper around the constructor,
   // preventing against multiple instantiations
   $.fn[pluginName] = function (options) {
-    return this.each(function () {
-      if (!$.data(this, "plugin_" + pluginName)) {
-        $.data(this, "plugin_" + pluginName, new Plugin(this, options));
-      }
-    });
+    if (!instance) {
+      instance = new Plugin(this[0], options);
+    }
+    return instance;
   };
 })(jQuery, window, document);
 
