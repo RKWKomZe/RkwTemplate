@@ -243,7 +243,7 @@ lib.txRkwTemplate {
                             stdWrap.typolink {
                                 parameter.data = file:current:publicUrl
                                 ATagBeforeWrap = 1
-                                ATagParams = class="btn btn--primary btn--small js-outcome" data-product-uid="{field:uid}"
+                                ATagParams = class="btn btn--primary btn--small js-open-mdl" data-product-uid="{field:uid}" data-modal="outcome-modal" aria-haspopup="dialog" aria-expanded="false" aria-controls="outcome-modal"
 
                                 // eTracker
                                 userFunc = RKW\RkwEtracker\UserFunctions\Typolink->getParsedLinkWithDataAttributes
