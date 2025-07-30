@@ -3879,7 +3879,7 @@ function addSmoothScrolling() {
  * Author: helllicht
  * Author: Christian Dilger <c.dilger@addorange.de>
  *
- * Last updated: 04.07.2025
+ * Last updated: 30.07.2025
  *
  */
 
@@ -3936,11 +3936,21 @@ function addSmoothScrolling() {
     bindEvents: function () {
       var self = this;
       $(document).on('click', '.' + this.settings.openButton, function (e) {
-        e.preventDefault();
-        if (e.target.tagName.toLowerCase() === 'label') {
+        if (e.target.tagName.toLowerCase() === 'label' || $(e.target).closest('label').length > 0) {
+          var label = $(e.target).is('label') ? $(e.target) : $(e.target).closest('label');
+          var targetInputId = label.attr('for');
+          var checkbox = $(`input[id="${targetInputId}"]`);
+
+          if (!checkbox.is(':checked')) {
+            e.preventDefault();
+            checkbox.prop('checked', true);
+            self.open(e);
+          }
           return;
+        } else {
+          e.preventDefault();
+          self.open(e);
         }
-        self.open(e);
       });
       $(document).on('click', '.' + this.settings.closeButton, function (e) {
         self.close(e);
@@ -3981,6 +3991,11 @@ function addSmoothScrolling() {
 
       this.settings.$body.addClass(this.settings.noScroll);
 
+      $(document).trigger('modal:opened', [
+        this.settings.$triggerElement,
+        this.settings.$activeModal
+      ]);
+
       this.settings.$tabbableElements = this.settings.$activeModal.find(
         'a[href], area[href], input:not([disabled]):not([type="hidden"]), select:not([disabled]), textarea:not([disabled]), button:not([disabled]), iframe, object, embed, [tabindex]:not([tabindex="-1"]), [contenteditable]'
       );
@@ -4011,6 +4026,11 @@ function addSmoothScrolling() {
 
       this.settings.$activeModal = null;
       this.settings.$triggerElement = null;
+
+      $(document).trigger('modal:closed', [
+        this.settings.$triggerElement,
+        this.settings.$activeModal
+      ]);
 
       //Remove keyboard listener
       $(window).off("keydown", this.boundFocusTrap);
