@@ -301,14 +301,7 @@ var klaroConfig = {
       },
       onAccept: `
 
-        // check if code is injected - if not, do it now
-        let codeTemplate = document.querySelector('#tx-klarokratie-tracking-script');
-        if (
-            (codeTemplate)
-            && (codeTemplate.getAttribute('data-injected') != 1)
-        ){
-          txKlarokratieInjectTrackingCode();
-        }
+        klarokratieInjectGoogleTagManager();
 
         // we notify the tag manager about all services that were accepted. You can define
         // a custom event in GTM to load the service if consent was given.
@@ -320,27 +313,18 @@ var klaroConfig = {
           }
         }
 
-        // we grant analytics storage
+        // we grant data storage
         gtag('consent', 'update', {
           'analytics_storage': 'granted',
         });
-        // console.log('Google Analytics allowed! Thank you!');
+        console.log('Google Analytics allowed! Thank you!');
       `,
       onDecline: `
-
-        // check if code is injected - if not, there is nothing to do!
-        let codeTemplate = document.querySelector('#tx-klarokratie-tracking-script');
-        if (
-            (codeTemplate)
-            && (codeTemplate.getAttribute('data-injected') == 1)
-        ){
-
-          // we again explicitly deny analytics storage
-          gtag('consent', 'update', {
-            'analytics_storage': 'denied',
-            });
-            // console.log('Google Analytics denied! You are welcome!');
-        }
+        // we again explicitly deny data storage
+        gtag('consent', 'update', {
+          'analytics_storage': 'denied',
+        });
+        console.log('Google Analytics denied! You are welcome!');
       `,
     },
 	],
