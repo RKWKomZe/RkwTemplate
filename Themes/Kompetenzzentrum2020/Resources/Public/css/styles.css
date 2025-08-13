@@ -2443,78 +2443,39 @@ body:not(.keyboard-focused) .btn--circle:focus {
 }
 
 .badge {
-    position: absolute;
-    top: 8px;
-    right: 20px;
-    -webkit-transform: translate(50%, 50%);
-    transform: translate(50%, 50%);
+    display: inline-block;
     font-size: 12px;
     font-size: 0.75rem;
-    font-weight: 600;
+    font-weight: 700;
     color: #ffffff;
-    border-radius: 100%;
-    border: 0;
+    border-radius: .25rem;
     font-family: "Palanquin", Helvetica, Arial, sans-serif;
-    letter-spacing: 0.01em;
-    -webkit-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
-    line-height: 1.2;
     text-align: center;
-    padding-left: .5rem;
-    padding-right: .5rem;
-    padding-top: .25rem;
-    padding-bottom: .25rem;
-}
-
-.badge:hover, .badge:focus {
-    color: #d63f11;
-    -webkit-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
-}
-
-.badge:focus {
-    border-color: #d63f11;
-    -webkit-box-shadow: 0 0 1px 3px rgba(214, 63, 17, 0.3);
-    box-shadow: 0 0 1px 3px rgba(214, 63, 17, 0.3);
-    box-shadow: 0 0 0 3px -moz-mac-focusring rgba(214, 63, 17, 0.3);
-    outline: none;
+    white-space: nowrap;
+    vertical-align: baseline;
+    padding: .25rem .5rem;
+    text-transform: uppercase;
+    line-height: 1;
 }
 
 .badge--primary {
-    background: #d63f11;
-}
-
-.badge--primary:hover, .badge--primary:focus {
-    color: #ffffff;
-    -webkit-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
+    background-color: #d63f11;
 }
 
 .badge--secondary {
-    color: #ffffff !important;
     background-color: #505050;
-    border-color: #505050;
 }
 
-.badge--secondary:hover {
-    color: #505050 !important;
-    border-color: #505050;
+.badge--success {
+    background-color: #408040;
 }
 
-.badge--secondary:focus {
-    color: #505050 !important;
+.badge--warning {
+    background-color: #e16a00;
 }
 
-.badge--primary.is-active, .badge--secondary.is-active {
-    background-color: rgba(214, 63, 17, 0.7);
-    color: #ffffff;
-    border-color: #d63f11;
-    display: inline-block;
-}
-
-.badge--primary.is-active:hover, .badge--secondary.is-active:hover {
-    color: #ffffff;
-    background-color: #d63f11;
+.badge--danger {
+    background-color: #e41a11;
 }
 
 /**! ==================================================
