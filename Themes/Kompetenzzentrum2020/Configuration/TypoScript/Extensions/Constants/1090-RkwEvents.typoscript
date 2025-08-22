@@ -30,7 +30,7 @@ plugin.tx_rkwevents {
 		storagePidFeUser = 618
 
 		# cat=plugin.tx_rkwevents; type=integer; label=PID for list future user events view
-		myEventsPid = 3003
+		myEventsPid = 10507
 
         # cat=plugin.tx_rkwevents; type=integer; label=Defines the parent category for the FE-filter in event listing
         parentCategoryForFilter = 23
