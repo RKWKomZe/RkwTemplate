@@ -11,6 +11,7 @@ $GLOBALS['TCA']['tt_content']['types']['rkwtemplate_textimagebackground'] = [
             header;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_formlabel,
             --linebreak--,
             header_layout;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_layout_formlabel,
+            header_position;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_position_formlabel,
             --linebreak--,
             header_link;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:header_link_formlabel,
         rowDescription,
