@@ -162,7 +162,7 @@ plugin.tx_rkwtemplate_themeconfig {
         twitter =
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to xing page
-        xing = https://www.xing.com/companies/rkwkompetenzzentrum
+        xing =
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Link to linkedIn page
         linkedIn = https://de.linkedin.com/company/rkw-kompetenzzentrum
