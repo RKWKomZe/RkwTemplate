@@ -1,0 +1,39 @@
+config {
+
+	# Cache deaktivieren (nur für Entwicklung)
+	no_cache = 1
+	admPanel = 0
+
+	# Cache- Headers für intern gecachte Seiten
+	sendCacheHeaders = 0
+
+	# Compress and concatenate
+	concatenateJs = 0
+	compressJs = 0
+
+	# Compress and concatenate
+	concatenateCss = 0
+	compressCss = 0
+
+}
+
+#############################################################################
+# STANDARD- MARKER
+#############################################################################
+
+plugin.tx_postmaster {
+
+	settings {
+
+		# URL for hard-links in templates
+		baseUrl = http://impulse-umsetzen.rkw.codes/
+	}
+}
+
+plugin.tx_rkwbasics{
+
+    settings {
+        # proxy = 192.168.1.8:80
+
+    }
+}
