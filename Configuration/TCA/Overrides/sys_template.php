@@ -20,6 +20,7 @@ $extKey = 'rkw_template';
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Themes/_Microsites/FrauenAmBau/Configuration/TypoScript', 'RKW Template - Theme: FrauenAmBau');
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Themes/_Microsites/MeinRkw/Configuration/TypoScript', 'RKW Template - Theme: MeinRkw');
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Themes/_Microsites/NachhaltigWirtschaften/Configuration/TypoScript', 'RKW Template - Theme: Nachhaltig wirtschaften');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Themes/_Microsites/ImpulseUmsetzen/Configuration/TypoScript', 'RKW Template - Theme: Impulse umsetzen');
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Themes/_Microsites/RessinnoBau/Configuration/TypoScript', 'RKW Template - Theme: RessinnoBau');
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Themes/_Microsites/RkwGeschichte/Configuration/TypoScript', 'RKW Template - Theme: RKW Geschichte');
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extKey, 'Themes/_Microsites/WebsiteCheck/Configuration/TypoScript', 'RKW Template - Theme: WebsiteCheck');

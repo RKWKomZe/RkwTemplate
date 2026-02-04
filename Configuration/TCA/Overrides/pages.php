@@ -453,6 +453,7 @@ $extKey = 'rkw_template';
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Themes/_Microsites/FrauenAmBau/Configuration/TsConfig/TsConfig.typoscript', 'RKW Template - Theme: FrauenAmBau');
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Themes/_Microsites/MeinRkw/Configuration/TsConfig/TsConfig.typoscript', 'RKW Template - Theme: MeinRkw');
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Themes/_Microsites/NachhaltigWirtschaften/Configuration/TsConfig/TsConfig.typoscript', 'RKW Template - Theme: Nachhaltig wirtschaften');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Themes/_Microsites/ImpulseUmsetzen/Configuration/TsConfig/TsConfig.typoscript', 'RKW Template - Theme: Impulse umsetzen');
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Themes/_Microsites/RessinnoBau/Configuration/TsConfig/TsConfig.typoscript', 'RKW Template - Theme: RessinnoBau');
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Themes/_Microsites/RkwGeschichte/Configuration/TsConfig/TsConfig.typoscript', 'RKW Template - Theme: RKW Geschichte');
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile($extKey, 'Themes/_Microsites/WebsiteCheck/Configuration/TsConfig/TsConfig.typoscript', 'RKW Template - Theme: WebsiteCheck');
