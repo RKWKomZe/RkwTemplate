@@ -94,7 +94,7 @@ plugin.tx_rkwtemplate_themeconfig {
     campaign {
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Show campaign?
-        show = 0
+        show = 1
 
     }
 }
