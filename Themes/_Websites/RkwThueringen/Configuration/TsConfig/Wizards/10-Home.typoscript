@@ -59,3 +59,20 @@
     tx_gridelements.excludeLayoutIds = promoterContainer, logoContainer, topicContainer, listContainer, stickyFooterContainer, tilesContainer, testimonialContainer, galleryContainer, collageContainer, moreListContainer, tabContainer, accordionContainer, tagcloudContainer, boxSliderContainer, topicLinksContainer, contentContainerTwoCols, contentContainerTwoColsReduced, contentContainerOneCol, contentContainerOneColPagination, contentContainerOneColOrderForm, contentContainerLandingpageTwoCols, contentContainerLandingpageOneCol
 
 [end]
+
+
+[backendLayout() == "pagets__homePages" && backendColPos() == "130"]
+
+    # Nur HTML-Element erlauben
+    TCEFORM.tt_content.CType.keepItems = html
+
+    # Wizard-Items einschränken: Alles ausblenden außer 'special' (wo HTML liegt)
+    mod.wizards.newContentElement.wizardItems {
+        common.show =
+        forms.show =
+        plugins.show =
+        menu.show =
+        special.show = html
+    }
+
+[end]

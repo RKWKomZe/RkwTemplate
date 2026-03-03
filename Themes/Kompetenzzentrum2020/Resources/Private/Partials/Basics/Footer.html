@@ -1,18 +1,29 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
     <f:section name="Default">
-        <nav class="footerwrap">
-            <footer class="footer flex-container"
-                    aria-label="{f:translate(key:'{settings.themeLanguageFile}:partials.basics.footer.descriptionAriaLabel')}">
-                <nav class="nav footerlinks flex-basis-12"
-                     aria-label="{f:translate(key:'{settings.themeLanguageFile}:partials.basics.footer.metaNavAriaLabel')}">
-                    <span class="footerlinks__desc float-left" role="none">
-                        <f:cObject typoscriptObjectPath="lib.txRkwTemplate.utility.copyright" data="{data}" />
-                    </span>
-                    <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.meta" />
+        <f:variable name="backendFooterContent"><f:cObject typoscriptObjectPath="lib.txRkwTemplate.footerContent" /></f:variable>
+
+        <f:if condition="{backendFooterContent}">
+            <f:then>
+                <!-- Ausgabe des HTML-Elements aus dem Backend -->
+                {backendFooterContent -> f:format.raw()}
+            </f:then>
+            <f:else>
+                <!-- Fallback: Standard-Footer-Struktur -->
+                <nav class="footerwrap">
+                    <footer class="footer flex-container"
+                            aria-label="{f:translate(key:'{settings.themeLanguageFile}:partials.basics.footer.descriptionAriaLabel')}">
+                        <nav class="nav footerlinks flex-basis-12"
+                             aria-label="{f:translate(key:'{settings.themeLanguageFile}:partials.basics.footer.metaNavAriaLabel')}">
+                            <span class="footerlinks__desc float-left" role="none">
+                                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.utility.copyright" data="{data}" />
+                            </span>
+                            <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.meta" />
+                        </nav>
+                        <f:render partial="Basics/SocialMedia" section="Default" arguments="{_all}" />
+                    </footer>
                 </nav>
-                <f:render partial="Basics/SocialMedia" section="Default" arguments="{_all}" />
-            </footer>
-        </nav>
+            </f:else>
+        </f:if>
     </f:section>
 </html>
