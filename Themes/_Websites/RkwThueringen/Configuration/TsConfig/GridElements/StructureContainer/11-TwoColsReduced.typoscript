@@ -1,0 +1,25 @@
+tx_gridelements.setup.contentContainerTwoColsReduced {
+    config {
+        rowCount = 4
+        rows {
+            3 {
+                columns {
+                    1 {
+                        rowspan = 2
+                    }
+                }
+            }
+            4 {
+                columns {
+                    2 {
+                        name = HTML
+                        colPos = 80
+                        allowed {
+                            CType = html
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

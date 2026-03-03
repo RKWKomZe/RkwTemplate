@@ -1,0 +1,18 @@
+tx_gridelements.setup.contentContainerLandingpageTwoCols {
+    config {
+        rows {
+            1 {
+                columns {
+                    1 {
+                        rowspan = 2
+                    }
+                    2 {
+                        allowed {
+                            CType := addToList(html)
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

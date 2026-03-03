@@ -4,7 +4,7 @@ mod.web_layout.BackendLayouts.homePages.config.backend_layout {
         3 {
             columns {
                 1 {
-                    name = Footer HTML (Nur Thüringen)
+                    name = Footer HTML
                     colPos = 130
                 }
             }

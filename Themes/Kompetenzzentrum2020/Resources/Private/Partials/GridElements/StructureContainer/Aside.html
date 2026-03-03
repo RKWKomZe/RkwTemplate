@@ -41,8 +41,10 @@
 
                 </div>
             </f:if>
+            <f:if condition="{data.tx_gridelements_view_column_80}">
+                <f:format.html parseFuncTSPath="">{data.tx_gridelements_view_column_80}</f:format.html>
+            </f:if>
         </div>
-
     </f:section>
 
     <f:comment><!-- ==================================================================================== --></f:comment>
@@ -75,8 +77,10 @@
                     </f:if>
                 </div>
             </f:if>
+            <f:if condition="{data.tx_gridelements_view_column_80}">
+                <f:format.html parseFuncTSPath="">{data.tx_gridelements_view_column_80}</f:format.html>
+            </f:if>
         </div>
-
     </f:section>
 
     <f:comment><!-- ==================================================================================== --></f:comment>
@@ -96,6 +100,9 @@
             </f:if>
         </f:for>
 
+        <f:if condition="{data.tx_gridelements_view_column_80}">
+            <f:format.html parseFuncTSPath="">{data.tx_gridelements_view_column_80}</f:format.html>
+        </f:if>
     </f:section>
 
 </html>
