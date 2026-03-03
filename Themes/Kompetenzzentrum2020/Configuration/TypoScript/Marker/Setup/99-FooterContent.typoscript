@@ -1,0 +1,4 @@
+lib.txRkwTemplate {
+    # Default: Empty
+    footerContent = TEXT
+}
