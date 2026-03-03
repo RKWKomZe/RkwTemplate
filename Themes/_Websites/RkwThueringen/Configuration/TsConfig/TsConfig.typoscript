@@ -1,3 +1,6 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:rkw_template/Themes/Kompetenzzentrum2020/Configuration/TsConfig/TsConfig.typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:rkw_template/Themes/_Websites/RkwThueringen/Configuration/TsConfig/Config" extensions="typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:rkw_template/Themes/_Websites/RkwThueringen/Configuration/TsConfig/Wizards" extensions="typoscript">
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:rkw_template/Themes/_Websites/RkwThueringen/Configuration/TsConfig/TCE" extensions="typoscript">
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:rkw_template/Themes/_Websites/RkwThueringen/Configuration/TsConfig/Extensions" extensions="typoscript">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:rkw_template/Themes/_Websites/RkwThueringen/Configuration/TsConfig/GridElements/StructureContainer" extensions="typoscript">

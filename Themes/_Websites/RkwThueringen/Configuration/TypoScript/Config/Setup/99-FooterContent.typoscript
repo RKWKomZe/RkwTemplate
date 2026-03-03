@@ -1,0 +1,13 @@
+lib.txRkwTemplate.footerContent = CONTENT
+lib.txRkwTemplate.footerContent {
+    table = tt_content
+    select {
+        pidInList = {$plugin.tx_rkwtemplate_themeconfig.footer.contentPid}
+        # new colPos for footer content
+        where = colPos = 130 AND CType="html"
+        orderBy = sorting
+        max = 1
+    }
+    # prevent rendering artifacts when empty
+    stdWrap.ifEmpty =
+}

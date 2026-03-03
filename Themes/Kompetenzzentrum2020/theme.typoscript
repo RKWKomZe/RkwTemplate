@@ -206,4 +206,9 @@ plugin.tx_rkwtemplate_themeconfig {
 
     }
 
+    footer {
+        # cat=plugin.tx_rkwtemplate_themeconfig; type=integer; label=ID of page containing HTML footer
+        contentPid = 3757
+    }
+
 }
