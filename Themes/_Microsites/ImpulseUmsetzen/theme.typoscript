@@ -22,7 +22,7 @@ plugin.tx_rkwtemplate_themeconfig {
         baseUrl = https://www.impulse-umsetzen.jetzt/
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=integer; label=ID of Rootpage
-        rootPid = 12715
+        rootPid = 13557
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Use this text instead of a logo
         logoReplacementText =
