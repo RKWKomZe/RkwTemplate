@@ -1,7 +1,7 @@
 plugin.tx_rkwtemplate_themeconfig {
     settings {
         mainNav {
-            contactPid = 4441
+            contactPid = 13729
             loginPid =
             fundingPid = 8591
         }
