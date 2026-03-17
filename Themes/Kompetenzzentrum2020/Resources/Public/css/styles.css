@@ -863,6 +863,10 @@ i {
     color: #d63f11;
 }
 
+.text-secondary {
+    color: #505050;
+}
+
 .text-uppercase {
     text-transform: uppercase;
 }
@@ -2448,7 +2452,6 @@ body:not(.keyboard-focused) .btn--circle:focus {
     font-size: 0.75rem;
     font-weight: 700;
     color: #ffffff;
-    border-radius: .25rem;
     font-family: "Palanquin", Helvetica, Arial, sans-serif;
     text-align: center;
     white-space: nowrap;
