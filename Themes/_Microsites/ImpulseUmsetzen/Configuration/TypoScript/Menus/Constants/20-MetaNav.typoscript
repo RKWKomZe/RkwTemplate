@@ -3,7 +3,7 @@ plugin.tx_rkwtemplate_themeconfig {
     settings {
 
         metaNav {
-            pid = 12719
+            pid = 13558
             linkTarget = _blank
         }
     }
