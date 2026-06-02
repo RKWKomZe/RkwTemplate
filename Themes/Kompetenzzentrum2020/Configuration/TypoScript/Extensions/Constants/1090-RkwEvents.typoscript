@@ -44,6 +44,12 @@ plugin.tx_rkwevents {
         # cat=plugin.tx_rkwevents; type=integer; label=PID for cancel reservation via link
         cancelRegPid = 13055
 
+        # cat=plugin.tx_rkwevents; type=integer; label=PID for revocation information
+        revocationPid =
+
+        # cat=plugin.tx_rkwevents; type=string; label=Path to file with cancellation policy
+        revocationPolicyFilepath =
+
 		# cat=plugin.tx_rkwevents; type=integer; label=Number of items in list view (default 10)
         itemsPerPage = 20
 
