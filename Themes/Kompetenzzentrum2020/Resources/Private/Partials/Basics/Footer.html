@@ -9,16 +9,34 @@
                 {backendFooterContent -> f:format.raw()}
             </f:then>
             <f:else>
-                <!-- Fallback: Standard-Footer-Struktur -->
+                <f:variable name="revocationButtonPid"><f:cObject typoscriptObjectPath="lib.txRkwTemplate.revocationButtonPid" /></f:variable>
+                <f:variable name="revocationButtonTitle"><f:cObject typoscriptObjectPath="lib.txRkwTemplate.revocationButtonTitle" /></f:variable>
+
                 <nav class="footerwrap">
                     <footer class="footer flex-container"
                             aria-label="{f:translate(key:'{settings.themeLanguageFile}:partials.basics.footer.descriptionAriaLabel')}">
-                        <nav class="nav footerlinks flex-basis-12"
+
+                        <nav class="nav footerlinks flex space-between"
                              aria-label="{f:translate(key:'{settings.themeLanguageFile}:partials.basics.footer.metaNavAriaLabel')}">
-                            <span class="footerlinks__desc float-left" role="none">
+
+                            <span class="footerlinks__desc" role="none">
                                 <f:cObject typoscriptObjectPath="lib.txRkwTemplate.utility.copyright" data="{data}" />
                             </span>
-                            <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.meta" />
+
+                            <div class="flex-container flex-basis-12 flex space-between">
+                                <div class="{f:if(condition: revocationButtonPid, then: 'flex-basis-8', else: 'flex-basis-12')}">
+                                    <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.meta" />
+                                </div>
+
+                                <f:if condition="{revocationButtonPid}">
+                                    <div class="flex-basis-3 flex flex-end" style="align-self: flex-start;">
+                                        <f:link.page pageUid="{revocationButtonPid}" class="btn btn--primary">
+                                            {revocationButtonTitle}
+                                        </f:link.page>
+                                    </div>
+                                </f:if>
+                            </div>
+
                         </nav>
                         <f:render partial="Basics/SocialMedia" section="Default" arguments="{_all}" />
                     </footer>
