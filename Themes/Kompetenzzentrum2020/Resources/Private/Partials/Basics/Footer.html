@@ -24,11 +24,11 @@
                             </span>
 
                             <div class="flex-container flex-basis-12 flex space-between">
-                                <div class="{f:if(condition: revocationButtonPid, then: 'flex-basis-8', else: 'flex-basis-12')}">
+                                <div class="{f:if(condition: '{revocationButtonPid} && {revocationButtonPid} != {data.uid}', then: 'flex-basis-9', else: 'flex-basis-8')}">
                                     <f:cObject typoscriptObjectPath="lib.txRkwTemplate.navigation.meta" />
                                 </div>
 
-                                <f:if condition="{revocationButtonPid}">
+                                <f:if condition="{revocationButtonPid} && {revocationButtonPid} != {data.uid}">
                                     <div class="flex-basis-3 flex flex-end" style="align-self: flex-start;">
                                         <f:link.page pageUid="{revocationButtonPid}" class="btn btn--primary">
                                             {revocationButtonTitle}
