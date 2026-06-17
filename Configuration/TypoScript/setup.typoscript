@@ -55,6 +55,23 @@ plugin.tx_rkwtemplate {
     }
 [END]
 
+[extensionLoaded('rkw_events')]
+    lib.txRkwTemplate {
+        revocationButtonPid = TEXT
+        revocationButtonPid.value = {$plugin.tx_rkwevents.settings.revocationButtonPid}
+
+        revocationButtonTitle = RECORDS
+        revocationButtonTitle {
+            source = {$plugin.tx_rkwevents.settings.revocationButtonPid}
+            tables = pages
+            conf.pages = TEXT
+            conf.pages.field = title
+        }
+    }
+
+    lib.txRkwTemplate.revocationPid < lib.txRkwTemplate.revocationButtonPid
+    lib.txRkwTemplate.revocationTitle < lib.txRkwTemplate.revocationButtonTitle
+[END]
 
 <INCLUDE_TYPOSCRIPT: source="FILE:./FluidStyledContents/Setup.typoscript">
 <INCLUDE_TYPOSCRIPT: source="FILE:./ContentElements/Setup.typoscript">
