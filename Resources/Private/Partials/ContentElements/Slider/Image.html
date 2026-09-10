@@ -1,5 +1,6 @@
 <html
     xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:rkwTemplate="http://typo3.org/ns/RKW/RkwTemplate/ViewHelpers"
     data-namespace-typo3-fluid="true">
 
     <div class="slider-item__img">
@@ -14,6 +15,9 @@
                     <source srcset="{f:uri.image(image:images.2,width:'320',height:'360m',cropVariant:'mobile')}" media="(min-width:0px)" />
                     <img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" alt="{images.0.alternative}" />
                 </picture>
+                <rkwTemplate:copyright file="{images.0}" class="media-source--desktop-up" />
+                <rkwTemplate:copyright file="{images.1}" class="media-source--tablet" />
+                <rkwTemplate:copyright file="{images.2}" class="media-source--mobile" />
             </f:then>
             <f:else>
                 <f:if condition="{f:count(subject: images)} == 4">
@@ -28,6 +32,10 @@
                             <source srcset="{f:uri.image(image:images.3,width:'320',height:'360m',cropVariant:'mobile')}" media="(min-width:0px)" />
                             <img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" alt="{images.0.alternative}" />
                         </picture>
+                        <rkwTemplate:copyright file="{images.0}" class="media-source--wide" />
+                        <rkwTemplate:copyright file="{images.1}" class="media-source--desktop" />
+                        <rkwTemplate:copyright file="{images.2}" class="media-source--tablet" />
+                        <rkwTemplate:copyright file="{images.3}" class="media-source--mobile" />
                     </f:then>
                     <f:else>
                         <f:if condition="{f:count(subject: images)} > 0">
@@ -49,6 +57,7 @@
                                 <source srcset="{f:uri.image(image:images.0,width:'320',height:'360m',cropVariant:'mobile')}" media="(min-width:0px)" />
                                 <img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" alt="{images.0.alternative}" />
                             </picture>
+                            <rkwTemplate:copyright file="{images.0}" />
                         </f:if>
                     </f:else>
                 </f:if>

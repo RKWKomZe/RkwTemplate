@@ -1,0 +1,25 @@
+# Keep the TYPO3 v10 copyright overlay implementation inside rkw_template.
+# Some extensions copy the Accelerator FLUIDTEMPLATE during setup, therefore
+# their already-created copies must explicitly use the local template as well.
+
+lib.txAccelerator.responsiveImage.file = EXT:rkw_template/Themes/Kompetenzzentrum2020/Resources/Private/Templates/FluidTemplateLibs/ResponsiveImages.html
+
+lib.txRkwRelated.responsiveImageThumbnail.file = EXT:rkw_template/Themes/Kompetenzzentrum2020/Resources/Private/Templates/FluidTemplateLibs/ResponsiveImages.html
+lib.txRkwRelated.responsiveLogoThumbnail.file = EXT:rkw_template/Themes/Kompetenzzentrum2020/Resources/Private/Templates/FluidTemplateLibs/ResponsiveImages.html
+
+lib.txRkwInfographics.responsiveImageThumbnail.file = EXT:rkw_template/Themes/Kompetenzzentrum2020/Resources/Private/Templates/FluidTemplateLibs/ResponsiveImages.html
+lib.txRkwInfographics.responsiveImageModal.file = EXT:rkw_template/Themes/Kompetenzzentrum2020/Resources/Private/Templates/FluidTemplateLibs/ResponsiveImages.html
+
+lib.txRkwTools.responsiveImageThumbnail.file = EXT:rkw_template/Themes/Kompetenzzentrum2020/Resources/Private/Templates/FluidTemplateLibs/ResponsiveImages.html
+
+plugin.tx_rkwshop.libs.responsiveThumbnail.file = EXT:rkw_template/Themes/Kompetenzzentrum2020/Resources/Private/Templates/FluidTemplateLibs/ResponsiveImages.html
+
+plugin.tx_rkwrelated.libs.responsiveImageThumbnail.file = EXT:rkw_template/Themes/Kompetenzzentrum2020/Resources/Private/Templates/FluidTemplateLibs/ResponsiveImages.html
+plugin.tx_rkwrelated.libs.responsiveLogoThumbnail.file = EXT:rkw_template/Themes/Kompetenzzentrum2020/Resources/Private/Templates/FluidTemplateLibs/ResponsiveImages.html
+plugin.tx_rkwrelated.libs.responsivePdfThumbnail.file = EXT:rkw_template/Themes/Kompetenzzentrum2020/Resources/Private/Templates/FluidTemplateLibs/ResponsiveImages.html
+
+plugin.tx_rkwauthors.libs.responsiveImageThumbnail.file = EXT:rkw_template/Themes/Kompetenzzentrum2020/Resources/Private/Templates/FluidTemplateLibs/ResponsiveImages.html
+
+plugin.tx_rkwtools.libs.responsiveImageThumbnail.file = EXT:rkw_template/Themes/Kompetenzzentrum2020/Resources/Private/Templates/FluidTemplateLibs/ResponsiveImages.html
+plugin.tx_rkwtools.libs.responsiveLogoThumbnail.file = EXT:rkw_template/Themes/Kompetenzzentrum2020/Resources/Private/Templates/FluidTemplateLibs/ResponsiveImages.html
+plugin.tx_rkwtools.libs.responsivePdfThumbnail.file = EXT:rkw_template/Themes/Kompetenzzentrum2020/Resources/Private/Templates/FluidTemplateLibs/ResponsiveImages.html

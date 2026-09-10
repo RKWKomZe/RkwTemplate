@@ -1,19 +1,31 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:rkwTemplate="http://typo3.org/ns/RKW/RkwTemplate/ViewHelpers"
     xmlns:rkwEtracker="http://typo3.org/ns/RKW/RkwEtracker/ViewHelpers"
     data-namespace-typo3-fluid="true">
 
     <f:if condition="{f:count(subject: images)} > 0">
-        <f:if condition="{data.header_link}">
-            <f:then>
-                <rkwEtracker:link.typolink parameter="{data.header_link}">
+        <span class="topic-media">
+            <f:if condition="{data.header_link}">
+                <f:then>
+                    <rkwEtracker:link.typolink parameter="{data.header_link}">
+                        <f:render section="Inner" arguments="{_all}"/>
+                    </rkwEtracker:link.typolink>
+                </f:then>
+                <f:else>
                     <f:render section="Inner" arguments="{_all}"/>
-                </rkwEtracker:link.typolink>
-            </f:then>
-            <f:else>
-                <f:render section="Inner" arguments="{_all}"/>
-            </f:else>
-        </f:if>
+                </f:else>
+            </f:if>
 
+            <rkwTemplate:copyright file="{images.0}" class="media-source--topic-desktop" />
+            <f:if condition="{images.1}">
+                <f:then>
+                    <rkwTemplate:copyright file="{images.1}" class="media-source--topic-mobile" />
+                </f:then>
+                <f:else>
+                    <rkwTemplate:copyright file="{images.0}" class="media-source--topic-mobile" />
+                </f:else>
+            </f:if>
+        </span>
     </f:if>
 
     <f:comment><!-- ======================================================================== --></f:comment>

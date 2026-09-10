@@ -1,0 +1,3 @@
+[extensionLoaded('rkw_events')]
+    plugin.tx_rkwevents.view.templateRootPaths.100 = EXT:rkw_template/Themes/Kompetenzzentrum2020/Resources/Private/Extensions/RkwEvents/Templates/
+[END]

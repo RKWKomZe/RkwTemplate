@@ -2,6 +2,7 @@
     xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
     xmlns:coreExtended="http://typo3.org/ns/Madj2k/CoreExtended/ViewHelpers"
     xmlns:rkwEtracker="http://typo3.org/ns/RKW/RkwEtracker/ViewHelpers"
+    xmlns:rkwTemplate="http://typo3.org/ns/RKW/RkwTemplate/ViewHelpers"
     data-namespace-typo3-fluid="true">
 
     <f:layout name="Rkw" />
@@ -19,16 +20,19 @@
 
                 <div class="picture-list flex full-width-narrow">
                     <div class="flex-basis-2 picture-list__img full-width-narrow">
-                        <f:if condition="{images.0.link}">
-                            <f:then>
-                                <rkwEtracker:link.typolink parameter="{images.0.link}">
+                        <div class="media-with-source">
+                            <f:if condition="{images.0.link}">
+                                <f:then>
+                                    <rkwEtracker:link.typolink parameter="{images.0.link}">
+                                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" loading="lazy" srcset="{f:uri.image(image:images.0,width:'328c',height:'328c',cropVariant:'default')}" alt="{images.0.alternative}" title="{images.0.title}"  />
+                                    </rkwEtracker:link.typolink>
+                                </f:then>
+                                <f:else>
                                     <img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" loading="lazy" srcset="{f:uri.image(image:images.0,width:'328c',height:'328c',cropVariant:'default')}" alt="{images.0.alternative}" title="{images.0.title}"  />
-                                </rkwEtracker:link.typolink>
-                            </f:then>
-                            <f:else>
-                                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" loading="lazy" srcset="{f:uri.image(image:images.0,width:'328c',height:'328c',cropVariant:'default')}" alt="{images.0.alternative}" title="{images.0.title}"  />
-                            </f:else>
-                        </f:if>
+                                </f:else>
+                            </f:if>
+                            <rkwTemplate:copyright file="{images.0}" />
+                        </div>
                     </div>
 
                     <div class="flex-basis-10 picture-list__content full-width-narrow">
@@ -48,7 +52,6 @@
         </f:if>
     </f:section>
 </html>
-
 
 
 
