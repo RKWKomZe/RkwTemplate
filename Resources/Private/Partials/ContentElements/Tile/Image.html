@@ -1,11 +1,13 @@
 <html
     xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:rkwTemplate="http://typo3.org/ns/RKW/RkwTemplate/ViewHelpers"
     data-namespace-typo3-fluid="true">
 
     <f:if condition="{f:count(subject: images)} > 0">
         <div class="speaker-list__item__header">
-            <div class="speaker-img">
+            <div class="speaker-img media-with-source">
                 <img src="{f:uri.image(image:images.0,cropVariant:'default')}" alt="{image.title}" loading="lazy">
+                <rkwTemplate:copyright file="{images.0}" treatIdAsReference="{treatIdAsReference}" />
             </div>
         </div>
     </f:if>

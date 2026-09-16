@@ -19720,3 +19720,24 @@ body:not(.show-first-headline) .typo3-fsc .frame:not(.show-first-headline):first
         display: block;
     }
 }
+
+.tpl-specials-detail .siteheader .secondary-mod.contentbox.speaker-mod .speaker-list-wrapper .speaker-list__item, .tpl-specials-detail main .secondary-mod.contentbox.speaker-mod .speaker-list-wrapper .speaker-list__item,
+.tpl-specials-detail .contentbox.speaker-mod .speaker-header {
+    position: relative;
+}
+.tpl-specials-detail .contentbox.speaker-mod .speaker-header .media-source {
+    top: 1rem;
+    bottom: auto;
+}
+
+.tpl-specials-detail .siteheader .secondary-mod.contentbox.speaker-mod .speaker-list-wrapper .speaker-list__item, .tpl-specials-detail main .secondary-mod.contentbox.speaker-mod .speaker-list-wrapper .speaker-list__item  .speaker-list__item-overlay {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    z-index: 0;
+}
