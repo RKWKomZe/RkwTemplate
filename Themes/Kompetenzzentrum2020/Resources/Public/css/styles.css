@@ -19626,7 +19626,7 @@ body:not(.show-first-headline) .typo3-fsc .frame:not(.show-first-headline):first
 }
 
 .media-source {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.7);
     bottom: 1rem;
     color: #30463b;
     display: block;
@@ -19640,20 +19640,22 @@ body:not(.show-first-headline) .typo3-fsc .frame:not(.show-first-headline):first
     text-align: right;
     word-break: break-word;
     z-index: 40;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
 }
 
 .media-source-link {
     color: #30463b !important;
     pointer-events: auto;
     position: relative;
-    text-decoration: underline;
+    text-decoration: none !important;
     z-index: 1;
 }
 
 .media-source-link:focus,
 .media-source-link:hover {
     color: #30463b !important;
-    text-decoration: none;
+    text-decoration: underline !important;
 }
 
 .siteheader > .media-source,

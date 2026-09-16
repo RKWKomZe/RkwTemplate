@@ -112,8 +112,8 @@ class CopyrightViewHelper extends AbstractViewHelper
             return '';
         }
 
-        $text = '© ' . implode(' / ', $parts);
-        $content = htmlspecialchars($text, ENT_QUOTES | ENT_HTML5, 'UTF-8');
+        $text = implode(' / ', $parts);
+        $content = '© ' . htmlspecialchars($text, ENT_QUOTES | ENT_HTML5, 'UTF-8');
 
         if ($sourceUrl !== '') {
             /** @var ContentObjectRenderer $contentObjectRenderer */
