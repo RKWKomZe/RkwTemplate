@@ -19727,7 +19727,8 @@ body:not(.show-first-headline) .typo3-fsc .frame:not(.show-first-headline):first
 .tpl-specials-detail .contentbox.speaker-mod .speaker-header {
     position: relative;
 }
-.tpl-specials-detail .contentbox.speaker-mod .speaker-header .media-source {
+.tpl-specials-detail .contentbox.speaker-mod .speaker-header .media-source,
+.nav .nav-flyout ul.nav-flyout__dropdown .nav-flyout__item .media-source {
     top: 1rem;
     bottom: auto;
 }
