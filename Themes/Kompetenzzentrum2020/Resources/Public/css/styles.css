@@ -19509,39 +19509,8 @@ body:not(.show-first-headline) .typo3-fsc .frame:not(.show-first-headline):first
 }
 
 /**! ==================================================
- * adjustments for html-editor in frontend
+ * adjustments for copyright/source overlays for images and videos.
  * ================================================== */
-.typo3-fsc .button {
-    margin-bottom: 2em;
-}
-
-.typo3-fsc .text-left,
-.typo3-fsc .align-left {
-    text-align: left !important;
-}
-
-.typo3-fsc .text-center,
-.typo3-fsc .align-center {
-    text-align: center !important;
-}
-
-.typo3-fsc .text-right,
-.typo3-fsc .align-right {
-    text-align: right !important;
-}
-
-.typo3-fsc .text-justify,
-.typo3-fsc .align-justify {
-    text-align: justify !important;
-}
-
-.typo3-fsc .indent {
-    margin-left: 2em;
-}
-
-/**
- * Copyright/source overlays for images and videos.
- */
 .media-with-source,
 .topic-media,
 .slider-item__img,
@@ -19582,8 +19551,15 @@ body:not(.show-first-headline) .typo3-fsc .frame:not(.show-first-headline):first
 }
 
 .media-controls-with-source {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
     align-items: flex-end;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     max-width: 70%;
     position: absolute;
@@ -19629,7 +19605,7 @@ body:not(.show-first-headline) .typo3-fsc .frame:not(.show-first-headline):first
 .media-source {
     background-color: rgba(255, 255, 255, 0.7);
     bottom: 1rem;
-    color: #30463b;
+    color: #505050;
     display: block;
     font-size: 14px;
     line-height: 1.25;
@@ -19646,7 +19622,7 @@ body:not(.show-first-headline) .typo3-fsc .frame:not(.show-first-headline):first
 }
 
 .media-source-link {
-    color: #30463b !important;
+    color: #505050 !important;
     pointer-events: auto;
     position: relative;
     text-decoration: none !important;
@@ -19655,7 +19631,7 @@ body:not(.show-first-headline) .typo3-fsc .frame:not(.show-first-headline):first
 
 .media-source-link:focus,
 .media-source-link:hover {
-    color: #30463b !important;
+    color: #505050 !important;
     text-decoration: underline !important;
 }
 
@@ -19718,7 +19694,6 @@ body:not(.show-first-headline) .typo3-fsc .frame:not(.show-first-headline):first
     .media-source--topic-desktop {
         display: none;
     }
-
     .media-source--topic-mobile {
         display: block;
     }
@@ -19728,18 +19703,19 @@ body:not(.show-first-headline) .typo3-fsc .frame:not(.show-first-headline):first
 .tpl-specials-detail .contentbox.speaker-mod .speaker-header {
     position: relative;
 }
+
 .tpl-specials-detail .contentbox.speaker-mod .speaker-header .media-source,
 .nav .nav-flyout ul.nav-flyout__dropdown .nav-flyout__item .media-source {
     top: 1rem;
     bottom: auto;
 }
 
-.tpl-specials-detail .siteheader .secondary-mod.contentbox.speaker-mod .speaker-list-wrapper .speaker-list__item, .tpl-specials-detail main .secondary-mod.contentbox.speaker-mod .speaker-list-wrapper .speaker-list__item  .speaker-list__item-overlay {
+.tpl-specials-detail .siteheader .secondary-mod.contentbox.speaker-mod .speaker-list-wrapper .speaker-list__item, .tpl-specials-detail main .secondary-mod.contentbox.speaker-mod .speaker-list-wrapper .speaker-list__item .speaker-list__item-overlay {
     position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     overflow: hidden;
     text-indent: 100%;
     white-space: nowrap;
@@ -19748,4 +19724,48 @@ body:not(.show-first-headline) .typo3-fsc .frame:not(.show-first-headline):first
 
 .testimonial-mod {
     position: relative;
+}
+
+.slider-item__media > .media-source {
+    top: 5rem;
+    right: 20px;
+}
+
+.slider:not(.round) .slider-item .slider-item__media {
+    z-index: initial;
+}
+
+/**! ==================================================
+ * adjustments for html-editor in frontend
+ * ================================================== */
+.typo3-fsc .button {
+    margin-bottom: 2em;
+}
+
+.typo3-fsc .text-left,
+.typo3-fsc .align-left {
+    text-align: left !important;
+}
+
+.typo3-fsc .text-center,
+.typo3-fsc .align-center {
+    text-align: center !important;
+}
+
+.typo3-fsc .text-right,
+.typo3-fsc .align-right {
+    text-align: right !important;
+}
+
+.typo3-fsc .text-justify,
+.typo3-fsc .align-justify {
+    text-align: justify !important;
+}
+
+.typo3-fsc .indent {
+    margin-left: 2em;
+}
+
+.order-list__item .order-list__image .media-source {
+    display: None;
 }
