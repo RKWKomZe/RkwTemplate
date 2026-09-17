@@ -19745,3 +19745,7 @@ body:not(.show-first-headline) .typo3-fsc .frame:not(.show-first-headline):first
     white-space: nowrap;
     z-index: 0;
 }
+
+.testimonial-mod {
+    position: relative;
+}
