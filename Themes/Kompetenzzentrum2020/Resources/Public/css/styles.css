@@ -19598,6 +19598,7 @@ body:not(.show-first-headline) .typo3-fsc .frame:not(.show-first-headline):first
     position: static;
     right: auto;
     top: auto;
+    border-radius: 4px;
 }
 
 .slider:not(.round) .slider-item .slider-item__media .media-controls-with-source .btn--play-pause {
