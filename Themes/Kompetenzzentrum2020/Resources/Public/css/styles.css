@@ -19547,7 +19547,7 @@ body:not(.show-first-headline) .typo3-fsc .frame:not(.show-first-headline):first
 .media-with-source--event-header > .media-source {
     bottom: auto;
     max-width: 70%;
-    top: 1rem;
+    top: 2rem;
 }
 
 .media-controls-with-source {
@@ -19603,7 +19603,7 @@ body:not(.show-first-headline) .typo3-fsc .frame:not(.show-first-headline):first
 }
 
 .media-source {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.8);
     bottom: 1rem;
     color: #505050;
     display: block;
@@ -19644,7 +19644,7 @@ body:not(.show-first-headline) .typo3-fsc .frame:not(.show-first-headline):first
 .slider-item__media > .media-source {
     bottom: auto;
     max-width: 70%;
-    top: 1rem;
+    top: 2rem;
 }
 
 .nav .nav-flyout ul.nav-flyout__dropdown .nav-flyout__item .media-source-link {
