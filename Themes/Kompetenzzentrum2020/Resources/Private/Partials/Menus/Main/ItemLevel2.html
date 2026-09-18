@@ -1,4 +1,6 @@
-<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:rkwTemplate="http://typo3.org/ns/RKW/RkwTemplate/ViewHelpers"
+      data-namespace-typo3-fluid="true">
 
     <f:section name="Default">
 
@@ -29,6 +31,9 @@
                     </f:if>
                 </div>
             </a>
+            <f:if condition="{item.image.0}">
+                <rkwTemplate:copyright file="{item.image.0}"  showMediaSourceOverlay="{settings.showMediaSourceOverlay}" />
+            </f:if>
         </li>
     </f:section>
 

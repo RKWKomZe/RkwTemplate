@@ -28,6 +28,7 @@ lib.txRkwTemplate {
 
             20 = FLUIDTEMPLATE
             20 {
+                settings < lib.txRkwTemplate.themeSettings
 
                 file = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/FluidTemplateLibs/Keyvisual/Topic.html
                 variables {
@@ -83,6 +84,7 @@ lib.txRkwTemplate {
 
             20 = FLUIDTEMPLATE
             20 {
+                settings < lib.txRkwTemplate.themeSettings
 
                 file = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/FluidTemplateLibs/Keyvisual/TopicFull.html
                 variables {
@@ -133,6 +135,7 @@ lib.txRkwTemplate {
 
 
             settings < lib.txAccelerator.responsiveImage.settings
+            settings.showMediaSourceOverlay < lib.txRkwTemplate.themeSettings.showMediaSourceOverlay
             settings {
 
                 lazyLoading = 0
@@ -237,3 +240,13 @@ lib.txRkwTemplate {
         }
     }
 }
+
+lib.txRkwTemplate.keyvisual.topicCopyright < lib.txRkwTemplate.keyvisual.topic
+lib.txRkwTemplate.keyvisual.topicCopyright.20.file = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/FluidTemplateLibs/Keyvisual/Copyright.html
+lib.txRkwTemplate.keyvisual.topicCopyright.20.settings < lib.txRkwTemplate.themeSettings
+lib.txRkwTemplate.keyvisual.topicCopyright.20.stdWrap.replacement >
+
+lib.txRkwTemplate.keyvisual.publicationCopyright < lib.txRkwTemplate.keyvisual.publication
+lib.txRkwTemplate.keyvisual.publicationCopyright.20.file = {$plugin.tx_rkwtemplate_themeconfig.paths.default.templates}/FluidTemplateLibs/Keyvisual/Copyright.html
+lib.txRkwTemplate.keyvisual.publicationCopyright.20.settings < lib.txRkwTemplate.themeSettings
+lib.txRkwTemplate.keyvisual.publicationCopyright.20.stdWrap.replacement >

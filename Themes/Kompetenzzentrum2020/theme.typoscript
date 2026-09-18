@@ -196,7 +196,7 @@ plugin.tx_rkwtemplate_themeconfig {
         show = 0
 
         # cat=plugin.tx_rkwtemplate_themeconfig; type=string; label=Set the campaign's label
-        label = RKW Jahresthema 2026 - Impulse
+        label = RKW Jahresthema 2026 - Impulse (um)setzen
 
         # cat=plugin.tx_rkwtemplate_themeconfig/file; type=string; label=Claim as image for the campaign's ribbon on slider
         imageFile = {$plugin.tx_rkwtemplate_themeconfig.paths.default.campaigns}/campaign-2026.png
@@ -210,5 +210,8 @@ plugin.tx_rkwtemplate_themeconfig {
         # cat=plugin.tx_rkwtemplate_themeconfig; type=integer; label=ID of page containing HTML footer
         contentPid = 3757
     }
+
+    # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Show media source overlay
+    showMediaSourceOverlay = 1
 
 }

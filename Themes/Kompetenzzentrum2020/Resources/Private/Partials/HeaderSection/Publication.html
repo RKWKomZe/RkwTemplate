@@ -4,6 +4,7 @@
         <f:then>
             <div class="siteheader flex siteheader-full" style="background-image: url('{f:cObject(typoscriptObjectPath: 'lib.txRkwTemplate.keyvisual.publication')}')">
                 <f:render section="Sub" arguments="{_all}"/>
+                <f:cObject typoscriptObjectPath="lib.txRkwTemplate.keyvisual.publicationCopyright" />
             </div>
         </f:then>
         <f:else>
@@ -32,6 +33,5 @@
 
     </f:section>
 </html>
-
 
 
