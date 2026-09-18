@@ -1,5 +1,6 @@
 <html
     xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:rkwTemplate="http://typo3.org/ns/RKW/RkwTemplate/ViewHelpers"
     data-namespace-typo3-fluid="true">
 
     <div class="slider-item__media">
@@ -9,15 +10,18 @@
                 <video autoplay muted playsinline loop preload="none">
                     <source src="{file.originalFile.storage.configuration.basePath}{file.originalFile.identifier}" type="{file.originalFile.properties.mime_type}">
                 </video>
-                <button
-                    class="btn--play-pause"
-                    aria-label="Video pausieren"
-                    aria-pressed="false"
-                >
-                    <svg class="icon icon--24">
-                        <use xlink:href="#ic-pause" />
-                    </svg>
-                </button>
+                <div class="slider-item__media__controls media-controls-with-source">
+                    <button
+                        class="btn--play-pause"
+                        aria-label="Video pausieren"
+                        aria-pressed="false"
+                    >
+                        <svg class="icon icon--24">
+                            <use xlink:href="#ic-pause" />
+                        </svg>
+                    </button>
+                    <rkwTemplate:copyright file="{file}"  showMediaSourceOverlay="{settings.showMediaSourceOverlay}" />
+                </div>
             </f:for>
         </f:if>
     </div>

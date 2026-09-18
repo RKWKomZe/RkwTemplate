@@ -76,4 +76,14 @@ plugin.tx_rkwtemplate {
 <INCLUDE_TYPOSCRIPT: source="FILE:./FluidStyledContents/Setup.typoscript">
 <INCLUDE_TYPOSCRIPT: source="FILE:./ContentElements/Setup.typoscript">
 <INCLUDE_TYPOSCRIPT: source="FILE:./GridElements/Setup.typoscript">
-<INCLUDE_TYPOSCRIPT: source="FILE:./Themes/Setup.typoscript">
+    <INCLUDE_TYPOSCRIPT: source="FILE:./Themes/Setup.typoscript">
+
+[extensionLoaded('rkw_authors')]
+plugin.tx_rkwauthors {
+    view {
+        partialRootPaths {
+            100 = EXT:rkw_template/Resources/Private/Partials/
+        }
+    }
+}
+[END]

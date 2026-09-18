@@ -8,11 +8,13 @@
                 <f:then>
                     <div class="siteheader siteheader siteheader--full flex valign-center {f:if(condition:'{settings.noTopicHeaderImageOnMobile}', then: 'siteheader--no-image-mobile', else: '')}" style="background-image: url('{f:cObject(typoscriptObjectPath: 'lib.txRkwTemplate.keyvisual.topicFull')}')">
                         <f:render section="Sub" arguments="{_all}"/>
+                        <f:cObject typoscriptObjectPath="lib.txRkwTemplate.keyvisual.topicCopyright" />
                     </div>
                 </f:then>
                 <f:else>
                     <div class="siteheader siteheader--half flex {f:if(condition:'{settings.noTopicHeaderImageOnMobile}', then: 'siteheader--no-image-mobile', else: '')}" style="background-image: url('{f:cObject(typoscriptObjectPath: 'lib.txRkwTemplate.keyvisual.topic')}')">
                         <f:render section="Sub" arguments="{_all}"/>
+                        <f:cObject typoscriptObjectPath="lib.txRkwTemplate.keyvisual.topicCopyright" />
                     </div>
                 </f:else>
             </f:if>
@@ -60,6 +62,5 @@
         </div>
     </f:section>
 </html>
-
 
 
