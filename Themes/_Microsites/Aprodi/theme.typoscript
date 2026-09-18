@@ -72,4 +72,7 @@ plugin.tx_rkwtemplate_themeconfig {
 
     }
 
+    # cat=plugin.tx_rkwtemplate_themeconfig; type=boolean; label=Show media source overlay
+    showMediaSourceOverlay = 1
+
 }
