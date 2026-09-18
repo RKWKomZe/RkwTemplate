@@ -19607,7 +19607,9 @@ body:not(.show-first-headline) .typo3-fsc .frame:not(.show-first-headline):first
     bottom: 1rem;
     color: #505050;
     display: block;
-    font-size: 14px;
+    font-size: 10px;
+    font-size: 0.625rem;
+    font-family: "Palanquin", Helvetica, Arial, sans-serif;
     line-height: 1.25;
     max-width: calc(100% - 1rem);
     padding: 4px 8px;
@@ -19735,6 +19737,10 @@ body:not(.show-first-headline) .typo3-fsc .frame:not(.show-first-headline):first
     z-index: initial;
 }
 
+.order-list__item .order-list__image .media-source {
+    display: none;
+}
+
 /**! ==================================================
  * adjustments for html-editor in frontend
  * ================================================== */
@@ -19764,8 +19770,4 @@ body:not(.show-first-headline) .typo3-fsc .frame:not(.show-first-headline):first
 
 .typo3-fsc .indent {
     margin-left: 2em;
-}
-
-.order-list__item .order-list__image .media-source {
-    display: None;
 }
