@@ -52,6 +52,8 @@ lib.txRkwTemplate.themeSettings {
     showLanguageSwitch = {$plugin.tx_rkwtemplate_themeconfig.showLanguageSwitch}
     noTopicHeaderImageOnMobile = {$plugin.tx_rkwtemplate_themeconfig.noTopicHeaderImageOnMobile}
 
+    showMediaSourceOverlay = {$plugin.tx_rkwtemplate_themeconfig.showMediaSourceOverlay}
+
 }
 
 
@@ -62,10 +64,26 @@ tt_content.gridelements_pi1.20.10.setup {
     contentContainerOneCol.cObject.settings < lib.txRkwTemplate.themeSettings
     contentContainerOneColPagination.cObject.settings < lib.txRkwTemplate.themeSettings
     contentContainerOneColOrderForm.cObject.settings < lib.txRkwTemplate.themeSettings
+    sliderContainer.cObject.settings < lib.txRkwTemplate.themeSettings
+    testimonialContainer.cObject.settings < lib.txRkwTemplate.themeSettings
+    tilesContainer.cObject.settings < lib.txRkwTemplate.themeSettings
 }
 
 
 // add settings to relevant custom elements
 tt_content {
     rkwtemplate_topic.settings < lib.txRkwTemplate.themeSettings
+    rkwtemplate_slider.settings < lib.txRkwTemplate.themeSettings
+    rkwtemplate_textimagebackground.settings < lib.txRkwTemplate.themeSettings
+    rkwtemplate_calltoaction.settings < lib.txRkwTemplate.themeSettings
+    rkwtemplate_imagetextoverlay.settings < lib.txRkwTemplate.themeSettings
+    rkwtemplate_imagelist.settings < lib.txRkwTemplate.themeSettings
+    rkwtemplate_boxsliderelement.settings < lib.txRkwTemplate.themeSettings
+    rkwtemplate_tile.settings < lib.txRkwTemplate.themeSettings
+    image.settings < lib.txRkwTemplate.themeSettings
+    textmedia.settings < lib.txRkwTemplate.themeSettings
+    textpic.settings < lib.txRkwTemplate.themeSettings
 }
+
+plugin.tx_rkwauthors.settings < lib.txRkwTemplate.themeSettings
+plugin.tx_rkwevents.settings < lib.txRkwTemplate.themeSettings

@@ -9,7 +9,7 @@
                     <div class="tile__header">
                         <div class="tile__img">
                             <f:image image="{logo}" treatIdAsReference="1"  width="350" cropVariant="default" alt="{f:if(condition: '{logo.title}', then: '{logo.title}', else: '{logo.alternative}')}" />
-                            <rkwTemplate:copyright file="{logo}" />
+                            <rkwTemplate:copyright file="{logo}"  showMediaSourceOverlay="{settings.showMediaSourceOverlay}" />
                         </div>
                     </div>
                 </div>

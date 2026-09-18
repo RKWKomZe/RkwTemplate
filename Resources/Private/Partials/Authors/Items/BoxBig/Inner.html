@@ -8,7 +8,7 @@
         <f:if condition="{author.imageBig}">
             <f:then>
                 <f:image image="{author.imageBig}" treatIdAsReference="true" width="890c" height="880c-100"/>
-                <rkwTemplate:copyright file="{author.imageBig}" treatIdAsReference="1" />
+                <rkwTemplate:copyright file="{author.imageBig}"  treatIdAsReference="1"  showMediaSourceOverlay="{settings.showMediaSourceOverlay}" />
                 <f:comment>
                     <!--
                          <f:render partial="Utils/Media" arguments="{file: author.imageBig, width: '890c', height:'880c-100'}" />

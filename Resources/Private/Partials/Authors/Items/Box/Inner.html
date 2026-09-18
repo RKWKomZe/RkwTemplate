@@ -9,7 +9,7 @@
         <f:if condition="{author.imageBoxes}">
             <f:then>
                 <f:image src="{author.imageBoxes.uid}" treatIdAsReference="1" alt="<rkwAuthors:GetCombinedName author='{author}'/>" width="350"  />
-                <rkwTemplate:copyright file="{author.imageBoxes}" treatIdAsReference="1" />
+                <rkwTemplate:copyright file="{author.imageBoxes}"  treatIdAsReference="1"  showMediaSourceOverlay="{settings.showMediaSourceOverlay}" />
                 <f:comment>
                     <!--
                         <f:render partial="Utils/Media" arguments="{file: author.imageBoxes, width: '350'}" />

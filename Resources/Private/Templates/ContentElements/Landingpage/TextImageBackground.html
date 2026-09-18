@@ -14,7 +14,7 @@
                 <f:if condition="{f:count(subject: images)} > 0 && {f:count(subject: assets)} == 0">
                     <!-- image -->
                     <img src="{f:uri.image(image:images.0,cropVariant:'default')}" alt="{image.title}" loading="lazy">
-                    <rkwTemplate:copyright file="{images.0}" />
+                    <rkwTemplate:copyright file="{images.0}" showMediaSourceOverlay="{settings.showMediaSourceOverlay}" />
                 </f:if>
                 <f:if condition="{f:count(subject: assets)} > 0">
                     <!-- video -->
@@ -32,7 +32,7 @@
                                     <use xlink:href="#ic-pause" />
                                 </svg>
                             </button>
-                            <rkwTemplate:copyright file="{file}" />
+                            <rkwTemplate:copyright file="{file}"  showMediaSourceOverlay="{settings.showMediaSourceOverlay}" />
                         </div>
                     </f:for>
                 </f:if>

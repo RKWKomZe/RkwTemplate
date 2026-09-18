@@ -64,6 +64,7 @@ class CopyrightViewHelper extends AbstractViewHelper
         $this->registerArgument('file', 'mixed', 'FAL file, file reference or UID', true);
         $this->registerArgument('treatIdAsReference', 'bool', 'Treat a numeric UID as sys_file_reference', false, true);
         $this->registerArgument('class', 'string', 'Additional CSS class', false, '');
+        $this->registerArgument('showMediaSourceOverlay', 'bool', 'Show media source overlay', false, true);
     }
 
 
@@ -74,6 +75,11 @@ class CopyrightViewHelper extends AbstractViewHelper
      */
     public function render(): string
     {
+        // Check configuration
+        if (!(bool)$this->arguments['showMediaSourceOverlay']) {
+            return '';
+        }
+
         $file = $this->resolveFile($this->arguments['file'], (bool)$this->arguments['treatIdAsReference']);
         if (!$file || $this->isCopyrightDisabled($file)) {
             return '';

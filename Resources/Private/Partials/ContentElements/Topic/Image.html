@@ -16,13 +16,13 @@
                 </f:else>
             </f:if>
 
-            <rkwTemplate:copyright file="{images.0}" class="media-source--topic-desktop" />
+            <rkwTemplate:copyright file="{images.0}" class="media-source--topic-desktop"  showMediaSourceOverlay="{settings.showMediaSourceOverlay}" />
             <f:if condition="{images.1}">
                 <f:then>
-                    <rkwTemplate:copyright file="{images.1}" class="media-source--topic-mobile" />
+                    <rkwTemplate:copyright file="{images.1}" class="media-source--topic-mobile" showMediaSourceOverlay="{settings.showMediaSourceOverlay}" />
                 </f:then>
                 <f:else>
-                    <rkwTemplate:copyright file="{images.0}" class="media-source--topic-mobile" />
+                    <rkwTemplate:copyright file="{images.0}" class="media-source--topic-mobile" showMediaSourceOverlay="{settings.showMediaSourceOverlay}" />
                 </f:else>
             </f:if>
         </span>
