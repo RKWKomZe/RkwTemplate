@@ -19647,6 +19647,10 @@ body:not(.show-first-headline) .typo3-fsc .frame:not(.show-first-headline):first
     top: 2rem;
 }
 
+.nav .nav-flyout {
+    z-index: 50;
+}
+
 .nav .nav-flyout ul.nav-flyout__dropdown .nav-flyout__item .media-source-link {
     display: inline;
     height: auto;
