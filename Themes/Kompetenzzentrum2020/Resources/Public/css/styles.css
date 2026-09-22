@@ -19701,18 +19701,25 @@ body:not(.show-first-headline) .typo3-fsc .frame:not(.show-first-headline):first
     }
 }
 
-.tpl-specials-detail .siteheader .secondary-mod.contentbox.speaker-mod .speaker-list-wrapper .speaker-list__item, .tpl-specials-detail main .secondary-mod.contentbox.speaker-mod .speaker-list-wrapper .speaker-list__item,
-.tpl-specials-detail .contentbox.speaker-mod .speaker-header {
+.tpl-specials-detail .siteheader .primary-mod.contentbox.speaker-mod .speaker-list-wrapper .speaker-list__item,
+.tpl-specials-detail .siteheader .secondary-mod.contentbox.speaker-mod .speaker-list-wrapper .speaker-list__item,
+.tpl-specials-detail .siteheader .tertiary-mod.contentbox.speaker-mod .speaker-list-wrapper .speaker-list__item,
+.tpl-specials-detail .siteheader .quarterly-mod.contentbox.speaker-mod .speaker-list-wrapper .speaker-list__item,
+.tpl-specials-detail main .primary-mod.contentbox.speaker-mod .speaker-list-wrapper .speaker-list__item,
+.tpl-specials-detail main .secondary-mod.contentbox.speaker-mod .speaker-list-wrapper .speaker-list__item,
+.tpl-specials-detail main .tertiary-mod.contentbox.speaker-mod .speaker-list-wrapper .speaker-list__item,
+.tpl-specials-detail main .quarterly-mod.contentbox.speaker-mod .speaker-list-wrapper .speaker-list__item {
     position: relative;
 }
 
-.tpl-specials-detail .contentbox.speaker-mod .speaker-header .media-source,
-.nav .nav-flyout ul.nav-flyout__dropdown .nav-flyout__item .media-source {
-    top: 1rem;
-    bottom: auto;
-}
-
-.tpl-specials-detail .siteheader .secondary-mod.contentbox.speaker-mod .speaker-list-wrapper .speaker-list__item, .tpl-specials-detail main .secondary-mod.contentbox.speaker-mod .speaker-list-wrapper .speaker-list__item .speaker-list__item-overlay {
+.tpl-specials-detail .siteheader .primary-mod.contentbox.speaker-mod .speaker-list-wrapper .speaker-list__item .speaker-list__item-overlay,
+.tpl-specials-detail .siteheader .secondary-mod.contentbox.speaker-mod .speaker-list-wrapper .speaker-list__item .speaker-list__item-overlay,
+.tpl-specials-detail .siteheader .tertiary-mod.contentbox.speaker-mod .speaker-list-wrapper .speaker-list__item .speaker-list__item-overlay,
+.tpl-specials-detail .siteheader .quarterly-mod.contentbox.speaker-mod .speaker-list-wrapper .speaker-list__item .speaker-list__item-overlay,
+.tpl-specials-detail main .primary-mod.contentbox.speaker-mod .speaker-list-wrapper .speaker-list__item .speaker-list__item-overlay,
+.tpl-specials-detail main .secondary-mod.contentbox.speaker-mod .speaker-list-wrapper .speaker-list__item .speaker-list__item-overlay,
+.tpl-specials-detail main .tertiary-mod.contentbox.speaker-mod .speaker-list-wrapper .speaker-list__item .speaker-list__item-overlay,
+.tpl-specials-detail main .quarterly-mod.contentbox.speaker-mod .speaker-list-wrapper .speaker-list__item .speaker-list__item-overlay {
     position: absolute;
     top: 0;
     right: 0;
@@ -19722,6 +19729,16 @@ body:not(.show-first-headline) .typo3-fsc .frame:not(.show-first-headline):first
     text-indent: 100%;
     white-space: nowrap;
     z-index: 0;
+}
+
+.tpl-specials-detail .contentbox.speaker-mod .speaker-header {
+    position: relative;
+}
+
+.tpl-specials-detail .contentbox.speaker-mod .speaker-header .media-source,
+.nav .nav-flyout ul.nav-flyout__dropdown .nav-flyout__item .media-source {
+    top: 1rem;
+    bottom: auto;
 }
 
 .testimonial-mod {
