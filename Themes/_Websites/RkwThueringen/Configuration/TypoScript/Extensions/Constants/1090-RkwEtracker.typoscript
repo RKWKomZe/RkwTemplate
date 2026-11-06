@@ -1,0 +1,12 @@
+
+plugin.tx_rkwetracker {
+
+    settings {
+
+        # cat=plugin.tx_rkwetracker; type=boolean; Disables tracking with eTracker completely
+        disable = 1
+    }
+}
+
+
+

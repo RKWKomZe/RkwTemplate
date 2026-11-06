@@ -8,7 +8,6 @@
 
 	<div class="pagewrap">
 
-        <!-- get me header -->
 		<f:comment><!-- header --></f:comment>
 		<header class="header {f:if(condition: '{coreExtended:isEmpty(string:\'{f:cObject(typoscriptObjectPath:\\\'lib.txRkwTemplate.navigation.sub\\\', data:\\\'{data}\\\')}\')} == 0', then: 'has-nav')} {f:if(condition: '{settings.shortMainMenu}', then: 'has-nav--short')} {f:if(condition: '{settings.showLanguageSwitch}', then: 'has-lang-switch')}">
 			<f:if condition="{settings.showLanguageSwitch}">

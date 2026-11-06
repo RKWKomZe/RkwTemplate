@@ -46,7 +46,7 @@ plugin.tx_rkwevents {
                 showTime = 1
 
                 # hint: use value "11" for the maximum amount of months!
-                showTimeNumberOfMonths = 11
+                showTimeNumberOfMonths = 14
 
             }
         }
