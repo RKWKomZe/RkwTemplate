@@ -19764,6 +19764,13 @@ body:not(.show-first-headline) .typo3-fsc .frame:not(.show-first-headline):first
     position: relative;
 }
 
+.testimonial__person > .media-source {
+    position: initial;
+    border-radius: 4px;
+    text-align: center;
+    margin: .5rem auto 0;
+}
+
 .slider-item__media > .media-source {
     top: 5rem;
     right: 20px;

@@ -1,5 +1,6 @@
 <html
     xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    xmlns:rkwTemplate="http://typo3.org/ns/RKW/RkwTemplate/ViewHelpers"
     data-namespace-typo3-fluid="true">
 
     <f:layout name="Rkw" />
@@ -13,6 +14,7 @@
                         <img src="{f:uri.image(image:images.0,cropVariant:'default')}" alt="{image.title}" loading="lazy">
                     </div>
                     <div class="testimonial__name">{data.header}</div>
+                    <rkwTemplate:copyright file="{images.0}" showMediaSourceOverlay="{settings.showMediaSourceOverlay}"/>
                 </div>
             </f:then>
             <f:else>
