@@ -80,6 +80,7 @@ tt_content {
     rkwtemplate_imagelist.settings < lib.txRkwTemplate.themeSettings
     rkwtemplate_boxsliderelement.settings < lib.txRkwTemplate.themeSettings
     rkwtemplate_tile.settings < lib.txRkwTemplate.themeSettings
+    rkwtemplate_testimonial.settings < lib.txRkwTemplate.themeSettings
     image.settings < lib.txRkwTemplate.themeSettings
     textmedia.settings < lib.txRkwTemplate.themeSettings
     textpic.settings < lib.txRkwTemplate.themeSettings
